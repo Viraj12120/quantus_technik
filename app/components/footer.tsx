@@ -5,7 +5,7 @@ export default function Footer() {
 		<footer className="bg-white text-black py-12 border-t border-gray-200">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				{/* Social Links */}
-				<div className="flex flex-col md:flex-row items-center justify-between mb-12 pb-8 border-b border-gray-200">
+				<div className="flex flex-col md:flex-row items-center justify-between mb-12 pb-8  border-gray-200">
 					<div className="flex gap-6 text-sm font-medium">
 						<a href="#" className="hover:text-gray-600">
 							Twitter

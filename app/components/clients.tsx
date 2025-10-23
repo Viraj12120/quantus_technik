@@ -32,7 +32,9 @@ export default function Client() {
 	return (
 		<section className="py-16 ">
 			<div className="max-w-6xl mx-auto px-6 text-center">
-				<h2 className="text-4xl text-gray-900 font-bold mb-8">Loved by Our Clients</h2>
+				<h2 className="text-4xl text-gray-900 font-bold mb-8">
+					Loved by Our Clients
+				</h2>
 
 				<div className="overflow-hidden">
 					<motion.div
@@ -41,7 +43,7 @@ export default function Client() {
 						transition={{
 							repeat: Infinity,
 							repeatType: "loop",
-							duration: 30,
+							duration: 20,
 							ease: "linear",
 						}}>
 						{duplicatedClients.map((client, index) => (
