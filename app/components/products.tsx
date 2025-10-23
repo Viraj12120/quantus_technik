@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Client from "./clients";
 
 const products = [
 	{
@@ -61,7 +62,7 @@ export default function Product() {
 					</h2>
 				</div>
 				<div className=" text-white w-10 h-10 flex items-center justify-center rounded-full text-lg">
-					 🌐
+					🌐
 				</div>
 			</div>
 
@@ -76,10 +77,10 @@ export default function Product() {
 					/>
 					<div className="flex gap-2">
 						<span className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
-							Agri-Business
+							Industry Ready
 						</span>
 						<span className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
-							Seeds
+							Tools
 						</span>
 					</div>
 				</div>
@@ -97,12 +98,12 @@ export default function Product() {
 						<button
 							onClick={prevProduct}
 							className="border border-gray-400 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-100 transition">
-							Prev
+							← Prev
 						</button>
 						<button
 							onClick={nextProduct}
 							className="border border-gray-800 bg-black text-white px-6 py-2 rounded-full hover:bg-gray-900 transition">
-							→
+							Next →
 						</button>
 					</div>
 				</div>
@@ -150,8 +151,9 @@ export default function Product() {
 					{String(index + 1).padStart(2, "0")} /{" "}
 					{String(products.length).padStart(2, "0")}
 				</p>
-				<p className="italic">It’s late-night street sessions</p>
+				<p className="font-medium">It’s Industy 2.0 ready tools</p>
 			</div>
+
 		</section>
 	);
 }

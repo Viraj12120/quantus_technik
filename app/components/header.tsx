@@ -11,11 +11,11 @@ export default function Header() {
 
 	const navLinks = [
 		{ name: "Home", href: "/" },
-		{ name: "About Us", href: "/about" },
-		{ name: "Industries We Serve", href: "/industries" },
-		{ name: "Products", href: "/products" },
-		{ name: "Contact Us", href: "/contact" },
-		{ name: "Blogs", href: "/blogs" },
+		{ name: "About Us", href: "/About" },
+		{ name: "Industries We Serve", href: "/Industries" },
+		{ name: "Products", href: "/Products" },
+		{ name: "Contact Us", href: "/Contact" },
+		{ name: "Blogs", href: "/Blogs" },
 	];
 
 	return (
@@ -59,8 +59,7 @@ export default function Header() {
 								key={link.name}
 								href={link.href}
 								className="hover:text-black transition-colors"
-								onClick={() => setIsOpen(false)} 
-							>
+								onClick={() => setIsOpen(false)}>
 								{link.name}
 							</Link>
 						))}

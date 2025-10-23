@@ -32,7 +32,7 @@ export default function Hero() {
 
 				<Button
 					variant="default"
-					className="w-fit text-sm sm:text-base lg:text-md px-10 sm:px-8 py-8 sm:py-5 rounded-xl font-medium shadow-lg hover:scale-105 transition-all">
+					className="w-fit text-sm sm:text-base lg:text-md px-10 sm:px-8 py-14 sm:py-6 rounded-xl font-medium shadow-lg hover:scale-105 transition-all">
 					Download Product Catalog
 				</Button>
 			</div>
