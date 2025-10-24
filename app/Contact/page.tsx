@@ -45,8 +45,10 @@ export default function Contact() {
 
 	return (
 		<div className="min-h-screen bg-gray-50">
+			
+
 			{/* Main Section */}
-			<div className="max-w-7xl mx-auto px-6 py-10">
+			<div className="max-w-7xl mx-auto px-6 py-28">
 				<div className="grid md:grid-cols-2 gap-12 items-start">
 					{/* Left Content */}
 					<div>
