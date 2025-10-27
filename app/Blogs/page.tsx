@@ -30,6 +30,16 @@ export default function Blogs() {
 	const [selectedCategory, setSelectedCategory] =
 		useState<string>("All Articles");
 
+	// Fixed categories matching Industry Today sections
+	const categories: string[] = [
+		"All Articles",
+		"Aerospace",
+		"Automotive",
+		"Engineering",
+		"Technology",
+		"Supply Chain",
+	];
+
 	// Fetch blogs from API
 	useEffect(() => {
 		async function fetchBlogs() {
@@ -37,6 +47,7 @@ export default function Blogs() {
 				setLoading(true);
 				const response = await fetch("/api/blogs");
 				const data: ApiResponse = await response.json();
+				console.log("data", data);
 
 				if (data.success) {
 					setBlogs(data.blogs);
@@ -54,17 +65,13 @@ export default function Blogs() {
 		fetchBlogs();
 	}, []);
 
-	// Extract unique categories from blogs
-	const categories: string[] = [
-		"All Articles",
-		...new Set(blogs.map((blog) => blog.category)),
-	];
-
 	// Filter blogs by category
 	const filteredBlogs: Blog[] =
 		selectedCategory === "All Articles"
 			? blogs
-			: blogs.filter((blog) => blog.category === selectedCategory);
+			: blogs.filter((blog) =>
+					blog.category.toLowerCase().includes(selectedCategory.toLowerCase())
+			  );
 
 	// Get featured post (most recent)
 	const featuredPost: Blog | null = filteredBlogs[0] || null;
@@ -74,9 +81,6 @@ export default function Blogs() {
 
 	// Get recent posts
 	const recentPosts: Blog[] = filteredBlogs.slice(5, 11);
-
-	// Extract unique tags from all blogs for topics section
-	const allTopics: string[] = [...new Set(blogs.map((blog) => blog.category))];
 
 	if (loading) {
 		return (
@@ -125,20 +129,14 @@ export default function Blogs() {
 		<div className="min-h-screen bg-white">
 			{/* Hero Section with Featured Post */}
 			{featuredPost && (
-				<section className="relative h-[600px] overflow-hidden">
-					<img
-						src={featuredPost.image}
-						alt={featuredPost.title}
-						className="w-full h-full object-cover"
-					/>
+				<section className="relative h-[600px] bg-black overflow-hidden">
+					
 					<div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
 
 					<div className="absolute inset-0 flex items-end">
 						<div className="max-w-6xl mx-auto px-4 pb-16 text-white w-full">
 							<div className="max-w-3xl">
-								<span className="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-4">
-									{featuredPost.category}
-								</span>
+								
 								<h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
 									{featuredPost.title}
 								</h1>
@@ -212,7 +210,7 @@ export default function Blogs() {
 										<img
 											src={article.image}
 											alt={article.title}
-											className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+											className="w-full h-full object-cover  group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
 										/>
 										<div className="absolute top-4 left-4">
 											<span className="inline-block px-3 py-1 bg-white text-black text-xs font-medium rounded-full">
@@ -258,7 +256,7 @@ export default function Blogs() {
 											<img
 												src={post.image}
 												alt={post.title}
-												className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+												className="w-full h-full object-cover  group-hover:grayscale-0 transition-all duration-500"
 											/>
 										</div>
 										<div className="p-5">
@@ -274,52 +272,6 @@ export default function Blogs() {
 								</article>
 							))}
 						</div>
-					</div>
-				</section>
-			)}
-
-			{/* Newsletter CTA */}
-			<section className="bg-black text-white py-16">
-				<div className="max-w-4xl mx-auto px-4 text-center">
-					<h2 className="text-3xl md:text-4xl font-bold mb-4">
-						Stay Updated on Manufacturing Insights
-					</h2>
-					<p className="text-gray-400 mb-8 text-lg">
-						Get the latest articles on CNC technology, process optimization, and
-						industry trends delivered to your inbox
-					</p>
-					<div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-						<input
-							type="email"
-							placeholder="Enter your email"
-							className="flex-1 px-4 py-3 rounded bg-white text-black outline-none"
-						/>
-						<button className="bg-white text-black px-6 py-3 rounded font-semibold hover:bg-gray-200 transition-colors whitespace-nowrap">
-							Subscribe
-						</button>
-					</div>
-				</div>
-			</section>
-
-			{/* Topics/Tags Section */}
-			{allTopics.length > 0 && (
-				<section className="max-w-6xl mx-auto px-4 py-16">
-					<h3 className="text-2xl font-bold text-black mb-6">
-						Browse by Topic
-					</h3>
-					<div className="flex flex-wrap gap-3">
-						{allTopics.map((topic) => (
-							<button
-								key={topic}
-								onClick={() => setSelectedCategory(topic)}
-								className={`px-4 py-2 text-sm rounded-full transition-colors ${
-									selectedCategory === topic
-										? "bg-black text-white"
-										: "bg-gray-100 text-gray-700 hover:bg-black hover:text-white"
-								}`}>
-								{topic}
-							</button>
-						))}
 					</div>
 				</section>
 			)}

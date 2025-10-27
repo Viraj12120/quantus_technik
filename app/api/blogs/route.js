@@ -1,6 +1,21 @@
 // app/api/blogs/route.js
 import Parser from "rss-parser";
 
+// CORS headers configuration
+const corsHeaders = {
+	"Access-Control-Allow-Origin": "*",
+	"Access-Control-Allow-Methods": "GET, OPTIONS",
+	"Access-Control-Allow-Headers": "Content-Type, Authorization",
+};
+
+// Handle OPTIONS request for CORS preflight
+export async function OPTIONS(request) {
+	return new Response(null, {
+		status: 200,
+		headers: corsHeaders,
+	});
+}
+
 export async function GET(request) {
 	const parser = new Parser({
 		customFields: {
@@ -12,12 +27,58 @@ export async function GET(request) {
 		},
 	});
 
+	// Define feed URLs with their corresponding categories
+	const feeds = [
+		{
+			url: "https://industrytoday.com/category/articles/aerospace/feed/",
+			category: "Aerospace",
+		},
+		{
+			url: "https://industrytoday.com/category/articles/automotive/feed/",
+			category: "Automotive",
+		},
+		{
+			url: "https://industrytoday.com/category/articles/engineering/feed/",
+			category: "Engineering",
+		},
+		{
+			url: "https://industrytoday.com/category/articles/technology/feed/",
+			category: "Technology",
+		},
+		{
+			url: "https://industrytoday.com/category/articles/supply-chain/feed/",
+			category: "Supply Chain",
+		},
+	];
+
 	try {
-		// Industry Today RSS feed URL
-		const feed = await parser.parseURL("https://industrytoday.com/feed/");
+		// Fetch all feeds in parallel with their category tags
+		const feedPromises = feeds.map(async ({ url, category }) => {
+			try {
+				const feed = await parser.parseURL(url);
+				return { feed, category };
+			} catch (error) {
+				console.error(`Error fetching feed ${url}:`, error);
+				return null;
+			}
+		});
+
+		const feedResults = await Promise.all(feedPromises);
+
+		// Combine all feed items with their assigned categories
+		const allItems = feedResults
+			.filter((result) => result !== null)
+			.flatMap(({ feed, category }) =>
+				feed.items.map((item) => ({ ...item, assignedCategory: category }))
+			);
+
+		// Remove duplicates based on link
+		const uniqueItems = Array.from(
+			new Map(allItems.map((item) => [item.link, item])).values()
+		);
 
 		// Transform feed items to match your blog structure
-		const blogs = feed.items.map((item) => {
+		const blogs = uniqueItems.map((item) => {
 			// Extract image from various possible sources
 			let image =
 				"https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80"; // fallback
@@ -34,11 +95,8 @@ export async function GET(request) {
 				if (imgMatch) image = imgMatch[1];
 			}
 
-			// Extract category
-			const category =
-				item.categories && item.categories.length > 0
-					? item.categories[0]
-					: "Industry Insights";
+			// Use the assigned category from the feed URL
+			const category = item.assignedCategory || "Articles";
 
 			// Calculate read time (rough estimate based on content length)
 			const contentLength =
@@ -59,23 +117,45 @@ export async function GET(request) {
 				readTime: readTime,
 				link: item.link,
 				author: item.creator || item.author || "Industry Today",
+				pubDate: item.pubDate, // Keep original date for sorting
 			};
 		});
 
-		return Response.json({
-			success: true,
-			blogs: blogs,
-			total: blogs.length,
-		});
-	} catch (error) {
-		console.error("Error fetching RSS feed:", error);
-		return Response.json(
+		// Sort blogs by publication date (newest first)
+		blogs.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+
+		// Remove the pubDate field before sending response
+		blogs.forEach((blog) => delete blog.pubDate);
+
+		return new Response(
+			JSON.stringify({
+				success: true,
+				blogs: blogs,
+				total: blogs.length,
+			}),
 			{
+				status: 200,
+				headers: {
+					"Content-Type": "application/json",
+					...corsHeaders,
+				},
+			}
+		);
+	} catch (error) {
+		console.error("Error fetching RSS feeds:", error);
+		return new Response(
+			JSON.stringify({
 				success: false,
 				error: "Failed to fetch blogs",
 				message: error.message,
-			},
-			{ status: 500 }
+			}),
+			{
+				status: 500,
+				headers: {
+					"Content-Type": "application/json",
+					...corsHeaders,
+				},
+			}
 		);
 	}
 }
