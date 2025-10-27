@@ -94,7 +94,7 @@ export default function Footer() {
 							</li>
 							<li>
 								<a href="#" className="hover:text-black">
-									JTEKT WENZE
+									WENZEL
 								</a>
 							</li>
 						</ul>
@@ -105,7 +105,7 @@ export default function Footer() {
 						<h4 className="font-semibold text-black mb-6">Industries</h4>
 						<ul className="space-y-3 text-sm text-gray-700">
 							<li>
-								<a href="#" className="hover:text-black">
+								<a href="/Industries#" className="hover:text-black">
 									Aerospace
 								</a>
 							</li>
