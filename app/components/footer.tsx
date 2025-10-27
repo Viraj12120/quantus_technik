@@ -7,15 +7,21 @@ export default function Footer() {
 				{/* Social Links */}
 				<div className="flex flex-col md:flex-row items-center justify-between mb-12 pb-8  border-gray-200">
 					<div className="flex gap-6 text-sm font-medium">
-						<a href="#" className="hover:text-gray-600">
-							Twitter
+						<a
+							href="https://www.linkedin.com/company/quantus-technik/"
+							className="hover:text-gray-600">
+							LinkedIn
 						</a>
 						<span className="text-gray-400">&gt;</span>
-						<a href="#" className="hover:text-gray-600">
+						<a
+							href="https://www.instagram.com/quantus_technik/"
+							className="hover:text-gray-600">
 							Instagram
 						</a>
 						<span className="text-gray-400">&gt;</span>
-						<a href="#" className="hover:text-gray-600">
+						<a
+							href="https://www.youtube.com/@quantus-technik3846"
+							className="hover:text-gray-600">
 							Youtube
 						</a>
 					</div>

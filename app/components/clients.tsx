@@ -49,7 +49,7 @@ export default function Client() {
 						{duplicatedClients.map((client, index) => (
 							<div
 								key={index}
-								className="flex-shrink-0 w-72 mb-8 mt-8  bg-white p-4 rounded-lg shadow-md flex flex-col items-center text-center">
+								className="shrink-0 w-72 mb-8 mt-8  bg-white p-4 rounded-lg shadow-md flex flex-col items-center text-center">
 								<img
 									src={client.image}
 									alt={client.name}

@@ -16,7 +16,7 @@ export default function Features() {
 				{/* Left Column — Key Stats */}
 				<div className="flex-1 space-y-10">
 					<div className="my-14">
-						<h2 className="text-8xl font-bold text-gray-900 mb-2">50+</h2>
+						<h2 className="text-8xl font-bold text-gray-900 mb-2">5+</h2>
 						<p className="text-gray-600 text-lg">
 							Years of Combined Experience
 						</p>

@@ -324,7 +324,7 @@ export default function ProductsPage() {
 													key={idx}
 													className="flex items-center gap-2 text-sm text-gray-700">
 													<Check className="w-4 h-4 text-black shrink-0" />
-													<span>{feature}</span>
+													<span className="text-blue-600/80">{feature}</span>
 												</div>
 											))}
 										</div>
@@ -379,7 +379,7 @@ export default function ProductsPage() {
 														key={idx}
 														className="flex items-center gap-2 text-gray-700">
 														<Check className="w-5 h-5 text-black shrink-0" />
-														<span>{feature}</span>
+														<span className="text-blue-600/60">{feature}</span>
 													</div>
 												))}
 											</div>
@@ -432,7 +432,7 @@ export default function ProductsPage() {
 													key={idx}
 													className="flex items-center gap-2 text-sm text-gray-700">
 													<Check className="w-4 h-4 text-black shrink-0" />
-													<span>{feature}</span>
+													<span className="text-blue-600/80">{feature}</span>
 												</div>
 											))}
 										</div>
@@ -486,7 +486,7 @@ export default function ProductsPage() {
 													key={idx}
 													className="flex items-center gap-2 text-xs text-gray-700">
 													<Check className="w-3 h-3 text-black shrink-0" />
-													<span>{feature}</span>
+													<span className="text-blue-600/80">{feature}</span>
 												</div>
 											))}
 										</div>

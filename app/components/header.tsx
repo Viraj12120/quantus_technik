@@ -140,10 +140,11 @@ export default function Header() {
 
 						{/* Products Dropdown - Desktop */}
 						<DropdownMenu>
-							<DropdownMenuTrigger className="flex items-center gap-1 hover:text-black transition-colors outline-none">
+							<DropdownMenuTrigger className="flex items-center justify-center gap-1 hover:text-black transition-colors outline-none cursor-pointer">
 								Products
-								<ChevronDown className="w-4 h-4" />
+								<ChevronDown className="w-3 h-3 mt-1" />
 							</DropdownMenuTrigger>
+
 							<DropdownMenuContent className="w-64">
 								{productCategories.map((category, idx) => (
 									<div key={category.label}>
