@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { motion } from "framer-motion";
 
 export default function Industries() {
@@ -32,7 +32,7 @@ export default function Industries() {
 		{
 			title: "Automotive / Electric Vehicle",
 			image:
-				"https://img.freepik.com/free-photo/woman-charging-electro-car-by-her-house_1303-17809.jpg?t=st=1761551001~exp=1761554601~hmac=08b277bc6dc78330c43709e497822c5b31d0b872fbbaac091de0fc39c08b9d7c&w=1480",
+				"https://img.freepik.com/free-photo/electric-car-charging-home-clean-energy-filling-technology_35913-2530.jpg?t=st=1761826087~exp=1761829687~hmac=f9d6de958c809bdb55dc116a5ec7b74096ed916677ef4e2b18da2ff58d867357&w=1480",
 			challenges: [
 				"Shift from ICE to electric powertrains",
 				"Lightweight design requirements",
@@ -59,9 +59,9 @@ export default function Industries() {
 			],
 		},
 		{
-			title: "Medical Electronics / Semiconductors",
+			title: "Medical Electronics & Semiconductors",
 			image:
-				"https://img.freepik.com/free-photo/close-up-hand-with-glove-holding-chip_23-2148925545.jpg?t=st=1761551060~exp=1761554660~hmac=e8b691c8ccfb1fff8506fd9bd8d41a10ad4a492f5aca31ebd9d057ec5d85a21d&w=1480",
+				"https://img.freepik.com/free-photo/close-up-hand-with-glove-holding-chip_23-2148925545.jpg?t=st=1761826673~exp=1761830273~hmac=9da40912084d6a09a779047ec0244be93ea7cb72d2d90c9e5850910aecd7fd70&w=1480",
 			challenges: [
 				"Micron-level tolerances",
 				"Biocompatible material machining",
@@ -74,7 +74,7 @@ export default function Industries() {
 				"HWACHEON precision equipment",
 				"WENZEL coordinate measuring machines",
 				"ZOLLER tool presetting for consistent quality",
-				"INDEX Swiss-type lathes for small precision parts",
+				"JTEKT grinding solutions",
 			],
 			applications: [
 				"Surgical instruments",
@@ -88,7 +88,7 @@ export default function Industries() {
 		{
 			title: "Die & Mould",
 			image:
-				"https://img.freepik.com/free-photo/worker-face-mask-controlling-coffee-roasting-process-coffee-roaster-working-roasting-equipment-man-mask-uniform-working-with-machinery-appliance_74855-20118.jpg?t=st=1761551195~exp=1761554795~hmac=66663e02baf78045c9c365ce1d36f6ae4fd83bfaf02a1649e165441d8d8ed199&w=1480",
+				"https://img.freepik.com/free-photo/production-process-details_140725-8069.jpg?t=st=1761826864~exp=1761830464~hmac=856ac386bc3eaa6ded2534ea93de9cf0f80bc991e2d0092b9aa5efa8cb122741&w=1480",
 			challenges: [
 				"High-precision surface finishing",
 				"Complex 3D contours",
@@ -100,7 +100,8 @@ export default function Industries() {
 				"HWACHEON graphite and high-speed machining centers",
 				"ALZMETALL 5-axis milling for complex cavities",
 				"GROB universal machining for mold plates",
-				"SolidCAM with HSM strategies",
+				"KEN 5-axis solution for ultra precision surface finish and flexibility",
+
 				"ZOLLER for tool management and presetting",
 			],
 			applications: [
@@ -125,10 +126,10 @@ export default function Industries() {
 			],
 			solutions: [
 				"HWACHEON full range of machining centers",
-				"ALZMETALL versatile VMC and drilling machines",
-				"INDEX universal turning machines",
+				"ALZMETALL versatile GROB & Alzmetall",
+				"Gerald Angle Head & Work-holding solutions",
 				"Gerardi workholding solutions",
-				"Schüssler tool holders",
+				"MST Tool holders",
 				"Creintors automation and storage",
 			],
 			applications: [
@@ -252,12 +253,9 @@ export default function Industries() {
 			{/* Partner Brands */}
 			<section className="max-w-6xl mx-auto px-4 py-20">
 				<div className="text-center mb-12">
-					<p className="text-sm uppercase tracking-wider text-blue-600/80 mb-2">
-						Trusted Partners
+					<p className="text-lg uppercase tracking-wider text-blue-600/80 font-bold">
+						Our Trusted OEMs Partners{" "}
 					</p>
-					<h3 className="text-3xl font-bold text-black">
-						World-Class Technology Providers
-					</h3>
 				</div>
 				<div className="overflow-hidden mt-10">
 					<motion.div

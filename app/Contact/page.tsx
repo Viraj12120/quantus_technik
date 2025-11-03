@@ -6,6 +6,8 @@ import Link from "next/link";
 interface FormData {
 	firstName: string;
 	lastName: string;
+	companyName: string;
+	city: string;
 	email: string;
 	message: string;
 }
@@ -14,6 +16,8 @@ export default function Contact() {
 	const [formData, setFormData] = useState<FormData>({
 		firstName: "",
 		lastName: "",
+		companyName: "",
+		city: "",
 		email: "",
 		message: "",
 	});
@@ -26,27 +30,23 @@ export default function Contact() {
 	};
 
 	const handleSubmit = (formData: FormData) => {
-		const { firstName, lastName, email, message } = formData;
+		const { firstName, lastName, companyName, city, email, message } = formData;
 
 		// Construct the email body
 		const subject = encodeURIComponent(
-			`Enquiry Form  from ${firstName} ${lastName}`
+			`Enquiry Form from ${firstName} ${lastName}`
 		);
 		const body = encodeURIComponent(
-			`Name: ${firstName} ${lastName}\nEmail: ${email}\n\nMessage:\n${message}`
+			`Name: ${firstName} ${lastName}\nCompany: ${companyName}\nCity: ${city}\nEmail: ${email}\n\nMessage:\n${message}`
 		);
 
 		// Construct mailto link
 		const mailtoLink = `mailto:rajesh.gaikwaad@quantus-technik.com?subject=${subject}&body=${body}`;
-
-		// Open default mail client
 		window.location.href = mailtoLink;
 	};
 
 	return (
 		<div className="min-h-screen bg-gray-50">
-			
-
 			{/* Main Section */}
 			<div className="max-w-7xl mx-auto px-6 py-28">
 				<div className="grid md:grid-cols-2 gap-12 items-start">
@@ -62,51 +62,86 @@ export default function Contact() {
 						</p>
 
 						<div className="space-y-6 text-sm">
-							<div className="grid md:grid-cols-2 gap-6">
-								<div>
-									<h3 className="font-semibold text-base mb-1">
-										Head Office - Pune
-									</h3>
-									<p className="text-gray-600 leading-relaxed">
-										B4-401, The Crest Malpani Estate
-										<br />
-										Pimple Saudagar, Pune – 411027
-										<br />
-										Maharashtra, India
-									</p>
-									<p className="mt-1">
-										<span className="font-medium">Contact:</span> Mr. Rajesh
-										Gaikwad
-									</p>
-									<p>
-										<span className="font-medium">Phone:</span> +91 95614-11918
-									</p>
+							{/* Office Locations */}
+							<div className="flex flex-col md:flex-row md:flex-wrap gap-6">
+								{/* Row 1 — Two Offices */}
+								<div className="flex flex-col md:flex-row gap-6 w-full md:justify-between">
+									{/* Head Office - Pune */}
+									<div className="md:w-1/2">
+										<h3 className="font-semibold text-base mb-1">
+											Head Office - Pune
+										</h3>
+										<p className="text-gray-600 leading-relaxed">
+											B4-401, The Crest Malpani Estate
+											<br />
+											Pimple Saudagar, Pune – 411027
+											<br />
+											Maharashtra, India
+										</p>
+										<p className="mt-1">
+											<span className="font-medium">Contact:</span> Mr. Rajesh
+											Gaikwad
+										</p>
+										<p>
+											<span className="font-medium">Phone:</span> +91
+											95614-11918
+										</p>
+									</div>
+
+									{/* Regional Office - Bangalore */}
+									<div className="md:w-1/2">
+										<h3 className="font-semibold text-base mb-1">
+											Regional Office - Bangalore
+										</h3>
+										<p className="text-gray-600 leading-relaxed">
+											#131 A-Block, United Crossandra
+											<br />
+											Horamavu Agara, Bangalore – 560043
+											<br />
+											Karnataka, India
+										</p>
+										<p className="mt-1">
+											<span className="font-medium">Contact:</span> Mr. Anish
+											Ramachandran
+										</p>
+										<p>
+											<span className="font-medium">Phone:</span> +91
+											80889-09933
+										</p>
+									</div>
 								</div>
 
-								<div>
-									<h3 className="font-semibold text-base mb-1">
-										Regional Office - Bangalore
-									</h3>
-									<p className="text-gray-600 leading-relaxed">
-										#131 A-Block, United Crossandra
-										<br />
-										Horamavu Agara, Bangalore – 560043
-										<br />
-										Karnataka, India
-									</p>
-									<p className="mt-1">
-										<span className="font-medium">Contact:</span> Mr. Anish R.
-									</p>
-									<p>
-										<span className="font-medium">Phone:</span> +91 80889-09933
-									</p>
+								{/* Row 2 — Kolhapur */}
+								<div className="w-full flex justify-center md:justify-start">
+									<div className="md:w-1/2">
+										<h3 className="font-semibold text-base mb-1">
+											Regional Sales - Kolhapur
+										</h3>
+										<p className="text-gray-600 leading-relaxed">
+											Office near Shahu Market Yard
+											<br />
+											Kolhapur – 416005
+											<br />
+											Maharashtra, India
+										</p>
+										<p className="mt-1">
+											<span className="font-medium">Contact:</span> Mr. Adinath
+											Parmaj
+										</p>
+										<p>
+											<span className="font-medium">Phone:</span> +91
+											91697-91717
+										</p>
+									</div>
 								</div>
 							</div>
 
+							{/* Availability */}
 							<p className="text-gray-500 mt-4">
 								Available Monday to Friday, 9 AM - 6 PM IST
 							</p>
 
+							{/* Button */}
 							<div className="mt-4 flex justify-center md:justify-start sm:justify-center">
 								<Link href="/About">
 									<button className="bg-gray-900 text-white px-6 py-2.5 rounded-full hover:bg-gray-800 transition flex items-center gap-2 text-sm">
@@ -132,6 +167,7 @@ export default function Contact() {
 					{/* Compact Form */}
 					<div className="bg-white p-10 sm:p-12 rounded-2xl shadow-sm">
 						<div className="grid md:grid-cols-2 gap-4 mb-4">
+							{/* First Name */}
 							<div>
 								<label className="block text-sm font-medium mb-2">
 									First Name *
@@ -142,11 +178,11 @@ export default function Contact() {
 									value={formData.firstName}
 									onChange={handleChange}
 									placeholder="Enter your first name..."
-									className="w-full px-4 py-3.5 bg-gray-50 rounded-lg border border-gray-200 
-                   focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+									className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
 								/>
 							</div>
 
+							{/* Last Name */}
 							<div>
 								<label className="block text-sm font-medium mb-2">
 									Last Name *
@@ -157,12 +193,42 @@ export default function Contact() {
 									value={formData.lastName}
 									onChange={handleChange}
 									placeholder="Enter your last name..."
-									className="w-full px-4 py-3.5 bg-gray-50 rounded-lg border border-gray-200 
-                   focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+									className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
 								/>
 							</div>
 						</div>
 
+						<div className="grid md:grid-cols-2 gap-4 mb-4">
+							{/* Company Name */}
+							<div>
+								<label className="block text-sm font-medium mb-2">
+									Company Name
+								</label>
+								<input
+									type="text"
+									name="companyName"
+									value={formData.companyName}
+									onChange={handleChange}
+									placeholder="Enter your company name..."
+									className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+								/>
+							</div>
+
+							{/* City */}
+							<div>
+								<label className="block text-sm font-medium mb-2">City</label>
+								<input
+									type="text"
+									name="city"
+									value={formData.city}
+									onChange={handleChange}
+									placeholder="Enter your city..."
+									className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+								/>
+							</div>
+						</div>
+
+						{/* Email */}
 						<div className="mb-4">
 							<label className="block text-sm font-medium mb-2">Email *</label>
 							<input
@@ -171,11 +237,11 @@ export default function Contact() {
 								value={formData.email}
 								onChange={handleChange}
 								placeholder="Enter your email..."
-								className="w-full px-4 py-3.5 bg-gray-50 rounded-lg border border-gray-200 
-                 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+								className="w-full px-4 py-2.5 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
 							/>
 						</div>
 
+						{/* Message */}
 						<div className="mb-6">
 							<label className="block text-sm font-medium mb-2">
 								How Can We Help You? *
@@ -185,17 +251,16 @@ export default function Contact() {
 								value={formData.message}
 								onChange={handleChange}
 								placeholder="Write your message..."
-								rows={5} // increased rows for larger height
-								className="w-full px-4 py-3.5 bg-gray-50 rounded-lg border border-gray-200 
-                 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+								rows={5}
+								className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
 							/>
 						</div>
 
+						{/* Submit Button */}
 						<button
 							type="button"
 							onClick={() => handleSubmit(formData)}
-							className="w-full bg-gray-900 text-white px-6 py-3 rounded-full 
-               hover:bg-gray-800 transition flex items-center justify-center gap-2 text-sm font-medium cursor cursor-pointer">
+							className="w-full bg-gray-900 text-white px-6 py-3 rounded-full hover:bg-gray-800 transition flex items-center justify-center gap-2 text-sm font-medium cursor-pointer">
 							Send Message
 							<svg
 								className="w-4 h-4"

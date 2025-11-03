@@ -123,3 +123,12 @@
 html {
 	scroll-behavior: smooth;
 }
+html {
+  overflow-y: scroll; 
+}
+
+.racing-sans-one-regular {
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}

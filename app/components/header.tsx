@@ -1,60 +1,32 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
-import {
-	DropdownMenu,
-	DropdownMenuContent,
-	DropdownMenuItem,
-	DropdownMenuTrigger,
-	DropdownMenuSeparator,
-	DropdownMenuLabel,
-} from "@/components/ui/dropdown-menu";
+import Image from "next/image";
 
 export default function Header() {
 	const [isOpen, setIsOpen] = useState(false);
+	const [isProductsOpen, setIsProductsOpen] = useState(false);
 	const [isMobileProductsOpen, setIsMobileProductsOpen] = useState(false);
+	const dropdownRef = useRef<HTMLDivElement>(null);
 
 	const toggleMenu = () => setIsOpen(!isOpen);
+	const toggleProducts = () => setIsProductsOpen((prev) => !prev);
 
-	const handleSmoothScroll = (
-		e: React.MouseEvent<HTMLAnchorElement>,
-		href: string
-	) => {
-		// Check if it's a hash link (anchor link)
-		if (href.includes("#")) {
-			e.preventDefault();
-			const [path, hash] = href.split("#");
-
-			// If we're on the products page or going to products page
-			if (path === "/Products" || window.location.pathname === "/Products") {
-				// If not on products page, navigate first
-				if (window.location.pathname !== "/Products") {
-					window.location.href = href;
-					return;
-				}
-
-				// Scroll to the section
-				const element = document.getElementById(hash);
-				if (element) {
-					const headerOffset = 128; // 16 (top-16) + 64 (header height) + some padding
-					const elementPosition = element.getBoundingClientRect().top;
-					const offsetPosition =
-						elementPosition + window.pageYOffset - headerOffset;
-
-					window.scrollTo({
-						top: offsetPosition,
-						behavior: "smooth",
-					});
-				}
+	// ✅ Close dropdown when clicking outside
+	useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			if (
+				dropdownRef.current &&
+				!dropdownRef.current.contains(event.target as Node)
+			) {
+				setIsProductsOpen(false);
 			}
-
-			// Close mobile menu
-			setIsOpen(false);
-			setIsMobileProductsOpen(false);
-		}
-	};
+		};
+		document.addEventListener("mousedown", handleClickOutside);
+		return () => document.removeEventListener("mousedown", handleClickOutside);
+	}, []);
 
 	const navLinks = [
 		{ name: "Home", href: "/" },
@@ -65,70 +37,54 @@ export default function Header() {
 	];
 
 	const productCategories = [
-		{
-			label: "Machine Tools",
-			items: [
-				{
-					name: "Vertical Machining Centers",
-					href: "/Products#vertical-machining-centers",
-				},
-				{
-					name: "Horizontal Machining Centers",
-					href: "/Products#horizontal-machining-centers",
-				},
-				{ name: "Turning Center", href: "/Products#turning-center" },
-				{
-					name: "5-axis Machining Centers",
-					href: "/Products#5-axis-machining-centers",
-				},
-				{
-					name: "Vertical Turning Machines",
-					href: "/Products#vertical-turning-machines",
-				},
-				{ name: "Grinding machines", href: "/Products#grinding-machines" },
-			],
-		},
-		{
-			label: "Measuring Machines",
-			items: [
-				{ name: "Co-ordinate Measuring Machines (CMM)", href: "/Products#cmm" },
-				{ name: "Tool Presetter", href: "/Products#tool-presetter" },
-			],
-		},
-		{
-			label: "Angle Head",
-			items: [
-				{ name: "Fixed 90° type", href: "/Products#fixed-90-angle-head" },
-				{ name: "Universal type", href: "/Products#universal-angle-head" },
-				{ name: "Special type", href: "/Products#special-angle-head" },
-			],
-		},
-		{
-			label: "Tool Holders & Tool Management",
-			items: [
-				{ name: "Mechanical", href: "/Products#mechanical-tool-holders" },
-				{ name: "Shrink fit", href: "/Products#shrink-fit" },
-				{
-					name: "Insert & Tool Management System",
-					href: "/Products#tool-management-system",
-				},
-				{
-					name: "Tool management software",
-					href: "/Products#tool-management-software",
-				},
-			],
-		},
+		{ label: "Machine Tools" },
+		{ label: "Measuring Machines" },
+		{ label: "Angle Head" },
+		{ label: "Tool Holders & Tool Management" },
 	];
 
-	return (
-		<header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
-			<div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
-				<div className="flex items-center justify-between h-16">
-					{/* Logo */}
-					<div className="text-xl font-bold text-gray-900">Quantus Technik</div>
+	// ✅ Smooth scroll to section or navigate
+	const handleScrollToSection = (e: React.MouseEvent, sectionId: string) => {
+		e.preventDefault();
 
-					{/* Desktop Navigation */}
-					<nav className="hidden md:flex items-center gap-6 text-sm text-gray-600">
+		const formattedId = sectionId
+			.toLowerCase()
+			.replace(/ & /g, "-")
+			.replace(/\s+/g, "-");
+
+		if (window.location.pathname === "/Products") {
+			const target = document.getElementById(formattedId);
+			if (target) {
+				const offset = 100; // header height offset
+				const topPos =
+					target.getBoundingClientRect().top + window.scrollY - offset;
+
+				window.scrollTo({
+					top: topPos,
+					behavior: "smooth",
+				});
+			}
+		} else {
+			window.location.href = `/Products#${formattedId}`;
+		}
+
+		setIsProductsOpen(false);
+	};
+
+	return (
+		<header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+			<div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
+				<div className="flex items-center justify-between h-16 relative">
+					{/* Logo */}
+					<Link href="/" className="flex items-center gap-2">
+						<Image src="/qt.png" alt="Quantus Technik" width={32} height={32} />
+						<span className="text-xl racing-sans-one-regular text-blue-400 italic">
+							Quantus Technik
+						</span>
+					</Link>
+
+					{/* ✅ Centered Desktop Navigation */}
+					<nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6 text-sm text-gray-600">
 						{navLinks.slice(0, 3).map((link) => (
 							<Link
 								key={link.name}
@@ -138,44 +94,45 @@ export default function Header() {
 							</Link>
 						))}
 
-						{/* Products Dropdown - Desktop */}
-						<DropdownMenu>
-							<DropdownMenuTrigger className="flex items-center justify-center gap-1 hover:text-black transition-colors outline-none cursor-pointer">
+						{/* ✅ Dropdown stays open until click or outside click */}
+						<div ref={dropdownRef} className="relative">
+							<button
+								onClick={toggleProducts}
+								className="flex items-center gap-1 cursor-pointer hover:text-black transition">
 								Products
-								<ChevronDown className="w-3 h-3 mt-1" />
-							</DropdownMenuTrigger>
+								<ChevronDown
+									className={`w-3 h-3 mt-1 transition-transform ${
+										isProductsOpen ? "rotate-180" : ""
+									}`}
+								/>
+							</button>
 
-							<DropdownMenuContent className="w-64">
+							{/* Dropdown Menu */}
+							<div
+								className={`absolute left-1/2 -translate-x-1/2 mt-2 w-72 bg-white border border-gray-200 rounded-lg shadow-lg p-4 transition-all duration-200 ease-in-out ${
+									isProductsOpen
+										? "opacity-100 translate-y-0 pointer-events-auto"
+										: "opacity-0 -translate-y-2 pointer-events-none"
+								}`}>
 								{productCategories.map((category, idx) => (
-									<div key={category.label}>
-										<DropdownMenuLabel className="text-xs font-semibold text-gray-500 uppercase">
+									<div key={idx} className="mb-3 last:mb-0">
+										<a
+											href={`/Products#${category.label
+												.toLowerCase()
+												.replace(/ & /g, "-")
+												.replace(/\s+/g, "-")}`}
+											onClick={(e) => handleScrollToSection(e, category.label)}
+											className="text-xs font-semibold text-gray-700 uppercase mb-2 block hover:text-blue-600 transition-colors">
 											{category.label}
-										</DropdownMenuLabel>
-										{category.items.map((item) => (
-											<DropdownMenuItem key={item.name} asChild>
-												<Link
-													href={item.href}
-													className="cursor-pointer"
-													onClick={(e) => handleSmoothScroll(e, item.href)}>
-													{item.name}
-												</Link>
-											</DropdownMenuItem>
-										))}
+										</a>
+
 										{idx < productCategories.length - 1 && (
-											<DropdownMenuSeparator />
+											<hr className="my-2 border-gray-200" />
 										)}
 									</div>
 								))}
-								<DropdownMenuSeparator />
-								<DropdownMenuItem asChild>
-									<Link
-										href="/Products"
-										className="cursor-pointer font-semibold text-blue-600">
-										View All Products →
-									</Link>
-								</DropdownMenuItem>
-							</DropdownMenuContent>
-						</DropdownMenu>
+							</div>
+						</div>
 
 						{navLinks.slice(3).map((link) => (
 							<Link
@@ -200,11 +157,11 @@ export default function Header() {
 				</div>
 			</div>
 
-			{/* Mobile Navigation */}
+			{/* ✅ Mobile Navigation */}
 			{isOpen && (
 				<div className="md:hidden bg-white border-t border-gray-200 w-full">
 					<nav className="flex flex-col gap-4 px-4 py-4 text-gray-600">
-						{navLinks.slice(0, 3).map((link) => (
+						{navLinks.map((link) => (
 							<Link
 								key={link.name}
 								href={link.href}
@@ -214,11 +171,11 @@ export default function Header() {
 							</Link>
 						))}
 
-						{/* Products Accordion - Mobile */}
+						{/* Products Dropdown in Mobile */}
 						<div>
 							<button
 								onClick={() => setIsMobileProductsOpen(!isMobileProductsOpen)}
-								className="flex items-center justify-between w-full hover:text-black transition-colors">
+								className="flex items-center justify-between w-full hover:text-black transition">
 								Products
 								<ChevronDown
 									className={`w-4 h-4 transition-transform ${
@@ -230,47 +187,20 @@ export default function Header() {
 							{isMobileProductsOpen && (
 								<div className="mt-2 ml-4 space-y-3">
 									{productCategories.map((category) => (
-										<div key={category.label}>
-											<div className="text-xs font-semibold text-gray-500 uppercase mb-2">
-												{category.label}
-											</div>
-											<div className="space-y-2 ml-2">
-												{category.items.map((item) => (
-													<Link
-														key={item.name}
-														href={item.href}
-														className="block text-sm hover:text-black transition-colors"
-														onClick={(e) => {
-															handleSmoothScroll(e, item.href);
-														}}>
-														{item.name}
-													</Link>
-												))}
-											</div>
-										</div>
+										<a
+											key={category.label}
+											href={`/Products#${category.label
+												.toLowerCase()
+												.replace(/ & /g, "-")
+												.replace(/\s+/g, "-")}`}
+											onClick={(e) => handleScrollToSection(e, category.label)}
+											className="block text-sm text-gray-700 hover:text-blue-600 transition">
+											{category.label}
+										</a>
 									))}
-									<Link
-										href="/Products"
-										className="block text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors mt-3"
-										onClick={() => {
-											setIsOpen(false);
-											setIsMobileProductsOpen(false);
-										}}>
-										View All Products →
-									</Link>
 								</div>
 							)}
 						</div>
-
-						{navLinks.slice(3).map((link) => (
-							<Link
-								key={link.name}
-								href={link.href}
-								className="hover:text-black transition-colors"
-								onClick={() => setIsOpen(false)}>
-								{link.name}
-							</Link>
-						))}
 					</nav>
 				</div>
 			)}

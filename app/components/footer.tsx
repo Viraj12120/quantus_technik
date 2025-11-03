@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Footer() {
 	return (
 		<footer className="bg-white text-black py-12 border-t border-gray-200">
@@ -46,22 +48,12 @@ export default function Footer() {
 						<h4 className="font-semibold text-black mb-6">About</h4>
 						<ul className="space-y-3 text-sm text-gray-700">
 							<li>
-								<a href="#" className="hover:text-black">
-									Problem
-								</a>
-							</li>
-							<li>
-								<a href="#" className="hover:text-black">
-									Solution
-								</a>
-							</li>
-							<li>
-								<a href="#" className="hover:text-black">
+								<a href="/Blogs" className="hover:text-black">
 									Technology
 								</a>
 							</li>
 							<li>
-								<a href="#" className="hover:text-black">
+								<a href="/Products" className="hover:text-black">
 									Product
 								</a>
 							</li>
@@ -73,29 +65,37 @@ export default function Footer() {
 						<h4 className="font-semibold text-black mb-6">Products</h4>
 						<ul className="space-y-3 text-sm text-gray-700">
 							<li>
-								<a href="#" className="hover:text-black">
+								<Link
+									href="/Products/ken-ichi-5axis"
+									className="hover:text-black">
 									Ken ICHI
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="#" className="hover:text-black">
+								<Link href="/Products/grob-g550" className="hover:text-black">
 									GROB
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="#" className="hover:text-black">
+								<Link
+									href="/Products/hwaheon-turning-center"
+									className="hover:text-black">
 									HwaCheon
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="#" className="hover:text-black">
+								<Link
+									href="/Products/gerardi-evolution-line"
+									className="hover:text-black">
 									Gerardi (Angle Head)
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="#" className="hover:text-black">
+								<Link
+									href="/Products/wenzel-lh-108"
+									className="hover:text-black">
 									WENZEL
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
@@ -109,11 +109,7 @@ export default function Footer() {
 									Aerospace
 								</a>
 							</li>
-							<li>
-								<a href="#" className="hover:text-black">
-									Tooling
-								</a>
-							</li>
+
 							<li>
 								<a href="#" className="hover:text-black">
 									Manufacturing
@@ -124,11 +120,6 @@ export default function Footer() {
 									Automotive
 								</a>
 							</li>
-							<li>
-								<a href="#" className="hover:text-black">
-									Energy
-								</a>
-							</li>
 						</ul>
 					</div>
 
@@ -137,23 +128,14 @@ export default function Footer() {
 						<h4 className="font-semibold text-black mb-6">Blogs</h4>
 						<ul className="space-y-3 text-sm text-gray-700">
 							<li>
-								<a href="#" className="hover:text-black">
+								<a href="/Blogs" className="hover:text-black">
 									Latest Updates
 								</a>
 							</li>
+
 							<li>
-								<a href="#" className="hover:text-black">
-									Case Studies
-								</a>
-							</li>
-							<li>
-								<a href="#" className="hover:text-black">
+								<a href="/Blogs" className="hover:text-black">
 									News
-								</a>
-							</li>
-							<li>
-								<a href="#" className="hover:text-black">
-									Insights
 								</a>
 							</li>
 						</ul>
@@ -161,14 +143,38 @@ export default function Footer() {
 				</div>
 
 				{/* Bottom Footer */}
-				<div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-500 pt-8 border-t border-gray-200">
-					<p>2025@etitud.com</p>
-					<a href="#" className="hover:text-black mt-4 md:mt-0">
-						Privacy Policy
-					</a>
-					<a href="#" className="hover:text-black mt-4 md:mt-0">
-						Terms of service
-					</a>
+				<div className="border-t border-gray-200 mt-8 pt-6">
+					<div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-600 gap-4">
+						{/* Left Section */}
+						<p className="text-center md:text-left">
+							© 2025 quantustechnik.com
+						</p>
+
+						{/* Center Section - Links */}
+						<div className="flex items-center gap-6">
+							<a href="#" className="hover:text-black transition-colors">
+								Privacy Policy
+							</a>
+							<a href="#" className="hover:text-black transition-colors">
+								Terms of Service
+							</a>
+						</div>
+
+						{/* Right Section - Credits */}
+						<div className="flex flex-col md:flex-row items-center gap-2 text-gray-500 text-xs md:text-sm">
+							<span className=" transition-colors">
+								Designed by{" "}
+								<span className="font-medium text-gray-700">
+									Akshata Jangam
+								</span>
+							</span>
+							<span className="hidden md:inline">|</span>
+							<span className=" transition-colors">
+								Developed by{" "}
+								<span className="font-medium text-gray-700">Viraj Disale</span>
+							</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>

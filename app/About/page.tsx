@@ -12,22 +12,17 @@ export default function AboutUs() {
 		},
 		{
 			id: 2,
-			name: "Sneha Patel",
-			position: "Head of Operations",
+			name: "Anish Ramachandran",
+			position: "Partner",
 			image: "/hero.jpeg",
 		},
 		{
 			id: 3,
-			name: "Amit Desai",
-			position: "Technical Director",
+			name: "Sulaxana RG",
+			position: "Office / Admin",
 			image: "/hero.jpeg",
 		},
-		{
-			id: 4,
-			name: "Priya Mehta",
-			position: "Marketing Manager",
-			image: "/hero.jpeg",
-		},
+		
 	];
 
 	return (
@@ -63,7 +58,7 @@ export default function AboutUs() {
 
 						<div className="grid grid-cols-3 gap-6 pt-6">
 							<div>
-								<h3 className="text-3xl font-bold text-gray-900">73+</h3>
+								<h3 className="text-3xl font-bold text-gray-900">5+</h3>
 								<p className="text-sm text-gray-500">Years of Legacy</p>
 							</div>
 							<div>
@@ -147,25 +142,38 @@ export default function AboutUs() {
 						relationship.
 					</p>
 
-					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mt-10">
-						{team.map((member) => (
-							<div
-								key={member.id}
-								className="bg-white  transition-all duration-300">
-								<div className="relative aspect-square w-36 mx-auto rounded-full overflow-hidden">
-									<Image
-										src={member.image}
-										alt={member.name}
-										fill
-										className="object-cover transition-transform duration-500 hover:scale-105"
-									/>
+					{/* Team Section */}
+					<div className="text-center space-y-8">
+						<h2 className="text-4xl font-bold text-gray-900">
+							Our Team & Commitment
+						</h2>
+						<p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+							Our team blends deep technical know-how with strategic insight —
+							driving excellence in every machine, every project, and every
+							client relationship.
+						</p>
+
+						{/* Centered Grid */}
+						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  mt-18 justify-items-center">
+							{team.map((member) => (
+								<div
+									key={member.id}
+									className="bg-white text-center transition-all duration-300">
+									<div className="relative aspect-square w-36 mx-auto rounded-full overflow-hidden shadow-md">
+										<Image
+											src={member.image}
+											alt={member.name}
+											fill
+											className="object-cover transition-transform duration-500 hover:scale-105"
+										/>
+									</div>
+									<h3 className="text-lg font-semibold text-gray-900 mt-4">
+										{member.name}
+									</h3>
+									<p className="text-sm text-gray-500">{member.position}</p>
 								</div>
-								<h3 className="text-lg font-semibold text-gray-900 mt-4">
-									{member.name}
-								</h3>
-								<p className="text-sm text-gray-500">{member.position}</p>
-							</div>
-						))}
+							))}
+						</div>
 					</div>
 				</div>
 			</div>

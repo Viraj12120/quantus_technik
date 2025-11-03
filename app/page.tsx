@@ -9,7 +9,6 @@ import Client from "./components/clients";
 export default function Home() {
 	return (
 		<>
-			<Header />
 			<Hero />
 			<Features />
 			<WhyChooseQuantus />

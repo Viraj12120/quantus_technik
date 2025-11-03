@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 	title: "Quantus Technik",
 	description: "Develop and designed by Viraj",
 	icons: {
-		icon: "/hero.jpeg",
+		icon: "/qt.png",
 	},
 };
 
