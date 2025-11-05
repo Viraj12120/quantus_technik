@@ -9,12 +9,12 @@ export default function WhyChooseQuantus() {
 			id: "global",
 			label: "Global",
 			title: "Global Technology, Local Expertise",
-			desc: "We represent the finest machine tool manufacturers from Germany, South Korea, Japan, Taiwan, Italy, and Israel — delivering turnkey solutions tailored to Indian manufacturing needs. Our collaborations ensure access to world-class precision, reliability, and automation. At QUANTUS-TECHNIK, we bridge global innovation with local expertise to create a seamless ecosystem for modern manufacturing.",
+			desc: "We represent the finest machine tool manufacturers from Germany, South Korea, Japan, Taiwan, Italy — delivering turnkey solutions tailored to Indian manufacturing needs. Our collaborations ensure access to world-class precision, reliability, and automation. At Quantus Technik, we bridge global innovation with local expertise to create a seamless ecosystem for modern manufacturing.",
 		},
 		{
 			id: "why",
 			label: "Why Choose",
-			title: "Why Choose QUANTUS-TECHNIK?",
+			title: "Why Choose Us?",
 			desc: "We combine cutting-edge technology with strong global partnerships to deliver performance-driven solutions for India’s evolving industries. Our approach integrates innovation, efficiency, and sustainability at every step. From consultation to commissioning, we focus on empowering manufacturers to grow smarter, faster, and more competitively in today’s industrial landscape.",
 		},
 		{
@@ -75,7 +75,7 @@ export default function WhyChooseQuantus() {
 				{/* LEFT SECTION - IMAGE + METRICS */}
 				<div className="relative rounded-3xl overflow-hidden bg-white shadow-lg transition-all duration-500">
 					<Image
-						src="/hero.jpeg"
+						src="/earth.jpg"
 						alt="Quantus Technik Machinery"
 						width={600}
 						height={1000}

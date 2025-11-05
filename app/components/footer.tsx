@@ -10,7 +10,7 @@ export default function Footer() {
 				<div className="flex flex-col md:flex-row items-center justify-between mb-12 pb-8  border-gray-200">
 					<div className="flex gap-6 text-sm font-medium">
 						<a
-							href="https://www.linkedin.com/company/quantus-technik/"
+							href="https://www.linkedin.com/company/Quantus Technik/"
 							className="hover:text-gray-600">
 							LinkedIn
 						</a>
@@ -22,7 +22,7 @@ export default function Footer() {
 						</a>
 						<span className="text-gray-400">&gt;</span>
 						<a
-							href="https://www.youtube.com/@quantus-technik3846"
+							href="https://www.youtube.com/@Quantus Technik3846"
 							className="hover:text-gray-600">
 							Youtube
 						</a>
@@ -147,7 +147,7 @@ export default function Footer() {
 					<div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-600 gap-4">
 						{/* Left Section */}
 						<p className="text-center md:text-left">
-							© 2025 quantustechnik.com
+							© 2025 Quantus Technik.com
 						</p>
 
 						{/* Center Section - Links */}

@@ -1,0 +1,386 @@
+[
+    {
+        "id": "hwacheon-hmc-a600-iso40",
+        "brand": "Hwacheon",
+        "name": "A 600 ISO40 Horizontal Machining Center",
+        "category": "machine-tools",
+        "subtitle": "High-precision horizontal machining center",
+        "description": "Hwacheon A 600 ISO40 offers high accuracy and rigidity for demanding machining tasks.",
+        "img": "/64.jpg",
+        "gallery": [
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
+        ],
+        "quickSpecs": [
+            {
+                "name": "Travel (X/Y/Z)",
+                "value": "600x600x800 mm (23.62x23.62x31.5 inch)"
+            },
+            {
+                "name": "Spindle Speed",
+                "value": "16K, 8K rpm"
+            },
+            {
+                "name": "Tool Shank",
+                "value": "BT-40, HSK-A63"
+            },
+            {
+                "name": "Axis Type",
+                "value": "3-Axis"
+            }
+        ],
+        "applications": "Ideal for mold & die, automotive, and precision parts machining."
+    },
+    {
+        "id": "hwacheon-hmc-a600-iso50",
+        "brand": "Hwacheon",
+        "name": "A 600 ISO50 Horizontal Machining Center",
+        "category": "machine-tools",
+        "subtitle": "Heavy-duty horizontal machining center",
+        "description": "Hwacheon A 600 ISO50 provides robust performance for heavy-duty applications.",
+        "img": "/64.jpg",
+        "gallery": [
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
+        ],
+        "quickSpecs": [
+            {
+                "name": "Travel (X/Y/Z)",
+                "value": "560x580x800 mm (22.05x22.83x31.5 inch)"
+            },
+            {
+                "name": "Spindle Speed",
+                "value": "8K rpm"
+            },
+            {
+                "name": "Tool Shank",
+                "value": "BT-50, HSK-A100"
+            },
+            {
+                "name": "Axis Type",
+                "value": "3-Axis"
+            }
+        ],
+        "applications": "Suitable for heavy-duty mold & die, aerospace, and automotive parts."
+    },
+    {
+        "id": "hwacheon-hmc-h6",
+        "brand": "Hwacheon",
+        "name": "H6 Horizontal Machining Center",
+        "category": "machine-tools",
+        "subtitle": "High-productivity horizontal machining center",
+        "description": "Hwacheon H6 delivers high productivity and precision for large workpieces.",
+        "img": "/64.jpg",
+        "gallery": [
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
+        ],
+        "quickSpecs": [
+            {
+                "name": "Travel (X/Y/Z)",
+                "value": "1050x900x1000 mm (41.34x35.43x39.37 inch)"
+            },
+            {
+                "name": "Spindle Speed",
+                "value": "8K, 12K rpm"
+            },
+            {
+                "name": "Tool Shank",
+                "value": "BBT-50, CAT-50, HSK-A100"
+            },
+            {
+                "name": "Axis Type",
+                "value": "3-Axis"
+            }
+        ],
+        "applications": "Perfect for large mold & die, automotive, and aerospace components."
+    },
+    {
+        "id": "hwacheon-hmc-h8",
+        "brand": "Hwacheon",
+        "name": "H8 Horizontal Machining Center",
+        "category": "machine-tools",
+        "subtitle": "Extreme rigidity horizontal machining center",
+        "description": "Hwacheon H8 offers extreme rigidity and high-speed machining for large parts.",
+        "img": "/64.jpg",
+        "gallery": [
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
+        ],
+        "quickSpecs": [
+            {
+                "name": "Travel (X/Y/Z)",
+                "value": "1400x1150x1250 mm (55.12x45.28x49.21 inch)"
+            },
+            {
+                "name": "Spindle Speed",
+                "value": "8K, 12K rpm"
+            },
+            {
+                "name": "Tool Shank",
+                "value": "BBT-50, CAT-50, HSK-A100"
+            },
+            {
+                "name": "Axis Type",
+                "value": "3-Axis"
+            }
+        ],
+        "applications": "Ideal for large mold & die, aerospace, and heavy-duty parts."
+    },
+    {
+        "id": "hwacheon-hmc-af16",
+        "brand": "Hwacheon",
+        "name": "AF-16 Horizontal Machining Center",
+        "category": "machine-tools",
+        "subtitle": "High-accuracy horizontal machining center",
+        "description": "Hwacheon AF-16 provides high accuracy and flexibility for large workpieces.",
+        "img": "/64.jpg",
+        "gallery": [
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
+        ],
+        "quickSpecs": [
+            {
+                "name": "Travel (X/Y/Z)",
+                "value": "2600x1600x1500 mm (102.36x62.99x59.06 inch)"
+            },
+            {
+                "name": "Spindle Speed",
+                "value": "3K, 8K, 12K rpm"
+            },
+            {
+                "name": "Tool Shank",
+                "value": "BBT-50, CAT-50"
+            },
+            {
+                "name": "Axis Type",
+                "value": "3-Axis"
+            }
+        ],
+        "applications": "Suitable for large mold & die, aerospace, and automotive parts."
+    },
+    {
+        "id": "hwacheon-vmc-sirius-um",
+        "brand": "Hwacheon",
+        "name": "SIRIUS-UM Vertical Machining Center",
+        "category": "machine-tools",
+        "subtitle": "High-precision vertical machining center",
+        "description": "Hwacheon SIRIUS-UM offers high precision and rigidity for mold & die applications.",
+        "img": "/64.jpg",
+        "gallery": [
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
+        ],
+        "quickSpecs": [
+            {
+                "name": "Travel (X/Y/Z)",
+                "value": "750x500x450 mm (29.53x19.69x17.72 inch)"
+            },
+            {
+                "name": "Spindle Speed",
+                "value": "20K, 32K rpm"
+            },
+            {
+                "name": "Tool Shank",
+                "value": "BBT-40, CAT-40, HSK-A63, HSK-E40"
+            },
+            {
+                "name": "Axis Type",
+                "value": "3-Axis"
+            }
+        ],
+        "applications": "Ideal for mold & die, automotive, and precision parts."
+    },
+    {
+        "id": "hwacheon-vmc-sirius-uz",
+        "brand": "Hwacheon",
+        "name": "SIRIUS-UZ Vertical Machining Center",
+        "category": "machine-tools",
+        "subtitle": "Magnetic table vertical machining center",
+        "description": "Hwacheon SIRIUS-UZ features a magnetic table for enhanced workpiece holding.",
+        "img": "/64.jpg",
+        "gallery": [
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
+        ],
+        "quickSpecs": [
+            {
+                "name": "Travel (X/Y/Z)",
+                "value": "1050x600x350 mm (41.34x23.62x13.78 inch)"
+            },
+            {
+                "name": "Spindle Speed",
+                "value": "20K, 12K, 14K, 24K rpm"
+            },
+            {
+                "name": "Tool Shank",
+                "value": "BBT-40, CAT-40, HSK-A63, SK-40"
+            },
+            {
+                "name": "Axis Type",
+                "value": "3-Axis"
+            }
+        ],
+        "applications": "Perfect for mold & die, automotive, and precision parts."
+    },
+    {
+        "id": "hwacheon-vmc-sirius-ul",
+        "brand": "Hwacheon",
+        "name": "SIRIUS-UL Vertical Machining Center",
+        "category": "machine-tools",
+        "subtitle": "High-precision vertical machining center",
+        "description": "Hwacheon SIRIUS-UL offers high precision and rigidity for mold & die applications.",
+        "img": "/64.jpg",
+        "gallery": [
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
+        ],
+        "quickSpecs": [
+            {
+                "name": "Travel (X/Y/Z)",
+                "value": "1050x600x550 mm (41.34x23.62x21.65 inch)"
+            },
+            {
+                "name": "Spindle Speed",
+                "value": "20K, 12K, 14K, 24K rpm"
+            },
+            {
+                "name": "Tool Shank",
+                "value": "BBT-40, CAT-40, HSK-A63, SK-40"
+            },
+            {
+                "name": "Axis Type",
+                "value": "3-Axis"
+            }
+        ],
+        "applications": "Ideal for mold & die, automotive, and precision parts."
+    },
+    {
+        "id": "hwacheon-vmc-sirius-ux",
+        "brand": "Hwacheon",
+        "name": "SIRIUS-UX Vertical Machining Center",
+        "category": "machine-tools",
+        "subtitle": "High-precision vertical machining center",
+        "description": "Hwacheon SIRIUS-UX offers high precision and rigidity for mold & die applications.",
+        "img": "/64.jpg",
+        "gallery": [
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
+        ],
+        "quickSpecs": [
+            {
+                "name": "Travel (X/Y/Z)",
+                "value": "1500x750x650 mm (59.06x29.53x25.59 inch)"
+            },
+            {
+                "name": "Spindle Speed",
+                "value": "12K, 15K rpm"
+            },
+            {
+                "name": "Tool Shank",
+                "value": "BBT-50, CAT-50"
+            },
+            {
+                "name": "Axis Type",
+                "value": "3-Axis"
+            }
+        ],
+        "applications": "Ideal for mold & die, automotive, and precision parts."
+    },
+    {
+        "id": "hwacheon-vmc-sirius-850",
+        "brand": "Hwacheon",
+        "name": "SIRIUS-850 Vertical Machining Center",
+        "category": "machine-tools",
+        "subtitle": "High-precision vertical machining center",
+        "description": "Hwacheon SIRIUS-850 offers high precision and rigidity for mold & die applications.",
+        "img": "/64.jpg",
+        "gallery": [
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
+        ],
+        "quickSpecs": [
+            {
+                "name": "Travel (X/Y/Z)",
+                "value": "2000x850x750 mm (78.74x33.47x29.53 inch)"
+            },
+            {
+                "name": "Spindle Speed",
+                "value": "8K, 12K rpm"
+            },
+            {
+                "name": "Tool Shank",
+                "value": "BBT-50, CAT-50"
+            },
+            {
+                "name": "Axis Type",
+                "value": "3-Axis"
+            }
+        ],
+        "applications": "Ideal for mold & die, automotive, and precision parts."
+    },
+    {
+        "id": "hwacheon-vmc-sirius-1050",
+        "brand": "Hwacheon",
+        "name": "SIRIUS-1050 Vertical Machining Center",
+        "category": "machine-tools",
+        "subtitle": "High-precision vertical machining center",
+        "description": "Hwacheon SIRIUS-1050 offers high precision and rigidity for mold & die applications.",
+        "img": "/64.jpg",
+        "gallery": [
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
+        ],
+        "quickSpecs": [
+            {
+                "name": "Travel (X/Y/Z)",
+                "value": "2500x1050x850 mm (98.43x41.34x33.47 inch)"
+            },
+            {
+                "name": "Spindle Speed",
+                "value": "8K, 12K rpm"
+            },
+            {
+                "name": "Tool Shank",
+                "value": "BBT-50, CAT-50"
+            },
+            {
+                "name": "Axis Type",
+                "value": "3-Axis"
+            }
+        ],
+        "applications": "Ideal for mold & die, automotive, and precision parts."
+    },
+    {
+        "id": "hwacheon-vmc-sirius-1350",
+        "brand": "Hwacheon",
+        "name": "SIRIUS-1350 Vertical Machining Center",
+        "category": "machine-tools",
+        "subtitle": "High-precision vertical machining center",
+        "description": "Hwacheon SIRIUS-1350 offers high precision and rigidity for mold & die applications.",
+        "img": "/64.jpg",
+        "gallery": [
+            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
+        ],
+        "quickSpecs": [
+            {
+                "name": "Travel (X/Y/Z)",
+                "value": "2500x1350x750 mm (98.43x53.15x29.53 inch)"
+            },
+            {
+                "name": "Spindle Speed",
+                "value": "8K, 12K rpm"
+            },
+            {
+                "name": "Tool Shank",
+                "value": "BBT-50, CAT-50, HSK-100, SK-50"
+            },
+            {
+                "name": "Axis Type",
+                "value": "3-Axis"
+            }
+        ],
+        "applications": "Ideal for mold & die, automotive, and precision parts."
+    }
+]

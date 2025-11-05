@@ -1,25 +1,65 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+
 
 export default function Features() {
 	const images = [
-		{ src: "/hero.jpeg", alt: "CNC Machinery" },
-		{ src: "/hero.jpeg", alt: "Manufacturing Tech" },
-		{ src: "/hero.jpeg", alt: "Advanced Machinery" },
-		{ src: "/hero.jpeg", alt: "Production Line" },
+		{ src: "/exhi.jpg", alt: "quantas" },
+		{ src: "/IM.jpg", alt: "quantas" },
+		// { src: "/hero.jpeg", alt: "Advanced Machinery" },
+		// { src: "/hero.jpeg", alt: "Production Line" },
 	];
 
 	return (
-		<section className="py-10 bg-white">
+		<section className=" bg-white">
+			{/* Partner Brands */}
+			<section className="max-w-6xl mx-auto px-4 my-12 ">
+				<div className="text-center ">
+					<p className="text-lg uppercase tracking-wider text-blue-600/80 font-bold">
+						Our Trusted OEMs Partners{" "}
+					</p>
+				</div>
+				<div className="overflow-hidden mt-10">
+					<motion.div
+						className="flex gap-12"
+						animate={{ x: ["0%", "-50%"] }}
+						transition={{
+							repeat: Infinity,
+							repeatType: "loop",
+							duration: 20,
+							ease: "linear",
+						}}>
+						{[...Array(200)].flatMap(() =>
+							[
+								"GROB",
+								"HWACHEON",
+								"ZOLLER",
+								"INDEX",
+								"WENZEL",
+								"ALZMETALL",
+							].map((brand) => (
+								<div
+									key={brand + Math.random()}
+									className="flex items-center justify-center w-32">
+									<span className="font-bold text-gray-400 hover:text-black transition-colors text-lg cursor-default whitespace-nowrap">
+										{brand}
+									</span>
+								</div>
+							))
+						)}
+					</motion.div>
+				</div>
+			</section>
+
 			<div className="lg:px-24 mx-auto px-6 flex flex-col lg:flex-row justify-between gap-12">
 				{/* Left Column — Key Stats */}
 				<div className="flex-1 space-y-10">
 					<div className="my-14">
 						<h2 className="text-8xl font-bold text-gray-900 mb-2">5+</h2>
-						<p className="text-gray-600 text-lg">
-							Years of Combined Experience
-						</p>
+						<p className="text-gray-600 text-lg">Years and Growing...</p>
 					</div>
 
 					{/* Bullet Points */}
@@ -33,12 +73,12 @@ export default function Features() {
 							},
 							{
 								title: "Geographic Coverage",
-								desc: "Pan-India from Pune & Bangalore",
+								desc: "Pan-India ",
 								icon: "🌏",
 							},
 							{
 								title: "Industries Served",
-								desc: "5+ Critical Manufacturing Sectors",
+								desc: "All Major Manufacturing Sectors",
 								icon: "🏭",
 							},
 						].map((item, idx) => (
@@ -60,7 +100,7 @@ export default function Features() {
 				<div className="flex-1 space-y-8">
 					<p className="text-4xl leading-snug text-gray-900 font-semibold">
 						As India's premier solution partner for advanced manufacturing
-						technology, <span className="text-blue-700">Quantus-Technik</span>{" "}
+						technology, <span className="text-blue-700">Quantus Technik</span>{" "}
 						bridges the gap between global innovation and local excellence.
 					</p>
 					<p className="text-gray-700 text-lg leading-relaxed">

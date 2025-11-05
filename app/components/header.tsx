@@ -33,7 +33,7 @@ export default function Header() {
 		{ name: "About Us", href: "/About" },
 		{ name: "Industries We Serve", href: "/Industries" },
 		{ name: "Contact Us", href: "/Contact" },
-		{ name: "Blogs", href: "/Blogs" },
+		{ name: "Offers and Promotions", href: "/Blogs" },
 	];
 
 	const productCategories = [
@@ -77,8 +77,7 @@ export default function Header() {
 				<div className="flex items-center justify-between h-16 relative">
 					{/* Logo */}
 					<Link href="/" className="flex items-center gap-2">
-						<Image src="/qt.png" alt="Quantus Technik" width={32} height={32} />
-						<span className="text-xl racing-sans-one-regular text-blue-400 italic">
+						<span className="text-xl racing-sans-one-regular text-blue-500 italic">
 							Quantus Technik
 						</span>
 					</Link>

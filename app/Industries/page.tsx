@@ -248,46 +248,7 @@ export default function Industries() {
 				</div>
 			</section>
 
-			{/* CTA Section */}
-
-			{/* Partner Brands */}
-			<section className="max-w-6xl mx-auto px-4 py-20">
-				<div className="text-center mb-12">
-					<p className="text-lg uppercase tracking-wider text-blue-600/80 font-bold">
-						Our Trusted OEMs Partners{" "}
-					</p>
-				</div>
-				<div className="overflow-hidden mt-10">
-					<motion.div
-						className="flex gap-12"
-						animate={{ x: ["0%", "-50%"] }}
-						transition={{
-							repeat: Infinity,
-							repeatType: "loop",
-							duration: 20,
-							ease: "linear",
-						}}>
-						{[...Array(200)].flatMap(() =>
-							[
-								"GROB",
-								"HWACHEON",
-								"ZOLLER",
-								"INDEX",
-								"WENZEL",
-								"ALZMETALL",
-							].map((brand) => (
-								<div
-									key={brand + Math.random()}
-									className="flex items-center justify-center w-32">
-									<span className="font-bold text-gray-400 hover:text-black transition-colors text-lg cursor-default whitespace-nowrap">
-										{brand}
-									</span>
-								</div>
-							))
-						)}
-					</motion.div>
-				</div>
-			</section>
+			
 		</div>
 	);
 }

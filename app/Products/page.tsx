@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { ChevronRight, Check } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProductsPage() {
 	const [selectedCategory, setSelectedCategory] = useState("all");
@@ -33,28 +34,22 @@ export default function ProductsPage() {
 
 	const products = [
 		{
-			id: "turning-centers",
+			id: "hwacheon-horizontal-turning",
 			name: "Turning Centers",
 			category: "machine-tools",
 			description:
-				"High-performance CNC turning solutions engineered for precision and productivity.",
-			image:
-				"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-			features: [
-				"2-axis CNC Lathe (HwaCheon)",
-				"Turnmill Centers (HwaCheon)",
-				"Twin Spindle – Single Turret (with Magazine opt.) (HwaCheon)",
-			],
+				"Versatile machining centers providing superior speed, rigidity, and accuracy.",
+			image: "/pp.jpg",
+			features: ["3/4-axis VMC ", "5-axis HMC "],
 		},
 		{
-			id: "machining-centers",
+			id: "machining-center",
 			name: "Machining Centers",
 			category: "machine-tools",
 			description:
 				"Versatile machining centers providing superior speed, rigidity, and accuracy.",
-			image:
-				"https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
-			features: ["3/4-axis VMC (HwaCheon)", "5-axis HMC (JTEKT, GROB)"],
+			image: "/pp.jpg",
+			features: ["3/4-axis VMC ", "5-axis HMC "],
 		},
 		{
 			id: "measuring",
@@ -62,8 +57,7 @@ export default function ProductsPage() {
 			category: "measuring",
 			description:
 				"High-precision metrology systems for dimensional verification and gear measurement.",
-			image:
-				"https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80",
+			image: "/cmm.jpg",
 			features: [
 				"3D Coordinate Measuring Machine (Wenzel)",
 				"Shop-floor Measuring Machine (Wenzel)",
@@ -75,8 +69,7 @@ export default function ProductsPage() {
 			category: "angle-head",
 			description:
 				"Precision angle heads for multi-axis machining with fixed and universal configurations.",
-			image:
-				"https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80",
+			image: "/ah.jpg",
 			features: [
 				"Fixed Type – 45° & 90° (Gerardi)",
 				"Universal Type – 0° to 90° (Gerardi)",
@@ -88,8 +81,7 @@ export default function ProductsPage() {
 			category: "tool-holders",
 			description:
 				"Comprehensive tool clamping and management solutions ensuring efficiency and precision.",
-			image:
-				"https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+			image: "/tool.jpg",
 			features: [
 				"Mechanical Holder (MST)",
 				"ShrinkFit Holder (MST)",
@@ -114,7 +106,15 @@ export default function ProductsPage() {
 		<div className="min-h-screen bg-white">
 			{/* Hero Section */}
 			<section className="relative bg-black text-white pt-32 pb-20 px-6 overflow-hidden">
-				<div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=1600&q=80')] bg-cover bg-center"></div>
+				<div className="absolute inset-0">
+					<Image
+						src="/product123.jpg"
+						alt="Hero background"
+						className=" object-cover opacity-20"
+						fill
+					/>
+				</div>
+
 				<div className="max-w-7xl mx-auto relative z-10">
 					<h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
 						Precision Engineering <br />
@@ -194,7 +194,7 @@ export default function ProductsPage() {
 								</ul>
 
 								{/* Consistent button at bottom */}
-								<Link href={`/products/${p.id}`} className="mt-auto">
+								<Link href={`/Products/${p.id}`} className="mt-auto">
 									<button className="w-full bg-black text-white py-3 rounded-full font-medium hover:bg-gray-800 transition flex items-center justify-center gap-2">
 										Learn More <ChevronRight className="w-4 h-4" />
 									</button>

@@ -58,7 +58,7 @@ export default function Product() {
 				<div>
 					<p className="text-gray-400 text-sm tracking-wider mb-1">03</p>
 					<h2 className="text-4xl md:text-5xl font-semibold text-gray-900">
-						OurProduct
+						Our Product
 					</h2>
 				</div>
 				<div className=" text-white w-10 h-10 flex items-center justify-center rounded-full text-lg">
@@ -75,14 +75,7 @@ export default function Product() {
 						alt={product.name}
 						className="rounded-2xl h-96 object-fill shadow-md mb-4"
 					/>
-					<div className="flex gap-2">
-						<span className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
-							Industry Ready
-						</span>
-						<span className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
-							Tools
-						</span>
-					</div>
+					
 				</div>
 
 				{/* Center Text */}

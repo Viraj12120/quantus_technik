@@ -15,12 +15,12 @@ export default function Hero() {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setCurrent((prev) => (prev + 1) % videos.length);
-		}, 100000);
+		}, 5000);
 		return () => clearInterval(interval);
 	}, [videos.length]);
 
 	return (
-		<section className="relative w-[95%] sm:w-[98%] mx-auto mt-4 mb-12 overflow-hidden h-[75vh] sm:h-[85vh] lg:h-screen rounded-xl">
+		<section className="relative w-[95%] sm:w-[98%] mx-auto my-20 mb-12 overflow-hidden h-[75vh] sm:h-[85vh] lg:h-screen rounded-xl">
 			{/* Background Video */}
 			<div className="absolute inset-0">
 				<video
@@ -32,7 +32,7 @@ export default function Hero() {
 					playsInline
 					className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
 				/>
-				<div className="absolute inset-0 bg-black/60" />
+				<div className="absolute inset-0 bg-black/80" />
 			</div>
 
 			{/* Top-left logo text */}

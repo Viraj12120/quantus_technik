@@ -8,6 +8,7 @@ interface FormData {
 	lastName: string;
 	companyName: string;
 	city: string;
+	phoneNo: string;
 	email: string;
 	message: string;
 }
@@ -18,6 +19,7 @@ export default function Contact() {
 		lastName: "",
 		companyName: "",
 		city: "",
+		phoneNo: "",
 		email: "",
 		message: "",
 	});
@@ -30,24 +32,22 @@ export default function Contact() {
 	};
 
 	const handleSubmit = (formData: FormData) => {
-		const { firstName, lastName, companyName, city, email, message } = formData;
+		const { firstName, lastName, companyName, city, phoneNo, email, message } =
+			formData;
 
-		// Construct the email body
 		const subject = encodeURIComponent(
 			`Enquiry Form from ${firstName} ${lastName}`
 		);
 		const body = encodeURIComponent(
-			`Name: ${firstName} ${lastName}\nCompany: ${companyName}\nCity: ${city}\nEmail: ${email}\n\nMessage:\n${message}`
+			`Name: ${firstName} ${lastName}\nCompany: ${companyName}\nCity: ${city}\nPhone: ${phoneNo}\nEmail: ${email}\n\nMessage:\n${message}`
 		);
 
-		// Construct mailto link
-		const mailtoLink = `mailto:rajesh.gaikwaad@quantus-technik.com?subject=${subject}&body=${body}`;
+		const mailtoLink = `mailto:sales@Quantus Technik.com?subject=${subject}&body=${body}`;
 		window.location.href = mailtoLink;
 	};
 
 	return (
 		<div className="min-h-screen bg-gray-50">
-			{/* Main Section */}
 			<div className="max-w-7xl mx-auto px-6 py-28">
 				<div className="grid md:grid-cols-2 gap-12 items-start">
 					{/* Left Content */}
@@ -64,7 +64,6 @@ export default function Contact() {
 						<div className="space-y-6 text-sm">
 							{/* Office Locations */}
 							<div className="flex flex-col md:flex-row md:flex-wrap gap-6">
-								{/* Row 1 — Two Offices */}
 								<div className="flex flex-col md:flex-row gap-6 w-full md:justify-between">
 									{/* Head Office - Pune */}
 									<div className="md:w-1/2">
@@ -136,15 +135,13 @@ export default function Contact() {
 								</div>
 							</div>
 
-							{/* Availability */}
 							<p className="text-gray-500 mt-4">
 								Available Monday to Friday, 9 AM - 6 PM IST
 							</p>
 
-							{/* Button */}
-							<div className="mt-4 flex justify-center md:justify-start sm:justify-center">
+							<div className="mt-4 flex justify-center md:justify-start">
 								<Link href="/About">
-									<button className="bg-gray-900 text-white px-6 py-2.5 rounded-full hover:bg-gray-800 transition flex items-center gap-2 text-sm">
+									<button className="bg-gray-900 cursor cursor-pointer text-white px-6 py-2.5 rounded-full hover:bg-gray-800 transition flex items-center gap-2 text-sm">
 										Learn More
 										<svg
 											className="w-4 h-4"
@@ -164,7 +161,7 @@ export default function Contact() {
 						</div>
 					</div>
 
-					{/* Compact Form */}
+					{/* Form Section */}
 					<div className="bg-white p-10 sm:p-12 rounded-2xl shadow-sm">
 						<div className="grid md:grid-cols-2 gap-4 mb-4">
 							{/* First Name */}
@@ -228,17 +225,35 @@ export default function Contact() {
 							</div>
 						</div>
 
-						{/* Email */}
-						<div className="mb-4">
-							<label className="block text-sm font-medium mb-2">Email *</label>
-							<input
-								type="email"
-								name="email"
-								value={formData.email}
-								onChange={handleChange}
-								placeholder="Enter your email..."
-								className="w-full px-4 py-2.5 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
-							/>
+						{/* Phone & Email */}
+						<div className="grid md:grid-cols-2 gap-4 mb-4">
+							<div>
+								<label className="block text-sm font-medium mb-2">
+									Phone Number *
+								</label>
+								<input
+									type="tel"
+									name="phoneNo"
+									value={formData.phoneNo}
+									onChange={handleChange}
+									placeholder="Enter your phone number..."
+									className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+								/>
+							</div>
+
+							<div>
+								<label className="block text-sm font-medium mb-2">
+									Email *
+								</label>
+								<input
+									type="email"
+									name="email"
+									value={formData.email}
+									onChange={handleChange}
+									placeholder="Enter your email..."
+									className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+								/>
+							</div>
 						</div>
 
 						{/* Message */}

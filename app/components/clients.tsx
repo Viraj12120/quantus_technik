@@ -33,7 +33,7 @@ export default function Client() {
 		<section className="py-16 ">
 			<div className="max-w-6xl mx-auto px-6 text-center">
 				<h2 className="text-4xl text-gray-900 font-bold mb-8">
-					Loved by Our Clients
+					Our Esteemed Clients
 				</h2>
 
 				<div className="overflow-hidden">

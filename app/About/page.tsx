@@ -8,21 +8,20 @@ export default function AboutUs() {
 			id: 1,
 			name: "Rajesh Gaikwad",
 			position: "Founder & CEO",
-			image: "/hero.jpeg",
+			image: "/rajesh.jpg",
 		},
 		{
 			id: 2,
 			name: "Anish Ramachandran",
 			position: "Partner",
-			image: "/hero.jpeg",
+			image: "/anish.jpg",
 		},
 		{
 			id: 3,
-			name: "Sulaxana RG",
-			position: "Office / Admin",
-			image: "/hero.jpeg",
+			name: "Adinath Parmaj",
+			position: "Senior Engineer",
+			image: "/adinath.png",
 		},
-		
 	];
 
 	return (
@@ -31,7 +30,7 @@ export default function AboutUs() {
 				{/* Hero Section */}
 				<div className="relative text-center space-y-5">
 					<h1 className="text-4xl md:text-6xl font-extrabold text-gray-900">
-						About <span className="text-gray-900">Quantus-Technik</span>
+						About <span className="text-gray-900">Quantus Technik</span>
 					</h1>
 					<p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
 						Revolutionizing Indian manufacturing with world-class machine tool
@@ -49,7 +48,7 @@ export default function AboutUs() {
 							Our Story
 						</h2>
 						<p className="text-gray-600 leading-relaxed">
-							Founded in June 2020, <strong>QUANTUS-TECHNIK</strong> was built
+							Founded in June 2020, <strong>Quantus Technik</strong> was built
 							on a simple vision — to bring world-class machine tool technology
 							to India. With decades of experience in industrial manufacturing,
 							our team is redefining engineering standards through innovation
@@ -74,7 +73,7 @@ export default function AboutUs() {
 
 					<div className="relative w-full h-80 rounded-2xl overflow-hidden shadow-lg">
 						<Image
-							src="/hero.jpeg"
+							src="/abc.jpg"
 							alt="Our Story"
 							fill
 							className="object-cover"
@@ -87,7 +86,7 @@ export default function AboutUs() {
 					<div className="grid md:grid-cols-2 gap-12 items-center">
 						<div className="relative w-full h-80 rounded-2xl overflow-hidden shadow-md">
 							<Image
-								src="/hero.jpeg"
+								src="/cd.jpg"
 								alt="Vision & Mission"
 								fill
 								className="object-cover"
@@ -133,15 +132,6 @@ export default function AboutUs() {
 
 				{/* Team Section */}
 				<div className="text-center space-y-8">
-					<h2 className="text-4xl font-bold text-gray-900">
-						Our Team & Commitment
-					</h2>
-					<p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-						Our team blends deep technical know-how with strategic insight —
-						driving excellence in every machine, every project, and every client
-						relationship.
-					</p>
-
 					{/* Team Section */}
 					<div className="text-center space-y-8">
 						<h2 className="text-4xl font-bold text-gray-900">
@@ -164,7 +154,7 @@ export default function AboutUs() {
 											src={member.image}
 											alt={member.name}
 											fill
-											className="object-cover transition-transform duration-500 hover:scale-105"
+											className="object-contain transition-transform duration-500 hover:scale-110"
 										/>
 									</div>
 									<h3 className="text-lg font-semibold text-gray-900 mt-4">
