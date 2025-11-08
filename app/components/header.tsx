@@ -100,10 +100,14 @@ export default function Header() {
 						))}
 
 						{/* ✅ Dropdown stays open until click or outside click */}
-						<div ref={dropdownRef} className="relative">
+						<div
+							ref={dropdownRef}
+							className="relative" // ✅ keeps Products centered like other links
+						>
 							<button
 								onClick={toggleProducts}
-								className="flex items-center gap-1 cursor-pointer hover:text-black transition">
+								className="flex items-center -mt-1 gap-1 h-full px-2 hover:text-black transition" // ✅ same height as nav
+							>
 								Products
 								<ChevronDown
 									className={`w-3 h-3 mt-1 transition-transform ${
@@ -143,7 +147,7 @@ export default function Header() {
 							<Link
 								key={link.name}
 								href={link.href}
-								className={`nav-link text-sm ${
+								className={`nav-link text-sm items-center ${
 									pathname === link.href
 										? "active text-black"
 										: "text-gray-600 hover:text-black"
