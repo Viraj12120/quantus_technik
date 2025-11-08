@@ -22,6 +22,12 @@ export default function AboutUs() {
 			position: "Senior Engineer",
 			image: "/adinath.png",
 		},
+		{
+			id: 4,
+			name: "Rahul Shinde",
+			position: "Lead Service",
+			image: "/rahul.jpg",
+		},
 	];
 
 	return (
@@ -131,39 +137,50 @@ export default function AboutUs() {
 				</div>
 
 				{/* Team Section */}
-				<div className="text-center space-y-8">
-					{/* Team Section */}
-					<div className="text-center space-y-8">
-						<h2 className="text-4xl font-bold text-gray-900">
-							Our Team & Commitment
-						</h2>
-						<p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-							Our team blends deep technical know-how with strategic insight —
-							driving excellence in every machine, every project, and every
-							client relationship.
-						</p>
+				<div className="text-center space-y-10">
+					<h2 className="text-4xl font-bold text-gray-900">
+						Our Team & Commitment
+					</h2>
 
-						{/* Centered Grid */}
-						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  mt-18 justify-items-center">
-							{team.map((member) => (
-								<div
-									key={member.id}
-									className="bg-white text-center transition-all duration-300">
-									<div className="relative aspect-square w-36 mx-auto rounded-full overflow-hidden shadow-md">
-										<Image
-											src={member.image}
-											alt={member.name}
-											fill
-											className="object-contain transition-transform duration-500 hover:scale-110"
-										/>
-									</div>
-									<h3 className="text-lg font-semibold text-gray-900 mt-4">
-										{member.name}
-									</h3>
-									<p className="text-sm text-gray-500">{member.position}</p>
+					<p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+						Our team blends deep technical know-how with strategic insight —
+						driving excellence in every machine, every project, and every client
+						relationship.
+					</p>
+
+					{/* ✅ Centered, evenly spaced, properly aligned grid */}
+					<div
+						className="
+		grid 
+		grid-cols-1 
+		sm:grid-cols-2 
+		md:grid-cols-3 
+		lg:grid-cols-4 
+		gap-12 
+		justify-items-center
+		mt-10
+	">
+						{team.map((member) => (
+							<div
+								key={member.id}
+								className="text-center transition-all duration-300 p-4">
+								{/* ✅ Perfectly rounded image with object-cover */}
+								<div className="relative aspect-square w-40 mx-auto rounded-full overflow-hidden shadow-lg">
+									<Image
+										src={member.image}
+										alt={member.name}
+										fill
+										className="object-cover object-center transition-transform duration-500 hover:scale-110"
+									/>
 								</div>
-							))}
-						</div>
+
+								<h3 className="text-xl font-semibold text-gray-900 mt-4">
+									{member.name}
+								</h3>
+
+								<p className="text-sm text-gray-500">{member.position}</p>
+							</div>
+						))}
 					</div>
 				</div>
 			</div>

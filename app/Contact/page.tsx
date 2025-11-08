@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
 interface FormData {
 	firstName: string;
@@ -11,9 +12,13 @@ interface FormData {
 	phoneNo: string;
 	email: string;
 	message: string;
+	model: string;
 }
 
 export default function Contact() {
+	const searchParams = useSearchParams();
+	const itemId = searchParams.get("itemId");
+
 	const [formData, setFormData] = useState<FormData>({
 		firstName: "",
 		lastName: "",
@@ -22,6 +27,7 @@ export default function Contact() {
 		phoneNo: "",
 		email: "",
 		message: "",
+		model: itemId || "",
 	});
 
 	const handleChange = (
@@ -32,17 +38,33 @@ export default function Contact() {
 	};
 
 	const handleSubmit = (formData: FormData) => {
-		const { firstName, lastName, companyName, city, phoneNo, email, message } =
-			formData;
+		const {
+			firstName,
+			lastName,
+			companyName,
+			city,
+			phoneNo,
+			email,
+			model,
+			message,
+		} = formData;
 
 		const subject = encodeURIComponent(
 			`Enquiry Form from ${firstName} ${lastName}`
 		);
+
 		const body = encodeURIComponent(
-			`Name: ${firstName} ${lastName}\nCompany: ${companyName}\nCity: ${city}\nPhone: ${phoneNo}\nEmail: ${email}\n\nMessage:\n${message}`
+			`Product Model / ID: ${model}\n\n` +
+				`Name: ${firstName} ${lastName}\n` +
+				`Company: ${companyName}\n` +
+				`City: ${city}\n` +
+				`Phone: ${phoneNo}\n` +
+				`Email: ${email}\n\n` +
+				`Message:\n${message}`
 		);
 
-		const mailtoLink = `mailto:sales@Quantus Technik.com?subject=${subject}&body=${body}`;
+		const mailtoLink = `mailto:sales@quantusteknik.com?subject=${subject}&body=${body}`;
+
 		window.location.href = mailtoLink;
 	};
 
@@ -50,22 +72,24 @@ export default function Contact() {
 		<div className="min-h-screen bg-gray-50">
 			<div className="max-w-7xl mx-auto px-6 py-28">
 				<div className="grid md:grid-cols-2 gap-12 items-start">
-					{/* Left Content */}
+					{/* Left Section */}
 					<div>
 						<h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
-							Get in —<br /> touch with us
+							Get in —
+							<br /> touch with us
 						</h1>
+
 						<p className="text-gray-600 mb-6 text-sm sm:text-base">
-							We're here to help! Whether you have a question about our
-							products, need assistance with your machining requirements, or
-							want to schedule a demonstration, our team is ready to assist you.
+							We're here to help! Whether you have questions about our products,
+							machining requirements, or want to schedule a demonstration — our
+							team is ready to assist.
 						</p>
 
 						<div className="space-y-6 text-sm">
 							{/* Office Locations */}
 							<div className="flex flex-col md:flex-row md:flex-wrap gap-6">
 								<div className="flex flex-col md:flex-row gap-6 w-full md:justify-between">
-									{/* Head Office - Pune */}
+									{/* Pune */}
 									<div className="md:w-1/2">
 										<h3 className="font-semibold text-base mb-1">
 											Head Office - Pune
@@ -83,11 +107,11 @@ export default function Contact() {
 										</p>
 										<p>
 											<span className="font-medium">Phone:</span> +91
-											95614-11918
+											92255-13636
 										</p>
 									</div>
 
-									{/* Regional Office - Bangalore */}
+									{/* Bangalore */}
 									<div className="md:w-1/2">
 										<h3 className="font-semibold text-base mb-1">
 											Regional Office - Bangalore
@@ -110,14 +134,14 @@ export default function Contact() {
 									</div>
 								</div>
 
-								{/* Row 2 — Kolhapur */}
-								<div className="w-full flex justify-center md:justify-start">
+								{/* Kolhapur */}
+								<div className="w-full flex  md:justify-start">
 									<div className="md:w-1/2">
 										<h3 className="font-semibold text-base mb-1">
 											Regional Sales - Kolhapur
 										</h3>
 										<p className="text-gray-600 leading-relaxed">
-											Office near Shahu Market Yard
+											Office : MIDC Shiroli
 											<br />
 											Kolhapur – 416005
 											<br />
@@ -138,26 +162,26 @@ export default function Contact() {
 							<p className="text-gray-500 mt-4">
 								Available Monday to Friday, 9 AM - 6 PM IST
 							</p>
+						</div>
 
-							<div className="mt-4 flex justify-center md:justify-start">
-								<Link href="/About">
-									<button className="bg-gray-900 cursor cursor-pointer text-white px-6 py-2.5 rounded-full hover:bg-gray-800 transition flex items-center gap-2 text-sm">
-										Learn More
-										<svg
-											className="w-4 h-4"
-											fill="none"
-											stroke="currentColor"
-											viewBox="0 0 24 24">
-											<path
-												strokeLinecap="round"
-												strokeLinejoin="round"
-												strokeWidth={2}
-												d="M9 5l7 7-7 7"
-											/>
-										</svg>
-									</button>
-								</Link>
-							</div>
+						<div className="mt-4 flex justify-start">
+							<Link href="/About">
+								<button className="bg-gray-900 text-white px-6 py-2.5 rounded-full hover:bg-gray-800 transition flex items-center gap-2 text-sm cursor-pointer">
+									Learn More
+									<svg
+										className="w-4 h-4"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24">
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth={2}
+											d="M9 5l7 7-7 7"
+										/>
+									</svg>
+								</button>
+							</Link>
 						</div>
 					</div>
 
@@ -195,8 +219,8 @@ export default function Contact() {
 							</div>
 						</div>
 
+						{/* Company & City */}
 						<div className="grid md:grid-cols-2 gap-4 mb-4">
-							{/* Company Name */}
 							<div>
 								<label className="block text-sm font-medium mb-2">
 									Company Name
@@ -211,7 +235,6 @@ export default function Contact() {
 								/>
 							</div>
 
-							{/* City */}
 							<div>
 								<label className="block text-sm font-medium mb-2">City</label>
 								<input
@@ -256,6 +279,22 @@ export default function Contact() {
 							</div>
 						</div>
 
+						{/* Product Model — show only if query exists */}
+						{itemId && (
+							<div className="mb-4">
+								<label className="block text-sm font-medium mb-2">
+									Product Model
+								</label>
+								<input
+									type="text"
+									name="model"
+									value={formData.model}
+									disabled
+									className="w-full px-4 py-3 bg-gray-100 rounded-lg border border-gray-200 text-sm cursor-not-allowed"
+								/>
+							</div>
+						)}
+
 						{/* Message */}
 						<div className="mb-6">
 							<label className="block text-sm font-medium mb-2">
@@ -265,8 +304,8 @@ export default function Contact() {
 								name="message"
 								value={formData.message}
 								onChange={handleChange}
-								placeholder="Write your message..."
 								rows={5}
+								placeholder="Write your message..."
 								className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
 							/>
 						</div>

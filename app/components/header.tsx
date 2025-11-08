@@ -4,12 +4,14 @@ import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
 	const [isOpen, setIsOpen] = useState(false);
 	const [isProductsOpen, setIsProductsOpen] = useState(false);
 	const [isMobileProductsOpen, setIsMobileProductsOpen] = useState(false);
 	const dropdownRef = useRef<HTMLDivElement>(null);
+	const pathname = usePathname();
 
 	const toggleMenu = () => setIsOpen(!isOpen);
 	const toggleProducts = () => setIsProductsOpen((prev) => !prev);
@@ -33,7 +35,7 @@ export default function Header() {
 		{ name: "About Us", href: "/About" },
 		{ name: "Industries We Serve", href: "/Industries" },
 		{ name: "Contact Us", href: "/Contact" },
-		{ name: "Offers and Promotions", href: "/Blogs" },
+		{ name: "Offers and Promotions", href: "/Offers" },
 	];
 
 	const productCategories = [
@@ -88,7 +90,11 @@ export default function Header() {
 							<Link
 								key={link.name}
 								href={link.href}
-								className="hover:text-black transition-colors">
+								className={`nav-link text-sm ${
+									pathname === link.href
+										? "active text-black"
+										: "text-gray-600 hover:text-black"
+								}`}>
 								{link.name}
 							</Link>
 						))}
@@ -137,7 +143,11 @@ export default function Header() {
 							<Link
 								key={link.name}
 								href={link.href}
-								className="hover:text-black transition-colors">
+								className={`nav-link text-sm ${
+									pathname === link.href
+										? "active text-black"
+										: "text-gray-600 hover:text-black"
+								}`}>
 								{link.name}
 							</Link>
 						))}
@@ -160,12 +170,15 @@ export default function Header() {
 			{isOpen && (
 				<div className="md:hidden bg-white border-t border-gray-200 w-full">
 					<nav className="flex flex-col gap-4 px-4 py-4 text-gray-600">
-						{navLinks.map((link) => (
+						{navLinks.slice(3).map((link) => (
 							<Link
 								key={link.name}
 								href={link.href}
-								className="hover:text-black transition-colors"
-								onClick={() => setIsOpen(false)}>
+								className={`nav-link text-sm ${
+									pathname === link.href
+										? "active text-black"
+										: "text-gray-600 hover:text-black"
+								}`}>
 								{link.name}
 							</Link>
 						))}

@@ -1,386 +1,947 @@
-[
-    {
-        "id": "hwacheon-hmc-a600-iso40",
-        "brand": "Hwacheon",
-        "name": "A 600 ISO40 Horizontal Machining Center",
-        "category": "machine-tools",
-        "subtitle": "High-precision horizontal machining center",
-        "description": "Hwacheon A 600 ISO40 offers high accuracy and rigidity for demanding machining tasks.",
-        "img": "/64.jpg",
-        "gallery": [
-            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
-        ],
-        "quickSpecs": [
+{
+    "horizontal": {
+        "id": "horizontal",
+        "machines": [
             {
-                "name": "Travel (X/Y/Z)",
-                "value": "600x600x800 mm (23.62x23.62x31.5 inch)"
+                "model": "A600",
+                "description": "Horizontal Machining Center with Pallet size of 500mm",
+                "pallet_size_mm": 500,
+                "stroke_mm": [
+                    600,
+                    600,
+                    800
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    16000
+                ],
+                "number_of_tools": [
+                    40,
+                    60
+                ],
+                "type": "LM #40",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210121080607.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=A600"
             },
             {
-                "name": "Spindle Speed",
-                "value": "16K, 8K rpm"
+                "model": "H6",
+                "description": "Horizontal Machining Center with Pallet size of 630mm",
+                "pallet_size_mm": 630,
+                "stroke_mm": [
+                    1050,
+                    900,
+                    1000
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    12000
+                ],
+                "number_of_tools": [
+                    40,
+                    60,
+                    90,
+                    120,
+                    150,
+                    180
+                ],
+                "type": "BOX #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120040220.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=H6"
             },
             {
-                "name": "Tool Shank",
-                "value": "BT-40, HSK-A63"
+                "model": "H8",
+                "description": "Horizontal Machining Center with Pallet size of 800mm",
+                "pallet_size_mm": 800,
+                "stroke_mm": [
+                    1400,
+                    1150,
+                    1250
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    12000
+                ],
+                "number_of_tools": [
+                    40,
+                    60,
+                    90,
+                    120,
+                    150,
+                    180
+                ],
+                "type": "BOX #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120043736.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=H8"
             },
             {
-                "name": "Axis Type",
-                "value": "3-Axis"
+                "model": "AF-16",
+                "description": "Horizontal Machining Center",
+                "pallet_size_mm": null,
+                "stroke_mm": [
+                    2600,
+                    3000,
+                    1600,
+                    1500
+                ],
+                "spindle_speed_rpm": [
+                    3000,
+                    8000,
+                    12000
+                ],
+                "number_of_tools": [
+                    60,
+                    120,
+                    180
+                ],
+                "type": "LM #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120053911.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=AF-16"
+            },
+            {
+                "model": "AF-4",
+                "description": "High Productivity, High Performance Horizontal Machining Center",
+                "pallet_size_mm": null,
+                "stroke_mm": [
+                    565,
+                    645,
+                    645
+                ],
+                "spindle_speed_rpm": [
+                    3700,
+                    2200
+                ],
+                "number_of_tools": [
+                    40
+                ],
+                "type": "LM #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20240807090815.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=AF-4"
             }
-        ],
-        "applications": "Ideal for mold & die, automotive, and precision parts machining."
+        ]
     },
-    {
-        "id": "hwacheon-hmc-a600-iso50",
-        "brand": "Hwacheon",
-        "name": "A 600 ISO50 Horizontal Machining Center",
-        "category": "machine-tools",
-        "subtitle": "Heavy-duty horizontal machining center",
-        "description": "Hwacheon A 600 ISO50 provides robust performance for heavy-duty applications.",
-        "img": "/64.jpg",
-        "gallery": [
-            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
-        ],
-        "quickSpecs": [
+    "vertical": {
+        "id": "vertical",
+        "products": [
             {
-                "name": "Travel (X/Y/Z)",
-                "value": "560x580x800 mm (22.05x22.83x31.5 inch)"
+                "model": "VESTA-660",
+                "description": "Vertical Machining Center for Parts Machining",
+                "stroke_mm": [
+                    660,
+                    410,
+                    450
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    12000
+                ],
+                "number_of_tools": [
+                    24
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-660"
             },
             {
-                "name": "Spindle Speed",
-                "value": "8K rpm"
+                "model": "VESTA-1000+",
+                "description": "Vertical Machining Center for Parts Machining",
+                "stroke_mm": [
+                    1000,
+                    600,
+                    635
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    12000
+                ],
+                "number_of_tools": [
+                    24
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20220928044114.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1000+"
             },
             {
-                "name": "Tool Shank",
-                "value": "BT-50, HSK-A100"
+                "model": "VESTA-1300",
+                "description": "Vertical Machining Center for Parts Machining",
+                "stroke_mm": [
+                    1300,
+                    660,
+                    635
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    12000
+                ],
+                "number_of_tools": [
+                    24
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230040942.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1300"
             },
             {
-                "name": "Axis Type",
-                "value": "3-Axis"
+                "model": "VESTA-1650",
+                "description": "Vertical Machining Center for Parts Machining",
+                "stroke_mm": [
+                    1650,
+                    800,
+                    750
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    10000
+                ],
+                "number_of_tools": [
+                    24
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230041153.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1650"
+            },
+            {
+                "model": "VESTA-2000",
+                "description": "Vertical Machining Center for Parts Machining",
+                "stroke_mm": [
+                    2000,
+                    850,
+                    800
+                ],
+                "spindle_speed_rpm": [
+                    6000,
+                    8000
+                ],
+                "number_of_tools": [
+                    24
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230041346.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-2000"
+            },
+            {
+                "model": "VESTA-610D",
+                "description": "Dual Table Vertical Machining Center for Parts Machining",
+                "stroke_mm": [
+                    610,
+                    410,
+                    450
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    12000
+                ],
+                "number_of_tools": [
+                    24
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105030058.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-610D"
+            },
+            {
+                "model": "VESTA-500T",
+                "description": "Twin Spindle Vertical Machining Center",
+                "stroke_mm": [
+                    520,
+                    400,
+                    380
+                ],
+                "spindle_speed_rpm": [
+                    24000,
+                    10000
+                ],
+                "number_of_tools": [
+                    24
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105024851.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-500T"
+            },
+            {
+                "model": "VESTA-650T",
+                "description": "Twin Spindle Vertical Machining Center",
+                "stroke_mm": [
+                    650,
+                    650,
+                    700
+                ],
+                "spindle_speed_rpm": [
+                    12000,
+                    15000
+                ],
+                "number_of_tools": [
+                    16
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210121091630.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-650T"
+            },
+            {
+                "model": "HiREX-4000",
+                "description": "Travelling Column Vertical Machining Center for Parts",
+                "stroke_mm": [
+                    4000,
+                    1600,
+                    800
+                ],
+                "spindle_speed_rpm": [
+                    6000
+                ],
+                "number_of_tools": [
+                    24,
+                    30
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230143500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiREX-4000"
+            },
+            {
+                "model": "HiREX-5000",
+                "description": "Travelling Column Vertical Machining Center for Parts",
+                "stroke_mm": [
+                    5000,
+                    2100,
+                    900
+                ],
+                "spindle_speed_rpm": [
+                    6000
+                ],
+                "number_of_tools": [
+                    40
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230143900.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiREX-5000"
+            },
+            {
+                "model": "HiREX-6000",
+                "description": "Travelling Column Vertical Machining Center for Parts",
+                "stroke_mm": [
+                    6000,
+                    1700,
+                    800
+                ],
+                "spindle_speed_rpm": [
+                    6000
+                ],
+                "number_of_tools": [
+                    40
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230144300.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiREX-6000"
+            },
+            {
+                "model": "L1 1500",
+                "description": "Double Column Vertical Machining Center for Plates",
+                "stroke_mm": [
+                    1500,
+                    660,
+                    635
+                ],
+                "spindle_speed_rpm": [
+                    16000
+                ],
+                "number_of_tools": [
+                    30
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230145000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L1 1500"
+            },
+            {
+                "model": "L1 2500",
+                "description": "Double Column Vertical Machining Center for Plates",
+                "stroke_mm": [
+                    2500,
+                    850,
+                    800
+                ],
+                "spindle_speed_rpm": [
+                    20000
+                ],
+                "number_of_tools": [
+                    60
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230145500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L1 2500"
+            },
+            {
+                "model": "L2 2500",
+                "description": "Double Column Vertical Machining Center for Plates",
+                "stroke_mm": [
+                    2500,
+                    850,
+                    800
+                ],
+                "spindle_speed_rpm": [
+                    20000
+                ],
+                "number_of_tools": [
+                    60
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230146000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L2 2500"
+            },
+            {
+                "model": "L2 3000",
+                "description": "Double Column Vertical Machining Center for Plates",
+                "stroke_mm": [
+                    3000,
+                    1050,
+                    1000
+                ],
+                "spindle_speed_rpm": [
+                    12000
+                ],
+                "number_of_tools": [
+                    60
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230146500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L2 3000"
+            },
+            {
+                "model": "L3 3000",
+                "description": "Double Column Vertical Machining Center for Plates",
+                "stroke_mm": [
+                    3000,
+                    1800,
+                    500
+                ],
+                "spindle_speed_rpm": [
+                    12000
+                ],
+                "number_of_tools": [
+                    60
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230146500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L3_3000"
+            },
+            {
+                "model": "VESTA-850B",
+                "description": "Heavy Duty Vertical Machining Center for Parts Machining",
+                "stroke_mm": [
+                    850,
+                    600,
+                    600
+                ],
+                "spindle_speed_rpm": [
+                    6000,
+                    8000
+                ],
+                "number_of_tools": [
+                    24,
+                    30
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230150000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-850B"
+            },
+            {
+                "model": "VESTA-1050B",
+                "description": "Heavy Duty Vertical Machining Center for Parts Machining",
+                "stroke_mm": [
+                    1050,
+                    600,
+                    600
+                ],
+                "spindle_speed_rpm": [
+                    6000,
+                    8000
+                ],
+                "number_of_tools": [
+                    24,
+                    30
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230150500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1050B"
+            },
+            {
+                "model": "VESTA-1300B",
+                "description": "Heavy Duty Vertical Machining Center for Parts Machining",
+                "stroke_mm": [
+                    1300,
+                    670,
+                    650
+                ],
+                "spindle_speed_rpm": [
+                    6000,
+                    8000,
+                    10000,
+                    12000,
+                    15000
+                ],
+                "number_of_tools": [
+                    24,
+                    30
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230151000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1300B"
+            },
+            {
+                "model": "SIRIUS-650",
+                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "stroke_mm": [
+                    1300,
+                    650,
+                    650
+                ],
+                "spindle_speed_rpm": [
+                    5000,
+                    8000
+                ],
+                "number_of_tools": [
+                    24
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230151500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-650"
+            },
+            {
+                "model": "SIRIUS-850",
+                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "stroke_mm": [
+                    2000,
+                    850,
+                    750
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    12000
+                ],
+                "number_of_tools": [
+                    24
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230152000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-850"
+            },
+            {
+                "model": "SIRIUS-1050",
+                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "stroke_mm": [
+                    2500,
+                    1050,
+                    850
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    12000
+                ],
+                "number_of_tools": [
+                    24
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230152500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1050"
+            },
+            {
+                "model": "SIRIUS-1250",
+                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "stroke_mm": [
+                    2500,
+                    1250,
+                    750
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    12000
+                ],
+                "number_of_tools": [
+                    8,
+                    40
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230153000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1250"
+            },
+            {
+                "model": "SIRIUS-1350",
+                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "stroke_mm": [
+                    2550,
+                    1350,
+                    750
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    12000
+                ],
+                "number_of_tools": [
+                    40,
+                    60
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230153500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1350"
+            },
+            {
+                "model": "SIRIUS-1750",
+                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "stroke_mm": [
+                    3000,
+                    1750,
+                    800
+                ],
+                "spindle_speed_rpm": [
+                    12000,
+                    15000
+                ],
+                "number_of_tools": [
+                    40,
+                    60
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230154000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1750"
+            },
+            {
+                "model": "SIRIUS-2500",
+                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "stroke_mm": [
+                    3100,
+                    2300,
+                    900
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    12000
+                ],
+                "number_of_tools": [
+                    40
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230154500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-2500"
+            },
+            {
+                "model": "UH500",
+                "description": "High-Speed Vertical Machining Center for Die and Mold",
+                "stroke_mm": [
+                    750,
+                    500,
+                    350
+                ],
+                "spindle_speed_rpm": [
+                    20000,
+                    32000
+                ],
+                "number_of_tools": [
+                    24
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230155000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=UH500"
+            },
+            {
+                "model": "SIRIUS-UM+",
+                "description": "High-Speed Vertical Machining Center for Die and Mold",
+                "stroke_mm": [
+                    750,
+                    500,
+                    450
+                ],
+                "spindle_speed_rpm": [
+                    20000,
+                    32000,
+                    45000
+                ],
+                "number_of_tools": [
+                    20,
+                    30,
+                    40,
+                    60
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230155500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UM+"
+            },
+            {
+                "model": "SIRIUS-UZ",
+                "description": "High-Speed Vertical Machining Center for Die and Mold",
+                "stroke_mm": [
+                    1050,
+                    600,
+                    350
+                ],
+                "spindle_speed_rpm": [
+                    12000,
+                    14000,
+                    20000,
+                    24000
+                ],
+                "number_of_tools": [
+                    30,
+                    40
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230160000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UZ"
+            },
+            {
+                "model": "SIRIUS-UL+",
+                "description": "High-Speed Vertical Machining Center for Die and Mold",
+                "stroke_mm": [
+                    1050,
+                    600,
+                    550
+                ],
+                "spindle_speed_rpm": [
+                    12000,
+                    14000,
+                    20000,
+                    24000
+                ],
+                "number_of_tools": [
+                    30,
+                    40
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230160500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UL+"
+            },
+            {
+                "model": "SIRIUS-UX",
+                "description": "High-Speed Vertical Machining Center for Die and Mold",
+                "stroke_mm": [
+                    1500,
+                    750,
+                    650
+                ],
+                "spindle_speed_rpm": [
+                    12000,
+                    15000
+                ],
+                "number_of_tools": [
+                    40,
+                    60
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230161000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UX"
+            },
+            {
+                "model": "SMART Ua STEEL",
+                "description": "Smart Machine for Small Steel Mold",
+                "stroke_mm": [
+                    750,
+                    500,
+                    450
+                ],
+                "spindle_speed_rpm": [
+                    20000,
+                    32000,
+                    45000
+                ],
+                "number_of_tools": [
+                    20,
+                    30,
+                    40,
+                    60
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105031000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SMART_Ua_STEEL"
+            },
+            {
+                "model": "SMART UaX",
+                "description": "Smart Machine for Graphite Electrode",
+                "stroke_mm": [
+                    650,
+                    500,
+                    380
+                ],
+                "spindle_speed_rpm": [
+                    60000
+                ],
+                "number_of_tools": [
+                    20,
+                    30
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105031500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SMART_UaX"
+            },
+            {
+                "model": "Hi-M G1",
+                "description": "Vertical Machining Center For Graphite",
+                "stroke_mm": [
+                    1050,
+                    650,
+                    550
+                ],
+                "spindle_speed_rpm": [
+                    60000
+                ],
+                "number_of_tools": [
+                    30
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105032000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M_G1"
+            },
+            {
+                "model": "Hi-M G1 Pro",
+                "description": "Premium Vertical Machining Center For Graphite",
+                "stroke_mm": [
+                    1050,
+                    650,
+                    550
+                ],
+                "spindle_speed_rpm": [
+                    60000
+                ],
+                "number_of_tools": [
+                    30
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105032500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M G1 Pro"
+            },
+            {
+                "model": "Hi-M G2+",
+                "description": "Vertical Machining Center For Graphite",
+                "stroke_mm": [
+                    1800,
+                    1050,
+                    550
+                ],
+                "spindle_speed_rpm": [
+                    60000
+                ],
+                "number_of_tools": [
+                    40
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105033000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M G2+"
+            },
+            {
+                "model": "HiT-360D",
+                "description": "High Speed Dual Table Tapping Center",
+                "stroke_mm": [
+                    360,
+                    360,
+                    300
+                ],
+                "spindle_speed_rpm": [
+                    20000
+                ],
+                "number_of_tools": [
+                    20
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105033500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-360D"
+            },
+            {
+                "model": "HiT-400",
+                "description": "High Speed Tapping Center",
+                "stroke_mm": [
+                    400,
+                    320,
+                    300
+                ],
+                "spindle_speed_rpm": [
+                    20000
+                ],
+                "number_of_tools": [
+                    20
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105034000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-400"
+            },
+            {
+                "model": "HiT-400L",
+                "description": "High Speed Tapping Center",
+                "stroke_mm": [
+                    400,
+                    320,
+                    400
+                ],
+                "spindle_speed_rpm": [
+                    20000
+                ],
+                "number_of_tools": [
+                    20
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105034500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-400L"
+            },
+            {
+                "model": "Hi-M760",
+                "description": "Mock-up & Engraving Vertical Machining Center",
+                "stroke_mm": [
+                    760,
+                    510,
+                    510
+                ],
+                "spindle_speed_rpm": [
+                    24000
+                ],
+                "number_of_tools": [
+                    24
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105035000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M760"
+            },
+            {
+                "model": "Hi-M1300",
+                "description": "Mock-up & Engraving Vertical Machining Center",
+                "stroke_mm": [
+                    1300,
+                    760,
+                    600
+                ],
+                "spindle_speed_rpm": [
+                    20000,
+                    24000
+                ],
+                "number_of_tools": [
+                    30
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105035500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M1300"
+            },
+            {
+                "model": "Hi-M1500",
+                "description": "Mock-up & Engraving Vertical Machining Center",
+                "stroke_mm": [
+                    1500,
+                    1000,
+                    600
+                ],
+                "spindle_speed_rpm": [
+                    20000,
+                    24000
+                ],
+                "number_of_tools": [
+                    30
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105040000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M1500"
+            },
+            {
+                "model": "Hi-M2000",
+                "description": "Mock-up & Engraving Vertical Machining Center",
+                "stroke_mm": [
+                    2000,
+                    1200,
+                    600
+                ],
+                "spindle_speed_rpm": [
+                    20000,
+                    24000
+                ],
+                "number_of_tools": [
+                    40
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105040500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M2000"
+            },
+            {
+                "model": "HMP-3606",
+                "description": "Large-sized Plano Miller",
+                "stroke_mm": [
+                    3600,
+                    3000,
+                    600
+                ],
+                "spindle_speed_rpm": [
+                    3000,
+                    6000
+                ],
+                "number_of_tools": [
+                    40
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105041000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HMP-3606"
+            },
+            {
+                "model": "HMP-3710",
+                "description": "Large-sized Plano Miller",
+                "stroke_mm": [
+                    3700,
+                    5000,
+                    1000
+                ],
+                "spindle_speed_rpm": [
+                    3000,
+                    6000
+                ],
+                "number_of_tools": [
+                    60
+                ],
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105041500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HMP-3710"
             }
-        ],
-        "applications": "Suitable for heavy-duty mold & die, aerospace, and automotive parts."
-    },
-    {
-        "id": "hwacheon-hmc-h6",
-        "brand": "Hwacheon",
-        "name": "H6 Horizontal Machining Center",
-        "category": "machine-tools",
-        "subtitle": "High-productivity horizontal machining center",
-        "description": "Hwacheon H6 delivers high productivity and precision for large workpieces.",
-        "img": "/64.jpg",
-        "gallery": [
-            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
-        ],
-        "quickSpecs": [
-            {
-                "name": "Travel (X/Y/Z)",
-                "value": "1050x900x1000 mm (41.34x35.43x39.37 inch)"
-            },
-            {
-                "name": "Spindle Speed",
-                "value": "8K, 12K rpm"
-            },
-            {
-                "name": "Tool Shank",
-                "value": "BBT-50, CAT-50, HSK-A100"
-            },
-            {
-                "name": "Axis Type",
-                "value": "3-Axis"
-            }
-        ],
-        "applications": "Perfect for large mold & die, automotive, and aerospace components."
-    },
-    {
-        "id": "hwacheon-hmc-h8",
-        "brand": "Hwacheon",
-        "name": "H8 Horizontal Machining Center",
-        "category": "machine-tools",
-        "subtitle": "Extreme rigidity horizontal machining center",
-        "description": "Hwacheon H8 offers extreme rigidity and high-speed machining for large parts.",
-        "img": "/64.jpg",
-        "gallery": [
-            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
-        ],
-        "quickSpecs": [
-            {
-                "name": "Travel (X/Y/Z)",
-                "value": "1400x1150x1250 mm (55.12x45.28x49.21 inch)"
-            },
-            {
-                "name": "Spindle Speed",
-                "value": "8K, 12K rpm"
-            },
-            {
-                "name": "Tool Shank",
-                "value": "BBT-50, CAT-50, HSK-A100"
-            },
-            {
-                "name": "Axis Type",
-                "value": "3-Axis"
-            }
-        ],
-        "applications": "Ideal for large mold & die, aerospace, and heavy-duty parts."
-    },
-    {
-        "id": "hwacheon-hmc-af16",
-        "brand": "Hwacheon",
-        "name": "AF-16 Horizontal Machining Center",
-        "category": "machine-tools",
-        "subtitle": "High-accuracy horizontal machining center",
-        "description": "Hwacheon AF-16 provides high accuracy and flexibility for large workpieces.",
-        "img": "/64.jpg",
-        "gallery": [
-            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
-        ],
-        "quickSpecs": [
-            {
-                "name": "Travel (X/Y/Z)",
-                "value": "2600x1600x1500 mm (102.36x62.99x59.06 inch)"
-            },
-            {
-                "name": "Spindle Speed",
-                "value": "3K, 8K, 12K rpm"
-            },
-            {
-                "name": "Tool Shank",
-                "value": "BBT-50, CAT-50"
-            },
-            {
-                "name": "Axis Type",
-                "value": "3-Axis"
-            }
-        ],
-        "applications": "Suitable for large mold & die, aerospace, and automotive parts."
-    },
-    {
-        "id": "hwacheon-vmc-sirius-um",
-        "brand": "Hwacheon",
-        "name": "SIRIUS-UM Vertical Machining Center",
-        "category": "machine-tools",
-        "subtitle": "High-precision vertical machining center",
-        "description": "Hwacheon SIRIUS-UM offers high precision and rigidity for mold & die applications.",
-        "img": "/64.jpg",
-        "gallery": [
-            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
-        ],
-        "quickSpecs": [
-            {
-                "name": "Travel (X/Y/Z)",
-                "value": "750x500x450 mm (29.53x19.69x17.72 inch)"
-            },
-            {
-                "name": "Spindle Speed",
-                "value": "20K, 32K rpm"
-            },
-            {
-                "name": "Tool Shank",
-                "value": "BBT-40, CAT-40, HSK-A63, HSK-E40"
-            },
-            {
-                "name": "Axis Type",
-                "value": "3-Axis"
-            }
-        ],
-        "applications": "Ideal for mold & die, automotive, and precision parts."
-    },
-    {
-        "id": "hwacheon-vmc-sirius-uz",
-        "brand": "Hwacheon",
-        "name": "SIRIUS-UZ Vertical Machining Center",
-        "category": "machine-tools",
-        "subtitle": "Magnetic table vertical machining center",
-        "description": "Hwacheon SIRIUS-UZ features a magnetic table for enhanced workpiece holding.",
-        "img": "/64.jpg",
-        "gallery": [
-            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
-        ],
-        "quickSpecs": [
-            {
-                "name": "Travel (X/Y/Z)",
-                "value": "1050x600x350 mm (41.34x23.62x13.78 inch)"
-            },
-            {
-                "name": "Spindle Speed",
-                "value": "20K, 12K, 14K, 24K rpm"
-            },
-            {
-                "name": "Tool Shank",
-                "value": "BBT-40, CAT-40, HSK-A63, SK-40"
-            },
-            {
-                "name": "Axis Type",
-                "value": "3-Axis"
-            }
-        ],
-        "applications": "Perfect for mold & die, automotive, and precision parts."
-    },
-    {
-        "id": "hwacheon-vmc-sirius-ul",
-        "brand": "Hwacheon",
-        "name": "SIRIUS-UL Vertical Machining Center",
-        "category": "machine-tools",
-        "subtitle": "High-precision vertical machining center",
-        "description": "Hwacheon SIRIUS-UL offers high precision and rigidity for mold & die applications.",
-        "img": "/64.jpg",
-        "gallery": [
-            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
-        ],
-        "quickSpecs": [
-            {
-                "name": "Travel (X/Y/Z)",
-                "value": "1050x600x550 mm (41.34x23.62x21.65 inch)"
-            },
-            {
-                "name": "Spindle Speed",
-                "value": "20K, 12K, 14K, 24K rpm"
-            },
-            {
-                "name": "Tool Shank",
-                "value": "BBT-40, CAT-40, HSK-A63, SK-40"
-            },
-            {
-                "name": "Axis Type",
-                "value": "3-Axis"
-            }
-        ],
-        "applications": "Ideal for mold & die, automotive, and precision parts."
-    },
-    {
-        "id": "hwacheon-vmc-sirius-ux",
-        "brand": "Hwacheon",
-        "name": "SIRIUS-UX Vertical Machining Center",
-        "category": "machine-tools",
-        "subtitle": "High-precision vertical machining center",
-        "description": "Hwacheon SIRIUS-UX offers high precision and rigidity for mold & die applications.",
-        "img": "/64.jpg",
-        "gallery": [
-            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
-        ],
-        "quickSpecs": [
-            {
-                "name": "Travel (X/Y/Z)",
-                "value": "1500x750x650 mm (59.06x29.53x25.59 inch)"
-            },
-            {
-                "name": "Spindle Speed",
-                "value": "12K, 15K rpm"
-            },
-            {
-                "name": "Tool Shank",
-                "value": "BBT-50, CAT-50"
-            },
-            {
-                "name": "Axis Type",
-                "value": "3-Axis"
-            }
-        ],
-        "applications": "Ideal for mold & die, automotive, and precision parts."
-    },
-    {
-        "id": "hwacheon-vmc-sirius-850",
-        "brand": "Hwacheon",
-        "name": "SIRIUS-850 Vertical Machining Center",
-        "category": "machine-tools",
-        "subtitle": "High-precision vertical machining center",
-        "description": "Hwacheon SIRIUS-850 offers high precision and rigidity for mold & die applications.",
-        "img": "/64.jpg",
-        "gallery": [
-            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
-        ],
-        "quickSpecs": [
-            {
-                "name": "Travel (X/Y/Z)",
-                "value": "2000x850x750 mm (78.74x33.47x29.53 inch)"
-            },
-            {
-                "name": "Spindle Speed",
-                "value": "8K, 12K rpm"
-            },
-            {
-                "name": "Tool Shank",
-                "value": "BBT-50, CAT-50"
-            },
-            {
-                "name": "Axis Type",
-                "value": "3-Axis"
-            }
-        ],
-        "applications": "Ideal for mold & die, automotive, and precision parts."
-    },
-    {
-        "id": "hwacheon-vmc-sirius-1050",
-        "brand": "Hwacheon",
-        "name": "SIRIUS-1050 Vertical Machining Center",
-        "category": "machine-tools",
-        "subtitle": "High-precision vertical machining center",
-        "description": "Hwacheon SIRIUS-1050 offers high precision and rigidity for mold & die applications.",
-        "img": "/64.jpg",
-        "gallery": [
-            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
-        ],
-        "quickSpecs": [
-            {
-                "name": "Travel (X/Y/Z)",
-                "value": "2500x1050x850 mm (98.43x41.34x33.47 inch)"
-            },
-            {
-                "name": "Spindle Speed",
-                "value": "8K, 12K rpm"
-            },
-            {
-                "name": "Tool Shank",
-                "value": "BBT-50, CAT-50"
-            },
-            {
-                "name": "Axis Type",
-                "value": "3-Axis"
-            }
-        ],
-        "applications": "Ideal for mold & die, automotive, and precision parts."
-    },
-    {
-        "id": "hwacheon-vmc-sirius-1350",
-        "brand": "Hwacheon",
-        "name": "SIRIUS-1350 Vertical Machining Center",
-        "category": "machine-tools",
-        "subtitle": "High-precision vertical machining center",
-        "description": "Hwacheon SIRIUS-1350 offers high precision and rigidity for mold & die applications.",
-        "img": "/64.jpg",
-        "gallery": [
-            "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-            "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=800&q=80"
-        ],
-        "quickSpecs": [
-            {
-                "name": "Travel (X/Y/Z)",
-                "value": "2500x1350x750 mm (98.43x53.15x29.53 inch)"
-            },
-            {
-                "name": "Spindle Speed",
-                "value": "8K, 12K rpm"
-            },
-            {
-                "name": "Tool Shank",
-                "value": "BBT-50, CAT-50, HSK-100, SK-50"
-            },
-            {
-                "name": "Axis Type",
-                "value": "3-Axis"
-            }
-        ],
-        "applications": "Ideal for mold & die, automotive, and precision parts."
+        ]
     }
-]
+}

@@ -1,0 +1,652 @@
+{
+    "horizontal_turning": {
+        "id": "horizontal_turning",
+        "category": "Horizontal Turning Centers",
+        "products": [
+            {
+                "model": "CUTEX-160",
+                "description": "6\" / 8\" Standard Horizontal Turning Center",
+                "chuck_size_inch": [
+                    6,
+                    8
+                ],
+                "max_turning_diameter_mm": 300,
+                "max_turning_length_mm": 300,
+                "spindle_speed_rpm": [
+                    6000,
+                    4500
+                ],
+                "spindle_motor_kw": [
+                    11,
+                    7.5
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 170,
+                "stroke_z_mm": 335,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230050000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=CUTEX-160"
+            },
+            {
+                "model": "CUTEX-180",
+                "description": "6\" / 8\" Standard Horizontal Turning Center with Improved Specifications",
+                "chuck_size_inch": [
+                    6,
+                    8
+                ],
+                "max_turning_diameter_mm": 350,
+                "max_turning_length_mm": 528,
+                "spindle_speed_rpm": [
+                    6000
+                ],
+                "spindle_motor_kw": [
+                    15,
+                    11
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 220,
+                "stroke_z_mm": 580,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230050500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=CUTEX-180"
+            },
+            {
+                "model": "CUTEX-240",
+                "description": "8\" / 10\" Standard Horizontal Turning Center",
+                "chuck_size_inch": [
+                    8,
+                    10
+                ],
+                "max_turning_diameter_mm": 380,
+                "max_turning_length_mm": 600,
+                "spindle_speed_rpm": [
+                    5000
+                ],
+                "spindle_motor_kw": [
+                    18.5,
+                    15
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 280,
+                "stroke_z_mm": 670,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230051000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=CUTEX-240"
+            },
+            {
+                "model": "Hi-TECH 200",
+                "description": "8\" / 10\" Heavy Duty Horizontal Turning Center",
+                "chuck_size_inch": [
+                    8,
+                    10
+                ],
+                "max_turning_diameter_mm": 360,
+                "max_turning_length_mm": 560,
+                "spindle_speed_rpm": [
+                    4500
+                ],
+                "spindle_motor_kw": [
+                    18.5,
+                    15
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 260,
+                "stroke_z_mm": 610,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230051500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-TECH_200"
+            },
+            {
+                "model": "Hi-TECH 230",
+                "description": "8\" / 10\" Heavy Duty Horizontal Turning Center with Improved Specifications",
+                "chuck_size_inch": [
+                    8,
+                    10
+                ],
+                "max_turning_diameter_mm": 400,
+                "max_turning_length_mm": 710,
+                "spindle_speed_rpm": [
+                    4500
+                ],
+                "spindle_motor_kw": [
+                    22,
+                    18.5
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 290,
+                "stroke_z_mm": 760,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230052000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-TECH_230"
+            },
+            {
+                "model": "Hi-TECH 350",
+                "description": "Y-axis standard, 8\"/10\" Heavy Duty Horizontal Turning Center",
+                "chuck_size_inch": [
+                    8,
+                    10
+                ],
+                "max_turning_diameter_mm": 450,
+                "max_turning_length_mm": 820,
+                "spindle_speed_rpm": [
+                    4000
+                ],
+                "spindle_motor_kw": [
+                    26,
+                    22
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 325,
+                "stroke_z_mm": 870,
+                "y_axis": true,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230052500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-TECH_350"
+            },
+            {
+                "model": "Hi-TECH 450",
+                "description": "10\"/12\"/15\" Heavy Duty Horizontal Turning Center",
+                "chuck_size_inch": [
+                    10,
+                    12,
+                    15
+                ],
+                "max_turning_diameter_mm": 500,
+                "max_turning_length_mm": 760,
+                "spindle_speed_rpm": [
+                    3500,
+                    2500,
+                    1800
+                ],
+                "spindle_motor_kw": [
+                    37,
+                    30
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 360,
+                "stroke_z_mm": 810,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230053000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-TECH_450"
+            },
+            {
+                "model": "Hi-TECH 550",
+                "description": "15\"/18\" Heavy Duty Horizontal Turning Center",
+                "chuck_size_inch": [
+                    15,
+                    18
+                ],
+                "max_turning_diameter_mm": 590,
+                "max_turning_length_mm": 1100,
+                "spindle_speed_rpm": [
+                    2000,
+                    1800
+                ],
+                "spindle_motor_kw": [
+                    45,
+                    37
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 415,
+                "stroke_z_mm": 1150,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230053500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-TECH_550"
+            },
+            {
+                "model": "Hi-TECH 700",
+                "description": "15\" Heavy Duty Horizontal Turning Center",
+                "chuck_size_inch": [
+                    15
+                ],
+                "max_turning_diameter_mm": 680,
+                "max_turning_length_mm": 1986,
+                "spindle_speed_rpm": [
+                    1800
+                ],
+                "spindle_motor_kw": [
+                    45,
+                    37
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 490,
+                "stroke_z_mm": 2036,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230054000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-TECH_700"
+            },
+            {
+                "model": "Hi-TECH 550BB",
+                "description": "15\"/18\" Big Bore Heavy Duty Horizontal Turning Center",
+                "chuck_size_inch": [
+                    15,
+                    18
+                ],
+                "max_turning_diameter_mm": 590,
+                "max_turning_length_mm": 1100,
+                "spindle_speed_rpm": [
+                    1600
+                ],
+                "spindle_motor_kw": [
+                    45,
+                    37
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 415,
+                "stroke_z_mm": 1150,
+                "big_bore": true,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230054500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-TECH_550BB"
+            },
+            {
+                "model": "Hi-TECH 700BB/BB+",
+                "description": "15\" Big Bore Heavy Duty Horizontal Turning Center",
+                "chuck_size_inch": [
+                    15
+                ],
+                "max_turning_diameter_mm": 680,
+                "max_turning_length_mm": 1720,
+                "spindle_speed_rpm": [
+                    1300
+                ],
+                "spindle_motor_kw": [
+                    45,
+                    37
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 490,
+                "stroke_z_mm": 1770,
+                "big_bore": true,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230055000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-TECH_700BB_BB+"
+            },
+            {
+                "model": "Hi-TECH 750",
+                "description": "15\"/18\"/21\"/24\" Heavy Duty Horizontal Turning Center",
+                "chuck_size_inch": [
+                    15,
+                    18,
+                    21,
+                    24
+                ],
+                "max_turning_diameter_mm": 780,
+                "max_turning_length_mm": 2500,
+                "spindle_speed_rpm": [
+                    1500,
+                    1200,
+                    1000
+                ],
+                "spindle_motor_kw": [
+                    55,
+                    45
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 540,
+                "stroke_z_mm": 2550,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230055500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-TECH_750"
+            },
+            {
+                "model": "Hi-TECH 850",
+                "description": "24\" / 32\" Heavy Duty Horizontal Turning Center",
+                "chuck_size_inch": [
+                    24,
+                    32
+                ],
+                "max_turning_diameter_mm": 920,
+                "max_turning_length_mm": 2500,
+                "spindle_speed_rpm": [
+                    1500
+                ],
+                "spindle_motor_kw": [
+                    75,
+                    55
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 610,
+                "stroke_z_mm": 2550,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230060000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-TECH_850"
+            },
+            {
+                "model": "Hi-TECH 650",
+                "description": "15\" / 18\" / 21\" Heavy Duty Horizontal Turning Center",
+                "chuck_size_inch": [
+                    15,
+                    18,
+                    21
+                ],
+                "max_turning_diameter_mm": 680,
+                "max_turning_length_mm": 1550,
+                "spindle_speed_rpm": [
+                    2000,
+                    1600
+                ],
+                "spindle_motor_kw": [
+                    45,
+                    37
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 490,
+                "stroke_z_mm": 1600,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230060500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-TECH 650"
+            },
+            {
+                "model": "Hi-TECH 850BB/BB+",
+                "description": "24\" / 32\" Big Bore Heavy Duty Horizontal Turning Center",
+                "chuck_size_inch": [
+                    24,
+                    32
+                ],
+                "max_turning_diameter_mm": 920,
+                "max_turning_length_mm": 2380,
+                "spindle_speed_rpm": [
+                    1000
+                ],
+                "spindle_motor_kw": [
+                    75,
+                    55
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 610,
+                "stroke_z_mm": 2430,
+                "big_bore": true,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230061000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-TECH_850BB_BB+"
+            },
+            {
+                "model": "C1",
+                "description": "6\" / 8\" Multiplex Horizontal Turning Center with Magazine",
+                "chuck_size_inch": [
+                    6,
+                    8
+                ],
+                "max_turning_diameter_mm": 300,
+                "max_turning_length_mm": 300,
+                "spindle_speed_rpm": [
+                    6000
+                ],
+                "spindle_motor_kw": [
+                    11,
+                    7.5
+                ],
+                "number_of_tools": 24,
+                "stroke_x_mm": 170,
+                "stroke_z_mm": 335,
+                "tool_magazine": true,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230061500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=C1"
+            },
+            {
+                "model": "C2",
+                "description": "8\" / 10\" Multiplex Horizontal Turning Center with Magazine",
+                "chuck_size_inch": [
+                    8,
+                    10
+                ],
+                "max_turning_diameter_mm": 400,
+                "max_turning_length_mm": 710,
+                "spindle_speed_rpm": [
+                    4500
+                ],
+                "spindle_motor_kw": [
+                    22,
+                    18.5
+                ],
+                "number_of_tools": 24,
+                "stroke_x_mm": 290,
+                "stroke_z_mm": 760,
+                "tool_magazine": true,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230062000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=C2"
+            },
+            {
+                "model": "T2",
+                "description": "8\" Multiplex Horizontal Turning Center with Twin Turret",
+                "chuck_size_inch": [
+                    8
+                ],
+                "max_turning_diameter_mm": 360,
+                "max_turning_length_mm": 560,
+                "spindle_speed_rpm": [
+                    4500
+                ],
+                "spindle_motor_kw": [
+                    18.5,
+                    15
+                ],
+                "number_of_tools": 24,
+                "stroke_x_mm": 260,
+                "stroke_z_mm": 610,
+                "twin_turret": true,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230062500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=T2"
+            },
+            {
+                "model": "TTC-10",
+                "description": "10\" Twin Spindle Turning Center",
+                "chuck_size_inch": [
+                    10
+                ],
+                "max_turning_diameter_mm": 380,
+                "max_turning_length_mm": 600,
+                "spindle_speed_rpm": [
+                    5000
+                ],
+                "spindle_motor_kw": [
+                    22,
+                    18.5
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 280,
+                "stroke_z_mm": 670,
+                "twin_spindle": true,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230063000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=TTC-10"
+            }
+        ]
+    },
+    "vertical_turning": {
+        "id": "vertical_turning",
+        "category": "Vertical Turning Centers",
+        "products": [
+            {
+                "model": "VT-450",
+                "description": "Heavy Duty Vertical Turning Center",
+                "max_turning_diameter_mm": 460,
+                "chuck_diameter_mm": 305,
+                "chuck_size_inch": 12,
+                "max_cutting_height_mm": 500,
+                "spindle_speed_rpm": [
+                    800,
+                    1000
+                ],
+                "spindle_motor_kw": [
+                    22,
+                    18.5
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 325,
+                "stroke_z_mm": 550,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230063500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-450"
+            },
+            {
+                "model": "VT-550",
+                "description": "Heavy Duty Vertical Turning Center",
+                "max_turning_diameter_mm": 650,
+                "chuck_diameter_mm": 355,
+                "chuck_size_inch": 14,
+                "max_cutting_height_mm": 600,
+                "spindle_speed_rpm": [
+                    800,
+                    1000
+                ],
+                "spindle_motor_kw": [
+                    30,
+                    22
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 425,
+                "stroke_z_mm": 650,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230064000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-550"
+            },
+            {
+                "model": "VT-650",
+                "description": "Heavy Duty Vertical Turning Center",
+                "max_turning_diameter_mm": 800,
+                "chuck_diameter_mm": 450,
+                "chuck_size_inch": 18,
+                "max_cutting_height_mm": 700,
+                "spindle_speed_rpm": [
+                    800,
+                    1000
+                ],
+                "spindle_motor_kw": [
+                    37,
+                    30
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 500,
+                "stroke_z_mm": 750,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230064500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-650"
+            },
+            {
+                "model": "VT-950+",
+                "description": "Heavy Duty Vertical Turning Center",
+                "max_turning_diameter_mm": 950,
+                "chuck_diameter_mm": [
+                    600,
+                    630,
+                    800
+                ],
+                "chuck_size_inch": [
+                    24,
+                    25,
+                    32
+                ],
+                "max_cutting_height_mm": 850,
+                "spindle_speed_rpm": [
+                    630,
+                    800
+                ],
+                "spindle_motor_kw": [
+                    45,
+                    37
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 600,
+                "stroke_z_mm": 900,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230065000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-950+"
+            },
+            {
+                "model": "VT-650Y",
+                "description": "Heavy Duty Vertical Turning Center with Y-Axis",
+                "max_turning_diameter_mm": 800,
+                "chuck_diameter_mm": 450,
+                "chuck_size_inch": 18,
+                "max_cutting_height_mm": 700,
+                "spindle_speed_rpm": [
+                    800,
+                    1000
+                ],
+                "spindle_motor_kw": [
+                    37,
+                    30
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 500,
+                "stroke_y_mm": 200,
+                "stroke_z_mm": 750,
+                "y_axis": true,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230065500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-650Y"
+            },
+            {
+                "model": "VT-1150+",
+                "description": "Heavy Duty Vertical Turning Center",
+                "max_turning_diameter_mm": 1150,
+                "chuck_diameter_mm": [
+                    800,
+                    1000
+                ],
+                "chuck_size_inch": [
+                    32,
+                    40
+                ],
+                "max_cutting_height_mm": 950,
+                "spindle_speed_rpm": [
+                    500,
+                    630
+                ],
+                "spindle_motor_kw": [
+                    55,
+                    45
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 700,
+                "stroke_z_mm": 1000,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230070000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-1150+"
+            },
+            {
+                "model": "VT-2000",
+                "description": "Heavy Duty Large Vertical Turning Center",
+                "max_turning_diameter_mm": 2000,
+                "chuck_diameter_mm": 1250,
+                "chuck_size_inch": 50,
+                "max_cutting_height_mm": 1250,
+                "spindle_speed_rpm": [
+                    400,
+                    500
+                ],
+                "spindle_motor_kw": [
+                    75,
+                    55
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 1150,
+                "stroke_z_mm": 1300,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230070500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-2000"
+            },
+            {
+                "model": "VT-3000",
+                "description": "Heavy Duty Large Vertical Turning Center",
+                "max_turning_diameter_mm": 3000,
+                "chuck_diameter_mm": 1600,
+                "chuck_size_inch": 63,
+                "max_cutting_height_mm": 1600,
+                "spindle_speed_rpm": [
+                    315,
+                    400
+                ],
+                "spindle_motor_kw": [
+                    90,
+                    75
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 1650,
+                "stroke_z_mm": 1650,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230071000.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-3000"
+            },
+            {
+                "model": "VT-4500",
+                "description": "Heavy Duty Large Vertical Turning Center",
+                "max_turning_diameter_mm": 4500,
+                "chuck_diameter_mm": 2032,
+                "chuck_size_inch": 80,
+                "max_cutting_height_mm": 2000,
+                "spindle_speed_rpm": [
+                    250,
+                    315
+                ],
+                "spindle_motor_kw": [
+                    110,
+                    90
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 2400,
+                "stroke_z_mm": 2050,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230071500.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-4500"
+            }
+        ]
+    }
+}

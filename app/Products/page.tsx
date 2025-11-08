@@ -34,7 +34,7 @@ export default function ProductsPage() {
 
 	const products = [
 		{
-			id: "hwacheon-horizontal-turning",
+			id: "turning-centers",
 			name: "Turning Centers",
 			category: "machine-tools",
 			description:

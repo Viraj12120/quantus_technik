@@ -124,11 +124,35 @@ html {
 	scroll-behavior: smooth;
 }
 html {
-  overflow-y: scroll; 
+	overflow-y: scroll;
 }
 
 .racing-sans-one-regular {
-  font-family: "Racing Sans One", sans-serif;
-  font-weight: 1000;
-  font-style: italic;
+	font-family: "Racing Sans One", sans-serif;
+	font-weight: 1000;
+	font-style: italic;
+}
+
+.nav-link {
+	position: relative;
+	padding-bottom: 4px;
+}
+
+.nav-link::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 0%;
+	background: #2563eb; /* Blue-600 */
+	transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+	width: 100%;
+}
+
+.nav-link.active::after {
+	width: 100%;
 }
