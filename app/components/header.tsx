@@ -32,7 +32,7 @@ export default function Header() {
 		{ name: "About Us", href: "/About" },
 		{ name: "Industries We Serve", href: "/Industries" },
 		{ name: "Contact Us", href: "/Contact" },
-		{ name: "Offers and Promotions", href: "/Offers" },
+		{ name: "Offers and Deals", href: "/Offers" },
 	];
 
 	const productCategories = [
