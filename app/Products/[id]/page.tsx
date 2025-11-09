@@ -231,7 +231,7 @@ export default function ProductDetailPage() {
 						<span className="text-gray-400">{getSubCategoryTitle()}</span>
 					</h1>
 					<p className="text-xl text-gray-300 max-w-3xl">
-						{heroProduct?.desc}
+						{heroProduct?.description}
 					</p>
 				</div>
 			</section>
