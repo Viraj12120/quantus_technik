@@ -31,8 +31,8 @@ export default function AboutUs() {
 	];
 
 	return (
-		<section className="bg-white text-gray-800">
-			<div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-24 space-y-32">
+		<section className="bg-white  text-gray-800">
+			<div className="w-full mx-auto lg:px-24 px-6 sm:px-8 lg:px-12 py-24 space-y-32">
 				{/* Hero Section */}
 				<div className="relative text-center space-y-5">
 					<h1 className="text-4xl md:text-6xl font-extrabold text-gray-900">

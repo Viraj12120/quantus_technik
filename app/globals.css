@@ -156,3 +156,17 @@ html {
 .nav-link.active::after {
 	width: 100%;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar but allow scrolling */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}

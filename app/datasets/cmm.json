@@ -1,0 +1,340 @@
+{
+    "measuring_machines": {
+        "id": "measuring_machines",
+        "category": "Co-ordinate Measuring Machines (CMM)",
+        "brand": "Wenzel",
+        "subcategories": {
+            "3d_cmm": {
+                "id": "3d_cmm",
+                "name": "3D Coordinate Measuring Machine (Wenzel)",
+                "description": "Functional, efficient, and flexible measuring machines with intuitive operation, delivering precision and maximum measurement reliability.",
+                "series": "LH Series",
+                "typical_specs": {
+                    "precision": "up to 0.7 µm",
+                    "accuracy_guarantee": "12 years",
+                    "guide_system": "Air-bearing guideways",
+                    "lifespan": "> 15 years",
+                    "features": [
+                        "High mechanical accuracy",
+                        "Ergonomic design",
+                        "Incremental measuring system",
+                        "Temperature compensation",
+                        "Multi-sensor capable"
+                    ]
+                },
+                "products": [
+                    {
+                        "model": "LH 65",
+                        "description": "Universal coordinate measuring machine for various applications",
+                        "measuring_range_mm": [
+                            650,
+                            1000,
+                            500
+                        ],
+                        "accuracy_class": [
+                            "Standard",
+                            "Premium",
+                            "Premium Select"
+                        ],
+                        "applications": "Small to medium parts",
+                        "image": "https://www.wenzel-group.com/assets/images/products/lh-65.jpg",
+                        "detail_url": "https://www.wenzel-group.com/en/products/lh-65"
+                    },
+                    {
+                        "model": "LH 87",
+                        "description": "Medium-sized CMM with excellent precision and flexibility",
+                        "measuring_range_mm": [
+                            800,
+                            700,
+                            700
+                        ],
+                        "accuracy_class": [
+                            "Standard",
+                            "Premium",
+                            "Premium Select"
+                        ],
+                        "applications": "Medium parts, universal use",
+                        "image": "https://www.wenzel-group.com/assets/images/products/lh-87.jpg",
+                        "detail_url": "https://www.wenzel-group.com/en/products/lh-87"
+                    },
+                    {
+                        "model": "LH 108",
+                        "description": "Large capacity CMM for high throughput applications",
+                        "measuring_range_mm": [
+                            1000,
+                            800,
+                            800
+                        ],
+                        "accuracy_class": [
+                            "Standard",
+                            "Premium",
+                            "Premium Select"
+                        ],
+                        "applications": "Large parts, high accuracy",
+                        "image": "https://www.wenzel-group.com/assets/images/products/lh-108.jpg",
+                        "detail_url": "https://www.wenzel-group.com/en/products/lh-108"
+                    },
+                    {
+                        "model": "LH 1210",
+                        "description": "Extra-large CMM for heavy industrial components",
+                        "measuring_range_mm": [
+                            1200,
+                            1000,
+                            1000
+                        ],
+                        "accuracy_class": [
+                            "Standard",
+                            "Premium",
+                            "Premium Select"
+                        ],
+                        "applications": "Extra-large parts",
+                        "image": "https://www.wenzel-group.com/assets/images/products/lh-1210.jpg",
+                        "detail_url": "https://www.wenzel-group.com/en/products/lh-1210"
+                    },
+                    {
+                        "model": "LH 1512",
+                        "description": "Ultra-large precision CMM with active damping",
+                        "measuring_range_mm": [
+                            1500,
+                            1200,
+                            1200
+                        ],
+                        "accuracy_class": [
+                            "Standard",
+                            "Premium",
+                            "Premium Select"
+                        ],
+                        "applications": "Very large parts, aerospace",
+                        "features": [
+                            "Active damping",
+                            "Automatic temperature compensation"
+                        ],
+                        "image": "https://www.wenzel-group.com/assets/images/products/lh-1512.jpg",
+                        "detail_url": "https://www.wenzel-group.com/en/products/lh-1512"
+                    },
+                    {
+                        "model": "LHF Series",
+                        "description": "Moving bridge design for high accuracy inspection of very large and heavy parts",
+                        "measuring_range_mm": "Custom configurations",
+                        "design": "Moving bridge / Gantry",
+                        "applications": "Extra-large, heavy components",
+                        "image": "https://www.wenzel-group.com/assets/images/products/lhf-series.jpg",
+                        "detail_url": "https://www.wenzel-group.com/en/products/lhf-series"
+                    }
+                ]
+            },
+            "shopfloor_cmm": {
+                "id": "shopfloor_cmm",
+                "name": "Shop-floor Measuring Machine (Wenzel)",
+                "description": "Workshop-ready measuring machines designed for production environment with reduced temperature and dirt dependence.",
+                "series": "SF Series",
+                "typical_specs": {
+                    "application": "Production environment, incoming goods, quality assurance",
+                    "temperature_range": "Extended (15-30°C)",
+                    "construction": "Granite base with covered guideways",
+                    "features": [
+                        "Compact and intelligent design",
+                        "Temperature-independent measurements",
+                        "Best measurement volume to floor space ratio",
+                        "High efficiency and reliability",
+                        "Passive/active vibration damping",
+                        "Multi-sensor capable"
+                    ]
+                },
+                "products": [
+                    {
+                        "model": "SF 55",
+                        "description": "Smallest shop floor CMM characterized by high efficiency and reliability",
+                        "measuring_range_mm": [
+                            550,
+                            500,
+                            500
+                        ],
+                        "max_part_weight_kg": 400,
+                        "space_requirement_mm": [
+                            1800,
+                            1400,
+                            2400
+                        ],
+                        "damping": "Passive standard, active optional",
+                        "applications": "Small parts, series measurement",
+                        "image": "https://www.wenzel-group.com/assets/images/products/sf-55.jpg",
+                        "detail_url": "https://www.wenzel-group.com/en/products/sf-55"
+                    },
+                    {
+                        "model": "SF 87",
+                        "description": "Award-winning model offering best measurement volume to floor space ratio",
+                        "measuring_range_mm": [
+                            800,
+                            700,
+                            700
+                        ],
+                        "max_part_weight_kg": 800,
+                        "space_requirement_mm": [
+                            2300,
+                            1700,
+                            2700
+                        ],
+                        "damping": "Passive standard, active optional",
+                        "applications": "Medium parts, machining industry",
+                        "features": [
+                            "Portable with pallet truck",
+                            "REVO 5-axis compatible"
+                        ],
+                        "image": "https://www.wenzel-group.com/assets/images/products/sf-87.jpg",
+                        "detail_url": "https://www.wenzel-group.com/en/products/sf-87"
+                    },
+                    {
+                        "model": "SF 1210",
+                        "description": "Enormous measurement volume with short measurement times and good accessibility",
+                        "measuring_range_mm": [
+                            1200,
+                            1500,
+                            1000
+                        ],
+                        "max_part_weight_kg": 1000,
+                        "space_requirement_mm": [
+                            2976,
+                            2302,
+                            3928
+                        ],
+                        "net_weight_kg": 6655,
+                        "damping": "Active optional",
+                        "applications": "Large parts, castings, chassis parts",
+                        "features": [
+                            "Double drive Y-axis",
+                            "4-side accessibility",
+                            "Automation ready"
+                        ],
+                        "image": "https://www.wenzel-group.com/assets/images/products/sf-1210.jpg",
+                        "detail_url": "https://www.wenzel-group.com/en/products/sf-1210"
+                    }
+                ]
+            },
+            "gear_measuring": {
+                "id": "gear_measuring",
+                "name": "Measuring Machine for Gears & Shafts (Wenzel)",
+                "description": "Specialized measuring machines for demanding gear testing and rotationally symmetrical components with tactile and optical measurement.",
+                "series": "GT Series, LH with Rotary Table",
+                "typical_specs": {
+                    "measurement_type": "4-axis measurement",
+                    "features": [
+                        "Tactile and optical measurement",
+                        "Precise 4-axis measurement",
+                        "Standard WPC controller",
+                        "Versatile for gears and prismatic components",
+                        "Gear-specific software"
+                    ]
+                },
+                "products": [
+                    {
+                        "model": "GT Series",
+                        "description": "Specialized gear measuring machines with new WENZEL software",
+                        "measurement_types": [
+                            "Involute",
+                            "Helix",
+                            "Pitch",
+                            "Runout"
+                        ],
+                        "applications": "Gear measurement, quality control",
+                        "software": "WM | Gear software",
+                        "image": "https://www.wenzel-group.com/assets/images/products/gt-series.jpg",
+                        "detail_url": "https://www.wenzel-group.com/en/product-category/gear-measuring-devices"
+                    },
+                    {
+                        "model": "LH with Rotary Table",
+                        "description": "CMM configured with integrated rotary table for 4-axis measurement",
+                        "measurement_axes": 4,
+                        "rotary_table": "Integrated high-precision rotary table",
+                        "applications": "Gears, shafts, rotational parts",
+                        "image": "https://www.wenzel-group.com/assets/images/products/lh-rotary.jpg",
+                        "detail_url": "https://www.wenzel-group.com/en/product-group/cmms-rotary-table"
+                    }
+                ]
+            },
+            "mobile_measurement": {
+                "id": "mobile_measurement",
+                "name": "Mobile Measurement Solution (Wenzel)",
+                "description": "Lightweight portable measuring arms enabling precise 3D measurements directly on workpiece with maximum flexibility.",
+                "series": "WM | MMA Series",
+                "typical_specs": {
+                    "axes": "7-axis measuring arm",
+                    "arm_length_m": [
+                        2.0,
+                        2.5,
+                        3.0,
+                        3.5,
+                        4.0,
+                        4.5
+                    ],
+                    "accuracy_µm": "up to 22 µm",
+                    "features": [
+                        "Portable and lightweight",
+                        "No warm-up time required",
+                        "Tactile and optical sensors",
+                        "Wi-Fi interface",
+                        "Integrated battery",
+                        "Wireless operation"
+                    ]
+                },
+                "products": [
+                    {
+                        "model": "MMA Standard",
+                        "description": "Mobile measuring arm for production and quality assurance",
+                        "arm_lengths_m": [
+                            2.0,
+                            2.5,
+                            3.0,
+                            3.5,
+                            4.0,
+                            4.5
+                        ],
+                        "accuracy_µm": [
+                            22,
+                            25,
+                            28,
+                            32,
+                            35,
+                            38
+                        ],
+                        "measurement_volume": "Spherical radius based on arm length",
+                        "sensors": "Tactile probe",
+                        "battery": "Integrated rechargeable",
+                        "applications": "On-site measurement, large parts",
+                        "image": "https://www.wenzel-group.com/assets/images/products/mma-standard.jpg",
+                        "detail_url": "https://www.wenzel-group.com/en/products/mma-standard"
+                    },
+                    {
+                        "model": "MMA Premium",
+                        "description": "Premium version with enhanced capabilities and 3D laser line scanner",
+                        "arm_lengths_m": [
+                            2.0,
+                            2.5,
+                            3.0,
+                            3.5,
+                            4.0,
+                            4.5
+                        ],
+                        "accuracy_µm": [
+                            22,
+                            25,
+                            28,
+                            32,
+                            35,
+                            38
+                        ],
+                        "sensors": [
+                            "Tactile probe",
+                            "3D laser line scanner"
+                        ],
+                        "scan_rate": "Up to 100,000 points/sec",
+                        "applications": "Reverse engineering, complex surfaces",
+                        "image": "https://www.wenzel-group.com/assets/images/products/mma-premium.jpg",
+                        "detail_url": "https://www.wenzel-group.com/en/products/mma-premium"
+                    }
+                ]
+            }
+        }
+    }
+    
+}

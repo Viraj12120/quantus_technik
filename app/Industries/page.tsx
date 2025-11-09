@@ -184,6 +184,20 @@ export default function Industries() {
 											</h2>
 										</div>
 									</div>
+									<div className="border-t border-gray-200 pt-6">
+										<h3 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-4">
+											Applications
+										</h3>
+										<div className="flex flex-wrap gap-2">
+											{industry.applications.map((app, i) => (
+												<span
+													key={i}
+													className="px-3 py-1.5 bg-gray-100 text-gray-700 text-xs rounded-full hover:bg-blue-600 hover:text-white transition-colors duration-300 cursor-default">
+													{app}
+												</span>
+											))}
+										</div>
+									</div>
 								</div>
 
 								{/* Content Section */}
@@ -227,20 +241,6 @@ export default function Industries() {
 									</div>
 
 									{/* Applications */}
-									<div className="border-t border-gray-200 pt-6">
-										<h3 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-4">
-											Applications
-										</h3>
-										<div className="flex flex-wrap gap-2">
-											{industry.applications.map((app, i) => (
-												<span
-													key={i}
-													className="px-3 py-1.5 bg-gray-100 text-gray-700 text-xs rounded-full hover:bg-blue-600 hover:text-white transition-colors duration-300 cursor-default">
-													{app}
-												</span>
-											))}
-										</div>
-									</div>
 								</div>
 							</div>
 						);

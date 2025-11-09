@@ -1,0 +1,224 @@
+{
+    "tool_presetters": {
+        "id": "tool_presetters",
+        "category": "Tool Presetter & Inspection Machines",
+        "brand": "Zoller",
+        "subcategories": {
+            "vertical_devices": {
+                "id": "vertical_devices",
+                "name": "Vertical Devices (Zoller)",
+                "description": "Vertical presetting and measuring machines for quick, easy, and accurate tool measurement with modular image processing.",
+                "typical_specs": {
+                    "software": [
+                        "pilot 3.0",
+                        "pilot 4.0"
+                    ],
+                    "features": [
+                        "Modular image processing software",
+                        "Automatic cutting edge detection",
+                        "Photorealistic input dialog",
+                        "Tool identification",
+                        "Test report output",
+                        "CNC X/Z axes",
+                        "Autofocus spindle"
+                    ]
+                },
+                "products": [
+                    {
+                        "model": "venturion",
+                        "description": "Premium presetting and measuring machine with modular design and maximum flexibility",
+                        "variants": [
+                            "venturion 400",
+                            "venturion 450",
+                            "venturion 600"
+                        ],
+                        "software": "pilot 4.0",
+                        "spindle": "A.C.E. (All Clamping Elements) - 1µm changeover accuracy",
+                        "axes": "Fully CNC X and Z axes",
+                        "components": [
+                            "Bosch pneumatics",
+                            "THK guideways",
+                            "Uhing drives",
+                            "Heidenhain glass scales"
+                        ],
+                        "features": [
+                            "Modular configuration",
+                            "Autofocus",
+                            "C-axis rotation sensor",
+                            "Center height measuring",
+                            "Tool inspection modules",
+                            "Heat shrink capability"
+                        ],
+                        "applications": "All CNC production, large tools, high precision",
+                        "image": "https://www.zoller.info/assets/images/products/venturion.jpg",
+                        "detail_url": "https://www.zoller.info/us/products/presetting-measuring/vertical-devices/venturion"
+                    },
+                    {
+                        "model": "elephant",
+                        "description": "ZOLLER technology for measuring and setting tools without data input",
+                        "software": "pilot 3.0",
+                        "operation": "Simple, no data input required",
+                        "features": [
+                            "Quick measurement",
+                            "User-friendly operation",
+                            "Automatic edge detection"
+                        ],
+                        "applications": "Fast tool presetting, shop floor use",
+                        "image": "https://www.zoller.info/assets/images/products/elephant.jpg",
+                        "detail_url": "https://www.zoller.info/us/products/presetting-measuring/vertical-devices/elephant"
+                    },
+                    {
+                        "model": "smile 420",
+                        "description": "Compact presetting and measuring machine for efficient tool management",
+                        "software": "pilot 4.0",
+                        "design": "Compact, space-saving",
+                        "features": [
+                            "Quick tool measurement",
+                            "Easy operation",
+                            "Direct CNC data transfer"
+                        ],
+                        "applications": "Small to medium shops, cost-effective solution",
+                        "image": "https://www.zoller.info/assets/images/products/smile-420.jpg",
+                        "detail_url": "https://www.zoller.info/us/products/presetting-measuring/vertical-devices/smile-420"
+                    },
+                    {
+                        "model": "tribos (venturion + TRIBOS)",
+                        "description": "Presetting, measuring and heat shrink machine with SCHUNK TRIBOS clamping system",
+                        "clamping_system": "SCHUNK TRIBOS",
+                        "functions": [
+                            "Tool presetting",
+                            "Tool measuring",
+                            "Tool clamping/unclamping"
+                        ],
+                        "automation": "Automatic linear unit for TRIBOS clamping",
+                        "applications": "TRIBOS tool holders, automated clamping",
+                        "image": "https://www.zoller.info/assets/images/products/tribos.jpg",
+                        "detail_url": "https://www.zoller.info/us/products/presetting-measuring/vertical-devices/venturion"
+                    }
+                ]
+            },
+            "horizontal_devices": {
+                "id": "horizontal_devices",
+                "name": "Horizontal Devices (Zoller)",
+                "description": "Horizontal presetting machines with revolving table for multi-insert cutting tools and turning tool measurement.",
+                "series": "hyperion Series",
+                "typical_specs": {
+                    "software": "pilot 4.0",
+                    "design": "Revolving table with tool holders",
+                    "features": [
+                        "Fully automatic measuring",
+                        "Universal for different tool holders",
+                        "Stable construction",
+                        "Multi-insert tool measurement"
+                    ]
+                },
+                "products": [
+                    {
+                        "model": "hyperion 300",
+                        "description": "Compact horizontal presetting machine for turning tools",
+                        "measuring_range_z_mm": 350,
+                        "measuring_range_x_mm": 300,
+                        "swivel_range_mm": 300,
+                        "applications": "Turning tools, multi-insert cutters",
+                        "image": "https://www.zoller.info/assets/images/products/hyperion-300.jpg",
+                        "detail_url": "https://www.zoller.info/us/products/presetting-measuring/horizontal-devices/hyperion"
+                    },
+                    {
+                        "model": "hyperion 500/400",
+                        "description": "Medium-capacity horizontal presetting machine",
+                        "measuring_range_z_mm": 500,
+                        "measuring_range_x_mm": 400,
+                        "swivel_range_mm": 480,
+                        "applications": "Medium turning tools",
+                        "image": "https://www.zoller.info/assets/images/products/hyperion-500-400.jpg",
+                        "detail_url": "https://www.zoller.info/us/products/presetting-measuring/horizontal-devices/hyperion"
+                    },
+                    {
+                        "model": "hyperion 500/500",
+                        "description": "Large-capacity horizontal presetting machine",
+                        "measuring_range_z_mm": 500,
+                        "measuring_range_x_mm": 500,
+                        "swivel_range_mm": 480,
+                        "applications": "Large turning tools",
+                        "image": "https://www.zoller.info/assets/images/products/hyperion-500-500.jpg",
+                        "detail_url": "https://www.zoller.info/us/products/presetting-measuring/horizontal-devices/hyperion"
+                    },
+                    {
+                        "model": "hyperion 700",
+                        "description": "Extra-large horizontal presetting machine for heavy tools",
+                        "measuring_range_z_mm": 700,
+                        "measuring_range_x_mm": 500,
+                        "swivel_range_mm": 480,
+                        "applications": "Extra-large turning tools, heavy cutting",
+                        "image": "https://www.zoller.info/assets/images/products/hyperion-700.jpg",
+                        "detail_url": "https://www.zoller.info/us/products/presetting-measuring/horizontal-devices/hyperion"
+                    }
+                ]
+            },
+            "inspection_solutions": {
+                "id": "inspection_solutions",
+                "name": "Inspection Solutions (Zoller)",
+                "description": "Precision measuring and inspection machines for quality control, delivering user-independent and repeatable results.",
+                "typical_specs": {
+                    "application": "Goods-in control, production, end control",
+                    "measurement": "Automatic with mouse click",
+                    "features": [
+                        "User-independent operation",
+                        "Detailed inspection reports",
+                        "Seamless data recording",
+                        "Database integration",
+                        "Statistical process control"
+                    ]
+                },
+                "products": [
+                    {
+                        "model": "pom",
+                        "description": "Inspection device for process-oriented measuring of drills, cutters and counterbores",
+                        "measurement_types": [
+                            "Diameter",
+                            "Length",
+                            "Angle",
+                            "Radius"
+                        ],
+                        "operation": "Automatic measurement",
+                        "applications": "Tool inspection, quality control",
+                        "image": "https://www.zoller.info/assets/images/products/pom.jpg",
+                        "detail_url": "https://www.zoller.info/us/products/inspection-measuring/pom"
+                    },
+                    {
+                        "model": "smartCheck",
+                        "description": "Presetting, measuring, and inspection machine with swivelling incident light camera",
+                        "camera": "Swivelling incident light camera",
+                        "functions": [
+                            "Presetting",
+                            "Measuring",
+                            "Inspection"
+                        ],
+                        "features": [
+                            "Versatile operation",
+                            "High-resolution imaging",
+                            "Automatic measurement"
+                        ],
+                        "applications": "Tool inspection, quality assurance",
+                        "image": "https://www.zoller.info/assets/images/products/smartcheck.jpg",
+                        "detail_url": "https://www.zoller.info/us/products/inspection-measuring/smartcheck"
+                    },
+                    {
+                        "model": "torquematic",
+                        "description": "Presetting and measuring machine for tools with collet chucks, fully automatic",
+                        "tool_holders": "Collet chucks (ER, TG, etc.)",
+                        "automation": "Fully automatic",
+                        "features": [
+                            "Quick tool changeover",
+                            "High throughput",
+                            "Automatic measurement"
+                        ],
+                        "applications": "High-volume tool shops, automation",
+                        "image": "https://www.zoller.info/assets/images/products/torquematic.jpg",
+                        "detail_url": "https://www.zoller.info/us/products/inspection-measuring/torquematic"
+                    }
+                ]
+            }
+        }
+    }
+}

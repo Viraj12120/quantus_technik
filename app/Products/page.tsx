@@ -40,29 +40,71 @@ export default function ProductsPage() {
 			description:
 				"Versatile machining centers providing superior speed, rigidity, and accuracy.",
 			image: "/pp.jpg",
-			features: ["3/4-axis VMC ", "5-axis HMC "],
+			features: [
+				"2-axis CNC (HwaCheon)",
+				"Turnmill Centers (HwaCheon)",
+				"Twin Spindle – Single turret (with Magazine (opt.)) (HwaCheon)",
+				"Twin Center – Twin Turret (HwaCheon)",
+				"Multi-tasking machines (HwaCheon)",
+				"Vertical Turning Lathes - Turret Type (HwaCheon)",
+				"Vertical Turning Lathes - RAM type (HwaCheon)",
+				"Vertical Turning Lathes - With Y-axis (HwaCheon)",
+			],
 		},
 		{
 			id: "machining-center",
 			name: "Machining Centers",
 			category: "machine-tools",
 			description:
-				"Versatile machining centers providing superior speed, rigidity, and accuracy.",
+				"High performance vertical, horizontal, and 5-axis machining centers.",
 			image: "/pp.jpg",
-			features: ["3/4-axis VMC ", "5-axis HMC "],
+			features: [
+				"Vertical Machining Centers (HwaCheon)",
+				"Horizontal Machining Centers (HwaCheon, JTEKT)",
+				"Drill-Tap Centers (HwaCheon)",
+				"Twin-Spindle VMC (HwaCheon)",
+				"Twin-Table (APC) VMC (HwaCheon)",
+				"4-axis HMC (HwaCheon, JTEKT)",
+				"5-axis HMC (JTEKT)",
+				"Universal 5-axis Machines (GROB, Alzmetall, HwaCheon)",
+				"5-axis Double Column (KEN CNC)",
+				"5-axis Gantry (KEN CNC)",
+				"5-axis MillTurn (GROB, Alzmetall)",
+			],
 		},
 		{
-			id: "measuring",
-			name: "Co-ordinate Measuring Machines (CMM)",
+			id: "grinding-machines",
+			name: "Grinding Machines",
+			category: "grinders",
+			description:
+				"High-precision grinding solutions including cylindrical, crankshaft, camshaft, roll, and eccentric pin grinders.",
+			image: "/grinding.jpg",
+			features: [
+				"CNC Cylindrical Grinders (JTEKT)",
+				"Crankshaft Grinders (JTEKT)",
+				"Camshaft Grinders (JTEKT)",
+				"Eccentric PIN Grinder (JTEKT)",
+				"Roll Grinders (JTEKT)",
+			],
+		},
+		{
+			id: "measuring-machines",
+			name: "Measuring Machines",
 			category: "measuring",
 			description:
-				"High-precision metrology systems for dimensional verification and gear measurement.",
-			image: "/cmm.jpg",
+				"High-precision metrology systems for dimensional verification, gear measurement, and tool inspection.",
+			image: "/measuring.jpg",
 			features: [
 				"3D Coordinate Measuring Machine (Wenzel)",
 				"Shop-floor Measuring Machine (Wenzel)",
+				"Measuring Machine for Gears & Shafts (Wenzel)",
+				"Mobile Measurement Solution (Wenzel)",
+				"Vertical devices (Zoller)",
+				"Horizontal devices (Zoller)",
+				"Inspection solutions (Zoller)",
 			],
 		},
+
 		{
 			id: "angle-head",
 			name: "Angle Head",
@@ -73,19 +115,21 @@ export default function ProductsPage() {
 			features: [
 				"Fixed Type – 45° & 90° (Gerardi)",
 				"Universal Type – 0° to 90° (Gerardi)",
+				"Special (customised) (Gerardi)",
 			],
 		},
 		{
-			id: "tool-holders",
-			name: "Tool Holders & Tool Management",
-			category: "tool-holders",
+			id: "tool-holder-management",
+			name: "Tool Holder & Tool Management",
+			category: "tool-management",
 			description:
-				"Comprehensive tool clamping and management solutions ensuring efficiency and precision.",
-			image: "/tool.jpg",
+				"Advanced tool holding and management systems designed for precision machining, durability, and efficient tool organization.",
+			image: "/tool-holder-management.jpg",
 			features: [
 				"Mechanical Holder (MST)",
 				"ShrinkFit Holder (MST)",
-				"Tool Management System (Zoller)",
+				"ShrinkFit Machines (MST)",
+				"Tool Management System (C-automate) (ZOLLER)",
 			],
 		},
 	];
@@ -148,7 +192,7 @@ export default function ProductsPage() {
 							onClick={() => setSelectedCategory(cat.id)}
 							className={`px-5 py-2.5 rounded-full whitespace-nowrap transition-all ${
 								selectedCategory === cat.id
-									? "bg-blue-700 text-white"
+									? "bg-black text-white"
 									: "bg-gray-100 text-gray-700 hover:bg-gray-200"
 							}`}>
 							{cat.name}
@@ -182,19 +226,18 @@ export default function ProductsPage() {
 									{p.description}
 								</p>
 
-								<ul className="mb-6 space-y-1">
-									{p.features.map((f, i) => (
-										<li
-											key={i}
-											className="flex items-center gap-2 text-sm text-blue-700/80">
-											<Check className="w-4 h-4 text-black" />
-											{f}
-										</li>
-									))}
-								</ul>
-
 								{/* Consistent button at bottom */}
-								<Link href={`/Products/${p.id}`} className="mt-auto">
+								<Link
+									href={
+										p.category === "grinders"
+											? `/Grinders/${p.id}`
+											: p.category === "measuring"
+											? `/Measuring/${p.id}`
+											: p.category === "angle-head"
+											? `/Angle/${p.id}`
+											: `/Products/${p.id}`
+									}
+									className="mt-auto">
 									<button className="w-full bg-black text-white py-3 rounded-full font-medium hover:bg-gray-800 transition flex items-center justify-center gap-2">
 										Learn More <ChevronRight className="w-4 h-4" />
 									</button>

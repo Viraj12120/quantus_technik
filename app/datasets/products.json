@@ -116,6 +116,274 @@
                 "type": "LM #50",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20240807090815.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=AF-4"
+            },{
+                "model": "FH630SX-i",
+                "brand": "JTEKT",
+                "description": "High-Speed Horizontal Machining Center - 630mm Pallet",
+                "pallet_size_mm": 630,
+                "pallet_capacity_kg": 1000,
+                "stroke_mm": [
+                    1050,
+                    900,
+                    1050
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    15000
+                ],
+                "rapid_feed_rate_mpm": 60,
+                "number_of_tools": [
+                    60
+                ],
+                "type": "Linear Way",
+                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fh630sx-i.png",
+                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/630mm-pallet/fh630sx-i"
+            },
+            {
+                "model": "FA630S",
+                "brand": "JTEKT",
+                "description": "Heavy Duty Box Way Horizontal Machining Center - 630mm Pallet",
+                "pallet_size_mm": 630,
+                "pallet_capacity_kg": 1500,
+                "stroke_mm": [
+                    1050,
+                    900,
+                    1050
+                ],
+                "spindle_speed_rpm": [
+                    6000
+                ],
+                "number_of_tools": [
+                    60
+                ],
+                "type": "Box Way",
+                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fa630s.png",
+                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/630mm-pallet/fa630s"
+            },
+            {
+                "model": "FH630SX-i 5-Axis",
+                "brand": "JTEKT",
+                "description": "5-Axis High Power/Speed Horizontal Machining Center - 800mm Pallet",
+                "pallet_size_mm": 800,
+                "pallet_capacity_kg": 2500,
+                "stroke_mm": [
+                    1400,
+                    1200,
+                    1400
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    15000
+                ],
+                "number_of_tools": [
+                    60
+                ],
+                "type": "5-Axis Trunnion",
+                "features": [
+                    "C-axis 230° swivel range",
+                    "Tilting spindle"
+                ],
+                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fh630sx-i-5axis.png",
+                "detail_url": "https://jtektmachinery.com/machines/5-axis-machining-centers/5-axis-horizontal-machining-centers/fh630sx-5a"
+            },
+            {
+                "model": "FH800SX-i",
+                "brand": "JTEKT",
+                "description": "Heavy Duty Linear Way Horizontal Machining Center - 800mm Pallet",
+                "pallet_size_mm": 800,
+                "pallet_capacity_kg": 2500,
+                "stroke_mm": [
+                    1450,
+                    1250,
+                    1550
+                ],
+                "spindle_speed_rpm": [
+                    6000,
+                    8000,
+                    15000
+                ],
+                "rapid_feed_rate_mpm": 54,
+                "number_of_tools": [
+                    60
+                ],
+                "type": "Linear Way",
+                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fh800sx-i.png",
+                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/800mm-pallet/fh800sx-i"
+            },
+            {
+                "model": "FA800S",
+                "brand": "JTEKT",
+                "description": "Heavy Duty Box Way Horizontal Machining Center - 800mm Pallet",
+                "pallet_size_mm": 800,
+                "pallet_capacity_kg": 2500,
+                "stroke_mm": [
+                    1400,
+                    1200,
+                    1400
+                ],
+                "spindle_speed_rpm": [
+                    6000
+                ],
+                "number_of_tools": [
+                    60
+                ],
+                "type": "Box Way",
+                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fa800s.png",
+                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/800mm-pallet/fa800s"
+            },
+            {
+                "model": "FH1000SX",
+                "brand": "JTEKT",
+                "description": "Heavy Duty Linear Way Horizontal Machining Center - 1000mm Pallet",
+                "pallet_size_mm": 1000,
+                "pallet_capacity_kg": 3000,
+                "stroke_mm": [
+                    1800,
+                    1600,
+                    1800
+                ],
+                "spindle_speed_rpm": [
+                    6000,
+                    8000
+                ],
+                "number_of_tools": [
+                    80
+                ],
+                "type": "Linear Way",
+                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fh1000sx.png",
+                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/1000-1050mm-pallet/fh1000sx"
+            },
+            {
+                "model": "FA1050S",
+                "brand": "JTEKT",
+                "description": "Heavy Duty Box Way Horizontal Machining Center - 1050mm Pallet",
+                "pallet_size_mm": 1050,
+                "pallet_capacity_kg": 3000,
+                "stroke_mm": [
+                    1850,
+                    1550,
+                    1850
+                ],
+                "spindle_speed_rpm": [
+                    6000
+                ],
+                "number_of_tools": [
+                    80
+                ],
+                "type": "Box Way",
+                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fa1050s.png",
+                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/1000-1050mm-pallet/fa1050s"
+            },
+            {
+                "model": "FA1050S-5Axis",
+                "brand": "JTEKT",
+                "description": "5-Axis Trunnion Box Way Horizontal Machining Center - 1050mm Pallet",
+                "pallet_size_mm": 1050,
+                "pallet_capacity_kg": 3000,
+                "stroke_mm": [
+                    1850,
+                    1550,
+                    1850
+                ],
+                "spindle_speed_rpm": [
+                    6000
+                ],
+                "number_of_tools": [
+                    80
+                ],
+                "type": "5-Axis Box Way",
+                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fa1050s-5axis.png",
+                "detail_url": "https://jtektmachinery.com/machines/5-axis-machining-centers/5-axis-horizontal-machining-centers/fa1050s-5a"
+            },
+            {
+                "model": "FH1250SX",
+                "brand": "JTEKT",
+                "description": "Heavy Duty Linear Way Horizontal Machining Center - 1250mm Pallet",
+                "pallet_size_mm": 1250,
+                "pallet_capacity_kg": 5000,
+                "stroke_mm": [
+                    2400,
+                    1800,
+                    2000
+                ],
+                "spindle_speed_rpm": [
+                    6000,
+                    15000
+                ],
+                "number_of_tools": [
+                    80
+                ],
+                "type": "Linear Way",
+                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fh1250sx.png",
+                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/1250mm-pallet/fh1250sx"
+            },
+            {
+                "model": "FH1250SW",
+                "brand": "JTEKT",
+                "description": "Heavy Duty Boring Bar Quill Horizontal Machining Center - 1250mm Pallet",
+                "pallet_size_mm": 1250,
+                "pallet_capacity_kg": 5000,
+                "stroke_mm": [
+                    2400,
+                    1800,
+                    2000
+                ],
+                "spindle_speed_rpm": [
+                    4000
+                ],
+                "number_of_tools": [
+                    80
+                ],
+                "type": "Boring Bar Quill",
+                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fh1250sw.png",
+                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/1250mm-pallet/fh1250sw"
+            },
+            {
+                "model": "FH1250SX-5Axis",
+                "brand": "JTEKT",
+                "description": "Double Column Type 5-Axis Horizontal Machining Center - 1250mm Pallet",
+                "pallet_size_mm": 1250,
+                "pallet_capacity_kg": 5000,
+                "stroke_mm": [
+                    2400,
+                    1600,
+                    1850
+                ],
+                "spindle_speed_rpm": [
+                    6000,
+                    15000
+                ],
+                "number_of_tools": [
+                    80
+                ],
+                "type": "5-Axis Double Column",
+                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fh1250sx-5axis.png",
+                "detail_url": "https://jtektmachinery.com/machines/5-axis-machining-centers/5-axis-horizontal-machining-centers/fh1250sx-5a"
+            },
+            {
+                "model": "FH1600SW",
+                "brand": "JTEKT",
+                "description": "Extra Large Double Column Horizontal Machining Center - 1600x1250mm Pallet",
+                "pallet_size_mm": [
+                    1600,
+                    1250
+                ],
+                "pallet_capacity_kg": 8000,
+                "stroke_mm": [
+                    3000,
+                    1900,
+                    2100
+                ],
+                "spindle_speed_rpm": [
+                    4000
+                ],
+                "number_of_tools": [
+                    100
+                ],
+                "type": "Double Column",
+                "max_workpiece_weight_kg": 32000,
+                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fh1600sw.png",
+                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/1600mm-pallet/fh1600sw"
             }
         ]
     },
@@ -941,7 +1209,412 @@
                 ],
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105041500.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HMP-3710"
+            },
+            {
+                "model": "UG630",
+                "description": "UG Series Vertical Machining Center",
+                "stroke_mm": [
+                    640,
+                    520,
+                    460
+                ],
+                "spindle_speed_rpm": [
+                    15000,
+                    22000
+                ],
+                "number_of_tools": [],
+                "image": "https://jtektmachinery.com/machines/vertical-machining-centers/ug-series/ug630/image.jpg",
+                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/ug-series/ug630"
+            },
+            {
+                "model": "UG800",
+                "description": "UG Series Vertical Machining Center",
+                "stroke_mm": [
+                    800,
+                    950,
+                    650
+                ],
+                "spindle_speed_rpm": [
+                    15000,
+                    22000
+                ],
+                "number_of_tools": [],
+                "image": "https://jtektmachinery.com/machines/vertical-machining-centers/ug-series/ug800/image.jpg",
+                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/ug-series/ug800"
+            },
+            {
+                "model": "AA1165",
+                "description": "AA-65 Series, Production #40/#50 Taper Boxway",
+                "stroke_mm": [
+                    900,
+                    650,
+                    600
+                ],
+                "spindle_speed_rpm": [
+                    6000,
+                    8000,
+                    15000
+                ],
+                "number_of_tools": [],
+                "image": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-65-series/aa1165/image.jpg",
+                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-65-series/aa1165"
+            },
+            {
+                "model": "AA1365",
+                "description": "AA-65 Series, Production #40/#50 Taper Boxway",
+                "stroke_mm": [
+                    1300,
+                    650,
+                    600
+                ],
+                "spindle_speed_rpm": [
+                    6000,
+                    8000,
+                    15000
+                ],
+                "number_of_tools": [],
+                "image": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-65-series/aa1365/image.jpg",
+                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-65-series/aa1365"
+            },
+            {
+                "model": "AA1565",
+                "description": "AA-65 Series, Production #40/#50 Taper Boxway",
+                "stroke_mm": [
+                    1500,
+                    650,
+                    600
+                ],
+                "spindle_speed_rpm": [
+                    6000,
+                    8000,
+                    15000
+                ],
+                "number_of_tools": [],
+                "image": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-65-series/aa1565/image.jpg",
+                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-65-series/aa1565"
+            },
+            {
+                "model": "AA1680",
+                "description": "AA-80 Series, Production #50 Taper Boxway",
+                "stroke_mm": [
+                    1600,
+                    800,
+                    800
+                ],
+                "spindle_speed_rpm": [
+                    6000,
+                    10000
+                ],
+                "number_of_tools": [],
+                "image": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-80-series/aa1680/image.jpg",
+                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-80-series/aa1680"
+            },
+            {
+                "model": "AA2090",
+                "description": "AA-90 Series, Production #50 Taper Boxway",
+                "stroke_mm": [
+                    2000,
+                    900,
+                    900
+                ],
+                "spindle_speed_rpm": [
+                    6000,
+                    10000
+                ],
+                "number_of_tools": [],
+                "image": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-90-series/aa2090/image.jpg",
+                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-90-series/aa2090"
+            },
+            {
+                "model": "740V-PRO",
+                "description": "PRO Series with 12,000 RPM Spindle",
+                "stroke_mm": [
+                    750,
+                    425,
+                    470
+                ],
+                "spindle_speed_rpm": [
+                    12000
+                ],
+                "number_of_tools": [],
+                "image": "https://jtektmachinery.com/machines/vertical-machining-centers/fv-pro-series/740v-pro/image.jpg",
+                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/fv-pro-series/740v-pro"
+            },
+            {
+                "model": "1060V-PRO",
+                "description": "PRO Series with 12,000 RPM Spindle",
+                "stroke_mm": [
+                    1000,
+                    600,
+                    600
+                ],
+                "spindle_speed_rpm": [
+                    12000
+                ],
+                "number_of_tools": [],
+                "image": "https://jtektmachinery.com/machines/vertical-machining-centers/fv-pro-series/fv1060v-pro/image.jpg",
+                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/fv-pro-series/fv1060v-pro"
+            },
+            {
+                "model": "AQ850",
+                "description": "AQ Series, 15,000 RPM Direct Drive Spindle",
+                "stroke_mm": [
+                    800,
+                    510,
+                    510
+                ],
+                "spindle_speed_rpm": [
+                    15000
+                ],
+                "number_of_tools": [],
+                "image": "https://jtektmachinery.com/machines/vertical-machining-centers/aq-series/aq850/image.jpg",
+                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/aq-series/aq850"
             }
         ]
+    },
+   "5-axis": [
+    {
+        "model": "M1-5AX",
+        "description": "High Precision 5-Axis Vertical Machining Center for Parts",
+        "table_size_mm": "Ø300",
+        "stroke_mm": [
+            750,
+            500,
+            450
+        ],
+        "spindle_speed_rpm": [
+            20000,
+            32000
+        ],
+        "number_of_tools": [
+            30,
+            40,
+            60
+        ],
+        "type": "5_axis lm 40_hsk",
+        "detail_url": "M1-5AX 제품 상세보기",
+        "image": "/machines/5-axis/M1-5AX.png"
+    },
+    {
+        "model": "M2-5AX",
+        "description": "High Precision 5-Axis Vertical Machining Center",
+        "table_size_mm": "Ø500",
+        "stroke_mm": [
+            750,
+            650,
+            500
+        ],
+        "spindle_speed_rpm": [
+            20000,
+            32000
+        ],
+        "number_of_tools": [
+            30,
+            60
+        ],
+        "type": "5_axis lm 40_hsk",
+        "detail_url": "M2-5AX 제품 상세보기",
+        "image": "/machines/5-axis/M2-5AX.png"
+    },
+    {
+        "model": "M3-5AX",
+        "description": "High Precision 5-Axis Vertical Machining Center",
+        "table_size_mm": "Ø700",
+        "stroke_mm": [
+            750,
+            900,
+            550
+        ],
+        "spindle_speed_rpm": [
+            14000,
+            20000,
+            24000
+        ],
+        "number_of_tools": [
+            40,
+            60,
+            90
+        ],
+        "type": "5_axis lm 40_hsk",
+        "detail_url": "M3-5AX 제품 상세보기",
+        "image": "/machines/5-axis/M3-5AX.png"
+    },
+    {
+        "model": "M4-5AX",
+        "description": "High Precision/Rigidity 5-Axis Vertical Machining Center for ‘Difficult-To-Cut’ Parts",
+        "table_size_mm": "Ø800",
+        "stroke_mm": [
+            950,
+            1000,
+            650
+        ],
+        "spindle_speed_rpm": [
+            8000,
+            12000
+        ],
+        "number_of_tools": [
+            30,
+            60
+        ],
+        "type": "5_axis lm box 50_hsk",
+        "detail_url": "M4-5AX 제품 상세보기",
+        "image": "/machines/5-axis/M4-5AX.png"
+    },
+    {
+        "model": "D2-5AX",
+        "description": "5-Axis Vertical Machining Center for Parts Machining",
+        "table_size_mm": "Ø600",
+        "stroke_mm": [
+            650,
+            500,
+            500
+        ],
+        "spindle_speed_rpm": [
+            12000,
+            14000,
+            20000,
+            24000
+        ],
+        "number_of_tools": [
+            30,
+            40,
+            60
+        ],
+        "type": "5_axis 4_1_axis lm 40_hsk",
+        "detail_url": "D2-5AX 제품 상세보기",
+        "image": "/machines/5-axis/D2-5AX.png"
+    },
+    {
+        "model": "D3-5AX",
+        "description": "5-Axis Vertical Machining Center for Parts Machining",
+        "table_size_mm": "Ø800",
+        "stroke_mm": [
+            800,
+            650,
+            575
+        ],
+        "spindle_speed_rpm": [
+            12000,
+            14000,
+            20000,
+            24000
+        ],
+        "number_of_tools": [
+            30,
+            40,
+            60
+        ],
+        "type": "5_axis 4_1_axis lm 40_hsk",
+        "detail_url": "D3-5AX 제품 상세보기",
+        "image": "/machines/5-axis/D3-5AX.png"
+    },
+    {
+        "model": "SMART CORE",
+        "description": "3+2-Axis Vertical Machining Center for Core Machining",
+        "table_size_mm": "1200 x 600",
+        "stroke_mm": [
+            1050,
+            600,
+            550
+        ],
+        "spindle_speed_rpm": [
+            14000,
+            20000,
+            24000
+        ],
+        "number_of_tools": [
+            30
+        ],
+        "type": "3_2_axis lm 40_hsk",
+        "detail_url": "SMART CORE 제품 상세보기",
+        "image": "/machines/5-axis/SMART-CORE.png"
+    },
+    {
+        "model": "SIRIUS-2500(5AX)",
+        "description": "5-Axis Angle Head Vertical Machining Center for Die and Mold",
+        "table_size_mm": "3300 x 2000",
+        "stroke_mm": [
+            3100,
+            2300,
+            1000
+        ],
+        "spindle_speed_rpm": [
+            15000
+        ],
+        "number_of_tools": [
+            40
+        ],
+        "type": "5_axis box 40_hsk",
+        "detail_url": "SIRIUS-2500(5AX) 제품 상세보기",
+        "image": "/machines/5-axis/SIRIUS-2500-5AX.png"
+    },{
+        "model": "G150",
+        "description": "The smallest 5-axis universal machining center provides optimized precision for complex parts.",
+        "working_travel_mm": [
+            450,
+            670,
+            665
+        ],
+        "speed_max_m_per_min": [
+            50,
+            40,
+            60
+        ],
+        "interference_diameter_mm": 580,
+        "detail_url": "https://www.grobgroup.com/en/products/product-range/universal-machining-centers/milling-centers/g150/",
+        "brand": "GROB"
+    },
+    {
+        "model": "G350",
+        "description": "The compact 5-axis machining center for milling parts from the most diverse materials.",
+        "working_travel_mm": [
+            600,
+            855,
+            750
+        ],
+        "speed_max_m_per_min": [
+            70,
+            45,
+            90
+        ],
+        "interference_diameter_mm": 720,
+        "detail_url": "https://www.grobgroup.com/en/products/product-range/universal-machining-centers/milling-centers/g350/",
+        "brand": "GROB"
+    },
+    {
+        "model": "G550",
+        "description": "Optimized milling performance with the 5-axis machining center for parts from the most diverse raw materials.",
+        "working_travel_mm": [
+            800,
+            1020,
+            970
+        ],
+        "speed_max_m_per_min": [
+            65,
+            50,
+            80
+        ],
+        "interference_diameter_mm": 900,
+        "detail_url": "https://www.grobgroup.com/en/products/product-range/universal-machining-centers/milling-centers/g550/",
+        "brand": "GROB"
+    },
+    {
+        "model": "G750",
+        "description": "Highest productivity and optimized machining with the rigid 5-axis machining center.",
+        "working_travel_mm": [
+            950,
+            1000,
+            650
+        ],
+        "speed_max_m_per_min": [
+            65,
+            55,
+            85
+        ],
+        "interference_diameter_mm": 1100,
+        "detail_url": "https://www.grobgroup.com/en/products/product-range/universal-machining-centers/milling-centers/g750/",
+        "brand": "GROB"
     }
+   
+]
 }

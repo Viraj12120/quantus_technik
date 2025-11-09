@@ -1,5 +1,7 @@
 "use client";
 
-export default function Offers() {
-	return <div>offers</div>;
+
+
+export default function Offer() {
+	return <div className="justify-center m-28">Offers</div>;
 }

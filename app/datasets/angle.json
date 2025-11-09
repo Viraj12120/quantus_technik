@@ -1,0 +1,113 @@
+{
+    "id": "angle-head",
+    "categories": [
+        {
+            "id": "fixed-type",
+            "label": "Fixed Type – 45° & 90°",
+            "manufacturer": "Gerardi",
+            "description": "Rigid and corrosion-resistant fixed angle heads with modular options and coolant support.",
+            "models": [
+                {
+                    "id": "G90-5",
+                    "name": "G90-5",
+                    "max_rpm": 10000,
+                    "torque_nm": 4,
+                    "weight_kg": 7,
+                    "features": [
+                        "Internal coolant",
+                        "Weldon output"
+                    ],
+                    "image": "/images/gerardi/fixed/g90-5.jpg"
+                },
+                {
+                    "id": "G90-7L",
+                    "name": "G90-7L",
+                    "max_rpm": 10000,
+                    "torque_nm": 6,
+                    "weight_kg": 7.5,
+                    "features": [
+                        "Extended reach",
+                        "Weldon output"
+                    ],
+                    "image": "/images/gerardi/fixed/g90-7l.jpg"
+                },
+                {
+                    "id": "GM90-3 300S",
+                    "name": "GM90-3 300S",
+                    "max_rpm": 12000,
+                    "torque_nm": 2.3,
+                    "weight_kg": 3.5,
+                    "features": [
+                        "Slim design",
+                        "ER8 collet"
+                    ],
+                    "image": "/images/gerardi/fixed/gm90-3-300s.jpg"
+                }
+            ]
+        },
+        {
+            "id": "universal-type",
+            "label": "Universal Type – 0° to 90°",
+            "manufacturer": "Gerardi",
+            "description": "Flexible modular angle heads adjustable from 0° to 90°, suitable for various machining applications.",
+            "models": [
+                {
+                    "id": "FL90-16L",
+                    "name": "FL90-16L",
+                    "max_rpm": 10000,
+                    "torque_nm": 12,
+                    "weight_kg": 10.5,
+                    "features": [
+                        "Adjustable angle",
+                        "ER25 collet"
+                    ],
+                    "image": "/images/gerardi/universal/fl90-16l.jpg"
+                },
+                {
+                    "id": "FS90-3",
+                    "name": "FS90-3",
+                    "max_rpm": 8000,
+                    "torque_nm": 3,
+                    "weight_kg": 5.5,
+                    "features": [
+                        "Lightweight",
+                        "ER11 collet"
+                    ],
+                    "image": "/images/gerardi/universal/fs90-3.jpg"
+                }
+            ]
+        },
+        {
+            "id": "special-customised",
+            "label": "Special (Customised)",
+            "manufacturer": "Gerardi",
+            "description": "Custom angle heads with extended lengths, offset outputs and high-pressure cooling options.",
+            "models": [
+                {
+                    "id": "G90-S40L.280",
+                    "name": "G90-S40L.280",
+                    "max_rpm": 4000,
+                    "torque_nm": 20,
+                    "weight_kg": 32,
+                    "features": [
+                        "Offset head",
+                        "Coolant 70 bar"
+                    ],
+                    "image": "/images/gerardi/special/g90-s40l-280.jpg"
+                },
+                {
+                    "id": "FR90-10",
+                    "name": "FR90-10",
+                    "max_rpm": 6000,
+                    "torque_nm": 22,
+                    "weight_kg": 12,
+                    "features": [
+                        "High-pressure coolant",
+                        "Weldon Max 10"
+                    ],
+                    "image": "/images/gerardi/special/fr90-10.jpg"
+                }
+            ]
+        }
+    ]
+}
