@@ -29,7 +29,7 @@ export default function ProductsPage() {
 		{ id: "machine-tools", name: "Machine Tools" },
 		{ id: "measuring", name: "Measuring Machines" },
 		{ id: "angle-head", name: "Angle Head" },
-		{ id: "tool-holders", name: "Tool Holders & Management" },
+		{ id: "tool-management", name: "Tool Holders & Management" },
 	];
 
 	const products = [
@@ -39,7 +39,7 @@ export default function ProductsPage() {
 			category: "machine-tools",
 			description:
 				"Versatile machining centers providing superior speed, rigidity, and accuracy.",
-			image: "/pp.jpg",
+			image: "/turn.jpg",
 			features: [
 				"2-axis CNC (HwaCheon)",
 				"Turnmill Centers (HwaCheon)",
@@ -78,7 +78,7 @@ export default function ProductsPage() {
 			category: "grinders",
 			description:
 				"High-precision grinding solutions including cylindrical, crankshaft, camshaft, roll, and eccentric pin grinders.",
-			image: "/grinding.jpg",
+			image: "/grinding.png",
 			features: [
 				"CNC Cylindrical Grinders (JTEKT)",
 				"Crankshaft Grinders (JTEKT)",
@@ -93,7 +93,7 @@ export default function ProductsPage() {
 			category: "measuring",
 			description:
 				"High-precision metrology systems for dimensional verification, gear measurement, and tool inspection.",
-			image: "/measuring.jpg",
+			image: "/cmm.jpg",
 			features: [
 				"3D Coordinate Measuring Machine (Wenzel)",
 				"Shop-floor Measuring Machine (Wenzel)",
@@ -119,12 +119,12 @@ export default function ProductsPage() {
 			],
 		},
 		{
-			id: "tool-holder-management",
+			id: "tool-management",
 			name: "Tool Holder & Tool Management",
 			category: "tool-management",
 			description:
 				"Advanced tool holding and management systems designed for precision machining, durability, and efficient tool organization.",
-			image: "/tool-holder-management.jpg",
+			image: "/tool.jpg",
 			features: [
 				"Mechanical Holder (MST)",
 				"ShrinkFit Holder (MST)",

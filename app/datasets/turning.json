@@ -5,7 +5,7 @@
         "products": [
             {
                 "model": "CUTEX-160",
-                "description": "6\" / 8\" Standard Horizontal Turning Center",
+                "description": "6\" / 32\"  Horizontal Turning Range",
                 "chuck_size_inch": [
                     6,
                     8
@@ -29,6 +29,7 @@
             {
                 "model": "CUTEX-180",
                 "description": "6\" / 8\" Standard Horizontal Turning Center with Improved Specifications",
+                "desc": "6\" / 8\" Standard Horizontal Turning Machining Range",
                 "chuck_size_inch": [
                     6,
                     8
@@ -445,6 +446,7 @@
             {
                 "model": "VT-450",
                 "description": "Heavy Duty Vertical Turning Center",
+                "desc": "12\" / 80\" Vertical Turning Machining Range",
                 "max_turning_diameter_mm": 460,
                 "chuck_diameter_mm": 305,
                 "chuck_size_inch": 12,

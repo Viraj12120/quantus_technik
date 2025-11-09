@@ -31,7 +31,7 @@ export default function Client() {
 
 			<div className="max-w-6xl mx-auto overflow-hidden">
 				<motion.div
-					className="flex gap-10 w-[200%] mb-24"
+					className="flex gap-44 w-[200%] mb-24"
 					animate={{ x: ["0%", "-50%"] }}
 					transition={{
 						duration: 20,
@@ -45,7 +45,7 @@ export default function Client() {
 							<img
 								src={logo.src}
 								alt={logo.name}
-								className="max-h-24 object-contain"
+								className="max-h-36 object-contain"
 								loading="lazy"
 							/>
 						</div>

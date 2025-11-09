@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 export default function Industries() {
 	const industries = [
@@ -143,6 +144,19 @@ export default function Industries() {
 		},
 	];
 
+	const logos = [
+		{ name: "GROB", src: "/grob.svg" },
+		{ name: "HWACHEON", src: "/hwacheon.svg" },
+		{ name: "ZOLLER", src: "/zoller.svg" },
+		{ name: "WENZEL", src: "/wenzel.svg" },
+		{ name: "ALZMETALL", src: "/alz.svg" },
+		{ name: "mst", src: "/mst.png" },
+		{ name: "mill", src: "/mill.png" },
+		{ name: "kenchi", src: "/k.svg" },
+		{ name: "jktet", src: "/jktet.svg" },
+		{ name: "gerardi", src: "/gerardi.jpg" },
+	];
+
 	return (
 		<div className="min-h-screen bg-white">
 			{/* Hero Section */}
@@ -222,33 +236,56 @@ export default function Industries() {
 									</div>
 
 									{/* Solutions */}
-									<div>
-										<h3 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-4">
+									<section className="my-12 max-w-7xl mx-auto px-6">
+										<h3 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-8">
 											Our Solutions
 										</h3>
-										<ul className="space-y-3">
-											{industry.solutions.map((solution, i) => (
-												<li
-													key={i}
-													className="flex items-start gap-3 text-gray-700">
-													<span className="w-1.5 h-1.5 bg-black rounded-full mt-2 shrink-0"></span>
-													<span className="text-sm leading-relaxed">
-														{solution}
-													</span>
-												</li>
-											))}
-										</ul>
-									</div>
 
-									{/* Applications */}
+										{/* ✅ GRID CONTAINER */}
+										<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+											{industries.map((industry, idx) => (
+												<div
+													key={idx}
+													className="bg-white border border-gray-100 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+													
+
+													{/* ✅ Grid for each industry's solutions */}
+													<ul className="grid grid-cols-2 gap-4">
+														{industry.solutions.map((solution, i) => {
+															const logoObj = logos.find((logo) =>
+																solution
+																	.toLowerCase()
+																	.includes(logo.name.toLowerCase())
+															);
+
+															return (
+																<li
+																	key={i}
+																	className="flex flex-col items-center text-center text-gray-700">
+																	{logoObj && (
+																		<Image
+																			src={logoObj.src}
+																			alt={logoObj.name}
+																			width={50}
+																			height={50}
+																			className="object-contain mb-2"
+																		/>
+																	)}
+																	
+																</li>
+															);
+														})}
+													</ul>
+												</div>
+											))}
+										</div>
+									</section>
 								</div>
 							</div>
 						);
 					})}
 				</div>
 			</section>
-
-			
 		</div>
 	);
 }

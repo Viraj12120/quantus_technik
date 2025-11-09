@@ -8,6 +8,11 @@ const logos = [
 	{ name: "ZOLLER", src: "/zoller.svg" },
 	{ name: "WENZEL", src: "/wenzel.svg" },
 	{ name: "ALZMETALL", src: "/alz.svg" },
+	{ name: "mst", src: "/mst.png" },
+	{ name: "mill", src: "/mill.png" },
+	{ name: "kenchi", src: "/k.svg" },
+	{ name: "jktet", src: "/jktet.svg" },
+	{ name: "gerardi", src: "/gerardi.jpg" },
 ];
 
 const containerVariants = {
@@ -64,7 +69,7 @@ export default function Product() {
 								<Image
 									src={logo.src}
 									alt={`${logo.name} logo`}
-									width={180}
+									width={200}
 									height={80}
 									className="w-full h-full object-contain grayscale hover:grayscale-0 mix-blend-multiply transition-all duration-300"
 									unoptimized
