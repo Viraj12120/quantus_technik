@@ -1,5 +1,4 @@
-import Offersd from "../components/offers";
-
+// app/Offers/page.tsx
 export const metadata = {
 	title: "Special Offers & Deals | Machine Tools & Equipment Promotions",
 	description:
@@ -21,11 +20,15 @@ export const metadata = {
 		canonical: "/offers",
 	},
 	robots: {
-		index: false, // Often you might want to hide offers pages from indexing
+		index: false,
 		follow: true,
 	},
 };
 
 export default function Offer() {
-	return <Offersd />;
+	return (
+		<div className="min-h-screen flex items-center justify-center">
+			<h1 className="text-4xl font-bold">Offers Page - Basic Test</h1>
+		</div>
+	);
 }
