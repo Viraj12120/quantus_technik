@@ -1,4 +1,4 @@
-// app/Offers/page.tsx
+
 export const metadata = {
 	title: "Special Offers & Deals | Machine Tools & Equipment Promotions",
 	description:
@@ -20,15 +20,15 @@ export const metadata = {
 		canonical: "/offers",
 	},
 	robots: {
-		index: false,
+		index: false, // Often you might want to hide offers pages from indexing
 		follow: true,
 	},
 };
 
 export default function Offer() {
 	return (
-		<div className="min-h-screen flex items-center justify-center">
-			<h1 className="text-4xl font-bold">Offers Page - Basic Test</h1>
-		</div>
+		<h1 className="flex justify-center items-center min-h-screen text-4xl">
+			Under Construction...
+		</h1>
 	);
 }
