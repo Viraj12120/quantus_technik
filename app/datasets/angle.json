@@ -1,113 +1,1093 @@
 {
-    "id": "angle-head",
-    "categories": [
-        {
-            "id": "fixed-type",
-            "label": "Fixed Type – 45° & 90°",
-            "manufacturer": "Gerardi",
-            "description": "Rigid and corrosion-resistant fixed angle heads with modular options and coolant support.",
-            "models": [
-                {
-                    "id": "G90-5",
-                    "name": "G90-5",
-                    "max_rpm": 10000,
-                    "torque_nm": 4,
-                    "weight_kg": 7,
-                    "features": [
-                        "Internal coolant",
-                        "Weldon output"
-                    ],
-                    "image": "/images/gerardi/fixed/g90-5.jpg"
-                },
-                {
-                    "id": "G90-7L",
-                    "name": "G90-7L",
-                    "max_rpm": 10000,
-                    "torque_nm": 6,
-                    "weight_kg": 7.5,
-                    "features": [
-                        "Extended reach",
-                        "Weldon output"
-                    ],
-                    "image": "/images/gerardi/fixed/g90-7l.jpg"
-                },
-                {
-                    "id": "GM90-3 300S",
-                    "name": "GM90-3 300S",
-                    "max_rpm": 12000,
-                    "torque_nm": 2.3,
-                    "weight_kg": 3.5,
-                    "features": [
-                        "Slim design",
-                        "ER8 collet"
-                    ],
-                    "image": "/images/gerardi/fixed/gm90-3-300s.jpg"
+    "catalog": {
+        "name": "Gerardi Classic Line Angle Heads",
+        "year": 2024,
+        "total_models": 72,
+        "series": {
+            "ATC": {
+                "description": "Automatic Tool Change - for machining centers with automatic tool transfer",
+                "total_models": 46,
+                "categories": {
+                    "LIGHT": {
+                        "models": [
+                            {
+                                "model": "GL90-7",
+                                "type": 0,
+                                "ratio": "1:1",
+                                "weight_kg": [
+                                    2.2,
+                                    2.7
+                                ],
+                                "rpm": 10000,
+                                "output_diameter": 7,
+                                "torque_nm": 5,
+                                "output": "ER11",
+                                "collet_range": "Ø1/7"
+                            },
+                            {
+                                "model": "GL90-10",
+                                "type": 0,
+                                "ratio": "1:1",
+                                "weight_kg": [
+                                    2.4,
+                                    2.9
+                                ],
+                                "rpm": 10000,
+                                "output_diameter": 10,
+                                "torque_nm": 10,
+                                "output": "ER16",
+                                "collet_range": "Ø1/10"
+                            },
+                            {
+                                "model": "GL90-16",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": [
+                                    4.3,
+                                    7.2
+                                ],
+                                "rpm": 8000,
+                                "output_diameter": 16,
+                                "torque_nm": 24,
+                                "output": "ER25",
+                                "collet_range": "Ø1/16"
+                            },
+                            {
+                                "model": "GTU-10",
+                                "type": 0,
+                                "ratio": "1:1",
+                                "weight_kg": 3.8,
+                                "rpm": 6000,
+                                "output_diameter": 10,
+                                "torque_nm": 10,
+                                "output": "ER16",
+                                "collet_range": "Ø1/10",
+                                "adjustable": "0°-360°"
+                            }
+                        ]
+                    },
+                    "MINI": {
+                        "models": [
+                            {
+                                "model": "GM90-3 300S",
+                                "type": 1,
+                                "ratio": "1:-1",
+                                "weight_kg": 3.6,
+                                "rpm": 15000,
+                                "output_diameter": 1.6,
+                                "torque_nm": 1,
+                                "output": "K252",
+                                "collet_range": "Ø1.6",
+                                "spindle": "MFC-300S"
+                            },
+                            {
+                                "model": "GM90-3 300",
+                                "type": 1,
+                                "ratio": "3/4",
+                                "weight_kg": 3.58,
+                                "rpm": "15000/11250",
+                                "output_diameter": 3.175,
+                                "torque_nm": 1,
+                                "output": "CHC",
+                                "collet_range": "Ø1.6-3.175",
+                                "spindle": "IC-300"
+                            },
+                            {
+                                "model": "GM90-3 200",
+                                "type": 1,
+                                "ratio": "1:1.5",
+                                "weight_kg": 3.7,
+                                "rpm": "15000/10000",
+                                "output_diameter": 3.175,
+                                "torque_nm": 4,
+                                "output": "CHS",
+                                "collet_range": "Ø0.8-3.175",
+                                "spindle": "RA-200"
+                            },
+                            {
+                                "model": "GM90-3 100",
+                                "type": 1,
+                                "ratio": "1/2.67",
+                                "weight_kg": 3.8,
+                                "rpm": "15000/5620",
+                                "output_diameter": 3.175,
+                                "torque_nm": 4,
+                                "output": "CH8",
+                                "collet_range": "Ø0.8-3.175",
+                                "spindle": "RA-100"
+                            }
+                        ]
+                    },
+                    "SLIM": {
+                        "models": [
+                            {
+                                "model": "GS90-2",
+                                "type": 1,
+                                "ratio": "1:2.475",
+                                "weight_kg": 4.96,
+                                "rpm": 12000,
+                                "output_diameter": 2.5,
+                                "torque_nm": 1.6,
+                                "output": "GS90-2",
+                                "collet_range": "Ø1/2.5"
+                            },
+                            {
+                                "model": "GS90-3XS",
+                                "type": 1,
+                                "ratio": "1:3.19",
+                                "weight_kg": 5.34,
+                                "rpm": 10000,
+                                "output_diameter": 3.5,
+                                "torque_nm": 2.3,
+                                "output": "GS90-3XS",
+                                "collet_range": "Ø2/3.5"
+                            }
+                        ]
+                    },
+                    "STD_90": {
+                        "models": [
+                            {
+                                "model": "G90-5",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": [
+                                    4,
+                                    3.7
+                                ],
+                                "rpm": 10000,
+                                "output_diameter": 5,
+                                "torque_nm": 4,
+                                "output": "ER8",
+                                "collet_range": "Ø0.5/5"
+                            },
+                            {
+                                "model": "GM90-5",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 3.84,
+                                "rpm": 10000,
+                                "output_diameter": 5,
+                                "torque_nm": 4,
+                                "output": "ER8",
+                                "collet_range": "Ø0.5/5"
+                            },
+                            {
+                                "model": "G90-7",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 4,
+                                "rpm": 10000,
+                                "output_diameter": 7,
+                                "torque_nm": 5,
+                                "output": "ER11",
+                                "collet_range": "Ø1/7"
+                            },
+                            {
+                                "model": "G90-7L",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 4.3,
+                                "rpm": 10000,
+                                "output_diameter": 7,
+                                "torque_nm": 5,
+                                "output": "ER11",
+                                "collet_range": "Ø1/7",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-10",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 4.3,
+                                "rpm": 10000,
+                                "output_diameter": 10,
+                                "torque_nm": 10,
+                                "output": "ER16",
+                                "collet_range": "Ø1/10"
+                            },
+                            {
+                                "model": "G90-10L",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 5.2,
+                                "rpm": 10000,
+                                "output_diameter": 10,
+                                "torque_nm": 10,
+                                "output": "ER16",
+                                "collet_range": "Ø1/10",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-16",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 5.4,
+                                "rpm": 8000,
+                                "output_diameter": 16,
+                                "torque_nm": 24,
+                                "output": "ER25",
+                                "collet_range": "Ø1/16"
+                            },
+                            {
+                                "model": "G90-16L",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 6.7,
+                                "rpm": 8000,
+                                "output_diameter": 16,
+                                "torque_nm": 24,
+                                "output": "ER25",
+                                "collet_range": "Ø1/16",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-20",
+                                "type": 2,
+                                "ratio": "1:1",
+                                "weight_kg": 11,
+                                "rpm": 4000,
+                                "output_diameter": 20,
+                                "torque_nm": 40,
+                                "output": "ER32",
+                                "collet_range": "Ø2/20"
+                            },
+                            {
+                                "model": "G90-20L",
+                                "type": 2,
+                                "ratio": "1:1",
+                                "weight_kg": 13.8,
+                                "rpm": 4000,
+                                "output_diameter": 20,
+                                "torque_nm": 40,
+                                "output": "ER32",
+                                "collet_range": "Ø2/20",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-20L.272",
+                                "type": 2,
+                                "ratio": "1:1",
+                                "weight_kg": 17,
+                                "rpm": 4000,
+                                "output_diameter": 20,
+                                "torque_nm": 40,
+                                "output": "ER32",
+                                "collet_range": "Ø2/20",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-30",
+                                "type": 3,
+                                "ratio": "1:1",
+                                "weight_kg": 17,
+                                "rpm": 4000,
+                                "output_diameter": 30,
+                                "torque_nm": 75,
+                                "output": "ER40",
+                                "collet_range": "Ø3/30"
+                            },
+                            {
+                                "model": "G90-30L",
+                                "type": 3,
+                                "ratio": "1:1",
+                                "weight_kg": 20,
+                                "rpm": 4000,
+                                "output_diameter": 30,
+                                "torque_nm": 75,
+                                "output": "ER40",
+                                "collet_range": "Ø3/30",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-S40",
+                                "type": 4,
+                                "ratio": "1:1",
+                                "weight_kg": 22,
+                                "rpm": 4000,
+                                "output_diameter": 26,
+                                "torque_nm": 140,
+                                "output": "ISO 40/CAT/BT40"
+                            },
+                            {
+                                "model": "G90-S40L",
+                                "type": 4,
+                                "ratio": "1:1",
+                                "weight_kg": 26.2,
+                                "rpm": 4000,
+                                "output_diameter": 26,
+                                "torque_nm": 140,
+                                "output": "ISO 40/CAT/BT40",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-S40L.280",
+                                "type": 4,
+                                "ratio": "1:1",
+                                "weight_kg": 32.4,
+                                "rpm": 4000,
+                                "output_diameter": 26,
+                                "torque_nm": 140,
+                                "output": "ISO/BT/CAT 40",
+                                "series": "LONG"
+                            }
+                        ]
+                    },
+                    "EXTENDED": {
+                        "models": [
+                            {
+                                "model": "G90-10L.240",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 6.3,
+                                "rpm": 6000,
+                                "output_diameter": 10,
+                                "torque_nm": 10,
+                                "output": "ER16",
+                                "collet_range": "Ø1/10"
+                            },
+                            {
+                                "model": "G90-16L.270",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 8.9,
+                                "rpm": 4000,
+                                "output_diameter": 16,
+                                "torque_nm": 24,
+                                "output": "ER25",
+                                "collet_range": "Ø1/16"
+                            },
+                            {
+                                "model": "G90-20L.332",
+                                "type": 2,
+                                "ratio": "1:1",
+                                "weight_kg": 20.5,
+                                "rpm": 4000,
+                                "output_diameter": 20,
+                                "torque_nm": 40,
+                                "output": "ER32",
+                                "collet_range": "Ø2/20"
+                            },
+                            {
+                                "model": "G90-30L.287",
+                                "type": 3,
+                                "ratio": "1:1",
+                                "weight_kg": 22.5,
+                                "rpm": 4000,
+                                "output_diameter": 30,
+                                "torque_nm": 75,
+                                "output": "ER40",
+                                "collet_range": "Ø3/30"
+                            }
+                        ]
+                    },
+                    "GMU": {
+                        "description": "Adjustable angle 0° to 90°",
+                        "models": [
+                            {
+                                "model": "GMU-13",
+                                "type": 0,
+                                "ratio": "1:1",
+                                "weight_kg": 4.4,
+                                "rpm": 4000,
+                                "output_diameter": 13,
+                                "torque_nm": 6,
+                                "output": "ER20",
+                                "collet_range": "Ø1/13",
+                                "adjustable": "0°-90° (Step 15°)"
+                            },
+                            {
+                                "model": "GMU-13L",
+                                "type": 0,
+                                "ratio": "1:1",
+                                "weight_kg": 6.3,
+                                "rpm": 4000,
+                                "output_diameter": 13,
+                                "torque_nm": 6,
+                                "output": "ER20",
+                                "collet_range": "Ø1/13",
+                                "adjustable": "0°-90° (Step 15°)",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "GMU-16",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 6.8,
+                                "rpm": 4000,
+                                "output_diameter": 16,
+                                "torque_nm": 18,
+                                "output": "ER25",
+                                "collet_range": "Ø1/16",
+                                "adjustable": "0°-90° (Step 15°)"
+                            },
+                            {
+                                "model": "GMU-20",
+                                "type": 2,
+                                "ratio": "1:1",
+                                "weight_kg": 13,
+                                "rpm": 4000,
+                                "output_diameter": 20,
+                                "torque_nm": 32,
+                                "output": "ER32",
+                                "collet_range": "Ø2/20",
+                                "adjustable": "0°-90° (Step 15°)"
+                            }
+                        ]
+                    },
+                    "DOUBLE": {
+                        "description": "Dual output heads - opposite 180°",
+                        "models": [
+                            {
+                                "model": "G90-16 2U",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 6.4,
+                                "rpm": 4000,
+                                "output_diameter": 16,
+                                "torque_nm": 24,
+                                "output": "ER25",
+                                "collet_range": "Ø1/16"
+                            },
+                            {
+                                "model": "G90-16L 2U",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 13,
+                                "rpm": 4000,
+                                "output_diameter": 16,
+                                "torque_nm": 24,
+                                "output": "ER25",
+                                "collet_range": "Ø1/16",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-20 2U",
+                                "type": 2,
+                                "ratio": "1:1",
+                                "weight_kg": 11.7,
+                                "rpm": 4000,
+                                "output_diameter": 20,
+                                "torque_nm": 40,
+                                "output": "ER32",
+                                "collet_range": "Ø2/20"
+                            },
+                            {
+                                "model": "G90-20L 2U",
+                                "type": 2,
+                                "ratio": "1:1",
+                                "weight_kg": 15.5,
+                                "rpm": 4000,
+                                "output_diameter": 20,
+                                "torque_nm": 40,
+                                "output": "ER-32",
+                                "collet_range": "Ø2/20",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-30 2U",
+                                "type": 3,
+                                "ratio": "1:1",
+                                "weight_kg": 20,
+                                "rpm": 4000,
+                                "output_diameter": 30,
+                                "torque_nm": 75,
+                                "output": "ER40",
+                                "collet_range": "Ø3/30"
+                            },
+                            {
+                                "model": "G90-30L 2U",
+                                "type": 3,
+                                "ratio": "1:1",
+                                "weight_kg": 23,
+                                "rpm": 4000,
+                                "output_diameter": 30,
+                                "torque_nm": 75,
+                                "output": "ER-40",
+                                "collet_range": "Ø3/30",
+                                "series": "LONG"
+                            }
+                        ]
+                    },
+                    "OFFSET": {
+                        "description": "Offset angle heads for narrow spaces",
+                        "models": [
+                            {
+                                "model": "GR90-5",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 4.7,
+                                "rpm": 8000,
+                                "output_diameter": 4.5,
+                                "torque_nm": 9,
+                                "output": "SCHAUBLIN P6",
+                                "collet_range": "Ø0.3/5"
+                            },
+                            {
+                                "model": "GR90-10",
+                                "type": 1,
+                                "ratio": "1:1.6",
+                                "weight_kg": 6.2,
+                                "rpm": 4000,
+                                "output_diameter": 10,
+                                "torque_nm": 20,
+                                "output": "ER-16",
+                                "collet_range": "Ø1/10"
+                            },
+                            {
+                                "model": "GR90-16",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 6,
+                                "rpm": 4000,
+                                "output_diameter": 16,
+                                "torque_nm": 20,
+                                "output": "ER-25",
+                                "collet_range": "Ø1/16"
+                            },
+                            {
+                                "model": "GR90-20",
+                                "type": 3,
+                                "ratio": "1:1",
+                                "weight_kg": 15.6,
+                                "rpm": 4000,
+                                "output_diameter": 20,
+                                "torque_nm": 75,
+                                "output": "ER-32",
+                                "collet_range": "Ø2/20"
+                            },
+                            {
+                                "model": "GR90-S40",
+                                "type": 4,
+                                "ratio": "1:1",
+                                "weight_kg": 22.6,
+                                "rpm": 4000,
+                                "output_diameter": 26,
+                                "torque_nm": 140,
+                                "output": "ISO/CAT/BT40"
+                            }
+                        ]
+                    }
                 }
+            },
+            "MTC": {
+                "description": "Manual Tool Change - for traditional machine tools with flange attachment",
+                "total_models": 26,
+                "categories": {
+                    "STD_90": {
+                        "models": [
+                            {
+                                "model": "G90-5",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 4,
+                                "rpm": 10000,
+                                "output_diameter": 5,
+                                "torque_nm": 4,
+                                "output": "ER-8",
+                                "collet_range": "Ø0.5/5"
+                            },
+                            {
+                                "model": "G90-7",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 3.7,
+                                "rpm": 10000,
+                                "output_diameter": 7,
+                                "torque_nm": 5,
+                                "output": "ER-11",
+                                "collet_range": "Ø1/7"
+                            },
+                            {
+                                "model": "G90-7L",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 4,
+                                "rpm": 10000,
+                                "output_diameter": 7,
+                                "torque_nm": 5,
+                                "output": "ER-11",
+                                "collet_range": "Ø1/7",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-10",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 4.3,
+                                "rpm": 10000,
+                                "output_diameter": 10,
+                                "torque_nm": 10,
+                                "output": "ER-16",
+                                "collet_range": "Ø1/10"
+                            },
+                            {
+                                "model": "G90-10L",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 6,
+                                "rpm": 10000,
+                                "output_diameter": 16,
+                                "torque_nm": 10,
+                                "output": "ER-16",
+                                "collet_range": "Ø1/10",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-16",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 4.5,
+                                "rpm": 8000,
+                                "output_diameter": 16,
+                                "torque_nm": 24,
+                                "output": "ER-25",
+                                "collet_range": "Ø1/16"
+                            },
+                            {
+                                "model": "G90-16L",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 6.1,
+                                "rpm": 8000,
+                                "output_diameter": 16,
+                                "torque_nm": 24,
+                                "output": "ER-25",
+                                "collet_range": "Ø1/16",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-20",
+                                "type": 2,
+                                "ratio": "1:1",
+                                "weight_kg": 10,
+                                "rpm": 4000,
+                                "output_diameter": 20,
+                                "torque_nm": 40,
+                                "output": "ER-32",
+                                "collet_range": "Ø2/20"
+                            },
+                            {
+                                "model": "G90-20L",
+                                "type": 2,
+                                "ratio": "1:1",
+                                "weight_kg": 12.2,
+                                "rpm": 4000,
+                                "output_diameter": 20,
+                                "torque_nm": 40,
+                                "output": "ER-32",
+                                "collet_range": "Ø2/20",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-30",
+                                "type": 3,
+                                "ratio": "1:1",
+                                "weight_kg": 17,
+                                "rpm": 4000,
+                                "output_diameter": 30,
+                                "torque_nm": 75,
+                                "output": "ER-40",
+                                "collet_range": "Ø3/30"
+                            },
+                            {
+                                "model": "G90-30L",
+                                "type": 3,
+                                "ratio": "1:1",
+                                "weight_kg": 20,
+                                "rpm": 4000,
+                                "output_diameter": 30,
+                                "torque_nm": 75,
+                                "output": "ER-40",
+                                "collet_range": "Ø3/30",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-S40",
+                                "type": 4,
+                                "ratio": "1:1",
+                                "weight_kg": 22,
+                                "rpm": 4000,
+                                "output_diameter": 26,
+                                "torque_nm": 140,
+                                "output": "ISO/CAT/BT40"
+                            }
+                        ]
+                    },
+                    "XL": {
+                        "models": [
+                            {
+                                "model": "G90-S40XL",
+                                "type": 5,
+                                "ratio": "1:1",
+                                "weight_kg": 32.5,
+                                "rpm": 4000,
+                                "output_diameter": 30,
+                                "torque_nm": 140,
+                                "output": "ISO/CAT/BT40"
+                            },
+                            {
+                                "model": "G90-S40XLxx",
+                                "type": 5,
+                                "ratio": "1:1",
+                                "weight_kg": [
+                                    57,
+                                    67,
+                                    78,
+                                    86
+                                ],
+                                "rpm": 4000,
+                                "output_diameter": 30,
+                                "torque_nm": 140,
+                                "output": "ISO/CAT/BT40",
+                                "lengths": [
+                                    400,
+                                    500,
+                                    600,
+                                    700
+                                ],
+                                "special": true
+                            },
+                            {
+                                "model": "G90-S50",
+                                "type": 6,
+                                "ratio": "1:1",
+                                "weight_kg": 77,
+                                "rpm": 3000,
+                                "output_diameter": 45,
+                                "torque_nm": 400,
+                                "output": "ISO/CAT/BT50"
+                            },
+                            {
+                                "model": "G90-S50XLxx",
+                                "type": 6,
+                                "ratio": "1:1",
+                                "weight_kg": [
+                                    149,
+                                    169,
+                                    190,
+                                    211,
+                                    231
+                                ],
+                                "rpm": 3000,
+                                "output_diameter": 45,
+                                "torque_nm": 400,
+                                "output": "ISO/CAT/BT50",
+                                "lengths": [
+                                    400,
+                                    500,
+                                    600,
+                                    700,
+                                    800
+                                ],
+                                "special": true
+                            }
+                        ]
+                    },
+                    "GMU": {
+                        "description": "Adjustable angle 0° to 90°",
+                        "models": [
+                            {
+                                "model": "GMU-16",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 6.3,
+                                "rpm": 4000,
+                                "output_diameter": 16,
+                                "torque_nm": 18,
+                                "output": "ER-25",
+                                "collet_range": "Ø1/16",
+                                "adjustable": "0°-90° (Step 15°)"
+                            },
+                            {
+                                "model": "GMU-20",
+                                "type": 2,
+                                "ratio": "1:1",
+                                "weight_kg": 13,
+                                "rpm": 4000,
+                                "output_diameter": 20,
+                                "torque_nm": 32,
+                                "output": "ER-32",
+                                "collet_range": "Ø2/20",
+                                "adjustable": "0°-90° (Step 15°)"
+                            },
+                            {
+                                "model": "GMU-S40-125",
+                                "type": 5,
+                                "ratio": "1:1",
+                                "weight_kg": 59.3,
+                                "rpm": 3000,
+                                "output_diameter": 30,
+                                "torque_nm": 100,
+                                "output": "ISO/CAT/BT40",
+                                "adjustable": "360°"
+                            },
+                            {
+                                "model": "GMU-S40",
+                                "type": 5,
+                                "ratio": "1:1",
+                                "weight_kg": 49.5,
+                                "rpm": 3000,
+                                "output_diameter": 30,
+                                "torque_nm": 100,
+                                "output": "ISO/CAT/BT40",
+                                "adjustable": "360°"
+                            },
+                            {
+                                "model": "GMU-S50",
+                                "type": 6,
+                                "ratio": "1:1",
+                                "weight_kg": 121,
+                                "rpm": 3000,
+                                "output_diameter": 45,
+                                "torque_nm": 220,
+                                "output": "ISO/CAT/BT50",
+                                "adjustable": "360°"
+                            }
+                        ]
+                    },
+                    "DOUBLE": {
+                        "description": "Dual output heads - opposite 180°",
+                        "models": [
+                            {
+                                "model": "G90-16 2U",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 5.6,
+                                "rpm": 4000,
+                                "output_diameter": 16,
+                                "torque_nm": 24,
+                                "output": "ER-25",
+                                "collet_range": "Ø1/16"
+                            },
+                            {
+                                "model": "G90-16L 2U",
+                                "type": 1,
+                                "ratio": "1:1",
+                                "weight_kg": 6.1,
+                                "rpm": 4000,
+                                "output_diameter": 16,
+                                "torque_nm": 24,
+                                "output": "ER-25",
+                                "collet_range": "Ø1/16",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-20 2U",
+                                "type": 2,
+                                "ratio": "1:1",
+                                "weight_kg": 14,
+                                "rpm": 4000,
+                                "output_diameter": 20,
+                                "torque_nm": 40,
+                                "output": "ER-32",
+                                "collet_range": "Ø2/20"
+                            },
+                            {
+                                "model": "G90-20L 2U",
+                                "type": 2,
+                                "ratio": "1:1",
+                                "weight_kg": 15.5,
+                                "rpm": 4000,
+                                "output_diameter": 20,
+                                "torque_nm": 40,
+                                "output": "ER-32",
+                                "collet_range": "Ø2/20",
+                                "series": "LONG"
+                            },
+                            {
+                                "model": "G90-30 2U",
+                                "type": 3,
+                                "ratio": "1:1",
+                                "weight_kg": 20,
+                                "rpm": 4000,
+                                "output_diameter": 30,
+                                "torque_nm": 75,
+                                "output": "ER-40",
+                                "collet_range": "Ø3/30"
+                            },
+                            {
+                                "model": "G90-30L 2U",
+                                "type": 3,
+                                "ratio": "1:1",
+                                "weight_kg": 23,
+                                "rpm": 4000,
+                                "output_diameter": 30,
+                                "torque_nm": 75,
+                                "output": "ER-40",
+                                "collet_range": "Ø3/30",
+                                "series": "LONG"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "features": {
+            "integral_shank_shaft": true,
+            "abec9_bearings": true,
+            "gleason_gears": true,
+            "treated_steel_body": true,
+            "internal_coolant_options": [
+                "10bar through pin",
+                "40bar through shank",
+                "70bar through shank",
+                "150bar through ReCool nuts"
+            ],
+            "dry_running": "Available on selected models",
+            "warranty": "1 year"
+        },
+        "shank_compatibility": {
+            "SK_DIN_69871": [
+                30,
+                40,
+                50
+            ],
+            "CAT_ANSI_B5.50": [
+                40,
+                50
+            ],
+            "BT_MAS_403": [
+                30,
+                40,
+                50
+            ],
+            "HSK_DIN_69893": [
+                63,
+                80,
+                100
+            ],
+            "CAPTO_ISO_26623": [
+                "C4",
+                "C5",
+                "C6",
+                "C8"
+            ],
+            "ISO_DIN_2080": [
+                40,
+                50
             ]
         },
-        {
-            "id": "universal-type",
-            "label": "Universal Type – 0° to 90°",
-            "manufacturer": "Gerardi",
-            "description": "Flexible modular angle heads adjustable from 0° to 90°, suitable for various machining applications.",
-            "models": [
-                {
-                    "id": "FL90-16L",
-                    "name": "FL90-16L",
-                    "max_rpm": 10000,
-                    "torque_nm": 12,
-                    "weight_kg": 10.5,
-                    "features": [
-                        "Adjustable angle",
-                        "ER25 collet"
-                    ],
-                    "image": "/images/gerardi/universal/fl90-16l.jpg"
-                },
-                {
-                    "id": "FS90-3",
-                    "name": "FS90-3",
-                    "max_rpm": 8000,
-                    "torque_nm": 3,
-                    "weight_kg": 5.5,
-                    "features": [
-                        "Lightweight",
-                        "ER11 collet"
-                    ],
-                    "image": "/images/gerardi/universal/fs90-3.jpg"
-                }
+        "accessories": {
+            "stop_blocks": [
+                "Standard cylindrical (Ø18, Ø28)",
+                "Conical adjustable",
+                "Machineable base",
+                "Multipoint anti-rotation system"
+            ],
+            "output_options": [
+                "ER collets (standard)",
+                "Weldon holders",
+                "Shell mill holders",
+                "HSK outputs",
+                "ISO/CAT/BT outputs",
+                "Capto outputs",
+                "Double outputs"
+            ],
+            "coolant_options": [
+                "Standard 10bar through pin",
+                "High pressure 40-70bar through shank",
+                "ReCool nuts up to 150bar",
+                "Rotating distributor"
+            ],
+            "extensions": {
+                "Type_1": [
+                    50,
+                    100,
+                    200
+                ],
+                "Type_2": [
+                    50,
+                    100,
+                    200
+                ],
+                "Type_3": [
+                    100,
+                    150
+                ]
+            },
+            "universal_flanges": {
+                "Type_1": "Ø125",
+                "Type_2": "Ø155",
+                "Type_3": "Ø210",
+                "Type_4": "Ø230",
+                "Type_5": "Ø280",
+                "Type_6": "Ø395"
+            }
+        },
+        "technical_specifications": {
+            "positioning_accuracy": "±0.03mm",
+            "runout_tolerance": "±0.025mm",
+            "parallelism": "±0.015/100mm",
+            "concentricity": "±0.02mm",
+            "spindle_runout": "0.010mm max",
+            "bearing_class": "ABEC 9",
+            "gear_type": "Gleason spiral bevel",
+            "body_material": "Treated steel",
+            "temperature_resistance": "Up to 48°C at 4000 RPM"
+        },
+        "applications": {
+            "ATC_series": [
+                "Vertical machining centers",
+                "Horizontal machining centers",
+                "5-axis machining centers",
+                "Automatic tool change operations",
+                "High-speed machining",
+                "Precision milling and drilling"
+            ],
+            "MTC_series": [
+                "Traditional machine tools",
+                "Manual milling machines",
+                "Fixed spindle applications",
+                "General purpose machining",
+                "Retrofit applications"
             ]
         },
-        {
-            "id": "special-customised",
-            "label": "Special (Customised)",
-            "manufacturer": "Gerardi",
-            "description": "Custom angle heads with extended lengths, offset outputs and high-pressure cooling options.",
-            "models": [
-                {
-                    "id": "G90-S40L.280",
-                    "name": "G90-S40L.280",
-                    "max_rpm": 4000,
-                    "torque_nm": 20,
-                    "weight_kg": 32,
-                    "features": [
-                        "Offset head",
-                        "Coolant 70 bar"
-                    ],
-                    "image": "/images/gerardi/special/g90-s40l-280.jpg"
-                },
-                {
-                    "id": "FR90-10",
-                    "name": "FR90-10",
-                    "max_rpm": 6000,
-                    "torque_nm": 22,
-                    "weight_kg": 12,
-                    "features": [
-                        "High-pressure coolant",
-                        "Weldon Max 10"
-                    ],
-                    "image": "/images/gerardi/special/fr90-10.jpg"
-                }
+        "special_series": {
+            "LIGHT": "Compact design for light machining",
+            "MINI": "Micro machining with interchangeable angle spindles (Ø1.6-3.175mm)",
+            "SLIM": "Ultra-compact for minimum space requirements",
+            "EXTENDED": "Extra long reach for deep cavity machining",
+            "GMU": "Variable angle adjustment 0°-90° or 360°",
+            "DOUBLE": "Simultaneous opposite operations at 180°",
+            "OFFSET": "Access to narrow spaces and restricted areas",
+            "XL": "Heavy duty large diameter applications"
+        },
+        "ordering_information": {
+            "model_code_format": "9.G90.XXXXX",
+            "specify": [
+                "Model type",
+                "Shank type and size",
+                "Output type",
+                "Coolant option",
+                "Extension length (if applicable)",
+                "Special features"
+            ],
+            "standard_package_includes": [
+                "Angle head",
+                "Stop block (ATC) or Universal flange (MTC)",
+                "ER nut",
+                "Service wrenches",
+                "Grease tube",
+                "Instruction manual",
+                "Inspection certificate"
             ]
+        },
+        "manufacturer": {
+            "name": "Gerardi S.p.A.",
+            "country": "Italy",
+            "website": "www.gerardi.it",
+            "certification": "100% Made in Italy",
+            "quality_standard": "ISO certified",
+            "warranty_period": "1 year standard",
+            "experience": "Over 50 years"
+        },
+        "notes": {
+            "coolant_pressure": "Maximum pressure varies by model and coolant type",
+            "dry_running": "Check model specifications - not all models support dry running at all speeds",
+            "extensions": "Maximum 2 extensions permitted on MTC series",
+            "custom_solutions": "Special lengths and configurations available on request",
+            "compatibility": "All models compatible with Evolution Line",
+            "total_range": "252 models including all variants"
         }
-    ]
+    }
 }

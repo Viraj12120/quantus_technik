@@ -15,10 +15,66 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Quantus Technik",
-	description: "Develop and designed by Viraj",
-	icons: {
-		icon: "/qt.png",
+	title: {
+		default: "Quantus Technik - Your Productivity Improvement Partner",
+		template: "%s | Quantus Technik",
+	},
+	description:
+		"Leading provider of machine tools, automation systems, and industrial manufacturing solutions across aerospace, automotive, medical, and die-mould industries.",
+	keywords: [
+		"machine tools",
+		"automation solutions",
+		"manufacturing",
+		"CNC machines",
+		"tool management",
+		"aerospace manufacturing",
+		"automotive engineering",
+	],
+	authors: [{ name: "Quantus Technik" }],
+	creator: "Quantus Technik",
+	publisher: "Quantus Technik",
+	formatDetection: {
+		email: false,
+		address: false,
+		telephone: false,
+	},
+	metadataBase: new URL("https://quantus-technik.com"),
+	alternates: {
+		canonical: "/",
+	},
+	openGraph: {
+		title: "Quantus Technik - Manufacturing Solutions Partner",
+		description:
+			"Your productivity improvement partner for machine tools, automation, and manufacturing solutions",
+		url: "https://quantus-technik.com",
+		siteName: "Quantus Technik",
+		images: [
+			{
+				url: "/og-image.jpg",
+				width: 1200,
+				height: 630,
+				alt: "Quantus Technik - Manufacturing Solutions",
+			},
+		],
+		locale: "en_IN",
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Quantus Technik - Manufacturing Solutions",
+		description: "Your productivity improvement partner",
+		images: ["/og-image.jpg"],
+	},
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+			"max-video-preview": -1,
+			"max-image-preview": "large",
+			"max-snippet": -1,
+		},
 	},
 };
 

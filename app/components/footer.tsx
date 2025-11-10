@@ -66,33 +66,45 @@ export default function Footer() {
 						<ul className="space-y-3 text-sm text-gray-700">
 							<li>
 								<Link
-									href="/Products/ken-ichi-5axis"
+									href="https://www.kencnc.com/"
+									target="_blank"
+									rel="noopener noreferrer"
 									className="hover:text-black">
 									Ken ICHI
 								</Link>
 							</li>
 							<li>
-								<Link href="/Products/grob-g550" className="hover:text-black">
+								<Link
+									href="https://www.grobgroup.com/en/"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="hover:text-black">
 									GROB
 								</Link>
 							</li>
 							<li>
 								<Link
-									href="/Products/hwaheon-turning-center"
+									href="https://www.hwacheon.com/en/main.do"
+									target="_blank"
+									rel="noopener noreferrer"
 									className="hover:text-black">
 									HwaCheon
 								</Link>
 							</li>
 							<li>
 								<Link
-									href="/Products/gerardi-evolution-line"
+									href="http://www.gerardispa.com/company"
+									target="_blank"
+									rel="noopener noreferrer"
 									className="hover:text-black">
-									Gerardi (Angle Head)
+									Gerardi
 								</Link>
 							</li>
 							<li>
 								<Link
-									href="/Products/wenzel-lh-108"
+									href="https://www.wenzel-group.com/en/product-categories"
+									target="_blank"
+									rel="noopener noreferrer"
 									className="hover:text-black">
 									WENZEL
 								</Link>
@@ -111,12 +123,12 @@ export default function Footer() {
 							</li>
 
 							<li>
-								<a href="#" className="hover:text-black">
+								<a href="Industries#" className="hover:text-black">
 									Manufacturing
 								</a>
 							</li>
 							<li>
-								<a href="#" className="hover:text-black">
+								<a href="Industries#" className="hover:text-black">
 									Automotive
 								</a>
 							</li>
@@ -125,9 +137,9 @@ export default function Footer() {
 
 					{/* Blogs or Additional Section */}
 					<div>
-						<h4 className="font-semibold text-black mb-6">Blogs</h4>
+						<h4 className="font-semibold text-black mb-6">Offers and Deals</h4>
 						<ul className="space-y-3 text-sm text-gray-700">
-							<li>
+							{/* <li>
 								<a href="/Blogs" className="hover:text-black">
 									Latest Updates
 								</a>
@@ -137,7 +149,7 @@ export default function Footer() {
 								<a href="/Blogs" className="hover:text-black">
 									News
 								</a>
-							</li>
+							</li> */}
 						</ul>
 					</div>
 				</div>

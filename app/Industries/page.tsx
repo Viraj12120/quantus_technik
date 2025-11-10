@@ -1,6 +1,29 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from 'next/image';
+import Image from "next/image";
+
+// export const metadata = {
+// 	title: "Industries We Serve | Aerospace, Automotive, Medical & More",
+// 	description:
+// 		"Quantus Technik provides specialized manufacturing solutions for aerospace, automotive, medical, die-mould, electric vehicle electronics, and heavy engineering industries.",
+// 	keywords: [
+// 		"aerospace manufacturing",
+// 		"automotive industry solutions",
+// 		"medical equipment manufacturing",
+// 		"die-mould industry",
+// 		"EV electronics",
+// 		"heavy engineering",
+// 	],
+// 	openGraph: {
+// 		title: "Industries Served - Aerospace, Automotive, Medical & More",
+// 		description: "Specialized manufacturing solutions for diverse industries",
+// 		images: ["/og-industries.jpg"],
+// 		url: "https://quantus-technik.com/industries",
+// 	},
+// 	alternates: {
+// 		canonical: "/industries",
+// 	},
+// };
 
 export default function Industries() {
 	const industries = [
@@ -33,7 +56,7 @@ export default function Industries() {
 		{
 			title: "Automotive / Electric Vehicle",
 			image:
-				"https://img.freepik.com/free-photo/electric-car-charging-home-clean-energy-filling-technology_35913-2530.jpg?t=st=1761826087~exp=1761829687~hmac=f9d6de958c809bdb55dc116a5ec7b74096ed916677ef4e2b18da2ff58d867357&w=1480",
+				"/electric.jpg",
 			challenges: [
 				"Shift from ICE to electric powertrains",
 				"Lightweight design requirements",
@@ -62,7 +85,7 @@ export default function Industries() {
 		{
 			title: "Medical Electronics & Semiconductors",
 			image:
-				"https://img.freepik.com/free-photo/close-up-hand-with-glove-holding-chip_23-2148925545.jpg?t=st=1761826673~exp=1761830273~hmac=9da40912084d6a09a779047ec0244be93ea7cb72d2d90c9e5850910aecd7fd70&w=1480",
+				"/semi.jpg",
 			challenges: [
 				"Micron-level tolerances",
 				"Biocompatible material machining",
@@ -89,7 +112,7 @@ export default function Industries() {
 		{
 			title: "Die & Mould",
 			image:
-				"https://img.freepik.com/free-photo/production-process-details_140725-8069.jpg?t=st=1761826864~exp=1761830464~hmac=856ac386bc3eaa6ded2534ea93de9cf0f80bc991e2d0092b9aa5efa8cb122741&w=1480",
+				"/die.jpg",
 			challenges: [
 				"High-precision surface finishing",
 				"Complex 3D contours",
@@ -102,7 +125,6 @@ export default function Industries() {
 				"ALZMETALL 5-axis milling for complex cavities",
 				"GROB universal machining for mold plates",
 				"KEN 5-axis solution for ultra precision surface finish and flexibility",
-
 				"ZOLLER for tool management and presetting",
 			],
 			applications: [
@@ -189,10 +211,10 @@ export default function Industries() {
 										<img
 											src={industry.image}
 											alt={industry.title}
-											className="w-full h-full object-cover  hover:grayscale-0 transition-all duration-500"
+											className="w-full h-full object-cover hover:grayscale-0 transition-all duration-500"
 										/>
 										<div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-										<div className="absolute bottom-0 left-0 right-0 p-8  from-black/80 to-transparent">
+										<div className="absolute bottom-0 left-0 right-0 p-8 from-black/80 to-transparent">
 											<h2 className="text-3xl font-bold text-white">
 												{industry.title}
 											</h2>
@@ -236,47 +258,33 @@ export default function Industries() {
 									</div>
 
 									{/* Solutions */}
-									<section className="my-12 max-w-7xl mx-auto px-6">
+									<section className="my-12">
 										<h3 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-8">
 											Our Solutions
 										</h3>
 
-										{/* ✅ GRID CONTAINER */}
-										<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-											{industries.map((industry, idx) => (
-												<div
-													key={idx}
-													className="bg-white border border-gray-100 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
-													
-
-													{/* ✅ Grid for each industry's solutions */}
-													<ul className="grid grid-cols-2 gap-4">
-														{industry.solutions.map((solution, i) => {
-															const logoObj = logos.find((logo) =>
-																solution
-																	.toLowerCase()
-																	.includes(logo.name.toLowerCase())
-															);
-
-															return (
-																<li
-																	key={i}
-																	className="flex flex-col items-center text-center text-gray-700">
-																	{logoObj && (
-																		<Image
-																			src={logoObj.src}
-																			alt={logoObj.name}
-																			width={50}
-																			height={50}
-																			className="object-contain mb-2"
-																		/>
-																	)}
-																	
-																</li>
-															);
-														})}
-													</ul>
-												</div>
+										{/* ✅ UPDATED GRID CONTAINER WITH LOGOS */}
+										<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+											{logos.map((logo, index) => (
+												<motion.div
+													key={logo.name}
+													initial={{ opacity: 0, y: 20 }}
+													animate={{ opacity: 1, y: 0 }}
+													transition={{ duration: 0.5, delay: index * 0.1 }}
+													className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center justify-center h-24">
+													<div className="relative w-16 h-12 mb-2">
+														<Image
+															src={logo.src}
+															alt={logo.name}
+															fill
+															className="object-contain"
+															sizes="(max-width: 64px) 100vw, 64px"
+														/>
+													</div>
+													<span className="text-xs font-medium text-gray-700 text-center">
+														{logo.name}
+													</span>
+												</motion.div>
 											))}
 										</div>
 									</section>

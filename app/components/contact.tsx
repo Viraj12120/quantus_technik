@@ -199,7 +199,7 @@ export default function Contact() {
 									value={formData.firstName}
 									onChange={handleChange}
 									placeholder="Enter your first name..."
-									className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+									className="w-full px-4 py-2 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:text-gray-500 text-sm"
 								/>
 							</div>
 
@@ -214,7 +214,7 @@ export default function Contact() {
 									value={formData.lastName}
 									onChange={handleChange}
 									placeholder="Enter your last name..."
-									className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+									className="w-full px-4 py-2 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:text-gray-500 text-sm"
 								/>
 							</div>
 						</div>
@@ -231,7 +231,7 @@ export default function Contact() {
 									value={formData.companyName}
 									onChange={handleChange}
 									placeholder="Enter your company name..."
-									className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+									className="w-full px-4 py-2 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:text-gray-500 text-sm"
 								/>
 							</div>
 
@@ -243,7 +243,7 @@ export default function Contact() {
 									value={formData.city}
 									onChange={handleChange}
 									placeholder="Enter your city..."
-									className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+									className="w-full px-4 py-2 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:text-gray-500 text-sm"
 								/>
 							</div>
 						</div>
@@ -260,7 +260,7 @@ export default function Contact() {
 									value={formData.phoneNo}
 									onChange={handleChange}
 									placeholder="Enter your phone number..."
-									className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+									className="w-full px-4 py-2 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:text-gray-500 text-sm"
 								/>
 							</div>
 
@@ -274,7 +274,7 @@ export default function Contact() {
 									value={formData.email}
 									onChange={handleChange}
 									placeholder="Enter your email..."
-									className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+									className="w-full px-4 py-2 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:text-gray-500 text-sm"
 								/>
 							</div>
 						</div>
@@ -290,7 +290,7 @@ export default function Contact() {
 									name="model"
 									value={formData.model}
 									disabled
-									className="w-full px-4 py-3 bg-gray-100 rounded-lg border border-gray-200 text-sm cursor-not-allowed"
+									className="w-full px-4 py-2 bg-gray-100 rounded-lg border border-gray-200 text-sm cursor-not-allowed"
 								/>
 							</div>
 						)}
@@ -306,7 +306,7 @@ export default function Contact() {
 								onChange={handleChange}
 								rows={5}
 								placeholder="Write your message..."
-								className="w-full px-4 py-3 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm"
+								className="w-full px-4 py-2 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:text-gray-500 text-sm"
 							/>
 						</div>
 

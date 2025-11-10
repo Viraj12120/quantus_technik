@@ -8,10 +8,10 @@ const logos = [
 	{ name: "ZOLLER", src: "/zoller.svg" },
 	{ name: "WENZEL", src: "/wenzel.svg" },
 	{ name: "ALZMETALL", src: "/alz.svg" },
-	{ name: "mst", src: "/mst.png" },
+	{ name: "mst", src: "/mstt.jpg" },
 	{ name: "mill", src: "/mill.png" },
-	{ name: "kenchi", src: "/k.svg" },
-	{ name: "jktet", src: "/jktet.svg" },
+	{ name: "kenchi", src: "/ken.svg" },
+	{ name: "jktet", src: "/logo.png" },
 	{ name: "gerardi", src: "/gerardi.jpg" },
 ];
 
@@ -65,7 +65,7 @@ export default function Product() {
 							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.95 }}
 							className="flex items-center justify-center w-full">
-							<div className="relative w-full h-24 md:h-28 flex items-center justify-center bg-[#4299e1]/20 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 p-4 md:p-6 border border-[#4299e1]">
+							<div className="relative w-full h-24 md:h-28 flex items-center justify-center bg-[#CAE7FF] rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 p-4 md:p-6 border border-[#4299e1]">
 								<Image
 									src={logo.src}
 									alt={`${logo.name} logo`}

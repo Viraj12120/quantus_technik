@@ -30,7 +30,7 @@ export default function Header() {
 	const navLinks = [
 		{ name: "Home", href: "/" },
 		{ name: "About Us", href: "/About" },
-		{ name: "Industries We Serve", href: "/Industries" },
+		{ name: "Industries", href: "/Industries" },
 		{ name: "Contact Us", href: "/Contact" },
 		{ name: "Offers and Deals", href: "/Offers" },
 	];
@@ -62,8 +62,8 @@ export default function Header() {
 							<Link
 								key={link.name}
 								href={link.href}
-								className={`hover:text-black ${
-									pathname === link.href ? "text-black font-medium" : ""
+								className={`hover:text-blue-600 ${
+									pathname === link.href ? "text-blue-600 font-medium" : ""
 								}`}>
 								{link.name}
 							</Link>
@@ -106,8 +106,8 @@ export default function Header() {
 							<Link
 								key={link.name}
 								href={link.href}
-								className={`hover:text-black ${
-									pathname === link.href ? "text-black font-medium" : ""
+								className={`hover:text-blue-600 ${
+									pathname === link.href ? "text-blue-600 font-medium" : ""
 								}`}>
 								{link.name}
 							</Link>
@@ -133,7 +133,7 @@ export default function Header() {
 								href={link.href}
 								className={`text-sm ${
 									pathname === link.href
-										? "text-black font-medium"
+										? "text-blue-600 font-medium"
 										: "text-gray-600"
 								}`}>
 								{link.name}

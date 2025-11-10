@@ -103,23 +103,88 @@ export default function ProductDetailPage() {
 				];
 			}
 
-			// ✅ NEW: 5-Axis category specs
+			// ✅ UPDATED: 5-Axis category specs with GROB support
 			if (selectedSubCategory === "5-axis") {
-				return [
+				const specs = [
 					{ name: "Model", value: product.model },
 					{ name: "Description", value: product.description },
-					{ name: "Table Size (mm)", value: product.table_size_mm },
-					{ name: "Stroke (mm)", value: product.stroke_mm?.join(" × ") },
-					{
-						name: "Spindle Speed (rpm)",
-						value: product.spindle_speed_rpm?.join(" / "),
-					},
-					{
-						name: "Number of Tools",
-						value: product.number_of_tools?.join(" / "),
-					},
-					{ name: "Type", value: product.type },
 				];
+
+				// Table Size - support both table_size_mm and working_travel_mm
+				if (product.table_size_mm) {
+					specs.push({ name: "Table Size (mm)", value: product.table_size_mm });
+				} else if (product.working_travel_mm) {
+					specs.push({
+						name: "Table Size (mm)",
+						value: `${product.working_travel_mm[0]} × ${product.working_travel_mm[1]}`,
+					});
+				}
+
+				// Stroke - support both stroke_mm and working_travel_mm
+				if (product.stroke_mm) {
+					specs.push({
+						name: "Stroke (mm)",
+						value: `X:${product.stroke_mm[0]} | Y:${product.stroke_mm[1]} | Z:${product.stroke_mm[2]}`,
+					});
+				} else if (product.working_travel_mm) {
+					specs.push({
+						name: "Stroke (mm)",
+						value: `X:${product.working_travel_mm[0]} | Y:${product.working_travel_mm[1]} | Z:${product.working_travel_mm[2]}`,
+					});
+				}
+
+				// Spindle Speed - support both spindle_speed_rpm and speed_max_m_per_min
+				if (product.spindle_speed_rpm) {
+					specs.push({
+						name: "Spindle Speed (rpm)",
+						value: Array.isArray(product.spindle_speed_rpm)
+							? `${product.spindle_speed_rpm[0]} max`
+							: product.spindle_speed_rpm,
+					});
+				} else if (product.speed_max_m_per_min) {
+					specs.push({
+						name: "Spindle Speed (rpm)",
+						value: `${product.speed_max_m_per_min[2]} max`,
+					});
+				}
+
+				// Number of Tools
+				if (product.number_of_tools) {
+					specs.push({
+						name: "Number of Tools",
+						value: Array.isArray(product.number_of_tools)
+							? product.number_of_tools[0]
+							: product.number_of_tools,
+					});
+				}
+
+				// Type
+				if (product.type) {
+					specs.push({ name: "Type", value: product.type });
+				} else if (product.brand === "GROB") {
+					specs.push({
+						name: "Type",
+						value: "5-Axis Universal Machining Center",
+					});
+				}
+
+				// GROB-specific specifications
+				if (product.interference_diameter_mm) {
+					specs.push({
+						name: "Interference Diameter",
+						value: `${product.interference_diameter_mm} mm`,
+					});
+				}
+
+				// Additional speed specifications for GROB
+				if (product.speed_max_m_per_min) {
+					specs.push({
+						name: "Rapid Traverse (m/min)",
+						value: `X:${product.speed_max_m_per_min[0]} | Y:${product.speed_max_m_per_min[1]} | Z:${product.speed_max_m_per_min[2]}`,
+					});
+				}
+
+				return specs;
 			}
 		}
 
@@ -302,7 +367,7 @@ export default function ProductDetailPage() {
 								</table>
 
 								<Button
-									className="w-full mt-auto bg-gray-900 hover:bg-black"
+									className="w-full mt-4 bg-gray-900 hover:bg-black"
 									onClick={() => router.push(`/Contact?itemId=${item.model}`)}>
 									Enquiry Now
 								</Button>

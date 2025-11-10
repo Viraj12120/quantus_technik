@@ -6,6 +6,7 @@
                 "model": "A600",
                 "description": "Horizontal Machining Center with Pallet size of 500mm",
                 "pallet_size_mm": 500,
+                "desc": "",
                 "stroke_mm": [
                     600,
                     600,
@@ -27,6 +28,7 @@
                 "model": "H6",
                 "description": "Horizontal Machining Center with Pallet size of 630mm",
                 "pallet_size_mm": 630,
+                "desc": "",
                 "stroke_mm": [
                     1050,
                     900,
@@ -52,6 +54,7 @@
                 "model": "H8",
                 "description": "Horizontal Machining Center with Pallet size of 800mm",
                 "pallet_size_mm": 800,
+                "desc": "",
                 "stroke_mm": [
                     1400,
                     1150,
@@ -101,6 +104,7 @@
                 "model": "AF-4",
                 "description": "High Productivity, High Performance Horizontal Machining Center",
                 "pallet_size_mm": null,
+                "desc": "",
                 "stroke_mm": [
                     565,
                     645,
@@ -116,7 +120,8 @@
                 "type": "LM #50",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20240807090815.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=AF-4"
-            },{
+            },
+            {
                 "model": "FH630SX-i",
                 "brand": "JTEKT",
                 "description": "High-Speed Horizontal Machining Center - 630mm Pallet",
@@ -138,27 +143,6 @@
                 "type": "Linear Way",
                 "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fh630sx-i.png",
                 "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/630mm-pallet/fh630sx-i"
-            },
-            {
-                "model": "FA630S",
-                "brand": "JTEKT",
-                "description": "Heavy Duty Box Way Horizontal Machining Center - 630mm Pallet",
-                "pallet_size_mm": 630,
-                "pallet_capacity_kg": 1500,
-                "stroke_mm": [
-                    1050,
-                    900,
-                    1050
-                ],
-                "spindle_speed_rpm": [
-                    6000
-                ],
-                "number_of_tools": [
-                    60
-                ],
-                "type": "Box Way",
-                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fa630s.png",
-                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/630mm-pallet/fa630s"
             },
             {
                 "model": "FH630SX-i 5-Axis",
@@ -211,27 +195,6 @@
                 "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/800mm-pallet/fh800sx-i"
             },
             {
-                "model": "FA800S",
-                "brand": "JTEKT",
-                "description": "Heavy Duty Box Way Horizontal Machining Center - 800mm Pallet",
-                "pallet_size_mm": 800,
-                "pallet_capacity_kg": 2500,
-                "stroke_mm": [
-                    1400,
-                    1200,
-                    1400
-                ],
-                "spindle_speed_rpm": [
-                    6000
-                ],
-                "number_of_tools": [
-                    60
-                ],
-                "type": "Box Way",
-                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fa800s.png",
-                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/800mm-pallet/fa800s"
-            },
-            {
                 "model": "FH1000SX",
                 "brand": "JTEKT",
                 "description": "Heavy Duty Linear Way Horizontal Machining Center - 1000mm Pallet",
@@ -252,48 +215,6 @@
                 "type": "Linear Way",
                 "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fh1000sx.png",
                 "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/1000-1050mm-pallet/fh1000sx"
-            },
-            {
-                "model": "FA1050S",
-                "brand": "JTEKT",
-                "description": "Heavy Duty Box Way Horizontal Machining Center - 1050mm Pallet",
-                "pallet_size_mm": 1050,
-                "pallet_capacity_kg": 3000,
-                "stroke_mm": [
-                    1850,
-                    1550,
-                    1850
-                ],
-                "spindle_speed_rpm": [
-                    6000
-                ],
-                "number_of_tools": [
-                    80
-                ],
-                "type": "Box Way",
-                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fa1050s.png",
-                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/1000-1050mm-pallet/fa1050s"
-            },
-            {
-                "model": "FA1050S-5Axis",
-                "brand": "JTEKT",
-                "description": "5-Axis Trunnion Box Way Horizontal Machining Center - 1050mm Pallet",
-                "pallet_size_mm": 1050,
-                "pallet_capacity_kg": 3000,
-                "stroke_mm": [
-                    1850,
-                    1550,
-                    1850
-                ],
-                "spindle_speed_rpm": [
-                    6000
-                ],
-                "number_of_tools": [
-                    80
-                ],
-                "type": "5-Axis Box Way",
-                "image": "https://jtektmachinery.com/sites/default/files/styles/product_detail/public/2022-05/fa1050s-5axis.png",
-                "detail_url": "https://jtektmachinery.com/machines/5-axis-machining-centers/5-axis-horizontal-machining-centers/fa1050s-5a"
             },
             {
                 "model": "FH1250SX",
@@ -1372,249 +1293,249 @@
             }
         ]
     },
-   "5-axis": [
-    {
-        "model": "M1-5AX",
-        "description": "High Precision 5-Axis Vertical Machining Center for Parts",
-        "table_size_mm": "Ø300",
-        "stroke_mm": [
-            750,
-            500,
-            450
-        ],
-        "spindle_speed_rpm": [
-            20000,
-            32000
-        ],
-        "number_of_tools": [
-            30,
-            40,
-            60
-        ],
-        "type": "5_axis lm 40_hsk",
-        "detail_url": "M1-5AX 제품 상세보기",
-        "image": "/machines/5-axis/M1-5AX.png"
-    },
-    {
-        "model": "M2-5AX",
-        "description": "High Precision 5-Axis Vertical Machining Center",
-        "table_size_mm": "Ø500",
-        "stroke_mm": [
-            750,
-            650,
-            500
-        ],
-        "spindle_speed_rpm": [
-            20000,
-            32000
-        ],
-        "number_of_tools": [
-            30,
-            60
-        ],
-        "type": "5_axis lm 40_hsk",
-        "detail_url": "M2-5AX 제품 상세보기",
-        "image": "/machines/5-axis/M2-5AX.png"
-    },
-    {
-        "model": "M3-5AX",
-        "description": "High Precision 5-Axis Vertical Machining Center",
-        "table_size_mm": "Ø700",
-        "stroke_mm": [
-            750,
-            900,
-            550
-        ],
-        "spindle_speed_rpm": [
-            14000,
-            20000,
-            24000
-        ],
-        "number_of_tools": [
-            40,
-            60,
-            90
-        ],
-        "type": "5_axis lm 40_hsk",
-        "detail_url": "M3-5AX 제품 상세보기",
-        "image": "/machines/5-axis/M3-5AX.png"
-    },
-    {
-        "model": "M4-5AX",
-        "description": "High Precision/Rigidity 5-Axis Vertical Machining Center for ‘Difficult-To-Cut’ Parts",
-        "table_size_mm": "Ø800",
-        "stroke_mm": [
-            950,
-            1000,
-            650
-        ],
-        "spindle_speed_rpm": [
-            8000,
-            12000
-        ],
-        "number_of_tools": [
-            30,
-            60
-        ],
-        "type": "5_axis lm box 50_hsk",
-        "detail_url": "M4-5AX 제품 상세보기",
-        "image": "/machines/5-axis/M4-5AX.png"
-    },
-    {
-        "model": "D2-5AX",
-        "description": "5-Axis Vertical Machining Center for Parts Machining",
-        "table_size_mm": "Ø600",
-        "stroke_mm": [
-            650,
-            500,
-            500
-        ],
-        "spindle_speed_rpm": [
-            12000,
-            14000,
-            20000,
-            24000
-        ],
-        "number_of_tools": [
-            30,
-            40,
-            60
-        ],
-        "type": "5_axis 4_1_axis lm 40_hsk",
-        "detail_url": "D2-5AX 제품 상세보기",
-        "image": "/machines/5-axis/D2-5AX.png"
-    },
-    {
-        "model": "D3-5AX",
-        "description": "5-Axis Vertical Machining Center for Parts Machining",
-        "table_size_mm": "Ø800",
-        "stroke_mm": [
-            800,
-            650,
-            575
-        ],
-        "spindle_speed_rpm": [
-            12000,
-            14000,
-            20000,
-            24000
-        ],
-        "number_of_tools": [
-            30,
-            40,
-            60
-        ],
-        "type": "5_axis 4_1_axis lm 40_hsk",
-        "detail_url": "D3-5AX 제품 상세보기",
-        "image": "/machines/5-axis/D3-5AX.png"
-    },
-    {
-        "model": "SMART CORE",
-        "description": "3+2-Axis Vertical Machining Center for Core Machining",
-        "table_size_mm": "1200 x 600",
-        "stroke_mm": [
-            1050,
-            600,
-            550
-        ],
-        "spindle_speed_rpm": [
-            14000,
-            20000,
-            24000
-        ],
-        "number_of_tools": [
-            30
-        ],
-        "type": "3_2_axis lm 40_hsk",
-        "detail_url": "SMART CORE 제품 상세보기",
-        "image": "/machines/5-axis/SMART-CORE.png"
-    },
-    {
-        "model": "SIRIUS-2500(5AX)",
-        "description": "5-Axis Angle Head Vertical Machining Center for Die and Mold",
-        "table_size_mm": "3300 x 2000",
-        "stroke_mm": [
-            3100,
-            2300,
-            1000
-        ],
-        "spindle_speed_rpm": [
-            15000
-        ],
-        "number_of_tools": [
-            40
-        ],
-        "type": "5_axis box 40_hsk",
-        "detail_url": "SIRIUS-2500(5AX) 제품 상세보기",
-        "image": "/machines/5-axis/SIRIUS-2500-5AX.png"
-    },{
-        "model": "G150",
-        "description": "The smallest 5-axis universal machining center provides optimized precision for complex parts.",
-        "working_travel_mm": [
-            450,
-            670,
-            665
-        ],
-        "speed_max_m_per_min": [
-            50,
-            40,
-            60
-        ],
-        "interference_diameter_mm": 580,
-        "detail_url": "https://www.grobgroup.com/en/products/product-range/universal-machining-centers/milling-centers/g150/",
-        "brand": "GROB"
-    },
-    {
-        "model": "G350",
-        "description": "The compact 5-axis machining center for milling parts from the most diverse materials.",
-        "working_travel_mm": [
-            600,
-            855,
-            750
-        ],
-        "speed_max_m_per_min": [
-            70,
-            45,
-            90
-        ],
-        "interference_diameter_mm": 720,
-        "detail_url": "https://www.grobgroup.com/en/products/product-range/universal-machining-centers/milling-centers/g350/",
-        "brand": "GROB"
-    },
-    {
-        "model": "G550",
-        "description": "Optimized milling performance with the 5-axis machining center for parts from the most diverse raw materials.",
-        "working_travel_mm": [
-            800,
-            1020,
-            970
-        ],
-        "speed_max_m_per_min": [
-            65,
-            50,
-            80
-        ],
-        "interference_diameter_mm": 900,
-        "detail_url": "https://www.grobgroup.com/en/products/product-range/universal-machining-centers/milling-centers/g550/",
-        "brand": "GROB"
-    },
-    {
-        "model": "G750",
-        "description": "Highest productivity and optimized machining with the rigid 5-axis machining center.",
-        "working_travel_mm": [
-            950,
-            1000,
-            650
-        ],
-        "speed_max_m_per_min": [
-            65,
-            55,
-            85
-        ],
-        "interference_diameter_mm": 1100,
-        "detail_url": "https://www.grobgroup.com/en/products/product-range/universal-machining-centers/milling-centers/g750/",
-        "brand": "GROB"
-    }
-   
-]
+    "5-axis": [
+        {
+            "model": "M1-5AX",
+            "description": "High Precision 5-Axis Vertical Machining Center for Parts",
+            "table_size_mm": "Ø300",
+            "stroke_mm": [
+                750,
+                500,
+                450
+            ],
+            "spindle_speed_rpm": [
+                20000,
+                32000
+            ],
+            "number_of_tools": [
+                30,
+                40,
+                60
+            ],
+            "type": "5_axis lm 40_hsk",
+            "detail_url": "M1-5AX 제품 상세보기",
+            "image": "/machines/5-axis/M1-5AX.png"
+        },
+        {
+            "model": "M2-5AX",
+            "description": "High Precision 5-Axis Vertical Machining Center",
+            "table_size_mm": "Ø500",
+            "stroke_mm": [
+                750,
+                650,
+                500
+            ],
+            "spindle_speed_rpm": [
+                20000,
+                32000
+            ],
+            "number_of_tools": [
+                30,
+                60
+            ],
+            "type": "5_axis lm 40_hsk",
+            "detail_url": "M2-5AX 제품 상세보기",
+            "image": "/machines/5-axis/M2-5AX.png"
+        },
+        {
+            "model": "M3-5AX",
+            "description": "High Precision 5-Axis Vertical Machining Center",
+            "table_size_mm": "Ø700",
+            "stroke_mm": [
+                750,
+                900,
+                550
+            ],
+            "spindle_speed_rpm": [
+                14000,
+                20000,
+                24000
+            ],
+            "number_of_tools": [
+                40,
+                60,
+                90
+            ],
+            "type": "5_axis lm 40_hsk",
+            "detail_url": "M3-5AX 제품 상세보기",
+            "image": "/machines/5-axis/M3-5AX.png"
+        },
+        {
+            "model": "M4-5AX",
+            "description": "High Precision/Rigidity 5-Axis Vertical Machining Center for ‘Difficult-To-Cut’ Parts",
+            "table_size_mm": "Ø800",
+            "stroke_mm": [
+                950,
+                1000,
+                650
+            ],
+            "spindle_speed_rpm": [
+                8000,
+                12000
+            ],
+            "number_of_tools": [
+                30,
+                60
+            ],
+            "type": "5_axis lm box 50_hsk",
+            "detail_url": "M4-5AX 제품 상세보기",
+            "image": "/machines/5-axis/M4-5AX.png"
+        },
+        {
+            "model": "D2-5AX",
+            "description": "5-Axis Vertical Machining Center for Parts Machining",
+            "table_size_mm": "Ø600",
+            "stroke_mm": [
+                650,
+                500,
+                500
+            ],
+            "spindle_speed_rpm": [
+                12000,
+                14000,
+                20000,
+                24000
+            ],
+            "number_of_tools": [
+                30,
+                40,
+                60
+            ],
+            "type": "5_axis 4_1_axis lm 40_hsk",
+            "detail_url": "D2-5AX 제품 상세보기",
+            "image": "/machines/5-axis/D2-5AX.png"
+        },
+        {
+            "model": "D3-5AX",
+            "description": "5-Axis Vertical Machining Center for Parts Machining",
+            "table_size_mm": "Ø800",
+            "stroke_mm": [
+                800,
+                650,
+                575
+            ],
+            "spindle_speed_rpm": [
+                12000,
+                14000,
+                20000,
+                24000
+            ],
+            "number_of_tools": [
+                30,
+                40,
+                60
+            ],
+            "type": "5_axis 4_1_axis lm 40_hsk",
+            "detail_url": "D3-5AX 제품 상세보기",
+            "image": "/machines/5-axis/D3-5AX.png"
+        },
+        {
+            "model": "SMART CORE",
+            "description": "3+2-Axis Vertical Machining Center for Core Machining",
+            "table_size_mm": "1200 x 600",
+            "stroke_mm": [
+                1050,
+                600,
+                550
+            ],
+            "spindle_speed_rpm": [
+                14000,
+                20000,
+                24000
+            ],
+            "number_of_tools": [
+                30
+            ],
+            "type": "3_2_axis lm 40_hsk",
+            "detail_url": "SMART CORE 제품 상세보기",
+            "image": "/machines/5-axis/SMART-CORE.png"
+        },
+        {
+            "model": "SIRIUS-2500(5AX)",
+            "description": "5-Axis Angle Head Vertical Machining Center for Die and Mold",
+            "table_size_mm": "3300 x 2000",
+            "stroke_mm": [
+                3100,
+                2300,
+                1000
+            ],
+            "spindle_speed_rpm": [
+                15000
+            ],
+            "number_of_tools": [
+                40
+            ],
+            "type": "5_axis box 40_hsk",
+            "detail_url": "SIRIUS-2500(5AX) 제품 상세보기",
+            "image": "/machines/5-axis/SIRIUS-2500-5AX.png"
+        },
+        {
+            "model": "G150",
+            "description": "The smallest 5-axis universal machining center provides optimized precision for complex parts.",
+            "working_travel_mm": [
+                450,
+                670,
+                665
+            ],
+            "speed_max_m_per_min": [
+                50,
+                40,
+                60
+            ],
+            "interference_diameter_mm": 580,
+            "detail_url": "https://www.grobgroup.com/en/products/product-range/universal-machining-centers/milling-centers/g150/",
+            "brand": "GROB"
+        },
+        {
+            "model": "G350",
+            "description": "The compact 5-axis machining center for milling parts from the most diverse materials.",
+            "working_travel_mm": [
+                600,
+                855,
+                750
+            ],
+            "speed_max_m_per_min": [
+                70,
+                45,
+                90
+            ],
+            "interference_diameter_mm": 720,
+            "detail_url": "https://www.grobgroup.com/en/products/product-range/universal-machining-centers/milling-centers/g350/",
+            "brand": "GROB"
+        },
+        {
+            "model": "G550",
+            "description": "Optimized milling performance with the 5-axis machining center for parts from the most diverse raw materials.",
+            "working_travel_mm": [
+                800,
+                1020,
+                970
+            ],
+            "speed_max_m_per_min": [
+                65,
+                50,
+                80
+            ],
+            "interference_diameter_mm": 900,
+            "detail_url": "https://www.grobgroup.com/en/products/product-range/universal-machining-centers/milling-centers/g550/",
+            "brand": "GROB"
+        },
+        {
+            "model": "G750",
+            "description": "Highest productivity and optimized machining with the rigid 5-axis machining center.",
+            "working_travel_mm": [
+                950,
+                1000,
+                650
+            ],
+            "speed_max_m_per_min": [
+                65,
+                55,
+                85
+            ],
+            "interference_diameter_mm": 1100,
+            "detail_url": "https://www.grobgroup.com/en/products/product-range/universal-machining-centers/milling-centers/g750/",
+            "brand": "GROB"
+        }
+    ]
 }

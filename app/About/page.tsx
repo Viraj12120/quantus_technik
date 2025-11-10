@@ -1,6 +1,28 @@
-"use client";
 
 import Image from "next/image";
+
+export const metadata = {
+	title: "About Us - Our Story & Manufacturing Expertise",
+	description:
+		"Founded in 2020, Quantus Technik brings decades of engineering expertise with global brands like GROB, ZOLLER, HWACHEON, ALZMETALL. Your trusted manufacturing solutions partner in India.",
+	keywords: [
+		"Quantus Technik about",
+		"manufacturing experts",
+		"engineering solutions",
+		"industrial partners",
+		"machine tool distributors",
+	],
+	openGraph: {
+		title: "About Quantus Technik - Engineering Excellence Since 2020",
+		description:
+			"Learn about our journey and expertise in manufacturing solutions",
+		images: ["/og-about.jpg"],
+		url: "https://quantus-technik.com/about",
+	},
+	alternates: {
+		canonical: "/about",
+	},
+};
 
 export default function AboutUs() {
 	const team = [
