@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 
 export const metadata = {
@@ -40,20 +39,14 @@ export default function AboutUs() {
 		},
 		{
 			id: 3,
-			name: "Adinath Parmaj",
-			position: "Senior Engineer",
-			image: "/adinath.png",
-		},
-		{
-			id: 4,
 			name: "Rahul Shinde",
-			position: "Lead Service",
+			position: "Service Lead",
 			image: "/rahul.jpg",
 		},
 	];
 
 	return (
-		<section className="bg-white  text-gray-800">
+		<section className="bg-white text-gray-800">
 			<div className="w-full mx-auto lg:px-24 px-6 sm:px-8 lg:px-12 py-24 space-y-32">
 				{/* Hero Section */}
 				<div className="relative text-center space-y-5">
@@ -66,7 +59,7 @@ export default function AboutUs() {
 					</p>
 
 					{/* Decorative background element */}
-					<div className="absolute inset-0 -z-10  from-gray-50 via-white to-transparent rounded-3xl" />
+					<div className="absolute inset-0 -z-10 from-gray-50 via-white to-transparent rounded-3xl" />
 				</div>
 
 				{/* Our Story */}
@@ -127,7 +120,7 @@ export default function AboutUs() {
 									Our Vision
 								</h2>
 								<p className="text-gray-600 mt-2 leading-relaxed">
-									To become India’s most trusted one-stop provider for metal
+									To become India's most trusted one-stop provider for metal
 									cutting, tool management, and smart manufacturing solutions —
 									empowering industries to compete globally.
 								</p>
@@ -170,29 +163,20 @@ export default function AboutUs() {
 						relationship.
 					</p>
 
-					{/* ✅ Centered, evenly spaced, properly aligned grid */}
-					<div
-						className="
-		grid 
-		grid-cols-1 
-		sm:grid-cols-2 
-		md:grid-cols-3 
-		lg:grid-cols-4 
-		gap-12 
-		justify-items-center
-		mt-10
-	">
+					{/* Team Grid - Centered with 3 columns for desktop */}
+					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 justify-items-center mt-10 max-w-4xl mx-auto">
 						{team.map((member) => (
 							<div
 								key={member.id}
-								className="text-center transition-all duration-300 p-4">
-								{/* ✅ Perfectly rounded image with object-cover */}
-								<div className="relative aspect-square w-40 mx-auto rounded-full overflow-hidden shadow-lg">
+								className="text-center transition-all duration-300 p-4 w-full max-w-xs">
+								{/* Circular image with white background */}
+								<div className="relative aspect-square w-40 mx-auto rounded-full overflow-hidden shadow-lg bg-white">
 									<Image
 										src={member.image}
 										alt={member.name}
 										fill
 										className="object-cover object-center transition-transform duration-500 hover:scale-110"
+										priority={member.id <= 2} // Prioritize loading leadership images
 									/>
 								</div>
 
@@ -200,10 +184,14 @@ export default function AboutUs() {
 									{member.name}
 								</h3>
 
-								<p className="text-sm text-gray-500">{member.position}</p>
+								<p className="text-sm text-gray-500 font-medium">
+									{member.position}
+								</p>
 							</div>
 						))}
 					</div>
+
+					
 				</div>
 			</div>
 		</section>

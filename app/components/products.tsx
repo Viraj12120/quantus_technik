@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const logos = [
 	{ name: "GROB", src: "/grob.svg" },
-	{ name: "HWACHEON", src: "/hwacheon.svg" },
+	{ name: "HWACHEON", src: "/hwa.jpg" },
 	{ name: "ZOLLER", src: "/zoller.svg" },
 	{ name: "WENZEL", src: "/wenzel.svg" },
 	{ name: "ALZMETALL", src: "/alz.svg" },
@@ -65,13 +65,13 @@ export default function Product() {
 							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.95 }}
 							className="flex items-center justify-center w-full">
-							<div className="relative w-full h-24 md:h-28 flex items-center justify-center bg-[#CAE7FF] rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 p-4 md:p-6 border border-[#4299e1]">
+							<div className="relative w-full h-24 md:h-28 flex items-center justify-center  rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 p-4 md:p-6 border ">
 								<Image
 									src={logo.src}
 									alt={`${logo.name} logo`}
 									width={200}
 									height={80}
-									className="w-full h-full object-contain grayscale hover:grayscale-0 mix-blend-multiply transition-all duration-300"
+									className="w-full h-full object-contain  mix-blend-multiply transition-all duration-300"
 									unoptimized
 								/>
 							</div>
