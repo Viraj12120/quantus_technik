@@ -1,3 +1,4 @@
+import Offersd from "../components/offers";
 
 export const metadata = {
 	title: "Special Offers & Deals | Machine Tools & Equipment Promotions",
@@ -26,9 +27,5 @@ export const metadata = {
 };
 
 export default function Offer() {
-	return (
-		<h1 className="flex justify-center items-center min-h-screen text-4xl">
-			Under Construction...
-		</h1>
-	);
+	return <Offersd />;
 }
