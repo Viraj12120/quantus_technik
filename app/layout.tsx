@@ -76,6 +76,13 @@ export const metadata: Metadata = {
 			"max-snippet": -1,
 		},
 	},
+	icons: {
+		icon: [{ url: "/qt.png" }],
+		apple: [
+			{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+		],
+		shortcut: ["/qt.png"],
+	},
 };
 
 export default function RootLayout({
@@ -85,6 +92,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<link rel="icon" href="/qt.png" type="image/png" />
+			</head>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 				<Header />

@@ -103,7 +103,7 @@ export default function Contact() {
 										</p>
 										<p className="mt-1">
 											<span className="font-medium">Contact:</span> Mr. Rajesh
-											Gaikwad
+											U. Gaikwad
 										</p>
 										<p>
 											<span className="font-medium">Phone:</span> +91
@@ -153,7 +153,7 @@ export default function Contact() {
 										</p>
 										<p>
 											<span className="font-medium">Phone:</span> +91
-											91697-91717
+											+91 91753-36367
 										</p>
 									</div>
 								</div>

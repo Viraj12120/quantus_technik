@@ -158,7 +158,7 @@ export default function Offer() {
 
 						<div className="text-center">
 							<Link href="/Contact">
-								<button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-10 rounded-lg transition transform hover:scale-105">
+								<button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-10 rounded-lg transition transform hover:scale-105 cursor cursor-pointer">
 									Contact Us for Special Promotional Offer
 								</button>
 							</Link>
@@ -240,7 +240,7 @@ export default function Offer() {
 						{/* Button */}
 						<Link href="/Contact">
 							<div className="text-center">
-								<button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-10 rounded-lg transition transform hover:scale-105">
+								<button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-10 rounded-lg transition transform hover:scale-105 curor cursor-pointer">
 									Contact for Special Offer
 								</button>
 							</div>

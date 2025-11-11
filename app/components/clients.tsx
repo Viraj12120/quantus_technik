@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const logos = [
 	{ id: 1, name: "HWACHEON", src: "/1.png" },
 	{ id: 2, name: "KEN ICHI", src: "/2.png" },
-	{ id: 3, name: "GERARDI", src: "/3.png" },
+	{ id: 3, name: "GERARDI", src: "/3.jpg" },
 	{ id: 4, name: "NIDEC", src: "/4.png" },
 	{ id: 5, name: "WFL", src: "/5.png" },
 	{ id: 6, name: "ZOLLER", src: "/6.png" },

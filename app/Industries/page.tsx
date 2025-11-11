@@ -52,11 +52,22 @@ export default function Industries() {
 				"Engine components",
 				"Brackets and fittings",
 			],
+			logos: [
+				{ name: "GROB", src: "/grob.svg" },
+				{ name: "HWACHEON", src: "/hwacheon.svg" },
+				{ name: "ZOLLER", src: "/zoller.svg" },
+				{ name: "WENZEL", src: "/w.png" },
+				{ name: "ALZMETALL", src: "/alz.svg" },
+				{ name: "mst", src: "/m.png" },
+				{ name: "mill", src: "/mill.png" },
+				{ name: "kenchi", src: "/k.svg" },
+				{ name: "jktet", src: "/logo.png" },
+				{ name: "gerardi", src: "/gerardi.jpg" },
+			],
 		},
 		{
 			title: "Automotive / Electric Vehicle",
-			image:
-				"/electric.jpg",
+			image: "/electric.jpg",
 			challenges: [
 				"Shift from ICE to electric powertrains",
 				"Lightweight design requirements",
@@ -81,11 +92,20 @@ export default function Industries() {
 				"Engine blocks and heads (ICE)",
 				"Mega-casting and giga-casting machining",
 			],
+			logos: [
+				{ name: "GROB", src: "/grob.svg" },
+				{ name: "HWACHEON", src: "/hwacheon.svg" },
+				{ name: "ZOLLER", src: "/zoller.svg" },
+				{ name: "WENZEL", src: "/w.png" },
+				{ name: "ALZMETALL", src: "/alz.svg" },
+				{ name: "kenchi", src: "/k.svg" },
+				{ name: "jktet", src: "/logo.png" },
+				{ name: "gerardi", src: "/gerardi.jpg" },
+			],
 		},
 		{
 			title: "Medical Electronics & Semiconductors",
-			image:
-				"/semi.jpg",
+			image: "/semi.jpg",
 			challenges: [
 				"Micron-level tolerances",
 				"Biocompatible material machining",
@@ -108,11 +128,18 @@ export default function Industries() {
 				"Dental components",
 				"Semiconductor manufacturing equipment",
 			],
+			logos: [
+				{ name: "GROB", src: "/grob.svg" },
+				{ name: "HWACHEON", src: "/hwacheon.svg" },
+				{ name: "ZOLLER", src: "/zoller.svg" },
+				{ name: "ALZMETALL", src: "/alz.svg" },
+				{ name: "mst", src: "/m.png" },
+				{ name: "kenchi", src: "/k.svg" },
+			],
 		},
 		{
 			title: "Die & Mould",
-			image:
-				"/die.jpg",
+			image: "/diem.jpg",
 			challenges: [
 				"High-precision surface finishing",
 				"Complex 3D contours",
@@ -134,6 +161,18 @@ export default function Industries() {
 				"Press tools",
 				"Extrusion dies",
 				"Electrode manufacturing",
+			],
+			logos: [
+				{ name: "GROB", src: "/grob.svg" },
+				{ name: "HWACHEON", src: "/hwacheon.svg" },
+				{ name: "ZOLLER", src: "/zoller.svg" },
+				{ name: "WENZEL", src: "/w.png" },
+				{ name: "ALZMETALL", src: "/alz.svg" },
+				{ name: "mst", src: "/m.png" },
+				{ name: "mill", src: "/mill.png" },
+				{ name: "kenchi", src: "/k.svg" },
+				{ name: "jktet", src: "/logo.png" },
+				{ name: "gerardi", src: "/gerardi.jpg" },
 			],
 		},
 		{
@@ -163,21 +202,21 @@ export default function Industries() {
 				"Fixtures and tooling",
 				"Maintenance parts",
 			],
+			logos: [
+				{ name: "GROB", src: "/grob.svg" },
+				{ name: "HWACHEON", src: "/hwacheon.svg" },
+				{ name: "ZOLLER", src: "/zoller.svg" },
+				{ name: "WENZEL", src: "/w.png" },
+				{ name: "ALZMETALL", src: "/alz.svg" },
+				{ name: "mst", src: "/m.png" },
+				{ name: "mill", src: "/mill.png" },
+				{ name: "kenchi", src: "/k.svg" },
+				{ name: "jktet", src: "/logo.png" },
+				{ name: "gerardi", src: "/gerardi.jpg" },
+			],
 		},
 	];
 
-	const logos = [
-		{ name: "GROB", src: "/grob.svg" },
-		{ name: "HWACHEON", src: "/hwacheon.svg" },
-		{ name: "ZOLLER", src: "/zoller.svg" },
-		{ name: "WENZEL", src: "/wenzel.svg" },
-		{ name: "ALZMETALL", src: "/alz.svg" },
-		{ name: "mst", src: "/mst.png" },
-		{ name: "mill", src: "/mill.png" },
-		{ name: "kenchi", src: "/k.svg" },
-		{ name: "jktet", src: "/jktet.svg" },
-		{ name: "gerardi", src: "/gerardi.jpg" },
-	];
 
 	return (
 		<div className="min-h-screen bg-white">
@@ -258,18 +297,19 @@ export default function Industries() {
 									</div>
 
 									{/* Solutions */}
+									{/* Solutions */}
 									<section className="my-12">
 										<h3 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-8">
 											Our Solutions
 										</h3>
 
-										{/* ✅ UPDATED GRID CONTAINER WITH LOGOS */}
+										{/* ✅ UPDATED GRID CONTAINER USING INDUSTRY-SPECIFIC LOGOS */}
 										<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-											{logos.map((logo, index) => (
+											{industry.logos.map((logo, index) => (
 												<motion.div
 													key={logo.name}
 													initial={{ opacity: 0, y: 20 }}
-													animate={{ opacity: 1, y: 0 }}
+													whileInView={{ opacity: 1, y: 0 }}
 													transition={{ duration: 0.5, delay: index * 0.1 }}
 													className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center justify-center h-24">
 													<div className="relative w-16 h-12 mb-2">
