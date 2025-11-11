@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Header() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -47,17 +48,21 @@ export default function Header() {
 
 	return (
 		<header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
-			<div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
+			<div className="w-full">
 				<div className="flex items-center justify-between h-16">
 					{/* LOGO */}
-					<Link
-						href="/"
-						className="text-xl racing-sans-one-regular text-blue-500 italic">
-						Quantus Technik
+					<Link href="/">
+						<Image
+							src={"/l.svg"}
+							alt=""
+							width={300}
+							height={200}
+							className=""
+						/>
 					</Link>
 
 					{/* DESKTOP NAV */}
-					<nav className="hidden md:flex justify-center items-center gap-6 text-sm text-gray-600">
+					<nav className="hidden md:flex justify-center mr-10 items-center gap-6 text-sm text-gray-600">
 						{navLinks.slice(0, 3).map((link) => (
 							<Link
 								key={link.name}
@@ -118,7 +123,7 @@ export default function Header() {
 					<button
 						className="md:hidden"
 						onClick={() => setIsOpen((prev) => !prev)}>
-						{isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+						{isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6 mr-6" />}
 					</button>
 				</div>
 			</div>

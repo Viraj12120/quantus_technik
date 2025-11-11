@@ -160,7 +160,7 @@ export default function Contact() {
 							</div>
 
 							<p className="text-gray-500 mt-4">
-								Available Monday to Friday, 9 AM - 6 PM IST
+								Available Monday to Saturday, 9 AM - 6 PM IST
 							</p>
 						</div>
 
