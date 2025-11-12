@@ -75,7 +75,7 @@ export default function WhyChooseQuantus() {
 				{/* LEFT SECTION - IMAGE + METRICS */}
 				<div className="relative rounded-3xl overflow-hidden bg-white shadow-lg transition-all duration-500">
 					<Image
-						src="/earth.jpg"
+						src="/why.jpg"
 						alt="Quantus Technik Machinery"
 						width={600}
 						height={1000}

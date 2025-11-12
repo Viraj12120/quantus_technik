@@ -173,7 +173,7 @@ export default function Offer() {
 					{/* Header Section */}
 					<div className="bg-gradient-to-r from-blue-600 to-blue-800 p-8 text-white relative">
 						<h2 className="text-3xl md:text-4xl font-bold text-center tracking-wide">
-							⭐ YEAR END SALE ⭐
+							⭐ YEAR END OFFER ⭐
 						</h2>
 
 						<span className="absolute top-8 right-8 bg-red-600 text-white px-3 py-1 rounded-md text-sm font-bold rotate-6 shadow-md">
