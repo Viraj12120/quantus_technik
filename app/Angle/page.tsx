@@ -168,17 +168,6 @@ export default function AngleHeadsPage() {
 						{angleHeadsData.catalog.total_models} models available • 100% Made
 						in Italy • Over 50 years of experience
 					</p>
-					<div className="flex flex-wrap gap-4">
-						{angleHeadsData.catalog.features.internal_coolant_options.map(
-							(option, i) => (
-								<span
-									key={i}
-									className="px-4 py-2 bg-white/10 rounded-full text-sm backdrop-blur-sm">
-									{option}
-								</span>
-							)
-						)}
-					</div>
 				</div>
 			</section>
 

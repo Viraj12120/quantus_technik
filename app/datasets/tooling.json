@@ -3,255 +3,316 @@
         "general_products": [
             {
                 "name": "MONO 3° long type",
-                "category": "Tool Holders"
+                "category": "Tool Holders",
+                "image": "https://www.mst-corp.co.jp/en/home/slimline_top/mono3/images/sessaku_mo3.jpg"
             },
             {
                 "name": "MONO CURVE long type",
-                "category": "Tool Holders"
+                "category": "Tool Holders",
+                "image": "https://www.mst-corp.co.jp/en/home/slimline_top/monocurve/images/monocurve1.jpg"
             },
             {
                 "name": "Tool holder cleaning machine CLEAN BOX Baby",
-                "category": "Peripherals"
+                "category": "Peripherals",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_CleanBoxBaby_01.jpg"
             },
             {
                 "name": "Shrink-fit Heater HEATROBO Automatic shrink-fit machine",
-                "category": "Shrink-fit Equipment"
+                "category": "Shrink-fit Equipment",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_HeatRoboAuto_01.jpg"
             },
             {
                 "name": "Indexable End-Mill Arbor MILL BORE",
-                "category": "Tool Holders"
+                "category": "Tool Holders",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_MillBore_01.jpg"
             },
             {
                 "name": "CLEANING TOOLSTAR DUST",
                 "category": "Peripherals",
-                "description": "For a spindle taper hole"
+                "description": "For a spindle taper hole",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_ToolStarDust_01.jpg"
             },
             {
                 "name": "MAINTENANCE VIDEO",
                 "category": "Educational Materials",
-                "description": "DVD with practical teaching and tools"
+                "description": "DVD with practical teaching and tools",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_MaintenanceDVD_01.jpg"
             },
             {
                 "name": "Shrink-fit Heater HEATROBO DENJI 2500",
-                "category": "Shrink-fit Equipment"
+                "category": "Shrink-fit Equipment",
+                "image": "https://www.mst-corp.co.jp/en/02products/11431/img/heatrobo_denji2500_01.jpg"
             },
             {
                 "name": "Shrink-fit holder chiller C-type",
-                "category": "Shrink-fit Equipment"
+                "category": "Shrink-fit Equipment",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_CTypeChiller_01.jpg"
             },
             {
                 "name": "FMH RIGID type",
                 "category": "Tool Holders",
-                "description": "The face mill arbor for through-spindle coolant"
+                "description": "The face mill arbor for through-spindle coolant",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_FMH_Rigid_01.jpg"
             }
         ],
         "new_products": [
             {
                 "name": "MONO 3° long type",
-                "category": "Tool Holders"
+                "category": "Tool Holders",
+                "image": "https://www.mst-corp.co.jp/en/home/slimline_top/mono3/images/sessaku_mo3.jpg"
             },
             {
                 "name": "MONO CURVE long type",
-                "category": "Tool Holders"
+                "category": "Tool Holders",
+                "image": "https://www.mst-corp.co.jp/en/home/slimline_top/monocurve/images/monocurve1.jpg"
             },
             {
                 "name": "Shrink-fit Heater HEATROBO Automatic shrink-fit machine",
-                "category": "Shrink-fit Equipment"
+                "category": "Shrink-fit Equipment",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_HeatRoboAuto_01.jpg"
             },
             {
                 "name": "Indexable End-Mill Arbor MILL BORE",
-                "category": "Tool Holders"
+                "category": "Tool Holders",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_MillBore_01.jpg"
             }
         ],
         "shrink_fit_holders": [
             {
                 "name": "UNO",
                 "category": "Shrink-fit Holder",
-                "description": "Run-out accuracy within 1μm"
+                "description": "Run-out accuracy within 1μm",
+                "image": "https://www.mst-corp.co.jp/en/home/slimline_top/uno/images/uno1.jpg"
             },
             {
                 "name": "BLACK UNO",
                 "category": "Shrink-fit Holder",
-                "description": "Run-out accuracy within 0.5μm"
+                "description": "Run-out accuracy within 0.5μm",
+                "image": "https://www.mst-corp.co.jp/en/home/slimline_top/blackuno/images/blackuno1.jpg"
             },
             {
                 "name": "HYPER VERSION",
                 "category": "Shrink-fit Holder",
-                "description": "For heavy-duty end-mill machining"
+                "description": "For heavy-duty end-mill machining",
+                "image": "https://www.mst-corp.co.jp/en/home/slimline_top/hyperversion/images/hyperversion1.jpg"
             },
             {
                 "name": "SLIMLINE Z",
                 "category": "Shrink-fit Holder",
-                "description": "Anti-slippage shrink-fit holder"
+                "description": "Anti-slippage shrink-fit holder",
+                "image": "https://www.mst-corp.co.jp/en/home/slimline_top/slimlinez/images/slimlinez1.jpg"
             },
             {
                 "name": "3S balloon for SLIMLINE UNO",
-                "category": "Shrink-fit Accessories"
+                "category": "Shrink-fit Accessories",
+                "image": "https://www.mst-corp.co.jp/en/home/slimline_top/3s_balloon/images/3s_balloon1.jpg"
             }
         ],
         "shrink_fit_equipment": [
             {
                 "name": "HEATROBO DENJI 2500",
-                "category": "Shrink-fit Heater"
+                "category": "Shrink-fit Heater",
+                "image": "https://www.mst-corp.co.jp/en/02products/11431/img/heatrobo_denji2500_01.jpg"
             },
             {
                 "name": "Shrink-fitting work efficiency kit",
-                "category": "Shrink-fit Accessories"
+                "category": "Shrink-fit Accessories",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_EfficiencyKit_01.jpg"
             },
             {
                 "name": "Shrink-fit holder chiller",
-                "category": "Shrink-fit Accessories"
+                "category": "Shrink-fit Accessories",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_Chiller_01.jpg"
             },
             {
                 "name": "Shrink-fit holder chiller C-type",
-                "category": "Shrink-fit Accessories"
+                "category": "Shrink-fit Accessories",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_CTypeChiller_01.jpg"
             }
         ],
         "angle_heads": [
             {
                 "name": "FJV 5 Face series ANGLE HEAD HALF",
                 "category": "Angle Head",
-                "machine_compatibility": "MAZAK"
+                "machine_compatibility": "MAZAK",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_AngleHeadHalf_01.jpg"
             }
         ],
         "peripherals": [
             {
                 "name": "Tool holder cleaning machine CLEAN BOX Baby",
-                "category": "Cleaning Equipment"
+                "category": "Cleaning Equipment",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_CleanBoxBaby_01.jpg"
             },
             {
                 "name": "Workpiece clamping system SMART GRIP",
-                "category": "Workholding"
+                "category": "Workholding",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_SmartGrip_01.jpg"
             },
             {
                 "name": "Tool Setup Station/Washing Machine",
-                "category": "Setup & Cleaning"
+                "category": "Setup & Cleaning",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_SetupStation_01.jpg"
             },
             {
                 "name": "CLEANING TOOLSTAR DUST",
                 "category": "Cleaning Equipment",
-                "description": "For a spindle taper hole"
+                "description": "For a spindle taper hole",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_ToolStarDust_01.jpg"
             },
             {
                 "name": "TEST BAR CHECKMATE",
                 "category": "Maintenance Equipment",
-                "description": "For machine spindle maintenance"
+                "description": "For machine spindle maintenance",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_Checkmate_01.jpg"
             },
             {
                 "name": "MAINTENANCE VIDEO",
                 "category": "Educational Materials",
-                "description": "DVD with practical teaching and tools"
+                "description": "DVD with practical teaching and tools",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_MaintenanceDVD_01.jpg"
             },
             {
                 "name": "Work Holding Fixtures for W-EDM",
-                "category": "Workholding"
+                "category": "Workholding",
+                "image": "https://www.mst-corp.co.jp/en/wp-content/uploads/02products_WEDMFixtures_01.jpg"
             }
         ],
         "dedicated_machine_tooling_systems": [
             {
                 "machine_brand": "Brother",
                 "machine_model": "SPEEDIO",
-                "tooling_system": "BT30 TOOLING SYSTEM"
+                "tooling_system": "BT30 TOOLING SYSTEM",
+                "image": ""
             },
             {
                 "machine_brand": "FANUC",
                 "machine_model": "ROBODRILL",
-                "tooling_system": "BT30 TOOLING SYSTEM"
+                "tooling_system": "BT30 TOOLING SYSTEM",
+                "image": ""
             },
             {
                 "machine_brand": "Kitamura",
                 "machine_model": "Medcenter 5AX",
-                "tooling_system": "HSK-E40 TOOLING SYSTEM"
+                "tooling_system": "HSK-E40 TOOLING SYSTEM",
+                "image": ""
             },
             {
                 "machine_brand": "MAKINO MILLING MACHINE",
                 "machine_model": "D200Z",
-                "tooling_system": "HSK-E50 TOOLING SYSTEM"
+                "tooling_system": "HSK-E50 TOOLING SYSTEM",
+                "image": ""
             },
             {
                 "machine_brand": "MAKINO MILLING MACHINE",
                 "machine_model": "iQ300/iQ500",
-                "tooling_system": "HSK-E32 TOOLING SYSTEM"
+                "tooling_system": "HSK-E32 TOOLING SYSTEM",
+                "image": ""
             },
             {
                 "machine_brand": "MAKINO MILLING MACHINE",
                 "machine_model": "F3/F5",
-                "tooling_system": "HSK-A63, HSK-F63, BT40 TOOLING SYSTEM"
+                "tooling_system": "HSK-A63, HSK-F63, BT40 TOOLING SYSTEM",
+                "image": ""
             },
             {
                 "machine_brand": "MAKINO MILLING MACHINE",
                 "machine_model": "F8/F9",
-                "tooling_system": "HSK-A63/A100, DN50, CT50, BT50 TOOLING SYSTEM"
+                "tooling_system": "HSK-A63/A100, DN50, CT50, BT50 TOOLING SYSTEM",
+                "image": ""
             },
             {
                 "machine_brand": "MAKINO MILLING MACHINE",
                 "machine_model": "MAG F80",
-                "tooling_system": "Not specified"
+                "tooling_system": "Not specified",
+                "image": ""
             },
             {
                 "machine_brand": "MAKINO MILLING MACHINE",
                 "machine_model": "T2/T4",
-                "tooling_system": "HSK-A125 TOOLING SYSTEM"
+                "tooling_system": "HSK-A125 TOOLING SYSTEM",
+                "image": ""
             },
             {
                 "machine_brand": "MAKINO MILLING MACHINE",
                 "machine_model": "V22",
-                "tooling_system": "HSK-E32 TOOLING SYSTEM"
+                "tooling_system": "HSK-E32 TOOLING SYSTEM",
+                "image": ""
             },
             {
                 "machine_brand": "MATSUURA",
                 "machine_model": "MX/CUBLEX",
-                "tooling_system": "HSK-T63, A63 TOOLING SYSTEM"
+                "tooling_system": "HSK-T63, A63 TOOLING SYSTEM",
+                "image": ""
             },
             {
                 "machine_brand": "Nidec Machine Tool",
                 "machine_model": "μV1",
-                "tooling_system": "HSK-E32 TOOLING SYSTEM"
+                "tooling_system": "HSK-E32 TOOLING SYSTEM",
+                "image": ""
             },
             {
                 "machine_brand": "OKUMA",
                 "machine_model": "MULTUS",
-                "tooling_system": "HSK-T63, A63 TOOLING SYSTEM"
+                "tooling_system": "HSK-T63, A63 TOOLING SYSTEM",
+                 "image": ""
+
             },
             {
                 "machine_brand": "ROKU-ROKU SMART TECHNOLOGY",
                 "machine_model": "Not specified",
-                "tooling_system": "HSK-E25/E40/E50 TOOLING SYSTEM"
+                "tooling_system": "HSK-E25/E40/E50 TOOLING SYSTEM",
+                 "image": ""
+
             },
             {
                 "machine_brand": "Shibaura Machine",
                 "machine_model": "VM450D",
-                "tooling_system": "E25 TOOLING SYSTEM"
+                "tooling_system": "E25 TOOLING SYSTEM",
+                 "image": ""
+
             },
             {
                 "machine_brand": "Sodick",
                 "machine_model": "UX/UH/OPM Series",
-                "tooling_system": "HSK-E25/32/40 TOOLING SYSTEM"
+                "tooling_system": "HSK-E25/32/40 TOOLING SYSTEM",
+                 "image": ""
+
             },
             {
                 "machine_brand": "Sodick",
                 "machine_model": "GS540L",
-                "tooling_system": "BT30 TOOLING SYSTEM"
+                "tooling_system": "BT30 TOOLING SYSTEM",
+                 "image": ""
+
             },
             {
                 "machine_brand": "Sodick",
                 "machine_model": "H600L",
-                "tooling_system": "E40 TOOLING SYSTEM"
+                "tooling_system": "E40 TOOLING SYSTEM",
+                 "image": ""
+
             },
             {
                 "machine_brand": "MAZAK",
                 "machine_model": "FJV 5 Face series",
-                "tooling_system": "ANGLE HEAD HALF"
+                "tooling_system": "ANGLE HEAD HALF",
+                 "image": ""
+
             },
             {
                 "machine_brand": "MAZAK",
                 "machine_model": "INTEGREX",
-                "tooling_system": "HSK-T63, A63 TOOLING SYSTEM"
+                "tooling_system": "HSK-T63, A63 TOOLING SYSTEM",
+                 "image": ""
+
             },
             {
                 "machine_brand": "YASDA",
                 "machine_model": "YMC Series",
-                "tooling_system": "HSK-E25, E32, E40 TOOLING SYSTEM"
+                "tooling_system": "HSK-E25, E32, E40 TOOLING SYSTEM",
+                 "image": ""
+
             }
         ]
     }

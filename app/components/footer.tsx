@@ -30,16 +30,16 @@ export default function Footer() {
 				</div>
 
 				{/* Footer Links */}
-				<div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-12">
+				<div className="grid grid-cols-1 md:grid-cols-5 gap-32 mb-12">
 					{/* Company Info */}
-					<div className="md:col-span-1">
+					<div className="md:col-span-1 flex flex-col items-center text-center">
 						<div className="flex items-center gap-2 mb-4">
-							<h3 className="font-bold text-lg">Quantus Technik</h3>
+							<h3 className="font-bold text-lg">QuantusTechnik</h3>
 						</div>
-						<p className="text-sm text-gray-600 leading-relaxed">
-							Quantus Technik delivers high-precision machinery and innovative
-							solutions to serve diverse industries, including aerospace,
-							tooling, and manufacturing.
+
+						<p className="text-xs text-gray-600 text-left leading-relaxed">
+							QuantusTechnik delivers high-precision machinery and innovative
+							solutions for aerospace, tooling, and manufacturing.
 						</p>
 					</div>
 
@@ -159,7 +159,7 @@ export default function Footer() {
 					<div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-600 gap-4">
 						{/* Left Section */}
 						<p className="text-center md:text-left">
-							© 2025 Quantus Technik.com
+							© 2025 QuantusTechnik.com
 						</p>
 
 						{/* Center Section - Links */}

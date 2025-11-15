@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	title: {
-		default: "Quantus Technik - Your Productivity Improvement Partner",
-		template: "%s | Quantus Technik",
+		default: "QuantusTechnik - Your Productivity Improvement Partner",
+		template: "%s | QuantusTechnik",
 	},
 	description:
 		"Leading provider of machine tools, automation systems, and industrial manufacturing solutions across aerospace, automotive, medical, and die-mould industries.",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
 		"aerospace manufacturing",
 		"automotive engineering",
 	],
-	authors: [{ name: "Quantus Technik" }],
-	creator: "Quantus Technik",
-	publisher: "Quantus Technik",
+	authors: [{ name: "QuantusTechnik" }],
+	creator: "QuantusTechnik",
+	publisher: "QuantusTechnik",
 	formatDetection: {
 		email: false,
 		address: false,
@@ -43,17 +43,17 @@ export const metadata: Metadata = {
 		canonical: "/",
 	},
 	openGraph: {
-		title: "Quantus Technik - Manufacturing Solutions Partner",
+		title: "QuantusTechnik - Manufacturing Solutions Partner",
 		description:
 			"Your productivity improvement partner for machine tools, automation, and manufacturing solutions",
 		url: "https://quantus-technik.com",
-		siteName: "Quantus Technik",
+		siteName: "QuantusTechnik",
 		images: [
 			{
 				url: "/og-image.jpg",
 				width: 1200,
 				height: 630,
-				alt: "Quantus Technik - Manufacturing Solutions",
+				alt: "QuantusTechnik - Manufacturing Solutions",
 			},
 		],
 		locale: "en_IN",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Quantus Technik - Manufacturing Solutions",
+		title: "QuantusTechnik - Manufacturing Solutions",
 		description: "Your productivity improvement partner",
 		images: ["/og-image.jpg"],
 	},

@@ -3,8 +3,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-
-
 export default function Features() {
 	const images = [
 		{ src: "/exhi.jpg", alt: "quantas" },
@@ -24,7 +22,6 @@ export default function Features() {
 	return (
 		<section className=" bg-white">
 			{/* Partner Brands */}
-			
 
 			<div className="lg:px-24 mx-auto px-6 py-12 flex flex-col lg:flex-row justify-between gap-12">
 				{/* Left Column — Key Stats */}
@@ -40,7 +37,7 @@ export default function Features() {
 							{ title: "Founded", desc: "June 2020", icon: "🏢" },
 							{
 								title: "Global Partnerships",
-								desc: "11 World-Leading OEMs",
+								desc: "10 World-Leading OEMs",
 								icon: "🤝",
 							},
 							{
@@ -72,7 +69,7 @@ export default function Features() {
 				<div className="flex-1 space-y-8">
 					<p className="text-4xl leading-snug text-gray-900 font-semibold">
 						As India's premier solution partner for advanced manufacturing
-						technology, <span className="text-blue-700">Quantus Technik</span>{" "}
+						technology, <span className="text-blue-700">QuantusTechnik</span>{" "}
 						bridges the gap between global innovation and local excellence.
 					</p>
 					<p className="text-gray-700 text-lg leading-relaxed">

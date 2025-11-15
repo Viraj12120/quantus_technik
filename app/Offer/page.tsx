@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
 	title: "Special Offers & Deals | Machine Tools & Equipment Promotions",
 	description:
-		"Discover current special offers, promotions, and deals on premium machine tools, measuring equipment, and manufacturing solutions from Quantus Technik and our partner brands.",
+		"Discover current special offers, promotions, and deals on premium machine tools, measuring equipment, and manufacturing solutions from QuantusTechnik and our partner brands.",
 	keywords: [
 		"machine tool offers",
 		"manufacturing equipment deals",
@@ -195,7 +195,7 @@ export default function Offer() {
 						</div>
 
 						{/* Product Boxes */}
-						<div className="grid grid-cols-3 gap-10 mb-10">
+						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
 							{["/g.png", "/g1.png", "/g2.png"].map((img, index) => (
 								<div
 									key={index}
@@ -206,7 +206,7 @@ export default function Offer() {
 										height={200}
 										alt={`box-image-${index}`}
 										unoptimized
-										className="rounded-lg object-contain"
+										className="rounded-lg object-contain w-full h-auto max-w-[150px] sm:max-w-[180px] md:max-w-[200px]"
 									/>
 								</div>
 							))}

@@ -3,16 +3,16 @@ import Image from "next/image";
 export const metadata = {
 	title: "About Us - Our Story & Manufacturing Expertise",
 	description:
-		"Founded in 2020, Quantus Technik brings decades of engineering expertise with global brands like GROB, ZOLLER, HWACHEON, ALZMETALL. Your trusted manufacturing solutions partner in India.",
+		"Founded in 2020, QuantusTechnik brings decades of engineering expertise with global brands like GROB, ZOLLER, HWACHEON, ALZMETALL. Your trusted manufacturing solutions partner in India.",
 	keywords: [
-		"Quantus Technik about",
+		"QuantusTechnik about",
 		"manufacturing experts",
 		"engineering solutions",
 		"industrial partners",
 		"machine tool distributors",
 	],
 	openGraph: {
-		title: "About Quantus Technik - Engineering Excellence Since 2020",
+		title: "About QuantusTechnik - Engineering Excellence Since 2020",
 		description:
 			"Learn about our journey and expertise in manufacturing solutions",
 		images: ["/og-about.jpg"],
@@ -28,8 +28,8 @@ export default function AboutUs() {
 		{
 			id: 1,
 			name: "Rajesh Gaikwad",
-			position: "Founder & CEO",
-			image: "/rajesh.jpg",
+			position: "Founder",
+			image: "/r.jpg",
 		},
 		{
 			id: 2,
@@ -51,7 +51,7 @@ export default function AboutUs() {
 				{/* Hero Section */}
 				<div className="relative text-center space-y-5">
 					<h1 className="text-4xl md:text-6xl font-extrabold text-gray-900">
-						About <span className="text-gray-900">Quantus Technik</span>
+						About <span className="text-gray-900">QuantusTechnik</span>
 					</h1>
 					<p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
 						Revolutionizing Indian manufacturing with world-class machine tool
@@ -69,11 +69,11 @@ export default function AboutUs() {
 							Our Story
 						</h2>
 						<p className="text-gray-600 leading-relaxed">
-							Founded in June 2020, <strong>Quantus Technik</strong> was built
-							on a simple vision — to bring world-class machine tool technology
-							to India. With decades of experience in industrial manufacturing,
-							our team is redefining engineering standards through innovation
-							and expertise.
+							Founded in June 2020, <strong>QuantusTechnik</strong> was built on
+							a simple vision — to bring world-class machine tool technology to
+							India. With decades of experience in industrial manufacturing, our
+							team is redefining engineering standards through innovation and
+							expertise.
 						</p>
 
 						<div className="grid grid-cols-3 gap-6 pt-6">
@@ -175,8 +175,9 @@ export default function AboutUs() {
 										src={member.image}
 										alt={member.name}
 										fill
-										className="object-cover object-center transition-transform duration-500 hover:scale-110"
-										priority={member.id <= 2} // Prioritize loading leadership images
+										className={`object-cover transition-transform duration-500 hover:scale-105
+            ${member.id === 1 ? "object-[center_20%]" : "object-top"}`}
+										priority={member.id <= 2}
 									/>
 								</div>
 
@@ -190,8 +191,6 @@ export default function AboutUs() {
 							</div>
 						))}
 					</div>
-
-					
 				</div>
 			</div>
 		</section>

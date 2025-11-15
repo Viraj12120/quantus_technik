@@ -9,7 +9,7 @@ import Client from "./components/clients";
 export const metadata = {
 	title: "Your Productivity Improvement Partner | Machine Tools & Automation",
 	description:
-		"Quantus Technik is your premier manufacturing solutions partner offering high-quality machine tools, automation systems, and tool management solutions across aerospace, automotive, medical, and die-mould industries.",
+		"QuantusTechnik is your premier manufacturing solutions partner offering high-quality machine tools, automation systems, and tool management solutions across aerospace, automotive, medical, and die-mould industries.",
 	keywords: [
 		"machine tools",
 		"automation solutions",
@@ -21,7 +21,7 @@ export const metadata = {
 		"ALZMETALL",
 	],
 	openGraph: {
-		title: "Quantus Technik - Your Productivity Improvement Partner",
+		title: "QuantusTechnik - Your Productivity Improvement Partner",
 		description:
 			"Leading provider of machine tools, automation systems, and industrial manufacturing solutions",
 		images: ["/og-home.jpg"],
@@ -38,8 +38,8 @@ export default function Home() {
 			<Hero />
 			<Features />
 			<WhyChooseQuantus />
-			<Product/>
-			<Client/>
+			<Product />
+			<Client />
 		</>
 	);
 }

@@ -37,7 +37,7 @@
                             "Premium Select"
                         ],
                         "applications": "Small to medium parts",
-                        "image": "https://www.wenzel-group.com/assets/images/products/lh-65.jpg",
+                        "image": "https://cdn.prod.website-files.com/616d38b9247e8de379dfa27b/682db5bd0cd8fafe1d8f1b15_133624615_Maschine%20vorne-min-p-2000.jpg",
                         "detail_url": "https://www.wenzel-group.com/en/products/lh-65"
                     },
                     {
@@ -54,7 +54,7 @@
                             "Premium Select"
                         ],
                         "applications": "Medium parts, universal use",
-                        "image": "https://www.wenzel-group.com/assets/images/products/lh-87.jpg",
+                        "image": "https://cdn.prod.website-files.com/616d38b9247e8de379dfa27b/682db88f4f46c7a874205457_LH87-2G-min.jpg",
                         "detail_url": "https://www.wenzel-group.com/en/products/lh-87"
                     },
                     {
@@ -71,7 +71,7 @@
                             "Premium Select"
                         ],
                         "applications": "Large parts, high accuracy",
-                        "image": "https://www.wenzel-group.com/assets/images/products/lh-108.jpg",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdgqxBbK2JCiOn6IgDb2cM7i83QojjLS23nYdMvJhg9lmjfS5sSHNqltru2qe6vBVU74KJ-Wmk",
                         "detail_url": "https://www.wenzel-group.com/en/products/lh-108"
                     },
                     {
@@ -88,7 +88,7 @@
                             "Premium Select"
                         ],
                         "applications": "Extra-large parts",
-                        "image": "https://www.wenzel-group.com/assets/images/products/lh-1210.jpg",
+                        "image": "https://cdn.prod.website-files.com/616d38b9247e8de379dfa27b/61f3c33d7c447af8662824b1_LH%201210%20mit%20Werstueck.avif",
                         "detail_url": "https://www.wenzel-group.com/en/products/lh-1210"
                     },
                     {
@@ -109,7 +109,7 @@
                             "Active damping",
                             "Automatic temperature compensation"
                         ],
-                        "image": "https://www.wenzel-group.com/assets/images/products/lh-1512.jpg",
+                        "image": "https://www.foxvalleymetrology.com/wp-content/uploads/2025/01/lh-1512.png",
                         "detail_url": "https://www.wenzel-group.com/en/products/lh-1512"
                     },
                     {
@@ -118,7 +118,7 @@
                         "measuring_range_mm": "Custom configurations",
                         "design": "Moving bridge / Gantry",
                         "applications": "Extra-large, heavy components",
-                        "image": "https://www.wenzel-group.com/assets/images/products/lhf-series.jpg",
+                        "image": "https://cdn.prod.website-files.com/616d38b9247e8de379dfa27b/61f3bfe918a8d5b045e6676a_Titel%20LHF.avif",
                         "detail_url": "https://www.wenzel-group.com/en/products/lhf-series"
                     }
                 ]
@@ -158,7 +158,7 @@
                         ],
                         "damping": "Passive standard, active optional",
                         "applications": "Small parts, series measurement",
-                        "image": "https://www.wenzel-group.com/assets/images/products/sf-55.jpg",
+                        "image": "https://cdn.prod.website-files.com/616d38b9247e8de379dfa27b/619b9a9e22d0d07e85610a79_SF55(2)-min.avif",
                         "detail_url": "https://www.wenzel-group.com/en/products/sf-55"
                     },
                     {
@@ -181,7 +181,7 @@
                             "Portable with pallet truck",
                             "REVO 5-axis compatible"
                         ],
-                        "image": "https://www.wenzel-group.com/assets/images/products/sf-87.jpg",
+                        "image": "https://cdn.prod.website-files.com/616d38b9247e8de379dfa27b/61f3c1e8b47a7ee36fcceac5_SF87_frei.avif",
                         "detail_url": "https://www.wenzel-group.com/en/products/sf-87"
                     },
                     {
@@ -206,7 +206,7 @@
                             "4-side accessibility",
                             "Automation ready"
                         ],
-                        "image": "https://www.wenzel-group.com/assets/images/products/sf-1210.jpg",
+                        "image": "https://cdn.prod.website-files.com/616d38b9247e8de379dfa27b/62149e833eebd27211f36bea_SF1210-freigestellt.avif",
                         "detail_url": "https://www.wenzel-group.com/en/products/sf-1210"
                     }
                 ]
@@ -238,7 +238,7 @@
                         ],
                         "applications": "Gear measurement, quality control",
                         "software": "WM | Gear software",
-                        "image": "https://www.wenzel-group.com/assets/images/products/gt-series.jpg",
+                        "image": "https://cdn.prod.website-files.com/616d38b9247e8de379dfa27b/620a2e319edfbc31dbe7c6f8_61a9d81ebf437a3405e54ecb_GT%20450%20Freigestellt-min-min.avif",
                         "detail_url": "https://www.wenzel-group.com/en/product-category/gear-measuring-devices"
                     },
                     {
@@ -247,7 +247,7 @@
                         "measurement_axes": 4,
                         "rotary_table": "Integrated high-precision rotary table",
                         "applications": "Gears, shafts, rotational parts",
-                        "image": "https://www.wenzel-group.com/assets/images/products/lh-rotary.jpg",
+                        "image": "https://cdn.prod.website-files.com/616d38b9247e8de379dfa27b/61f3a1bfdab4d5404f2b2038_LH%201210%20Rundtisch-p-500.avif",
                         "detail_url": "https://www.wenzel-group.com/en/product-group/cmms-rotary-table"
                     }
                 ]
@@ -301,7 +301,7 @@
                         "sensors": "Tactile probe",
                         "battery": "Integrated rechargeable",
                         "applications": "On-site measurement, large parts",
-                        "image": "https://www.wenzel-group.com/assets/images/products/mma-standard.jpg",
+                        "image": "https://cdn.prod.website-files.com/616d38b9247e8de379dfa27b/620ba6a541d10de444aa0f14_MMA-Messarm-Kreon-Doppelt.avif",
                         "detail_url": "https://www.wenzel-group.com/en/products/mma-standard"
                     },
                     {
@@ -329,7 +329,7 @@
                         ],
                         "scan_rate": "Up to 100,000 points/sec",
                         "applications": "Reverse engineering, complex surfaces",
-                        "image": "https://www.wenzel-group.com/assets/images/products/mma-premium.jpg",
+                        "image": "https://cdn.prod.website-files.com/616d38b9247e8de379dfa27b/620a338f2f80ac61b9ad3ae8_619f7c08de56d1b825915baf_Wenzel-arm-premium-scanner-min.avif",
                         "detail_url": "https://www.wenzel-group.com/en/products/mma-premium"
                     }
                 ]

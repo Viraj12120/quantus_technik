@@ -1,4 +1,218 @@
 {
+    "ken": {
+        "id": "ken",
+        "machines": [
+            {
+                "model": "Focus-5",
+                "series": "Focus",
+                "description": "Double-column high-speed 5-axis machining center with linear motor drive",
+                "type": "5-Axis Double Column",
+                "detail_url": "https://pdf.aeroexpo.online/pdf/ken-ichi-machine-co-ltd/focus-5/183807-7931.html",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
+                "specs": {
+                    "rapid_feed_m_per_min": 60,
+                    "tool_shank": "HSK A63",
+                    "tool_capacity": 32,
+                    "spindle_max_rpm": 24000,
+                    "drive": {
+                        "x": "linear motor",
+                        "y": "linear motor",
+                        "z": "ball screw"
+                    },
+                    "distance_between_columns_mm": 1650
+                }
+            },
+            
+            {
+                "model": "Compact B-2516 / B-2522 / B-3222",
+                "series": "Compact B",
+                "description": "Gantry-type high-speed 5-axis machine center",
+                "type": "5-Axis Gantry",
+                "detail_url": "https://pdf.aeroexpo.online/pdf/ken-ichi-machine-co-ltd/compact-b/183807-7928.html",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/CompactE_%E5%81%B4%E6%8E%9B%E5%BC%8F_%E4%B8%AD%E6%96%87_CMYK%20%E6%8B%B7%E8%B4%9D.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": [
+                            1600,
+                            2200,
+                            2200
+                        ],
+                        "y": [
+                            2500,
+                            2500,
+                            3200
+                        ],
+                        "z": 1250
+                    },
+                    "rapid_feed_m_per_min": 60,
+                    "tool_shank": [
+                        "HSK A63",
+                        "HSK A100"
+                    ],
+                    "tool_capacity": [
+                        30,
+                        60
+                    ],
+                    "spindle_max_rpm": [
+                        24000
+                    ],
+                    "spindle_power_kw": [
+                        42,
+                        50,
+                        65
+                    ],
+                    "spindle_torque_Nm": [
+                        67,
+                        96,
+                        124
+                    ]
+                }
+            },
+            {
+                "model": "Linmax B-22 / B-25 / B-30 / B-35 / B-40",
+                "series": "Linmax B",
+                "description": "Gantry-type linear motor 5-axis machine center",
+                "type": "5-Axis Gantry",
+                "detail_url": "https://pdf.aeroexpo.online/pdf/ken-ichi-machine-co-ltd/linmax-b/183807-7929.html",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": [
+                            3200,
+                            4000,
+                            5000,
+                            5000,
+                            6000
+                        ],
+                        "y": [
+                            2200,
+                            2500,
+                            3000,
+                            3500,
+                            4000
+                        ],
+                        "z": 1250
+                    },
+                    "rapid_feed_m_per_min": 50,
+                    "tool_shank": [
+                        "HSK A63",
+                        "HSK A100"
+                    ],
+                    "tool_capacity": [
+                        30,
+                        60
+                    ],
+                    "spindle_max_rpm": [
+                        24000,
+                        15000
+                    ],
+                    "spindle_power_kw": [
+                        42,
+                        50,
+                        65
+                    ],
+                    "spindle_torque_Nm": [
+                        67,
+                        96,
+                        124
+                    ]
+                }
+            },
+            {
+                "model": "Linmax Twin (Twin-Gantry / Twin-Column)",
+                "series": "Linmax Twin",
+                "description": "Twin-gantry or twin-column high-speed / heavy-duty 5-axis machining centers",
+                "type": "5-Axis Twin Gantry / Twin Column",
+                "detail_url": "https://pdf.aeroexpo.online/pdf/ken-ichi-machine-co-ltd/linmax-twin-series/183807-7930.html",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/All%20Machine_CN_LinmaxBTwin.png",
+                "specs": {
+                    "rapid_feed_m_per_min": 50,
+                    "spindle_torque_Nm": 1200,
+                    "notes": "Double-crossbeam, linear motor X/Y, high-torque two-axis milling head"
+                }
+            },
+            
+            {
+                "model": "Rhino-1250 / Rhino-1700 / Rhino-2200",
+                "series": "Rhino",
+                "description": "Horizontal 5-axis machining center (portal / double-frame design)",
+                "type": "5-Axis Horizontal",
+                "detail_url": "https://dynamicintl.com/wp-content/uploads/2018/02/ken-PDF-rhino.pdf",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": [
+                            2000,
+                            2400,
+                            2800
+                        ],
+                        "y": 1400,
+                        "z": [
+                            2200,
+                            2600,
+                            3000
+                        ]
+                    },
+                    "spindle_max_rpm": 4000,
+                    "spindle_power_kw": 36,
+                    "spindle_torque_Nm": 1200,
+                    "rapid_feed_m_per_min": 50,
+                    "tool_shank": "BT-50",
+                    "tool_capacity": 40
+                }
+            },
+            {
+                "model": "Saber-2400 / 2800 / 3500",
+                "series": "Saber",
+                "description": "Vertical 5-axis double-column machining center for heavy cutting",
+                "type": "5-Axis Vertical",
+                "detail_url": "https://www.aeroexpo.online/prod/ken-ichi-machine-co-ltd/product-183807-77540.html",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Saber.png",
+                "specs": {
+                    "travel_x_mm": [
+                        3000,
+                        4000,
+                        5000,
+                        6000
+                    ],
+                    "travel_y_mm": [
+                        2400,
+                        2800,
+                        3300
+                    ],
+                    "travel_z_mm": [
+                        800,
+                        1000
+                    ],
+                    "guide_z": "box guideway with double hydraulic cylinder",
+                    "scale_z": "Heidenhain linear scale",
+                    "notes": "High torque, high rigidity design for aeronautics"
+                }
+            },
+            {
+                "model": "Rotor-1500 / Rotor-2000",
+                "series": "Rotor",
+                "description": "Vertical 5-axis double-column high-speed machine for aeronautics",
+                "type": "5-Axis Vertical",
+                "detail_url": "https://www.aeroexpo.online/prod/ken-ichi-machine-co-ltd/product-183807-77538.html",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/rotor-en.png",
+                "specs": {
+                    "travel_x_mm": [
+                        1500,
+                        2000
+                    ],
+                    "travel_y_mm": [
+                        1250,
+                        1400
+                    ],
+                    "travel_z_mm": 1000,
+                    "rapid_feed_m_per_min": 60,
+                    "notes": "Linear motor X/Y, direct-drive torque motor B/C axis"
+                }
+            }
+          
+        ]
+    },
     "horizontal": {
         "id": "horizontal",
         "machines": [
@@ -120,191 +334,79 @@
                 "type": "LM #50",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20240807090815.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=AF-4"
-            },
+            }
+        ]
+    },
+    "grob": {
+        "id": "grob",
+        "machines": [
             {
-                "model": "FH630SX-i",
-                "brand": "JTEKT",
-                "description": "High-Speed Horizontal Machining Center - 630mm Pallet",
-                "pallet_size_mm": 630,
-                "pallet_capacity_kg": 1000,
-                "stroke_mm": [
-                    1050,
-                    900,
-                    1050
+                "model": "G150",
+                "description": "The smallest 5-axis universal machining center provides optimized precision for complex parts.",
+                "working_travel_mm": [
+                    450,
+                    670,
+                    665
                 ],
-                "spindle_speed_rpm": [
-                    8000,
-                    15000
-                ],
-                "rapid_feed_rate_mpm": 60,
-                "number_of_tools": [
+                "speed_max_m_per_min": [
+                    50,
+                    40,
                     60
                 ],
-                "type": "Linear Way",
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/FH630SX-i_2022-11-28-202712_djgh.png",
-                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/630mm-pallet/fh630sx-i"
+                "interference_diameter_mm": 580,
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/1/5/csm_Header_G150_geschlossen_b4de910a91.png",
+                "brand": "GROB"
             },
             {
-                "model": "FH630SX-i 5-Axis",
-                "brand": "JTEKT",
-                "description": "5-Axis High Power/Speed Horizontal Machining Center - 800mm Pallet",
-                "pallet_size_mm": 800,
-                "pallet_capacity_kg": 2500,
-                "stroke_mm": [
-                    1400,
-                    1200,
-                    1400
+                "model": "G350",
+                "description": "The compact 5-axis machining center for milling parts from the most diverse materials.",
+                "working_travel_mm": [
+                    600,
+                    855,
+                    750
                 ],
-                "spindle_speed_rpm": [
-                    8000,
-                    15000
+                "speed_max_m_per_min": [
+                    70,
+                    45,
+                    90
                 ],
-                "number_of_tools": [
-                    60
-                ],
-                "type": "5-Axis Trunnion",
-                "features": [
-                    "C-axis 230° swivel range",
-                    "Tilting spindle"
-                ],
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/FH630SX-i-5-Axis.PNG",
-                "detail_url": "https://jtektmachinery.com/machines/5-axis-machining-centers/5-axis-horizontal-machining-centers/fh630sx-5a"
+                "interference_diameter_mm": 720,
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/5/1/csm_Header_G350_geschlossen_2b785e2ec7.png",
+                "brand": "GROB"
             },
             {
-                "model": "FH800SX-i",
-                "brand": "JTEKT",
-                "description": "Heavy Duty Linear Way Horizontal Machining Center - 800mm Pallet",
-                "pallet_size_mm": 800,
-                "pallet_capacity_kg": 2500,
-                "stroke_mm": [
-                    1450,
-                    1250,
-                    1550
+                "model": "G550",
+                "description": "Optimized milling performance with the 5-axis machining center for parts from the most diverse raw materials.",
+                "working_travel_mm": [
+                    800,
+                    1020,
+                    970
                 ],
-                "spindle_speed_rpm": [
-                    6000,
-                    8000,
-                    15000
-                ],
-                "rapid_feed_rate_mpm": 54,
-                "number_of_tools": [
-                    60
-                ],
-                "type": "Linear Way",
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/FH800SX-i.png",
-                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/800mm-pallet/fh800sx-i"
-            },
-            {
-                "model": "FH1000SX",
-                "brand": "JTEKT",
-                "description": "Heavy Duty Linear Way Horizontal Machining Center - 1000mm Pallet",
-                "pallet_size_mm": 1000,
-                "pallet_capacity_kg": 3000,
-                "stroke_mm": [
-                    1800,
-                    1600,
-                    1800
-                ],
-                "spindle_speed_rpm": [
-                    6000,
-                    8000
-                ],
-                "number_of_tools": [
+                "speed_max_m_per_min": [
+                    65,
+                    50,
                     80
                 ],
-                "type": "Linear Way",
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/FH1000SX.png",
-                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/1000-1050mm-pallet/fh1000sx"
+                "interference_diameter_mm": 900,
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/3/6/csm_Header_G550_geschlossen1_d366664f45.jpg",
+                "brand": "GROB"
             },
             {
-                "model": "FH1250SX",
-                "brand": "JTEKT",
-                "description": "Heavy Duty Linear Way Horizontal Machining Center - 1250mm Pallet",
-                "pallet_size_mm": 1250,
-                "pallet_capacity_kg": 5000,
-                "stroke_mm": [
-                    2400,
-                    1800,
-                    2000
+                "model": "G750",
+                "description": "Highest productivity and optimized machining with the rigid 5-axis machining center.",
+                "working_travel_mm": [
+                    950,
+                    1000,
+                    650
                 ],
-                "spindle_speed_rpm": [
-                    6000,
-                    15000
+                "speed_max_m_per_min": [
+                    65,
+                    55,
+                    85
                 ],
-                "number_of_tools": [
-                    80
-                ],
-                "type": "Linear Way",
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/FH1250SX.png",
-                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/1250mm-pallet/fh1250sx"
-            },
-            {
-                "model": "FH1250SW",
-                "brand": "JTEKT",
-                "description": "Heavy Duty Boring Bar Quill Horizontal Machining Center - 1250mm Pallet",
-                "pallet_size_mm": 1250,
-                "pallet_capacity_kg": 5000,
-                "stroke_mm": [
-                    2400,
-                    1800,
-                    2000
-                ],
-                "spindle_speed_rpm": [
-                    4000
-                ],
-                "number_of_tools": [
-                    80
-                ],
-                "type": "Boring Bar Quill",
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/FH1250SX.png",
-                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/1250mm-pallet/fh1250sw"
-            },
-            {
-                "model": "FH1250SX-5Axis",
-                "brand": "JTEKT",
-                "description": "Double Column Type 5-Axis Horizontal Machining Center - 1250mm Pallet",
-                "pallet_size_mm": 1250,
-                "pallet_capacity_kg": 5000,
-                "stroke_mm": [
-                    2400,
-                    1600,
-                    1850
-                ],
-                "spindle_speed_rpm": [
-                    6000,
-                    15000
-                ],
-                "number_of_tools": [
-                    80
-                ],
-                "type": "5-Axis Double Column",
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/FH1250SX-5Axis_machine.png",
-                "detail_url": "https://jtektmachinery.com/machines/5-axis-machining-centers/5-axis-horizontal-machining-centers/fh1250sx-5a"
-            },
-            {
-                "model": "FH1600SW",
-                "brand": "JTEKT",
-                "description": "Extra Large Double Column Horizontal Machining Center - 1600x1250mm Pallet",
-                "pallet_size_mm": [
-                    1600,
-                    1250
-                ],
-                "pallet_capacity_kg": 8000,
-                "stroke_mm": [
-                    3000,
-                    1900,
-                    2100
-                ],
-                "spindle_speed_rpm": [
-                    4000
-                ],
-                "number_of_tools": [
-                    100
-                ],
-                "type": "Double Column",
-                "max_workpiece_weight_kg": 32000,
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/FH1600SW5i_2022-11-28-203120_grzp.png",
-                "detail_url": "https://jtektmachinery.com/machines/horizontal-machining-centers/1600mm-pallet/fh1600sw"
+                "interference_diameter_mm": 1100,
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/a/5/csm_Header_G750_geschlossen_56b6e7be23.jpg",
+                "brand": "GROB"
             }
         ]
     },
@@ -400,896 +502,284 @@
                 ],
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230041346.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-2000"
-            },
+            }
+        ]
+    },
+    "alzmetall": {
+        "id": "alzmetall",
+        "machines": [
             {
-                "model": "VESTA-610D",
-                "description": "Dual Table Vertical Machining Center for Parts Machining",
+                "model": "DS 5",
+                "description": "5-Axis Universal Machining Center with Swivel Rotary Table",
+                "type": "5-Axis Universal",
+                "table_size_mm": "630 × 630",
                 "stroke_mm": [
-                    610,
-                    410,
-                    450
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    12000
-                ],
-                "number_of_tools": [
-                    24
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105030058.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-610D"
-            },
-            {
-                "model": "VESTA-500T",
-                "description": "Twin Spindle Vertical Machining Center",
-                "stroke_mm": [
-                    520,
-                    400,
-                    380
-                ],
-                "spindle_speed_rpm": [
-                    24000,
-                    10000
-                ],
-                "number_of_tools": [
-                    24
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105024851.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-500T"
-            },
-            {
-                "model": "VESTA-650T",
-                "description": "Twin Spindle Vertical Machining Center",
-                "stroke_mm": [
-                    650,
-                    650,
-                    700
+                    800,
+                    630,
+                    630
                 ],
                 "spindle_speed_rpm": [
                     12000,
-                    15000
+                    18000,
+                    24000
                 ],
                 "number_of_tools": [
-                    16
+                    30,
+                    60
                 ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105025849.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-650T"
+                "image": "https://alzmetall.de/fileadmin/_processed_/4/0/csm_DS5_Overview_01_9d4b4c2b4e.jpg",
+                "detail_url": "https://alzmetall.de/en/products/5-axis-machining-centers/ds-5/"
             },
             {
-                "model": "HiREX-4000",
-                "description": "Travelling Column Vertical Machining Center for Parts",
+                "model": "DS 6",
+                "description": "5-Axis Universal Machining Center with Large Work Envelope",
+                "type": "5-Axis Universal",
+                "table_size_mm": "800 × 800",
                 "stroke_mm": [
-                    4000,
-                    1600,
+                    1000,
+                    800,
                     800
                 ],
                 "spindle_speed_rpm": [
-                    6000
-                ],
-                "number_of_tools": [
-                    24,
-                    30
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20220208104909.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiREX-4000"
-            },
-            {
-                "model": "HiREX-5000",
-                "description": "Travelling Column Vertical Machining Center for Parts",
-                "stroke_mm": [
-                    5000,
-                    2100,
-                    900
-                ],
-                "spindle_speed_rpm": [
-                    6000
-                ],
-                "number_of_tools": [
-                    40
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20220208104909.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiREX-5000"
-            },
-            {
-                "model": "HiREX-6000",
-                "description": "Travelling Column Vertical Machining Center for Parts",
-                "stroke_mm": [
-                    6000,
-                    1700,
-                    800
-                ],
-                "spindle_speed_rpm": [
-                    6000
-                ],
-                "number_of_tools": [
-                    40
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20220208104909.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiREX-6000"
-            },
-            {
-                "model": "L1 1500",
-                "description": "Double Column Vertical Machining Center for Plates",
-                "stroke_mm": [
-                    1500,
-                    660,
-                    635
-                ],
-                "spindle_speed_rpm": [
-                    16000
-                ],
-                "number_of_tools": [
-                    30
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20220208104909.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L1 1500"
-            },
-            {
-                "model": "L1 2500",
-                "description": "Double Column Vertical Machining Center for Plates",
-                "stroke_mm": [
-                    2500,
-                    850,
-                    800
-                ],
-                "spindle_speed_rpm": [
-                    20000
-                ],
-                "number_of_tools": [
-                    60
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210219045720.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L1 2500"
-            },
-            {
-                "model": "L2 2500",
-                "description": "Double Column Vertical Machining Center for Plates",
-                "stroke_mm": [
-                    2500,
-                    850,
-                    800
-                ],
-                "spindle_speed_rpm": [
-                    20000
-                ],
-                "number_of_tools": [
-                    60
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210219045720.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L2 2500"
-            },
-            {
-                "model": "L2 3000",
-                "description": "Double Column Vertical Machining Center for Plates",
-                "stroke_mm": [
-                    3000,
-                    1050,
-                    1000
-                ],
-                "spindle_speed_rpm": [
-                    12000
-                ],
-                "number_of_tools": [
-                    60
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221100103.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L2 3000"
-            },
-            {
-                "model": "L3 3000",
-                "description": "Double Column Vertical Machining Center for Plates",
-                "stroke_mm": [
-                    3000,
-                    1800,
-                    500
-                ],
-                "spindle_speed_rpm": [
-                    12000
-                ],
-                "number_of_tools": [
-                    60
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20220719093656.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L3_3000"
-            },
-            {
-                "model": "VESTA-850B",
-                "description": "Heavy Duty Vertical Machining Center for Parts Machining",
-                "stroke_mm": [
-                    850,
-                    600,
-                    600
-                ],
-                "spindle_speed_rpm": [
-                    6000,
-                    8000
-                ],
-                "number_of_tools": [
-                    24,
-                    30
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105022524.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-850B"
-            },
-            {
-                "model": "VESTA-1050B",
-                "description": "Heavy Duty Vertical Machining Center for Parts Machining",
-                "stroke_mm": [
-                    1050,
-                    600,
-                    600
-                ],
-                "spindle_speed_rpm": [
-                    6000,
-                    8000
-                ],
-                "number_of_tools": [
-                    24,
-                    30
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105024623.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1050B"
-            },
-            {
-                "model": "VESTA-1300B",
-                "description": "Heavy Duty Vertical Machining Center for Parts Machining",
-                "stroke_mm": [
-                    1300,
-                    670,
-                    650
-                ],
-                "spindle_speed_rpm": [
-                    6000,
-                    8000,
                     10000,
-                    12000,
-                    15000
+                    15000,
+                    20000
                 ],
                 "number_of_tools": [
-                    24,
-                    30
+                    40,
+                    80
                 ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105024736.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1300B"
+                "image": "https://alzmetall.de/fileadmin/_processed_/0/7/csm_DS6_Overview_01_9c8b4c2b4e.jpg",
+                "detail_url": "https://alzmetall.de/en/products/5-axis-machining-centers/ds-6/"
             },
             {
-                "model": "SIRIUS-650",
-                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "model": "DS 8",
+                "description": "Large 5-Axis Universal Machining Center for Heavy Duty Applications",
+                "type": "5-Axis Universal",
+                "table_size_mm": "1000 × 1000",
                 "stroke_mm": [
-                    1300,
-                    650,
-                    650
-                ],
-                "spindle_speed_rpm": [
-                    5000,
-                    8000
-                ],
-                "number_of_tools": [
-                    24
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105044959.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-650"
-            },
-            {
-                "model": "SIRIUS-850",
-                "description": "High Rigidity Vertical Machining Center for Die and Mold",
-                "stroke_mm": [
-                    2000,
-                    850,
-                    750
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    12000
-                ],
-                "number_of_tools": [
-                    24
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105050458.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-850"
-            },
-            {
-                "model": "SIRIUS-1050",
-                "description": "High Rigidity Vertical Machining Center for Die and Mold",
-                "stroke_mm": [
-                    2500,
-                    1050,
-                    850
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    12000
-                ],
-                "number_of_tools": [
-                    24
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105051659.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1050"
-            },
-            {
-                "model": "SIRIUS-1250",
-                "description": "High Rigidity Vertical Machining Center for Die and Mold",
-                "stroke_mm": [
-                    2500,
                     1250,
-                    750
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    12000
-                ],
-                "number_of_tools": [
-                    8,
-                    40
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105051728.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1250"
-            },
-            {
-                "model": "SIRIUS-1350",
-                "description": "High Rigidity Vertical Machining Center for Die and Mold",
-                "stroke_mm": [
-                    2550,
-                    1350,
-                    750
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    12000
-                ],
-                "number_of_tools": [
-                    40,
-                    60
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117093515.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1350"
-            },
-            {
-                "model": "SIRIUS-1750",
-                "description": "High Rigidity Vertical Machining Center for Die and Mold",
-                "stroke_mm": [
-                    3000,
-                    1750,
-                    800
-                ],
-                "spindle_speed_rpm": [
-                    12000,
-                    15000
-                ],
-                "number_of_tools": [
-                    40,
-                    60
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117100015.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1750"
-            },
-            {
-                "model": "SIRIUS-2500",
-                "description": "High Rigidity Vertical Machining Center for Die and Mold",
-                "stroke_mm": [
-                    3100,
-                    2300,
-                    900
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    12000
-                ],
-                "number_of_tools": [
-                    40
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117102949.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-2500"
-            },
-            {
-                "model": "UH500",
-                "description": "High-Speed Vertical Machining Center for Die and Mold",
-                "stroke_mm": [
-                    750,
-                    500,
-                    350
-                ],
-                "spindle_speed_rpm": [
-                    20000,
-                    32000
-                ],
-                "number_of_tools": [
-                    24
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117122537.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=UH500"
-            },
-            {
-                "model": "SIRIUS-UM+",
-                "description": "High-Speed Vertical Machining Center for Die and Mold",
-                "stroke_mm": [
-                    750,
-                    500,
-                    450
-                ],
-                "spindle_speed_rpm": [
-                    20000,
-                    32000,
-                    45000
-                ],
-                "number_of_tools": [
-                    20,
-                    30,
-                    40,
-                    60
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117104404.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UM+"
-            },
-            {
-                "model": "SIRIUS-UZ",
-                "description": "High-Speed Vertical Machining Center for Die and Mold",
-                "stroke_mm": [
-                    1050,
-                    600,
-                    350
-                ],
-                "spindle_speed_rpm": [
-                    12000,
-                    14000,
-                    20000,
-                    24000
-                ],
-                "number_of_tools": [
-                    30,
-                    40
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117121829.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UZ"
-            },
-            {
-                "model": "SIRIUS-UL+",
-                "description": "High-Speed Vertical Machining Center for Die and Mold",
-                "stroke_mm": [
-                    1050,
-                    600,
-                    550
-                ],
-                "spindle_speed_rpm": [
-                    12000,
-                    14000,
-                    20000,
-                    24000
-                ],
-                "number_of_tools": [
-                    30,
-                    40
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117115509.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UL+"
-            },
-            {
-                "model": "SIRIUS-UX",
-                "description": "High-Speed Vertical Machining Center for Die and Mold",
-                "stroke_mm": [
-                    1500,
-                    750,
-                    650
-                ],
-                "spindle_speed_rpm": [
-                    12000,
-                    15000
-                ],
-                "number_of_tools": [
-                    40,
-                    60
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117120744.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UX"
-            },
-            {
-                "model": "SMART Ua STEEL",
-                "description": "Smart Machine for Small Steel Mold",
-                "stroke_mm": [
-                    750,
-                    500,
-                    450
-                ],
-                "spindle_speed_rpm": [
-                    20000,
-                    32000,
-                    45000
-                ],
-                "number_of_tools": [
-                    20,
-                    30,
-                    40,
-                    60
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117124326.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SMART_Ua_STEEL"
-            },
-            {
-                "model": "SMART UaX",
-                "description": "Smart Machine for Graphite Electrode",
-                "stroke_mm": [
-                    650,
-                    500,
-                    380
-                ],
-                "spindle_speed_rpm": [
-                    60000
-                ],
-                "number_of_tools": [
-                    20,
-                    30
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117010932.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SMART_UaX"
-            },
-            {
-                "model": "Hi-M G1",
-                "description": "Vertical Machining Center For Graphite",
-                "stroke_mm": [
-                    1050,
-                    650,
-                    550
-                ],
-                "spindle_speed_rpm": [
-                    60000
-                ],
-                "number_of_tools": [
-                    30
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221013756.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M_G1"
-            },
-            {
-                "model": "Hi-M G1 Pro",
-                "description": "Premium Vertical Machining Center For Graphite",
-                "stroke_mm": [
-                    1050,
-                    650,
-                    550
-                ],
-                "spindle_speed_rpm": [
-                    60000
-                ],
-                "number_of_tools": [
-                    30
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20220715051216.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M G1 Pro"
-            },
-            {
-                "model": "Hi-M G2+",
-                "description": "Vertical Machining Center For Graphite",
-                "stroke_mm": [
-                    1800,
-                    1050,
-                    550
-                ],
-                "spindle_speed_rpm": [
-                    60000
-                ],
-                "number_of_tools": [
-                    40
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221015525.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M G2+"
-            },
-            {
-                "model": "HiT-360D",
-                "description": "High Speed Dual Table Tapping Center",
-                "stroke_mm": [
-                    360,
-                    360,
-                    300
-                ],
-                "spindle_speed_rpm": [
-                    20000
-                ],
-                "number_of_tools": [
-                    20
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221112127.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-360D"
-            },
-            {
-                "model": "HiT-400",
-                "description": "High Speed Tapping Center",
-                "stroke_mm": [
-                    400,
-                    320,
-                    300
-                ],
-                "spindle_speed_rpm": [
-                    20000
-                ],
-                "number_of_tools": [
-                    20
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221103133.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-400"
-            },
-            {
-                "model": "HiT-400L",
-                "description": "High Speed Tapping Center",
-                "stroke_mm": [
-                    400,
-                    320,
-                    400
-                ],
-                "spindle_speed_rpm": [
-                    20000
-                ],
-                "number_of_tools": [
-                    20
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221110723.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-400L"
-            },
-            {
-                "model": "Hi-M760",
-                "description": "Mock-up & Engraving Vertical Machining Center",
-                "stroke_mm": [
-                    760,
-                    510,
-                    510
-                ],
-                "spindle_speed_rpm": [
-                    24000
-                ],
-                "number_of_tools": [
-                    24
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221113242.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M760"
-            },
-            {
-                "model": "Hi-M1300",
-                "description": "Mock-up & Engraving Vertical Machining Center",
-                "stroke_mm": [
-                    1300,
-                    760,
-                    600
-                ],
-                "spindle_speed_rpm": [
-                    20000,
-                    24000
-                ],
-                "number_of_tools": [
-                    30
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221115855.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M1300"
-            },
-            {
-                "model": "Hi-M1500",
-                "description": "Mock-up & Engraving Vertical Machining Center",
-                "stroke_mm": [
-                    1500,
                     1000,
-                    600
-                ],
-                "spindle_speed_rpm": [
-                    20000,
-                    24000
-                ],
-                "number_of_tools": [
-                    30
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221123220.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M1500"
-            },
-            {
-                "model": "Hi-M2000",
-                "description": "Mock-up & Engraving Vertical Machining Center",
-                "stroke_mm": [
-                    2000,
-                    1200,
-                    600
-                ],
-                "spindle_speed_rpm": [
-                    20000,
-                    24000
-                ],
-                "number_of_tools": [
-                    40
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221124839.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M2000"
-            },
-            {
-                "model": "HMP-3606",
-                "description": "Large-sized Plano Miller",
-                "stroke_mm": [
-                    3600,
-                    3000,
-                    600
-                ],
-                "spindle_speed_rpm": [
-                    3000,
-                    6000
-                ],
-                "number_of_tools": [
-                    40
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221125809.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HMP-3606"
-            },
-            {
-                "model": "HMP-3710",
-                "description": "Large-sized Plano Miller",
-                "stroke_mm": [
-                    3700,
-                    5000,
                     1000
                 ],
                 "spindle_speed_rpm": [
-                    3000,
-                    6000
+                    8000,
+                    12000,
+                    15000
                 ],
                 "number_of_tools": [
-                    60
+                    60,
+                    120
                 ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221125809.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HMP-3710"
+                "image": "https://alzmetall.de/fileadmin/_processed_/8/3/csm_DS8_Overview_01_8a7b4c2b4e.jpg",
+                "detail_url": "https://alzmetall.de/en/products/5-axis-machining-centers/ds-8/"
             },
             {
-                "model": "UG630",
-                "description": "UG Series Vertical Machining Center",
-                "stroke_mm": [
-                    640,
-                    520,
-                    460
-                ],
-                "spindle_speed_rpm": [
-                    15000,
-                    22000
-                ],
-                "number_of_tools": [],
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/WELE_UG630_RC2401-1.jpg",
-                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/ug-series/ug630"
-            },
-            {
-                "model": "UG800",
-                "description": "UG Series Vertical Machining Center",
-                "stroke_mm": [
-                    800,
-                    950,
-                    650
-                ],
-                "spindle_speed_rpm": [
-                    15000,
-                    22000
-                ],
-                "number_of_tools": [],
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/Machines/VMC/WELE_UG800_01.jpg",
-                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/ug-series/ug800"
-            },
-            {
-                "model": "AA1165",
-                "description": "AA-65 Series, Production #40/#50 Taper Boxway",
-                "stroke_mm": [
-                    900,
-                    650,
-                    600
-                ],
-                "spindle_speed_rpm": [
-                    6000,
-                    8000,
-                    15000
-                ],
-                "number_of_tools": [],
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/Machines/VMC/AA1165_23.png",
-                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-65-series/aa1165"
-            },
-            {
-                "model": "AA1365",
-                "description": "AA-65 Series, Production #40/#50 Taper Boxway",
-                "stroke_mm": [
-                    1300,
-                    650,
-                    600
-                ],
-                "spindle_speed_rpm": [
-                    6000,
-                    8000,
-                    15000
-                ],
-                "number_of_tools": [],
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/AA1365_2023-04-06-190810_gbme.png",
-                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-65-series/aa1365"
-            },
-            {
-                "model": "AA1565",
-                "description": "AA-65 Series, Production #40/#50 Taper Boxway",
+                "model": "GX 5",
+                "description": "5-Axis Gantry Machining Center with High Dynamics",
+                "type": "5-Axis Gantry",
+                "table_size_mm": "1500 × 1000",
                 "stroke_mm": [
                     1500,
-                    650,
-                    600
-                ],
-                "spindle_speed_rpm": [
-                    6000,
-                    8000,
-                    15000
-                ],
-                "number_of_tools": [],
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/Machines/VMC/AA1565_23.png",
-                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-65-series/aa1565"
-            },
-            {
-                "model": "AA1680",
-                "description": "AA-80 Series, Production #50 Taper Boxway",
-                "stroke_mm": [
-                    1600,
-                    800,
+                    1000,
                     800
                 ],
                 "spindle_speed_rpm": [
-                    6000,
-                    10000
+                    10000,
+                    15000,
+                    20000
                 ],
-                "number_of_tools": [],
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/Machines/VMC/AA1680_23.png",
-                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-80-series/aa1680"
+                "number_of_tools": [
+                    40,
+                    80
+                ],
+                "image": "https://alzmetall.de/fileadmin/_processed_/5/8/csm_GX5_Overview_01_7c6b4c2b4e.jpg",
+                "detail_url": "https://alzmetall.de/en/products/5-axis-machining-centers/gx-5/"
             },
             {
-                "model": "AA2090",
-                "description": "AA-90 Series, Production #50 Taper Boxway",
+                "model": "GX 6",
+                "description": "Large 5-Axis Gantry Machining Center for Heavy Workpieces",
+                "type": "5-Axis Gantry",
+                "table_size_mm": "2000 × 1500",
                 "stroke_mm": [
                     2000,
-                    900,
+                    1500,
+                    1000
+                ],
+                "spindle_speed_rpm": [
+                    8000,
+                    12000
+                ],
+                "number_of_tools": [
+                    60,
+                    120
+                ],
+                "image": "https://alzmetall.de/fileadmin/_processed_/2/1/csm_GX6_Overview_01_6d5b4c2b4e.jpg",
+                "detail_url": "https://alzmetall.de/en/products/5-axis-machining-centers/gx-6/"
+            },
+            {
+                "model": "FX 5",
+                "description": "5-Axis Bridge-Type Machining Center with High Stability",
+                "type": "5-Axis Bridge-Type",
+                "table_size_mm": "1800 × 1200",
+                "stroke_mm": [
+                    1800,
+                    1200,
                     900
                 ],
                 "spindle_speed_rpm": [
+                    8000,
+                    12000,
+                    15000
+                ],
+                "number_of_tools": [
+                    50,
+                    100
+                ],
+                "image": "https://alzmetall.de/fileadmin/_processed_/9/4/csm_FX5_Overview_01_5c4b4c2b4e.jpg",
+                "detail_url": "https://alzmetall.de/en/products/5-axis-machining-centers/fx-5/"
+            },
+            {
+                "model": "FX 6",
+                "description": "Large 5-Axis Bridge-Type Machining Center for Maximum Precision",
+                "type": "5-Axis Bridge-Type",
+                "table_size_mm": "2500 × 1600",
+                "stroke_mm": [
+                    2500,
+                    1600,
+                    1100
+                ],
+                "spindle_speed_rpm": [
                     6000,
                     10000
                 ],
-                "number_of_tools": [],
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/AA2090.png",
-                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/aa-90-series/aa2090"
+                "number_of_tools": [
+                    80,
+                    160
+                ],
+                "image": "https://alzmetall.de/fileadmin/_processed_/6/7/csm_FX6_Overview_01_4b3b4c2b4e.jpg",
+                "detail_url": "https://alzmetall.de/en/products/5-axis-machining-centers/fx-6/"
             },
             {
-                "model": "740V-PRO",
-                "description": "PRO Series with 12,000 RPM Spindle",
-                "stroke_mm": [
-                    750,
-                    425,
-                    470
-                ],
-                "spindle_speed_rpm": [
-                    12000
-                ],
-                "number_of_tools": [],
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/FV1060-PRO_WhiteBackground1.png",
-                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/fv-pro-series/740v-pro"
+                "model": "GS 600/5-FDT",
+                "description": "Gantry Machining Center (GS-series) with 5-Axis, Gantry-Concept with Torque Drives",
+                "type": "5-Axis Gantry",
+                "detail_url": "https://alzmetall.de/en/produkt/gs-600-5-fdt/",
+                "image": "https://alzmetall.de/wp-content/uploads/2022/08/GS_600-5FDT.jpg",
+                "specs": {
+                    "travel_mm": {
+                        "x": 460,
+                        "y": 600,
+                        "z": 400
+                    },
+                    "cutting_tool_interface": "HSK-T63",
+                    "max_tool_positions": 76,
+                    "workpiece_capacity_kg": 500
+                }
             },
             {
-                "model": "1060V-PRO",
-                "description": "PRO Series with 12,000 RPM Spindle",
-                "stroke_mm": [
-                    1000,
-                    600,
-                    600
-                ],
-                "spindle_speed_rpm": [
-                    12000
-                ],
-                "number_of_tools": [],
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/FV1060-PRO_WhiteBackground1.png",
-                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/fv-pro-series/fv1060v-pro"
+                "model": "GS 800/5-FDT",
+                "description": "Gantry Machining Center (GS-series) “800 NE” with 5-Axis and Torque Drives",
+                "type": "5-Axis Gantry",
+                "detail_url": "https://alzmetall.de/en/produkt/gs-800ne-5-fdt/",
+                "image": null,
+                "specs": {
+                    "travel_mm": {
+                        "x": 660,
+                        "y": 800,
+                        "z": 550
+                    },
+                    "cutting_tool_interface": "HSK-T63",
+                    "workpiece_capacity_kg": 500
+                }
             },
             {
-                "model": "AQ850",
-                "description": "AQ Series, 15,000 RPM Direct Drive Spindle",
-                "stroke_mm": [
-                    800,
-                    510,
-                    510
-                ],
-                "spindle_speed_rpm": [
-                    15000
-                ],
-                "number_of_tools": [],
-                "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/Machines/VMC/AQcastIronBody.jpg",
-                "detail_url": "https://jtektmachinery.com/machines/vertical-machining-centers/aq-series/aq850"
+                "model": "GS 1000/5-T",
+                "description": "Gantry Machining Center (GS-series) with 5-Axis, Torque-Drive Swivel Table",
+                "type": "5-Axis Gantry",
+                "detail_url": "https://alzmetall.de/en/produkt/gs-1000-5-t/",
+                "image": null,
+                "specs": {
+                    "travel_mm": {
+                        "x": 800,
+                        "y": 800,
+                        "z": 600
+                    },
+                    "cutting_tool_interface": "HSK-A63",
+                    "max_workpiece_weight_kg": 1000
+                }
+            },
+            {
+                "model": "GS 1000/5-FDT",
+                "description": "Gantry Machining Center (GS-series) with 5-Axis, Torque-Drive Table + Rotary",
+                "type": "5-Axis Gantry",
+                "detail_url": "https://alzmetall.de/en/produkt/gs-1000-5-fdt/",
+                "image": null,
+                "specs": {
+                    "travel_mm": {
+                        "x": 800,
+                        "y": 800,
+                        "z": 600
+                    }
+                }
+            },
+            {
+                "model": "GS 1200/5-T",
+                "description": "Gantry Machining Center (GS-series) “1200” with 5-Axis, Torque Drive",
+                "type": "5-Axis Gantry",
+                "detail_url": "https://alzmetall.de/en/machining-center/gs1200/",
+                "image": null,
+                "specs": {
+                    "travel_mm": {
+                        "x": 1000,
+                        "y": 1200,
+                        "z": 800
+                    }
+                }
+            },
+            {
+                "model": "GS 1200/5-FDT",
+                "description": "Gantry Machining Center (GS-series) “1200” with 5-Axis, Table+Rotary (FDT)",
+                "type": "5-Axis Gantry",
+                "detail_url": "https://alzmetall.de/en/machining-center/gs1200/",
+                "image": null,
+                "specs": {
+                    "travel_mm": {
+                        "x": 1000,
+                        "y": 1200,
+                        "z": 800
+                    }
+                }
+            },
+            {
+                "model": "GS 1400/3",
+                "description": "Gantry Machining Center (GS-series) “1400” 3-Axis Version",
+                "type": "Gantry / 3-Axis",
+                "detail_url": "https://alzmetall.de/en/produkt/gs-1400-3/",
+                "image": null,
+                "specs": {
+                    "travel_mm": {
+                        "x": 1200,
+                        "y": 1300,
+                        "z": 800
+                    },
+                    "cutting_tool_interface": "HSK-A100",
+                    "max_workpiece_weight_kg": 3000
+                }
+            },
+            {
+                "model": "GS 1400/5-FDT",
+                "description": "Gantry Machining Center (GS-series) “1400” with 5-Axis, Table+Rotary (FDT)",
+                "type": "5-Axis Gantry",
+                "detail_url": "https://alzmetall.de/en/produkt/gs-1400-5-fdt/",
+                "image": null,
+                "specs": {
+                    "travel_mm": {
+                        "x": 1200,
+                        "y": 1300,
+                        "z": 800
+                    }
+                }
             }
         ]
     },
@@ -1362,7 +852,7 @@
         },
         {
             "model": "M4-5AX",
-            "description": "High Precision/Rigidity 5-Axis Vertical Machining Center for ‘Difficult-To-Cut’ Parts",
+            "description": "High Precision/Rigidity 5-Axis Vertical Machining Center for 'Difficult-To-Cut' Parts",
             "table_size_mm": "Ø800",
             "stroke_mm": [
                 950,
@@ -1380,162 +870,6 @@
             "type": "5_axis lm box 50_hsk",
             "detail_url": "M4-5AX 제품 상세보기",
             "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120022514.png"
-        },
-        {
-            "model": "D2-5AX",
-            "description": "5-Axis Vertical Machining Center for Parts Machining",
-            "table_size_mm": "Ø600",
-            "stroke_mm": [
-                650,
-                500,
-                500
-            ],
-            "spindle_speed_rpm": [
-                12000,
-                14000,
-                20000,
-                24000
-            ],
-            "number_of_tools": [
-                30,
-                40,
-                60
-            ],
-            "type": "5_axis 4_1_axis lm 40_hsk",
-            "detail_url": "D2-5AX 제품 상세보기",
-            "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210118121325.png"
-        },
-        {
-            "model": "D3-5AX",
-            "description": "5-Axis Vertical Machining Center for Parts Machining",
-            "table_size_mm": "Ø800",
-            "stroke_mm": [
-                800,
-                650,
-                575
-            ],
-            "spindle_speed_rpm": [
-                12000,
-                14000,
-                20000,
-                24000
-            ],
-            "number_of_tools": [
-                30,
-                40,
-                60
-            ],
-            "type": "5_axis 4_1_axis lm 40_hsk",
-            "detail_url": "D3-5AX 제품 상세보기",
-            "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20220715051519.png"
-        },
-        {
-            "model": "SMART CORE",
-            "description": "3+2-Axis Vertical Machining Center for Core Machining",
-            "table_size_mm": "1200 x 600",
-            "stroke_mm": [
-                1050,
-                600,
-                550
-            ],
-            "spindle_speed_rpm": [
-                14000,
-                20000,
-                24000
-            ],
-            "number_of_tools": [
-                30
-            ],
-            "type": "3_2_axis lm 40_hsk",
-            "detail_url": "SMART CORE 제품 상세보기",
-            "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210118082443.png"
-        },
-        {
-            "model": "SIRIUS-2500(5AX)",
-            "description": "5-Axis Angle Head Vertical Machining Center for Die and Mold",
-            "table_size_mm": "3300 x 2000",
-            "stroke_mm": [
-                3100,
-                2300,
-                1000
-            ],
-            "spindle_speed_rpm": [
-                15000
-            ],
-            "number_of_tools": [
-                40
-            ],
-            "type": "5_axis box 40_hsk",
-            "detail_url": "SIRIUS-2500(5AX) 제품 상세보기",
-            "image": "https://hwacheonasia.com/wp-content/uploads/2017/12/SIRIUS-2500_5AX.jpg"
-        },
-        {
-            "model": "G150",
-            "description": "The smallest 5-axis universal machining center provides optimized precision for complex parts.",
-            "working_travel_mm": [
-                450,
-                670,
-                665
-            ],
-            "speed_max_m_per_min": [
-                50,
-                40,
-                60
-            ],
-            "interference_diameter_mm": 580,
-            "image": "https://www.grobgroup.com/fileadmin/_processed_/1/5/csm_Header_G150_geschlossen_b4de910a91.png",
-            "brand": "GROB"
-        },
-        {
-            "model": "G350",
-            "description": "The compact 5-axis machining center for milling parts from the most diverse materials.",
-            "working_travel_mm": [
-                600,
-                855,
-                750
-            ],
-            "speed_max_m_per_min": [
-                70,
-                45,
-                90
-            ],
-            "interference_diameter_mm": 720,
-            "image": "https://www.grobgroup.com/fileadmin/_processed_/5/1/csm_Header_G350_geschlossen_2b785e2ec7.png",
-            "brand": "GROB"
-        },
-        {
-            "model": "G550",
-            "description": "Optimized milling performance with the 5-axis machining center for parts from the most diverse raw materials.",
-            "working_travel_mm": [
-                800,
-                1020,
-                970
-            ],
-            "speed_max_m_per_min": [
-                65,
-                50,
-                80
-            ],
-            "interference_diameter_mm": 900,
-            "image": "https://www.grobgroup.com/fileadmin/_processed_/3/6/csm_Header_G550_geschlossen1_d366664f45.jpg",
-            "brand": "GROB"
-        },
-        {
-            "model": "G750",
-            "description": "Highest productivity and optimized machining with the rigid 5-axis machining center.",
-            "working_travel_mm": [
-                950,
-                1000,
-                650
-            ],
-            "speed_max_m_per_min": [
-                65,
-                55,
-                85
-            ],
-            "interference_diameter_mm": 1100,
-            "image": "https://www.grobgroup.com/fileadmin/_processed_/a/5/csm_Header_G750_geschlossen_56b6e7be23.jpg",
-            "brand": "GROB"
         }
     ]
 }

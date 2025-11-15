@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -10,13 +10,17 @@ export default function Header() {
 	const [isOpen, setIsOpen] = useState(false);
 	const pathname = usePathname();
 
+	useEffect(() => {
+		setIsOpen(false);
+	}, [pathname]);
+
 	const navLinks = [
 		{ name: "Home", href: "/" },
 		{ name: "About Us", href: "/About" },
-		{ name: "Industries", href: "/Industries" },
 		{ name: "Products", href: "/Products" },
-		{ name: "Contact Us", href: "/Contact" },
+		{ name: "Industries", href: "/Industries" },
 		{ name: "Offers and Deals", href: "/Offer" },
+		{ name: "Contact Us", href: "/Contact" },
 	];
 
 	return (
@@ -40,6 +44,7 @@ export default function Header() {
 							<Link
 								key={link.name}
 								href={link.href}
+								onClick={() => setIsOpen(false)}
 								className={`hover:text-blue-600 ${
 									pathname === link.href ? "text-blue-600 font-medium" : ""
 								}`}>
@@ -53,9 +58,9 @@ export default function Header() {
 						className="md:hidden"
 						onClick={() => setIsOpen((prev) => !prev)}>
 						{isOpen ? (
-							<X className="w-6 h-6" />
+							<X className="w-6 h-6 mr-6 cursor cursor-pointer" />
 						) : (
-							<Menu className="w-6 h-6 mr-6" />
+							<Menu className="w-6 h-6 mr-6 cursor cursor-pointer" />
 						)}
 					</button>
 				</div>

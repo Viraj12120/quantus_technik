@@ -184,7 +184,7 @@ export default function ProductsPage() {
 			</section>
 
 			{/* Filter */}
-			<section className="py-6 bg-white border-b border-gray-200  top-16 z-40">
+			<section className="py-6 bg-white border-b flex justify-center border-gray-200  top-16 z-40">
 				<div className="max-w-7xl mx-auto px-6 flex gap-3 overflow-x-auto">
 					{categories.map((cat) => (
 						<button
@@ -240,7 +240,7 @@ export default function ProductsPage() {
 											: `/Products/${p.id}`
 									}
 									className="mt-auto">
-									<button className="w-full bg-black text-white py-3 rounded-full font-medium hover:bg-gray-800 transition flex items-center justify-center gap-2">
+									<button className="w-full bg-black text-white py-3 rounded-full font-medium hover:bg-gray-800 transition flex items-center justify-center gap-2 cursor cursor-pointer">
 										Learn More <ChevronRight className="w-4 h-4" />
 									</button>
 								</Link>

@@ -15,7 +15,7 @@
                     "Manually swivelable wheelhead"
                 ]
             },
-            "image": "",
+            "image": "https://www.jtekt.co.jp/e/products/assets/jtekt/M_G1P50_230809.jpg",
             "examples": [
                 {
                     "model": "GL4i-100",
@@ -53,7 +53,7 @@
                     "Toyoda GC50 controls"
                 ]
             },
-            "image": "",
+            "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/GF16S.png",
             "examples": [
                 {
                     "model": "GF50Mi-70",
@@ -80,7 +80,7 @@
                 "distance_between_centers_mm": 500,
                 "wheel_diameter_mm": "φ350 [φ70/φ100/φ150]"
             },
-            "image": "",
+            "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/GC20Mi.png",
             "examples": [
                 {
                     "model": "GC20S",
@@ -109,7 +109,7 @@
                     ""
                 ]
             },
-            "image": "",
+            "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/GF16S.png",
             "examples": []
         },
         {
@@ -120,7 +120,7 @@
                 "distance_between_centers_in": 12.6,
                 "wheel_surface_speed_sfpm": 11800
             },
-            "image": "",
+            "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/grind_pages/list/gr7i.jpg",
             "examples": [
                 {
                     "model": "GR7i-400",

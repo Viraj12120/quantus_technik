@@ -9,7 +9,7 @@ export default function WhyChooseQuantus() {
 			id: "global",
 			label: "Global",
 			title: "Global Technology, Local Expertise",
-			desc: "We represent the finest machine tool manufacturers from Germany, South Korea, Japan, Taiwan, Italy — delivering turnkey solutions tailored to Indian manufacturing needs. Our collaborations ensure access to world-class precision, reliability, and automation. At Quantus Technik, we bridge global innovation with local expertise to create a seamless ecosystem for modern manufacturing.",
+			desc: "We represent the finest machine tool manufacturers from Germany, South Korea, Japan, Taiwan, Italy — delivering turnkey solutions tailored to Indian manufacturing needs. Our collaborations ensure access to world-class precision, reliability, and automation. At QuantusTechnik, we bridge global innovation with local expertise to create a seamless ecosystem for modern manufacturing.",
 		},
 		{
 			id: "why",
@@ -74,21 +74,26 @@ export default function WhyChooseQuantus() {
 			<div className="mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 				{/* LEFT SECTION - IMAGE + METRICS */}
 				<div className="relative rounded-3xl overflow-hidden bg-white shadow-lg transition-all duration-500">
-					<Image
-						src="/why.jpg"
-						alt="Quantus Technik Machinery"
-						width={600}
-						height={1000}
-						className="object-cover w-full h-[600px]"
-					/>
+					{/* Image Container */}
+					<div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[550px]">
+						<Image
+							src="/why.jpg"
+							alt="QuantusTechnik Machinery"
+							fill
+							className="object-cover"
+						/>
+					</div>
 
 					{/* Percentage Box */}
-					<div className="absolute bottom-5 left-5 bg-white rounded-xl px-4 h-28 shadow-md flex flex-col space-y-10">
-						<p className="text-4xl font-bold text-gray-800 mt-2 relative inline-block transition-all duration-500">
+					<div className="absolute bottom-4 left-4 bg-white rounded-xl px-4 py-3 shadow-md flex flex-col">
+						<p className="text-3xl sm:text-4xl font-bold text-gray-800 leading-none">
 							{display}
-							<span className="absolute text-xl top-0 align-top">%</span>
+							<span className="text-lg align-top ml-1">%</span>
 						</p>
-						<p className="text-sm text-gray-600">Client Satisfaction</p>
+
+						<p className="text-xs sm:text-sm text-gray-600 mt-1">
+							Client Satisfaction
+						</p>
 					</div>
 				</div>
 

@@ -5,7 +5,7 @@ import Image from "next/image";
 // export const metadata = {
 // 	title: "Industries We Serve | Aerospace, Automotive, Medical & More",
 // 	description:
-// 		"Quantus Technik provides specialized manufacturing solutions for aerospace, automotive, medical, die-mould, electric vehicle electronics, and heavy engineering industries.",
+// 		"QuantusTechnik provides specialized manufacturing solutions for aerospace, automotive, medical, die-mould, electric vehicle electronics, and heavy engineering industries.",
 // 	keywords: [
 // 		"aerospace manufacturing",
 // 		"automotive industry solutions",
@@ -217,7 +217,6 @@ export default function Industries() {
 		},
 	];
 
-
 	return (
 		<div className="min-h-screen bg-white">
 			{/* Hero Section */}
@@ -297,7 +296,6 @@ export default function Industries() {
 									</div>
 
 									{/* Solutions */}
-									{/* Solutions */}
 									<section className="my-12">
 										<h3 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-8">
 											Our Solutions
@@ -321,9 +319,6 @@ export default function Industries() {
 															sizes="(max-width: 64px) 100vw, 64px"
 														/>
 													</div>
-													<span className="text-xs font-medium text-gray-700 text-center">
-														{logo.name}
-													</span>
 												</motion.div>
 											))}
 										</div>

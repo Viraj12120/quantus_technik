@@ -40,7 +40,7 @@ export default function Hero() {
 			<div className="absolute top-4 left-4 z-20">
 				<Image
 					src="/qt.png"
-					alt="Quantus Technik Logo"
+					alt="QuantusTechnik Logo"
 					width={70}
 					height={70}
 					className="w-14 h-14 sm:w-16 sm:h-16 rounded  backdrop-blur-sm p-2 shadow-lg opacity-40 hover:opacity-60 transition"
