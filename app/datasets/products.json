@@ -1,218 +1,515 @@
 {
+   
     "ken": {
         "id": "ken",
         "machines": [
             {
-                "model": "Focus-5",
-                "series": "Focus",
-                "description": "Double-column high-speed 5-axis machining center with linear motor drive",
+                "model": "Focus5 2020",
+                "series": "Focus5",
+                "description": "Double Column High Speed 5-Axis Machine Center",
                 "type": "5-Axis Double Column",
-                "detail_url": "https://pdf.aeroexpo.online/pdf/ken-ichi-machine-co-ltd/focus-5/183807-7931.html",
                 "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
                 "specs": {
-                    "rapid_feed_m_per_min": 60,
-                    "tool_shank": "HSK A63",
-                    "tool_capacity": 32,
-                    "spindle_max_rpm": 24000,
-                    "drive": {
-                        "x": "linear motor",
-                        "y": "linear motor",
-                        "z": "ball screw"
+                    "travel_mm": {
+                        "x": 2060,
+                        "y": 2000,
+                        "z": 800
                     },
-                    "distance_between_columns_mm": 1650
+                    "table_mm": {
+                        "x": 2000,
+                        "y": 1200
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 48
+                    },
+                    "milling_head": "Side Type",
+                    "rotation_angle": "A: ±115° / C: ±360°",
+                    "spindle": {
+                        "shank": "HSK-A63",
+                        "rotation_speed_rpm": 24000,
+                        "power_kw": "42 (55)",
+                        "torque_nm": "67 (87)"
+                    }
                 }
             },
-            
             {
-                "model": "Compact B-2516 / B-2522 / B-3222",
+                "model": "Focus5 2030",
+                "series": "Focus5",
+                "description": "Double Column High Speed 5-Axis Machine Center",
+                "type": "5-Axis Double Column",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 3060,
+                        "y": 2000,
+                        "z": 800
+                    },
+                    "table_mm": {
+                        "x": 3000,
+                        "y": 1200
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 48
+                    },
+                    "milling_head": "Side Type",
+                    "rotation_angle": "A: ±115° / C: ±360°",
+                    "spindle": {
+                        "shank": "HSK-A63",
+                        "rotation_speed_rpm": 24000,
+                        "power_kw": "42 (55)",
+                        "torque_nm": "67 (87)"
+                    }
+                }
+            },
+            {
+                "model": "Focus5 2040",
+                "series": "Focus5",
+                "description": "Double Column High Speed 5-Axis Machine Center",
+                "type": "5-Axis Double Column",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 4060,
+                        "y": 2000,
+                        "z": 800
+                    },
+                    "table_mm": {
+                        "x": 4000,
+                        "y": 1200
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 48
+                    },
+                    "milling_head": "Side Type",
+                    "rotation_angle": "A: ±115° / C: ±360°",
+                    "spindle": {
+                        "shank": "HSK-A63",
+                        "rotation_speed_rpm": 24000,
+                        "power_kw": "42 (55)",
+                        "torque_nm": "67 (87)"
+                    }
+                }
+            },
+            {
+                "model": "Focus5 2330",
+                "series": "Focus5",
+                "description": "Double Column High Speed 5-Axis Machine Center",
+                "type": "5-Axis Double Column",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 3060,
+                        "y": 2300,
+                        "z": 800
+                    },
+                    "table_mm": {
+                        "x": 3000,
+                        "y": 1500
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 48
+                    },
+                    "milling_head": "Fork Type",
+                    "rotation_angle": "B: ±110° / C: ±360°",
+                    "spindle": {
+                        "shank": "HSK-A100",
+                        "rotation_speed_rpm": 15000,
+                        "power_kw": "50 (65)",
+                        "torque_nm": "96 (124)"
+                    }
+                }
+            },
+            {
+                "model": "Focus5 2340",
+                "series": "Focus5",
+                "description": "Double Column High Speed 5-Axis Machine Center",
+                "type": "5-Axis Double Column",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 4060,
+                        "y": 2300,
+                        "z": 800
+                    },
+                    "table_mm": {
+                        "x": 4000,
+                        "y": 1500
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 48
+                    },
+                    "milling_head": "Fork Type",
+                    "rotation_angle": "B: ±110° / C: ±360°",
+                    "spindle": {
+                        "shank": "HSK-A100",
+                        "rotation_speed_rpm": 15000,
+                        "power_kw": "50 (65)",
+                        "torque_nm": "96 (124)"
+                    }
+                }
+            },
+            {
+                "model": "Compact B 2520",
                 "series": "Compact B",
-                "description": "Gantry-type high-speed 5-axis machine center",
+                "description": "Gantry Type High Speed 5-Axis Machine Center",
                 "type": "5-Axis Gantry",
-                "detail_url": "https://pdf.aeroexpo.online/pdf/ken-ichi-machine-co-ltd/compact-b/183807-7928.html",
                 "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/CompactE_%E5%81%B4%E6%8E%9B%E5%BC%8F_%E4%B8%AD%E6%96%87_CMYK%20%E6%8B%B7%E8%B4%9D.png",
                 "specs": {
                     "travel_mm": {
-                        "x": [
-                            1600,
-                            2200,
-                            2200
-                        ],
-                        "y": [
-                            2500,
-                            2500,
-                            3200
-                        ],
-                        "z": 1250
+                        "x": 2000,
+                        "y": 2500,
+                        "z": 1000
                     },
-                    "rapid_feed_m_per_min": 60,
-                    "tool_shank": [
-                        "HSK A63",
-                        "HSK A100"
-                    ],
-                    "tool_capacity": [
-                        30,
-                        60
-                    ],
-                    "spindle_max_rpm": [
-                        24000
-                    ],
-                    "spindle_power_kw": [
-                        42,
-                        50,
-                        65
-                    ],
-                    "spindle_torque_Nm": [
-                        67,
-                        96,
-                        124
-                    ]
+                    "table_mm": {
+                        "x": 2000,
+                        "y": 2500
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 50
+                    }
                 }
             },
             {
-                "model": "Linmax B-22 / B-25 / B-30 / B-35 / B-40",
-                "series": "Linmax B",
-                "description": "Gantry-type linear motor 5-axis machine center",
+                "model": "Compact B 3020",
+                "series": "Compact B",
+                "description": "Gantry Type High Speed 5-Axis Machine Center",
                 "type": "5-Axis Gantry",
-                "detail_url": "https://pdf.aeroexpo.online/pdf/ken-ichi-machine-co-ltd/linmax-b/183807-7929.html",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/CompactE_%E5%81%B4%E6%8E%9B%E5%BC%8F_%E4%B8%AD%E6%96%87_CMYK%20%E6%8B%B7%E8%B4%9D.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 2000,
+                        "y": 3000,
+                        "z": 1000
+                    },
+                    "table_mm": {
+                        "x": 2000,
+                        "y": 3000
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 50
+                    }
+                }
+            },
+            {
+                "model": "Rotor 1000",
+                "series": "Rotor",
+                "description": "High Speed 5-Axis Machine Center",
+                "type": "5-Axis Vertical",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/rotor-en.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 1500,
+                        "y": 1250,
+                        "z": 1000
+                    },
+                    "rotary_table": {
+                        "diameter_mm": "Ø1,000 x 900",
+                        "rotation": "±360° (Unlimited)"
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 48
+                    }
+                }
+            },
+            {
+                "model": "Rotor 1250",
+                "series": "Rotor",
+                "description": "High Speed 5-Axis Machine Center",
+                "type": "5-Axis Vertical",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/rotor-en.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 2000,
+                        "y": 1400,
+                        "z": 1000
+                    },
+                    "rotary_table": {
+                        "diameter_mm": "Ø1,250 x 1,100",
+                        "rotation": "±360° (Unlimited)"
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 48
+                    }
+                }
+            },
+            {
+                "model": "LinmaxB 22∞",
+                "series": "LinmaxB",
+                "description": "Gantry Type High Speed 5-Axis Machine Center",
+                "type": "5-Axis Gantry",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 4000,
+                        "y": 2200,
+                        "z": 1000
+                    },
+                    "table_mm": {
+                        "x": "as same as X-axis travel",
+                        "y": 2000
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 50
+                    }
+                }
+            },
+            {
+                "model": "LinmaxB 25∞",
+                "series": "LinmaxB",
+                "description": "Gantry Type High Speed 5-Axis Machine Center",
+                "type": "5-Axis Gantry",
                 "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
                 "specs": {
                     "travel_mm": {
                         "x": [
-                            3200,
                             4000,
-                            5000,
+                            5000
+                        ],
+                        "y": 2500,
+                        "z": 1000
+                    },
+                    "table_mm": {
+                        "x": "as same as X-axis travel",
+                        "y": 2200
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 50
+                    }
+                }
+            },
+            {
+                "model": "LinmaxB 30∞",
+                "series": "LinmaxB",
+                "description": "Gantry Type High Speed 5-Axis Machine Center",
+                "type": "5-Axis Gantry",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": [
+                            4000,
+                            5000
+                        ],
+                        "y": 3000,
+                        "z": 1000
+                    },
+                    "table_mm": {
+                        "x": "as same as X-axis travel",
+                        "y": 2700
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 50
+                    }
+                }
+            },
+            {
+                "model": "LinmaxB 35∞",
+                "series": "LinmaxB",
+                "description": "Gantry Type High Speed 5-Axis Machine Center",
+                "type": "5-Axis Gantry",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": [
                             5000,
                             6000
                         ],
-                        "y": [
-                            2200,
-                            2500,
-                            3000,
-                            3500,
-                            4000
-                        ],
-                        "z": 1250
+                        "y": 3500,
+                        "z": 1000
                     },
-                    "rapid_feed_m_per_min": 50,
-                    "tool_shank": [
-                        "HSK A63",
-                        "HSK A100"
-                    ],
-                    "tool_capacity": [
-                        30,
-                        60
-                    ],
-                    "spindle_max_rpm": [
-                        24000,
-                        15000
-                    ],
-                    "spindle_power_kw": [
-                        42,
-                        50,
-                        65
-                    ],
-                    "spindle_torque_Nm": [
-                        67,
-                        96,
-                        124
-                    ]
+                    "table_mm": {
+                        "x": "as same as X-axis travel",
+                        "y": 3200
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 50
+                    }
                 }
             },
             {
-                "model": "Linmax Twin (Twin-Gantry / Twin-Column)",
-                "series": "Linmax Twin",
-                "description": "Twin-gantry or twin-column high-speed / heavy-duty 5-axis machining centers",
-                "type": "5-Axis Twin Gantry / Twin Column",
-                "detail_url": "https://pdf.aeroexpo.online/pdf/ken-ichi-machine-co-ltd/linmax-twin-series/183807-7930.html",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/All%20Machine_CN_LinmaxBTwin.png",
+                "model": "LinmaxB 40∞",
+                "series": "LinmaxB",
+                "description": "Gantry Type High Speed 5-Axis Machine Center",
+                "type": "5-Axis Gantry",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
                 "specs": {
-                    "rapid_feed_m_per_min": 50,
-                    "spindle_torque_Nm": 1200,
-                    "notes": "Double-crossbeam, linear motor X/Y, high-torque two-axis milling head"
+                    "travel_mm": {
+                        "x": [
+                            6000,
+                            8000
+                        ],
+                        "y": 4000,
+                        "z": 1000
+                    },
+                    "table_mm": {
+                        "x": "as same as X-axis travel",
+                        "y": 3700
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 50
+                    }
                 }
             },
-            
             {
-                "model": "Rhino-1250 / Rhino-1700 / Rhino-2200",
+                "model": "RHINO 1250",
                 "series": "Rhino",
-                "description": "Horizontal 5-axis machining center (portal / double-frame design)",
+                "description": "Horizontal High Torque 5-Axis Machine Center",
                 "type": "5-Axis Horizontal",
-                "detail_url": "https://dynamicintl.com/wp-content/uploads/2018/02/ken-PDF-rhino.pdf",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 1000,
+                        "y": 1000,
+                        "z": 1000
+                    },
+                    "table_load_kg": 4000,
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 60
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 4000,
+                        "power_kw": 25,
+                        "torque_nm": 750
+                    }
+                }
+            },
+            {
+                "model": "RHINO 1700/2000",
+                "series": "Rhino",
+                "description": "Horizontal High Torque 5-Axis Machine Center",
+                "type": "5-Axis Horizontal",
                 "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
                 "specs": {
                     "travel_mm": {
                         "x": [
-                            2000,
-                            2400,
-                            2800
+                            1000,
+                            2000
                         ],
-                        "y": 1400,
+                        "y": 1000,
                         "z": [
-                            2200,
-                            2600,
-                            3000
+                            1000,
+                            2000
                         ]
                     },
-                    "spindle_max_rpm": 4000,
-                    "spindle_power_kw": 36,
-                    "spindle_torque_Nm": 1200,
-                    "rapid_feed_m_per_min": 50,
-                    "tool_shank": "BT-50",
-                    "tool_capacity": 40
+                    "table_load_kg": [
+                        80250,
+                        90400
+                    ],
+                    "feedrate_m_per_min": {
+                        "x": 24,
+                        "y": 24,
+                        "z": 24
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 4000,
+                        "power_kw": 25,
+                        "torque_nm": 1000
+                    }
                 }
             },
             {
-                "model": "Saber-2400 / 2800 / 3500",
+                "model": "SABER",
                 "series": "Saber",
-                "description": "Vertical 5-axis double-column machining center for heavy cutting",
-                "type": "5-Axis Vertical",
-                "detail_url": "https://www.aeroexpo.online/prod/ken-ichi-machine-co-ltd/product-183807-77540.html",
+                "description": "Double Column High Torque 5-Axis Machine Center",
+                "type": "5-Axis Double Column",
                 "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Saber.png",
                 "specs": {
-                    "travel_x_mm": [
-                        3000,
-                        4000,
-                        5000,
-                        6000
-                    ],
-                    "travel_y_mm": [
-                        2400,
-                        2800,
-                        3300
-                    ],
-                    "travel_z_mm": [
-                        800,
-                        1000
-                    ],
-                    "guide_z": "box guideway with double hydraulic cylinder",
-                    "scale_z": "Heidenhain linear scale",
-                    "notes": "High torque, high rigidity design for aeronautics"
+                    "travel_mm": {
+                        "x": [
+                            3000,
+                            4000,
+                            3000
+                        ],
+                        "y": 2400,
+                        "z": 800
+                    },
+                    "table_mm": {
+                        "y": 1400
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 24,
+                        "y": 24,
+                        "z": 24
+                    }
                 }
             },
             {
-                "model": "Rotor-1500 / Rotor-2000",
-                "series": "Rotor",
-                "description": "Vertical 5-axis double-column high-speed machine for aeronautics",
-                "type": "5-Axis Vertical",
-                "detail_url": "https://www.aeroexpo.online/prod/ken-ichi-machine-co-ltd/product-183807-77538.html",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/rotor-en.png",
+                "model": "TORQUE",
+                "series": "Torque",
+                "description": "Gantry Type High Torque 5-Axis Machine Center",
+                "type": "5-Axis Gantry",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Saber.png",
                 "specs": {
-                    "travel_x_mm": [
-                        1500,
-                        2000
-                    ],
-                    "travel_y_mm": [
-                        1250,
-                        1400
-                    ],
-                    "travel_z_mm": 1000,
-                    "rapid_feed_m_per_min": 60,
-                    "notes": "Linear motor X/Y, direct-drive torque motor B/C axis"
+                    "travel_mm": {
+                        "x": [
+                            3000,
+                            4000,
+                            3000
+                        ],
+                        "y": 2000,
+                        "z": 1000
+                    },
+                    "table_mm": {
+                        "y": 2000
+                    },
+                    "spindle": {
+                        "power_kw": "22 (35)",
+                        "torque_nm": "174 (185)"
+                    }
+                }
+            },
+            {
+                "model": "LinmaxB Twin",
+                "series": "LinmaxB Twin",
+                "description": "Double Gantry Type High Speed 5-Axis Machine Center",
+                "type": "5-Axis Twin Gantry",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/All%20Machine_CN_LinmaxBTwin.png",
+                "specs": {
+                    "notes": "Twin-gantry high-speed 5-axis machining center"
+                }
+            },
+            {
+                "model": "RITING",
+                "series": "Riting",
+                "description": "Horizontal 5-Axis Machining Center",
+                "type": "5-Axis Horizontal",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
+                "specs": {
+                    "notes": "Horizontal 5-axis machining center"
                 }
             }
-          
         ]
     },
+
     "horizontal": {
         "id": "horizontal",
         "machines": [
@@ -509,160 +806,8 @@
         "id": "alzmetall",
         "machines": [
             {
-                "model": "DS 5",
-                "description": "5-Axis Universal Machining Center with Swivel Rotary Table",
-                "type": "5-Axis Universal",
-                "table_size_mm": "630 × 630",
-                "stroke_mm": [
-                    800,
-                    630,
-                    630
-                ],
-                "spindle_speed_rpm": [
-                    12000,
-                    18000,
-                    24000
-                ],
-                "number_of_tools": [
-                    30,
-                    60
-                ],
-                "image": "https://alzmetall.de/fileadmin/_processed_/4/0/csm_DS5_Overview_01_9d4b4c2b4e.jpg",
-                "detail_url": "https://alzmetall.de/en/products/5-axis-machining-centers/ds-5/"
-            },
-            {
-                "model": "DS 6",
-                "description": "5-Axis Universal Machining Center with Large Work Envelope",
-                "type": "5-Axis Universal",
-                "table_size_mm": "800 × 800",
-                "stroke_mm": [
-                    1000,
-                    800,
-                    800
-                ],
-                "spindle_speed_rpm": [
-                    10000,
-                    15000,
-                    20000
-                ],
-                "number_of_tools": [
-                    40,
-                    80
-                ],
-                "image": "https://alzmetall.de/fileadmin/_processed_/0/7/csm_DS6_Overview_01_9c8b4c2b4e.jpg",
-                "detail_url": "https://alzmetall.de/en/products/5-axis-machining-centers/ds-6/"
-            },
-            {
-                "model": "DS 8",
-                "description": "Large 5-Axis Universal Machining Center for Heavy Duty Applications",
-                "type": "5-Axis Universal",
-                "table_size_mm": "1000 × 1000",
-                "stroke_mm": [
-                    1250,
-                    1000,
-                    1000
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    12000,
-                    15000
-                ],
-                "number_of_tools": [
-                    60,
-                    120
-                ],
-                "image": "https://alzmetall.de/fileadmin/_processed_/8/3/csm_DS8_Overview_01_8a7b4c2b4e.jpg",
-                "detail_url": "https://alzmetall.de/en/products/5-axis-machining-centers/ds-8/"
-            },
-            {
-                "model": "GX 5",
-                "description": "5-Axis Gantry Machining Center with High Dynamics",
-                "type": "5-Axis Gantry",
-                "table_size_mm": "1500 × 1000",
-                "stroke_mm": [
-                    1500,
-                    1000,
-                    800
-                ],
-                "spindle_speed_rpm": [
-                    10000,
-                    15000,
-                    20000
-                ],
-                "number_of_tools": [
-                    40,
-                    80
-                ],
-                "image": "https://alzmetall.de/fileadmin/_processed_/5/8/csm_GX5_Overview_01_7c6b4c2b4e.jpg",
-                "detail_url": "https://alzmetall.de/en/products/5-axis-machining-centers/gx-5/"
-            },
-            {
-                "model": "GX 6",
-                "description": "Large 5-Axis Gantry Machining Center for Heavy Workpieces",
-                "type": "5-Axis Gantry",
-                "table_size_mm": "2000 × 1500",
-                "stroke_mm": [
-                    2000,
-                    1500,
-                    1000
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    12000
-                ],
-                "number_of_tools": [
-                    60,
-                    120
-                ],
-                "image": "https://alzmetall.de/fileadmin/_processed_/2/1/csm_GX6_Overview_01_6d5b4c2b4e.jpg",
-                "detail_url": "https://alzmetall.de/en/products/5-axis-machining-centers/gx-6/"
-            },
-            {
-                "model": "FX 5",
-                "description": "5-Axis Bridge-Type Machining Center with High Stability",
-                "type": "5-Axis Bridge-Type",
-                "table_size_mm": "1800 × 1200",
-                "stroke_mm": [
-                    1800,
-                    1200,
-                    900
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    12000,
-                    15000
-                ],
-                "number_of_tools": [
-                    50,
-                    100
-                ],
-                "image": "https://alzmetall.de/fileadmin/_processed_/9/4/csm_FX5_Overview_01_5c4b4c2b4e.jpg",
-                "detail_url": "https://alzmetall.de/en/products/5-axis-machining-centers/fx-5/"
-            },
-            {
-                "model": "FX 6",
-                "description": "Large 5-Axis Bridge-Type Machining Center for Maximum Precision",
-                "type": "5-Axis Bridge-Type",
-                "table_size_mm": "2500 × 1600",
-                "stroke_mm": [
-                    2500,
-                    1600,
-                    1100
-                ],
-                "spindle_speed_rpm": [
-                    6000,
-                    10000
-                ],
-                "number_of_tools": [
-                    80,
-                    160
-                ],
-                "image": "https://alzmetall.de/fileadmin/_processed_/6/7/csm_FX6_Overview_01_4b3b4c2b4e.jpg",
-                "detail_url": "https://alzmetall.de/en/products/5-axis-machining-centers/fx-6/"
-            },
-            {
-                "model": "GS 600/5-FDT",
-                "description": "Gantry Machining Center (GS-series) with 5-Axis, Gantry-Concept with Torque Drives",
+                "model": "GS 600/5-FDT",
+                "description": "Gantry Machining Center with 5‑Axis, Gantry‑Concept + Torque-Drives",
                 "type": "5-Axis Gantry",
                 "detail_url": "https://alzmetall.de/en/produkt/gs-600-5-fdt/",
                 "image": "https://alzmetall.de/wp-content/uploads/2022/08/GS_600-5FDT.jpg",
@@ -678,8 +823,8 @@
                 }
             },
             {
-                "model": "GS 800/5-FDT",
-                "description": "Gantry Machining Center (GS-series) “800 NE” with 5-Axis and Torque Drives",
+                "model": "GS 800/5-FDT",
+                "description": "Gantry Machining Center GS‑800NE 5‑Axis with Torque-Drives (FDT)",
                 "type": "5-Axis Gantry",
                 "detail_url": "https://alzmetall.de/en/produkt/gs-800ne-5-fdt/",
                 "image": null,
@@ -694,8 +839,23 @@
                 }
             },
             {
-                "model": "GS 1000/5-T",
-                "description": "Gantry Machining Center (GS-series) with 5-Axis, Torque-Drive Swivel Table",
+                "model": "GS 800/5-T",
+                "description": "Gantry Machining Center GS‑800NE 5‑Axis with Torque‑Drive Table",
+                "type": "5-Axis Gantry",
+                "detail_url": "https://alzmetall.de/produkt/bearbeitungszentrum-gs-800ne-5-t/",
+                "image": null,
+                "specs": {
+                    "travel_mm": {
+                        "x": 660,
+                        "y": 800,
+                        "z": 550
+                    },
+                    "cutting_tool_interface": "HSK-A63"
+                }
+            },
+            {
+                "model": "GS 1000/5-T",
+                "description": "Gantry Machining Center GS‑1000 with 5‑Axis, Torque‑Drive Table",
                 "type": "5-Axis Gantry",
                 "detail_url": "https://alzmetall.de/en/produkt/gs-1000-5-t/",
                 "image": null,
@@ -710,8 +870,8 @@
                 }
             },
             {
-                "model": "GS 1000/5-FDT",
-                "description": "Gantry Machining Center (GS-series) with 5-Axis, Torque-Drive Table + Rotary",
+                "model": "GS 1000/5-FDT",
+                "description": "Gantry Machining Center GS‑1000 with 5‑Axis, Table + Rotary (FDT)",
                 "type": "5-Axis Gantry",
                 "detail_url": "https://alzmetall.de/en/produkt/gs-1000-5-fdt/",
                 "image": null,
@@ -724,8 +884,8 @@
                 }
             },
             {
-                "model": "GS 1200/5-T",
-                "description": "Gantry Machining Center (GS-series) “1200” with 5-Axis, Torque Drive",
+                "model": "GS 1200/5-T",
+                "description": "Gantry Machining Center GS‑1200 with 5‑Axis, Torque-Drive A/C Axes",
                 "type": "5-Axis Gantry",
                 "detail_url": "https://alzmetall.de/en/machining-center/gs1200/",
                 "image": null,
@@ -738,8 +898,8 @@
                 }
             },
             {
-                "model": "GS 1200/5-FDT",
-                "description": "Gantry Machining Center (GS-series) “1200” with 5-Axis, Table+Rotary (FDT)",
+                "model": "GS 1200/5-FDT",
+                "description": "Gantry Machining Center GS‑1200 with 5‑Axis, Table + Rotary (FDT)",
                 "type": "5-Axis Gantry",
                 "detail_url": "https://alzmetall.de/en/machining-center/gs1200/",
                 "image": null,
@@ -752,8 +912,8 @@
                 }
             },
             {
-                "model": "GS 1400/3",
-                "description": "Gantry Machining Center (GS-series) “1400” 3-Axis Version",
+                "model": "GS 1400/3",
+                "description": "Gantry Machining Center GS‑1400 3‑Axis Version",
                 "type": "Gantry / 3-Axis",
                 "detail_url": "https://alzmetall.de/en/produkt/gs-1400-3/",
                 "image": null,
@@ -763,13 +923,12 @@
                         "y": 1300,
                         "z": 800
                     },
-                    "cutting_tool_interface": "HSK-A100",
-                    "max_workpiece_weight_kg": 3000
+                    "cutting_tool_interface": "HSK-A100"
                 }
             },
             {
-                "model": "GS 1400/5-FDT",
-                "description": "Gantry Machining Center (GS-series) “1400” with 5-Axis, Table+Rotary (FDT)",
+                "model": "GS 1400/5-FDT",
+                "description": "Gantry Machining Center GS‑1400 with 5‑Axis, Table + Rotary (FDT)",
                 "type": "5-Axis Gantry",
                 "detail_url": "https://alzmetall.de/en/produkt/gs-1400-5-fdt/",
                 "image": null,
