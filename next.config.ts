@@ -57,6 +57,10 @@ const nextConfig: NextConfig = {
 			},
 		],
 	},
+	reactStrictMode: true,
+	experimental: {
+		optimizePackageImports: [],
+	},
 };
 
 export default nextConfig;

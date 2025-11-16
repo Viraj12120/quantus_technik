@@ -97,6 +97,111 @@ interface MachiningData {
 // Type assertion for the imported data
 const machiningDataTyped = machiningData as unknown as MachiningData;
 
+// 5-axis filter categories
+const fiveAxisFilters = [
+	{ id: "all", name: "All 5-Axis" },
+	{ id: "simultaneous", name: "Simultaneous" },
+	{ id: "gantry", name: "Gantry" },
+	{ id: "double_column", name: "Double Column" },
+	{ id: "millturn", name: "MillTurn" },
+];
+
+// Machine classification function
+const classify5AxisMachine = (machine: Machine): string[] => {
+	const categories: string[] = [];
+	const model = machine.model.toLowerCase();
+	const description = machine.description.toLowerCase();
+	const type = machine.type?.toLowerCase() || "";
+
+	// Simultaneous classification
+	if (
+		type.includes("simultaneous") ||
+		description.includes("simultaneous") ||
+		model.includes("g") || // G-series are typically simultaneous
+		model.includes("focus") ||
+		model.includes("rotor") ||
+		model.includes("compact") ||
+		model.includes("linmax")
+	) {
+		categories.push("simultaneous");
+	}
+
+	// Gantry classification
+	if (
+		type.includes("gantry") ||
+		description.includes("gantry") ||
+		model.includes("compactb") ||
+		model.includes("linmaxb") ||
+		model.includes("torque") ||
+		model.includes("twin")
+	) {
+		categories.push("gantry");
+	}
+
+	// Double Column classification
+	if (
+		type.includes("double column") ||
+		description.includes("double column") ||
+		model.includes("focus5") ||
+		model.includes("saber") ||
+		(model.includes("rhino") && model.includes("t"))
+	) {
+		categories.push("double_column");
+	}
+
+	// MillTurn classification
+	if (
+		type.includes("millturn") ||
+		description.includes("millturn") ||
+		description.includes("multitasking") ||
+		(model.includes("m") &&
+			!isNaN(parseInt(model.replace("m", "").replace("-g", "")))) || // M-series models
+		model.includes("i2")
+	) {
+		categories.push("millturn");
+	}
+
+	// Default to simultaneous if no specific category found
+	if (categories.length === 0) {
+		categories.push("simultaneous");
+	}
+
+	return categories;
+};
+
+function isValidUrl(url: any) {
+	if (!url || typeof url !== "string") return false;
+	if (url.trim() === "") return false;
+
+	try {
+		// For relative URLs
+		if (url.startsWith("/")) return true;
+
+		// For remote URLs
+		new URL(url);
+		return true;
+	} catch {
+		return false;
+	}
+}
+
+// Helper function to get manufacturer for a machine
+const getManufacturer = (machine: Machine): string => {
+	if (machiningDataTyped.ken?.machines?.includes(machine)) return "ken";
+	if (machiningDataTyped.grob?.machines?.includes(machine)) return "grob";
+	if (machiningDataTyped.alzmetall?.machines?.includes(machine))
+		return "alzmetall";
+
+	// Check if it's from Hwacheon datasets
+	if (machiningDataTyped.horizontal?.machines?.includes(machine))
+		return "hwacheon";
+	if (machiningDataTyped.vertical?.products?.includes(machine))
+		return "hwacheon";
+	if (machiningDataTyped["5-axis"]?.includes(machine)) return "hwacheon";
+
+	return "other";
+};
+
 export default function ProductDetailPage() {
 	const params = useParams();
 	const productId = params.id as string;
@@ -122,14 +227,16 @@ export default function ProductDetailPage() {
 	const [selectedSubCategory, setSelectedSubCategory] = useState(
 		isTurningCenter ? "horizontal_turning" : "horizontal"
 	);
+	const [selected5AxisFilter, setSelected5AxisFilter] = useState("all");
 
 	useEffect(() => {
 		setSelectedSubCategory(
 			isTurningCenter ? "horizontal_turning" : "horizontal"
 		);
+		setSelected5AxisFilter("all");
 	}, [productId, isTurningCenter]);
 
-	// ✅ UPDATED: Fetch products with proper typing
+	// ✅ UPDATED: Fetch products with proper typing and arranged in sequence
 	const getProducts = (): Machine[] => {
 		if (!isMachiningCenter) {
 			// Turning centers logic
@@ -144,20 +251,23 @@ export default function ProductDetailPage() {
 
 		// Get base products based on subcategory
 		if (selectedSubCategory === "horizontal") {
-			// Horizontal machines from all manufacturers
-			const hwacheonHorizontal = machiningDataTyped.horizontal?.machines || [];
+			// Horizontal machines from all manufacturers - arranged in sequence
 			const kenHorizontal =
 				machiningDataTyped.ken?.machines?.filter(
 					(machine) =>
 						machine.type?.includes("Horizontal") ||
 						machine.description?.includes("Horizontal")
 				) || [];
+
 			const grobHorizontal =
 				machiningDataTyped.grob?.machines?.filter(
 					(machine) =>
 						machine.type?.includes("Horizontal") ||
 						machine.description?.includes("Horizontal")
 				) || [];
+
+			const hwacheonHorizontal = machiningDataTyped.horizontal?.machines || [];
+
 			const alzmetallHorizontal =
 				machiningDataTyped.alzmetall?.machines?.filter(
 					(machine) =>
@@ -165,21 +275,31 @@ export default function ProductDetailPage() {
 						machine.description?.includes("Horizontal")
 				) || [];
 
+			// Arrange in sequence: KEN → GROB → Hwacheon → Alzmetall
 			products = [
-				...hwacheonHorizontal,
 				...kenHorizontal,
 				...grobHorizontal,
+				...hwacheonHorizontal,
 				...alzmetallHorizontal,
 			];
 		} else if (selectedSubCategory === "vertical") {
-			// Vertical machines from all manufacturers
-			const hwacheonVertical = machiningDataTyped.vertical?.products || [];
+			// Vertical machines from all manufacturers - arranged in sequence
 			const kenVertical =
 				machiningDataTyped.ken?.machines?.filter(
 					(machine) =>
 						machine.type === "Vertical" ||
 						machine.description?.includes("Vertical")
 				) || [];
+
+			const grobVertical =
+				machiningDataTyped.grob?.machines?.filter(
+					(machine) =>
+						machine.type === "Vertical" ||
+						machine.description?.includes("Vertical")
+				) || [];
+
+			const hwacheonVertical = machiningDataTyped.vertical?.products || [];
+
 			const alzmetallVertical =
 				machiningDataTyped.alzmetall?.machines?.filter(
 					(machine) =>
@@ -187,17 +307,26 @@ export default function ProductDetailPage() {
 						machine.description?.includes("Vertical")
 				) || [];
 
-			products = [...hwacheonVertical, ...kenVertical, ...alzmetallVertical];
+			// Arrange in sequence: KEN → GROB → Hwacheon → Alzmetall
+			products = [
+				...kenVertical,
+				...grobVertical,
+				...hwacheonVertical,
+				...alzmetallVertical,
+			];
 		} else if (selectedSubCategory === "5-axis") {
-			// 5-axis machines from all manufacturers
-			const hwacheon5Axis = machiningDataTyped["5-axis"] || [];
+			// 5-axis machines from all manufacturers - arranged in sequence
 			const ken5Axis =
 				machiningDataTyped.ken?.machines?.filter(
 					(machine) =>
 						machine.type?.includes("5-Axis") ||
 						machine.description?.includes("5-Axis")
 				) || [];
+
 			const grob5Axis = machiningDataTyped.grob?.machines || []; // All GROB are 5-axis
+
+			const hwacheon5Axis = machiningDataTyped["5-axis"] || [];
+
 			const alzmetall5Axis =
 				machiningDataTyped.alzmetall?.machines?.filter(
 					(machine) =>
@@ -205,10 +334,11 @@ export default function ProductDetailPage() {
 						machine.description?.includes("5-Axis")
 				) || [];
 
+			// Arrange in sequence: KEN → GROB → Hwacheon → Alzmetall
 			products = [
-				...hwacheon5Axis,
 				...ken5Axis,
 				...grob5Axis,
+				...hwacheon5Axis,
 				...alzmetall5Axis,
 			];
 		}
@@ -216,7 +346,17 @@ export default function ProductDetailPage() {
 		return products;
 	};
 
-	const categoryProducts = getProducts();
+	const allProducts = getProducts();
+
+	// Filter 5-axis products based on selected filter
+	const categoryProducts =
+		selectedSubCategory === "5-axis" && selected5AxisFilter !== "all"
+			? allProducts.filter((machine) => {
+					const categories = classify5AxisMachine(machine);
+					return categories.includes(selected5AxisFilter);
+			  })
+			: allProducts;
+
 	const heroProduct = categoryProducts[0];
 	const [mainImage, setMainImage] = useState(heroProduct?.image || "");
 
@@ -552,7 +692,10 @@ export default function ProductDetailPage() {
 						{subCategories.map((subCat) => (
 							<button
 								key={subCat.id}
-								onClick={() => setSelectedSubCategory(subCat.id)}
+								onClick={() => {
+									setSelectedSubCategory(subCat.id);
+									setSelected5AxisFilter("all");
+								}}
 								className={`px-5 py-2.5 rounded-full whitespace-nowrap transition-all ${
 									selectedSubCategory === subCat.id
 										? "bg-blue-600 text-white"
@@ -562,6 +705,24 @@ export default function ProductDetailPage() {
 							</button>
 						))}
 					</div>
+
+					{/* 5-Axis Specific Filters */}
+					{selectedSubCategory === "5-axis" && (
+						<div className="flex gap-3 mt-2 flex-wrap justify-center">
+							{fiveAxisFilters.map((filter) => (
+								<button
+									key={filter.id}
+									onClick={() => setSelected5AxisFilter(filter.id)}
+									className={`px-4 py-2 rounded-full text-sm whitespace-nowrap transition-all ${
+										selected5AxisFilter === filter.id
+											? "bg-blue-600 text-white"
+											: "bg-gray-100 text-gray-700 hover:bg-gray-200"
+									}`}>
+									{filter.name}
+								</button>
+							))}
+						</div>
+					)}
 				</div>
 			</section>
 
@@ -570,6 +731,17 @@ export default function ProductDetailPage() {
 				<div className="mb-12 mt-12">
 					<h2 className="text-2xl font-bold text-gray-900">
 						{categoryProducts.length} Products Available
+						{selectedSubCategory === "5-axis" &&
+							selected5AxisFilter !== "all" && (
+								<span className="text-blue-600 ml-2">
+									(
+									{
+										fiveAxisFilters.find((f) => f.id === selected5AxisFilter)
+											?.name
+									}
+									)
+								</span>
+							)}
 					</h2>
 				</div>
 
@@ -591,6 +763,7 @@ export default function ProductDetailPage() {
 								setSelectedSubCategory(
 									isTurningCenter ? "horizontal_turning" : "horizontal"
 								);
+								setSelected5AxisFilter("all");
 							}}>
 							Reset Filters
 						</Button>
@@ -607,15 +780,28 @@ export default function ProductDetailPage() {
 										{item.model}
 									</h3>
 									<p className="text-gray-600 text-md">{item.description}</p>
+									{selectedSubCategory === "5-axis" && (
+										<div className="mt-2 flex flex-wrap gap-1">
+											{classify5AxisMachine(item).map((category, idx) => (
+												<span
+													key={idx}
+													className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">
+													{fiveAxisFilters.find((f) => f.id === category)?.name}
+												</span>
+											))}
+										</div>
+									)}
 								</div>
 
 								<div className="flex items-center justify-center bg-gray-50 p-4">
 									<Image
-										src={item.image || "/placeholder.jpg"}
-										alt={item.model}
+										src={
+											isValidUrl(item.image) ? item.image : "/placeholder.jpg"
+										}
+										alt={item?.model || "Product image"}
 										width={240}
 										height={160}
-										unoptimized={item.image?.startsWith("http")}
+										unoptimized={true}
 										className="h-32 object-contain"
 									/>
 								</div>
