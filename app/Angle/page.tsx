@@ -42,6 +42,7 @@ type MainCategory = {
 	id: string;
 	label: string;
 	description: string;
+	desc: string;
 	key: "ATC" | "MTC";
 };
 
@@ -49,6 +50,7 @@ type SubCategory = {
 	id: string;
 	label: string;
 	description: string;
+	desc: String;
 	products: Product[];
 };
 
@@ -61,12 +63,15 @@ export default function AngleHeadsPage() {
 			id: "atc-series",
 			label: "ATC Series (Automatic Tool Change)",
 			description: angleHeadsData.catalog.series.ATC.description,
+			desc: angleHeadsData.catalog.series.ATC.desc,
 			key: "ATC",
 		},
 		{
 			id: "mtc-series",
 			label: "MTC Series (Manual Tool Change)",
 			description: angleHeadsData.catalog.series.MTC.description,
+			desc: angleHeadsData.catalog.series.MTC.desc,
+
 			key: "MTC",
 		},
 	];
@@ -84,6 +89,7 @@ export default function AngleHeadsPage() {
 			id: key.toLowerCase().replace(/_/g, "-"),
 			label: formatCategoryLabel(key),
 			description: category.description || "",
+			desc: category.desc,
 			products: category.models,
 		}));
 	};
@@ -173,14 +179,14 @@ export default function AngleHeadsPage() {
 
 			{/* ✅ MAIN CATEGORY TABS (ATC / MTC) */}
 			<section className="bg-gray-50 border-b border-gray-200 sticky top-0 z-40">
-				<div className="max-w-7xl mx-auto px-6 flex gap-2">
+				<div className="w-full flex justify-center px-6 flex gap-2">
 					{mainCategories.map((cat) => (
 						<button
 							key={cat.id}
 							onClick={() => setSelectedMainCat(cat)}
 							className={`px-6 py-4 font-semibold transition-all border-b-4 ${
 								selectedMainCat.id === cat.id
-									? "border-black text-black"
+									? "border-blue-600 text-black"
 									: "border-transparent text-gray-500 hover:text-gray-900"
 							}`}>
 							{cat.label}
@@ -198,29 +204,102 @@ export default function AngleHeadsPage() {
 			</section>
 
 			{/* ✅ SERIES DESCRIPTION */}
-			<section className="bg-blue-50 py-6 px-6">
-				<div className="max-w-7xl mx-auto">
-					<p className="text-gray-700">
-						<strong>{selectedMainCat.label}:</strong>{" "}
-						{selectedMainCat.description}
-					</p>
-				</div>
-			</section>
+			{selectedMainCat.key === "ATC" && (
+				<section className=" py-10 px-6">
+					<div className="max-w-6xl mx-auto">
+						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+							{/* Card 1 */}
+							<div className="bg-white p-5 shadow-md rounded-xl border border-gray-200 h-[210px] flex flex-col">
+								<h3 className="font-semibold text-lg text-gray-900 mb-2">
+									Integral Shank & Shaft
+								</h3>
+								<p className="text-gray-700 text-sm leading-relaxed">
+									Main shaft is a single solid piece with case-hardened taper
+									providing maximum rigidity. Fits any spindle.
+								</p>
+							</div>
+
+							{/* Card 2 */}
+							<div className="bg-white p-5 shadow-md rounded-xl border border-gray-200">
+								<h3 className="font-semibold text-lg text-gray-900 mb-2">
+									ABEC 9 Ball Bearings
+								</h3>
+								<p className="text-gray-700 text-sm leading-relaxed">
+									Supported by pre-loaded super-precision angular contact
+									bearings with long-life grease lubrication.
+								</p>
+							</div>
+
+							{/* Card 3 */}
+							<div className="bg-white p-5 shadow-md rounded-xl border border-gray-200">
+								<h3 className="font-semibold text-lg text-gray-900 mb-2">
+									Main Body
+								</h3>
+								<p className="text-gray-700 text-sm leading-relaxed">
+									Treated steel head with 360° positioning, internal air
+									pressure, high rigidity, corrosion resistance.
+								</p>
+							</div>
+
+							{/* Card 4 */}
+							<div className="bg-white p-5 shadow-md rounded-xl border border-gray-200">
+								<h3 className="font-semibold text-lg text-gray-900 mb-2">
+									Gleason Gears
+								</h3>
+								<p className="text-gray-700 text-sm leading-relaxed">
+									Ground spiral bevel gears ensure low noise, reduced heat, high
+									RPM, longer life & smooth power transmission.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			)}
+
+			{/* ✅ MTC OVERVIEW – ONLY SHOW FOR MTC */}
+			{selectedMainCat.key === "MTC" && (
+				<section className="py-10 px-6">
+					<div className="max-w-xl mx-auto">
+						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+							{/* Card 1 - Ingranaggi / Gears */}
+							<div className="bg-white p-5 shadow-md rounded-xl border border-gray-200">
+								<h3 className="font-semibold text-lg text-gray-900 mb-2">
+									Ingranaggi – Gears
+								</h3>
+								<p className="text-gray-700 text-sm leading-relaxed">
+									Gleason ground spiral bevel gears deliver maximum performance
+									with minimum vibration.
+								</p>
+							</div>
+
+							{/* Card 2 - Cuscinetti / Bearings */}
+							<div className="bg-white p-5 shadow-md rounded-xl border border-gray-200">
+								<h3 className="font-semibold text-lg text-gray-900 mb-2">
+									Cuscinetti – Bearings
+								</h3>
+								<p className="text-gray-700 text-sm leading-relaxed">
+									Angular contact preloaded ball bearings of precision class
+									ABEC 9 ensure reliability and exceptional performance.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			)}
 
 			{/* ✅ SUBCATEGORY FILTER */}
 			<section className="py-6 bg-white border-b border-gray-200 sticky top-[73px] z-30">
-				<div className="max-w-7xl mx-auto px-6 flex gap-3 overflow-x-auto hide-scrollbar">
+				<div className="w-full flex justify-center px-6 flex gap-3 overflow-x-auto hide-scrollbar">
 					{subcategories.map((sub) => (
 						<button
 							key={sub.id}
 							onClick={() => setSelectedSubCategory(sub.id)}
 							className={`px-5 py-2.5 rounded-full whitespace-nowrap transition-all ${
 								selectedSubCategory === sub.id
-									? "bg-black text-white"
+									? "bg-blue-600 text-white"
 									: "bg-gray-100 text-gray-700 hover:bg-gray-200"
 							}`}>
 							{sub.label}
-							<span className="ml-2 text-xs">({sub.products.length})</span>
 						</button>
 					))}
 				</div>
@@ -230,7 +309,7 @@ export default function AngleHeadsPage() {
 			<section className="max-w-7xl mx-auto px-6 mt-10">
 				<div className="mb-12">
 					<h2 className="text-2xl font-bold text-gray-900">
-						{products.length} {currentSub?.label} Models Available
+						 {currentSub?.label} Models Available
 					</h2>
 					{currentSub?.description && (
 						<p className="text-gray-600 mt-2">{currentSub.description}</p>
@@ -243,23 +322,24 @@ export default function AngleHeadsPage() {
 							key={i}
 							className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col">
 							{/* Product Header */}
-							<div className="p-5 bg-gradient-to-br from-gray-50 to-white">
-								<h3 className="text-xl font-bold text-gray-900">
+							<div className="p-5 bg-gradient-to-br  from-gray-50 to-white">
+								<h3 className="text-xl font-bold flex items-center text-gray-900">
 									{item.model}
+									{item.adjustable && (
+										<span className="inline-block ml-4 px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">
+											{item.adjustable}
+										</span>
+									)}
 								</h3>
 								<p className="text-gray-600 text-sm mt-1">
 									Type {item.type} • {item.ratio} ratio
 								</p>
-								{item.adjustable && (
-									<span className="inline-block mt-2 px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">
-										{item.adjustable}
-									</span>
-								)}
-								{item.series && (
+
+								{/* {item.series && (
 									<span className="inline-block mt-2 ml-2 px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">
 										{item.series}
 									</span>
-								)}
+								)} */}
 							</div>
 
 							{/* Product Image */}
@@ -269,7 +349,7 @@ export default function AngleHeadsPage() {
 									alt={item.model}
 									width={240}
 									height={180}
-									className="h-36 object-contain"
+									className="h-36 object-contain bg-transparent"
 								/>
 							</div>
 
@@ -299,9 +379,7 @@ export default function AngleHeadsPage() {
 											</td>
 										</tr>
 										<tr className="border-b border-gray-100">
-											<td className="py-2 font-medium text-gray-700">
-												Output Ø
-											</td>
+											<td className="py-2 font-medium text-gray-700">Max Ø</td>
 											<td className="py-2 text-right text-black font-semibold">
 												{item.output_diameter}mm
 											</td>

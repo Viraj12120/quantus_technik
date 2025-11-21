@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
 	return (
@@ -34,13 +35,18 @@ export default function Footer() {
 					{/* Company Info */}
 					<div className="md:col-span-1 flex flex-col items-center text-center">
 						<div className="flex items-center gap-2 mb-4">
-							<h3 className="font-bold text-lg">QuantusTechnik</h3>
+							{/* Logo */}
+								<Image
+									src="/qt.png"
+									alt="QuantusTechnik Logo"
+									width={200}
+									height={200}
+									className="w-34 h-14 sm:w-34 sm:h-34 rounded  backdrop-blur-sm p-2 mix-blend-multiply hover:opacity-60 transition"
+									priority
+								/>
 						</div>
 
-						<p className="text-xs text-gray-600 text-left leading-relaxed">
-							QuantusTechnik delivers high-precision machinery and innovative
-							solutions for aerospace, tooling, and manufacturing.
-						</p>
+						
 					</div>
 
 					{/* About Section */}

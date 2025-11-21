@@ -33,27 +33,17 @@ export default function Hero() {
 					playsInline
 					className="absolute inset-0 w-full h-full object-cover"
 				/>
-				<div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
+				<div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60" />
 			</div>
 
-			{/* Logo */}
-			<div className="absolute top-4 left-4 z-20">
-				<Image
-					src="/qt.png"
-					alt="QuantusTechnik Logo"
-					width={70}
-					height={70}
-					className="w-14 h-14 sm:w-16 sm:h-16 rounded  backdrop-blur-sm p-2 shadow-lg opacity-40 hover:opacity-60 transition"
-					priority
-				/>
-			</div>
+			
 
 			{/* Content */}
-			<div className="relative z-10 flex h-full items-center px-6 sm:px-10 lg:px-16">
+			<div className="relative z-10 flex justify-end h-full items-center px-6 sm:px-10 mt-24">
 				<div className="max-w-xl">
-					<h1 className="text-3xl sm:text-2xl lg:text-6xl font-bold mt-12 text-white mb-2 leading-tight">
-						Engineering Solutions for a{" "}
-						<span className="">Smarter Industry</span>
+					<h1 className="text-3xl sm:text-2xl lg:text-5xl font-bold mt-32 text-white mb-2 leading-tight">
+						Engineering Solutions{" "}
+						<span className="">for a Smarter Industry</span>
 					</h1>
 
 					<p className="text-sm sm:text-base lg:text-lg text-white/90 leading-relaxed">

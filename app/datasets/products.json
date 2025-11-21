@@ -1,13 +1,1127 @@
 {
-   
-    "ken": {
-        "id": "ken",
+    "horizontal": {
+        "id": "horizontal",
         "machines": [
             {
-                "model": "Focus5 2020",
+                "model": "FH5000S-i",
+                "description": "Horizontal spindle machining center FH5000S-i",
+                "pallet_size": "□550(□500)",
+                "stroke_xyz_mm": "800×800×880",
+                "spindle_speed_min_1": "15,000",
+                "image": ""
+            },
+            {
+                "model": "FH5500S-i",
+                "description": "Horizontal spindle machining center FH5500S-i",
+                "pallet_size": "□550(□500)",
+                "stroke_xyz_mm": "900×800×880",
+                "spindle_speed_min_1": "15,000",
+                "image": ""
+            },
+            {
+                "model": "FH5500SX-i",
+                "description": "Horizontal spindle machining center FH5500SX-i",
+                "pallet_size": "□550(□500)",
+                "stroke_xyz_mm": "900×800×880",
+                "spindle_speed_min_1": "15,000",
+                "image": ""
+            },
+            {
+                "model": "FH630SX-i",
+                "description": "Horizontal spindle machining center FH630SX-i",
+                "pallet_size": "□630",
+                "stroke_xyz_mm": "1,050×900×1,050",
+                "spindle_speed_min_1": "6,000[6,000/15,000]",
+                "image": ""
+            },
+            {
+                "model": "FH800SX-i",
+                "description": "Horizontal spindle machining center FH800SX-i",
+                "pallet_size": "□800",
+                "stroke_xyz_mm": "1,450×1,250×1,550",
+                "spindle_speed_min_1": "50〜6,000",
+                "image": ""
+            },
+            {
+                "model": "FH12500SX5-i",
+                "description": "Horizontal spindle machining center FH12500SX5-i",
+                "pallet_size": "□1,250[1,250×1,600]",
+                "stroke_xyz_mm": "2,400×1,600×1,850",
+                "spindle_speed_min_1": "6,000[15,000]",
+                "image": ""
+            },
+            {
+                "model": "FH12500SW5-i",
+                "description": "Horizontal spindle machining center FH12500SW5-i",
+                "pallet_size": "□1,250[1,250×1,600]",
+                "stroke_xyz_mm": "2,400×1,600×1,850",
+                "spindle_speed_min_1": "4,000",
+                "image": ""
+            },
+            {
+                "model": "FH1600SW5i",
+                "description": "Horizontal spindle machining center FH1600SW5i",
+                "pallet_size": "1,600×1,250",
+                "stroke_xyz_mm": "3,000×1,900×2,100",
+                "spindle_speed_min_1": "4,000",
+                "image": ""
+            },
+            {
+                "model": "TH555i4",
+                "description": "Horizontal spindle machining center for line TH555i4",
+                "stroke_xyz_mm": "500×550×530",
+                "spindle_speed_min_1": "10,000[12,000]",
+                "image": ""
+            },
+            {
+                "model": "A600",
+                "description": "Horizontal Machining Center with Pallet size of 500mm",
+                "extra_title": "A600 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40_hsk"
+                ],
+                "stroke_mm": "600 / 600 / 800",
+                "spindle_speed_rpm": "8K / 16K",
+                "number_of_tools": "40 / 60",
+                "type": "LM #40",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210121080607.png"
+            },
+            {
+                "model": "H6",
+                "description": "Horizontal Machining Center with Pallet size of 630mm",
+                "extra_title": "H6 제품 상세보기",
+                "types": [
+                    "box",
+                    "50_hsk"
+                ],
+                "stroke_mm": "1,050 / 900 / 1,000",
+                "spindle_speed_rpm": "8K / 12K",
+                "number_of_tools": "40 / 60 / 90 / 120 / 150 / 180",
+                "type": "BOX #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120040220.png"
+            },
+            {
+                "model": "H8",
+                "description": "Horizontal Machining Center with Pallet size of 800mm",
+                "extra_title": "H8 제품 상세보기",
+                "types": [
+                    "box",
+                    "50_hsk"
+                ],
+                "stroke_mm": "1,400 / 1,150 / 1,250",
+                "spindle_speed_rpm": "8K / 12K",
+                "number_of_tools": "40 / 60 / 90 / 120 / 150 / 180",
+                "type": "BOX #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120043736.png"
+            },
+            {
+                "model": "AF-16",
+                "description": "Horizontal Machining Center",
+                "extra_title": "AF-16 제품 상세보기",
+                "types": [
+                    "lm",
+                    "50_hsk"
+                ],
+                "stroke_mm": "2,600 (3,000) / 1,600 / 1,500",
+                "spindle_speed_rpm": "3K / 8K / 12K",
+                "number_of_tools": "60 / 120 / 180",
+                "type": "LM #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120053911.png"
+            },
+            {
+                "model": "AF-4",
+                "description": "High Productivity, High Performance Horizontal Machining Center",
+                "extra_title": "AF-4 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40_hsk"
+                ],
+                "stroke_mm": "565 / 645 / 645",
+                "spindle_speed_rpm": "37 / 22",
+                "number_of_tools": "40",
+                "type": "LM #40",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20240807090815.png"
+            }
+        ]
+    },
+    "vertical": {
+        "id": "vertical",
+        "products": [
+            {
+                "model": "VESTA-660",
+                "description": "Vertical Machining Center for Parts Machining",
+                "extra_title": "VESTA-660 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#",
+                    "50#"
+                ],
+                "stroke_mm": "660 / 430 / 400",
+                "spindle_speed_rpm": "10K / 12K / 15K",
+                "number_of_tools": "20",
+                "type": "LM #40 / #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-660"
+            },
+            {
+                "model": "VESTA-1000+",
+                "description": "Vertical Machining Center for Parts Machining",
+                "extra_title": "VESTA-1000+ 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#"
+                ],
+                "stroke_mm": "1,000 / 550 / 500",
+                "spindle_speed_rpm": "10K / 12K / 15K",
+                "number_of_tools": "30",
+                "type": "LM #40",
+                "image": "/assets/VESTA-1100.jpg",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1000+"
+            },
+            {
+                "model": "VESTA-1300",
+                "description": "Vertical Machining Center for Parts Machining",
+                "extra_title": "VESTA-1300 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#",
+                    "50#"
+                ],
+                "stroke_mm": "1,300 / 670 / 650",
+                "spindle_speed_rpm": "8K / 10K / 12K / 15K",
+                "number_of_tools": "24 / 30",
+                "type": "LM #40 / #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230040942.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1300"
+            },
+            {
+                "model": "VESTA-1650",
+                "description": "Vertical Machining Center for Parts Machining",
+                "extra_title": "VESTA-1650 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#",
+                    "50#"
+                ],
+                "stroke_mm": "1,650 / 750 / 675",
+                "spindle_speed_rpm": "8K / 10K / 12K / 15K",
+                "number_of_tools": "24 / 30 / 32 / 40 / 60",
+                "type": "LM #40 / #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230041153.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1650"
+            },
+            {
+                "model": "VESTA-2000",
+                "description": "Vertical Machining Center for Parts Machining",
+                "extra_title": "VESTA-2000 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#",
+                    "50#"
+                ],
+                "stroke_mm": "2,000 / 850 / 800",
+                "spindle_speed_rpm": "8K / 10K / 12K / 15K",
+                "number_of_tools": "24 / 30",
+                "type": "LM #40 / #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230041346.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-2000"
+            },
+            {
+                "model": "VESTA-610D",
+                "description": "Dual Table Vertical Machining Center for Parts Machining",
+                "extra_title": "VESTA-610D 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#",
+                    "dual_table"
+                ],
+                "stroke_mm": "610 / 430 / 570",
+                "spindle_speed_rpm": "10K / 12K / 15K",
+                "number_of_tools": "24",
+                "type": "LM #40 Dual Table",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-610D"
+            },
+            {
+                "model": "VESTA-500T",
+                "description": "Twin Spindle Vertical Machining Center",
+                "extra_title": "VESTA-500T 제품 상세보기",
+                "types": [
+                    "lm",
+                    "30#",
+                    "twin_spindle"
+                ],
+                "stroke_mm": "520 / 400 / 380",
+                "spindle_speed_rpm": "24K",
+                "number_of_tools": "좌 : 24 / 우 : 24",
+                "type": "LM #30 Twin Spindle",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-500T"
+            },
+            {
+                "model": "VESTA-650T",
+                "description": "Twin Spindle Vertical Machining Center",
+                "extra_title": "VESTA-650T 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#",
+                    "twin_spindle"
+                ],
+                "stroke_mm": "650 / 650 / 700",
+                "spindle_speed_rpm": "12K / 15K",
+                "number_of_tools": "좌 : 30 / 우 : 30",
+                "type": "LM #40 Twin Spindle",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-650T"
+            },
+            {
+                "model": "L1 1500",
+                "description": "Double Column Vertical Machining Center for Plates",
+                "extra_title": "L1 1500 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#"
+                ],
+                "stroke_mm": "1,500 / 950 / 500",
+                "spindle_speed_rpm": "12K / 20K",
+                "number_of_tools": "30",
+                "type": "LM #40 Double Column",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L1-1500"
+            },
+            {
+                "model": "L1 2500",
+                "description": "Double Column Vertical Machining Center for Plates",
+                "extra_title": "L1 2500 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#"
+                ],
+                "stroke_mm": "2,500 / 950 / 500",
+                "spindle_speed_rpm": "12K / 20K",
+                "number_of_tools": "30",
+                "type": "LM #40 Double Column",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L1-2500"
+            },
+            {
+                "model": "L2 2500",
+                "description": "Double Column Vertical Machining Center for Plates",
+                "extra_title": "L2 2500 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#"
+                ],
+                "stroke_mm": "2,500 / 1,100 / 500",
+                "spindle_speed_rpm": "12K / 20K",
+                "number_of_tools": "30",
+                "type": "LM #40 Double Column",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L2-2500"
+            },
+            {
+                "model": "L3 3000",
+                "description": "Double Column Vertical Machining Center for Plates",
+                "extra_title": "L3 3000 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#"
+                ],
+                "stroke_mm": "3,000 / 1,800 / 500",
+                "spindle_speed_rpm": "12K / 20K",
+                "number_of_tools": "30 / 40",
+                "type": "LM #40 Double Column",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L3-3000"
+            },
+            {
+                "model": "L2 3000",
+                "description": "Double Column Vertical Machining Center for Plates",
+                "extra_title": "L2 3000 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#"
+                ],
+                "stroke_mm": "3,000 / 1,100 / 500",
+                "spindle_speed_rpm": "12K / 20K",
+                "number_of_tools": "30",
+                "type": "LM #40 Double Column",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L2-3000"
+            },
+            {
+                "model": "VESTA-850B",
+                "description": "Heavy Duty Vertical Machining Center for Parts Machining",
+                "extra_title": "VESTA-850B 제품 상세보기",
+                "types": [
+                    "box",
+                    "40#",
+                    "50#"
+                ],
+                "stroke_mm": "850 / 600 / 600",
+                "spindle_speed_rpm": "6K / 8K",
+                "number_of_tools": "24 / 30",
+                "type": "BOX #40 / #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-850B"
+            },
+            {
+                "model": "VESTA-1050B",
+                "description": "Heavy Duty Vertical Machining Center for Parts Machining",
+                "extra_title": "VESTA-1050B 제품 상세보기",
+                "types": [
+                    "box",
+                    "40#",
+                    "50#"
+                ],
+                "stroke_mm": "1,050 / 600 / 600",
+                "spindle_speed_rpm": "6K / 8K",
+                "number_of_tools": "24 / 30",
+                "type": "BOX #40 / #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1050B"
+            },
+            {
+                "model": "VESTA-1300B",
+                "description": "Heavy Duty Vertical Machining Center for Parts Machining",
+                "extra_title": "VESTA-1300B 제품 상세보기",
+                "types": [
+                    "box",
+                    "40#",
+                    "50#"
+                ],
+                "stroke_mm": "1,300 / 670 / 650",
+                "spindle_speed_rpm": "6K / 8K / 10K / 12K / 15K",
+                "number_of_tools": "24 / 30",
+                "type": "BOX #40 / #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1300B"
+            },
+            {
+                "model": "SIRIUS-650",
+                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "extra_title": "SIRIUS-650 제품 상세보기",
+                "types": [
+                    "box",
+                    "50#"
+                ],
+                "stroke_mm": "1,300 / 650 / 650",
+                "spindle_speed_rpm": "5K / 8K",
+                "number_of_tools": "- / 24",
+                "type": "BOX #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-650"
+            },
+            {
+                "model": "SIRIUS-850",
+                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "extra_title": "SIRIUS-850 제품 상세보기",
+                "types": [
+                    "box",
+                    "50#"
+                ],
+                "stroke_mm": "2,000 / 850 / 750",
+                "spindle_speed_rpm": "8K / 12K",
+                "number_of_tools": "24",
+                "type": "BOX #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-850"
+            },
+            {
+                "model": "SIRIUS-1050",
+                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "extra_title": "SIRIUS-1050 제품 상세보기",
+                "types": [
+                    "box",
+                    "50#"
+                ],
+                "stroke_mm": "2,500 / 1,050 / 850",
+                "spindle_speed_rpm": "8K / 12K",
+                "number_of_tools": "24",
+                "type": "BOX #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1050"
+            },
+            {
+                "model": "SIRIUS-1250",
+                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "extra_title": "SIRIUS-1250 제품 상세보기",
+                "types": [
+                    "box",
+                    "50#"
+                ],
+                "stroke_mm": "2,500 / 1,250 / 750",
+                "spindle_speed_rpm": "8K / 12K",
+                "number_of_tools": "8 / 40",
+                "type": "BOX #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1250"
+            },
+            {
+                "model": "SIRIUS-1350",
+                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "extra_title": "SIRIUS-1350 제품 상세보기",
+                "types": [
+                    "box",
+                    "50#"
+                ],
+                "stroke_mm": "2,550 / 1,350 / 750",
+                "spindle_speed_rpm": "8K / 12K",
+                "number_of_tools": "40 / 60",
+                "type": "BOX #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1350"
+            },
+            {
+                "model": "SIRIUS-1750",
+                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "extra_title": "SIRIUS-1750 제품 상세보기",
+                "types": [
+                    "box",
+                    "50#"
+                ],
+                "stroke_mm": "3,000 (4,000) / 1,750 / 800",
+                "spindle_speed_rpm": "12K / 15K",
+                "number_of_tools": "40 / 60",
+                "type": "BOX #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1750"
+            },
+            {
+                "model": "SIRIUS-2500",
+                "description": "High Rigidity Vertical Machining Center for Die and Mold",
+                "extra_title": "SIRIUS-2500 제품 상세보기",
+                "types": [
+                    "box",
+                    "50#"
+                ],
+                "stroke_mm": "3,100 (4,000) / 2,300 / 900",
+                "spindle_speed_rpm": "8K / 12K",
+                "number_of_tools": "40",
+                "type": "BOX #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-2500"
+            },
+            {
+                "model": "UH500",
+                "description": "High-Speed Vertical Machining Center for Die and Mold",
+                "extra_title": "UH500 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#"
+                ],
+                "stroke_mm": "750 / 500 / 350",
+                "spindle_speed_rpm": "20K / 32K",
+                "number_of_tools": "24",
+                "type": "LM #40",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=UH500"
+            },
+            {
+                "model": "SIRIUS-UM+",
+                "description": "High-Speed Vertical Machining Center for Die and Mold",
+                "extra_title": "SIRIUS-UM+ 제품 상세보기",
+                "types": [
+                    "lm",
+                    "30#",
+                    "40#"
+                ],
+                "stroke_mm": "750 / 500 / 450",
+                "spindle_speed_rpm": "20K / 32K / 45K",
+                "number_of_tools": "20 / 30 / 40 / 60",
+                "type": "LM #30 / #40",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UM+"
+            },
+            {
+                "model": "SIRIUS-UZ",
+                "description": "High-Speed Vertical Machining Center for Die and Mold",
+                "extra_title": "SIRIUS-UZ 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#"
+                ],
+                "stroke_mm": "1,050 / 600 / 350",
+                "spindle_speed_rpm": "12K / 14K / 20K / 24K",
+                "number_of_tools": "30 / 40",
+                "type": "LM #40",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UZ"
+            },
+            {
+                "model": "SIRIUS-UL+",
+                "description": "High-Speed Vertical Machining Center for Die and Mold",
+                "extra_title": "SIRIUS-UL+ 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#"
+                ],
+                "stroke_mm": "1,050 / 600 / 550",
+                "spindle_speed_rpm": "12K / 14K / 20K / 24K",
+                "number_of_tools": "30 / 40",
+                "type": "LM #40",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UL+"
+            },
+            {
+                "model": "SIRIUS-UX",
+                "description": "High-Speed Vertical Machining Center for Die and Mold",
+                "extra_title": "SIRIUS-UX 제품 상세보기",
+                "types": [
+                    "lm",
+                    "50#"
+                ],
+                "stroke_mm": "1,500 / 750 / 650",
+                "spindle_speed_rpm": "12K / 15K",
+                "number_of_tools": "40 / 60",
+                "type": "LM #50",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UX"
+            },
+            {
+                "model": "SMART Ua STEEL",
+                "description": "Smart Machine for Small Steel Mold",
+                "extra_title": "SMART Ua STEEL 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#"
+                ],
+                "stroke_mm": "1,050 / 600 / 550",
+                "spindle_speed_rpm": "12K / 14K / 20K / 24K",
+                "number_of_tools": "120",
+                "type": "LM #40",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SMART-Ua-STEEL"
+            },
+            {
+                "model": "SMART UaX",
+                "description": "Smart Machine for Graphite Electrode",
+                "extra_title": "SMART UaX 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#",
+                    "graphite"
+                ],
+                "stroke_mm": "1,300 / 750 / 420",
+                "spindle_speed_rpm": "12K / 20K",
+                "number_of_tools": "50",
+                "type": "LM #40 Graphite",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SMART-UaX"
+            },
+            {
+                "model": "Hi-M G1",
+                "description": "Vertical Machining Center For Graphite",
+                "extra_title": "Hi-M G1 제품 상세보기",
+                "types": [
+                    "lm",
+                    "30#",
+                    "graphite"
+                ],
+                "stroke_mm": "750 / 600 / 350",
+                "spindle_speed_rpm": "24K",
+                "number_of_tools": "16",
+                "type": "LM #30 Graphite",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M-G1"
+            },
+            {
+                "model": "Hi-M G1 Pro",
+                "description": "Premium Vertical Machining Center For Graphite",
+                "extra_title": "Hi-M G1 Pro 제품 상세보기",
+                "types": [
+                    "lm",
+                    "30#",
+                    "graphite"
+                ],
+                "stroke_mm": "750 / 600 / 350",
+                "spindle_speed_rpm": "24K",
+                "number_of_tools": "16",
+                "type": "LM #30 Graphite Pro",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M-G1-Pro"
+            },
+            {
+                "model": "Hi-M G2+",
+                "description": "Vertical Machining Center For Graphite",
+                "extra_title": "Hi-M G2+ 제품 상세보기",
+                "types": [
+                    "box",
+                    "40#",
+                    "graphite"
+                ],
+                "stroke_mm": "1,200 / 800 / 500",
+                "spindle_speed_rpm": "20K",
+                "number_of_tools": "16 / 24 / 32",
+                "type": "BOX #40 Graphite",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M-G2+"
+            },
+            {
+                "model": "HiT-360D",
+                "description": "High Speed Dual Table Tapping Center",
+                "extra_title": "HiT-360D 제품 상세보기",
+                "types": [
+                    "lm",
+                    "30#"
+                ],
+                "stroke_mm": "520 / 360 / 300",
+                "spindle_speed_rpm": "12K (SIEMENS : 15K) / 24K",
+                "number_of_tools": "21",
+                "type": "LM #30 Tapping",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-360D"
+            },
+            {
+                "model": "HiT-400",
+                "description": "High Speed Tapping Center",
+                "extra_title": "HiT-400 제품 상세보기",
+                "types": [
+                    "lm",
+                    "30#"
+                ],
+                "stroke_mm": "520 / 400 / 300",
+                "spindle_speed_rpm": "12K (SIEMENS : 15K) / 24K",
+                "number_of_tools": "21",
+                "type": "LM #30 Tapping",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-400"
+            },
+            {
+                "model": "HiT-400L",
+                "description": "High Speed Tapping Center",
+                "extra_title": "HiT-400L 제품 상세보기",
+                "types": [
+                    "lm",
+                    "30#"
+                ],
+                "stroke_mm": "700 / 400 / 300",
+                "spindle_speed_rpm": "12K (SIEMENS : 15K) / 24K",
+                "number_of_tools": "21",
+                "type": "LM #30 Tapping",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-400L"
+            }
+        ]
+    },
+    "5-axis": {
+        "id": "5-axis",
+        "machines": [
+            {
+                "model": "Rhino",
+                "series": "Rhino",
+                "description": "Horizontal High Torque 5-Axis Machine Center",
+                "type": "5-Axis Horizontal",
+                "filters": [
+                    "simultaneous"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 1500,
+                        "y": 1200,
+                        "z": 1000
+                    },
+                    "table_load_kg": 5000,
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 60
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 4000,
+                        "power_kw": 30,
+                        "torque_nm": 800
+                    }
+                }
+            },
+            {
+                "model": "G150",
+                "series": "G-Series",
+                "description": "High Speed 5-Axis Machine Center",
+                "type": "5-Axis Vertical",
+                "filters": [
+                    "simultaneous"
+                ],
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/1/5/csm_Header_G150_geschlossen_b4de910a91.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 1500,
+                        "y": 1200,
+                        "z": 800
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 48
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 18000,
+                        "power_kw": "22 (30)",
+                        "torque_nm": "45 (60)"
+                    }
+                }
+            },
+            {
+                "model": "G350",
+                "series": "G-Series",
+                "description": "High Speed 5-Axis Machine Center",
+                "type": "5-Axis Vertical",
+                "filters": [
+                    "simultaneous"
+                ],
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/7/4/csm_Header_G350T_geschlossen_bb11fc48a3.jpg",
+                "specs": {
+                    "travel_mm": {
+                        "x": 2000,
+                        "y": 1500,
+                        "z": 1000
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 48
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 15000,
+                        "power_kw": "30 (40)",
+                        "torque_nm": "75 (100)"
+                    }
+                }
+            },
+            {
+                "model": "G550",
+                "series": "G-Series",
+                "description": "High Speed 5-Axis Machine Center",
+                "type": "5-Axis Vertical",
+                "filters": [
+                    "simultaneous"
+                ],
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/3/6/csm_Header_G550_geschlossen1_d366664f45.jpg",
+                "specs": {
+                    "travel_mm": {
+                        "x": 2500,
+                        "y": 1800,
+                        "z": 1200
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 48
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 12000,
+                        "power_kw": "40 (55)",
+                        "torque_nm": "120 (160)"
+                    }
+                }
+            },
+            {
+                "model": "G750",
+                "series": "G-Series",
+                "description": "High Speed 5-Axis Machine Center",
+                "type": "5-Axis Vertical",
+                "filters": [
+                    "simultaneous"
+                ],
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/a/5/csm_Header_G750_geschlossen_56b6e7be23.jpg",
+                "specs": {
+                    "travel_mm": {
+                        "x": 3000,
+                        "y": 2000,
+                        "z": 1500
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 48
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 10000,
+                        "power_kw": "55 (75)",
+                        "torque_nm": "180 (240)"
+                    }
+                }
+            },
+            {
+                "model": "G350a",
+                "series": "G-Series",
+                "description": "Advanced High Speed 5-Axis Machine Center",
+                "type": "5-Axis Vertical",
+                "filters": [
+                    "simultaneous"
+                ],
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/2/2/csm_Header_G350a_NEU_efc9fb1116.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 2200,
+                        "y": 1600,
+                        "z": 1100
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 80,
+                        "y": 80,
+                        "z": 60
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 20000,
+                        "power_kw": "35 (45)",
+                        "torque_nm": "85 (110)"
+                    }
+                }
+            },
+            {
+                "model": "G550a",
+                "series": "G-Series",
+                "description": "Advanced High Speed 5-Axis Machine Center",
+                "type": "5-Axis Vertical",
+                "filters": [
+                    "simultaneous"
+                ],
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/4/f/csm_Header_G550a_NEU_eb1a3f5986.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 2700,
+                        "y": 1900,
+                        "z": 1300
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 80,
+                        "y": 80,
+                        "z": 60
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 15000,
+                        "power_kw": "45 (60)",
+                        "torque_nm": "140 (180)"
+                    }
+                }
+            },
+            {
+                "model": "G5-600/5-T",
+                "series": "G5-Series",
+                "description": "5-Axis Turning Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "simultaneous"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 600,
+                        "y": 500,
+                        "z": 400
+                    },
+                    "table_load_kg": 300,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 6000,
+                        "power_kw": "15 (20)",
+                        "torque_nm": "50 (65)"
+                    }
+                }
+            },
+            {
+                "model": "G5-800/5-T",
+                "series": "G5-Series",
+                "description": "5-Axis Turning Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "simultaneous"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 800,
+                        "y": 600,
+                        "z": 500
+                    },
+                    "table_load_kg": 500,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 5000,
+                        "power_kw": "22 (30)",
+                        "torque_nm": "80 (100)"
+                    }
+                }
+            },
+            {
+                "model": "G5-1000/5-T",
+                "series": "G5-Series",
+                "description": "5-Axis Turning Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "simultaneous"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 1000,
+                        "y": 700,
+                        "z": 600
+                    },
+                    "table_load_kg": 800,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 4000,
+                        "power_kw": "30 (40)",
+                        "torque_nm": "120 (150)"
+                    }
+                }
+            },
+            {
+                "model": "G5-1200/5-T",
+                "series": "G5-Series",
+                "description": "5-Axis Turning Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "simultaneous"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 1200,
+                        "y": 800,
+                        "z": 700
+                    },
+                    "table_load_kg": 1200,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 3500,
+                        "power_kw": "37 (50)",
+                        "torque_nm": "160 (200)"
+                    }
+                }
+            },
+            {
+                "model": "G5-1400/5-T",
+                "series": "G5-Series",
+                "description": "5-Axis Turning Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "simultaneous"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 1400,
+                        "y": 900,
+                        "z": 800
+                    },
+                    "table_load_kg": 1500,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 3000,
+                        "power_kw": "45 (60)",
+                        "torque_nm": "200 (250)"
+                    }
+                }
+            },
+            {
+                "model": "CompactB",
+                "series": "Compact B",
+                "description": "Gantry Type High Speed 5-Axis Machine Center",
+                "type": "5-Axis Gantry",
+                "filters": [
+                    "gantry"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/CompactE_%E5%81%B4%E6%8E%9B%E5%BC%8F_%E4%B8%AD%E6%96%87_CMYK%20%E6%8B%B7%E8%B4%9D.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 2000,
+                        "y": 2500,
+                        "z": 1000
+                    },
+                    "table_mm": {
+                        "x": 2000,
+                        "y": 2500
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 50
+                    }
+                }
+            },
+            {
+                "model": "LinmaxB",
+                "series": "LinmaxB",
+                "description": "Gantry Type High Speed 5-Axis Machine Center",
+                "type": "5-Axis Gantry",
+                "filters": [
+                    "gantry"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 4000,
+                        "y": 2200,
+                        "z": 1000
+                    },
+                    "table_mm": {
+                        "x": "as same as X-axis travel",
+                        "y": 2000
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 50
+                    }
+                }
+            },
+            {
+                "model": "Torque",
+                "series": "Torque",
+                "description": "Gantry Type High Torque 5-Axis Machine Center",
+                "type": "5-Axis Gantry",
+                "filters": [
+                    "gantry"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Saber.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 3000,
+                        "y": 2000,
+                        "z": 1000
+                    },
+                    "table_mm": {
+                        "y": 2000
+                    },
+                    "spindle": {
+                        "power_kw": "22 (35)",
+                        "torque_nm": "174 (185)"
+                    }
+                }
+            },
+            {
+                "model": "Focus5",
                 "series": "Focus5",
                 "description": "Double Column High Speed 5-Axis Machine Center",
                 "type": "5-Axis Double Column",
+                "filters": [
+                    "double_column"
+                ],
                 "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
                 "specs": {
                     "travel_mm": {
@@ -35,180 +1149,13 @@
                 }
             },
             {
-                "model": "Focus5 2030",
-                "series": "Focus5",
-                "description": "Double Column High Speed 5-Axis Machine Center",
-                "type": "5-Axis Double Column",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 3060,
-                        "y": 2000,
-                        "z": 800
-                    },
-                    "table_mm": {
-                        "x": 3000,
-                        "y": 1200
-                    },
-                    "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 48
-                    },
-                    "milling_head": "Side Type",
-                    "rotation_angle": "A: ±115° / C: ±360°",
-                    "spindle": {
-                        "shank": "HSK-A63",
-                        "rotation_speed_rpm": 24000,
-                        "power_kw": "42 (55)",
-                        "torque_nm": "67 (87)"
-                    }
-                }
-            },
-            {
-                "model": "Focus5 2040",
-                "series": "Focus5",
-                "description": "Double Column High Speed 5-Axis Machine Center",
-                "type": "5-Axis Double Column",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 4060,
-                        "y": 2000,
-                        "z": 800
-                    },
-                    "table_mm": {
-                        "x": 4000,
-                        "y": 1200
-                    },
-                    "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 48
-                    },
-                    "milling_head": "Side Type",
-                    "rotation_angle": "A: ±115° / C: ±360°",
-                    "spindle": {
-                        "shank": "HSK-A63",
-                        "rotation_speed_rpm": 24000,
-                        "power_kw": "42 (55)",
-                        "torque_nm": "67 (87)"
-                    }
-                }
-            },
-            {
-                "model": "Focus5 2330",
-                "series": "Focus5",
-                "description": "Double Column High Speed 5-Axis Machine Center",
-                "type": "5-Axis Double Column",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 3060,
-                        "y": 2300,
-                        "z": 800
-                    },
-                    "table_mm": {
-                        "x": 3000,
-                        "y": 1500
-                    },
-                    "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 48
-                    },
-                    "milling_head": "Fork Type",
-                    "rotation_angle": "B: ±110° / C: ±360°",
-                    "spindle": {
-                        "shank": "HSK-A100",
-                        "rotation_speed_rpm": 15000,
-                        "power_kw": "50 (65)",
-                        "torque_nm": "96 (124)"
-                    }
-                }
-            },
-            {
-                "model": "Focus5 2340",
-                "series": "Focus5",
-                "description": "Double Column High Speed 5-Axis Machine Center",
-                "type": "5-Axis Double Column",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 4060,
-                        "y": 2300,
-                        "z": 800
-                    },
-                    "table_mm": {
-                        "x": 4000,
-                        "y": 1500
-                    },
-                    "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 48
-                    },
-                    "milling_head": "Fork Type",
-                    "rotation_angle": "B: ±110° / C: ±360°",
-                    "spindle": {
-                        "shank": "HSK-A100",
-                        "rotation_speed_rpm": 15000,
-                        "power_kw": "50 (65)",
-                        "torque_nm": "96 (124)"
-                    }
-                }
-            },
-            {
-                "model": "Compact B 2520",
-                "series": "Compact B",
-                "description": "Gantry Type High Speed 5-Axis Machine Center",
-                "type": "5-Axis Gantry",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/CompactE_%E5%81%B4%E6%8E%9B%E5%BC%8F_%E4%B8%AD%E6%96%87_CMYK%20%E6%8B%B7%E8%B4%9D.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 2000,
-                        "y": 2500,
-                        "z": 1000
-                    },
-                    "table_mm": {
-                        "x": 2000,
-                        "y": 2500
-                    },
-                    "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 50
-                    }
-                }
-            },
-            {
-                "model": "Compact B 3020",
-                "series": "Compact B",
-                "description": "Gantry Type High Speed 5-Axis Machine Center",
-                "type": "5-Axis Gantry",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/CompactE_%E5%81%B4%E6%8E%9B%E5%BC%8F_%E4%B8%AD%E6%96%87_CMYK%20%E6%8B%B7%E8%B4%9D.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 2000,
-                        "y": 3000,
-                        "z": 1000
-                    },
-                    "table_mm": {
-                        "x": 2000,
-                        "y": 3000
-                    },
-                    "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 50
-                    }
-                }
-            },
-            {
-                "model": "Rotor 1000",
+                "model": "Rotor",
                 "series": "Rotor",
                 "description": "High Speed 5-Axis Machine Center",
-                "type": "5-Axis Vertical",
+                "type": "5-Axis Double Column",
+                "filters": [
+                    "double_column"
+                ],
                 "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/rotor-en.png",
                 "specs": {
                     "travel_mm": {
@@ -228,227 +1175,17 @@
                 }
             },
             {
-                "model": "Rotor 1250",
-                "series": "Rotor",
-                "description": "High Speed 5-Axis Machine Center",
-                "type": "5-Axis Vertical",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/rotor-en.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 2000,
-                        "y": 1400,
-                        "z": 1000
-                    },
-                    "rotary_table": {
-                        "diameter_mm": "Ø1,250 x 1,100",
-                        "rotation": "±360° (Unlimited)"
-                    },
-                    "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 48
-                    }
-                }
-            },
-            {
-                "model": "LinmaxB 22∞",
-                "series": "LinmaxB",
-                "description": "Gantry Type High Speed 5-Axis Machine Center",
-                "type": "5-Axis Gantry",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 4000,
-                        "y": 2200,
-                        "z": 1000
-                    },
-                    "table_mm": {
-                        "x": "as same as X-axis travel",
-                        "y": 2000
-                    },
-                    "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 50
-                    }
-                }
-            },
-            {
-                "model": "LinmaxB 25∞",
-                "series": "LinmaxB",
-                "description": "Gantry Type High Speed 5-Axis Machine Center",
-                "type": "5-Axis Gantry",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": [
-                            4000,
-                            5000
-                        ],
-                        "y": 2500,
-                        "z": 1000
-                    },
-                    "table_mm": {
-                        "x": "as same as X-axis travel",
-                        "y": 2200
-                    },
-                    "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 50
-                    }
-                }
-            },
-            {
-                "model": "LinmaxB 30∞",
-                "series": "LinmaxB",
-                "description": "Gantry Type High Speed 5-Axis Machine Center",
-                "type": "5-Axis Gantry",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": [
-                            4000,
-                            5000
-                        ],
-                        "y": 3000,
-                        "z": 1000
-                    },
-                    "table_mm": {
-                        "x": "as same as X-axis travel",
-                        "y": 2700
-                    },
-                    "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 50
-                    }
-                }
-            },
-            {
-                "model": "LinmaxB 35∞",
-                "series": "LinmaxB",
-                "description": "Gantry Type High Speed 5-Axis Machine Center",
-                "type": "5-Axis Gantry",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": [
-                            5000,
-                            6000
-                        ],
-                        "y": 3500,
-                        "z": 1000
-                    },
-                    "table_mm": {
-                        "x": "as same as X-axis travel",
-                        "y": 3200
-                    },
-                    "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 50
-                    }
-                }
-            },
-            {
-                "model": "LinmaxB 40∞",
-                "series": "LinmaxB",
-                "description": "Gantry Type High Speed 5-Axis Machine Center",
-                "type": "5-Axis Gantry",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": [
-                            6000,
-                            8000
-                        ],
-                        "y": 4000,
-                        "z": 1000
-                    },
-                    "table_mm": {
-                        "x": "as same as X-axis travel",
-                        "y": 3700
-                    },
-                    "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 50
-                    }
-                }
-            },
-            {
-                "model": "RHINO 1250",
-                "series": "Rhino",
-                "description": "Horizontal High Torque 5-Axis Machine Center",
-                "type": "5-Axis Horizontal",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 1000,
-                        "y": 1000,
-                        "z": 1000
-                    },
-                    "table_load_kg": 4000,
-                    "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 60
-                    },
-                    "spindle": {
-                        "rotation_speed_rpm": 4000,
-                        "power_kw": 25,
-                        "torque_nm": 750
-                    }
-                }
-            },
-            {
-                "model": "RHINO 1700/2000",
-                "series": "Rhino",
-                "description": "Horizontal High Torque 5-Axis Machine Center",
-                "type": "5-Axis Horizontal",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": [
-                            1000,
-                            2000
-                        ],
-                        "y": 1000,
-                        "z": [
-                            1000,
-                            2000
-                        ]
-                    },
-                    "table_load_kg": [
-                        80250,
-                        90400
-                    ],
-                    "feedrate_m_per_min": {
-                        "x": 24,
-                        "y": 24,
-                        "z": 24
-                    },
-                    "spindle": {
-                        "rotation_speed_rpm": 4000,
-                        "power_kw": 25,
-                        "torque_nm": 1000
-                    }
-                }
-            },
-            {
-                "model": "SABER",
+                "model": "Saber",
                 "series": "Saber",
                 "description": "Double Column High Torque 5-Axis Machine Center",
                 "type": "5-Axis Double Column",
+                "filters": [
+                    "double_column"
+                ],
                 "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Saber.png",
                 "specs": {
                     "travel_mm": {
-                        "x": [
-                            3000,
-                            4000,
-                            3000
-                        ],
+                        "x": 3000,
                         "y": 2400,
                         "z": 800
                     },
@@ -463,2008 +1200,649 @@
                 }
             },
             {
-                "model": "TORQUE",
-                "series": "Torque",
-                "description": "Gantry Type High Torque 5-Axis Machine Center",
-                "type": "5-Axis Gantry",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Saber.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": [
-                            3000,
-                            4000,
-                            3000
-                        ],
-                        "y": 2000,
-                        "z": 1000
-                    },
-                    "table_mm": {
-                        "y": 2000
-                    },
-                    "spindle": {
-                        "power_kw": "22 (35)",
-                        "torque_nm": "174 (185)"
-                    }
-                }
-            },
-            {
-                "model": "LinmaxB Twin",
-                "series": "LinmaxB Twin",
-                "description": "Double Gantry Type High Speed 5-Axis Machine Center",
-                "type": "5-Axis Twin Gantry",
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/All%20Machine_CN_LinmaxBTwin.png",
-                "specs": {
-                    "notes": "Twin-gantry high-speed 5-axis machining center"
-                }
-            },
-            {
-                "model": "RITING",
-                "series": "Riting",
-                "description": "Horizontal 5-Axis Machining Center",
-                "type": "5-Axis Horizontal",
+                "model": "Rhino-1250T",
+                "series": "Rhino",
+                "description": "Horizontal High Torque 5-Axis Turning Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
                 "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
                 "specs": {
-                    "notes": "Horizontal 5-axis machining center"
+                    "travel_mm": {
+                        "x": 1250,
+                        "y": 1000,
+                        "z": 1000
+                    },
+                    "table_load_kg": 4000,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 3500,
+                        "power_kw": "30 (40)",
+                        "torque_nm": "900 (1200)"
+                    }
                 }
-            }
-        ]
-    },
-
-    "horizontal": {
-        "id": "horizontal",
-        "machines": [
-            {
-                "model": "A600",
-                "description": "Horizontal Machining Center with Pallet size of 500mm",
-                "pallet_size_mm": 500,
-                "desc": "",
-                "stroke_mm": [
-                    600,
-                    600,
-                    800
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    16000
-                ],
-                "number_of_tools": [
-                    40,
-                    60
-                ],
-                "type": "LM #40",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210121080607.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=A600"
             },
             {
-                "model": "H6",
-                "description": "Horizontal Machining Center with Pallet size of 630mm",
-                "pallet_size_mm": 630,
-                "desc": "",
-                "stroke_mm": [
-                    1050,
-                    900,
-                    1000
+                "model": "Rhino-1700T",
+                "series": "Rhino",
+                "description": "Horizontal High Torque 5-Axis Turning Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
                 ],
-                "spindle_speed_rpm": [
-                    8000,
-                    12000
-                ],
-                "number_of_tools": [
-                    40,
-                    60,
-                    90,
-                    120,
-                    150,
-                    180
-                ],
-                "type": "BOX #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120040220.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=H6"
-            },
-            {
-                "model": "H8",
-                "description": "Horizontal Machining Center with Pallet size of 800mm",
-                "pallet_size_mm": 800,
-                "desc": "",
-                "stroke_mm": [
-                    1400,
-                    1150,
-                    1250
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    12000
-                ],
-                "number_of_tools": [
-                    40,
-                    60,
-                    90,
-                    120,
-                    150,
-                    180
-                ],
-                "type": "BOX #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120043736.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=H8"
-            },
-            {
-                "model": "AF-16",
-                "description": "Horizontal Machining Center",
-                "pallet_size_mm": null,
-                "stroke_mm": [
-                    2600,
-                    3000,
-                    1600,
-                    1500
-                ],
-                "spindle_speed_rpm": [
-                    3000,
-                    8000,
-                    12000
-                ],
-                "number_of_tools": [
-                    60,
-                    120,
-                    180
-                ],
-                "type": "LM #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120053911.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=AF-16"
-            },
-            {
-                "model": "AF-4",
-                "description": "High Productivity, High Performance Horizontal Machining Center",
-                "pallet_size_mm": null,
-                "desc": "",
-                "stroke_mm": [
-                    565,
-                    645,
-                    645
-                ],
-                "spindle_speed_rpm": [
-                    3700,
-                    2200
-                ],
-                "number_of_tools": [
-                    40
-                ],
-                "type": "LM #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20240807090815.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=AF-4"
-            }
-        ]
-    },
-    "grob": {
-        "id": "grob",
-        "machines": [
-            {
-                "model": "G150",
-                "description": "The smallest 5-axis universal machining center provides optimized precision for complex parts.",
-                "working_travel_mm": [
-                    450,
-                    670,
-                    665
-                ],
-                "speed_max_m_per_min": [
-                    50,
-                    40,
-                    60
-                ],
-                "interference_diameter_mm": 580,
-                "image": "https://www.grobgroup.com/fileadmin/_processed_/1/5/csm_Header_G150_geschlossen_b4de910a91.png",
-                "brand": "GROB"
-            },
-            {
-                "model": "G350",
-                "description": "The compact 5-axis machining center for milling parts from the most diverse materials.",
-                "working_travel_mm": [
-                    600,
-                    855,
-                    750
-                ],
-                "speed_max_m_per_min": [
-                    70,
-                    45,
-                    90
-                ],
-                "interference_diameter_mm": 720,
-                "image": "https://www.grobgroup.com/fileadmin/_processed_/5/1/csm_Header_G350_geschlossen_2b785e2ec7.png",
-                "brand": "GROB"
-            },
-            {
-                "model": "G550",
-                "description": "Optimized milling performance with the 5-axis machining center for parts from the most diverse raw materials.",
-                "working_travel_mm": [
-                    800,
-                    1020,
-                    970
-                ],
-                "speed_max_m_per_min": [
-                    65,
-                    50,
-                    80
-                ],
-                "interference_diameter_mm": 900,
-                "image": "https://www.grobgroup.com/fileadmin/_processed_/3/6/csm_Header_G550_geschlossen1_d366664f45.jpg",
-                "brand": "GROB"
-            },
-            {
-                "model": "G750",
-                "description": "Highest productivity and optimized machining with the rigid 5-axis machining center.",
-                "working_travel_mm": [
-                    950,
-                    1000,
-                    650
-                ],
-                "speed_max_m_per_min": [
-                    65,
-                    55,
-                    85
-                ],
-                "interference_diameter_mm": 1100,
-                "image": "https://www.grobgroup.com/fileadmin/_processed_/a/5/csm_Header_G750_geschlossen_56b6e7be23.jpg",
-                "brand": "GROB"
-            }
-        ]
-    },
-    "vertical": {
-        "id": "vertical",
-        "products": [
-            {
-                "model": "VESTA-660",
-                "description": "Vertical Machining Center for Parts Machining",
-                "stroke_mm": [
-                    660,
-                    410,
-                    450
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    12000
-                ],
-                "number_of_tools": [
-                    24
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-660"
-            },
-            {
-                "model": "VESTA-1000+",
-                "description": "Vertical Machining Center for Parts Machining",
-                "stroke_mm": [
-                    1000,
-                    600,
-                    635
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    12000
-                ],
-                "number_of_tools": [
-                    24
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20220928044114.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1000+"
-            },
-            {
-                "model": "VESTA-1300",
-                "description": "Vertical Machining Center for Parts Machining",
-                "stroke_mm": [
-                    1300,
-                    660,
-                    635
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    12000
-                ],
-                "number_of_tools": [
-                    24
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230040942.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1300"
-            },
-            {
-                "model": "VESTA-1650",
-                "description": "Vertical Machining Center for Parts Machining",
-                "stroke_mm": [
-                    1650,
-                    800,
-                    750
-                ],
-                "spindle_speed_rpm": [
-                    8000,
-                    10000
-                ],
-                "number_of_tools": [
-                    24
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230041153.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1650"
-            },
-            {
-                "model": "VESTA-2000",
-                "description": "Vertical Machining Center for Parts Machining",
-                "stroke_mm": [
-                    2000,
-                    850,
-                    800
-                ],
-                "spindle_speed_rpm": [
-                    6000,
-                    8000
-                ],
-                "number_of_tools": [
-                    24
-                ],
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230041346.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-2000"
-            }
-        ]
-    },
-    "alzmetall": {
-        "id": "alzmetall",
-        "machines": [
-            {
-                "model": "GS 600/5-FDT",
-                "description": "Gantry Machining Center with 5‑Axis, Gantry‑Concept + Torque-Drives",
-                "type": "5-Axis Gantry",
-                "detail_url": "https://alzmetall.de/en/produkt/gs-600-5-fdt/",
-                "image": "https://alzmetall.de/wp-content/uploads/2022/08/GS_600-5FDT.jpg",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
                 "specs": {
                     "travel_mm": {
-                        "x": 460,
-                        "y": 600,
+                        "x": 1700,
+                        "y": 1200,
+                        "z": 1200
+                    },
+                    "table_load_kg": 6000,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 3000,
+                        "power_kw": "45 (60)",
+                        "torque_nm": "1500 (2000)"
+                    }
+                }
+            },
+            {
+                "model": "G150T",
+                "series": "G-Series",
+                "description": "5-Axis Turning Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 1500,
+                        "y": 1000,
+                        "z": 800
+                    },
+                    "table_load_kg": 2000,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 4000,
+                        "power_kw": "22 (30)",
+                        "torque_nm": "600 (800)"
+                    }
+                }
+            },
+            {
+                "model": "G350T",
+                "series": "G-Series",
+                "description": "5-Axis Turning Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 2000,
+                        "y": 1200,
+                        "z": 1000
+                    },
+                    "table_load_kg": 3000,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 3500,
+                        "power_kw": "30 (40)",
+                        "torque_nm": "900 (1200)"
+                    }
+                }
+            },
+            {
+                "model": "G550T",
+                "series": "G-Series",
+                "description": "5-Axis Turning Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 2500,
+                        "y": 1500,
+                        "z": 1200
+                    },
+                    "table_load_kg": 5000,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 3000,
+                        "power_kw": "45 (60)",
+                        "torque_nm": "1500 (2000)"
+                    }
+                }
+            },
+            {
+                "model": "G750T",
+                "series": "G-Series",
+                "description": "5-Axis Turning Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 3000,
+                        "y": 1800,
+                        "z": 1500
+                    },
+                    "table_load_kg": 8000,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 2500,
+                        "power_kw": "55 (75)",
+                        "torque_nm": "2200 (3000)"
+                    }
+                }
+            },
+            {
+                "model": "G5-600/5-FDT",
+                "series": "G5-Series",
+                "description": "5-Axis Fine Drilling & Tapping Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 600,
+                        "y": 500,
                         "z": 400
                     },
-                    "cutting_tool_interface": "HSK-T63",
-                    "max_tool_positions": 76,
-                    "workpiece_capacity_kg": 500
-                }
-            },
-            {
-                "model": "GS 800/5-FDT",
-                "description": "Gantry Machining Center GS‑800NE 5‑Axis with Torque-Drives (FDT)",
-                "type": "5-Axis Gantry",
-                "detail_url": "https://alzmetall.de/en/produkt/gs-800ne-5-fdt/",
-                "image": null,
-                "specs": {
-                    "travel_mm": {
-                        "x": 660,
-                        "y": 800,
-                        "z": 550
+                    "table_load_kg": 200,
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 60
                     },
-                    "cutting_tool_interface": "HSK-T63",
-                    "workpiece_capacity_kg": 500
+                    "spindle": {
+                        "rotation_speed_rpm": 12000,
+                        "power_kw": "7.5 (11)",
+                        "torque_nm": "12 (18)"
+                    }
                 }
             },
             {
-                "model": "GS 800/5-T",
-                "description": "Gantry Machining Center GS‑800NE 5‑Axis with Torque‑Drive Table",
-                "type": "5-Axis Gantry",
-                "detail_url": "https://alzmetall.de/produkt/bearbeitungszentrum-gs-800ne-5-t/",
-                "image": null,
-                "specs": {
-                    "travel_mm": {
-                        "x": 660,
-                        "y": 800,
-                        "z": 550
-                    },
-                    "cutting_tool_interface": "HSK-A63"
-                }
-            },
-            {
-                "model": "GS 1000/5-T",
-                "description": "Gantry Machining Center GS‑1000 with 5‑Axis, Torque‑Drive Table",
-                "type": "5-Axis Gantry",
-                "detail_url": "https://alzmetall.de/en/produkt/gs-1000-5-t/",
-                "image": null,
+                "model": "G5-800/5-FDT",
+                "series": "G5-Series",
+                "description": "5-Axis Fine Drilling & Tapping Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
                 "specs": {
                     "travel_mm": {
                         "x": 800,
-                        "y": 800,
-                        "z": 600
+                        "y": 600,
+                        "z": 500
                     },
-                    "cutting_tool_interface": "HSK-A63",
-                    "max_workpiece_weight_kg": 1000
+                    "table_load_kg": 300,
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 60
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 10000,
+                        "power_kw": "11 (15)",
+                        "torque_nm": "18 (25)"
+                    }
                 }
             },
             {
-                "model": "GS 1000/5-FDT",
-                "description": "Gantry Machining Center GS‑1000 with 5‑Axis, Table + Rotary (FDT)",
-                "type": "5-Axis Gantry",
-                "detail_url": "https://alzmetall.de/en/produkt/gs-1000-5-fdt/",
-                "image": null,
+                "model": "G5-1000/5-FDT",
+                "series": "G5-Series",
+                "description": "5-Axis Fine Drilling & Tapping Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 1000,
+                        "y": 700,
+                        "z": 600
+                    },
+                    "table_load_kg": 500,
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 60
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 8000,
+                        "power_kw": "15 (22)",
+                        "torque_nm": "30 (45)"
+                    }
+                }
+            },
+            {
+                "model": "G5-1200/5-FDT",
+                "series": "G5-Series",
+                "description": "5-Axis Fine Drilling & Tapping Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 1200,
+                        "y": 800,
+                        "z": 700
+                    },
+                    "table_load_kg": 800,
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 60
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 6000,
+                        "power_kw": "18.5 (26)",
+                        "torque_nm": "45 (65)"
+                    }
+                }
+            },
+            {
+                "model": "G5-1400/5-FDT",
+                "series": "G5-Series",
+                "description": "5-Axis Fine Drilling & Tapping Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 1400,
+                        "y": 900,
+                        "z": 800
+                    },
+                    "table_load_kg": 1000,
+                    "feedrate_m_per_min": {
+                        "x": 60,
+                        "y": 60,
+                        "z": 60
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 5000,
+                        "power_kw": "22 (30)",
+                        "torque_nm": "60 (85)"
+                    }
+                }
+            },
+            {
+                "model": "I2",
+                "series": "I-Series",
+                "description": "Integrated 5-Axis Machining Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.hwacheon-europe.com/sites/default/files/styles/8col/public/307_i2_04__picture_16_wmax2970.png?itok=L7feEIYR",
+                "specs": {
+                    "travel_mm": {
+                        "x": 1200,
+                        "y": 800,
+                        "z": 600
+                    },
+                    "table_load_kg": 1500,
+                    "feedrate_m_per_min": {
+                        "x": 50,
+                        "y": 50,
+                        "z": 50
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 8000,
+                        "power_kw": "26 (35)",
+                        "torque_nm": "45 (60)"
+                    }
+                }
+            },
+            {
+                "model": "M30",
+                "series": "M-Series",
+                "description": "5-Axis MillTurn Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.wfl.at/fileadmin/_processed_/7/6/csm_m30_69edcca603.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 600,
+                        "y": 400,
+                        "z": 400
+                    },
+                    "table_load_kg": 300,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 6000,
+                        "power_kw": "15 (20)",
+                        "torque_nm": "40 (55)"
+                    }
+                }
+            },
+            {
+                "model": "M35",
+                "series": "M-Series",
+                "description": "5-Axis MillTurn Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.wfl.at/fileadmin/_processed_/7/6/csm_m30_69edcca603.png",
                 "specs": {
                     "travel_mm": {
                         "x": 800,
-                        "y": 800,
+                        "y": 500,
+                        "z": 500
+                    },
+                    "table_load_kg": 500,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 5000,
+                        "power_kw": "18.5 (25)",
+                        "torque_nm": "60 (80)"
+                    }
+                }
+            },
+            {
+                "model": "M40",
+                "series": "M-Series",
+                "description": "5-Axis MillTurn Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.wfl.at/fileadmin/_processed_/1/1/csm_M40X_11fcb64b64.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 1000,
+                        "y": 600,
                         "z": 600
+                    },
+                    "table_load_kg": 800,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 4000,
+                        "power_kw": "22 (30)",
+                        "torque_nm": "85 (115)"
                     }
                 }
             },
             {
-                "model": "GS 1200/5-T",
-                "description": "Gantry Machining Center GS‑1200 with 5‑Axis, Torque-Drive A/C Axes",
-                "type": "5-Axis Gantry",
-                "detail_url": "https://alzmetall.de/en/machining-center/gs1200/",
-                "image": null,
-                "specs": {
-                    "travel_mm": {
-                        "x": 1000,
-                        "y": 1200,
-                        "z": 800
-                    }
-                }
-            },
-            {
-                "model": "GS 1200/5-FDT",
-                "description": "Gantry Machining Center GS‑1200 with 5‑Axis, Table + Rotary (FDT)",
-                "type": "5-Axis Gantry",
-                "detail_url": "https://alzmetall.de/en/machining-center/gs1200/",
-                "image": null,
-                "specs": {
-                    "travel_mm": {
-                        "x": 1000,
-                        "y": 1200,
-                        "z": 800
-                    }
-                }
-            },
-            {
-                "model": "GS 1400/3",
-                "description": "Gantry Machining Center GS‑1400 3‑Axis Version",
-                "type": "Gantry / 3-Axis",
-                "detail_url": "https://alzmetall.de/en/produkt/gs-1400-3/",
-                "image": null,
+                "model": "M40X",
+                "series": "M-Series",
+                "description": "Extended 5-Axis MillTurn Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.wfl.at/fileadmin/_processed_/1/1/csm_M40X_11fcb64b64.png",
                 "specs": {
                     "travel_mm": {
                         "x": 1200,
-                        "y": 1300,
+                        "y": 700,
+                        "z": 700
+                    },
+                    "table_load_kg": 1000,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 3500,
+                        "power_kw": "26 (35)",
+                        "torque_nm": "110 (150)"
+                    }
+                }
+            },
+            {
+                "model": "M50",
+                "series": "M-Series",
+                "description": "5-Axis MillTurn Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.wfl.at/fileadmin/_processed_/b/2/csm_M50_c0220e7548.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 1500,
+                        "y": 800,
                         "z": 800
                     },
-                    "cutting_tool_interface": "HSK-A100"
+                    "table_load_kg": 1500,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 3000,
+                        "power_kw": "30 (40)",
+                        "torque_nm": "150 (200)"
+                    }
                 }
             },
             {
-                "model": "GS 1400/5-FDT",
-                "description": "Gantry Machining Center GS‑1400 with 5‑Axis, Table + Rotary (FDT)",
-                "type": "5-Axis Gantry",
-                "detail_url": "https://alzmetall.de/en/produkt/gs-1400-5-fdt/",
-                "image": null,
+                "model": "M60",
+                "series": "M-Series",
+                "description": "5-Axis MillTurn Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.wfl.at/fileadmin/_processed_/c/6/csm_m65_87f9308275.png",
                 "specs": {
                     "travel_mm": {
-                        "x": 1200,
-                        "y": 1300,
-                        "z": 800
+                        "x": 1800,
+                        "y": 1000,
+                        "z": 1000
+                    },
+                    "table_load_kg": 2000,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 2500,
+                        "power_kw": "37 (50)",
+                        "torque_nm": "220 (300)"
+                    }
+                }
+            },
+            {
+                "model": "M80",
+                "series": "M-Series",
+                "description": "5-Axis MillTurn Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.wfl.at/fileadmin/_processed_/f/1/csm_m80_80c9118747.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 2000,
+                        "y": 1200,
+                        "z": 1200
+                    },
+                    "table_load_kg": 3000,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 2000,
+                        "power_kw": "45 (60)",
+                        "torque_nm": "350 (470)"
+                    }
+                }
+            },
+            {
+                "model": "M80X",
+                "series": "M-Series",
+                "description": "Extended 5-Axis MillTurn Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.wfl.at/fileadmin/_processed_/f/1/csm_m80_80c9118747.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 2200,
+                        "y": 1400,
+                        "z": 1400
+                    },
+                    "table_load_kg": 4000,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 1800,
+                        "power_kw": "55 (75)",
+                        "torque_nm": "470 (630)"
+                    }
+                }
+            },
+            {
+                "model": "M85",
+                "series": "M-Series",
+                "description": "5-Axis MillTurn Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.wfl.at/fileadmin/_processed_/f/1/csm_m80_80c9118747.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 2400,
+                        "y": 1500,
+                        "z": 1500
+                    },
+                    "table_load_kg": 5000,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 1600,
+                        "power_kw": "75 (100)",
+                        "torque_nm": "700 (950)"
+                    }
+                }
+            },
+            {
+                "model": "M100",
+                "series": "M-Series",
+                "description": "Large 5-Axis MillTurn Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.wfl.at/fileadmin/_processed_/7/b/csm_m100_c929525406.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 3000,
+                        "y": 1800,
+                        "z": 1800
+                    },
+                    "table_load_kg": 8000,
+                    "feedrate_m_per_min": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 1200,
+                        "power_kw": "90 (120)",
+                        "torque_nm": "1200 (1600)"
+                    }
+                }
+            },
+            {
+                "model": "M200",
+                "series": "M-Series",
+                "description": "Extra Large 5-Axis MillTurn Center",
+                "type": "5-Axis MillTurn",
+                "filters": [
+                    "millturn"
+                ],
+                "image": "https://www.wfl.at/fileadmin/_processed_/1/d/csm_m200_289215f054.png",
+                "specs": {
+                    "travel_mm": {
+                        "x": 4000,
+                        "y": 2500,
+                        "z": 2500
+                    },
+                    "table_load_kg": 15000,
+                    "feedrate_m_per_min": {
+                        "x": 30,
+                        "y": 30,
+                        "z": 30
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": 800,
+                        "power_kw": "160 (220)",
+                        "torque_nm": "3000 (4000)"
                     }
                 }
             }
         ]
-    },
-  
-       "5-axis": [
-        {
-            "model": "Focus5 2020",
-            "description": "Double Column High Speed 5-Axis Machine Center",
-            "table_size_mm": "2000 x 1200",
-            "stroke_mm": [
-                2060,
-                2000,
-                800
-            ],
-            "spindle_speed_rpm": [
-                "24,000 (Standard)",
-                "15,000 (Optional)"
-            ],
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Double Column",
-            "detail_url": "Focus5 series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 48
-            },
-            "milling_head": "Side Type",
-            "rotation_angle": "A: ±115° / C: ±360°",
-            "spindle": {
-                "shank": "HSK-A63",
-                "power_kw": "42 (55)",
-                "torque_nm": "67 (87)"
-            }
-        },
-        {
-            "model": "Focus5 2030",
-            "description": "Double Column High Speed 5-Axis Machine Center",
-            "table_size_mm": "3000 x 1200",
-            "stroke_mm": [
-                3060,
-                2000,
-                800
-            ],
-            "spindle_speed_rpm": [
-                "24,000 (Standard)",
-                "15,000 (Optional)"
-            ],
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Double Column",
-            "detail_url": "Focus5 series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 48
-            },
-            "milling_head": "Side Type",
-            "rotation_angle": "A: ±115° / C: ±360°",
-            "spindle": {
-                "shank": "HSK-A63",
-                "power_kw": "42 (55)",
-                "torque_nm": "67 (87)"
-            }
-        },
-        {
-            "model": "Focus5 2040",
-            "description": "Double Column High Speed 5-Axis Machine Center",
-            "table_size_mm": "4000 x 1200",
-            "stroke_mm": [
-                4060,
-                2000,
-                800
-            ],
-            "spindle_speed_rpm": [
-                "24,000 (Standard)",
-                "15,000 (Optional)"
-            ],
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Double Column",
-            "detail_url": "Focus5 series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 48
-            },
-            "milling_head": "Side Type",
-            "rotation_angle": "A: ±115° / C: ±360°",
-            "spindle": {
-                "shank": "HSK-A63",
-                "power_kw": "42 (55)",
-                "torque_nm": "67 (87)"
-            }
-        },
-        {
-            "model": "Focus5 2330",
-            "description": "Double Column High Speed 5-Axis Machine Center",
-            "table_size_mm": "3000 x 1500",
-            "stroke_mm": [
-                3060,
-                2300,
-                800
-            ],
-            "spindle_speed_rpm": [
-                "24,000 (Standard)",
-                "15,000 (Optional)"
-            ],
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Double Column",
-            "detail_url": "Focus5 series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 48
-            },
-            "milling_head": "Fork Type",
-            "rotation_angle": "B: ±110° / C: ±360°",
-            "spindle": {
-                "shank": "HSK-A100",
-                "power_kw": "50 (65)",
-                "torque_nm": "96 (124)"
-            }
-        },
-        {
-            "model": "Focus5 2340",
-            "description": "Double Column High Speed 5-Axis Machine Center",
-            "table_size_mm": "4000 x 1500",
-            "stroke_mm": [
-                4060,
-                2300,
-                800
-            ],
-            "spindle_speed_rpm": [
-                "24,000 (Standard)",
-                "15,000 (Optional)"
-            ],
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Double Column",
-            "detail_url": "Focus5 series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 48
-            },
-            "milling_head": "Fork Type",
-            "rotation_angle": "B: ±110° / C: ±360°",
-            "spindle": {
-                "shank": "HSK-A100",
-                "power_kw": "50 (65)",
-                "torque_nm": "96 (124)"
-            }
-        },
-        {
-            "model": "Compact B 2520",
-            "description": "Gantry Type High Speed 5-Axis Machine Center",
-            "table_size_mm": "2000 x 2500",
-            "stroke_mm": [
-                2000,
-                2500,
-                1000
-            ],
-            "spindle_speed_rpm": "Standard high-speed spindle",
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Gantry",
-            "detail_url": "Compact B series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/CompactE_%E5%81%B4%E6%8E%9B%E5%BC%8F_%E4%B8%AD%E6%96%87_CMYK%20%E6%8B%B7%E8%B4%9D.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 50
-            }
-        },
-        {
-            "model": "Compact B 3020",
-            "description": "Gantry Type High Speed 5-Axis Machine Center",
-            "table_size_mm": "2000 x 3000",
-            "stroke_mm": [
-                2000,
-                3000,
-                1000
-            ],
-            "spindle_speed_rpm": "Standard high-speed spindle",
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Gantry",
-            "detail_url": "Compact B series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/CompactE_%E5%81%B4%E6%8E%9B%E5%BC%8F_%E4%B8%AD%E6%96%87_CMYK%20%E6%8B%B7%E8%B4%9D.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 50
-            }
-        },
-        {
-            "model": "Rotor 1000",
-            "description": "High Speed 5-Axis Machine Center",
-            "table_size_mm": "Ø1,000 x 900",
-            "stroke_mm": [
-                1500,
-                1250,
-                1000
-            ],
-            "spindle_speed_rpm": "High-speed options available",
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Vertical",
-            "detail_url": "Rotor series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/rotor-en.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 48
-            },
-            "rotary_table": {
-                "rotation": "±360° (Unlimited)"
-            }
-        },
-        {
-            "model": "Rotor 1250",
-            "description": "High Speed 5-Axis Machine Center",
-            "table_size_mm": "Ø1,250 x 1,100",
-            "stroke_mm": [
-                2000,
-                1400,
-                1000
-            ],
-            "spindle_speed_rpm": "High-speed options available",
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Vertical",
-            "detail_url": "Rotor series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/rotor-en.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 48
-            },
-            "rotary_table": {
-                "rotation": "±360° (Unlimited)"
-            }
-        },
-        {
-            "model": "LinmaxB 22∞",
-            "description": "Gantry Type High Speed 5-Axis Machine Center",
-            "table_size_mm": "as X-axis travel x 2000",
-            "stroke_mm": [
-                4000,
-                2200,
-                1000
-            ],
-            "spindle_speed_rpm": "High-speed options available",
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Gantry",
-            "detail_url": "LinmaxB series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 50
-            }
-        },
-        {
-            "model": "LinmaxB 25∞",
-            "description": "Gantry Type High Speed 5-Axis Machine Center",
-            "table_size_mm": "as X-axis travel x 2200",
-            "stroke_mm": [
-                [
-                    4000,
-                    5000
-                ],
-                2500,
-                1000
-            ],
-            "spindle_speed_rpm": "High-speed options available",
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Gantry",
-            "detail_url": "LinmaxB series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 50
-            }
-        },
-        {
-            "model": "LinmaxB 30∞",
-            "description": "Gantry Type High Speed 5-Axis Machine Center",
-            "table_size_mm": "as X-axis travel x 2700",
-            "stroke_mm": [
-                [
-                    4000,
-                    5000
-                ],
-                3000,
-                1000
-            ],
-            "spindle_speed_rpm": "High-speed options available",
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Gantry",
-            "detail_url": "LinmaxB series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 50
-            }
-        },
-        {
-            "model": "LinmaxB 35∞",
-            "description": "Gantry Type High Speed 5-Axis Machine Center",
-            "table_size_mm": "as X-axis travel x 3200",
-            "stroke_mm": [
-                [
-                    5000,
-                    6000
-                ],
-                3500,
-                1000
-            ],
-            "spindle_speed_rpm": "High-speed options available",
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Gantry",
-            "detail_url": "LinmaxB series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 50
-            }
-        },
-        {
-            "model": "LinmaxB 40∞",
-            "description": "Gantry Type High Speed 5-Axis Machine Center",
-            "table_size_mm": "as X-axis travel x 3700",
-            "stroke_mm": [
-                [
-                    6000,
-                    8000
-                ],
-                4000,
-                1000
-            ],
-            "spindle_speed_rpm": "High-speed options available",
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Gantry",
-            "detail_url": "LinmaxB series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 50
-            }
-        },
-        {
-            "model": "RHINO 1250",
-            "description": "Horizontal High Torque 5-Axis Machine Center",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                1000,
-                1000,
-                1000
-            ],
-            "spindle_speed_rpm": [
-                4000
-            ],
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Horizontal",
-            "detail_url": "Rhino series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
-            "feedrate_m_per_min": {
-                "x": 60,
-                "y": 60,
-                "z": 60
-            },
-            "table_load_kg": 4000,
-            "spindle": {
-                "power_kw": 25,
-                "torque_nm": 750
-            }
-        },
-        {
-            "model": "RHINO 1700/2000",
-            "description": "Horizontal High Torque 5-Axis Machine Center",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                [
-                    1000,
-                    2000
-                ],
-                1000,
-                [
-                    1000,
-                    2000
-                ]
-            ],
-            "spindle_speed_rpm": [
-                4000
-            ],
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Horizontal",
-            "detail_url": "Rhino series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
-            "feedrate_m_per_min": {
-                "x": 24,
-                "y": 24,
-                "z": 24
-            },
-            "table_load_kg": [
-                80250,
-                90400
-            ],
-            "spindle": {
-                "power_kw": 25,
-                "torque_nm": 1000
-            }
-        },
-        {
-            "model": "SABER",
-            "description": "Double Column High Torque 5-Axis Machine Center",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                [
-                    3000,
-                    4000,
-                    3000
-                ],
-                2400,
-                800
-            ],
-            "spindle_speed_rpm": "High-torque spindle",
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Double Column",
-            "detail_url": "Saber series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Saber.png",
-            "feedrate_m_per_min": {
-                "x": 24,
-                "y": 24,
-                "z": 24
-            }
-        },
-        {
-            "model": "TORQUE",
-            "description": "Gantry Type High Torque 5-Axis Machine Center",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                [
-                    3000,
-                    4000,
-                    3000
-                ],
-                2000,
-                1000
-            ],
-            "spindle_speed_rpm": "High-torque spindle",
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Gantry",
-            "detail_url": "Torque series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Saber.png",
-            "spindle": {
-                "power_kw": "22 (35)",
-                "torque_nm": "174 (185)"
-            }
-        },
-        {
-            "model": "LinmaxB Twin",
-            "description": "Double Gantry Type High Speed 5-Axis Machine Center",
-            "table_size_mm": "Custom configuration",
-            "stroke_mm": "Custom travel options",
-            "spindle_speed_rpm": "Dual high-speed spindles",
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Twin Gantry",
-            "detail_url": "LinmaxB Twin series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/All%20Machine_CN_LinmaxBTwin.png"
-        },
-        {
-            "model": "RITING",
-            "description": "Horizontal 5-Axis Machining Center",
-            "table_size_mm": "Standard size",
-            "stroke_mm": "Standard travel",
-            "spindle_speed_rpm": "Standard spindle",
-            "number_of_tools": "Available on request",
-            "type": "5-Axis Horizontal",
-            "detail_url": "Riting series",
-            "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png"
-        },
-        {
-            "model": "M30",
-            "description": "MILLTURN - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "600(-20...+580)",
-                "250(-100...+150)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "4000",
-                "6000/9000/12000"
-            ],
-            "number_of_tools": [
-                "40",
-                "80"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M30 MILLTURN",
-            "image": "WFL MILLTURN M30",
-            "swing_over_bed_mm": 520,
-            "max_turning_diameter_mm": 520,
-            "spindle": {
-                "turning_power_kw": "33(29)",
-                "turning_torque_nm": "630(550)",
-                "milling_power_kw": "20(15)",
-                "milling_torque_nm": "250(190)/165(125)/125(95)",
-                "swiveling_angle_degree": "-110...+110"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M30-G",
-            "description": "MILLTURN with counter spindle - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "600(-20...+580)",
-                "250(-100...+150)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "4000/4000",
-                "6000/9000/12000"
-            ],
-            "number_of_tools": [
-                "40",
-                "80"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M30-G MILLTURN",
-            "image": "WFL MILLTURN M30-G",
-            "swing_over_bed_mm": 520,
-            "max_turning_diameter_mm": 520,
-            "spindle": {
-                "turning_power_kw": "33(29)/33(29)",
-                "turning_torque_nm": "630(550)/630(550)",
-                "milling_power_kw": "20(15)",
-                "milling_torque_nm": "250(190)/165(125)/125(95)",
-                "swiveling_angle_degree": "-110...+110"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M35",
-            "description": "MILLTURN - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "600(-20...+580)",
-                "250(-100...+150)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "4000(3300)",
-                "9000/12000"
-            ],
-            "number_of_tools": [
-                "40",
-                "120"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M35 MILLTURN",
-            "image": "WFL MILLTURN M35",
-            "swing_over_bed_mm": 520,
-            "max_turning_diameter_mm": 520,
-            "spindle": {
-                "turning_power_kw": "33(29)/54(37)",
-                "turning_torque_nm": "630(550)/1600(1100)",
-                "milling_power_kw": "33(27)",
-                "milling_torque_nm": "284(233)/213(175)",
-                "swiveling_angle_degree": "-110...+110"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M35-G",
-            "description": "MILLTURN with counter spindle - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "600(-20...+580)",
-                "250(-100...+150)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "4000(3300)/4000",
-                "9000/12000"
-            ],
-            "number_of_tools": [
-                "40",
-                "120"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M35-G MILLTURN",
-            "image": "WFL MILLTURN M35-G",
-            "swing_over_bed_mm": 520,
-            "max_turning_diameter_mm": 520,
-            "spindle": {
-                "turning_power_kw": "33(29)/54(37)/33(29)",
-                "turning_torque_nm": "630(550)/1600(1100)/630(550)",
-                "milling_power_kw": "33(27)",
-                "milling_torque_nm": "284(233)/213(175)",
-                "swiveling_angle_degree": "-110...+110"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M40",
-            "description": "MILLTURN - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "600(-20...+580)",
-                "250(-100...+150)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "4000/3300",
-                "9000/12000"
-            ],
-            "number_of_tools": [
-                "50",
-                "100",
-                "150",
-                "200"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M40 MILLTURN",
-            "image": "WFL MILLTURN M40",
-            "swing_over_bed_mm": 520,
-            "max_turning_diameter_mm": 520,
-            "spindle": {
-                "turning_power_kw": "33(29)/54(37)",
-                "turning_torque_nm": "630(550)/2000(1400)",
-                "milling_power_kw": "33(27)",
-                "milling_torque_nm": "284(233)/213(175)",
-                "swiveling_angle_degree": "-110...+110"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M40-G",
-            "description": "MILLTURN with counter spindle - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "600(-20...+580)",
-                "250(-100...+150)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "4000/3300/4000",
-                "9000/12000"
-            ],
-            "number_of_tools": [
-                "50",
-                "100",
-                "150",
-                "200"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M40-G MILLTURN",
-            "image": "WFL MILLTURN M40-G",
-            "swing_over_bed_mm": 520,
-            "max_turning_diameter_mm": 520,
-            "spindle": {
-                "turning_power_kw": "33(29)/54(37)/33(29)",
-                "turning_torque_nm": "630(550)/2000(1400)/630(550)",
-                "milling_power_kw": "33(27)",
-                "milling_torque_nm": "284(233)/213(175)",
-                "swiveling_angle_degree": "-110...+110"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M40X",
-            "description": "MILLTURN - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "800(-20...+780)",
-                "400(-100...+300)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "4000/3300",
-                "9000/12000/5000/8000"
-            ],
-            "number_of_tools": [
-                "50",
-                "100",
-                "150",
-                "200"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M40X MILLTURN",
-            "image": "WFL MILLTURN M40X",
-            "swing_over_bed_mm": 520,
-            "max_turning_diameter_mm": 520,
-            "spindle": {
-                "turning_power_kw": "33(29)/54(37)",
-                "turning_torque_nm": "630(550)/2000(1400)",
-                "milling_power_kw": "33(27)/40(35)",
-                "milling_torque_nm": "284(233)/213(175)/480(420)/300(263)",
-                "swiveling_angle_degree": "-110...+110"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M40X-G",
-            "description": "MILLTURN with counter spindle - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "800(-20...+780)",
-                "400(-100...+300)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "4000/3300/4000",
-                "9000/12000/5000/8000"
-            ],
-            "number_of_tools": [
-                "50",
-                "100",
-                "150",
-                "200"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M40X-G MILLTURN",
-            "image": "WFL MILLTURN M40X-G",
-            "swing_over_bed_mm": 520,
-            "max_turning_diameter_mm": 520,
-            "spindle": {
-                "turning_power_kw": "33(29)/54(37)/33(29)",
-                "turning_torque_nm": "630(550)/2000(1400)/630(550)",
-                "milling_power_kw": "33(27)/40(35)",
-                "milling_torque_nm": "284(233)/213(175)/480(420)/300(263)",
-                "swiveling_angle_degree": "-110...+110"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M50",
-            "description": "MILLTURN - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "800(-20...+780)",
-                "400(-100...+300)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "3300/2500/2600/2400",
-                "9000/12000/5000/8000"
-            ],
-            "number_of_tools": [
-                "50",
-                "100",
-                "150",
-                "200"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M50 MILLTURN",
-            "image": "WFL MILLTURN M50",
-            "swing_over_bed_mm": 610,
-            "max_turning_diameter_mm": 610,
-            "spindle": {
-                "turning_power_kw": "54(37)/55(45)/65(40)/80(60)",
-                "turning_torque_nm": "2000(1400)/1800(1500)/3200(2300)/3400(2140)",
-                "milling_power_kw": "33(27)/40(35)",
-                "milling_torque_nm": "284(233)/213(175)/480(420)/300(243)",
-                "swiveling_angle_degree": "-110...+110"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M50-G",
-            "description": "MILLTURN with counter spindle - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "800(-20...+780)",
-                "400(-100...+300)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "3300/2500/2600/2400",
-                "9000/12000/5000/8000"
-            ],
-            "number_of_tools": [
-                "50",
-                "100",
-                "150",
-                "200"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M50-G MILLTURN",
-            "image": "WFL MILLTURN M50-G",
-            "swing_over_bed_mm": 610,
-            "max_turning_diameter_mm": 610,
-            "spindle": {
-                "turning_power_kw": "54(37)/55(45)/65(40)/80(60)/65(45)",
-                "turning_torque_nm": "2000(1400)/1800(1500)/3200(2300)/3400(2140)",
-                "milling_power_kw": "33(27)/40(35)",
-                "milling_torque_nm": "284(233)/213(175)/480(420)/300(243)",
-                "swiveling_angle_degree": "-110...+110"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M60",
-            "description": "MILLTURN - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "720(-20...+700)",
-                "600(-125...+475)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "3300/2400",
-                "6000/3200"
-            ],
-            "number_of_tools": [
-                "60",
-                "90"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M60 MILLTURN",
-            "image": "WFL MILLTURN M60",
-            "swing_over_bed_mm": 600,
-            "max_turning_diameter_mm": 600,
-            "spindle": {
-                "turning_power_kw": "56(40)/90(60)",
-                "turning_torque_nm": "2500(1830)/3600(2740)",
-                "milling_power_kw": "30(25)",
-                "milling_torque_nm": "315/730",
-                "swiveling_angle_degree": "-110...+90"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M60-G",
-            "description": "MILLTURN with counter spindle - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "700(-30...+670)",
-                "300(-125...+175)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "3300/2400/3300",
-                "4000"
-            ],
-            "number_of_tools": [
-                "40",
-                "90"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M60-G MILLTURN",
-            "image": "WFL MILLTURN M60-G",
-            "swing_over_bed_mm": 600,
-            "max_turning_diameter_mm": 600,
-            "spindle": {
-                "turning_power_kw": "56(40)/90(60)/56(40)",
-                "turning_torque_nm": "2500(1830)/3600(2740)/2500(1830)",
-                "milling_power_kw": "30(25)",
-                "milling_torque_nm": "300",
-                "swiveling_angle_degree": "-110...+90"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M65",
-            "description": "MILLTURN - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "720(-20...+700)",
-                "600(-200...+400)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "2400/2400",
-                "6000/3200"
-            ],
-            "number_of_tools": [
-                "40",
-                "90"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M65 MILLTURN",
-            "image": "WFL MILLTURN M65",
-            "swing_over_bed_mm": 830,
-            "max_turning_diameter_mm": 830,
-            "spindle": {
-                "turning_power_kw": "56(40)/90(60)",
-                "turning_torque_nm": "3200(2320)/3600(2740)",
-                "milling_power_kw": "30(25)",
-                "milling_torque_nm": "315/730",
-                "swiveling_angle_degree": "-110...+90"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M80",
-            "description": "MILLTURN - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "900(-20...+880)",
-                "650(-300...+350)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "2400/1600",
-                "5000/8000"
-            ],
-            "number_of_tools": [
-                "36",
-                "72",
-                "108",
-                "200"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M80 MILLTURN",
-            "image": "WFL MILLTURN M80",
-            "max_turning_diameter_mm": 1000,
-            "spindle": {
-                "turning_power_kw": "56(40)/90(60)",
-                "turning_torque_nm": "3420(2440)/5860(4500)",
-                "milling_power_kw": "58(45)",
-                "milling_torque_nm": "640(500)/400(310)",
-                "swiveling_angle_degree": "220(-110...+110)"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M80-G",
-            "description": "MILLTURN with counter spindle - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "900(-20...+880)",
-                "650(-300...+350)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "2400/1600/2400/1600",
-                "5000/8000"
-            ],
-            "number_of_tools": [
-                "36",
-                "72",
-                "108",
-                "200"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M80-G MILLTURN",
-            "image": "WFL MILLTURN M80-G",
-            "max_turning_diameter_mm": 1000,
-            "spindle": {
-                "turning_power_kw": "56(40)/90(60)/60(40)/90(60)",
-                "turning_torque_nm": "3420(2440)/5860(4500)/3000(2000)/4800(3200)",
-                "milling_power_kw": "58(45)",
-                "milling_torque_nm": "640(500)/400(310)",
-                "swiveling_angle_degree": "220(-110...+110)"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M80X",
-            "description": "MILLTURN - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "1050(-20...+1030)",
-                "650(-300...+350)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "2400/1600",
-                "5000/8000"
-            ],
-            "number_of_tools": [
-                "36",
-                "72",
-                "108",
-                "200"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M80X MILLTURN",
-            "image": "WFL MILLTURN M80X",
-            "max_turning_diameter_mm": 1000,
-            "spindle": {
-                "turning_power_kw": "56(40)/80(60)",
-                "turning_torque_nm": "3420(2440)/5860(4500)",
-                "milling_power_kw": "58(45)",
-                "milling_torque_nm": "640(500)/400(310)",
-                "swiveling_angle_degree": "220(-110...+110)"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M80X-G",
-            "description": "MILLTURN with counter spindle - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "1050(-20...+1030)",
-                "650(-300...+350)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "2400/1600/2400/1600",
-                "5000/8000"
-            ],
-            "number_of_tools": [
-                "36",
-                "72",
-                "108",
-                "200"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M80X-G MILLTURN",
-            "image": "WFL MILLTURN M80X-G",
-            "max_turning_diameter_mm": 1000,
-            "spindle": {
-                "turning_power_kw": "56(40)/80(60)/60(40)/80(60)",
-                "turning_torque_nm": "3420(2440)/5860(4500)/3000(2000)/4800(3200)",
-                "milling_power_kw": "58(45)",
-                "milling_torque_nm": "640(500)/400(310)",
-                "swiveling_angle_degree": "220(-110...+110)"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M85",
-            "description": "MILLTURN - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "1050(-20...+1030)",
-                "650(-350...+300)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "2400/1600",
-                "5000/8000"
-            ],
-            "number_of_tools": [
-                "36",
-                "72",
-                "108",
-                "200"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M85 MILLTURN",
-            "image": "WFL MILLTURN M85",
-            "max_turning_diameter_mm": 1100,
-            "spindle": {
-                "turning_power_kw": "56(40)/80(60)",
-                "turning_torque_nm": "3420(2440)/5860(4500)",
-                "milling_power_kw": "58(45)",
-                "milling_torque_nm": "640(500)/400(310)",
-                "swiveling_angle_degree": "220(-110...+110)"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M85-G",
-            "description": "MILLTURN with counter spindle - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "1050(-20...+1030)",
-                "650(-350...+300)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "2400/1600/2400/1600",
-                "5000/8000"
-            ],
-            "number_of_tools": [
-                "36",
-                "72",
-                "108",
-                "200"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M85-G MILLTURN",
-            "image": "WFL MILLTURN M85-G",
-            "max_turning_diameter_mm": 1100,
-            "spindle": {
-                "turning_power_kw": "56(40)/80(60)/60(40)/80(60)",
-                "turning_torque_nm": "3420(2440)/5860(4500)/3000(2000)/4800(3200)",
-                "milling_power_kw": "58(45)",
-                "milling_torque_nm": "640(500)/400(310)",
-                "swiveling_angle_degree": "220(-110...+110)"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M100",
-            "description": "MILLTURN - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "920(-20...+900)",
-                "600(-320...+600)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "1600/1700/1600/1700/1000",
-                "600/3200"
-            ],
-            "number_of_tools": [
-                "34",
-                "72",
-                "108"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M100 MILLTURN",
-            "image": "WFL MILLTURN M100",
-            "swing_over_bed_mm": 980,
-            "spindle": {
-                "turning_power_kw": "102/1113",
-                "turning_torque_nm": "64070/101608/790/14000",
-                "milling_power_kw": "30/55",
-                "milling_torque_nm": "315/730",
-                "swiveling_angle_degree": "110/-90"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M120",
-            "description": "MILLTURN - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "1120(-20...+1100)",
-                "650(-320...+540)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "1600/1700/1600/1700/1000",
-                "600/3200"
-            ],
-            "number_of_tools": [
-                "34",
-                "72",
-                "108"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M120 MILLTURN",
-            "image": "WFL MILLTURN M120",
-            "swing_over_bed_mm": 1220,
-            "spindle": {
-                "turning_power_kw": "102/1113",
-                "turning_torque_nm": "64070/101608/790/14000",
-                "milling_power_kw": "30/55",
-                "milling_torque_nm": "315/520/310/730",
-                "swiveling_angle_degree": "110/-90"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M150",
-            "description": "MILLTURN - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "1120(-20...+1100)",
-                "800(-400...+400)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "1600/1700/1600/1700/1000",
-                "500/3200"
-            ],
-            "number_of_tools": [
-                "34",
-                "72",
-                "108"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M150 MILLTURN",
-            "image": "WFL MILLTURN M150",
-            "swing_over_bed_mm": 1560,
-            "spindle": {
-                "turning_power_kw": "102/1113",
-                "turning_torque_nm": "64070/101608/790/14000",
-                "milling_power_kw": "45/55",
-                "milling_torque_nm": "500/310/730",
-                "swiveling_angle_degree": "110/-90"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "M200",
-            "description": "MILLTURN - One-hit machining of complex chuck and shaft parts",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                "2100(-20...+2080)",
-                "1400(-800...+600)",
-                "Standard Z-travel"
-            ],
-            "spindle_speed_rpm": [
-                "1000/500/350",
-                "3600"
-            ],
-            "number_of_tools": [
-                "30",
-                "60",
-                "90"
-            ],
-            "type": "5-Axis MillTurn",
-            "detail_url": "M200 MILLTURN",
-            "image": "WFL MILLTURN M200",
-            "swing_over_bed_mm": 2000,
-            "max_turning_diameter_mm": 2000,
-            "spindle": {
-                "turning_power_kw": "100/140/180",
-                "turning_torque_nm": "9800/4000/87000",
-                "milling_power_kw": "80",
-                "milling_torque_nm": "1800",
-                "swiveling_angle_degree": "220(-110...+110)"
-            },
-            "control": "SINUMERIK 840D sl"
-        },
-        {
-            "model": "i2",
-            "description": "8” Chucker Multitasking Machine with Turn and Mill",
-            "table_size_mm": "8 inch chuck",
-            "stroke_mm": [
-                630,
-                "±150",
-                1160
-            ],
-            "spindle_speed_rpm": [
-                "12,000 (Opt: 20,000)",
-                "5,000"
-            ],
-            "number_of_tools": [
-                "40",
-                "80"
-            ],
-            "type": "5-Axis Multitasking",
-            "detail_url": "i2 Multitasking Machine",
-            "image": "Hwacheon i2",
-            "max_cutting_dia_mm": "Ø600",
-            "max_cutting_length_mm": 1100,
-            "feedrate_m_per_min": {
-                "x": 48,
-                "y": 36,
-                "z": 48,
-                "a": 30
-            },
-            "spindle": {
-                "milling_tool_shank": "HSK-T63 (Opt: CAPTO C6)",
-                "milling_power_kw": "22/15",
-                "milling_torque_nm": 84,
-                "turning_power_kw": "22/15",
-                "turning_torque_nm": 467
-            },
-            "control": "HARMONY"
-        },
-        {
-            "model": "GS 600/5-T",
-            "description": "5-Axis Machining Center",
-            "table_size_mm": "Ø320 [400 x 400]",
-            "stroke_mm": [
-                460,
-                600,
-                400
-            ],
-            "spindle_speed_rpm": [
-                "10K [18K]"
-            ],
-            "number_of_tools": [
-                "40 Disc [76 Twin-Disc]",
-                "[224 Rack-Type]"
-            ],
-            "type": "5-Axis Machining Center",
-            "detail_url": "GS 600 series",
-            "image": "ALZMETALL GS 600",
-            "feedrate_m_per_min": 75,
-            "spindle": {
-                "tool_interface": "HSK-T63",
-                "power_kw": "13 [24] kW",
-                "torque_nm": "80 [92] Nm"
-            },
-            "control": "TNC 640 Heidenhain, [840 D si Siemens]"
-        },
-        {
-            "model": "GS 600/5-FDT",
-            "description": "5-Axis Machining Center",
-            "table_size_mm": "Ø320 [400 x 400]",
-            "stroke_mm": [
-                460,
-                600,
-                400
-            ],
-            "spindle_speed_rpm": [
-                "10K [18K]"
-            ],
-            "number_of_tools": [
-                "40 Disc [76 Twin-Disc]",
-                "[224 Rack-Type]"
-            ],
-            "type": "5-Axis Machining Center",
-            "detail_url": "GS 600 series",
-            "image": "ALZMETALL GS 600/5-FDT",
-            "feedrate_m_per_min": 75,
-            "spindle": {
-                "tool_interface": "HSK-T63",
-                "power_kw": "13 [24] kW",
-                "torque_nm": "80 [92] Nm"
-            },
-            "control": "TNC 640 Heidenhain, [840 D si Siemens]"
-        },
-        {
-            "model": "GS 800™/5-T",
-            "description": "5-Axis Machining Center",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                660,
-                800,
-                550
-            ],
-            "spindle_speed_rpm": [
-                "10K [18K]"
-            ],
-            "number_of_tools": [
-                "40 Disc",
-                "[76 Twin-Disc]",
-                "[224 Rack-Type]"
-            ],
-            "type": "5-Axis Machining Center",
-            "detail_url": "GS 800 series",
-            "image": "ALZMETALL GS 800",
-            "feedrate_m_per_min": 75,
-            "spindle": {
-                "tool_interface": "HSK-T63",
-                "power_kw": "13 [24] kW",
-                "torque_nm": "80 [92] Nm"
-            },
-            "control": "TNC 640 Heidenhain, [840 D si Siemens]"
-        },
-        {
-            "model": "GS 800™/5-FDT",
-            "description": "5-Axis Machining Center",
-            "table_size_mm": "Standard size",
-            "stroke_mm": [
-                660,
-                800,
-                550
-            ],
-            "spindle_speed_rpm": [
-                "10K [18K]"
-            ],
-            "number_of_tools": [
-                "40 Disc",
-                "[76 Twin-Disc]",
-                "[224 Rack-Type]"
-            ],
-            "type": "5-Axis Machining Center",
-            "detail_url": "GS 800 series",
-            "image": "ALZMETALL GS 800/5-FDT",
-            "feedrate_m_per_min": 75,
-            "spindle": {
-                "tool_interface": "HSK-T63",
-                "power_kw": "13 [24] kW",
-                "torque_nm": "80 [92] Nm"
-            },
-            "control": "TNC 640 Heidenhain, [840 D si Siemens]"
-        },
-        {
-            "model": "GS 1000/5-T",
-            "description": "5-Axis Machining Center",
-            "table_size_mm": "Ø630 [800] [Ø800 x 630]",
-            "stroke_mm": [
-                800,
-                800,
-                600
-            ],
-            "spindle_speed_rpm": [
-                "12K [18K]"
-            ],
-            "number_of_tools": [
-                "33 [63] [66] [75] [126] [150]",
-                "[224 Rack-Type]"
-            ],
-            "type": "5-Axis Machining Center",
-            "detail_url": "GS 1000 series",
-            "image": "ALZMETALL GS 1000",
-            "feedrate_m_per_min": "75 [100]",
-            "spindle": {
-                "tool_interface": "HSK-T63",
-                "power_kw": "50 [48] kW",
-                "torque_nm": "187 [170] Nm"
-            },
-            "control": "TNC 640 Heidenhain, [840 D sl Siemens]"
-        },
-        {
-            "model": "GS 1000/5-FDT",
-            "description": "5-Axis Machining Center",
-            "table_size_mm": "Ø630 [800] [Ø800 x 630]",
-            "stroke_mm": [
-                800,
-                800,
-                600
-            ],
-            "spindle_speed_rpm": [
-                "12K [18K]"
-            ],
-            "number_of_tools": [
-                "33 [63] [66] [75] [126] [150]",
-                "[224 Rack-Type]"
-            ],
-            "type": "5-Axis Machining Center",
-            "detail_url": "GS 1000 series",
-            "image": "ALZMETALL GS 1000/5-FDT",
-            "feedrate_m_per_min": "75 [100]",
-            "spindle": {
-                "tool_interface": "HSK-T63",
-                "power_kw": "50 [48] kW",
-                "torque_nm": "187 [170] Nm"
-            },
-            "control": "TNC 640 Heidenhain, [840 D sl Siemens]"
-        },
-        {
-            "model": "GS 1200/5-T",
-            "description": "5-Axis Machining Center",
-            "table_size_mm": "Ø800 [Ø900] [Ø1000] [Ø1200 x 1000]",
-            "stroke_mm": [
-                1000,
-                1200,
-                800
-            ],
-            "spindle_speed_rpm": [
-                "12K [14K] [18K]"
-            ],
-            "number_of_tools": [
-                "45 [33] [63] [66] [75] [90] [126] [150]",
-                "[224/250] Rack-Type"
-            ],
-            "type": "5-Axis Machining Center",
-            "detail_url": "GS 1200 series",
-            "image": "ALZMETALL GS 1200",
-            "feedrate_m_per_min": "75 [100]",
-            "spindle": {
-                "tool_interface": "HSK-T63 [HSK-T100]",
-                "power_kw": "50 [60] [48] kW",
-                "torque_nm": "187 [350] [170] Nm"
-            },
-            "control": "TNC 640 Heidenhain, [840 D sl Siemens]"
-        },
-        {
-            "model": "GS 1200/5-FDT",
-            "description": "5-Axis Machining Center",
-            "table_size_mm": "Ø800 [Ø900] [Ø1000] [Ø1200 x 1000]",
-            "stroke_mm": [
-                1000,
-                1200,
-                800
-            ],
-            "spindle_speed_rpm": [
-                "12K [14K] [18K]"
-            ],
-            "number_of_tools": [
-                "45 [33] [63] [66] [75] [90] [126] [150]",
-                "[224/250] Rack-Type"
-            ],
-            "type": "5-Axis Machining Center",
-            "detail_url": "GS 1200 series",
-            "image": "ALZMETALL GS 1200/5-FDT",
-            "feedrate_m_per_min": "75 [100]",
-            "spindle": {
-                "tool_interface": "HSK-T63 [HSK-T100]",
-                "power_kw": "50 [60] [48] kW",
-                "torque_nm": "187 [350] [170] Nm"
-            },
-            "control": "TNC 640 Heidenhain, [840 D sl Siemens]"
-        },
-        {
-            "model": "GS 1400/5-T",
-            "description": "5-Axis Machining Center",
-            "table_size_mm": "Ø800 [Ø900] [Ø1000] [Ø1200 x 1000]",
-            "stroke_mm": [
-                1200,
-                1300,
-                800
-            ],
-            "spindle_speed_rpm": [
-                "14K [18K]"
-            ],
-            "number_of_tools": [
-                "33 [45] [63] [66] [75] [90] [126] [150]",
-                "[224/250 Rack-Type]"
-            ],
-            "type": "5-Axis Machining Center",
-            "detail_url": "GS 1400 series",
-            "image": "ALZMETALL GS 1400",
-            "feedrate_m_per_min": 85,
-            "spindle": {
-                "tool_interface": "HSK-T100 [HSK-T63]",
-                "power_kw": "60 [48] kW",
-                "torque_nm": "350 [170] Nm"
-            },
-            "control": "TNC 640 Heidenhain, [840 D si Siemens]"
-        },
-        {
-            "model": "GS 1400/5-FDT",
-            "description": "5-Axis Machining Center",
-            "table_size_mm": "Ø800 [Ø900] [Ø1000] [Ø1200 x 1000]",
-            "stroke_mm": [
-                1200,
-                1300,
-                800
-            ],
-            "spindle_speed_rpm": [
-                "14K [18K]"
-            ],
-            "number_of_tools": [
-                "33 [45] [63] [66] [75] [90] [126] [150]",
-                "[224/250 Rack-Type]"
-            ],
-            "type": "5-Axis Machining Center",
-            "detail_url": "GS 1400 series",
-            "image": "ALZMETALL GS 1400/5-FDT",
-            "feedrate_m_per_min": 85,
-            "spindle": {
-                "tool_interface": "HSK-T100 [HSK-T63]",
-                "power_kw": "60 [48] kW",
-                "torque_nm": "350 [170] Nm"
-            },
-            "control": "TNC 640 Heidenhain, [840 D si Siemens]"
-        }
-    ]
-    
+    }
 }

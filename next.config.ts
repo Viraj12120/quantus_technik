@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
 			{
 				protocol: "https",
 				hostname: "www.grobgroup.com",
+				pathname: "/**",
 			},
 			{ protocol: "https", hostname: "www.jtekt.co.jp" },
 			{

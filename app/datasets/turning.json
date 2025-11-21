@@ -5,12 +5,12 @@
         "products": [
             {
                 "model": "CUTEX-160",
-                "description": "6\" / 32\"  Horizontal Turning Range",
+                "description": "6\" / 8\"  Horizontal Turning Range",
                 "chuck_size_inch": [
                     6,
                     8
                 ],
-                "max_turning_diameter_mm": 300,
+                "max_turning_diameter_mm": "260/300",
                 "max_turning_length_mm": 300,
                 "spindle_speed_rpm": [
                     6000,
@@ -508,6 +508,29 @@
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-650"
             },
             {
+                "model": "VT-650Y",
+                "description": "Heavy Duty Vertical Turning Center with Y-Axis",
+                "max_turning_diameter_mm": 800,
+                "chuck_diameter_mm": 450,
+                "chuck_size_inch": 18,
+                "max_cutting_height_mm": 700,
+                "spindle_speed_rpm": [
+                    800,
+                    1000
+                ],
+                "spindle_motor_kw": [
+                    37,
+                    30
+                ],
+                "number_of_tools": 12,
+                "stroke_x_mm": 500,
+                "stroke_y_mm": 200,
+                "stroke_z_mm": 750,
+                "y_axis": true,
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210218042643.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-650Y"
+            },
+            {
                 "model": "VT-950+",
                 "description": "Heavy Duty Vertical Turning Center",
                 "max_turning_diameter_mm": 950,
@@ -536,29 +559,7 @@
                 "image": "https://hwacheonasia.com/wp-content/uploads/2021/10/VT-950-510x478.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-950+"
             },
-            {
-                "model": "VT-650Y",
-                "description": "Heavy Duty Vertical Turning Center with Y-Axis",
-                "max_turning_diameter_mm": 800,
-                "chuck_diameter_mm": 450,
-                "chuck_size_inch": 18,
-                "max_cutting_height_mm": 700,
-                "spindle_speed_rpm": [
-                    800,
-                    1000
-                ],
-                "spindle_motor_kw": [
-                    37,
-                    30
-                ],
-                "number_of_tools": 12,
-                "stroke_x_mm": 500,
-                "stroke_y_mm": 200,
-                "stroke_z_mm": 750,
-                "y_axis": true,
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210218042643.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-650Y"
-            },
+            
             {
 
                 "model": "VT-1150+",

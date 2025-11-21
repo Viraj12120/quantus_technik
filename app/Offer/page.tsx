@@ -33,7 +33,7 @@ export default function Offer() {
 			{/* Header Section */}
 			<div className="max-w-4xl mx-auto mt-16 text-center mb-16">
 				<h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-					Special Offers & Promotions
+					2 Special Offers & Promotions
 				</h1>
 				<p className="text-xl text-gray-600 max-w-2xl mx-auto">
 					Exclusive deals and limited-time promotions on premium manufacturing

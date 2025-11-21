@@ -5,7 +5,8 @@
         "total_models": 72,
         "series": {
             "ATC": {
-                "description": "Automatic Tool Change - for machining centers with automatic tool transfer",
+                "description": " Integral Shank & Shaft",
+                "desc": "Main Shaft is one solid piece",
                 "total_models": 46,
                 "categories": {
                     "LIGHT": {
@@ -23,7 +24,7 @@
                                 "torque_nm": 5,
                                 "output": "ER11",
                                 "collet_range": "Ø1/7",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/gl90.jpg"
                             },
                             {
                                 "model": "GL90-10",
@@ -38,7 +39,7 @@
                                 "torque_nm": 10,
                                 "output": "ER16",
                                 "collet_range": "Ø1/10",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/gl90-10.jpg"
                             },
                             {
                                 "model": "GL90-16",
@@ -53,7 +54,7 @@
                                 "torque_nm": 24,
                                 "output": "ER25",
                                 "collet_range": "Ø1/16",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/gl10-16.jpg"
                             },
                             {
                                 "model": "GTU-10",
@@ -66,7 +67,7 @@
                                 "output": "ER16",
                                 "collet_range": "Ø1/10",
                                 "adjustable": "0°-360°",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/gtu-10.jpg"
                             }
                         ]
                     },
@@ -83,7 +84,7 @@
                                 "output": "K252",
                                 "collet_range": "Ø1.6",
                                 "spindle": "MFC-300S",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/gm90-3.jpg"
                             },
                             {
                                 "model": "GM90-3 300",
@@ -96,7 +97,7 @@
                                 "output": "CHC",
                                 "collet_range": "Ø1.6-3.175",
                                 "spindle": "IC-300",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/gm90-3-3.jpg"
                             },
                             {
                                 "model": "GM90-3 200",
@@ -109,7 +110,7 @@
                                 "output": "CHS",
                                 "collet_range": "Ø0.8-3.175",
                                 "spindle": "RA-200",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/gm90-200.jpg"
                             },
                             {
                                 "model": "GM90-3 100",
@@ -122,7 +123,7 @@
                                 "output": "CH8",
                                 "collet_range": "Ø0.8-3.175",
                                 "spindle": "RA-100",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/gm90-100.jpg"
                             }
                         ]
                     },
@@ -138,7 +139,7 @@
                                 "torque_nm": 1.6,
                                 "output": "GS90-2",
                                 "collet_range": "Ø1/2.5",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/gs90-2.jpg"
                             },
                             {
                                 "model": "GS90-3XS",
@@ -150,7 +151,7 @@
                                 "torque_nm": 2.3,
                                 "output": "GS90-3XS",
                                 "collet_range": "Ø2/3.5",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/gs90-3xs.jpg"
                             }
                         ]
                     },
@@ -169,7 +170,7 @@
                                 "torque_nm": 4,
                                 "output": "ER8",
                                 "collet_range": "Ø0.5/5",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/g90-5.jpg"
                             },
                             {
                                 "model": "GM90-5",
@@ -181,7 +182,7 @@
                                 "torque_nm": 4,
                                 "output": "ER8",
                                 "collet_range": "Ø0.5/5",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/gm90-5.jpg"
                             },
                             {
                                 "model": "G90-7",
@@ -193,7 +194,7 @@
                                 "torque_nm": 5,
                                 "output": "ER11",
                                 "collet_range": "Ø1/7",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/g90-7.jpg"
                             },
                             {
                                 "model": "G90-7L",
@@ -206,7 +207,7 @@
                                 "output": "ER11",
                                 "collet_range": "Ø1/7",
                                 "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
+                                "image": "/assets/g90-7L.jpg"
                             },
                             {
                                 "model": "G90-10",
@@ -218,7 +219,7 @@
                                 "torque_nm": 10,
                                 "output": "ER16",
                                 "collet_range": "Ø1/10",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/g90-10.jpg"
                             },
                             {
                                 "model": "G90-10L",
@@ -231,10 +232,10 @@
                                 "output": "ER16",
                                 "collet_range": "Ø1/10",
                                 "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
+                                "image": "/assets/g90-10L.jpg"
                             },
                             {
-                                "model": "G90-16",
+                                "model": "G90-16/16L",
                                 "type": 1,
                                 "ratio": "1:1",
                                 "weight_kg": 5.4,
@@ -243,23 +244,10 @@
                                 "torque_nm": 24,
                                 "output": "ER25",
                                 "collet_range": "Ø1/16",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/g90-16L.jpg"
                             },
                             {
-                                "model": "G90-16L",
-                                "type": 1,
-                                "ratio": "1:1",
-                                "weight_kg": 6.7,
-                                "rpm": 8000,
-                                "output_diameter": 16,
-                                "torque_nm": 24,
-                                "output": "ER25",
-                                "collet_range": "Ø1/16",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
-                            },
-                            {
-                                "model": "G90-20",
+                                "model": "G90-20/20L",
                                 "type": 2,
                                 "ratio": "1:1",
                                 "weight_kg": 11,
@@ -268,21 +256,9 @@
                                 "torque_nm": 40,
                                 "output": "ER32",
                                 "collet_range": "Ø2/20",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/g90-20.jpg"
                             },
-                            {
-                                "model": "G90-20L",
-                                "type": 2,
-                                "ratio": "1:1",
-                                "weight_kg": 13.8,
-                                "rpm": 4000,
-                                "output_diameter": 20,
-                                "torque_nm": 40,
-                                "output": "ER32",
-                                "collet_range": "Ø2/20",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
-                            },
+                           
                             {
                                 "model": "G90-20L.272",
                                 "type": 2,
@@ -294,10 +270,10 @@
                                 "output": "ER32",
                                 "collet_range": "Ø2/20",
                                 "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
+                                "image": "/assets/G90-20L.272.jpg"
                             },
                             {
-                                "model": "G90-30",
+                                "model": "G90-30/30L",
                                 "type": 3,
                                 "ratio": "1:1",
                                 "weight_kg": 17,
@@ -306,23 +282,10 @@
                                 "torque_nm": 75,
                                 "output": "ER40",
                                 "collet_range": "Ø3/30",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/g90-30.jpg"
                             },
                             {
-                                "model": "G90-30L",
-                                "type": 3,
-                                "ratio": "1:1",
-                                "weight_kg": 20,
-                                "rpm": 4000,
-                                "output_diameter": 30,
-                                "torque_nm": 75,
-                                "output": "ER40",
-                                "collet_range": "Ø3/30",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
-                            },
-                            {
-                                "model": "G90-S40",
+                                "model": "G90-S40/S40L",
                                 "type": 4,
                                 "ratio": "1:1",
                                 "weight_kg": 22,
@@ -330,19 +293,7 @@
                                 "output_diameter": 26,
                                 "torque_nm": 140,
                                 "output": "ISO 40/CAT/BT40",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
-                            },
-                            {
-                                "model": "G90-S40L",
-                                "type": 4,
-                                "ratio": "1:1",
-                                "weight_kg": 26.2,
-                                "rpm": 4000,
-                                "output_diameter": 26,
-                                "torque_nm": 140,
-                                "output": "ISO 40/CAT/BT40",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
+                                "image": "/assets/g90-S40.jpg"
                             },
                             {
                                 "model": "G90-S40L.280",
@@ -354,7 +305,7 @@
                                 "torque_nm": 140,
                                 "output": "ISO/BT/CAT 40",
                                 "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
+                                "image": "/assets/g90-S40L.280.jpg"
                             }
                         ]
                     },
@@ -370,7 +321,7 @@
                                 "torque_nm": 10,
                                 "output": "ER16",
                                 "collet_range": "Ø1/10",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
+                                "image": "/assets/g90-S40.jpg"
                             },
                             {
                                 "model": "G90-16L.270",
@@ -382,7 +333,7 @@
                                 "torque_nm": 24,
                                 "output": "ER25",
                                 "collet_range": "Ø1/16",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
+                                "image": "/assets/G90-16L.270.jpg"
                             },
                             {
                                 "model": "G90-20L.332",
@@ -394,7 +345,7 @@
                                 "torque_nm": 40,
                                 "output": "ER32",
                                 "collet_range": "Ø2/20",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
+                                "image": "/assets/G90-20L.332.jpg"
                             },
                             {
                                 "model": "G90-30L.287",
@@ -406,7 +357,7 @@
                                 "torque_nm": 75,
                                 "output": "ER40",
                                 "collet_range": "Ø3/30",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
+                                "image": "/assets/G90-30L.287.jpg"
                             }
                         ]
                     },
@@ -414,7 +365,7 @@
                         "description": "Adjustable angle 0° to 90°",
                         "models": [
                             {
-                                "model": "GMU-13",
+                                "model": "GMU-13/13L",
                                 "type": 0,
                                 "ratio": "1:1",
                                 "weight_kg": 4.4,
@@ -423,22 +374,8 @@
                                 "torque_nm": 6,
                                 "output": "ER20",
                                 "collet_range": "Ø1/13",
-                                "adjustable": "0°-90° (Step 15°)",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/4_GMU.png"
-                            },
-                            {
-                                "model": "GMU-13L",
-                                "type": 0,
-                                "ratio": "1:1",
-                                "weight_kg": 6.3,
-                                "rpm": 4000,
-                                "output_diameter": 13,
-                                "torque_nm": 6,
-                                "output": "ER20",
-                                "collet_range": "Ø1/13",
-                                "adjustable": "0°-90° (Step 15°)",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/4_GMU.png"
+                                "adjustable": "0°-90° ",
+                                "image": "/assets/GMU-13.jpg"
                             },
                             {
                                 "model": "GMU-16",
@@ -450,8 +387,8 @@
                                 "torque_nm": 18,
                                 "output": "ER25",
                                 "collet_range": "Ø1/16",
-                                "adjustable": "0°-90° (Step 15°)",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/4_GMU.png"
+                                "adjustable": "0°-90° ",
+                                "image": "/assets/GMU-16.jpg"
                             },
                             {
                                 "model": "GMU-20",
@@ -463,8 +400,8 @@
                                 "torque_nm": 32,
                                 "output": "ER32",
                                 "collet_range": "Ø2/20",
-                                "adjustable": "0°-90° (Step 15°)",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/4_GMU.png"
+                                "adjustable": "0°-90° ",
+                                "image": "/assets/GMU-20.jpg"
                             }
                         ]
                     },
@@ -472,7 +409,7 @@
                         "description": "Dual output heads - opposite 180°",
                         "models": [
                             {
-                                "model": "G90-16 2U",
+                                "model": "G90-16 2U/G90-16L 2U",
                                 "type": 1,
                                 "ratio": "1:1",
                                 "weight_kg": 6.4,
@@ -481,23 +418,10 @@
                                 "torque_nm": 24,
                                 "output": "ER25",
                                 "collet_range": "Ø1/16",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/G90-16 2U.jpg"
                             },
                             {
-                                "model": "G90-16L 2U",
-                                "type": 1,
-                                "ratio": "1:1",
-                                "weight_kg": 13,
-                                "rpm": 4000,
-                                "output_diameter": 16,
-                                "torque_nm": 24,
-                                "output": "ER25",
-                                "collet_range": "Ø1/16",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
-                            },
-                            {
-                                "model": "G90-20 2U",
+                                "model": "G90-20 2U/G90-20L 2U",
                                 "type": 2,
                                 "ratio": "1:1",
                                 "weight_kg": 11.7,
@@ -506,23 +430,10 @@
                                 "torque_nm": 40,
                                 "output": "ER32",
                                 "collet_range": "Ø2/20",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/G90-20-2U.jpg"
                             },
                             {
-                                "model": "G90-20L 2U",
-                                "type": 2,
-                                "ratio": "1:1",
-                                "weight_kg": 15.5,
-                                "rpm": 4000,
-                                "output_diameter": 20,
-                                "torque_nm": 40,
-                                "output": "ER-32",
-                                "collet_range": "Ø2/20",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
-                            },
-                            {
-                                "model": "G90-30 2U",
+                                "model": "G90-30 2U/G90-30L 2U",
                                 "type": 3,
                                 "ratio": "1:1",
                                 "weight_kg": 20,
@@ -531,20 +442,7 @@
                                 "torque_nm": 75,
                                 "output": "ER40",
                                 "collet_range": "Ø3/30",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
-                            },
-                            {
-                                "model": "G90-30L 2U",
-                                "type": 3,
-                                "ratio": "1:1",
-                                "weight_kg": 23,
-                                "rpm": 4000,
-                                "output_diameter": 30,
-                                "torque_nm": 75,
-                                "output": "ER-40",
-                                "collet_range": "Ø3/30",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/2_G90L.png"
+                                "image": "/assets/G90-30-2U.jpg"
                             }
                         ]
                     },
@@ -561,7 +459,7 @@
                                 "torque_nm": 9,
                                 "output": "SCHAUBLIN P6",
                                 "collet_range": "Ø0.3/5",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/GR90-5.jpg"
                             },
                             {
                                 "model": "GR90-10",
@@ -573,7 +471,7 @@
                                 "torque_nm": 20,
                                 "output": "ER-16",
                                 "collet_range": "Ø1/10",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/GR90-10.jpg"
                             },
                             {
                                 "model": "GR90-16",
@@ -585,7 +483,7 @@
                                 "torque_nm": 20,
                                 "output": "ER-25",
                                 "collet_range": "Ø1/16",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/GR90-16.jpg"
                             },
                             {
                                 "model": "GR90-20",
@@ -597,7 +495,7 @@
                                 "torque_nm": 75,
                                 "output": "ER-32",
                                 "collet_range": "Ø2/20",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/GR90-20.jpg"
                             },
                             {
                                 "model": "GR90-S40",
@@ -608,7 +506,7 @@
                                 "output_diameter": 26,
                                 "torque_nm": 140,
                                 "output": "ISO/CAT/BT40",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/1_G90.png"
+                                "image": "/assets/GR90-S40.jpg"
                             }
                         ]
                     }
@@ -617,6 +515,7 @@
             "MTC": {
                 "description": "Manual Tool Change - for traditional machine tools with flange attachment",
                 "total_models": 26,
+                "desc": "Main Shaft is one solid piece",
                 "categories": {
                     "STD_90": {
                         "models": [
@@ -630,10 +529,10 @@
                                 "torque_nm": 4,
                                 "output": "ER-8",
                                 "collet_range": "Ø0.5/5",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/6_mtc_G90.png"
+                                "image": "/assets/mtcG90-5.jpg"
                             },
                             {
-                                "model": "G90-7",
+                                "model": "G90-7/7L",
                                 "type": 1,
                                 "ratio": "1:1",
                                 "weight_kg": 3.7,
@@ -642,23 +541,10 @@
                                 "torque_nm": 5,
                                 "output": "ER-11",
                                 "collet_range": "Ø1/7",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/6_mtc_G90.png"
+                                "image": "/assets/mtcG90-7.jpg"
                             },
                             {
-                                "model": "G90-7L",
-                                "type": 1,
-                                "ratio": "1:1",
-                                "weight_kg": 4,
-                                "rpm": 10000,
-                                "output_diameter": 7,
-                                "torque_nm": 5,
-                                "output": "ER-11",
-                                "collet_range": "Ø1/7",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/7_mtc_G90L.png"
-                            },
-                            {
-                                "model": "G90-10",
+                                "model": "G90-10/G90-10L",
                                 "type": 1,
                                 "ratio": "1:1",
                                 "weight_kg": 4.3,
@@ -667,23 +553,10 @@
                                 "torque_nm": 10,
                                 "output": "ER-16",
                                 "collet_range": "Ø1/10",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/6_mtc_G90.png"
+                                "image": "/assets/mtcG90-10.jpg"
                             },
                             {
-                                "model": "G90-10L",
-                                "type": 1,
-                                "ratio": "1:1",
-                                "weight_kg": 6,
-                                "rpm": 10000,
-                                "output_diameter": 16,
-                                "torque_nm": 10,
-                                "output": "ER-16",
-                                "collet_range": "Ø1/10",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/7_mtc_G90L.png"
-                            },
-                            {
-                                "model": "G90-16",
+                                "model": "G90-16/G90-16L",
                                 "type": 1,
                                 "ratio": "1:1",
                                 "weight_kg": 4.5,
@@ -692,23 +565,10 @@
                                 "torque_nm": 24,
                                 "output": "ER-25",
                                 "collet_range": "Ø1/16",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/6_mtc_G90.png"
+                                "image": "/assets/mtcG90-16.jpg"
                             },
                             {
-                                "model": "G90-16L",
-                                "type": 1,
-                                "ratio": "1:1",
-                                "weight_kg": 6.1,
-                                "rpm": 8000,
-                                "output_diameter": 16,
-                                "torque_nm": 24,
-                                "output": "ER-25",
-                                "collet_range": "Ø1/16",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/7_mtc_G90L.png"
-                            },
-                            {
-                                "model": "G90-20",
+                                "model": "G90-20/G90-20L",
                                 "type": 2,
                                 "ratio": "1:1",
                                 "weight_kg": 10,
@@ -717,23 +577,10 @@
                                 "torque_nm": 40,
                                 "output": "ER-32",
                                 "collet_range": "Ø2/20",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/6_mtc_G90.png"
+                                "image": "/assets/mtcG90-20.jpg"
                             },
                             {
-                                "model": "G90-20L",
-                                "type": 2,
-                                "ratio": "1:1",
-                                "weight_kg": 12.2,
-                                "rpm": 4000,
-                                "output_diameter": 20,
-                                "torque_nm": 40,
-                                "output": "ER-32",
-                                "collet_range": "Ø2/20",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/7_mtc_G90L.png"
-                            },
-                            {
-                                "model": "G90-30",
+                                "model": "G90-30/G90-30L",
                                 "type": 3,
                                 "ratio": "1:1",
                                 "weight_kg": 17,
@@ -742,21 +589,9 @@
                                 "torque_nm": 75,
                                 "output": "ER-40",
                                 "collet_range": "Ø3/30",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/6_mtc_G90.png"
+                                "image": "/assets/mtcG90-30.jpg"
                             },
-                            {
-                                "model": "G90-30L",
-                                "type": 3,
-                                "ratio": "1:1",
-                                "weight_kg": 20,
-                                "rpm": 4000,
-                                "output_diameter": 30,
-                                "torque_nm": 75,
-                                "output": "ER-40",
-                                "collet_range": "Ø3/30",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/7_mtc_G90L.png"
-                            },
+                           
                             {
                                 "model": "G90-S40",
                                 "type": 4,
@@ -766,7 +601,7 @@
                                 "output_diameter": 26,
                                 "torque_nm": 140,
                                 "output": "ISO/CAT/BT40",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/6_mtc_G90.png"
+                                "image": "/assets/mtcG90-S40.jpg"
                             }
                         ]
                     },
@@ -781,7 +616,7 @@
                                 "output_diameter": 30,
                                 "torque_nm": 140,
                                 "output": "ISO/CAT/BT40",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/6_mtc_G90.png"
+                                "image": "/assets/mtcG90-S40XL.jpg"
                             },
                             {
                                 "model": "G90-S40XLxx",
@@ -804,7 +639,7 @@
                                     700
                                 ],
                                 "special": true,
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/7_mtc_G90L.png"
+                                "image": "/assets/mtcG90-s40XL xx.jpg"
                             },
                             {
                                 "model": "G90-S50",
@@ -815,7 +650,7 @@
                                 "output_diameter": 45,
                                 "torque_nm": 400,
                                 "output": "ISO/CAT/BT50",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/6_mtc_G90.png"
+                                "image": "/assets/mtcG90-S50.jpg"
                             },
                             {
                                 "model": "G90-S50XLxx",
@@ -840,7 +675,7 @@
                                     800
                                 ],
                                 "special": true,
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/7_mtc_G90L.png"
+                                "image": "/assets/mtcG90-S50XLxx.jpg"
                             }
                         ]
                     },
@@ -857,8 +692,8 @@
                                 "torque_nm": 18,
                                 "output": "ER-25",
                                 "collet_range": "Ø1/16",
-                                "adjustable": "0°-90° (Step 15°)",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/8_mtc_GMU.png"
+                                "adjustable": "0°-90° ",
+                                "image": "/assets/GMU-16.jpg"
                             },
                             {
                                 "model": "GMU-20",
@@ -870,8 +705,8 @@
                                 "torque_nm": 32,
                                 "output": "ER-32",
                                 "collet_range": "Ø2/20",
-                                "adjustable": "0°-90° (Step 15°)",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/8_mtc_GMU.png"
+                                "adjustable": "0°-90° ",
+                                "image": "/assets/GMU-20.jpg"
                             },
                             {
                                 "model": "GMU-S40-125",
@@ -883,7 +718,7 @@
                                 "torque_nm": 100,
                                 "output": "ISO/CAT/BT40",
                                 "adjustable": "360°",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/9_mtc_GMUS40.png"
+                                "image": "/assets/GMU-S40-125.jpg"
                             },
                             {
                                 "model": "GMU-S40",
@@ -895,7 +730,7 @@
                                 "torque_nm": 100,
                                 "output": "ISO/CAT/BT40",
                                 "adjustable": "360°",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/9_mtc_GMUS40.png"
+                                "image": "/assets/GMU-S40.jpg"
                             },
                             {
                                 "model": "GMU-S50",
@@ -907,7 +742,7 @@
                                 "torque_nm": 220,
                                 "output": "ISO/CAT/BT50",
                                 "adjustable": "360°",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/9_mtc_GMUS40.png"
+                                "image": "/assets/GMU-S50.png"
                             }
                         ]
                     },
@@ -915,7 +750,7 @@
                         "description": "Dual output heads - opposite 180°",
                         "models": [
                             {
-                                "model": "G90-16 2U",
+                                "model": "G90-16 2U/G90-16L 2U",
                                 "type": 1,
                                 "ratio": "1:1",
                                 "weight_kg": 5.6,
@@ -924,23 +759,11 @@
                                 "torque_nm": 24,
                                 "output": "ER-25",
                                 "collet_range": "Ø1/16",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/6_mtc_G90.png"
+                                "image": "/assets/mtcG90-16 2U.png"
                             },
+                         
                             {
-                                "model": "G90-16L 2U",
-                                "type": 1,
-                                "ratio": "1:1",
-                                "weight_kg": 6.1,
-                                "rpm": 4000,
-                                "output_diameter": 16,
-                                "torque_nm": 24,
-                                "output": "ER-25",
-                                "collet_range": "Ø1/16",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/7_mtc_G90L.png"
-                            },
-                            {
-                                "model": "G90-20 2U",
+                                "model": "G90-20 2U/G90-20L 2U",
                                 "type": 2,
                                 "ratio": "1:1",
                                 "weight_kg": 14,
@@ -949,23 +772,11 @@
                                 "torque_nm": 40,
                                 "output": "ER-32",
                                 "collet_range": "Ø2/20",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/6_mtc_G90.png"
+                                "image": "/assets/mtcG90-20.jpg"
                             },
+                           
                             {
-                                "model": "G90-20L 2U",
-                                "type": 2,
-                                "ratio": "1:1",
-                                "weight_kg": 15.5,
-                                "rpm": 4000,
-                                "output_diameter": 20,
-                                "torque_nm": 40,
-                                "output": "ER-32",
-                                "collet_range": "Ø2/20",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/7_mtc_G90L.png"
-                            },
-                            {
-                                "model": "G90-30 2U",
+                                "model": "G90-30 2U/G90-30L 2U",
                                 "type": 3,
                                 "ratio": "1:1",
                                 "weight_kg": 20,
@@ -974,21 +785,9 @@
                                 "torque_nm": 75,
                                 "output": "ER-40",
                                 "collet_range": "Ø3/30",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/6_mtc_G90.png"
-                            },
-                            {
-                                "model": "G90-30L 2U",
-                                "type": 3,
-                                "ratio": "1:1",
-                                "weight_kg": 23,
-                                "rpm": 4000,
-                                "output_diameter": 30,
-                                "torque_nm": 75,
-                                "output": "ER-40",
-                                "collet_range": "Ø3/30",
-                                "series": "LONG",
-                                "image": "http://www.gerardispa.com/media/img/angle-heads-classic/7_mtc_G90L.png"
+                                "image": "/assets/mtcG90-30.jpg"
                             }
+                           
                         ]
                     }
                 }

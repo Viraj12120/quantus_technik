@@ -30,8 +30,7 @@ export default function GrinderDetailPage() {
 
 		if (product.category)
 			specs.push({ name: "Category", value: product.category });
-		if (product.description)
-			specs.push({ name: "Description", value: product.description });
+		
 
 		if (product.typical_specs) {
 			for (const [key, value] of Object.entries(product.typical_specs)) {
@@ -102,7 +101,7 @@ export default function GrinderDetailPage() {
 									alt={item.category || "Product Image"}
 									width={240}
 									height={160}
-									className="h-32 object-contain"
+									className="h-32 object-contain mix-blend-multiply"
 								/>
 							</div>
 

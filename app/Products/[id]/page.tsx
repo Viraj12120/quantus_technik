@@ -7,16 +7,16 @@ import machiningData from "../../datasets/products.json";
 import turningData from "../../datasets/turning.json";
 import { useRouter } from "next/navigation";
 
-// Define TypeScript interfaces
+// Define TypeScript interfaces based on your exact JSON structure
 interface MachineSpecs {
 	travel_mm?: {
-		x: number | number[];
-		y: number | number[];
-		z: number | number[];
+		x: number | number[] | string;
+		y: number | number[] | string;
+		z: number | number[] | string;
 	};
 	table_mm?: {
-		x: number | number[];
-		y: number | number[];
+		x: number | string;
+		y: number | string;
 	};
 	feedrate_m_per_min?: {
 		x: number;
@@ -28,8 +28,8 @@ interface MachineSpecs {
 	spindle?: {
 		shank?: string;
 		rotation_speed_rpm?: number;
-		power_kw?: string;
-		torque_nm?: string;
+		power_kw?: string | number;
+		torque_nm?: string | number;
 	};
 	table_load_kg?: number | number[];
 	rotary_table?: {
@@ -37,15 +37,15 @@ interface MachineSpecs {
 		rotation?: string;
 	};
 	notes?: string;
-	// Existing properties for backward compatibility
-	pallet_size_mm?: number | number[] | null;
-	stroke_mm?: number[];
-	spindle_speed_rpm?: number[];
-	number_of_tools?: number[];
-	table_size_mm?: string;
-	working_travel_mm?: number[];
-	speed_max_m_per_min?: number[];
-	interference_diameter_mm?: number;
+	cutting_tool_interface?: string;
+	max_tool_positions?: number;
+	workpiece_capacity_kg?: number;
+	max_workpiece_weight_kg?: number;
+}
+
+interface SpecItem {
+	name: string;
+	value: string | number | (string | number)[];
 }
 
 interface Machine {
@@ -56,45 +56,70 @@ interface Machine {
 	image: string;
 	detail_url?: string;
 	specs?: MachineSpecs;
-	// Existing properties for backward compatibility
-	pallet_size_mm?: number | number[] | null;
-	stroke_mm?: number[];
-	spindle_speed_rpm?: number[];
-	number_of_tools?: number[];
+	// Additional properties from your JSON
+	extra_title?: string;
+	types?: string[];
+	stroke_mm?: string | number[];
+	spindle_speed_rpm?: string | number[];
+	number_of_tools?: string | number[];
 	table_size_mm?: string;
 	working_travel_mm?: number[];
 	speed_max_m_per_min?: number[];
 	interference_diameter_mm?: number;
 	brand?: string;
-	chuck_size_inch?: number | number[];
+	pallet_size_mm?: number | string;
+	table_load_kg?: number | number[];
+	rotary_table?: {
+		diameter_mm?: string;
+		rotation?: string;
+	};
+	feedrate_m_per_min?: {
+		x: number;
+		y: number;
+		z: number;
+	};
+	milling_head?: string;
+	rotation_angle?: string;
+	swing_over_bed_mm?: number;
 	max_turning_diameter_mm?: number;
-	max_turning_length_mm?: number;
-	max_cutting_height_mm?: number;
-	spindle_motor_kw?: number | number[];
-	y_axis?: boolean;
-	big_bore?: boolean;
-	tool_magazine?: boolean;
-	twin_turret?: boolean;
-	twin_spindle?: boolean;
-	stroke_y_mm?: number;
+	control?: string;
+	filters?: string[];
 }
 
 interface ManufacturerData {
 	id: string;
-	machines: Machine[];
+	machines?: Machine[];
+	products?: Machine[];
 }
 
 interface MachiningData {
-	ken?: ManufacturerData;
-	grob?: ManufacturerData;
-	hwacheon?: ManufacturerData;
-	alzmetall?: ManufacturerData;
-	horizontal?: { machines: Machine[] };
-	vertical?: { products: Machine[] };
-	"5-axis"?: Machine[];
+	ken?: {
+		id: string;
+		machines: Machine[];
+	};
+	horizontal?: {
+		id: string;
+		machines: Machine[];
+		grob?: {
+			id: string;
+			machines: Machine[];
+		};
+		alzmetall?: {
+			id: string;
+			machines: Machine[];
+		};
+	};
+	vertical?: {
+		id: string;
+		products: Machine[];
+	};
+	"5-axis"?: {
+		id: string;
+		machines: Machine[];
+	};
 }
 
-// Type assertion for the imported data
+// Type assertion for the imported data - using your exact structure
 const machiningDataTyped = machiningData as unknown as MachiningData;
 
 // 5-axis filter categories
@@ -106,8 +131,14 @@ const fiveAxisFilters = [
 	{ id: "millturn", name: "MillTurn" },
 ];
 
-// Machine classification function
+// Machine classification function - FIXED to use the filters array from the data
 const classify5AxisMachine = (machine: Machine): string[] => {
+	// If the machine has a filters array, use it directly
+	if (machine.filters && Array.isArray(machine.filters)) {
+		return machine.filters;
+	}
+
+	// Fallback to the original classification logic
 	const categories: string[] = [];
 	const model = machine.model.toLowerCase();
 	const description = machine.description.toLowerCase();
@@ -117,7 +148,7 @@ const classify5AxisMachine = (machine: Machine): string[] => {
 	if (
 		type.includes("simultaneous") ||
 		description.includes("simultaneous") ||
-		model.includes("g") || // G-series are typically simultaneous
+		model.includes("g") ||
 		model.includes("focus") ||
 		model.includes("rotor") ||
 		model.includes("compact") ||
@@ -143,8 +174,7 @@ const classify5AxisMachine = (machine: Machine): string[] => {
 		type.includes("double column") ||
 		description.includes("double column") ||
 		model.includes("focus5") ||
-		model.includes("saber") ||
-		(model.includes("rhino") && model.includes("t"))
+		model.includes("saber")
 	) {
 		categories.push("double_column");
 	}
@@ -155,7 +185,7 @@ const classify5AxisMachine = (machine: Machine): string[] => {
 		description.includes("millturn") ||
 		description.includes("multitasking") ||
 		(model.includes("m") &&
-			!isNaN(parseInt(model.replace("m", "").replace("-g", "")))) || // M-series models
+			!isNaN(parseInt(model.replace("m", "").replace("-g", "")))) ||
 		model.includes("i2")
 	) {
 		categories.push("millturn");
@@ -185,21 +215,59 @@ function isValidUrl(url: any) {
 	}
 }
 
-// Helper function to get manufacturer for a machine
+// FIXED: Helper function to get manufacturer for a machine - using model matching instead of includes
 const getManufacturer = (machine: Machine): string => {
-	if (machiningDataTyped.ken?.machines?.includes(machine)) return "ken";
-	if (machiningDataTyped.grob?.machines?.includes(machine)) return "grob";
-	if (machiningDataTyped.alzmetall?.machines?.includes(machine))
+	const model = machine.model;
+
+	// Check KEN machines
+	if (machiningDataTyped.ken?.machines?.some((m) => m.model === model))
+		return "ken";
+
+	// Check GROB machines (nested under horizontal)
+	if (
+		machiningDataTyped.horizontal?.grob?.machines?.some(
+			(m) => m.model === model
+		)
+	)
+		return "grob";
+
+	// Check Alzmetall machines (nested under horizontal)
+	if (
+		machiningDataTyped.horizontal?.alzmetall?.machines?.some(
+			(m) => m.model === model
+		)
+	)
 		return "alzmetall";
 
-	// Check if it's from Hwacheon datasets
-	if (machiningDataTyped.horizontal?.machines?.includes(machine))
+	// Check Hwacheon horizontal machines
+	if (machiningDataTyped.horizontal?.machines?.some((m) => m.model === model))
 		return "hwacheon";
-	if (machiningDataTyped.vertical?.products?.includes(machine))
+
+	// Check Hwacheon vertical machines
+	if (machiningDataTyped.vertical?.products?.some((m) => m.model === model))
 		return "hwacheon";
-	if (machiningDataTyped["5-axis"]?.includes(machine)) return "hwacheon";
+
+	// Check 5-axis machines - FIXED: Access the machines array properly
+	if (machiningDataTyped["5-axis"]?.machines?.some((m) => m.model === model))
+		return "ken"; // Changed to "ken" since these are KEN machines
 
 	return "other";
+};
+
+// Helper function to format array or string values
+const formatArrayOrString = (value: any): string => {
+	if (!value) return "N/A";
+	if (Array.isArray(value)) return value.join(" / ");
+	if (typeof value === "string") return value;
+	return String(value);
+};
+
+// Helper function to format travel specifications
+const formatTravelValue = (value: any): string => {
+	if (!value) return "N/A";
+	if (Array.isArray(value)) return value.join(" / ") + " mm";
+	if (typeof value === "number") return `${value} mm`;
+	return value;
 };
 
 export default function ProductDetailPage() {
@@ -211,7 +279,7 @@ export default function ProductDetailPage() {
 	const isTurningCenter = productId === "turning-centers";
 	const isMachiningCenter = productId === "machining-center";
 
-	// ✅ Sub-categories (Horizontal, Vertical, 5-Axis)
+	// Sub-categories
 	const subCategories = isMachiningCenter
 		? [
 				{ id: "horizontal", name: "Horizontal" },
@@ -223,7 +291,6 @@ export default function ProductDetailPage() {
 				{ id: "vertical_turning", name: "Vertical Turning" },
 		  ];
 
-	// Default value update
 	const [selectedSubCategory, setSelectedSubCategory] = useState(
 		isTurningCenter ? "horizontal_turning" : "horizontal"
 	);
@@ -236,7 +303,7 @@ export default function ProductDetailPage() {
 		setSelected5AxisFilter("all");
 	}, [productId, isTurningCenter]);
 
-	// ✅ UPDATED: Fetch products with proper typing and arranged in sequence
+	// Get products based on selected subcategory using your exact JSON structure
 	const getProducts = (): Machine[] => {
 		if (!isMachiningCenter) {
 			// Turning centers logic
@@ -249,9 +316,8 @@ export default function ProductDetailPage() {
 		// Machining centers logic
 		let products: Machine[] = [];
 
-		// Get base products based on subcategory
 		if (selectedSubCategory === "horizontal") {
-			// Horizontal machines from all manufacturers - arranged in sequence
+			// Get horizontal machines from all sources
 			const kenHorizontal =
 				machiningDataTyped.ken?.machines?.filter(
 					(machine) =>
@@ -259,86 +325,77 @@ export default function ProductDetailPage() {
 						machine.description?.includes("Horizontal")
 				) || [];
 
-			const grobHorizontal =
-				machiningDataTyped.grob?.machines?.filter(
-					(machine) =>
-						machine.type?.includes("Horizontal") ||
-						machine.description?.includes("Horizontal")
-				) || [];
-
+			// FIX: Access the nested structure correctly
 			const hwacheonHorizontal = machiningDataTyped.horizontal?.machines || [];
 
-			const alzmetallHorizontal =
-				machiningDataTyped.alzmetall?.machines?.filter(
-					(machine) =>
-						machine.type?.includes("Horizontal") ||
-						machine.description?.includes("Horizontal")
-				) || [];
+			const grobHorizontal =
+				machiningDataTyped.horizontal?.grob?.machines || [];
 
-			// Arrange in sequence: KEN → GROB → Hwacheon → Alzmetall
+			const alzmetallHorizontal =
+				machiningDataTyped.horizontal?.alzmetall?.machines || [];
+
 			products = [
 				...kenHorizontal,
-				...grobHorizontal,
 				...hwacheonHorizontal,
+				...grobHorizontal,
 				...alzmetallHorizontal,
 			];
 		} else if (selectedSubCategory === "vertical") {
-			// Vertical machines from all manufacturers - arranged in sequence
+			// Get vertical machines from all sources
 			const kenVertical =
 				machiningDataTyped.ken?.machines?.filter(
 					(machine) =>
-						machine.type === "Vertical" ||
-						machine.description?.includes("Vertical")
-				) || [];
-
-			const grobVertical =
-				machiningDataTyped.grob?.machines?.filter(
-					(machine) =>
-						machine.type === "Vertical" ||
+						machine.type?.includes("Vertical") ||
 						machine.description?.includes("Vertical")
 				) || [];
 
 			const hwacheonVertical = machiningDataTyped.vertical?.products || [];
 
-			const alzmetallVertical =
-				machiningDataTyped.alzmetall?.machines?.filter(
+			const grobVertical =
+				machiningDataTyped.horizontal?.grob?.machines?.filter(
 					(machine) =>
-						machine.type === "Vertical" ||
+						machine.type?.includes("Vertical") ||
 						machine.description?.includes("Vertical")
 				) || [];
 
-			// Arrange in sequence: KEN → GROB → Hwacheon → Alzmetall
+			const alzmetallVertical =
+				machiningDataTyped.horizontal?.alzmetall?.machines?.filter(
+					(machine) =>
+						machine.type?.includes("Vertical") ||
+						machine.description?.includes("Vertical")
+				) || [];
+
 			products = [
 				...kenVertical,
-				...grobVertical,
 				...hwacheonVertical,
+				...grobVertical,
 				...alzmetallVertical,
 			];
 		} else if (selectedSubCategory === "5-axis") {
-			// 5-axis machines from all manufacturers - arranged in sequence
+			// Get 5-axis machines from all sources
 			const ken5Axis =
 				machiningDataTyped.ken?.machines?.filter(
-					(machine) =>
-						machine.type?.includes("5-Axis") ||
-						machine.description?.includes("5-Axis")
+					(m) => m.type?.includes("5-Axis") || m.description?.includes("5-Axis")
 				) || [];
 
-			const grob5Axis = machiningDataTyped.grob?.machines || []; // All GROB are 5-axis
+			const hwacheon5Axis = machiningDataTyped["5-axis"]?.machines || [];
 
-			const hwacheon5Axis = machiningDataTyped["5-axis"] || [];
+			const grob5Axis =
+				machiningDataTyped.horizontal?.grob?.machines?.filter(
+					(m) => m.type?.includes("5-Axis") || m.description?.includes("5-Axis")
+				) || [];
 
 			const alzmetall5Axis =
-				machiningDataTyped.alzmetall?.machines?.filter(
+				machiningDataTyped.horizontal?.alzmetall?.machines?.filter(
 					(machine) =>
 						machine.type?.includes("5-Axis") ||
 						machine.description?.includes("5-Axis")
 				) || [];
 
-			// Arrange in sequence: KEN → GROB → Hwacheon → Alzmetall
 			products = [
 				...ken5Axis,
-				...grob5Axis,
 				...hwacheon5Axis,
+				...grob5Axis,
 				...alzmetall5Axis,
 			];
 		}
@@ -364,48 +421,36 @@ export default function ProductDetailPage() {
 		setMainImage(heroProduct?.image || "");
 	}, [heroProduct]);
 
-	// ✅ ENHANCED: Updated specs function with KEN machine detailed specifications
+	// Enhanced specs function that works with your exact JSON structure
 	function getSpecs(product: Machine) {
-		const baseSpecs = [
-			{ name: "Model", value: product.model },
-			{ name: "Description", value: product.description },
-		];
+		const baseSpecs = [{ name: "Model", value: product.model }];
 
-		// Check manufacturer and add appropriate specs
-		const isKen = machiningDataTyped.ken?.machines?.includes(product);
-		const isGrob = machiningDataTyped.grob?.machines?.includes(product);
-		const isAlzmetall =
-			machiningDataTyped.alzmetall?.machines?.includes(product);
-		const isHwacheon = !isKen && !isGrob && !isAlzmetall;
+		// Check manufacturer type
+		const manufacturer = getManufacturer(product);
 
-		// KEN-specific specs with detailed specifications
-		if (isKen && product.specs) {
+		// KEN machines - use detailed specs (this includes 5-axis machines)
+		if (
+			(manufacturer === "ken" || manufacturer === "hwacheon") &&
+			product.specs
+		) {
 			const specs = product.specs;
-
-			// Add type if available
-			if (product.type) {
-				baseSpecs.push({ name: "Type", value: product.type });
-			}
 
 			// Travel specifications
 			if (specs.travel_mm) {
 				const travel = specs.travel_mm;
-				const xTravel = Array.isArray(travel.x) ? travel.x.join("/") : travel.x;
-				const yTravel = Array.isArray(travel.y) ? travel.y.join("/") : travel.y;
-				const zTravel = travel.z;
-
-				baseSpecs.push({
-					name: "Travel (X/Y/Z mm)",
-					value: `${xTravel} / ${yTravel} / ${zTravel}`,
-				});
+				baseSpecs.push(
+					{ name: "Travel X", value: formatTravelValue(travel.x) },
+					{ name: "Travel Y", value: formatTravelValue(travel.y) },
+					{ name: "Travel Z", value: formatTravelValue(travel.z) }
+				);
 			}
 
 			// Table specifications
 			if (specs.table_mm) {
 				const table = specs.table_mm;
 				baseSpecs.push({
-					name: "Table (X/Y mm)",
-					value: `${table.x} / ${table.y}`,
+					name: "Table Size",
+					value: `${table.x} × ${table.y} mm`,
 				});
 			}
 
@@ -413,8 +458,8 @@ export default function ProductDetailPage() {
 			if (specs.feedrate_m_per_min) {
 				const feed = specs.feedrate_m_per_min;
 				baseSpecs.push({
-					name: "Feedrate (X/Y/Z m/min)",
-					value: `${feed.x} / ${feed.y} / ${feed.z}`,
+					name: "Feedrate",
+					value: `X:${feed.x} / Y:${feed.y} / Z:${feed.z} m/min`,
 				});
 			}
 
@@ -436,7 +481,7 @@ export default function ProductDetailPage() {
 				if (spindle.rotation_speed_rpm) {
 					baseSpecs.push({
 						name: "Spindle Speed",
-						value: `${spindle.rotation_speed_rpm.toLocaleString()} rpm`,
+						value: `${spindle.rotation_speed_rpm?.toLocaleString()} rpm`,
 					});
 				}
 				if (spindle.power_kw) {
@@ -457,11 +502,7 @@ export default function ProductDetailPage() {
 			if (specs.table_load_kg) {
 				baseSpecs.push({
 					name: "Table Load",
-					value: `${
-						Array.isArray(specs.table_load_kg)
-							? specs.table_load_kg.join("/")
-							: specs.table_load_kg
-					} kg`,
+					value: `${formatArrayOrString(specs.table_load_kg)} kg`,
 				});
 			}
 
@@ -475,25 +516,29 @@ export default function ProductDetailPage() {
 				}
 			}
 
-			if (specs.notes) {
-				baseSpecs.push({ name: "Notes", value: specs.notes });
+			// Add series if available
+			if (product.series) {
+				baseSpecs.push({ name: "Series", value: product.series });
 			}
+
+			// Add type
+			baseSpecs.push({ name: "Type", value: product.type });
 
 			return baseSpecs;
 		}
 
-		// GROB-specific specs (unchanged)
-		if (isGrob) {
+		// GROB machines
+		if (manufacturer === "grob") {
 			if (product.working_travel_mm) {
 				baseSpecs.push({
-					name: "Working Travel (mm)",
-					value: `X:${product.working_travel_mm[0]} | Y:${product.working_travel_mm[1]} | Z:${product.working_travel_mm[2]}`,
+					name: "Working Travel",
+					value: `X:${product.working_travel_mm[0]} | Y:${product.working_travel_mm[1]} | Z:${product.working_travel_mm[2]} mm`,
 				});
 			}
 			if (product.speed_max_m_per_min) {
 				baseSpecs.push({
-					name: "Rapid Traverse (m/min)",
-					value: `X:${product.speed_max_m_per_min[0]} | Y:${product.speed_max_m_per_min[1]} | Z:${product.speed_max_m_per_min[2]}`,
+					name: "Rapid Traverse",
+					value: `X:${product.speed_max_m_per_min[0]} | Y:${product.speed_max_m_per_min[1]} | Z:${product.speed_max_m_per_min[2]} m/min`,
 				});
 			}
 			if (product.interference_diameter_mm) {
@@ -502,159 +547,97 @@ export default function ProductDetailPage() {
 					value: `${product.interference_diameter_mm} mm`,
 				});
 			}
-			if (product.spindle_speed_rpm) {
+			if (product.brand) {
+				baseSpecs.push({ name: "Brand", value: product.brand });
+			}
+			return baseSpecs;
+		}
+
+		// Alzmetall machines
+		if (manufacturer === "alzmetall" && product.specs) {
+			const specs = product.specs;
+
+			if (specs.travel_mm) {
+				const travel = specs.travel_mm;
+				baseSpecs.push(
+					{ name: "Travel X", value: formatTravelValue(travel.x) },
+					{ name: "Travel Y", value: formatTravelValue(travel.y) },
+					{ name: "Travel Z", value: formatTravelValue(travel.z) }
+				);
+			}
+
+			if (specs.cutting_tool_interface) {
 				baseSpecs.push({
-					name: "Spindle Speed (rpm)",
-					value: Array.isArray(product.spindle_speed_rpm)
-						? `${product.spindle_speed_rpm[0]} max`
-						: `${product.spindle_speed_rpm}`,
+					name: "Tool Interface",
+					value: specs.cutting_tool_interface,
 				});
 			}
-			if (product.number_of_tools) {
+
+			if (specs.max_tool_positions) {
 				baseSpecs.push({
-					name: "Number of Tools",
-					value: Array.isArray(product.number_of_tools)
-						? product.number_of_tools[0].toString()
-						: product.number_of_tools || "N/A",
+					name: "Max Tool Positions",
+					value: String(specs.max_tool_positions), 
 				});
 			}
+
+			if (specs.workpiece_capacity_kg) {
+				baseSpecs.push({
+					name: "Workpiece Capacity",
+					value: `${specs.workpiece_capacity_kg} kg`,
+				});
+			}
+
+			return baseSpecs;
+		}
+
+		// Hwacheon and other machines - use common properties
+		if (product.stroke_mm) {
 			baseSpecs.push({
-				name: "Type",
-				value: "5-Axis Universal Machining Center",
+				name: "Stroke",
+				value: formatArrayOrString(product.stroke_mm),
 			});
-			return baseSpecs;
 		}
 
-		// Alzmetall-specific specs (unchanged)
-		if (isAlzmetall) {
-			if (product.table_size_mm) {
-				baseSpecs.push({
-					name: "Table Size (mm)",
-					value: product.table_size_mm,
-				});
-			}
-			if (product.stroke_mm) {
-				baseSpecs.push({
-					name: "Stroke (mm)",
-					value: product.stroke_mm.join(" × "),
-				});
-			}
-			if (product.spindle_speed_rpm) {
-				baseSpecs.push({
-					name: "Spindle Speed (rpm)",
-					value: product.spindle_speed_rpm.join(" / "),
-				});
-			}
-			if (product.number_of_tools) {
-				baseSpecs.push({
-					name: "Number of Tools",
-					value: product.number_of_tools.join(" / "),
-				});
-			}
-			if (product.type) {
-				baseSpecs.push({ name: "Type", value: product.type });
-			}
-			return baseSpecs;
+		if (product.spindle_speed_rpm) {
+			baseSpecs.push({
+				name: "Spindle Speed",
+				value: formatArrayOrString(product.spindle_speed_rpm),
+			});
 		}
 
-		// Hwacheon specs (original logic - unchanged)
-		if (isMachiningCenter) {
-			if (selectedSubCategory === "horizontal") {
-				return [
-					...baseSpecs,
-					{
-						name: "Pallet Size (mm)",
-						value: product.pallet_size_mm?.toString() || "N/A",
-					},
-					{
-						name: "Stroke (mm)",
-						value: product.stroke_mm?.join(" × ") || "N/A",
-					},
-					{
-						name: "Spindle Speed (rpm)",
-						value: product.spindle_speed_rpm?.join(" / ") || "N/A",
-					},
-					{
-						name: "Number of Tools",
-						value: product.number_of_tools?.join(" / ") || "N/A",
-					},
-					{ name: "Type", value: product.type || "N/A" },
-				];
-			}
-
-			if (selectedSubCategory === "vertical") {
-				return [
-					...baseSpecs,
-					{
-						name: "Stroke (mm)",
-						value: product.stroke_mm?.join(" × ") || "N/A",
-					},
-					{
-						name: "Spindle Speed (rpm)",
-						value: product.spindle_speed_rpm?.join(" / ") || "N/A",
-					},
-					{
-						name: "Number of Tools",
-						value: product.number_of_tools?.join(" / ") || "N/A",
-					},
-				];
-			}
-
-			if (selectedSubCategory === "5-axis") {
-				const specs = [...baseSpecs];
-
-				if (product.table_size_mm) {
-					specs.push({ name: "Table Size (mm)", value: product.table_size_mm });
-				} else if (product.working_travel_mm) {
-					specs.push({
-						name: "Table Size (mm)",
-						value: `${product.working_travel_mm[0]} × ${product.working_travel_mm[1]}`,
-					});
-				}
-
-				if (product.stroke_mm) {
-					specs.push({
-						name: "Stroke (mm)",
-						value: `X:${product.stroke_mm[0]} | Y:${product.stroke_mm[1]} | Z:${product.stroke_mm[2]}`,
-					});
-				} else if (product.working_travel_mm) {
-					specs.push({
-						name: "Stroke (mm)",
-						value: `X:${product.working_travel_mm[0]} | Y:${product.working_travel_mm[1]} | Z:${product.working_travel_mm[2]}`,
-					});
-				}
-
-				if (product.spindle_speed_rpm) {
-					specs.push({
-						name: "Spindle Speed (rpm)",
-						value: Array.isArray(product.spindle_speed_rpm)
-							? `${product.spindle_speed_rpm[0]} max`
-							: product.spindle_speed_rpm || "N/A",
-					});
-				}
-
-				if (product.number_of_tools) {
-					specs.push({
-						name: "Number of Tools",
-						value: Array.isArray(product.number_of_tools)
-							? product.number_of_tools[0].toString()
-							: product.number_of_tools || "N/A",
-					});
-				}
-
-				if (product.type) {
-					specs.push({ name: "Type", value: product.type });
-				}
-
-				return specs;
-			}
+		if (product.number_of_tools) {
+			baseSpecs.push({
+				name: "Number of Tools",
+				value: formatArrayOrString(product.number_of_tools),
+			});
 		}
 
-		// Default case - return basic specs
+		if (product.type) {
+			baseSpecs.push({ name: "Type", value: product.type });
+		}
+
+		// For horizontal machines with pallet size
+		if (selectedSubCategory === "horizontal" && product.pallet_size_mm) {
+			baseSpecs.push({
+				name: "Pallet Size",
+				value: formatArrayOrString(product.pallet_size_mm),
+			});
+		}
+
+		// For 5-axis machines with table size
+		if (selectedSubCategory === "5-axis" && product.table_size_mm) {
+			baseSpecs.push({ name: "Table Size", value: product.table_size_mm });
+		}
+
+		// Add series if available
+		if (product.series) {
+			baseSpecs.push({ name: "Series", value: product.series });
+		}
+
 		return baseSpecs;
 	}
 
-	// ✅ Updated Title Resolver
+	// Get subcategory title
 	const getSubCategoryTitle = () => {
 		const subCats = isMachiningCenter
 			? [
@@ -679,14 +662,14 @@ export default function ProductDetailPage() {
 						<span className="text-gray-400">{getSubCategoryTitle()}</span>
 					</h1>
 					<p className="text-xl text-gray-300 max-w-3xl">
-						{heroProduct?.description}
+						{heroProduct?.description || "High-performance machining solutions"}
 					</p>
 				</div>
 			</section>
 
 			{/* SUBCATEGORY BUTTONS */}
 			<section className="py-4 bg-white border-b border-gray-200">
-				<div className="max-w-7xl mx-auto px-6 flex flex-col items-center justify-center">
+				<div className="w-full mx-auto px-6 flex flex-col items-center justify-center">
 					{/* Subcategory Filter */}
 					<div className="flex gap-3 mb-4 flex-wrap justify-center">
 						{subCategories.map((subCat) => (
@@ -774,23 +757,28 @@ export default function ProductDetailPage() {
 						{categoryProducts.map((item, i) => (
 							<div
 								key={i}
-								className="w-full bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col justify-between min-h-[400px]">
+								className="w-full bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col justify-between min-h-[450px]">
 								<div className="p-5">
-									<h3 className="text-xl font-bold text-black-700">
-										{item.model}
-									</h3>
+									<div className="flex gap-4 items-center">
+										<h3 className="text-xl font-bold text-black-700">
+											{item.model}
+										</h3>
+										{selectedSubCategory === "5-axis" && (
+											<div className="flex flex-wrap gap-1">
+												{classify5AxisMachine(item).map((category, idx) => (
+													<span
+														key={idx}
+														className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">
+														{
+															fiveAxisFilters.find((f) => f.id === category)
+																?.name
+														}
+													</span>
+												))}
+											</div>
+										)}
+									</div>
 									<p className="text-gray-600 text-md">{item.description}</p>
-									{selectedSubCategory === "5-axis" && (
-										<div className="mt-2 flex flex-wrap gap-1">
-											{classify5AxisMachine(item).map((category, idx) => (
-												<span
-													key={idx}
-													className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">
-													{fiveAxisFilters.find((f) => f.id === category)?.name}
-												</span>
-											))}
-										</div>
-									)}
 								</div>
 
 								<div className="flex items-center justify-center bg-gray-50 p-4">
@@ -802,7 +790,7 @@ export default function ProductDetailPage() {
 										width={240}
 										height={160}
 										unoptimized={true}
-										className="h-32 object-contain"
+										className="h-32 object-contain mix-blend-multiply"
 									/>
 								</div>
 
