@@ -3,28 +3,28 @@
         "id": "horizontal",
         "machines": [
             {
-                "model": "FH5000S-i",
+                "model": "FH5000S.i",
                 "description": "Horizontal spindle machining center FH5000S-i",
                 "pallet_size": "□550(□500)",
                 "stroke_xyz_mm": "800×800×880",
                 "spindle_speed_min_1": "15,000",
-                "image": ""
+                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/list/fh5000s-i_fh5500s-i_fh5500sx-i.jpg"
             },
             {
-                "model": "FH5500S-i",
+                "model": "FH5500S.i",
                 "description": "Horizontal spindle machining center FH5500S-i",
                 "pallet_size": "□550(□500)",
                 "stroke_xyz_mm": "900×800×880",
                 "spindle_speed_min_1": "15,000",
-                "image": ""
+                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/list/fh5000s-i_fh5500s-i_fh5500sx-i.jpg"
             },
             {
-                "model": "FH5500SX-i",
+                "model": "FH5500SX.i",
                 "description": "Horizontal spindle machining center FH5500SX-i",
                 "pallet_size": "□550(□500)",
                 "stroke_xyz_mm": "900×800×880",
                 "spindle_speed_min_1": "15,000",
-                "image": ""
+                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/list/fh5000s-i_fh5500s-i_fh5500sx-i.jpg"
             },
             {
                 "model": "FH630SX-i",
@@ -32,7 +32,7 @@
                 "pallet_size": "□630",
                 "stroke_xyz_mm": "1,050×900×1,050",
                 "spindle_speed_min_1": "6,000[6,000/15,000]",
-                "image": ""
+                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh550sx_fh630sxi_fh800sxi.jpg"
             },
             {
                 "model": "FH800SX-i",
@@ -40,7 +40,7 @@
                 "pallet_size": "□800",
                 "stroke_xyz_mm": "1,450×1,250×1,550",
                 "spindle_speed_min_1": "50〜6,000",
-                "image": ""
+                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh550sx_fh630sxi_fh800sxi.jpg"
             },
             {
                 "model": "FH12500SX5-i",
@@ -48,7 +48,7 @@
                 "pallet_size": "□1,250[1,250×1,600]",
                 "stroke_xyz_mm": "2,400×1,600×1,850",
                 "spindle_speed_min_1": "6,000[15,000]",
-                "image": ""
+                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh12500sx5i_fh12500sw5i_fh600sw5i.jpg"
             },
             {
                 "model": "FH12500SW5-i",
@@ -56,7 +56,7 @@
                 "pallet_size": "□1,250[1,250×1,600]",
                 "stroke_xyz_mm": "2,400×1,600×1,850",
                 "spindle_speed_min_1": "4,000",
-                "image": ""
+                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh12500sx5i_fh12500sw5i_fh600sw5i.jpg"
             },
             {
                 "model": "FH1600SW5i",
@@ -64,14 +64,14 @@
                 "pallet_size": "1,600×1,250",
                 "stroke_xyz_mm": "3,000×1,900×2,100",
                 "spindle_speed_min_1": "4,000",
-                "image": ""
+                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh12500sx5i_fh12500sw5i_fh600sw5i.jpg"
             },
             {
                 "model": "TH555i4",
                 "description": "Horizontal spindle machining center for line TH555i4",
                 "stroke_xyz_mm": "500×550×530",
                 "spindle_speed_min_1": "10,000[12,000]",
-                "image": ""
+                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/list/th555i4.jpg"
             },
             {
                 "model": "A600",
