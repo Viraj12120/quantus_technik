@@ -5,7 +5,7 @@
             {
                 "model": "FH5000S.i",
                 "description": "Horizontal spindle machining center FH5000S-i",
-                "pallet_size": "□550(□500)",
+                "pallet_size": "550(500)",
                 "stroke_xyz_mm": "800×800×880",
                 "spindle_speed_min_1": "15,000",
                 "image": "/assets/JTEKTFH500.jpg"
@@ -13,7 +13,7 @@
             {
                 "model": "FH5500S.i",
                 "description": "Horizontal spindle machining center FH5500S-i",
-                "pallet_size": "□550(□500)",
+                "pallet_size": "550(500)",
                 "stroke_xyz_mm": "900×800×880",
                 "spindle_speed_min_1": "15,000",
                 "image": "/assets/JTEKTFH500.jpg"
@@ -21,7 +21,7 @@
             {
                 "model": "FH5500SX.i",
                 "description": "Horizontal spindle machining center FH5500SX-i",
-                "pallet_size": "□550(□500)",
+                "pallet_size": "550(500)",
                 "stroke_xyz_mm": "900×800×880",
                 "spindle_speed_min_1": "15,000",
                 "image": "/assets/JTEKTFH500.jpg"
@@ -29,7 +29,7 @@
             {
                 "model": "FH630SX-i",
                 "description": "Horizontal spindle machining center FH630SX-i",
-                "pallet_size": "□630",
+                "pallet_size": "630",
                 "stroke_xyz_mm": "1,050×900×1,050",
                 "spindle_speed_min_1": "6,000[6,000/15,000]",
                 "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh550sx_fh630sxi_fh800sxi.jpg"
@@ -240,7 +240,7 @@
                 "spindle_speed_rpm": "10K / 12K / 15K",
                 "number_of_tools": "24",
                 "type": "LM #40 Dual Table",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon-europe.com/sites/default/files/styles/8col/public/15_vesta_610d_02__machine_15_wmax2970_bg_trans.png?itok=tUK_f472",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-610D"
             },
             {
@@ -254,9 +254,9 @@
                 ],
                 "stroke_mm": "520 / 400 / 380",
                 "spindle_speed_rpm": "24K",
-                "number_of_tools": "좌 : 24 / 우 : 24",
+                "number_of_tools": "24 / 24",
                 "type": "LM #30 Twin Spindle",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105024851.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-500T"
             },
             {
@@ -270,9 +270,9 @@
                 ],
                 "stroke_mm": "650 / 650 / 700",
                 "spindle_speed_rpm": "12K / 15K",
-                "number_of_tools": "좌 : 30 / 우 : 30",
+                "number_of_tools": " 30 / 30",
                 "type": "LM #40 Twin Spindle",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105025849.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-650T"
             },
             {
@@ -287,7 +287,7 @@
                 "spindle_speed_rpm": "12K / 20K",
                 "number_of_tools": "30",
                 "type": "LM #40 Double Column",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210219045720.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L1-1500"
             },
             {
@@ -302,7 +302,7 @@
                 "spindle_speed_rpm": "12K / 20K",
                 "number_of_tools": "30",
                 "type": "LM #40 Double Column",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210219045720.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L1-2500"
             },
             {
@@ -317,7 +317,7 @@
                 "spindle_speed_rpm": "12K / 20K",
                 "number_of_tools": "30",
                 "type": "LM #40 Double Column",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221100103.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L2-2500"
             },
             {
@@ -332,7 +332,7 @@
                 "spindle_speed_rpm": "12K / 20K",
                 "number_of_tools": "30 / 40",
                 "type": "LM #40 Double Column",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20220719093656.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L3-3000"
             },
             {
@@ -347,7 +347,7 @@
                 "spindle_speed_rpm": "12K / 20K",
                 "number_of_tools": "30",
                 "type": "LM #40 Double Column",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221100103.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L2-3000"
             },
             {
@@ -363,7 +363,7 @@
                 "spindle_speed_rpm": "6K / 8K",
                 "number_of_tools": "24 / 30",
                 "type": "BOX #40 / #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105022524.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-850B"
             },
             {
@@ -379,7 +379,7 @@
                 "spindle_speed_rpm": "6K / 8K",
                 "number_of_tools": "24 / 30",
                 "type": "BOX #40 / #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105024623.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1050B"
             },
             {
@@ -395,7 +395,7 @@
                 "spindle_speed_rpm": "6K / 8K / 10K / 12K / 15K",
                 "number_of_tools": "24 / 30",
                 "type": "BOX #40 / #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105024736.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1300B"
             },
             {
@@ -410,7 +410,7 @@
                 "spindle_speed_rpm": "5K / 8K",
                 "number_of_tools": "- / 24",
                 "type": "BOX #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105044959.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-650"
             },
             {
@@ -425,7 +425,7 @@
                 "spindle_speed_rpm": "8K / 12K",
                 "number_of_tools": "24",
                 "type": "BOX #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105050458.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-850"
             },
             {
@@ -440,7 +440,7 @@
                 "spindle_speed_rpm": "8K / 12K",
                 "number_of_tools": "24",
                 "type": "BOX #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105051659.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1050"
             },
             {
@@ -455,7 +455,7 @@
                 "spindle_speed_rpm": "8K / 12K",
                 "number_of_tools": "8 / 40",
                 "type": "BOX #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105051728.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1250"
             },
             {
@@ -470,7 +470,7 @@
                 "spindle_speed_rpm": "8K / 12K",
                 "number_of_tools": "40 / 60",
                 "type": "BOX #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117093515.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1350"
             },
             {
@@ -485,7 +485,7 @@
                 "spindle_speed_rpm": "12K / 15K",
                 "number_of_tools": "40 / 60",
                 "type": "BOX #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117100015.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1750"
             },
             {
@@ -500,7 +500,7 @@
                 "spindle_speed_rpm": "8K / 12K",
                 "number_of_tools": "40",
                 "type": "BOX #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117102949.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-2500"
             },
             {
@@ -515,7 +515,7 @@
                 "spindle_speed_rpm": "20K / 32K",
                 "number_of_tools": "24",
                 "type": "LM #40",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117122537.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=UH500"
             },
             {
@@ -531,7 +531,7 @@
                 "spindle_speed_rpm": "20K / 32K / 45K",
                 "number_of_tools": "20 / 30 / 40 / 60",
                 "type": "LM #30 / #40",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117121829.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UM+"
             },
             {
@@ -546,7 +546,7 @@
                 "spindle_speed_rpm": "12K / 14K / 20K / 24K",
                 "number_of_tools": "30 / 40",
                 "type": "LM #40",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117121829.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UZ"
             },
             {
@@ -561,7 +561,7 @@
                 "spindle_speed_rpm": "12K / 14K / 20K / 24K",
                 "number_of_tools": "30 / 40",
                 "type": "LM #40",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117115509.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UL+"
             },
             {
@@ -576,7 +576,7 @@
                 "spindle_speed_rpm": "12K / 15K",
                 "number_of_tools": "40 / 60",
                 "type": "LM #50",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117120744.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UX"
             },
             {
@@ -591,7 +591,7 @@
                 "spindle_speed_rpm": "12K / 14K / 20K / 24K",
                 "number_of_tools": "120",
                 "type": "LM #40",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117124326.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SMART-Ua-STEEL"
             },
             {
@@ -607,7 +607,7 @@
                 "spindle_speed_rpm": "12K / 20K",
                 "number_of_tools": "50",
                 "type": "LM #40 Graphite",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117010932.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SMART-UaX"
             },
             {
@@ -623,7 +623,7 @@
                 "spindle_speed_rpm": "24K",
                 "number_of_tools": "16",
                 "type": "LM #30 Graphite",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221013756.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M-G1"
             },
             {
@@ -639,7 +639,7 @@
                 "spindle_speed_rpm": "24K",
                 "number_of_tools": "16",
                 "type": "LM #30 Graphite Pro",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20220715051216.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M-G1-Pro"
             },
             {
@@ -655,7 +655,7 @@
                 "spindle_speed_rpm": "20K",
                 "number_of_tools": "16 / 24 / 32",
                 "type": "BOX #40 Graphite",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221015525.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M-G2+"
             },
             {
@@ -670,7 +670,7 @@
                 "spindle_speed_rpm": "12K (SIEMENS : 15K) / 24K",
                 "number_of_tools": "21",
                 "type": "LM #30 Tapping",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221112127.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-360D"
             },
             {
@@ -685,7 +685,7 @@
                 "spindle_speed_rpm": "12K (SIEMENS : 15K) / 24K",
                 "number_of_tools": "21",
                 "type": "LM #30 Tapping",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221103133.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-400"
             },
             {
@@ -700,7 +700,7 @@
                 "spindle_speed_rpm": "12K (SIEMENS : 15K) / 24K",
                 "number_of_tools": "21",
                 "type": "LM #30 Tapping",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221110723.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-400L"
             }
         ]
@@ -771,7 +771,7 @@
                 "filters": [
                     "simultaneous"
                 ],
-                "image": "https://www.grobgroup.com/fileadmin/_processed_/7/4/csm_Header_G350T_geschlossen_bb11fc48a3.jpg",
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/5/1/csm_Header_G350_geschlossen_2b785e2ec7.png",
                 "specs": {
                     "travel_mm": {
                         "x": 2000,
@@ -1263,7 +1263,7 @@
                 "filters": [
                     "millturn"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/1/5/csm_Header_G150_geschlossen_b4de910a91.png",
                 "specs": {
                     "travel_mm": {
                         "x": 1500,
@@ -1291,7 +1291,7 @@
                 "filters": [
                     "millturn"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/7/4/csm_Header_G350T_geschlossen_bb11fc48a3.jpg",
                 "specs": {
                     "travel_mm": {
                         "x": 2000,
@@ -1312,14 +1312,14 @@
                 }
             },
             {
-                "model": "GS50T",
+                "model": "G550T",
                 "series": "G-Series",
                 "description": "5-Axis Turning Center",
                 "type": "5-Axis MillTurn",
                 "filters": [
                     "millturn"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/6/e/csm_Header_G550T_geschlossen_69762400ef.jpg",
                 "specs": {
                     "travel_mm": {
                         "x": 2500,
@@ -1347,7 +1347,7 @@
                 "filters": [
                     "millturn"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/6/8/csm_Header_G750T_geschlossen_ac8b211b8f.jpg",
                 "specs": {
                     "travel_mm": {
                         "x": 3000,

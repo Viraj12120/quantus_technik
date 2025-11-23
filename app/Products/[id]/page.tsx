@@ -556,12 +556,12 @@ export default function ProductDetailPage() {
 			}
 
 			// Tool Type (for both horizontal and vertical)
-			if (product.tool_type) {
-				baseSpecs.push({
-					name: "Tool Type",
-					value: product.tool_type.replace(/_/g, " ").toUpperCase(),
-				});
-			}
+			  if (product.tool_type) {
+					baseSpecs.push({
+						name: "Type",
+						value: product.tool_type.replace(/_/g, "  ").toUpperCase(),
+					});
+				}
 
 			// Swing Over Bed (if available)
 			if (product.swing_over_bed_mm) {
