@@ -52,7 +52,7 @@ interface Machine {
 	model: string;
 	series?: string;
 	description: string;
-	type: string;
+	type?: string;
 	image: string;
 	detail_url?: string;
 	specs?: MachineSpecs;
@@ -60,7 +60,7 @@ interface Machine {
 	max_turning_length_mm?: string | number;
 	spindle_motor_kw?: number;
 	max_cutting_length_mm?: string | number;
-	tool_type?:string;
+	tool_type?: string;
 
 	// Additional properties from your JSON
 	extra_title?: string;
@@ -241,6 +241,18 @@ const getManufacturer = (machine: Machine): string => {
 	)
 		return "jtekt";
 
+	// Also check if JTEKT data is at the root level
+	if ((machiningDataTyped as any).jtekt?.horizontal?.machines?.some(
+		(m: Machine) => m.model === model
+	))
+		return "jtekt";
+
+	// Check for JTEKT model patterns
+	const modelLower = model.toLowerCase();
+	if (modelLower.startsWith("fh") || modelLower.startsWith("th")) {
+		return "jtekt";
+	}
+
 	// Check GROB machines (nested under horizontal)
 	if (
 		machiningDataTyped.horizontal?.grob?.machines?.some(
@@ -274,7 +286,6 @@ const getManufacturer = (machine: Machine): string => {
 		return "ken";
 
 	// Fallback: Check for manufacturer-specific patterns in model or description
-	const modelLower = model.toLowerCase();
 	const descriptionLower = machine.description?.toLowerCase() || "";
 
 	if (modelLower.includes("jtekt") || descriptionLower.includes("jtekt"))
@@ -293,7 +304,6 @@ const getManufacturer = (machine: Machine): string => {
 
 	return "other";
 };
-
 // Helper function to format array or string values
 const formatArrayOrString = (value: any): string => {
 	if (!value) return "N/A";
@@ -374,16 +384,21 @@ export default function ProductDetailPage() {
 			const alzmetallHorizontal =
 				machiningDataTyped.horizontal?.alzmetall?.machines || [];
 
+			// FIXED: Properly access JTEKT horizontal machines
 			const jtektHorizontal =
 				machiningDataTyped.horizontal?.jtekt?.machines || [];
+
+			// Also check if JTEKT data is at the root level
+			const jtektRootHorizontal =
+				(machiningDataTyped as any).jtekt?.horizontal?.machines || [];
 
 			products = [
 				...kenHorizontal,
 				...hwacheonHorizontal,
 				...grobHorizontal,
-				...jtektHorizontal,
-
 				...alzmetallHorizontal,
+				...jtektHorizontal,
+				...jtektRootHorizontal,
 			];
 		} else if (selectedSubCategory === "vertical") {
 			// Get vertical machines from all sources
@@ -410,11 +425,20 @@ export default function ProductDetailPage() {
 						machine.description?.includes("Vertical")
 				) || [];
 
+			// Add JTEKT vertical if available
+			const jtektVertical =
+				machiningDataTyped.horizontal?.jtekt?.machines?.filter(
+					(machine) =>
+						machine.type?.includes("Vertical") ||
+						machine.description?.includes("Vertical")
+				) || [];
+
 			products = [
 				...kenVertical,
 				...hwacheonVertical,
 				...grobVertical,
 				...alzmetallVertical,
+				...jtektVertical,
 			];
 		} else if (selectedSubCategory === "5-axis") {
 			// Get 5-axis machines from all sources
@@ -437,11 +461,18 @@ export default function ProductDetailPage() {
 						machine.description?.includes("5-Axis")
 				) || [];
 
+			// Add JTEKT 5-axis if available
+			const jtekt5Axis =
+				machiningDataTyped.horizontal?.jtekt?.machines?.filter(
+					(m) => m.type?.includes("5-Axis") || m.description?.includes("5-Axis")
+				) || [];
+
 			products = [
 				...ken5Axis,
 				...hwacheon5Axis,
 				...grob5Axis,
 				...alzmetall5Axis,
+				...jtekt5Axis,
 			];
 		}
 
@@ -467,81 +498,126 @@ export default function ProductDetailPage() {
 	}, [heroProduct]);
 
 	// Enhanced specs function that works with your exact JSON structure
-	function getSpecs(product: Machine) {
-		const baseSpecs = [{ name: "Model", value: product.model }];
+	function getSpecs(product: Machine): { name: string; value: string }[] {
+		const baseSpecs: { name: string; value: string }[] = [
+			{ name: "Model", value: product.model },
+		];
 
 		// Check manufacturer type
 		const manufacturer = getManufacturer(product);
 
-	if (isTurningCenter) {
-		// Max Turning Diameter
-		if (product.max_turning_diameter_mm) {
-			baseSpecs.push({
-				name: "Max Cutting Diameter",
-				value: formatArrayOrString(product.max_turning_diameter_mm) + " mm",
-			});
+		const ensureString = (value: any): string => {
+			if (value === null || value === undefined) return "";
+			if (typeof value === "string") return value;
+			if (typeof value === "number") return value.toString();
+			if (Array.isArray(value)) return value.join(" / ");
+			return String(value);
+		};
+
+		if (isTurningCenter) {
+			// Max Turning Diameter
+			if (product.max_turning_diameter_mm) {
+				baseSpecs.push({
+					name: "Max Cutting Diameter",
+					value: ensureString(product.max_turning_diameter_mm) + " mm",
+				});
+			}
+
+			// Max Bar Size (mainly for horizontal turning)
+			if (product.max_bar_size_mm) {
+				baseSpecs.push({
+					name: "Max Bar Size",
+					value: ensureString(product.max_bar_size_mm) + " mm",
+				});
+			}
+
+			// Max Cutting Length - use max_cutting_length_mm for vertical, max_turning_length_mm for horizontal
+			if (
+				selectedSubCategory === "vertical_turning" &&
+				product.max_cutting_length_mm
+			) {
+				baseSpecs.push({
+					name: "Max Cutting Length",
+					value: ensureString(product.max_cutting_length_mm) + " mm",
+				});
+			} else if (product.max_turning_length_mm) {
+				baseSpecs.push({
+					name: "Max Cutting Length",
+					value: ensureString(product.max_turning_length_mm) + " mm",
+				});
+			}
+
+			// Spindle Motor Power
+			if (product.spindle_motor_kw) {
+				baseSpecs.push({
+					name: "Spindle Motor",
+					value: ensureString(product.spindle_motor_kw) + " kW",
+				});
+			}
+
+			// Tool Type (for both horizontal and vertical)
+			if (product.tool_type) {
+				baseSpecs.push({
+					name: "Tool Type",
+					value: product.tool_type.replace(/_/g, " ").toUpperCase(),
+				});
+			}
+
+			// Swing Over Bed (if available)
+			if (product.swing_over_bed_mm) {
+				baseSpecs.push({
+					name: "Swing Over Bed",
+					value: ensureString(product.swing_over_bed_mm) + " mm",
+				});
+			}
+
+			// Control System (if available)
+			if (product.control) {
+				baseSpecs.push({
+					name: "Control System",
+					value: product.control,
+				});
+			}
+
+			return baseSpecs;
 		}
 
-		// Max Bar Size (mainly for horizontal turning)
-		if (product.max_bar_size_mm) {
-			baseSpecs.push({
-				name: "Max Bar Size",
-				value: formatArrayOrString(product.max_bar_size_mm) + " mm",
-			});
+		// JTEKT machines
+		if (manufacturer === "jtekt") {
+			console.log("Processing as JTEKT machine:", product.model);
+
+			// Pallet size
+			if (product.pallet_size) {
+				baseSpecs.push({
+					name: "Pallet Size",
+					value: ensureString(product.pallet_size),
+				});
+			}
+
+			// Stroke/Working travel
+			if (product.stroke_xyz_mm) {
+				baseSpecs.push({
+					name: "Working Travel",
+					value: ensureString(product.stroke_xyz_mm),
+				});
+			}
+
+			// Spindle speed
+			if (product.spindle_speed_min_1) {
+				baseSpecs.push({
+					name: "Spindle Speed",
+					value: ensureString(product.spindle_speed_min_1) + " rpm",
+				});
+			}
+
+			// Add description if available
+			if (product.description) {
+				baseSpecs.push({ name: "Description", value: product.description });
+			}
+
+			console.log("Final specs for JTEKT:", baseSpecs);
+			return baseSpecs;
 		}
-
-		// Max Cutting Length - use max_cutting_length_mm for vertical, max_turning_length_mm for horizontal
-		if (
-			selectedSubCategory === "vertical_turning" &&
-			product.max_cutting_length_mm
-		) {
-			baseSpecs.push({
-				name: "Max Cutting Length",
-				value: formatArrayOrString(product.max_cutting_length_mm) + " mm",
-			});
-		} else if (product.max_turning_length_mm) {
-			baseSpecs.push({
-				name: "Max Cutting Length",
-				value: formatArrayOrString(product.max_turning_length_mm) + " mm",
-			});
-		}
-
-		// Spindle Motor Power
-		if (product.spindle_motor_kw) {
-			baseSpecs.push({
-				name: "Spindle Motor",
-				value: `${formatArrayOrString(product.spindle_motor_kw)} kW`,
-			});
-		}
-
-		// Tool Type (for both horizontal and vertical)
-		if (product.tool_type) {
-			baseSpecs.push({
-				name: "Tool Type",
-				value: product.tool_type.replace(/_/g, " ").toUpperCase(),
-			});
-		}
-
-		// Swing Over Bed (if available)
-		if (product.swing_over_bed_mm) {
-			baseSpecs.push({
-				name: "Swing Over Bed",
-				value: `${product.swing_over_bed_mm} mm`,
-			});
-		}
-
-		// Control System (if available)
-		if (product.control) {
-			baseSpecs.push({
-				name: "Control System",
-				value: product.control,
-			});
-		}
-
-		
-
-		return baseSpecs;
-	}
 
 		// KEN machines - use detailed specs (this includes 5-axis machines)
 		if (
@@ -565,7 +641,7 @@ export default function ProductDetailPage() {
 				const table = specs.table_mm;
 				baseSpecs.push({
 					name: "Table Size",
-					value: `${table.x} × ${table.y} mm`,
+					value: `${ensureString(table.x)} × ${ensureString(table.y)} mm`,
 				});
 			}
 
@@ -602,13 +678,13 @@ export default function ProductDetailPage() {
 				if (spindle.power_kw) {
 					baseSpecs.push({
 						name: "Spindle Power",
-						value: `${spindle.power_kw} kW`,
+						value: ensureString(spindle.power_kw) + " kW",
 					});
 				}
 				if (spindle.torque_nm) {
 					baseSpecs.push({
 						name: "Spindle Torque",
-						value: `${spindle.torque_nm} Nm`,
+						value: ensureString(spindle.torque_nm) + " Nm",
 					});
 				}
 			}
@@ -617,7 +693,7 @@ export default function ProductDetailPage() {
 			if (specs.table_load_kg) {
 				baseSpecs.push({
 					name: "Table Load",
-					value: `${formatArrayOrString(specs.table_load_kg)} kg`,
+					value: ensureString(specs.table_load_kg) + " kg",
 				});
 			}
 
@@ -637,7 +713,9 @@ export default function ProductDetailPage() {
 			}
 
 			// Add type
-			baseSpecs.push({ name: "Type", value: product.type });
+			if (product.type) {
+				baseSpecs.push({ name: "Type", value: product.type });
+			}
 
 			return baseSpecs;
 		}
@@ -659,7 +737,7 @@ export default function ProductDetailPage() {
 			if (product.interference_diameter_mm) {
 				baseSpecs.push({
 					name: "Interference Diameter",
-					value: `${product.interference_diameter_mm} mm`,
+					value: ensureString(product.interference_diameter_mm) + " mm",
 				});
 			}
 			if (product.brand) {
@@ -691,14 +769,14 @@ export default function ProductDetailPage() {
 			if (specs.max_tool_positions) {
 				baseSpecs.push({
 					name: "Max Tool Positions",
-					value: String(specs.max_tool_positions),
+					value: ensureString(specs.max_tool_positions),
 				});
 			}
 
 			if (specs.workpiece_capacity_kg) {
 				baseSpecs.push({
 					name: "Workpiece Capacity",
-					value: `${specs.workpiece_capacity_kg} kg`,
+					value: ensureString(specs.workpiece_capacity_kg) + " kg",
 				});
 			}
 
@@ -709,58 +787,22 @@ export default function ProductDetailPage() {
 		if (product.stroke_mm) {
 			baseSpecs.push({
 				name: "Stroke",
-				value: formatArrayOrString(product.stroke_mm),
+				value: ensureString(product.stroke_mm),
 			});
 		}
 
 		if (product.spindle_speed_rpm) {
 			baseSpecs.push({
 				name: "Spindle Speed",
-				value: formatArrayOrString(product.spindle_speed_rpm),
+				value: ensureString(product.spindle_speed_rpm),
 			});
 		}
 
 		if (product.number_of_tools) {
 			baseSpecs.push({
 				name: "Number of Tools",
-				value: formatArrayOrString(product.number_of_tools),
+				value: ensureString(product.number_of_tools),
 			});
-		}
-		// JTEKT machines
-		if (manufacturer === "jtekt") {
-			console.log("Processing as JTEKT machine:", product.model);
-
-			// Pallet size
-			if (product.pallet_size) {
-				baseSpecs.push({
-					name: "Pallet Size",
-					value: formatArrayOrString(product.pallet_size),
-				});
-			}
-
-			// Stroke/Working travel
-			if (product.stroke_xyz_mm) {
-				baseSpecs.push({
-					name: "Working Travel",
-					value: formatArrayOrString(product.stroke_xyz_mm) + " mm",
-				});
-			}
-
-			// Spindle speed
-			if (product.spindle_speed_min_1) {
-				baseSpecs.push({
-					name: "Spindle Speed",
-					value: formatArrayOrString(product.spindle_speed_min_1) + " rpm",
-				});
-			}
-
-			// Add description if available
-			if (product.description) {
-				baseSpecs.push({ name: "Description", value: product.description });
-			}
-
-			console.log("Final specs for JTEKT:", baseSpecs);
-			return baseSpecs;
 		}
 
 		if (product.type) {
@@ -771,7 +813,7 @@ export default function ProductDetailPage() {
 		if (selectedSubCategory === "horizontal" && product.pallet_size_mm) {
 			baseSpecs.push({
 				name: "Pallet Size",
-				value: formatArrayOrString(product.pallet_size_mm),
+				value: ensureString(product.pallet_size_mm),
 			});
 		}
 
@@ -812,9 +854,7 @@ export default function ProductDetailPage() {
 					<h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
 						<span className="text-gray-400">{getSubCategoryTitle()}</span>
 					</h1>
-					<p className="text-xl text-gray-300 max-w-3xl">
-						{heroProduct?.description || "High-performance machining solutions"}
-					</p>
+					
 				</div>
 			</section>
 
