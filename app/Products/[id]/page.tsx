@@ -954,7 +954,7 @@ export default function ProductDetailPage() {
 										<h3 className="text-xl font-bold text-black-700">
 											{item.model}
 										</h3>
-										{selectedSubCategory === "5-axis" && (
+										{/* {selectedSubCategory === "5-axis" && (
 											<div className="flex flex-wrap gap-1">
 												{classify5AxisMachine(item).map((category, idx) => (
 													<span
@@ -967,7 +967,7 @@ export default function ProductDetailPage() {
 													</span>
 												))}
 											</div>
-										)}
+										)} */}
 									</div>
 									<p className="text-gray-600 text-md">{item.description}</p>
 								</div>

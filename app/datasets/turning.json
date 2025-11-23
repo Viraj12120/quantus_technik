@@ -10,7 +10,8 @@
                 "max_bar_size_mm": "56/62",
                 "max_turning_length_mm": "209–300",
                 "spindle_motor_kw": 15,
-                "image": "",
+                "tool_type": "lm",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210107081807.png",
                 "detail_url": ""
             },
             {
@@ -20,7 +21,8 @@
                 "max_bar_size_mm": "51/65",
                 "max_turning_length_mm": "252–528",
                 "spindle_motor_kw": 15,
-                "image": "",
+                "tool_type": "lm sub_spin y_axis",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210107095105.png",
                 "detail_url": ""
             },
             {
@@ -30,7 +32,8 @@
                 "max_bar_size_mm": "51/100/130",
                 "max_turning_length_mm": "548–680",
                 "spindle_motor_kw": 18.5,
-                "image": "",
+                "tool_type": "lm sub_spin",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210112090814.png",
                 "detail_url": ""
             },
             {
@@ -40,7 +43,8 @@
                 "max_bar_size_mm": "51/65/76",
                 "max_turning_length_mm": "298–611",
                 "spindle_motor_kw": 18.5,
-                "image": "",
+                "tool_type": "box",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210112101207.png",
                 "detail_url": ""
             },
             {
@@ -50,7 +54,8 @@
                 "max_bar_size_mm": "65/81",
                 "max_turning_length_mm": "320–1143",
                 "spindle_motor_kw": 18.5,
-                "image": "",
+                "tool_type": "box sub_spin y_axis",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210112104025.png",
                 "detail_url": ""
             },
             {
@@ -60,7 +65,8 @@
                 "max_bar_size_mm": "65/76",
                 "max_turning_length_mm": "661–1261",
                 "spindle_motor_kw": "18.5/22",
-                "image": "",
+                "tool_type": "box sub_spin y_axis",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210112040716.png",
                 "detail_url": ""
             },
             {
@@ -70,7 +76,8 @@
                 "max_bar_size_mm": "76/89",
                 "max_turning_length_mm": "550–1360",
                 "spindle_motor_kw": "22/26",
-                "image": "",
+                "tool_type": "box sub_spin y_axis",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210112043912.png",
                 "detail_url": ""
             },
             {
@@ -80,57 +87,8 @@
                 "max_bar_size_mm": "116",
                 "max_turning_length_mm": "1100–3200",
                 "spindle_motor_kw": 30,
-                "image": "",
-                "detail_url": ""
-            },
-            {
-                "model": "Hi-TECH 700",
-                "description": "15” Heavy Duty Horizontal Turning Center",
-                "max_turning_diameter_mm": "680",
-                "max_bar_size_mm": "116",
-                "max_turning_length_mm": "1866–1986",
-                "spindle_motor_kw": 37,
-                "image": "",
-                "detail_url": ""
-            },
-            {
-                "model": "Hi-TECH 550BB",
-                "description": "15”/18” Big Bore Heavy Duty Horizontal Turning Center",
-                "max_turning_diameter_mm": "590",
-                "max_bar_size_mm": "190",
-                "max_turning_length_mm": "-",
-                "spindle_motor_kw": 37,
-                "image": "",
-                "detail_url": ""
-            },
-            {
-                "model": "Hi-TECH 700BB/BB+",
-                "description": "15” Big Bore Heavy Duty Horizontal Turning Center",
-                "max_turning_diameter_mm": "680",
-                "max_bar_size_mm": "180/295",
-                "max_turning_length_mm": "-",
-                "spindle_motor_kw": 45,
-                "image": "",
-                "detail_url": ""
-            },
-            {
-                "model": "Hi-TECH 750",
-                "description": "15”/18”/21”/24” Heavy Duty Horizontal Turning Center",
-                "max_turning_diameter_mm": "760",
-                "max_bar_size_mm": "116/164",
-                "max_turning_length_mm": "2141–4250",
-                "spindle_motor_kw": "37/45",
-                "image": "",
-                "detail_url": ""
-            },
-            {
-                "model": "Hi-TECH 850",
-                "description": "24” / 32” Heavy Duty Horizontal Turning Center",
-                "max_turning_diameter_mm": "920",
-                "max_bar_size_mm": "164",
-                "max_turning_length_mm": "2500–5100",
-                "spindle_motor_kw": 45,
-                "image": "",
+                "tool_type": "box",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210113090253.png",
                 "detail_url": ""
             },
             {
@@ -140,7 +98,63 @@
                 "max_bar_size_mm": "117/165",
                 "max_turning_length_mm": "1108–3208",
                 "spindle_motor_kw": "37/45",
-                "image": "",
+                "tool_type": "box",
+                "image": "https://www.hwacheon-europe.com/sites/default/files/styles/8col/public/283_hi_tech_650_03__picture_8_wmax2970_bg_trans.png?itok=D_e3C1tU",
+                "detail_url": ""
+            },
+            {
+                "model": "Hi-TECH 700",
+                "description": "15” Heavy Duty Horizontal Turning Center",
+                "max_turning_diameter_mm": "680",
+                "max_bar_size_mm": "116",
+                "max_turning_length_mm": "1866–1986",
+                "spindle_motor_kw": 37,
+                "tool_type": "box",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210113093852.png",
+                "detail_url": ""
+            },
+            {
+                "model": "Hi-TECH 550BB",
+                "description": "15”/18” Big Bore Heavy Duty Horizontal Turning Center",
+                "max_turning_diameter_mm": "590",
+                "max_bar_size_mm": "190",
+                "max_turning_length_mm": "-",
+                "spindle_motor_kw": 37,
+                "tool_type": "box",
+                "image": "https://www.hwacheon-europe.com/sites/default/files/styles/8col/public/128_hi_tech_550bb_02__machine_22_wmax2970.png?itok=GUGDwCWE",
+                "detail_url": ""
+            },
+            {
+                "model": "Hi-TECH 700BB/BB+",
+                "description": "15” Big Bore Heavy Duty Horizontal Turning Center",
+                "max_turning_diameter_mm": "680",
+                "max_bar_size_mm": "180/295",
+                "max_turning_length_mm": "-",
+                "spindle_motor_kw": 45,
+                "tool_type": "box",
+                "image": "https://www.hwacheon-europe.com/sites/default/files/styles/8col/public/hi_17_286.png?itok=cgDgMECs",
+                "detail_url": ""
+            },
+            {
+                "model": "Hi-TECH 750",
+                "description": "15”/18”/21”/24” Heavy Duty Horizontal Turning Center",
+                "max_turning_diameter_mm": "760",
+                "max_bar_size_mm": "116/164",
+                "max_turning_length_mm": "2141–4250",
+                "tool_type": "box y_axis",
+                "spindle_motor_kw": "37/45",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210113100900.png",
+                "detail_url": ""
+            },
+            {
+                "model": "Hi-TECH 850",
+                "description": "24” / 32” Heavy Duty Horizontal Turning Center",
+                "max_turning_diameter_mm": "920",
+                "max_bar_size_mm": "164",
+                "max_turning_length_mm": "2500–5100",
+                "spindle_motor_kw": 45,
+                "tool_type": "box y_axis",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210113111441.png",
                 "detail_url": ""
             },
             {
@@ -150,7 +164,8 @@
                 "max_bar_size_mm": "295/370",
                 "max_turning_length_mm": "-",
                 "spindle_motor_kw": 45,
-                "image": "",
+                "tool_type": "box y_axis",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210113031247.png",
                 "detail_url": ""
             },
             {
@@ -159,8 +174,9 @@
                 "max_turning_diameter_mm": "420",
                 "max_bar_size_mm": "51",
                 "max_turning_length_mm": "591",
+                "tool_type": "lm sub_spin y_axis",
                 "spindle_motor_kw": 11,
-                "image": "",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210113033527.png",
                 "detail_url": ""
             },
             {
@@ -169,8 +185,9 @@
                 "max_turning_diameter_mm": "630",
                 "max_bar_size_mm": "65",
                 "max_turning_length_mm": "557",
+                "tool_type": "lm sub_spin y_axis",
                 "spindle_motor_kw": 15,
-                "image": "",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210113040926.png",
                 "detail_url": ""
             },
             {
@@ -180,7 +197,8 @@
                 "max_bar_size_mm": "65",
                 "max_turning_length_mm": "444",
                 "spindle_motor_kw": 15,
-                "image": "",
+                "tool_type": "lm sub_spin y_axis",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210113052249.png",
                 "detail_url": ""
             },
             {
@@ -189,8 +207,9 @@
                 "max_turning_diameter_mm": "400",
                 "max_bar_size_mm": "59",
                 "max_turning_length_mm": "203",
+                "tool_type": "lm sub_spin y_axis",
                 "spindle_motor_kw": 18.5,
-                "image": "",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210114085123.png",
                 "detail_url": ""
             }
         ]

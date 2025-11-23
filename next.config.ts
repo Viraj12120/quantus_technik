@@ -61,6 +61,10 @@ const nextConfig: NextConfig = {
 				hostname: "alzmetall.de",
 				pathname: "/wp-content/uploads/**",
 			},
+			{
+				protocol: "https",
+				hostname: "alzmetall.de",
+			},
 		],
 	},
 	reactStrictMode: true,

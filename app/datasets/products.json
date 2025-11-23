@@ -8,7 +8,7 @@
                 "pallet_size": "□550(□500)",
                 "stroke_xyz_mm": "800×800×880",
                 "spindle_speed_min_1": "15,000",
-                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/list/fh5000s-i_fh5500s-i_fh5500sx-i.jpg"
+                "image": "/assets/JTEKTFH500.jpg"
             },
             {
                 "model": "FH5500S.i",
@@ -16,7 +16,7 @@
                 "pallet_size": "□550(□500)",
                 "stroke_xyz_mm": "900×800×880",
                 "spindle_speed_min_1": "15,000",
-                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/list/fh5000s-i_fh5500s-i_fh5500sx-i.jpg"
+                "image": "/assets/JTEKTFH500.jpg"
             },
             {
                 "model": "FH5500SX.i",
@@ -24,7 +24,7 @@
                 "pallet_size": "□550(□500)",
                 "stroke_xyz_mm": "900×800×880",
                 "spindle_speed_min_1": "15,000",
-                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/list/fh5000s-i_fh5500s-i_fh5500sx-i.jpg"
+                "image": "/assets/JTEKTFH500.jpg"
             },
             {
                 "model": "FH630SX-i",
@@ -791,14 +791,14 @@
                 }
             },
             {
-                "model": "GS50",
+                "model": "GS550",
                 "series": "G-Series",
                 "description": "High Speed 5-Axis Machine Center",
                 "type": "5-Axis Vertical",
                 "filters": [
                     "simultaneous"
                 ],
-                "image": "https://www.grobgroup.com/fileadmin/_processed_/3/6/csm_Header_GS50_geschlossen1_d366664f45.jpg",
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/3/6/csm_Header_G550_geschlossen1_d366664f45.jpg",
                 "specs": {
                     "travel_mm": {
                         "x": 2500,
@@ -872,14 +872,14 @@
                 }
             },
             {
-                "model": "GS50a",
+                "model": "GS550a",
                 "series": "G-Series",
                 "description": "Advanced High Speed 5-Axis Machine Center",
                 "type": "5-Axis Vertical",
                 "filters": [
                     "simultaneous"
                 ],
-                "image": "https://www.grobgroup.com/fileadmin/_processed_/4/f/csm_Header_GS50a_NEU_eb1a3f5986.png",
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/4/f/csm_Header_G550a_NEU_eb1a3f5986.png",
                 "specs": {
                     "travel_mm": {
                         "x": 2700,
@@ -906,7 +906,7 @@
                 "filters": [
                     "simultaneous"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "image": "/assets/GS_600-5T.webp",
                 "specs": {
                     "travel_mm": {
                         "x": 600,
@@ -934,7 +934,7 @@
                 "filters": [
                     "simultaneous"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "image": "/assets/GS_800-5T.jpg",
                 "specs": {
                     "travel_mm": {
                         "x": 800,
@@ -962,7 +962,7 @@
                 "filters": [
                     "simultaneous"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "image": "/assets/GS_1000-5T.webp",
                 "specs": {
                     "travel_mm": {
                         "x": 1000,
@@ -990,7 +990,7 @@
                 "filters": [
                     "simultaneous"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "image": "/assets/GS_1200_5T.webp",
                 "specs": {
                     "travel_mm": {
                         "x": 1200,
@@ -1018,7 +1018,7 @@
                 "filters": [
                     "simultaneous"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "image": "/assets/GS_1400-5T.webp",
                 "specs": {
                     "travel_mm": {
                         "x": 1400,
@@ -1375,7 +1375,7 @@
                 "filters": [
                     "millturn"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "image": "/GS_600-5FDT.webp",
                 "specs": {
                     "travel_mm": {
                         "x": 600,
@@ -1403,7 +1403,7 @@
                 "filters": [
                     "millturn"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "image": "/GS_800NE-5FDT.jpg",
                 "specs": {
                     "travel_mm": {
                         "x": 800,
@@ -1431,7 +1431,7 @@
                 "filters": [
                     "millturn"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "image": "/GS_1000-5FDT.webp",
                 "specs": {
                     "travel_mm": {
                         "x": 1000,
@@ -1459,7 +1459,7 @@
                 "filters": [
                     "millturn"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "image": "/GS_1200-5FDT.jpg",
                 "specs": {
                     "travel_mm": {
                         "x": 1200,
@@ -1487,7 +1487,7 @@
                 "filters": [
                     "millturn"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/placeholder.png",
+                "image": "/GS_1400-5FDT.webp",
                 "specs": {
                     "travel_mm": {
                         "x": 1400,
