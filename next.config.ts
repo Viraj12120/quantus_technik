@@ -53,6 +53,11 @@ const nextConfig: NextConfig = {
 			},
 			{
 				protocol: "https",
+				hostname: "www.alzmetall.de",
+				pathname: "/wp-content/uploads/**",
+			},
+			{
+				protocol: "https",
 				hostname: "alzmetall.de",
 				pathname: "/wp-content/uploads/**",
 			},

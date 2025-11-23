@@ -56,6 +56,12 @@ interface Machine {
 	image: string;
 	detail_url?: string;
 	specs?: MachineSpecs;
+	max_bar_size_mm?: string | number;
+	max_turning_length_mm?: string | number;
+	spindle_motor_kw?: number;
+	max_cutting_length_mm?: string | number;
+	tool_type?:string;
+
 	// Additional properties from your JSON
 	extra_title?: string;
 	types?: string[];
@@ -223,7 +229,6 @@ function isValidUrl(url: any) {
 	}
 }
 
-// FIXED: Helper function to get manufacturer for a machine - using model matching instead of includes
 // FIXED: Improved helper function to get manufacturer for a machine
 const getManufacturer = (machine: Machine): string => {
 	const model = machine.model;
@@ -276,7 +281,10 @@ const getManufacturer = (machine: Machine): string => {
 		return "jtekt";
 	if (modelLower.includes("grob") || descriptionLower.includes("grob"))
 		return "grob";
-	if (modelLower.includes("alzmetall") || descriptionLower.includes("alzmetall"))
+	if (
+		modelLower.includes("alzmetall") ||
+		descriptionLower.includes("alzmetall")
+	)
 		return "alzmetall";
 	if (modelLower.includes("ken") || descriptionLower.includes("ken"))
 		return "ken";
@@ -464,6 +472,76 @@ export default function ProductDetailPage() {
 
 		// Check manufacturer type
 		const manufacturer = getManufacturer(product);
+
+	if (isTurningCenter) {
+		// Max Turning Diameter
+		if (product.max_turning_diameter_mm) {
+			baseSpecs.push({
+				name: "Max Cutting Diameter",
+				value: formatArrayOrString(product.max_turning_diameter_mm) + " mm",
+			});
+		}
+
+		// Max Bar Size (mainly for horizontal turning)
+		if (product.max_bar_size_mm) {
+			baseSpecs.push({
+				name: "Max Bar Size",
+				value: formatArrayOrString(product.max_bar_size_mm) + " mm",
+			});
+		}
+
+		// Max Cutting Length - use max_cutting_length_mm for vertical, max_turning_length_mm for horizontal
+		if (
+			selectedSubCategory === "vertical_turning" &&
+			product.max_cutting_length_mm
+		) {
+			baseSpecs.push({
+				name: "Max Cutting Length",
+				value: formatArrayOrString(product.max_cutting_length_mm) + " mm",
+			});
+		} else if (product.max_turning_length_mm) {
+			baseSpecs.push({
+				name: "Max Cutting Length",
+				value: formatArrayOrString(product.max_turning_length_mm) + " mm",
+			});
+		}
+
+		// Spindle Motor Power
+		if (product.spindle_motor_kw) {
+			baseSpecs.push({
+				name: "Spindle Motor",
+				value: `${formatArrayOrString(product.spindle_motor_kw)} kW`,
+			});
+		}
+
+		// Tool Type (for both horizontal and vertical)
+		if (product.tool_type) {
+			baseSpecs.push({
+				name: "Tool Type",
+				value: product.tool_type.replace(/_/g, " ").toUpperCase(),
+			});
+		}
+
+		// Swing Over Bed (if available)
+		if (product.swing_over_bed_mm) {
+			baseSpecs.push({
+				name: "Swing Over Bed",
+				value: `${product.swing_over_bed_mm} mm`,
+			});
+		}
+
+		// Control System (if available)
+		if (product.control) {
+			baseSpecs.push({
+				name: "Control System",
+				value: product.control,
+			});
+		}
+
+		
+
+		return baseSpecs;
+	}
 
 		// KEN machines - use detailed specs (this includes 5-axis machines)
 		if (

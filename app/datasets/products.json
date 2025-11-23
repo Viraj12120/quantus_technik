@@ -165,17 +165,17 @@
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-660"
             },
             {
-                "model": "VESTA-1000+",
+                "model": "VESTA-1100",
                 "description": "Vertical Machining Center for Parts Machining",
                 "extra_title": "VESTA-1000+ 제품 상세보기",
                 "types": [
                     "lm",
                     "40#"
                 ],
-                "stroke_mm": "1,000 / 550 / 500",
-                "spindle_speed_rpm": "10K / 12K / 15K",
+                "stroke_mm": "1,100 / 600 / 600",
+                "spindle_speed_rpm": " 12K / 15K",
                 "number_of_tools": "30",
-                "type": "LM #40",
+                "type": "C-type LM #40",
                 "image": "/assets/VESTA-1100.jpg",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1000+"
             },
@@ -791,14 +791,14 @@
                 }
             },
             {
-                "model": "G550",
+                "model": "GS50",
                 "series": "G-Series",
                 "description": "High Speed 5-Axis Machine Center",
                 "type": "5-Axis Vertical",
                 "filters": [
                     "simultaneous"
                 ],
-                "image": "https://www.grobgroup.com/fileadmin/_processed_/3/6/csm_Header_G550_geschlossen1_d366664f45.jpg",
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/3/6/csm_Header_GS50_geschlossen1_d366664f45.jpg",
                 "specs": {
                     "travel_mm": {
                         "x": 2500,
@@ -872,14 +872,14 @@
                 }
             },
             {
-                "model": "G550a",
+                "model": "GS50a",
                 "series": "G-Series",
                 "description": "Advanced High Speed 5-Axis Machine Center",
                 "type": "5-Axis Vertical",
                 "filters": [
                     "simultaneous"
                 ],
-                "image": "https://www.grobgroup.com/fileadmin/_processed_/4/f/csm_Header_G550a_NEU_eb1a3f5986.png",
+                "image": "https://www.grobgroup.com/fileadmin/_processed_/4/f/csm_Header_GS50a_NEU_eb1a3f5986.png",
                 "specs": {
                     "travel_mm": {
                         "x": 2700,
@@ -899,8 +899,8 @@
                 }
             },
             {
-                "model": "G5-600/5-T",
-                "series": "G5-Series",
+                "model": "GS-600/5-T",
+                "series": "GS-Series",
                 "description": "5-Axis Turning Center",
                 "type": "5-Axis MillTurn",
                 "filters": [
@@ -927,8 +927,8 @@
                 }
             },
             {
-                "model": "G5-800/5-T",
-                "series": "G5-Series",
+                "model": "GS-800/5-T",
+                "series": "GS-Series",
                 "description": "5-Axis Turning Center",
                 "type": "5-Axis MillTurn",
                 "filters": [
@@ -955,8 +955,8 @@
                 }
             },
             {
-                "model": "G5-1000/5-T",
-                "series": "G5-Series",
+                "model": "GS-1000/5-T",
+                "series": "GS-Series",
                 "description": "5-Axis Turning Center",
                 "type": "5-Axis MillTurn",
                 "filters": [
@@ -983,8 +983,8 @@
                 }
             },
             {
-                "model": "G5-1200/5-T",
-                "series": "G5-Series",
+                "model": "GS-1200/5-T",
+                "series": "GS-Series",
                 "description": "5-Axis Turning Center",
                 "type": "5-Axis MillTurn",
                 "filters": [
@@ -1011,8 +1011,8 @@
                 }
             },
             {
-                "model": "G5-1400/5-T",
-                "series": "G5-Series",
+                "model": "GS-1400/5-T",
+                "series": "GS-Series",
                 "description": "5-Axis Turning Center",
                 "type": "5-Axis MillTurn",
                 "filters": [
@@ -1312,7 +1312,7 @@
                 }
             },
             {
-                "model": "G550T",
+                "model": "GS50T",
                 "series": "G-Series",
                 "description": "5-Axis Turning Center",
                 "type": "5-Axis MillTurn",
@@ -1368,8 +1368,8 @@
                 }
             },
             {
-                "model": "G5-600/5-FDT",
-                "series": "G5-Series",
+                "model": "GS-600/5-FDT",
+                "series": "GS-Series",
                 "description": "5-Axis Fine Drilling & Tapping Center",
                 "type": "5-Axis MillTurn",
                 "filters": [
@@ -1396,8 +1396,8 @@
                 }
             },
             {
-                "model": "G5-800/5-FDT",
-                "series": "G5-Series",
+                "model": "GS-800/5-FDT",
+                "series": "GS-Series",
                 "description": "5-Axis Fine Drilling & Tapping Center",
                 "type": "5-Axis MillTurn",
                 "filters": [
@@ -1424,8 +1424,8 @@
                 }
             },
             {
-                "model": "G5-1000/5-FDT",
-                "series": "G5-Series",
+                "model": "GS-1000/5-FDT",
+                "series": "GS-Series",
                 "description": "5-Axis Fine Drilling & Tapping Center",
                 "type": "5-Axis MillTurn",
                 "filters": [
@@ -1452,8 +1452,8 @@
                 }
             },
             {
-                "model": "G5-1200/5-FDT",
-                "series": "G5-Series",
+                "model": "GS-1200/5-FDT",
+                "series": "GS-Series",
                 "description": "5-Axis Fine Drilling & Tapping Center",
                 "type": "5-Axis MillTurn",
                 "filters": [
@@ -1480,8 +1480,8 @@
                 }
             },
             {
-                "model": "G5-1400/5-FDT",
-                "series": "G5-Series",
+                "model": "GS-1400/5-FDT",
+                "series": "GS-Series",
                 "description": "5-Axis Fine Drilling & Tapping Center",
                 "type": "5-Axis MillTurn",
                 "filters": [
