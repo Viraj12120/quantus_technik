@@ -29,19 +29,19 @@ export default function AboutUs() {
 			id: 1,
 			name: "Rajesh Gaikwad",
 			position: "Founder",
-			image: "/r.jpg",
+			image: "/raj.jpg",
 		},
 		{
 			id: 2,
 			name: "Anish Ramachandran",
 			position: "Partner",
-			image: "/anish.jpg",
+			image: "/a.jpg",
 		},
 		{
 			id: 3,
 			name: "Rahul Shinde",
 			position: "Service Lead",
-			image: "/rahul.jpg",
+			image: "/rah.jpg",
 		},
 	];
 
@@ -175,8 +175,11 @@ export default function AboutUs() {
 										src={member.image}
 										alt={member.name}
 										fill
-										className={`object-cover transition-transform duration-500 hover:scale-105
-            ${member.id === 1 ? "object-[center_20%]" : "object-top"}`}
+										className="
+            object-cover
+            transition-transform duration-500 hover:scale-105
+            object-[center_20%]   // ⬅️ moves the face slightly downward
+        "
 										priority={member.id <= 2}
 									/>
 								</div>

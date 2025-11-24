@@ -641,7 +641,7 @@ export default function ProductDetailPage() {
 				const table = specs.table_mm;
 				baseSpecs.push({
 					name: "Table Size",
-					value: `${ensureString(table.x)} × ${ensureString(table.y)} mm`,
+					value: `${ensureString(table.x)}  ${ensureString(table.y)} mm`,
 				});
 			}
 

@@ -31,22 +31,20 @@ export default function Footer() {
 				</div>
 
 				{/* Footer Links */}
-				<div className="grid grid-cols-1 md:grid-cols-5 gap-32 mb-12">
+				<div className="grid grid-cols-1 md:grid-cols-5 gap-6 mb-12">
 					{/* Company Info */}
 					<div className="md:col-span-1 flex flex-col items-center text-center">
 						<div className="flex items-center gap-2 mb-4">
 							{/* Logo */}
-								<Image
-									src="/qt.png"
-									alt="QuantusTechnik Logo"
-									width={200}
-									height={200}
-									className="w-34 h-14 sm:w-34 sm:h-34 rounded  backdrop-blur-sm p-2 mix-blend-multiply hover:opacity-60 transition"
-									priority
-								/>
+							<Image
+								src="/qt.png"
+								alt="QuantusTechnik Logo"
+								width={100}
+								height={100}
+								className="  rounded  backdrop-blur-sm p-2 mix-blend-multiply hover:opacity-60 transition"
+								priority
+							/>
 						</div>
-
-						
 					</div>
 
 					{/* About Section */}
@@ -145,17 +143,17 @@ export default function Footer() {
 					<div>
 						<h4 className="font-semibold text-black mb-6">Offers and Deals</h4>
 						<ul className="space-y-3 text-sm text-gray-700">
-							{/* <li>
-								<a href="/Blogs" className="hover:text-black">
-									Latest Updates
+							<li>
+								<a href="/Offer" className="hover:text-black">
+									Hwacheon TurnMill Centers
 								</a>
 							</li>
 
 							<li>
-								<a href="/Blogs" className="hover:text-black">
-									News
+								<a href="/Offer" className="hover:text-black">
+									Gerardi Angle Head
 								</a>
-							</li> */}
+							</li>
 						</ul>
 					</div>
 				</div>

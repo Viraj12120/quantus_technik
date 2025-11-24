@@ -285,6 +285,27 @@
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-1150+"
             },
             {
+                "model": "VT-1350",
+                "description": "Ram type Vertical Turning Center",
+                "max_turning_diameter_mm": "1650 ",
+                "max_cutting_length_mm": "1300 ",
+                "spindle_motor_kw": 45,
+                "number_of_tools": 12,
+                "tool_type": "lm | magazine | w-axis",
+                "image": "/assets/VT 1350.jpg",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-1150+"
+            },{
+                "model": "VT-1650",
+                "description": "Ram type Vertical Turning Center",
+                "max_turning_diameter_mm": "2000 ",
+                "max_cutting_length_mm": "1800 ",
+                "spindle_motor_kw": 45,
+                "number_of_tools": 12,
+                "tool_type": "box | magazine | w-axis",
+                "image": "/assets/VT 1650.jpg",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-1150+"
+            },
+            {
                 "model": "VT-2000",
                 "description": "Heavy Duty Large Vertical Turning Center",
                 "max_turning_diameter_mm": 2500,
