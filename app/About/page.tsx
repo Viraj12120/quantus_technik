@@ -35,13 +35,13 @@ export default function AboutUs() {
 			id: 2,
 			name: "Anish Ramachandran",
 			position: "Partner",
-			image: "/a.jpg",
+			image: "/ai.jpg",
 		},
 		{
 			id: 3,
 			name: "Rahul Shinde",
 			position: "Service Lead",
-			image: "/rah.jpg",
+			image: "/rl.jpg",
 		},
 	];
 
