@@ -30,6 +30,9 @@ interface MachineSpecs {
 		rotation_speed_rpm?: number;
 		power_kw?: string | number;
 		torque_nm?: string | number;
+		interface?: string;
+		distance_spindle_max_mm?: string;
+		interference_circle_diameter_mm?: string;
 	};
 	table_load_kg?: number | number[];
 	rotary_table?: {
@@ -254,12 +257,23 @@ function isValidUrl(url: any) {
 }
 
 // FIXED: Improved helper function to get manufacturer for a machine
+// FIXED: Improved helper function to get manufacturer for a machine
 const getManufacturer = (machine: Machine): string => {
 	const model = machine.model;
 	const modelLower = model.toLowerCase();
 	const descriptionLower = machine.description?.toLowerCase() || "";
 
-	// Check GROB machines in 5-axis section FIRST
+	// ★ FIRST PRIORITY — GS-Series MUST BE CHECKED BEFORE ANY GROB LOGIC
+	if (
+		modelLower.startsWith("gs-") ||
+		machine.series?.toLowerCase().includes("gs-series")
+	) {
+		return "alzmetall";
+	}
+
+	// ---- GROB SECTION ----
+
+	// Check GROB 5-axis G-Series
 	if (
 		machiningDataTyped["5-axis"]?.machines?.some(
 			(m) => m.model === model && m.series?.includes("G-Series")
@@ -267,7 +281,7 @@ const getManufacturer = (machine: Machine): string => {
 	)
 		return "grob";
 
-	// Check GROB machines in horizontal section
+	// Check GROB horizontal
 	if (
 		machiningDataTyped.horizontal?.grob?.machines?.some(
 			(m) => m.model === model
@@ -275,20 +289,23 @@ const getManufacturer = (machine: Machine): string => {
 	)
 		return "grob";
 
-	// Check for GROB by model pattern (G-series models)
+	// Check GROB by model pattern (G-anything except gantry)
 	if (modelLower.startsWith("g") && !modelLower.includes("gantry")) {
 		return "grob";
 	}
 
-	// Check Alzmetall machines (nested under horizontal)
+	// ---- ALZMETALL SECTION ----
 	if (
 		machiningDataTyped.horizontal?.alzmetall?.machines?.some(
 			(m) => m.model === model
+		) ||
+		machiningDataTyped["5-axis"]?.machines?.some(
+			(m) => m.model === model && m.series?.toLowerCase().includes("gs-series")
 		)
 	)
 		return "alzmetall";
 
-	// Check JTEKT machines
+	// ---- JTEKT ----
 	if (
 		machiningDataTyped.horizontal?.jtekt?.machines?.some(
 			(m) => m.model === model
@@ -296,7 +313,6 @@ const getManufacturer = (machine: Machine): string => {
 	)
 		return "jtekt";
 
-	// Also check if JTEKT data is at the root level
 	if (
 		(machiningDataTyped as any).jtekt?.horizontal?.machines?.some(
 			(m: Machine) => m.model === model
@@ -304,51 +320,79 @@ const getManufacturer = (machine: Machine): string => {
 	)
 		return "jtekt";
 
-	// Check for JTEKT model patterns
 	if (modelLower.startsWith("fh") || modelLower.startsWith("th")) {
 		return "jtekt";
 	}
 
-	// Check KEN machines
-	if (machiningDataTyped.ken?.machines?.some((m) => m.model === model))
+	// ---- KEN ----
+	// Check KEN machines in 5-axis section (like CompactB, LinmaxB, etc.)
+	if (
+		machiningDataTyped.ken?.machines?.some((m) => m.model === model) ||
+		machiningDataTyped["5-axis"]?.machines?.some(
+			(m) => 
+				m.model === model && 
+				// KEN machines have these specific series or model patterns
+				(m.series?.includes("Compact") || 
+				 m.series?.includes("Linmax") ||
+				 m.series?.includes("Torque") ||
+				 m.series?.includes("Focus") ||
+				 m.series?.includes("Rotor") ||
+				 m.series?.includes("Saber") ||
+				 m.series?.includes("Rhino") ||
+				 modelLower.includes("compact") ||
+				 modelLower.includes("linmax") ||
+				 modelLower.includes("torque") ||
+				 modelLower.includes("focus") ||
+				 modelLower.includes("rotor") ||
+				 modelLower.includes("saber") ||
+				 modelLower.includes("rhino"))
+		)
+	)
 		return "ken";
 
-	// Check Hwacheon horizontal machines
+	// ---- HWACHEON ----
 	if (machiningDataTyped.horizontal?.machines?.some((m) => m.model === model))
 		return "hwacheon";
 
-	// Check Hwacheon vertical machines
 	if (machiningDataTyped.vertical?.products?.some((m) => m.model === model))
 		return "hwacheon";
 
-	// Check 5-axis machines - identify GROB by G-series pattern
+	// ---- 5-AXIS FALLBACK ----
 	if (machiningDataTyped["5-axis"]?.machines?.some((m) => m.model === model)) {
 		// If it's a G-series machine in 5-axis, it's GROB
 		if (modelLower.startsWith("g")) {
 			return "grob";
 		}
+		// If it's GS-series or starts with GS-, it's Alzmetall
+		if (modelLower.startsWith("gs-") || machine.series?.toLowerCase().includes("gs-series")) {
+			return "alzmetall";
+		}
+		// Default 5-axis machines to KEN
 		return "ken";
 	}
 
-	// Fallback: Check for manufacturer-specific patterns in model or description
-	// Check GROB patterns first in fallback
+	// ---- FALLBACKS ----
 	if (modelLower.includes("grob") || descriptionLower.includes("grob"))
 		return "grob";
 
 	if (modelLower.includes("jtekt") || descriptionLower.includes("jtekt"))
 		return "jtekt";
+
 	if (
 		modelLower.includes("alzmetall") ||
 		descriptionLower.includes("alzmetall")
 	)
 		return "alzmetall";
+
 	if (modelLower.includes("ken") || descriptionLower.includes("ken"))
 		return "ken";
+
 	if (modelLower.includes("hwacheon") || descriptionLower.includes("hwacheon"))
 		return "hwacheon";
 
 	return "other";
 };
+
 // Helper function to format array or string values
 const formatArrayOrString = (value: any): string => {
 	if (!value) return "N/A";
@@ -708,7 +752,7 @@ export default function ProductDetailPage() {
 				const table = specs.table_mm;
 				baseSpecs.push({
 					name: "Table Size",
-					value: `${ensureString(table.x)} x ${ensureString(table.y)} mm`,
+					value: `${ensureString(table.x)}  ${ensureString(table.y)} mm`,
 				});
 			}
 
@@ -717,7 +761,7 @@ export default function ProductDetailPage() {
 				const feed = specs.feedrate_m_per_min;
 				baseSpecs.push({
 					name: "Feedrate",
-					value: `X:${feed.x} / Y:${feed.y} / Z:${feed.z} m/min`,
+					value: `${feed.x} / ${feed.y} / ${feed.z} m/min`,
 				});
 			}
 
@@ -881,6 +925,7 @@ export default function ProductDetailPage() {
 		}
 
 		// Alzmetall machines
+		// Alzmetall machines
 		if (manufacturer === "alzmetall" && product.specs) {
 			const specs = product.specs;
 
@@ -893,13 +938,15 @@ export default function ProductDetailPage() {
 				);
 			}
 
-			if (specs.cutting_tool_interface) {
+			// Tool Interface is inside spindle object
+			if (specs.spindle && specs.spindle.interface) {
 				baseSpecs.push({
 					name: "Tool Interface",
-					value: specs.cutting_tool_interface,
+					value: specs.spindle.interface,
 				});
 			}
 
+			// Max Tool Positions - check if this exists in your data
 			if (specs.max_tool_positions) {
 				baseSpecs.push({
 					name: "Max Tool Positions",
@@ -907,10 +954,61 @@ export default function ProductDetailPage() {
 				});
 			}
 
-			if (specs.workpiece_capacity_kg) {
+			// Workpiece Capacity - using table_load_kg from your data
+			if (specs.table_load_kg) {
 				baseSpecs.push({
 					name: "Workpiece Capacity",
-					value: ensureString(specs.workpiece_capacity_kg) + " kg",
+					value: ensureString(specs.table_load_kg) + " kg",
+				});
+			}
+
+			// Add spindle specifications for Alzmetall
+			if (specs.spindle) {
+				const spindle = specs.spindle;
+
+				if (spindle.power_kw) {
+					baseSpecs.push({
+						name: "Spindle Power",
+						value: ensureString(spindle.power_kw) + " kW",
+					});
+				}
+
+				if (spindle.torque_nm) {
+					baseSpecs.push({
+						name: "Spindle Torque",
+						value: ensureString(spindle.torque_nm) + " Nm",
+					});
+				}
+
+				if (spindle.rotation_speed_rpm) {
+					baseSpecs.push({
+						name: "Spindle Speed",
+						value: ensureString(spindle.rotation_speed_rpm) + " rpm",
+					});
+				}
+
+				if (spindle.distance_spindle_max_mm) {
+					baseSpecs.push({
+						name: "Distance Spindle",
+						value: ensureString(spindle.distance_spindle_max_mm) + " mm",
+					});
+				}
+
+				if (spindle.interference_circle_diameter_mm) {
+					baseSpecs.push({
+						name: "Interference Circle",
+						value:
+							ensureString(spindle.interference_circle_diameter_mm) + " mm",
+					});
+				}
+			}
+
+			// Add feedrate if available
+			if (specs.feedrate_m_per_min) {
+				const feed = specs.feedrate_m_per_min;
+				baseSpecs.push({
+					name: "Rapid Travel",
+					value: `X:${feed.x} / Y:${feed.y} / Z:${feed.z} m/min`,
 				});
 			}
 
