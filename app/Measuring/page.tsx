@@ -411,14 +411,14 @@ export default function MachinesDetailPage() {
 
 			{/* ✅ MAIN CATEGORY FILTER (same UI as product page) */}
 			<section className="py-6 bg-white sticky top-16 z-40">
-				<div className="max-w-7xl mx-auto px-24 flex gap-3 overflow-x-auto">
+				<div className=" mx-auto px-24 flex gap-3 overflow-x-auto">
 					{mainCategories.map((cat) => (
 						<button
 							key={cat.id}
 							onClick={() => setSelectedMainCat(cat)}
 							className={`px-5 py-2.5 rounded-full whitespace-nowrap transition-all ${
 								selectedMainCat.id === cat.id
-									? "bg-blue-600 text-white"
+									? "bg-black text-white"
 									: "bg-gray-100 text-gray-700 hover:bg-gray-200"
 							}`}>
 							{cat.label}
@@ -429,14 +429,14 @@ export default function MachinesDetailPage() {
 
 			{/* ✅ SUBCATEGORY FILTER (identical styling) */}
 			<section className="py-6 bg-white border-b border-gray-200 sticky top-28 z-30">
-				<div className="max-w-7xl lg:px-24 mx-auto px-6 flex gap-3 overflow-x-auto hide-scrollbar">
+				<div className=" lg:px-24 mx-auto px-6 flex gap-3 overflow-x-auto hide-scrollbar">
 					{subcategories.map((sub: any) => (
 						<button
 							key={sub.id}
 							onClick={() => setSelectedSubCategory(sub.id)}
 							className={`px-5 py-2.5 rounded-full whitespace-nowrap transition-all ${
 								selectedSubCategory === sub.id
-									? "bg-blue-600 text-white"
+									? "bg-black text-white"
 									: "bg-gray-100 text-gray-700 hover:bg-gray-200"
 							}`}>
 							{sub.name}

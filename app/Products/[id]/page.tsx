@@ -41,6 +41,12 @@ interface MachineSpecs {
 	max_tool_positions?: number;
 	workpiece_capacity_kg?: number;
 	max_workpiece_weight_kg?: number;
+	interference_diameter?: number;
+	table_diameter?: string | number;
+	table_load?: string | number;
+	spindle_taper?: {
+		[key: string]: string;
+	};
 }
 
 interface SpecItem {
@@ -56,13 +62,15 @@ interface Machine {
 	image: string;
 	detail_url?: string;
 	specs?: MachineSpecs;
+	min_indexing_angle?: string;
+	table_load?: string | number;
+	feedrate?: string;
 	max_bar_size_mm?: string | number;
 	max_turning_length_mm?: string | number;
 	spindle_motor_kw?: number;
 	max_cutting_length_mm?: string | number;
 	tool_type?: string;
-
-	// Additional properties from your JSON
+	table_diameter?: string;
 	extra_title?: string;
 	types?: string[];
 	stroke_mm?: string | number[];
@@ -94,6 +102,22 @@ interface Machine {
 	filters?: string[];
 	stroke_xyz_mm?: string | number[]; // For JTEKT - ADD THIS
 	spindle_speed_min_1?: string | number[]; // For JTEKT - ADD THIS
+
+	// GROB-specific properties
+	travel_mm?: {
+		x: number;
+		y: number;
+		z: number;
+	};
+	interference_diameter?: number;
+	spindle?: {
+		rotation_speed_rpm?: string | number;
+		power_kw?: string;
+		torque_nm?: string;
+	};
+	spindle_taper?: {
+		[key: string]: string;
+	};
 }
 
 interface ManufacturerData {
@@ -232,34 +256,29 @@ function isValidUrl(url: any) {
 // FIXED: Improved helper function to get manufacturer for a machine
 const getManufacturer = (machine: Machine): string => {
 	const model = machine.model;
+	const modelLower = model.toLowerCase();
+	const descriptionLower = machine.description?.toLowerCase() || "";
 
-	// First, check if it's a JTEKT machine by looking in the specific JTEKT section
+	// Check GROB machines in 5-axis section FIRST
 	if (
-		machiningDataTyped.horizontal?.jtekt?.machines?.some(
-			(m) => m.model === model
+		machiningDataTyped["5-axis"]?.machines?.some(
+			(m) => m.model === model && m.series?.includes("G-Series")
 		)
 	)
-		return "jtekt";
+		return "grob";
 
-	// Also check if JTEKT data is at the root level
-	if ((machiningDataTyped as any).jtekt?.horizontal?.machines?.some(
-		(m: Machine) => m.model === model
-	))
-		return "jtekt";
-
-	// Check for JTEKT model patterns
-	const modelLower = model.toLowerCase();
-	if (modelLower.startsWith("fh") || modelLower.startsWith("th")) {
-		return "jtekt";
-	}
-
-	// Check GROB machines (nested under horizontal)
+	// Check GROB machines in horizontal section
 	if (
 		machiningDataTyped.horizontal?.grob?.machines?.some(
 			(m) => m.model === model
 		)
 	)
 		return "grob";
+
+	// Check for GROB by model pattern (G-series models)
+	if (modelLower.startsWith("g") && !modelLower.includes("gantry")) {
+		return "grob";
+	}
 
 	// Check Alzmetall machines (nested under horizontal)
 	if (
@@ -268,6 +287,27 @@ const getManufacturer = (machine: Machine): string => {
 		)
 	)
 		return "alzmetall";
+
+	// Check JTEKT machines
+	if (
+		machiningDataTyped.horizontal?.jtekt?.machines?.some(
+			(m) => m.model === model
+		)
+	)
+		return "jtekt";
+
+	// Also check if JTEKT data is at the root level
+	if (
+		(machiningDataTyped as any).jtekt?.horizontal?.machines?.some(
+			(m: Machine) => m.model === model
+		)
+	)
+		return "jtekt";
+
+	// Check for JTEKT model patterns
+	if (modelLower.startsWith("fh") || modelLower.startsWith("th")) {
+		return "jtekt";
+	}
 
 	// Check KEN machines
 	if (machiningDataTyped.ken?.machines?.some((m) => m.model === model))
@@ -281,17 +321,22 @@ const getManufacturer = (machine: Machine): string => {
 	if (machiningDataTyped.vertical?.products?.some((m) => m.model === model))
 		return "hwacheon";
 
-	// Check 5-axis machines
-	if (machiningDataTyped["5-axis"]?.machines?.some((m) => m.model === model))
+	// Check 5-axis machines - identify GROB by G-series pattern
+	if (machiningDataTyped["5-axis"]?.machines?.some((m) => m.model === model)) {
+		// If it's a G-series machine in 5-axis, it's GROB
+		if (modelLower.startsWith("g")) {
+			return "grob";
+		}
 		return "ken";
+	}
 
 	// Fallback: Check for manufacturer-specific patterns in model or description
-	const descriptionLower = machine.description?.toLowerCase() || "";
+	// Check GROB patterns first in fallback
+	if (modelLower.includes("grob") || descriptionLower.includes("grob"))
+		return "grob";
 
 	if (modelLower.includes("jtekt") || descriptionLower.includes("jtekt"))
 		return "jtekt";
-	if (modelLower.includes("grob") || descriptionLower.includes("grob"))
-		return "grob";
 	if (
 		modelLower.includes("alzmetall") ||
 		descriptionLower.includes("alzmetall")
@@ -332,8 +377,9 @@ export default function ProductDetailPage() {
 	// Sub-categories
 	const subCategories = isMachiningCenter
 		? [
-				{ id: "horizontal", name: "Horizontal" },
 				{ id: "vertical", name: "Vertical" },
+
+				{ id: "horizontal", name: "Horizontal" },
 				{ id: "5-axis", name: "5-Axis" },
 		  ]
 		: [
@@ -499,9 +545,7 @@ export default function ProductDetailPage() {
 
 	// Enhanced specs function that works with your exact JSON structure
 	function getSpecs(product: Machine): { name: string; value: string }[] {
-		const baseSpecs: { name: string; value: string }[] = [
-			{ name: "Model", value: product.model },
-		];
+		const baseSpecs: { name: string; value: string }[] = [];
 
 		// Check manufacturer type
 		const manufacturer = getManufacturer(product);
@@ -556,12 +600,12 @@ export default function ProductDetailPage() {
 			}
 
 			// Tool Type (for both horizontal and vertical)
-			  if (product.tool_type) {
-					baseSpecs.push({
-						name: "Type",
-						value: product.tool_type.replace(/_/g, "  ").toUpperCase(),
-					});
-				}
+			if (product.tool_type) {
+				baseSpecs.push({
+					name: "Type",
+					value: product.tool_type.replace(/_/g, "  ").toUpperCase(),
+				});
+			}
 
 			// Swing Over Bed (if available)
 			if (product.swing_over_bed_mm) {
@@ -611,10 +655,33 @@ export default function ProductDetailPage() {
 			}
 
 			// Add description if available
-			if (product.description) {
-				baseSpecs.push({ name: "Description", value: product.description });
+
+			if (product.min_indexing_angle) {
+				baseSpecs.push({
+					name: "Min Indexing Angle",
+					value: product.min_indexing_angle,
+				});
 			}
 
+			if (product.table_load) {
+				baseSpecs.push({
+					name: "Table Load",
+					value: ensureString(product.table_load),
+				});
+			}
+
+			if (product.feedrate) {
+				baseSpecs.push({
+					name: "Feedrate",
+					value: product.feedrate + " m/min",
+				});
+			}
+			if (product.number_of_tools) {
+				baseSpecs.push({
+					name: "Number of Tools",
+					value: ensureString(product.number_of_tools),
+				});
+			}
 			console.log("Final specs for JTEKT:", baseSpecs);
 			return baseSpecs;
 		}
@@ -641,7 +708,7 @@ export default function ProductDetailPage() {
 				const table = specs.table_mm;
 				baseSpecs.push({
 					name: "Table Size",
-					value: `${ensureString(table.x)}  ${ensureString(table.y)} mm`,
+					value: `${ensureString(table.x)} x ${ensureString(table.y)} mm`,
 				});
 			}
 
@@ -722,27 +789,94 @@ export default function ProductDetailPage() {
 
 		// GROB machines
 		if (manufacturer === "grob") {
-			if (product.working_travel_mm) {
-				baseSpecs.push({
-					name: "Working Travel",
-					value: `X:${product.working_travel_mm[0]} | Y:${product.working_travel_mm[1]} | Z:${product.working_travel_mm[2]} mm`,
-				});
+			if (product.specs) {
+				const specs = product.specs;
+
+				// Working Travel
+				if (specs.travel_mm) {
+					baseSpecs.push({
+						name: "Working Travel",
+						value: `${specs.travel_mm.x} |${specs.travel_mm.y} | ${specs.travel_mm.z} mm`,
+					});
+				}
+
+				// Rapid Traverse
+				if (specs.feedrate_m_per_min) {
+					baseSpecs.push({
+						name: "Rapid Traverse",
+						value: `${specs.feedrate_m_per_min.x} | ${specs.feedrate_m_per_min.y} | ${specs.feedrate_m_per_min.z} m/min`,
+					});
+				}
+
+				// Interference Diameter
+				if (specs.interference_diameter !== undefined) {
+					baseSpecs.push({
+						name: "Interference Diameter",
+						value: ensureString(specs.interference_diameter) + " mm",
+					});
+				}
+
+				// Table Diameter
+				if (specs.table_diameter !== undefined) {
+					baseSpecs.push({
+						name: "Table Diameter",
+						value: ensureString(specs.table_diameter) + " mm",
+					});
+				}
+
+				// Table Load
+				if (specs.table_load !== undefined) {
+					baseSpecs.push({
+						name: "Table Load",
+						value: ensureString(specs.table_load) + " kg",
+					});
+				}
+
+				// Spindle Specs
+				if (specs.spindle) {
+					if (specs.spindle.rotation_speed_rpm !== undefined) {
+						baseSpecs.push({
+							name: "Spindle Speed",
+							value: ensureString(specs.spindle.rotation_speed_rpm) + " rpm",
+						});
+					}
+					if (specs.spindle.power_kw !== undefined) {
+						baseSpecs.push({
+							name: "Spindle Power",
+							value: ensureString(specs.spindle.power_kw) + " kW",
+						});
+					}
+					if (specs.spindle.torque_nm !== undefined) {
+						baseSpecs.push({
+							name: "Spindle Torque",
+							value: ensureString(specs.spindle.torque_nm) + " Nm",
+						});
+					}
+				}
+
+				// Spindle Taper (supports array or object)
+				if (specs.spindle_taper) {
+					let taperValue = "";
+
+					if (Array.isArray(specs.spindle_taper)) {
+						taperValue = specs.spindle_taper.join(" / ");
+					} else if (typeof specs.spindle_taper === "object") {
+						taperValue = Object.keys(specs.spindle_taper).join(" / ");
+					}
+
+					if (taperValue.trim() !== "") {
+						baseSpecs.push({
+							name: "Spindle Taper",
+							value: taperValue,
+						});
+					}
+				}
 			}
-			if (product.speed_max_m_per_min) {
-				baseSpecs.push({
-					name: "Rapid Traverse",
-					value: `X:${product.speed_max_m_per_min[0]} | Y:${product.speed_max_m_per_min[1]} | Z:${product.speed_max_m_per_min[2]} m/min`,
-				});
-			}
-			if (product.interference_diameter_mm) {
-				baseSpecs.push({
-					name: "Interference Diameter",
-					value: ensureString(product.interference_diameter_mm) + " mm",
-				});
-			}
+
 			if (product.brand) {
 				baseSpecs.push({ name: "Brand", value: product.brand });
 			}
+
 			return baseSpecs;
 		}
 
@@ -834,8 +968,8 @@ export default function ProductDetailPage() {
 	const getSubCategoryTitle = () => {
 		const subCats = isMachiningCenter
 			? [
-					{ id: "horizontal", name: "Horizontal" },
-					{ id: "vertical", name: "Vertical" },
+					{ id: "vertical", name: "Vertical Machining Center" },
+					{ id: "horizontal", name: "Horizontal Machining Center" },
 					{ id: "5-axis", name: "5-Axis" },
 			  ]
 			: [
@@ -854,7 +988,6 @@ export default function ProductDetailPage() {
 					<h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
 						<span className="text-gray-400">{getSubCategoryTitle()}</span>
 					</h1>
-					
 				</div>
 			</section>
 
@@ -872,7 +1005,7 @@ export default function ProductDetailPage() {
 								}}
 								className={`px-5 py-2.5 rounded-full whitespace-nowrap transition-all ${
 									selectedSubCategory === subCat.id
-										? "bg-blue-600 text-white"
+										? "bg-black text-white"
 										: "bg-gray-100 text-gray-700 hover:bg-gray-200"
 								}`}>
 								{subCat.name}
@@ -889,7 +1022,7 @@ export default function ProductDetailPage() {
 									onClick={() => setSelected5AxisFilter(filter.id)}
 									className={`px-4 py-2 rounded-full text-sm whitespace-nowrap transition-all ${
 										selected5AxisFilter === filter.id
-											? "bg-blue-600 text-white"
+											? "bg-black text-white"
 											: "bg-gray-100 text-gray-700 hover:bg-gray-200"
 									}`}>
 									{filter.name}

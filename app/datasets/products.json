@@ -8,6 +8,10 @@
                 "pallet_size": "550(500)",
                 "stroke_xyz_mm": "800×800×880",
                 "spindle_speed_min_1": "15,000",
+                "min_indexing_angle": "0.0001°",
+                "table_load": "400 kg",
+                "feedrate": "60 / 60 / 60 ",
+                "number_of_tools": "40 (60)",
                 "image": "/assets/JTEKTFH500.jpg"
             },
             {
@@ -16,6 +20,10 @@
                 "pallet_size": "550(500)",
                 "stroke_xyz_mm": "900×800×880",
                 "spindle_speed_min_1": "15,000",
+                "min_indexing_angle": "0.001°",
+                "table_load": "1000 kg",
+                "number_of_tools": "40 (60)",
+                "feedrate": "60 / 60 / 60 ",
                 "image": "/assets/JTEKTFH500.jpg"
             },
             {
@@ -24,6 +32,10 @@
                 "pallet_size": "550(500)",
                 "stroke_xyz_mm": "900×800×880",
                 "spindle_speed_min_1": "15,000",
+                "min_indexing_angle": "0.001°",
+                "table_load": "400 kg",
+                "feedrate": "60 / 60 / 60 ",
+                "number_of_tools": "40 (60)",
                 "image": "/assets/JTEKTFH500.jpg"
             },
             {
@@ -32,6 +44,10 @@
                 "pallet_size": "630",
                 "stroke_xyz_mm": "1,050×900×1,050",
                 "spindle_speed_min_1": "6,000[6,000/15,000]",
+                "min_indexing_angle": "1°(0.001°) ",
+                "table_load": "1200(1500) kg",
+                "number_of_tools": "40 (60,121,122)",
+                "feedrate": "60 / 60 / 60 ",
                 "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh550sx_fh630sxi_fh800sxi.jpg"
             },
             {
@@ -39,7 +55,23 @@
                 "description": "Horizontal spindle machining center FH800SX-i",
                 "pallet_size": "□800",
                 "stroke_xyz_mm": "1,450×1,250×1,550",
-                "spindle_speed_min_1": "50〜6,000",
+                "spindle_speed_min_1": "6,000[15,000]",
+                "min_indexing_angle": "1°(0.001°) NC",
+                "table_load": "2500 kg",
+                "number_of_tools": "60 (121,122)",
+                "feedrate": "54 / 54 / 54 ",
+                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh550sx_fh630sxi_fh800sxi.jpg"
+            },
+            {
+                "model": "FH1000SX",
+                "description": "Horizontal spindle machining center FH800SX-i",
+                "pallet_size": "□800",
+                "stroke_xyz_mm": "1,600×1,250×1,550",
+                "spindle_speed_min_1": "6,000[15,000]",
+                "min_indexing_angle": "0.001°NC (1°)",
+                "table_load": "3000 kg",
+                "number_of_tools": "60 (121,180,240,330 *3)",
+                "feedrate": "54 / 54 / 54 ",
                 "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh550sx_fh630sxi_fh800sxi.jpg"
             },
             {
@@ -48,6 +80,10 @@
                 "pallet_size": "□1,250[1,250×1,600]",
                 "stroke_xyz_mm": "2,400×1,600×1,850",
                 "spindle_speed_min_1": "6,000[15,000]",
+                "min_indexing_angle": "0.001° NC",
+                "table_load": "5000 kg",
+                "feedrate": "42 / 42 / 42 ",
+                "number_of_tools": "60 (121,180,240,330 *3)",
                 "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh12500sx5i_fh12500sw5i_fh600sw5i.jpg"
             },
             {
@@ -56,6 +92,10 @@
                 "pallet_size": "□1,250[1,250×1,600]",
                 "stroke_xyz_mm": "2,400×1,600×1,850",
                 "spindle_speed_min_1": "4,000",
+                "min_indexing_angle": "0.001° ",
+                "table_load": "5000 kg",
+                "feedrate": "42 / 42 / 42 ",
+                "number_of_tools": "60(121,180,240,330 *3)",
                 "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh12500sx5i_fh12500sw5i_fh600sw5i.jpg"
             },
             {
@@ -64,28 +104,29 @@
                 "pallet_size": "1,600×1,250",
                 "stroke_xyz_mm": "3,000×1,900×2,100",
                 "spindle_speed_min_1": "4,000",
+                "min_indexing_angle": "0.001° ",
+                "number_of_tools": "120",
+                "table_load": "8000 kg",
+                "feedrate": "35 / 40 / 40 ",
                 "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh12500sx5i_fh12500sw5i_fh600sw5i.jpg"
             },
             {
-                "model": "TH555i4",
-                "description": "Horizontal spindle machining center for line TH555i4",
-                "stroke_xyz_mm": "500×550×530",
-                "spindle_speed_min_1": "10,000[12,000]",
-                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/list/th555i4.jpg"
-            },
-            {
-                "model": "A600",
-                "description": "Horizontal Machining Center with Pallet size of 500mm",
-                "extra_title": "A600 제품 상세보기",
+                "model": "AF-4",
+                "description": "High Productivity, High Performance Horizontal Machining Center",
+                "extra_title": "AF-4 제품 상세보기",
                 "types": [
                     "lm",
                     "40_hsk"
                 ],
-                "stroke_mm": "600 / 600 / 800",
-                "spindle_speed_rpm": "8K / 16K",
-                "number_of_tools": "40 / 60",
-                "type": "LM #40",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210121080607.png"
+                "stroke_mm": "565 / 645 / 645",
+                "spindle_speed_rpm": "15K (20K)",
+                "number_of_tools": "40 (60)",
+                "table_size": "400  mm",
+                "min_indexing_angle": "0.0001°",
+                "table_load": "400 kg",
+                "feedrate": "60 / 60 / 60 ",
+                "type": "LM , #40 Dual Contact",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20240807090815.png"
             },
             {
                 "model": "H6",
@@ -97,8 +138,12 @@
                 ],
                 "stroke_mm": "1,050 / 900 / 1,000",
                 "spindle_speed_rpm": "8K / 12K",
-                "number_of_tools": "40 / 60 / 90 / 120 / 150 / 180",
-                "type": "BOX #50",
+                "number_of_tools": "40 ( 60 / 90 / 120 / 150 / 180 )",
+                "type": "BOX , #50  Dual Contact",
+                "table_size": "630 x 630 mm",
+                "min_indexing_angle": "0.001°",
+                "table_load": "1,600 kg",
+                "feedrate": "48 / 48 / 40 ",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120040220.png"
             },
             {
@@ -111,8 +156,12 @@
                 ],
                 "stroke_mm": "1,400 / 1,150 / 1,250",
                 "spindle_speed_rpm": "8K / 12K",
-                "number_of_tools": "40 / 60 / 90 / 120 / 150 / 180",
-                "type": "BOX #50",
+                "number_of_tools": "40 ( 60 / 90 / 120 / 150 / 180 )",
+                "type": "BOX , #50 Dual Contact",
+                "table_size": "800 x 800 mm",
+                "table_load": "2,200 kg",
+                "min_indexing_angle": "1°",
+                "feedrate": "36 / 36 / 36 ",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120043736.png"
             },
             {
@@ -124,24 +173,14 @@
                     "50_hsk"
                 ],
                 "stroke_mm": "2,600 (3,000) / 1,600 / 1,500",
-                "spindle_speed_rpm": "3K / 8K / 12K",
-                "number_of_tools": "60 / 120 / 180",
-                "type": "LM #50",
+                "spindle_speed_rpm": "3K ( 8K / 12K )",
+                "number_of_tools": "60 ( 120 / 180 )",
+                "table_size": "2,200 x 1,800 mm",
+                "min_indexing_angle": "0.001°",
+                "table_load": "15000 (2APC:7000) kg",
+                "feedrate": "16 / 16 / 16 ",
+                "type": "LM, #50 Dual Contact",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120053911.png"
-            },
-            {
-                "model": "AF-4",
-                "description": "High Productivity, High Performance Horizontal Machining Center",
-                "extra_title": "AF-4 제품 상세보기",
-                "types": [
-                    "lm",
-                    "40_hsk"
-                ],
-                "stroke_mm": "565 / 645 / 645",
-                "spindle_speed_rpm": "37 / 22",
-                "number_of_tools": "40",
-                "type": "LM #40",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20240807090815.png"
             }
         ]
     },
@@ -740,162 +779,231 @@
                 "model": "G150",
                 "series": "G-Series",
                 "description": "High Speed 5-Axis Machine Center",
-                "type": "5-Axis Vertical",
                 "filters": [
                     "simultaneous"
                 ],
                 "image": "https://www.grobgroup.com/fileadmin/_processed_/1/5/csm_Header_G150_geschlossen_b4de910a91.png",
                 "specs": {
                     "travel_mm": {
-                        "x": 1500,
-                        "y": 1200,
-                        "z": 800
-                    },
-                    "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 48
+                        "x": 450,
+                        "y": 670,
+                        "z": 665
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 18000,
+                        "rotation_speed_rpm": "12K (16K | 21K | 42K) ",
                         "power_kw": "22 (30)",
                         "torque_nm": "45 (60)"
-                    }
+                    },
+                    "spindle_taper": [
+                        "HSK-E40",
+                        "HSK-A63"
+                    ],
+                    "feedrate_m_per_min": {
+                        "x": 50,
+                        "y": 40,
+                        "z": 60
+                    },
+                    "interference_diameter": 580,
+                    "table_diameter": 380,
+                    "table_load": "250"
                 }
             },
             {
                 "model": "G350",
                 "series": "G-Series",
                 "description": "High Speed 5-Axis Machine Center",
-                "type": "5-Axis Vertical",
                 "filters": [
                     "simultaneous"
                 ],
                 "image": "https://www.grobgroup.com/fileadmin/_processed_/5/1/csm_Header_G350_geschlossen_2b785e2ec7.png",
                 "specs": {
                     "travel_mm": {
-                        "x": 2000,
-                        "y": 1500,
-                        "z": 1000
+                        "x": 600,
+                        "y": 855,
+                        "z": 750
                     },
                     "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 48
+                        "x": 70,
+                        "y": 45,
+                        "z": 90
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 15000,
+                        "rotation_speed_rpm": "12K (16K | 18K | 21K) ",
                         "power_kw": "30 (40)",
                         "torque_nm": "75 (100)"
-                    }
+                    },
+                    "spindle_taper": [
+                        "HSK-A63"
+                    ],
+                    "interference_diameter": 580,
+                    "table_diameter": 380,
+                    "table_load": "250"
                 }
             },
             {
-                "model": "GS550",
+                "model": "G550",
                 "series": "G-Series",
                 "description": "High Speed 5-Axis Machine Center",
-                "type": "5-Axis Vertical",
                 "filters": [
                     "simultaneous"
                 ],
                 "image": "https://www.grobgroup.com/fileadmin/_processed_/3/6/csm_Header_G550_geschlossen1_d366664f45.jpg",
                 "specs": {
                     "travel_mm": {
-                        "x": 2500,
-                        "y": 1800,
-                        "z": 1200
+                        "x": 800,
+                        "y": 1020,
+                        "z": 970
                     },
                     "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 48
+                        "x": 65,
+                        "y": 50,
+                        "z": 80
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 12000,
+                        "rotation_speed_rpm": "12K ( 6K | 9K | 10K | 16K | 18K | 30K ) ",
                         "power_kw": "40 (55)",
                         "torque_nm": "120 (160)"
-                    }
+                    },
+                    "interference_diameter": 580,
+                    "table_diameter": 380,
+                    "table_load": "250",
+                    "spindle_taper": [
+                        "HSK-A63",
+                        "HSK-A100"
+                    ]
                 }
             },
             {
                 "model": "G750",
                 "series": "G-Series",
                 "description": "High Speed 5-Axis Machine Center",
-                "type": "5-Axis Vertical",
                 "filters": [
                     "simultaneous"
                 ],
                 "image": "https://www.grobgroup.com/fileadmin/_processed_/a/5/csm_Header_G750_geschlossen_56b6e7be23.jpg",
                 "specs": {
                     "travel_mm": {
-                        "x": 3000,
-                        "y": 2000,
-                        "z": 1500
+                        "x": 1000,
+                        "y": 1100,
+                        "z": 1170
                     },
                     "feedrate_m_per_min": {
                         "x": 60,
-                        "y": 60,
-                        "z": 48
+                        "y": 50,
+                        "z": 75
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 10000,
+                        "rotation_speed_rpm": "12K ( 6K | 9K | 10K | 16K | 18K | 30K ) ",
                         "power_kw": "55 (75)",
                         "torque_nm": "180 (240)"
-                    }
+                    },
+                    "interference_diameter": 580,
+                    "table_diameter": 380,
+                    "table_load": "250",
+                    "spindle_taper": [
+                        "HSK-A63",
+                        "HSK-A100"
+                    ]
                 }
             },
             {
-                "model": "G350a",
+                "model": "G350T",
+                "series": "G-Series",
+                "description": "Advanced High Speed 5-Axis Machine Center",
+                "filters": [
+                    "simultaneous"
+                ],
+                "image":"/assets/G350T.jpg",
+                "specs": {
+                    "travel_mm": {
+                        "x": 600,
+                        "y": 855,
+                        "z": 750
+                    },
+                    "feedrate_m_per_min": {
+                        "x": 70,
+                        "y": 45,
+                        "z": 90
+                    },
+                    "spindle": {
+                        "rotation_speed_rpm": "16K",
+                        "power_kw": "25 (32)",
+                        "torque_nm": "159 (206)"
+                    },
+                    "interference_diameter": 620,
+                    "table_diameter": "570",
+                    "table_load": "350/270",
+                    "spindle_taper": [
+                        "HSK-A/T63"
+                    ]
+                }
+            },
+            {
+                "model": "G550T",
                 "series": "G-Series",
                 "description": "Advanced High Speed 5-Axis Machine Center",
                 "type": "5-Axis Vertical",
                 "filters": [
                     "simultaneous"
                 ],
-                "image": "https://www.grobgroup.com/fileadmin/_processed_/2/2/csm_Header_G350a_NEU_efc9fb1116.png",
+                "image": "/assets/G550T.jpg",
                 "specs": {
                     "travel_mm": {
-                        "x": 2200,
-                        "y": 1600,
-                        "z": 1100
+                        "x": 800,
+                        "y": 1020,
+                        "z": 970
                     },
                     "feedrate_m_per_min": {
-                        "x": 80,
-                        "y": 80,
-                        "z": 60
+                        "x": 65,
+                        "y": 50,
+                        "z": 80
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 20000,
-                        "power_kw": "35 (45)",
-                        "torque_nm": "85 (110)"
-                    }
+                        "rotation_speed_rpm": "14.5K ( 10K | 16K ) ",
+                        "power_kw": "50 (58)",
+                        "torque_nm": "225 (261)"
+                    },
+                    "interference_diameter": 900,
+                    "table_diameter": "770",
+                    "table_load": "750/600",
+                    "spindle_taper": [
+                        "HSK-A/T63",
+                        "HSK-A/T100"
+                    ]
                 }
             },
             {
-                "model": "GS550a",
+                "model": "G750T",
                 "series": "G-Series",
                 "description": "Advanced High Speed 5-Axis Machine Center",
                 "type": "5-Axis Vertical",
                 "filters": [
                     "simultaneous"
                 ],
-                "image": "https://www.grobgroup.com/fileadmin/_processed_/4/f/csm_Header_G550a_NEU_eb1a3f5986.png",
+                "image": "/assets/G750T.jpg",
                 "specs": {
                     "travel_mm": {
-                        "x": 2700,
-                        "y": 1900,
-                        "z": 1300
+                        "x": 1000,
+                        "y": 1100,
+                        "z": 1175
                     },
                     "feedrate_m_per_min": {
-                        "x": 80,
-                        "y": 80,
-                        "z": 60
+                        "x": 60,
+                        "y": 50,
+                        "z": 75
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 15000,
+                        "rotation_speed_rpm": "10K ( 14.5K | 16K ) ",
                         "power_kw": "45 (60)",
                         "torque_nm": "140 (180)"
-                    }
+                    },
+                    "interference_diameter": 1280,
+                    "table_diameter": "950",
+                    "table_load": "1500/1000",
+                    "spindle_taper": [
+                        "HSK-A/T63",
+                        "HSK-A/T100"
+                    ]
                 }
             },
             {

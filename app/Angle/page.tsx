@@ -209,11 +209,11 @@ export default function AngleHeadsPage() {
 					<div className="max-w-6xl mx-auto">
 						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 							{/* Card 1 */}
-							<div className="bg-white p-5 shadow-md rounded-xl border border-gray-200 h-[210px] flex flex-col">
-								<h3 className="font-semibold text-lg text-gray-900 mb-2">
+							<div className="bg-blue-200 p-5 shadow-lg rounded-xl border border-gray-200 h-[210px] flex flex-col">
+								<h3 className="font-semibold text-lg text-gray-900 mb-2 text-center">
 									Integral Shank & Shaft
 								</h3>
-								<p className="text-gray-700 text-sm leading-relaxed">
+								<p className="text-gray-700 text-sm leading-relaxed text-center">
 									Main shaft is a single solid piece with case-hardened taper
 									providing maximum rigidity. Fits any spindle.
 								</p>
