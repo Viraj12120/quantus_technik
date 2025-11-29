@@ -188,6 +188,100 @@
         "id": "vertical",
         "products": [
             {
+                "mega_series": [
+                    {
+                        "model": "Mega 30V",
+                        "stroke_mm": "760 /510 /510 mm",
+                        "table_size": "860 x 500 mm",
+                        "spindle_speed_rpm": "15k",
+                        "number_of_tools": "30t",
+                        "power_torque": "31kw / 141nm",
+                        "feedrate_m_per_min": "52 / 52 / 48 m/min",
+                        "image": "/assets/mega30v.png",
+                        "type": "c-type, lm, #40, dual taper"
+                    },
+                    {
+                        "model": "Mega 40V",
+                        "stroke_mm": "1,020 /510 /510",
+                        "table_size": "1,120 x 500 mm",
+                        "spindle_speed_rpm": "15k",
+                        "number_of_tools": "40",
+                        "power_torque": "31kw / 141nm",
+                        "feedrate_m_per_min": "52 / 52 / 48 m/min",
+                        "image": "/assets/mega40v.png",
+                        "type": "c-type, lm, #40, dual taper"
+                    },
+                    {
+                        "model": "Mega 20VAPC",
+                        "stroke_mm": "600 /510 /510",
+                        "table_size": "560 x 400 mm",
+                        "spindle_speed_rpm": "15k",
+                        "number_of_tools": "40",
+                        "power_torque": "31kw / 141nm",
+                        "feedrate_m_per_min": "52 / 52 / 48 m/min",
+                        "image": "/assets/mega20vapc.png",
+                        "type": "c-type, lm, #40, dual taper"
+                    }
+                ],
+                "tera_series": [
+                    {
+                        "model": "Tera 40V",
+                        "stroke_mm": "1,020 / 710 / 635",
+                        "table_size": "1,120 x 700 mm",
+                        "spindle_speed_rpm": "15k",
+                        "number_of_tools": "40",
+                        "power_torque": "31kw / 141nm",
+                        "feedrate_m_per_min": "52 / 52 / 48 m/min",
+                        "image": "/assets/tera40v.png",
+                        "type": "c-type, lm, #40, dual taper"
+                    },
+                    {
+                        "model": "Tera 50V",
+                        "stroke_mm": "1,270 / 710 / 635",
+                        "table_size": "1,420 x 700",
+                        "spindle_speed_rpm": "15k",
+                        "number_of_tools": "40",
+                        "power_torque": "31kw / 141nm",
+                        "feedrate_m_per_min": "52 / 52 / 48 m/min",
+                        "image": "/assets/tera50v.png",
+                        "type": "c-type, lm, #40, dual taper"
+                    },
+                    {
+                        "model": "Tera 60V",
+                        "stroke_mm": "1,524 / 710 / 635",
+                        "table_size": "1,724 x 700",
+                        "spindle_speed_rpm": "15k",
+                        "number_of_tools": "40",
+                        "power_torque": "31kw / 141nm",
+                        "feedrate_m_per_min": "52 / 52 / 48 m/min",
+                        "image": "/assets/tera60v.png",
+                        "type": "c-type, lm, #40, dual taper"
+                    },
+                    {
+                        "model": "Tera 50V / 50",
+                        "stroke_mm": "1,270 / 710 / 635",
+                        "table_size": "1,420 x 700",
+                        "spindle_speed_rpm": "12k",
+                        "number_of_tools": "32T",
+                        "power_torque": "34kw / 570nm",
+                        "feedrate_m_per_min": "52 / 52 / 32 m/min",
+                        "image": "/assets/TERA50V50.png",
+                        "type": "c-type, lm, #50, dual taper"
+                    },
+                    {
+                        "model": "Tera 60V / 60",
+                        "stroke_mm": "1,524 / 710 / 635",
+                        "table_size": "1,724 x 700",
+                        "spindle_speed_rpm": "12k",
+                        "number_of_tools": "32T",
+                        "power_torque": "34kw / 570nm",
+                        "feedrate_m_per_min": "52 / 52 / 48 m/min",
+                        "image": "/assets/TERA60V60.png",
+                        "type": "c-type, lm, #50, dual taper"
+                    }
+                ]
+            },
+            {
                 "model": "VESTA-660",
                 "description": "Vertical Machining Center for Parts Machining",
                 "extra_title": "VESTA-660 제품 상세보기",
@@ -1377,7 +1471,6 @@
                     }
                 }
             },
-            
             {
                 "model": "GS-600/5-FDT",
                 "series": "GS-Series",
@@ -1851,7 +1944,71 @@
                         "rotation_speed_rpm": 800,
                         "power_kw": "160 (220)",
                         "torque_nm": "3000 (4000)"
-                    }
+                    },
+                    "mega_series": [
+                        {
+                            "series_name": "MEGA Series (5-axis)",
+                            "description": "Compact, high-speed 5-axis machining center",
+                            "model": "MEGA 30V",
+                            "type": "5-Axis Vertical",
+                            "filters": [
+                                "simultaneous"
+                            ],
+                            "specs": {
+                                "stroke": "780 / 510 / 441",
+                                "table_size": "Ø220 (500 x 300)",
+                                "spindle_speed": "15K",
+                                "number_of_tools": 40,
+                                "power_torque": "31kW / 141Nm",
+                                "rapid_feedrate": "52 / 52 / 48 m/min",
+                                "a_c_axis_deg": "40° / 120° / 360°",
+                                "type": "C-type, LM, #40, Dual taper"
+                            },
+                            "image": "/assets/mega30v.png"
+                        }
+                    ],
+                    "tera_series": [
+                        {
+                            "series_name": "TERA Series",
+                            "description": "High speed 5-axis machining center",
+                            "model": "TERA 50VT",
+                            "type": "5-Axis Vertical",
+                            "filters": [
+                                "simultaneous"
+                            ],
+                            "specs": {
+                                "stroke": "970 / 710 / 500",
+                                "table_size": "Ø320 (720 x 400)",
+                                "spindle_speed": "15K",
+                                "number_of_tools": 40,
+                                "power_torque": "31kW / 141Nm",
+                                "a_c_axis_deg": "40° / 120° / 360°",
+                                "rapid_feedrate": "48 / 48 / 48 m/min",
+                                "type": "C-type, LM, #40, Dual taper"
+                            },
+                            "image": "/assets/tera50vt.png"
+                        },
+                        {
+                            "series_name": "TERA Series",
+                            "description": "High Torque 5-axis machining center",
+                            "model": "TERA 50VT / 50",
+                            "type": "5-Axis Vertical",
+                            "filters": [
+                                "simultaneous"
+                            ],
+                            "specs": {
+                                "stroke": "970 / 710 / 500",
+                                "table_size": "Ø320 (720 x 400)",
+                                "spindle_speed": "15K",
+                                "number_of_tools": 32,
+                                "power_torque": "34kW / 570Nm",
+                                "a_c_axis_deg": "40° / 120° / 360°",
+                                "rapid_feedrate": "48 / 48 / 48 m/min",
+                                "type": "C-type, LM, #40, Dual taper"
+                            },
+                            "image": "/assets/tera50vt50.png"
+                        }
+                    ]
                 }
             }
         ]

@@ -129,6 +129,11 @@ interface ManufacturerData {
 	products?: Machine[];
 }
 
+interface MegaTeraSeries {
+	mega_series?: Machine[];
+	tera_series?: Machine[];
+}
+
 interface MachiningData {
 	ken?: {
 		id: string;
@@ -152,11 +157,13 @@ interface MachiningData {
 	};
 	vertical?: {
 		id: string;
-		products: Machine[];
+		products: (Machine | MegaTeraSeries)[];
 	};
 	"5-axis"?: {
 		id: string;
 		machines: Machine[];
+		mega_series?: Machine[]; 
+		tera_series?: Machine[]; 
 	};
 }
 
@@ -257,11 +264,13 @@ function isValidUrl(url: any) {
 }
 
 // FIXED: Improved helper function to get manufacturer for a machine
-// FIXED: Improved helper function to get manufacturer for a machine
 const getManufacturer = (machine: Machine): string => {
-	const model = machine.model;
+	// Ensure model and description are ALWAYS strings
+	const model = machine?.model ?? "";
 	const modelLower = model.toLowerCase();
-	const descriptionLower = machine.description?.toLowerCase() || "";
+	const descriptionLower = machine?.description?.toLowerCase() ?? "";
+
+	if (!model) return "other";
 
 	// ★ FIRST PRIORITY — GS-Series MUST BE CHECKED BEFORE ANY GROB LOGIC
 	if (
@@ -269,6 +278,11 @@ const getManufacturer = (machine: Machine): string => {
 		machine.series?.toLowerCase().includes("gs-series")
 	) {
 		return "alzmetall";
+	}
+
+	// ---- MEGA/TERA SERIES ----
+	if (modelLower.includes("mega") || modelLower.includes("tera")) {
+		return "hwacheon"; // Assuming mega/tera series are Hwacheon
 	}
 
 	// ---- GROB SECTION ----
@@ -329,23 +343,23 @@ const getManufacturer = (machine: Machine): string => {
 	if (
 		machiningDataTyped.ken?.machines?.some((m) => m.model === model) ||
 		machiningDataTyped["5-axis"]?.machines?.some(
-			(m) => 
-				m.model === model && 
+			(m) =>
+				m.model === model &&
 				// KEN machines have these specific series or model patterns
-				(m.series?.includes("Compact") || 
-				 m.series?.includes("Linmax") ||
-				 m.series?.includes("Torque") ||
-				 m.series?.includes("Focus") ||
-				 m.series?.includes("Rotor") ||
-				 m.series?.includes("Saber") ||
-				 m.series?.includes("Rhino") ||
-				 modelLower.includes("compact") ||
-				 modelLower.includes("linmax") ||
-				 modelLower.includes("torque") ||
-				 modelLower.includes("focus") ||
-				 modelLower.includes("rotor") ||
-				 modelLower.includes("saber") ||
-				 modelLower.includes("rhino"))
+				(m.series?.includes("Compact") ||
+					m.series?.includes("Linmax") ||
+					m.series?.includes("Torque") ||
+					m.series?.includes("Focus") ||
+					m.series?.includes("Rotor") ||
+					m.series?.includes("Saber") ||
+					m.series?.includes("Rhino") ||
+					modelLower.includes("compact") ||
+					modelLower.includes("linmax") ||
+					modelLower.includes("torque") ||
+					modelLower.includes("focus") ||
+					modelLower.includes("rotor") ||
+					modelLower.includes("saber") ||
+					modelLower.includes("rhino"))
 		)
 	)
 		return "ken";
@@ -354,7 +368,28 @@ const getManufacturer = (machine: Machine): string => {
 	if (machiningDataTyped.horizontal?.machines?.some((m) => m.model === model))
 		return "hwacheon";
 
-	if (machiningDataTyped.vertical?.products?.some((m) => m.model === model))
+	// Check HWACHEON vertical - need to handle the mixed array properly
+	const verticalProducts = machiningDataTyped.vertical?.products || [];
+	const hwacheonVerticalMachines: Machine[] = [];
+	
+	// Extract all machines from the vertical products array
+	verticalProducts.forEach(item => {
+		if ('model' in item) {
+			// This is a direct Machine object
+			hwacheonVerticalMachines.push(item as Machine);
+		} else {
+			// This is a MegaTeraSeries object - extract machines from both series
+			const seriesItem = item as MegaTeraSeries;
+			if (seriesItem.mega_series) {
+				hwacheonVerticalMachines.push(...seriesItem.mega_series);
+			}
+			if (seriesItem.tera_series) {
+				hwacheonVerticalMachines.push(...seriesItem.tera_series);
+			}
+		}
+	});
+
+	if (hwacheonVerticalMachines.some((m) => m.model === model))
 		return "hwacheon";
 
 	// ---- 5-AXIS FALLBACK ----
@@ -364,7 +399,10 @@ const getManufacturer = (machine: Machine): string => {
 			return "grob";
 		}
 		// If it's GS-series or starts with GS-, it's Alzmetall
-		if (modelLower.startsWith("gs-") || machine.series?.toLowerCase().includes("gs-series")) {
+		if (
+			modelLower.startsWith("gs-") ||
+			machine.series?.toLowerCase().includes("gs-series")
+		) {
 			return "alzmetall";
 		}
 		// Default 5-axis machines to KEN
@@ -499,7 +537,32 @@ export default function ProductDetailPage() {
 						machine.description?.includes("Vertical")
 				) || [];
 
-			const hwacheonVertical = machiningDataTyped.vertical?.products || [];
+			// Handle vertical products - they might contain direct machines OR objects with mega_series/tera_series
+			const verticalData = machiningDataTyped.vertical?.products || [];
+			const hwacheonVertical: Machine[] = [];
+			const megaSeries: Machine[] = [];
+			const teraSeries: Machine[] = [];
+
+			// Process vertical data to separate regular products from series
+			verticalData.forEach((item) => {
+				if ("model" in item) {
+					// This is a regular Machine object
+					hwacheonVertical.push(item as Machine);
+				} else {
+					// This is a MegaTeraSeries object
+					const seriesItem = item as MegaTeraSeries;
+
+					// Push Mega series first
+					if (seriesItem.mega_series) {
+						hwacheonVertical.push(...seriesItem.mega_series);
+					}
+
+					// Push Tera series next
+					if (seriesItem.tera_series) {
+						hwacheonVertical.push(...seriesItem.tera_series);
+					}
+				}
+			});
 
 			const grobVertical =
 				machiningDataTyped.horizontal?.grob?.machines?.filter(
@@ -529,6 +592,8 @@ export default function ProductDetailPage() {
 				...grobVertical,
 				...alzmetallVertical,
 				...jtektVertical,
+				...megaSeries,
+				...teraSeries,
 			];
 		} else if (selectedSubCategory === "5-axis") {
 			// Get 5-axis machines from all sources
@@ -557,8 +622,14 @@ export default function ProductDetailPage() {
 					(m) => m.type?.includes("5-Axis") || m.description?.includes("5-Axis")
 				) || [];
 
+			// ★ ADD MEGA/TERA SERIES FROM 5-AXIS SECTION
+			const megaSeries5Axis = machiningDataTyped["5-axis"]?.mega_series || [];
+			const teraSeries5Axis = machiningDataTyped["5-axis"]?.tera_series || [];
+
 			products = [
 				...ken5Axis,
+				...megaSeries5Axis,
+				...teraSeries5Axis,
 				...hwacheon5Axis,
 				...grob5Axis,
 				...alzmetall5Axis,
@@ -619,7 +690,6 @@ export default function ProductDetailPage() {
 				});
 			}
 
-			// Max Cutting Length - use max_cutting_length_mm for vertical, max_turning_length_mm for horizontal
 			if (
 				selectedSubCategory === "vertical_turning" &&
 				product.max_cutting_length_mm
@@ -729,7 +799,67 @@ export default function ProductDetailPage() {
 			console.log("Final specs for JTEKT:", baseSpecs);
 			return baseSpecs;
 		}
+ const modelLower = product.model.toLowerCase();
+  if (modelLower.includes("mega") || modelLower.includes("tera")) {
+		console.log("Processing as MEGA/TERA series machine:", product.model);
 
+		// Stroke specifications
+		if (product.stroke_mm) {
+			baseSpecs.push({
+				name: "Stroke",
+				value: ensureString(product.stroke_mm),
+			});
+		}
+
+		// Table size
+		if ((product as any).table_size) {
+			baseSpecs.push({
+				name: "Table Size",
+				value: ensureString((product as any).table_size),
+			});
+		}
+
+		// Spindle speed
+		if (product.spindle_speed_rpm) {
+			baseSpecs.push({
+				name: "Spindle Speed",
+				value: ensureString(product.spindle_speed_rpm),
+			});
+		}
+
+		// Number of tools
+		if (product.number_of_tools) {
+			baseSpecs.push({
+				name: "Number of Tools",
+				value: ensureString(product.number_of_tools),
+			});
+		}
+
+		// Power/Torque
+		if ((product as any).power_torque) {
+			baseSpecs.push({
+				name: "Power / Torque",
+				value: ensureString((product as any).power_torque),
+			});
+		}
+
+		// Feedrate
+		if ((product as any).feedrate_m_per_min) {
+			baseSpecs.push({
+				name: "Feedrate",
+				value: ensureString((product as any).feedrate_m_per_min),
+			});
+		}
+
+		// Type
+		if (product.type) {
+			baseSpecs.push({
+				name: "Type",
+				value: product.type,
+			});
+		}
+		return baseSpecs;
+	}
 		// KEN machines - use detailed specs (this includes 5-axis machines)
 		if (
 			(manufacturer === "ken" || manufacturer === "hwacheon") &&
@@ -924,7 +1054,6 @@ export default function ProductDetailPage() {
 			return baseSpecs;
 		}
 
-		// Alzmetall machines
 		// Alzmetall machines
 		if (manufacturer === "alzmetall" && product.specs) {
 			const specs = product.specs;
