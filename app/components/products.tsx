@@ -13,8 +13,8 @@ const logos = [
 	{ name: "kenchi", src: "/ken.svg" },
 	{ name: "jktet", src: "/logo.png" },
 	{ name: "gerardi", src: "/gerardi.jpg" },
-	{ name: "index", src: "/assets/index.jpg" },
-	{ name: "micro", src: "/assets/micro.png" },
+	{ name: "index", src: "/index.jpg" },
+	{ name: "micro", src: "/micro.png" },
 ];
 
 const containerVariants = {
