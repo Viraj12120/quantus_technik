@@ -64,6 +64,17 @@ interface Machine {
 	type?: string;
 	image: string;
 	detail_url?: string;
+	bar_spindle_clearance_mm?: string | number;
+	chuck_workpiece_capacity_mm?: string | number;
+	bar_capacity_max_mm?: string | number;
+	spindle_tool_drum_design?: string;
+	turning_length_mm?: string | number;
+	spindle_power_torque?: string;
+	max_rpm?: string;
+	max_travel?: string;
+	power_torque?: string;
+	max_spindle_speed?: string;
+	tool_carrier?: string | number;
 	specs?: MachineSpecs;
 	min_indexing_angle?: string;
 	table_load?: string | number;
@@ -71,8 +82,12 @@ interface Machine {
 	max_bar_size_mm?: string | number;
 	max_turning_length_mm?: string | number;
 	spindle_motor_kw?: number;
+	chuck_diameter_mm: number;
+	spindle_torque_nm: number;
+	turret: string;
 	max_cutting_length_mm?: string | number;
 	tool_type?: string;
+	table_size: string;
 	table_diameter?: string;
 	extra_title?: string;
 	types?: string[];
@@ -162,8 +177,8 @@ interface MachiningData {
 	"5-axis"?: {
 		id: string;
 		machines: Machine[];
-		mega_series?: Machine[]; 
-		tera_series?: Machine[]; 
+		mega_series?: Machine[];
+		tera_series?: Machine[];
 	};
 }
 
@@ -172,7 +187,6 @@ const machiningDataTyped = machiningData as unknown as MachiningData;
 
 // 5-axis filter categories
 const fiveAxisFilters = [
-	{ id: "all", name: "All 5-Axis" },
 	{ id: "simultaneous", name: "Simultaneous" },
 	{ id: "gantry", name: "Gantry" },
 	{ id: "double_column", name: "Double Column" },
@@ -371,10 +385,10 @@ const getManufacturer = (machine: Machine): string => {
 	// Check HWACHEON vertical - need to handle the mixed array properly
 	const verticalProducts = machiningDataTyped.vertical?.products || [];
 	const hwacheonVerticalMachines: Machine[] = [];
-	
+
 	// Extract all machines from the vertical products array
-	verticalProducts.forEach(item => {
-		if ('model' in item) {
+	verticalProducts.forEach((item) => {
+		if ("model" in item) {
 			// This is a direct Machine object
 			hwacheonVerticalMachines.push(item as Machine);
 		} else {
@@ -467,6 +481,7 @@ export default function ProductDetailPage() {
 		: [
 				{ id: "horizontal_turning", name: "Horizontal Turning" },
 				{ id: "vertical_turning", name: "Vertical Turning" },
+				{ id: "multiplex", name: "Multiplex " },
 		  ];
 
 	const [selectedSubCategory, setSelectedSubCategory] = useState(
@@ -488,7 +503,17 @@ export default function ProductDetailPage() {
 			if (selectedSubCategory === "horizontal_turning") {
 				return (turningData as any).horizontal_turning?.products || [];
 			}
-			return (turningData as any).vertical_turning?.products || [];
+
+			if (selectedSubCategory === "vertical_turning") {
+				return (turningData as any).vertical_turning?.products || [];
+			}
+
+			if (selectedSubCategory === "multiplex") {
+				// Return Multiplex machines only (Index B400, Index B500, TRAUB TNA400, TRAUB TNA500)
+				return (turningData as any).Multiplex?.products || [];
+			}
+
+			return [];
 		}
 
 		// Machining centers logic
@@ -674,6 +699,192 @@ export default function ProductDetailPage() {
 		};
 
 		if (isTurningCenter) {
+			const modelLower = product.model.toLowerCase();
+			const isUniversalTurning =
+				modelLower.includes("index") ||
+				modelLower.includes("traub") ||
+				modelLower.includes("b400") ||
+				modelLower.includes("b500") ||
+				modelLower.includes("tna400") ||
+				modelLower.includes("tna500");
+
+			// 1. FIRST check for Universal Turning Machines (Index B400/B500, TRAUB TNA400/TNA500)
+			if (
+				isUniversalTurning &&
+				product.max_bar_size_mm &&
+				product.chuck_diameter_mm
+			) {
+				// This will match Index B400, B500, TRAUB TNA400, TNA500
+				baseSpecs.push({
+					name: "Bar Capacity",
+					value: ensureString(product.max_bar_size_mm) + " mm",
+				});
+
+				baseSpecs.push({
+					name: "Chuck Diameter",
+					value: ensureString(product.chuck_diameter_mm) + " mm",
+				});
+
+				if (product.max_turning_length_mm) {
+					baseSpecs.push({
+						name: "Turning Length",
+						value: ensureString(product.max_turning_length_mm) + " mm",
+					});
+				}
+
+				if (product.spindle_motor_kw || product.spindle_torque_nm) {
+					let spindleValue = "";
+					if (product.spindle_motor_kw) {
+						spindleValue = ensureString(product.spindle_motor_kw) + " kW";
+					}
+					if (product.spindle_torque_nm) {
+						if (spindleValue) spindleValue += " / ";
+						spindleValue += ensureString(product.spindle_torque_nm) + " Nm";
+					}
+					baseSpecs.push({
+						name: "Spindle Power/Torque",
+						value: spindleValue,
+					});
+				}
+
+				if (product.spindle_speed_rpm) {
+					baseSpecs.push({
+						name: "Max RPM",
+						value: ensureString(product.spindle_speed_rpm) + " rpm",
+					});
+				}
+
+				if (product.turret) {
+					baseSpecs.push({
+						name: "Turret",
+						value: product.turret,
+					});
+				}
+
+				if (product.number_of_tools) {
+					baseSpecs.push({
+						name: "Number of Tools",
+						value: ensureString(product.number_of_tools),
+					});
+				}
+
+				if (product.tool_type) {
+					baseSpecs.push({
+						name: "Tool Type",
+						value: product.tool_type,
+					});
+				}
+
+				return baseSpecs;
+			}
+
+			// 2. Check for Production Turning Machines (TRAUB TNK40, INDEX C100/C200, etc.)
+			if (product.bar_spindle_clearance_mm) {
+				// This will match TRAUB TNK40, INDEX ABC, INDEX C100, INDEX C200, TRAUB TNX200/TNX220, etc.
+				baseSpecs.push({
+					name: "Bar / Spindle Clearance",
+					value: ensureString(product.bar_spindle_clearance_mm) + " mm",
+				});
+
+				if (product.chuck_workpiece_capacity_mm) {
+					baseSpecs.push({
+						name: "Chuck / Workpiece Capacity",
+						value: ensureString(product.chuck_workpiece_capacity_mm) + " mm",
+					});
+				}
+
+				if (product.turning_length_mm) {
+					baseSpecs.push({
+						name: "Turning Length",
+						value: ensureString(product.turning_length_mm) + " mm",
+					});
+				}
+				if (product.spindle_power_torque) {
+					baseSpecs.push({
+						name: "Spindle / Power/ Torque",
+						value: product.spindle_power_torque,
+					});
+				}
+				if (product.max_spindle_speed) {
+					baseSpecs.push({
+						name: "Max Spindle Speed",
+						value: product.max_spindle_speed,
+					});
+				}
+
+				if (product.power_torque) {
+					baseSpecs.push({
+						name: "Power Torque",
+						value: product.power_torque,
+					});
+				}
+
+				if (product.max_rpm) {
+					baseSpecs.push({
+						name: "Max RPM",
+						value: product.max_rpm,
+					});
+				}
+
+				if (product.max_travel) {
+					baseSpecs.push({
+						name: "Z Travel",
+						value: product.max_travel,
+					});
+				}
+
+				if (product.tool_carrier) {
+					baseSpecs.push({
+						name: "Tool Carrier",
+						value: ensureString(product.tool_carrier),
+					});
+				}
+
+				return baseSpecs;
+			}
+
+			// 3. Check for Multi Spindle Automatic Machines (MS16-6, MS24-6, etc.)
+			if (product.bar_capacity_max_mm) {
+				// This will match MS16-6, MS24-6, MS32-6, MS40-6, MS40-8, MS52-6
+				baseSpecs.push({
+					name: "Bar Capacity / Max",
+					value: ensureString(product.bar_capacity_max_mm) + " mm",
+				});
+
+				if (product.max_spindle_speed) {
+					baseSpecs.push({
+						name: "Max Spindle Speed",
+						value: product.max_spindle_speed,
+					});
+				}
+
+				if (product.power_torque) {
+					baseSpecs.push({
+						name: "Power / Torque",
+						value: product.power_torque,
+					});
+				}
+
+				if (product.spindle_tool_drum_design) {
+					baseSpecs.push({
+						name: "Spindle Tool Drum Design",
+						value: product.spindle_tool_drum_design,
+					});
+				}
+
+				if (product.tool_carrier) {
+					baseSpecs.push({
+						name: "Tool Carrier",
+						value: ensureString(product.tool_carrier),
+					});
+				}
+
+				return baseSpecs;
+			}
+
+			// 4. REGULAR TURNING CENTERS LOGIC (for machines that don't match above)
+			// This will handle any other turning machines that don't fit the above categories
+
 			// Max Turning Diameter
 			if (product.max_turning_diameter_mm) {
 				baseSpecs.push({
@@ -742,8 +953,6 @@ export default function ProductDetailPage() {
 
 		// JTEKT machines
 		if (manufacturer === "jtekt") {
-			console.log("Processing as JTEKT machine:", product.model);
-
 			// Pallet size
 			if (product.pallet_size) {
 				baseSpecs.push({
@@ -796,70 +1005,68 @@ export default function ProductDetailPage() {
 					value: ensureString(product.number_of_tools),
 				});
 			}
-			console.log("Final specs for JTEKT:", baseSpecs);
 			return baseSpecs;
 		}
- const modelLower = product.model.toLowerCase();
-  if (modelLower.includes("mega") || modelLower.includes("tera")) {
-		console.log("Processing as MEGA/TERA series machine:", product.model);
+		const modelLower = product.model.toLowerCase();
+		if (modelLower.includes("mega") || modelLower.includes("tera")) {
+			console.log("Processing as MEGA/TERA series machine:", product.model);
 
-		// Stroke specifications
-		if (product.stroke_mm) {
-			baseSpecs.push({
-				name: "Stroke",
-				value: ensureString(product.stroke_mm),
-			});
-		}
+			// Stroke specifications
+			if (product.stroke_mm) {
+				baseSpecs.push({
+					name: "Stroke",
+					value: ensureString(product.stroke_mm),
+				});
+			}
 
-		// Table size
-		if ((product as any).table_size) {
-			baseSpecs.push({
-				name: "Table Size",
-				value: ensureString((product as any).table_size),
-			});
-		}
+			// Table size
+			if ((product as any).table_size) {
+				baseSpecs.push({
+					name: "Table Size",
+					value: ensureString((product as any).table_size),
+				});
+			}
 
-		// Spindle speed
-		if (product.spindle_speed_rpm) {
-			baseSpecs.push({
-				name: "Spindle Speed",
-				value: ensureString(product.spindle_speed_rpm),
-			});
-		}
+			// Spindle speed
+			if (product.spindle_speed_rpm) {
+				baseSpecs.push({
+					name: "Spindle Speed",
+					value: ensureString(product.spindle_speed_rpm),
+				});
+			}
 
-		// Number of tools
-		if (product.number_of_tools) {
-			baseSpecs.push({
-				name: "Number of Tools",
-				value: ensureString(product.number_of_tools),
-			});
-		}
+			// Number of tools
+			if (product.number_of_tools) {
+				baseSpecs.push({
+					name: "Number of Tools",
+					value: ensureString(product.number_of_tools),
+				});
+			}
 
-		// Power/Torque
-		if ((product as any).power_torque) {
-			baseSpecs.push({
-				name: "Power / Torque",
-				value: ensureString((product as any).power_torque),
-			});
-		}
+			// Power/Torque
+			if ((product as any).power_torque) {
+				baseSpecs.push({
+					name: "Power / Torque",
+					value: ensureString((product as any).power_torque),
+				});
+			}
 
-		// Feedrate
-		if ((product as any).feedrate_m_per_min) {
-			baseSpecs.push({
-				name: "Feedrate",
-				value: ensureString((product as any).feedrate_m_per_min),
-			});
-		}
+			// Feedrate
+			if ((product as any).feedrate_m_per_min) {
+				baseSpecs.push({
+					name: "Feedrate",
+					value: ensureString((product as any).feedrate_m_per_min),
+				});
+			}
+			if (product.type) {
+				baseSpecs.push({
+					name: "Type",
+					value: product.type,
+				});
+			}
 
-		// Type
-		if (product.type) {
-			baseSpecs.push({
-				name: "Type",
-				value: product.type,
-			});
+			return baseSpecs;
 		}
-		return baseSpecs;
-	}
 		// KEN machines - use detailed specs (this includes 5-axis machines)
 		if (
 			(manufacturer === "ken" || manufacturer === "hwacheon") &&
@@ -1152,6 +1359,12 @@ export default function ProductDetailPage() {
 			});
 		}
 
+		if ((product as any).table_size) {
+			baseSpecs.push({
+				name: "Table Size",
+				value: ensureString((product as any).table_size),
+			});
+		}
 		if (product.spindle_speed_rpm) {
 			baseSpecs.push({
 				name: "Spindle Speed",
@@ -1166,8 +1379,27 @@ export default function ProductDetailPage() {
 			});
 		}
 
+		// Power/Torque
+		if ((product as any).power_torque) {
+			baseSpecs.push({
+				name: "Power / Torque",
+				value: ensureString((product as any).power_torque),
+			});
+		}
+
+		// Feedrate
+		if ((product as any).feedrate_m_per_min) {
+			baseSpecs.push({
+				name: "Feedrate",
+				value: ensureString((product as any).feedrate_m_per_min),
+			});
+		}
+
 		if (product.type) {
-			baseSpecs.push({ name: "Type", value: product.type });
+			baseSpecs.push({
+				name: "Type",
+				value: product.type,
+			});
 		}
 
 		// For horizontal machines with pallet size

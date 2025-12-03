@@ -90,7 +90,7 @@ export default function GrinderDetailPage() {
 								<h3 className="text-xl font-bold text-black-700">
 									{item.category || "N/A"}
 								</h3>
-								<p className="text-gray-600 text-md min-h-[56px]">
+								<p className="text-gray-600 text-md min-h-[52px]">
 									{item.description || "N/A"}
 								</p>
 							</div>
@@ -100,13 +100,13 @@ export default function GrinderDetailPage() {
 									src={item.image || "/placeholder.jpg"}
 									alt={item.category || "Product Image"}
 									width={240}
-									height={160}
+									height={240}
 									className="h-32 object-contain mix-blend-multiply"
 								/>
 							</div>
 
 							<div className="px-5 pb-4 mt-2 flex flex-col flex-grow">
-								<table className="w-full text-xs">
+								{/* <table className="w-full text-xs">
 									<tbody>
 										{getSpecs(item).length > 0 ? (
 											getSpecs(item).map((spec, idx) => (
@@ -130,7 +130,7 @@ export default function GrinderDetailPage() {
 											</tr>
 										)}
 									</tbody>
-								</table>
+								</table> */}
 
 								<Button
 									className="w-full mt-auto bg-gray-900 hover:bg-black"

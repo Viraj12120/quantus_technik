@@ -29,7 +29,7 @@ export default function ProductsPage() {
 		{ id: "machine-tools", name: "Machine Tools" },
 		{ id: "measuring", name: "Measuring Machines" },
 		{ id: "angle-head", name: "Angle Head" },
-		{ id: "tool-management", name: "Tool Holders & Management" },
+		// { id: "tool-management", name: "Tool Holders & Management" },
 	];
 
 	const products = [
@@ -118,20 +118,20 @@ export default function ProductsPage() {
 				"Special (customised) (Gerardi)",
 			],
 		},
-		{
-			id: "tool-management",
-			name: "Tool Holder & Tool Management",
-			category: "tool-management",
-			description:
-				"Advanced tool holding and management systems designed for precision machining, durability, and efficient tool organization.",
-			image: "/tool.jpg",
-			features: [
-				"Mechanical Holder (MST)",
-				"ShrinkFit Holder (MST)",
-				"ShrinkFit Machines (MST)",
-				"Tool Management System (C-automate) (ZOLLER)",
-			],
-		},
+		// {
+		// 	id: "tool-management",
+		// 	name: "Tool Holder & Tool Management",
+		// 	category: "tool-management",
+		// 	description:
+		// 		"Advanced tool holding and management systems designed for precision machining, durability, and efficient tool organization.",
+		// 	image: "/tool.jpg",
+		// 	features: [
+		// 		"Mechanical Holder (MST)",
+		// 		"ShrinkFit Holder (MST)",
+		// 		"ShrinkFit Machines (MST)",
+		// 		"Tool Management System (C-automate) (ZOLLER)",
+		// 	],
+		// },
 	];
 
 	const filtered =

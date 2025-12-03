@@ -6,7 +6,7 @@
         "subcategories": {
             "3d_cmm": {
                 "id": "3d_cmm",
-                "name": "3D Coordinate Measuring Machine (Wenzel)",
+                "name": "3D CMM - Bridge Type",
                 "description": "Functional, efficient, and flexible measuring machines with intuitive operation, delivering precision and maximum measurement reliability.",
                 "series": "LH Series",
                 "typical_specs": {
@@ -510,7 +510,7 @@
             },
             "shopfloor_cmm": {
                 "id": "shopfloor_cmm",
-                "name": "Shop-floor Measuring Machine (Wenzel)",
+                "name": "Shop-floor Measuring Machine",
                 "description": "Workshop-ready measuring machines designed for production environment with reduced temperature and dirt dependence.",
                 "series": "SF Series",
                 "typical_specs": {
@@ -598,7 +598,7 @@
             },
             "gear_measuring": {
                 "id": "gear_measuring",
-                "name": "Measuring Machine for Gears & Shafts (Wenzel)",
+                "name": "Measuring Machine for Gears & Shafts",
                 "description": "Specialized measuring machines for demanding gear testing and rotationally symmetrical components with tactile and optical measurement.",
                 "series": "GT Series, LH with Rotary Table",
                 "typical_specs": {
@@ -639,7 +639,7 @@
             },
             "mobile_measurement": {
                 "id": "mobile_measurement",
-                "name": "Mobile Measurement Solution (Wenzel)",
+                "name": "Mobile Measurement Solution",
                 "description": "Lightweight portable measuring arms enabling precise 3D measurements directly on workpiece with maximum flexibility.",
                 "series": "WM | MMA Series",
                 "typical_specs": {

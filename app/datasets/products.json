@@ -6,10 +6,10 @@
                 "model": "FH5000S.i",
                 "description": "Horizontal spindle machining center FH5000S-i",
                 "pallet_size": "550(500)",
-                "stroke_xyz_mm": "800×800×880",
+                "stroKe_xyz_mm": "800×800×880",
                 "spindle_speed_min_1": "15,000",
                 "min_indexing_angle": "0.0001°",
-                "table_load": "400 kg",
+                "table_load": "400 Kg",
                 "feedrate": "60 / 60 / 60 ",
                 "number_of_tools": "40 (60)",
                 "image": "/assets/JTEKTFH500.jpg"
@@ -18,10 +18,10 @@
                 "model": "FH5500S.i",
                 "description": "Horizontal spindle machining center FH5500S-i",
                 "pallet_size": "550(500)",
-                "stroke_xyz_mm": "900×800×880",
+                "stroKe_xyz_mm": "900×800×880",
                 "spindle_speed_min_1": "15,000",
                 "min_indexing_angle": "0.001°",
-                "table_load": "1000 kg",
+                "table_load": "1000 Kg",
                 "number_of_tools": "40 (60)",
                 "feedrate": "60 / 60 / 60 ",
                 "image": "/assets/JTEKTFH500.jpg"
@@ -30,10 +30,10 @@
                 "model": "FH5500SX.i",
                 "description": "Horizontal spindle machining center FH5500SX-i",
                 "pallet_size": "550(500)",
-                "stroke_xyz_mm": "900×800×880",
+                "stroKe_xyz_mm": "900×800×880",
                 "spindle_speed_min_1": "15,000",
                 "min_indexing_angle": "0.001°",
-                "table_load": "400 kg",
+                "table_load": "400 Kg",
                 "feedrate": "60 / 60 / 60 ",
                 "number_of_tools": "40 (60)",
                 "image": "/assets/JTEKTFH500.jpg"
@@ -42,73 +42,73 @@
                 "model": "FH630SX-i",
                 "description": "Horizontal spindle machining center FH630SX-i",
                 "pallet_size": "630",
-                "stroke_xyz_mm": "1,050×900×1,050",
+                "stroKe_xyz_mm": "1,050×900×1,050",
                 "spindle_speed_min_1": "6,000[6,000/15,000]",
                 "min_indexing_angle": "1°(0.001°) ",
-                "table_load": "1200(1500) kg",
+                "table_load": "1200(1500) Kg",
                 "number_of_tools": "40 (60,121,122)",
                 "feedrate": "60 / 60 / 60 ",
-                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh550sx_fh630sxi_fh800sxi.jpg"
+                "image": "https://toyoda.jteKt.co.jp/assets/images/products/machine/machining_pages/main/fh550sx_fh630sxi_fh800sxi.jpg"
             },
             {
                 "model": "FH800SX-i",
                 "description": "Horizontal spindle machining center FH800SX-i",
                 "pallet_size": "□800",
-                "stroke_xyz_mm": "1,450×1,250×1,550",
+                "stroKe_xyz_mm": "1,450×1,250×1,550",
                 "spindle_speed_min_1": "6,000[15,000]",
                 "min_indexing_angle": "1°(0.001°) NC",
-                "table_load": "2500 kg",
+                "table_load": "2500 Kg",
                 "number_of_tools": "60 (121,122)",
                 "feedrate": "54 / 54 / 54 ",
-                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh550sx_fh630sxi_fh800sxi.jpg"
+                "image": "https://toyoda.jteKt.co.jp/assets/images/products/machine/machining_pages/main/fh550sx_fh630sxi_fh800sxi.jpg"
             },
             {
                 "model": "FH1000SX",
                 "description": "Horizontal spindle machining center FH800SX-i",
                 "pallet_size": "□800",
-                "stroke_xyz_mm": "1,600×1,250×1,550",
+                "stroKe_xyz_mm": "1,600×1,250×1,550",
                 "spindle_speed_min_1": "6,000[15,000]",
                 "min_indexing_angle": "0.001°NC (1°)",
-                "table_load": "3000 kg",
+                "table_load": "3000 Kg",
                 "number_of_tools": "60 (121,180,240,330 *3)",
                 "feedrate": "54 / 54 / 54 ",
-                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh550sx_fh630sxi_fh800sxi.jpg"
+                "image": "https://toyoda.jteKt.co.jp/assets/images/products/machine/machining_pages/main/fh550sx_fh630sxi_fh800sxi.jpg"
             },
             {
                 "model": "FH12500SX5-i",
                 "description": "Horizontal spindle machining center FH12500SX5-i",
                 "pallet_size": "□1,250[1,250×1,600]",
-                "stroke_xyz_mm": "2,400×1,600×1,850",
+                "stroKe_xyz_mm": "2,400×1,600×1,850",
                 "spindle_speed_min_1": "6,000[15,000]",
                 "min_indexing_angle": "0.001° NC",
-                "table_load": "5000 kg",
+                "table_load": "5000 Kg",
                 "feedrate": "42 / 42 / 42 ",
                 "number_of_tools": "60 (121,180,240,330 *3)",
-                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh12500sx5i_fh12500sw5i_fh600sw5i.jpg"
+                "image": "https://toyoda.jteKt.co.jp/assets/images/products/machine/machining_pages/main/fh12500sx5i_fh12500sw5i_fh600sw5i.jpg"
             },
             {
                 "model": "FH12500SW5-i",
                 "description": "Horizontal spindle machining center FH12500SW5-i",
                 "pallet_size": "□1,250[1,250×1,600]",
-                "stroke_xyz_mm": "2,400×1,600×1,850",
+                "stroKe_xyz_mm": "2,400×1,600×1,850",
                 "spindle_speed_min_1": "4,000",
                 "min_indexing_angle": "0.001° ",
-                "table_load": "5000 kg",
+                "table_load": "5000 Kg",
                 "feedrate": "42 / 42 / 42 ",
                 "number_of_tools": "60(121,180,240,330 *3)",
-                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh12500sx5i_fh12500sw5i_fh600sw5i.jpg"
+                "image": "https://toyoda.jteKt.co.jp/assets/images/products/machine/machining_pages/main/fh12500sx5i_fh12500sw5i_fh600sw5i.jpg"
             },
             {
                 "model": "FH1600SW5i",
                 "description": "Horizontal spindle machining center FH1600SW5i",
                 "pallet_size": "1,600×1,250",
-                "stroke_xyz_mm": "3,000×1,900×2,100",
+                "stroKe_xyz_mm": "3,000×1,900×2,100",
                 "spindle_speed_min_1": "4,000",
                 "min_indexing_angle": "0.001° ",
                 "number_of_tools": "120",
-                "table_load": "8000 kg",
+                "table_load": "8000 Kg",
                 "feedrate": "35 / 40 / 40 ",
-                "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/machining_pages/main/fh12500sx5i_fh12500sw5i_fh600sw5i.jpg"
+                "image": "https://toyoda.jteKt.co.jp/assets/images/products/machine/machining_pages/main/fh12500sx5i_fh12500sw5i_fh600sw5i.jpg"
             },
             {
                 "model": "AF-4",
@@ -116,14 +116,14 @@
                 "extra_title": "AF-4 제품 상세보기",
                 "types": [
                     "lm",
-                    "40_hsk"
+                    "40_hsK"
                 ],
                 "stroke_mm": "565 / 645 / 645",
-                "spindle_speed_rpm": "15K (20K)",
+                "spindle_speed_rpm": "15K / 20K",
                 "number_of_tools": "40 (60)",
                 "table_size": "400  mm",
                 "min_indexing_angle": "0.0001°",
-                "table_load": "400 kg",
+                "table_load": "400 Kg",
                 "feedrate": "60 / 60 / 60 ",
                 "type": "LM , #40 Dual Contact",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20240807090815.png"
@@ -134,7 +134,7 @@
                 "extra_title": "H6 제품 상세보기",
                 "types": [
                     "box",
-                    "50_hsk"
+                    "50_hsK"
                 ],
                 "stroke_mm": "1,050 / 900 / 1,000",
                 "spindle_speed_rpm": "8K / 12K",
@@ -142,7 +142,7 @@
                 "type": "BOX , #50  Dual Contact",
                 "table_size": "630 x 630 mm",
                 "min_indexing_angle": "0.001°",
-                "table_load": "1,600 kg",
+                "table_load": "1,600 Kg",
                 "feedrate": "48 / 48 / 40 ",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120040220.png"
             },
@@ -152,14 +152,14 @@
                 "extra_title": "H8 제품 상세보기",
                 "types": [
                     "box",
-                    "50_hsk"
+                    "50_hsK"
                 ],
                 "stroke_mm": "1,400 / 1,150 / 1,250",
                 "spindle_speed_rpm": "8K / 12K",
                 "number_of_tools": "40 ( 60 / 90 / 120 / 150 / 180 )",
                 "type": "BOX , #50 Dual Contact",
                 "table_size": "800 x 800 mm",
-                "table_load": "2,200 kg",
+                "table_load": "2,200 Kg",
                 "min_indexing_angle": "1°",
                 "feedrate": "36 / 36 / 36 ",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120043736.png"
@@ -170,14 +170,14 @@
                 "extra_title": "AF-16 제품 상세보기",
                 "types": [
                     "lm",
-                    "50_hsk"
+                    "50_hsK"
                 ],
                 "stroke_mm": "2,600 (3,000) / 1,600 / 1,500",
-                "spindle_speed_rpm": "3K ( 8K / 12K )",
+                "spindle_speed_rpm": "3K / 8K / 12K ",
                 "number_of_tools": "60 ( 120 / 180 )",
                 "table_size": "2,200 x 1,800 mm",
                 "min_indexing_angle": "0.001°",
-                "table_load": "15000 (2APC:7000) kg",
+                "table_load": "15000 (2APC:7000) Kg",
                 "feedrate": "16 / 16 / 16 ",
                 "type": "LM, #50 Dual Contact",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210120053911.png"
@@ -193,34 +193,34 @@
                         "model": "Mega 30V",
                         "stroke_mm": "760 /510 /510 mm",
                         "table_size": "860 x 500 mm",
-                        "spindle_speed_rpm": "15k",
-                        "number_of_tools": "30t",
-                        "power_torque": "31kw / 141nm",
+                        "spindle_speed_rpm": "15K",
+                        "number_of_tools": "30T",
+                        "power_torque": "31Kw / 141nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
                         "image": "/assets/mega30v.png",
-                        "type": "c-type, lm, #40, dual taper"
+                        "type": "C-TYPE LM #40 DUAL TAPER"
                     },
                     {
                         "model": "Mega 40V",
                         "stroke_mm": "1,020 /510 /510",
                         "table_size": "1,120 x 500 mm",
-                        "spindle_speed_rpm": "15k",
+                        "spindle_speed_rpm": "15K",
                         "number_of_tools": "40",
-                        "power_torque": "31kw / 141nm",
+                        "power_torque": "31Kw / 141nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
                         "image": "/assets/mega40v.png",
-                        "type": "c-type, lm, #40, dual taper"
+                        "type": "C-TYPE LM #40 DUAL TAPER"
                     },
                     {
                         "model": "Mega 20VAPC",
                         "stroke_mm": "600 /510 /510",
                         "table_size": "560 x 400 mm",
-                        "spindle_speed_rpm": "15k",
+                        "spindle_speed_rpm": "15K",
                         "number_of_tools": "40",
-                        "power_torque": "31kw / 141nm",
+                        "power_torque": "31Kw / 141nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
                         "image": "/assets/mega20vapc.png",
-                        "type": "c-type, lm, #40, dual taper"
+                        "type": "C-TYPE LM #40 DUAL TAPER"
                     }
                 ],
                 "tera_series": [
@@ -228,56 +228,56 @@
                         "model": "Tera 40V",
                         "stroke_mm": "1,020 / 710 / 635",
                         "table_size": "1,120 x 700 mm",
-                        "spindle_speed_rpm": "15k",
+                        "spindle_speed_rpm": "15K",
                         "number_of_tools": "40",
-                        "power_torque": "31kw / 141nm",
+                        "power_torque": "31Kw / 141nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
                         "image": "/assets/tera40v.png",
-                        "type": "c-type, lm, #40, dual taper"
+                        "type": "C-TYPE LM #40 DUAL TAPER"
                     },
                     {
                         "model": "Tera 50V",
                         "stroke_mm": "1,270 / 710 / 635",
                         "table_size": "1,420 x 700",
-                        "spindle_speed_rpm": "15k",
+                        "spindle_speed_rpm": "15K",
                         "number_of_tools": "40",
-                        "power_torque": "31kw / 141nm",
+                        "power_torque": "31Kw / 141nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
                         "image": "/assets/tera50v.png",
-                        "type": "c-type, lm, #40, dual taper"
+                        "type": "C-TYPE LM #40 DUAL TAPER"
                     },
                     {
                         "model": "Tera 60V",
                         "stroke_mm": "1,524 / 710 / 635",
                         "table_size": "1,724 x 700",
-                        "spindle_speed_rpm": "15k",
+                        "spindle_speed_rpm": "15K",
                         "number_of_tools": "40",
-                        "power_torque": "31kw / 141nm",
+                        "power_torque": "31Kw / 141nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
                         "image": "/assets/tera60v.png",
-                        "type": "c-type, lm, #40, dual taper"
+                        "type": "C-TYPE LM #40 DUAL TAPER"
                     },
                     {
                         "model": "Tera 50V / 50",
                         "stroke_mm": "1,270 / 710 / 635",
                         "table_size": "1,420 x 700",
-                        "spindle_speed_rpm": "12k",
+                        "spindle_speed_rpm": "12K",
                         "number_of_tools": "32T",
-                        "power_torque": "34kw / 570nm",
+                        "power_torque": "34Kw / 570nm",
                         "feedrate_m_per_min": "52 / 52 / 32 m/min",
                         "image": "/assets/TERA50V50.png",
-                        "type": "c-type, lm, #50, dual taper"
+                        "type": "C-TYPE LM #50 DUAL TAPER"
                     },
                     {
-                        "model": "Tera 60V / 60",
+                        "model": "Tera 60V / 50",
                         "stroke_mm": "1,524 / 710 / 635",
                         "table_size": "1,724 x 700",
-                        "spindle_speed_rpm": "12k",
+                        "spindle_speed_rpm": "12K",
                         "number_of_tools": "32T",
-                        "power_torque": "34kw / 570nm",
+                        "power_torque": "34Kw / 570nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
                         "image": "/assets/TERA60V60.png",
-                        "type": "c-type, lm, #50, dual taper"
+                        "type": "C-TYPE LM #50 DUAL TAPER"
                     }
                 ]
             },
@@ -291,8 +291,11 @@
                     "50#"
                 ],
                 "stroke_mm": "660 / 430 / 400",
-                "spindle_speed_rpm": "10K / 12K / 15K",
-                "number_of_tools": "20",
+                "spindle_speed_rpm": "10K / 12K",
+                "table_size": "720 x 400 mm",
+                "number_of_tools": "20(24)",
+                "power_torque": "15Kw / 95.5",
+                "feedrate_m_per_min": "36 / 36 / 30 m/min",
                 "type": "LM #40 / #50",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-660"
@@ -308,6 +311,9 @@
                 "stroke_mm": "1,100 / 600 / 600",
                 "spindle_speed_rpm": " 12K / 15K",
                 "number_of_tools": "30",
+                "table_size": "1,300 x 600 mm",
+                "power_torque": "-",
+                "feedrate_m_per_min": "42 / 42 / 36 m/min",
                 "type": "C-type LM #40",
                 "image": "/assets/VESTA-1100.jpg",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1000+"
@@ -322,8 +328,11 @@
                     "50#"
                 ],
                 "stroke_mm": "1,300 / 670 / 650",
-                "spindle_speed_rpm": "8K / 10K / 12K / 15K",
-                "number_of_tools": "24 / 30",
+                "spindle_speed_rpm": " 12K ",
+                "table_size": "1,450 x 670 mm",
+                "number_of_tools": "30",
+                "power_torque": "-",
+                "feedrate_m_per_min": "40 / 40 / 32 m/min",
                 "type": "LM #40 / #50",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230040942.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1300"
@@ -338,8 +347,11 @@
                     "50#"
                 ],
                 "stroke_mm": "1,650 / 750 / 675",
-                "spindle_speed_rpm": "8K / 10K / 12K / 15K",
-                "number_of_tools": "24 / 30 / 32 / 40 / 60",
+                "spindle_speed_rpm": "10K (12K,15K,8K)",
+                "number_of_tools": "30(40,60)",
+                "power_torque": "-",
+                "table_size": "1,650 x 750 mm",
+                "feedrate_m_per_min": "30 / 30 / 24 m/min",
                 "type": "LM #40 / #50",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230041153.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1650"
@@ -354,9 +366,12 @@
                     "50#"
                 ],
                 "stroke_mm": "2,000 / 850 / 800",
-                "spindle_speed_rpm": "8K / 10K / 12K / 15K",
-                "number_of_tools": "24 / 30",
+                "table_size": "2,000 x 850 mm",
+                "power_torque": "-",
+                "spindle_speed_rpm": "10K (12K,15K,8K)",
+                "number_of_tools": "30",
                 "type": "LM #40 / #50",
+                "feedrate_m_per_min": "24 / 24 / 24 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230041346.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-2000"
             },
@@ -369,11 +384,14 @@
                     "40#",
                     "dual_table"
                 ],
-                "stroke_mm": "610 / 430 / 570",
-                "spindle_speed_rpm": "10K / 12K / 15K",
-                "number_of_tools": "24",
+                "stroke_mm": "1,610 / 750 / 675",
+                "spindle_speed_rpm": "10K (12K, 15K, 8K)",
+                "number_of_tools": "30 (40, 60)",
+                "table_size": "1,650 x 750 mm",
                 "type": "LM #40 Dual Table",
-                "image": "https://www.hwacheon-europe.com/sites/default/files/styles/8col/public/15_vesta_610d_02__machine_15_wmax2970_bg_trans.png?itok=tUK_f472",
+                "power_torque": "-",
+                "feedrate_m_per_min": "30 / 30 / 24 m/min",
+                "image": "https://www.hwacheon-europe.com/sites/default/files/styles/8col/public/15_vesta_610d_02__machine_15_wmax2970_bg_trans.png?itoK=tUK_f472",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-610D"
             },
             {
@@ -386,9 +404,12 @@
                     "twin_spindle"
                 ],
                 "stroke_mm": "520 / 400 / 380",
-                "spindle_speed_rpm": "24K",
-                "number_of_tools": "24 / 24",
+                "spindle_speed_rpm": "24K ",
+                "number_of_tools": "L:24 | R:24",
+                "table_size": "720 x 400 mm",
                 "type": "LM #30 Twin Spindle",
+                "power_torque": "-",
+                "feedrate_m_per_min": "60 / 60 / 60 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105024851.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-500T"
             },
@@ -402,9 +423,12 @@
                     "twin_spindle"
                 ],
                 "stroke_mm": "650 / 650 / 700",
-                "spindle_speed_rpm": "12K / 15K",
-                "number_of_tools": " 30 / 30",
+                "spindle_speed_rpm": "12K (15K) ",
+                "number_of_tools": "L:30 | R:30",
+                "table_size": "1,400 x 600 mm",
                 "type": "LM #40 Twin Spindle",
+                "power_torque": "-",
+                "feedrate_m_per_min": "48 / 48 / 40 / 40 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105025849.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-650T"
             },
@@ -417,9 +441,12 @@
                     "40#"
                 ],
                 "stroke_mm": "1,500 / 950 / 500",
-                "spindle_speed_rpm": "12K / 20K",
+                "spindle_speed_rpm": "12K (15K) ",
                 "number_of_tools": "30",
-                "type": "LM #40 Double Column",
+                "table_size": "1,500 x 900 mm",
+                "type": "LM  #40 DOUBLE COLUMN",
+                "power_torque": "-",
+                "feedrate_m_per_min": "24 / 36 / 36 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210219045720.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L1-1500"
             },
@@ -431,10 +458,13 @@
                     "lm",
                     "40#"
                 ],
-                "stroke_mm": "2,500 / 950 / 500",
-                "spindle_speed_rpm": "12K / 20K",
+                "stroke_mm": "2500 / 950 / 500",
+                "spindle_speed_rpm": "12K (20K) ",
                 "number_of_tools": "30",
-                "type": "LM #40 Double Column",
+                "table_size": "2500 x 900 mm",
+                "type": "LM  #40 DOUBLE COLUMN",
+                "power_torque": "-",
+                "feedrate_m_per_min": "24 / 36 / 36 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210219045720.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L1-2500"
             },
@@ -446,27 +476,15 @@
                     "lm",
                     "40#"
                 ],
-                "stroke_mm": "2,500 / 1,100 / 500",
-                "spindle_speed_rpm": "12K / 20K",
+                "stroke_mm": "2500 / 1100 / 500",
+                "spindle_speed_rpm": "12K (20K) ",
                 "number_of_tools": "30",
-                "type": "LM #40 Double Column",
+                "table_size": "2500 x 1500 mm",
+                "type": "LM  #40 DOUBLE COLUMN",
+                "power_torque": "-",
+                "feedrate_m_per_min": "24 / 36 / 36 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221100103.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L2-2500"
-            },
-            {
-                "model": "L3 3000",
-                "description": "Double Column Vertical Machining Center for Plates",
-                "extra_title": "L3 3000 제품 상세보기",
-                "types": [
-                    "lm",
-                    "40#"
-                ],
-                "stroke_mm": "3,000 / 1,800 / 500",
-                "spindle_speed_rpm": "12K / 20K",
-                "number_of_tools": "30 / 40",
-                "type": "LM #40 Double Column",
-                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20220719093656.png",
-                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L3-3000"
             },
             {
                 "model": "L2 3000",
@@ -477,11 +495,32 @@
                     "40#"
                 ],
                 "stroke_mm": "3,000 / 1,100 / 500",
-                "spindle_speed_rpm": "12K / 20K",
+                "spindle_speed_rpm": "12K (20K) ",
                 "number_of_tools": "30",
-                "type": "LM #40 Double Column",
+                "table_size": "3,000 x 400 mm",
+                "type": "LM  #40 DOUBLE COLUMN",
+                "power_torque": "-",
+                "feedrate_m_per_min": "24 / 36 / 36 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221100103.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L2-3000"
+            },
+            {
+                "model": "L3 3000",
+                "description": "Double Column Vertical Machining Center for Plates",
+                "extra_title": "L3 3000 제품 상세보기",
+                "types": [
+                    "lm",
+                    "40#"
+                ],
+                "stroke_mm": "3,000 / 1,800 / 500",
+                "spindle_speed_rpm": "12K (20K) ",
+                "number_of_tools": "30(OPT:40)",
+                "table_size": "800 x 400 mm",
+                "type": "LM  #40 DOUBLE COLUMN",
+                "power_torque": "-",
+                "feedrate_m_per_min": "20 / 24 / 36 m/min",
+                "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20220719093656.png",
+                "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=L3-3000"
             },
             {
                 "model": "VESTA-850B",
@@ -493,9 +532,12 @@
                     "50#"
                 ],
                 "stroke_mm": "850 / 600 / 600",
-                "spindle_speed_rpm": "6K / 8K",
-                "number_of_tools": "24 / 30",
+                "spindle_speed_rpm": "8K (6K) ",
+                "number_of_tools": "24(30)",
+                "table_size": "1,050 x 600 mm",
                 "type": "BOX #40 / #50",
+                "power_torque": "-",
+                "feedrate_m_per_min": "24 / 24 / 18  m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105022524.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-850B"
             },
@@ -509,9 +551,12 @@
                     "50#"
                 ],
                 "stroke_mm": "1,050 / 600 / 600",
-                "spindle_speed_rpm": "6K / 8K",
-                "number_of_tools": "24 / 30",
+                "spindle_speed_rpm": "8K (6K) ",
+                "number_of_tools": "24(30)",
+                "table_size": "1,150 x 600 mm",
                 "type": "BOX #40 / #50",
+                "power_torque": "-",
+                "feedrate_m_per_min": "24 / 24 / 18  m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105024623.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1050B"
             },
@@ -525,9 +570,12 @@
                     "50#"
                 ],
                 "stroke_mm": "1,300 / 670 / 650",
-                "spindle_speed_rpm": "6K / 8K / 10K / 12K / 15K",
-                "number_of_tools": "24 / 30",
+                "spindle_speed_rpm": "8K (6K) ",
+                "number_of_tools": "24(30)",
+                "table_size": "1,150 x 600 mm",
                 "type": "BOX #40 / #50",
+                "power_torque": "-",
+                "feedrate_m_per_min": "24 / 24 / 18 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105024736.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VESTA-1300B"
             },
@@ -540,9 +588,12 @@
                     "50#"
                 ],
                 "stroke_mm": "1,300 / 650 / 650",
-                "spindle_speed_rpm": "5K / 8K",
-                "number_of_tools": "- / 24",
+                "spindle_speed_rpm": "5K (8K) ",
+                "number_of_tools": "24( Non ATC)",
+                "table_size": "1,800 x 650 mm",
                 "type": "BOX #50",
+                "power_torque": "-",
+                "feedrate_m_per_min": "15 / 15 / 12 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105044959.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-650"
             },
@@ -555,9 +606,12 @@
                     "50#"
                 ],
                 "stroke_mm": "2,000 / 850 / 750",
-                "spindle_speed_rpm": "8K / 12K",
+                "spindle_speed_rpm": "8K (12K) ",
                 "number_of_tools": "24",
+                "table_size": "2,150 x 850 mm",
                 "type": "BOX #50",
+                "power_torque": "-",
+                "feedrate_m_per_min": "16 / 16 / 16 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105050458.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-850"
             },
@@ -569,10 +623,13 @@
                     "box",
                     "50#"
                 ],
-                "stroke_mm": "2,500 / 1,050 / 850",
-                "spindle_speed_rpm": "8K / 12K",
-                "number_of_tools": "24",
+                "stroke_mm": "2,500 / 1050 / 850",
+                "spindle_speed_rpm": "8K (12K) ",
+                "number_of_tools": "24(30)",
+                "table_size": "2,150 x 850 mm",
                 "type": "BOX #50",
+                "power_torque": "-",
+                "feedrate_m_per_min": "20 / 20 / 16 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105051659.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1050"
             },
@@ -584,10 +641,13 @@
                     "box",
                     "50#"
                 ],
-                "stroke_mm": "2,500 / 1,250 / 750",
-                "spindle_speed_rpm": "8K / 12K",
-                "number_of_tools": "8 / 40",
+                "stroke_mm": "2,500 / 1250 / 750",
+                "spindle_speed_rpm": "8K (12K) ",
+                "number_of_tools": "8(40)",
+                "table_size": "2,800 x 1250 mm",
                 "type": "BOX #50",
+                "power_torque": "-",
+                "feedrate_m_per_min": "16 / 16 / 16 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210105051728.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1250"
             },
@@ -599,10 +659,13 @@
                     "box",
                     "50#"
                 ],
-                "stroke_mm": "2,550 / 1,350 / 750",
-                "spindle_speed_rpm": "8K / 12K",
-                "number_of_tools": "40 / 60",
+                "stroke_mm": "2,550 / 1350 / 750",
+                "spindle_speed_rpm": "12K (8K) ",
+                "number_of_tools": "40(OPT: 60)",
+                "table_size": "2,800 x 1250 mm",
                 "type": "BOX #50",
+                "power_torque": "-",
+                "feedrate_m_per_min": "16 / 16 / 16 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117093515.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1350"
             },
@@ -614,10 +677,13 @@
                     "box",
                     "50#"
                 ],
-                "stroke_mm": "3,000 (4,000) / 1,750 / 800",
-                "spindle_speed_rpm": "12K / 15K",
-                "number_of_tools": "40 / 60",
+                "stroke_mm": "3,000 / 1750 / 800",
+                "spindle_speed_rpm": "12K (15K) ",
+                "number_of_tools": "40(OPT: 60)",
+                "table_size": "3,200 x 1750 mm",
                 "type": "BOX #50",
+                "power_torque": "-",
+                "feedrate_m_per_min": "16 / 16 / 16 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117100015.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-1750"
             },
@@ -629,10 +695,13 @@
                     "box",
                     "50#"
                 ],
-                "stroke_mm": "3,100 (4,000) / 2,300 / 900",
-                "spindle_speed_rpm": "8K / 12K",
+                "stroke_mm": "3,100 / 2,300 / 900",
+                "spindle_speed_rpm": "8K (12K) ",
                 "number_of_tools": "40",
+                "table_size": "3,300 x 2000 mm",
                 "type": "BOX #50",
+                "power_torque": "-",
+                "feedrate_m_per_min": "16 / 16 / 16 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117102949.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-2500"
             },
@@ -645,9 +714,12 @@
                     "40#"
                 ],
                 "stroke_mm": "750 / 500 / 350",
-                "spindle_speed_rpm": "20K / 32K",
-                "number_of_tools": "24",
+                "spindle_speed_rpm": "20K (32K) ",
+                "number_of_tools": "40",
+                "table_size": "850 x 500 mm",
                 "type": "LM #40",
+                "power_torque": "-",
+                "feedrate_m_per_min": "24 / 24 / 24 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117122537.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=UH500"
             },
@@ -660,10 +732,13 @@
                     "30#",
                     "40#"
                 ],
-                "stroke_mm": "750 / 500 / 450",
-                "spindle_speed_rpm": "20K / 32K / 45K",
-                "number_of_tools": "20 / 30 / 40 / 60",
-                "type": "LM #30 / #40",
+                "stroke_mm": "1,500 / 750 / 650",
+                "spindle_speed_rpm": "12K (15K) ",
+                "number_of_tools": "40(OPT:60)",
+                "table_size": "1,650 x 750 mm",
+                "type": "LM #50",
+                "power_torque": "-",
+                "feedrate_m_per_min": "20 / 20 / 20 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117121829.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UM+"
             },
@@ -676,9 +751,12 @@
                     "40#"
                 ],
                 "stroke_mm": "1,050 / 600 / 350",
-                "spindle_speed_rpm": "12K / 14K / 20K / 24K",
-                "number_of_tools": "30 / 40",
+                "spindle_speed_rpm": "12K (14K,20K,24K) ",
+                "number_of_tools": "30(OPT: 40)",
+                "table_size": "1,200 x 600 mm",
                 "type": "LM #40",
+                "power_torque": "-",
+                "feedrate_m_per_min": "30 / 30 / 30 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117121829.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UZ"
             },
@@ -691,9 +769,12 @@
                     "40#"
                 ],
                 "stroke_mm": "1,050 / 600 / 550",
-                "spindle_speed_rpm": "12K / 14K / 20K / 24K",
-                "number_of_tools": "30 / 40",
+                "spindle_speed_rpm": "20K (12K,14K,24K) ",
+                "number_of_tools": "30(OPT: 40)",
+                "table_size": "1,200 x 600 mm",
                 "type": "LM #40",
+                "power_torque": "-",
+                "feedrate_m_per_min": "36 / 36 / 36 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117115509.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UL+"
             },
@@ -706,9 +787,12 @@
                     "50#"
                 ],
                 "stroke_mm": "1,500 / 750 / 650",
-                "spindle_speed_rpm": "12K / 15K",
-                "number_of_tools": "40 / 60",
+                "spindle_speed_rpm": "12K (15K) ",
+                "number_of_tools": "40(OPT: 60)",
+                "table_size": "1,650 x 750 mm",
                 "type": "LM #50",
+                "power_torque": "-",
+                "feedrate_m_per_min": "20 / 20 / 20 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117120744.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SIRIUS-UX"
             },
@@ -720,10 +804,13 @@
                     "lm",
                     "40#"
                 ],
-                "stroke_mm": "1,050 / 600 / 550",
-                "spindle_speed_rpm": "12K / 14K / 20K / 24K",
+                "stroke_mm": "1,500 / 600 / 550",
+                "spindle_speed_rpm": "12K (14K,20K,24K) ",
                 "number_of_tools": "120",
+                "table_size": "1,200 x 600 mm",
                 "type": "LM #40",
+                "power_torque": "-",
+                "feedrate_m_per_min": "36 / 36 / 36 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117124326.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SMART-Ua-STEEL"
             },
@@ -737,9 +824,12 @@
                     "graphite"
                 ],
                 "stroke_mm": "1,300 / 750 / 420",
-                "spindle_speed_rpm": "12K / 20K",
+                "spindle_speed_rpm": "12K (20K) ",
                 "number_of_tools": "50",
-                "type": "LM #40 Graphite",
+                "table_size": "1,200 x 700 mm",
+                "type": "LM #40 GRAPHITE",
+                "power_torque": "-",
+                "feedrate_m_per_min": "20 / 20 / 20 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210117010932.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=SMART-UaX"
             },
@@ -753,9 +843,12 @@
                     "graphite"
                 ],
                 "stroke_mm": "750 / 600 / 350",
-                "spindle_speed_rpm": "24K",
+                "spindle_speed_rpm": "24K ",
                 "number_of_tools": "16",
-                "type": "LM #30 Graphite",
+                "table_size": "750 x 620 mm",
+                "type": "LM #30 GRAPHITE",
+                "power_torque": "-",
+                "feedrate_m_per_min": "25 / 25 / 20 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221013756.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M-G1"
             },
@@ -771,7 +864,10 @@
                 "stroke_mm": "750 / 600 / 350",
                 "spindle_speed_rpm": "24K",
                 "number_of_tools": "16",
-                "type": "LM #30 Graphite Pro",
+                "table_size": "750 x 620 mm",
+                "type": "LM #30 GRAPHITE",
+                "power_torque": "-",
+                "feedrate_m_per_min": "25 / 25 / 20 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20220715051216.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M-G1-Pro"
             },
@@ -786,8 +882,11 @@
                 ],
                 "stroke_mm": "1,200 / 800 / 500",
                 "spindle_speed_rpm": "20K",
-                "number_of_tools": "16 / 24 / 32",
-                "type": "BOX #40 Graphite",
+                "number_of_tools": "16(OPT : 24,32)",
+                "table_size": "850 x 500 mm",
+                "type": "BOX #40 GRAPHITE",
+                "power_torque": "-",
+                "feedrate_m_per_min": "25 / 25 / 20 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221015525.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=Hi-M-G2+"
             },
@@ -800,9 +899,12 @@
                     "30#"
                 ],
                 "stroke_mm": "520 / 360 / 300",
-                "spindle_speed_rpm": "12K (SIEMENS : 15K) / 24K",
+                "spindle_speed_rpm": "12K (15K) ",
                 "number_of_tools": "21",
-                "type": "LM #30 Tapping",
+                "table_size": "650 x 400 mm",
+                "type": "LM #30 TAPPING",
+                "power_torque": "-",
+                "feedrate_m_per_min": "50 / 50 / 60 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221112127.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-360D"
             },
@@ -815,9 +917,12 @@
                     "30#"
                 ],
                 "stroke_mm": "520 / 400 / 300",
-                "spindle_speed_rpm": "12K (SIEMENS : 15K) / 24K",
+                "spindle_speed_rpm": "12K (15K) ",
                 "number_of_tools": "21",
-                "type": "LM #30 Tapping",
+                "table_size": "600 x 400 mm",
+                "type": "LM #30 TAPPING",
+                "power_torque": "-",
+                "feedrate_m_per_min": "60 / 60 / 60 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221103133.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-400"
             },
@@ -830,9 +935,12 @@
                     "30#"
                 ],
                 "stroke_mm": "700 / 400 / 300",
-                "spindle_speed_rpm": "12K (SIEMENS : 15K) / 24K",
+                "spindle_speed_rpm": "12K (15K) ",
                 "number_of_tools": "21",
-                "type": "LM #30 Tapping",
+                "table_size": "800 x 400 mm",
+                "type": "LM #30 TAPPING",
+                "power_torque": "-",
+                "feedrate_m_per_min": "60 / 60 / 60 m/min",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20210221110723.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=HiT-400L"
             }
@@ -849,14 +957,14 @@
                 "filters": [
                     "simultaneous"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
+                "image": "https://www.Kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
                 "specs": {
                     "travel_mm": {
                         "x": 1500,
                         "y": 1200,
                         "z": 1000
                     },
-                    "table_load_kg": 5000,
+                    "table_load_Kg": 5000,
                     "feedrate_m_per_min": {
                         "x": 60,
                         "y": 60,
@@ -864,7 +972,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 4000,
-                        "power_kw": 30,
+                        "power_Kw": 30,
                         "torque_nm": 800
                     }
                 }
@@ -885,7 +993,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "12K (16K | 21K | 42K) ",
-                        "power_kw": "22 (30)",
+                        "power_Kw": "22 (30)",
                         "torque_nm": "45 (60)"
                     },
                     "spindle_taper": [
@@ -923,7 +1031,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "12K (16K | 18K | 21K) ",
-                        "power_kw": "30 (40)",
+                        "power_Kw": "30 (40)",
                         "torque_nm": "75 (100)"
                     },
                     "spindle_taper": [
@@ -955,7 +1063,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "12K ( 6K | 9K | 10K | 16K | 18K | 30K ) ",
-                        "power_kw": "40 (55)",
+                        "power_Kw": "40 (55)",
                         "torque_nm": "120 (160)"
                     },
                     "interference_diameter": 580,
@@ -988,7 +1096,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "12K ( 6K | 9K | 10K | 16K | 18K | 30K ) ",
-                        "power_kw": "55 (75)",
+                        "power_Kw": "55 (75)",
                         "torque_nm": "180 (240)"
                     },
                     "interference_diameter": 580,
@@ -1021,7 +1129,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "16K",
-                        "power_kw": "25 (32)",
+                        "power_Kw": "25 (32)",
                         "torque_nm": "159 (206)"
                     },
                     "interference_diameter": 620,
@@ -1054,7 +1162,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "14.5K ( 10K | 16K ) ",
-                        "power_kw": "50 (58)",
+                        "power_Kw": "50 (58)",
                         "torque_nm": "225 (261)"
                     },
                     "interference_diameter": 900,
@@ -1088,7 +1196,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "10K ( 14.5K | 16K ) ",
-                        "power_kw": "45 (60)",
+                        "power_Kw": "45 (60)",
                         "torque_nm": "140 (180)"
                     },
                     "interference_diameter": 1280,
@@ -1115,7 +1223,7 @@
                         "y": 600,
                         "z": 400
                     },
-                    "table_load_kg": 500,
+                    "table_load_Kg": 500,
                     "feedrate_m_per_min": {
                         "x": 75,
                         "y": 75,
@@ -1123,7 +1231,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "6K",
-                        "power_kw": 26,
+                        "power_Kw": 26,
                         "torque_nm": 116,
                         "interface": "HSK-A63",
                         "distance_spindle_max_mm": 550,
@@ -1146,7 +1254,7 @@
                         "y": 800,
                         "z": 550
                     },
-                    "table_load_kg": 500,
+                    "table_load_Kg": 500,
                     "feedrate_m_per_min": {
                         "x": 75,
                         "y": 75,
@@ -1154,7 +1262,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "10K",
-                        "power_kw": 16,
+                        "power_Kw": 16,
                         "torque_nm": 102,
                         "interface": "HSK-A63",
                         "distance_spindle_max_mm": 650,
@@ -1177,7 +1285,7 @@
                         "y": 800,
                         "z": 600
                     },
-                    "table_load_kg": 1000,
+                    "table_load_Kg": 1000,
                     "feedrate_m_per_min": {
                         "x": 75,
                         "y": 75,
@@ -1185,7 +1293,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "6K",
-                        "power_kw": 50,
+                        "power_Kw": 50,
                         "torque_nm": 187,
                         "interface": "HSK-A63",
                         "distance_spindle_max_mm": 8235,
@@ -1208,7 +1316,7 @@
                         "y": 1200,
                         "z": 800
                     },
-                    "table_load_kg": 2500,
+                    "table_load_Kg": 2500,
                     "feedrate_m_per_min": {
                         "x": 75,
                         "y": 75,
@@ -1216,7 +1324,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 6000,
-                        "power_kw": 50,
+                        "power_Kw": 50,
                         "torque_nm": 187,
                         "interface": "HSK-A63",
                         "distance_spindle_max_mm": 966,
@@ -1239,14 +1347,14 @@
                         "y": 1300,
                         "z": 800
                     },
-                    "table_load_kg": 3000,
+                    "table_load_Kg": 3000,
                     "feedrate_m_per_min": {
                         "x": 85,
                         "y": 85,
                         "z": 85
                     },
                     "spindle": {
-                        "power_kw": 60,
+                        "power_Kw": 60,
                         "torque_nm": 350,
                         "interface": "HSK-A100",
                         "distance_spindle_max_mm": 988,
@@ -1262,7 +1370,7 @@
                 "filters": [
                     "gantry"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/CompactE_%E5%81%B4%E6%8E%9B%E5%BC%8F_%E4%B8%AD%E6%96%87_CMYK%20%E6%8B%B7%E8%B4%9D.png",
+                "image": "https://www.Kencnc.com/assets/source/Images_Product/AllMachine/CN/CompactE_%E5%81%B4%E6%8E%9B%E5%BC%8F_%E4%B8%AD%E6%96%87_CMYK%20%E6%8B%B7%E8%B4%9D.png",
                 "specs": {
                     "travel_mm": {
                         "x": 2000,
@@ -1288,7 +1396,7 @@
                 "filters": [
                     "gantry"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
+                "image": "https://www.Kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
                 "specs": {
                     "travel_mm": {
                         "x": "4000 |5000 |6000 |8000 mm",
@@ -1325,7 +1433,7 @@
                         "y": "2200 (2700 |3200 |3700|4700)"
                     },
                     "spindle": {
-                        "power_kw": "22 (26)",
+                        "power_Kw": "22 (26)",
                         "torque_nm": "719 (850)"
                     }
                 }
@@ -1338,7 +1446,7 @@
                 "filters": [
                     "double_column"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
+                "image": "https://www.Kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
                 "specs": {
                     "travel_mm": {
                         "x": "2060 |3060 |4060 mm",
@@ -1354,12 +1462,12 @@
                         "y": 60,
                         "z": 48
                     },
-                    "milling_head": "Side Type | Fork Type",
+                    "milling_head": "Side Type | ForK Type",
                     "rotation_angle": "A: ±115° / C: ±360°",
                     "spindle": {
-                        "shank": "HSK-A63 | HSK-A100",
+                        "shanK": "HSK-A63 | HSK-A100",
                         "rotation_speed_rpm": "24000(15000)",
-                        "power_kw": "42 (55)",
+                        "power_Kw": "42 (55)",
                         "torque_nm": "67 (87)"
                     }
                 }
@@ -1372,7 +1480,7 @@
                 "filters": [
                     "double_column"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/CN/rotor-en.png",
+                "image": "https://www.Kencnc.com/assets/source/Images_Product/AllMachine/CN/rotor-en.png",
                 "specs": {
                     "travel_mm": {
                         "x": "1500 | 2000 mm",
@@ -1398,7 +1506,7 @@
                 "filters": [
                     "double_column"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Saber.png",
+                "image": "https://www.Kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Saber.png",
                 "specs": {
                     "travel_mm": {
                         "x": "3000 | 4000 | 5000 | 6000 mm",
@@ -1423,14 +1531,14 @@
                 "filters": [
                     "millturn"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
+                "image": "https://www.Kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
                 "specs": {
                     "travel_mm": {
                         "x": 1250,
                         "y": 1000,
                         "z": 1000
                     },
-                    "table_load_kg": 4000,
+                    "table_load_Kg": 4000,
                     "feedrate_m_per_min": {
                         "x": 40,
                         "y": 40,
@@ -1438,7 +1546,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 3500,
-                        "power_kw": "30 (40)",
+                        "power_Kw": "30 (40)",
                         "torque_nm": "900 (1200)"
                     }
                 }
@@ -1451,14 +1559,14 @@
                 "filters": [
                     "millturn"
                 ],
-                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
+                "image": "https://www.Kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Rhino1250.png",
                 "specs": {
                     "travel_mm": {
                         "x": 1700,
                         "y": 1200,
                         "z": 1200
                     },
-                    "table_load_kg": 6000,
+                    "table_load_Kg": 6000,
                     "feedrate_m_per_min": {
                         "x": 40,
                         "y": 40,
@@ -1466,7 +1574,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 3000,
-                        "power_kw": "45 (60)",
+                        "power_Kw": "45 (60)",
                         "torque_nm": "1500 (2000)"
                     }
                 }
@@ -1486,7 +1594,7 @@
                         "y": 500,
                         "z": 400
                     },
-                    "table_load_kg": 200,
+                    "table_load_Kg": 200,
                     "feedrate_m_per_min": {
                         "x": 60,
                         "y": 60,
@@ -1494,7 +1602,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 12000,
-                        "power_kw": "7.5 (11)",
+                        "power_Kw": "7.5 (11)",
                         "torque_nm": "12 (18)"
                     }
                 }
@@ -1514,7 +1622,7 @@
                         "y": 600,
                         "z": 500
                     },
-                    "table_load_kg": 300,
+                    "table_load_Kg": 300,
                     "feedrate_m_per_min": {
                         "x": 60,
                         "y": 60,
@@ -1522,7 +1630,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 10000,
-                        "power_kw": "11 (15)",
+                        "power_Kw": "11 (15)",
                         "torque_nm": "18 (25)"
                     }
                 }
@@ -1542,7 +1650,7 @@
                         "y": 700,
                         "z": 600
                     },
-                    "table_load_kg": 500,
+                    "table_load_Kg": 500,
                     "feedrate_m_per_min": {
                         "x": 60,
                         "y": 60,
@@ -1550,7 +1658,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 8000,
-                        "power_kw": "15 (22)",
+                        "power_Kw": "15 (22)",
                         "torque_nm": "30 (45)"
                     }
                 }
@@ -1570,7 +1678,7 @@
                         "y": 800,
                         "z": 700
                     },
-                    "table_load_kg": 800,
+                    "table_load_Kg": 800,
                     "feedrate_m_per_min": {
                         "x": 60,
                         "y": 60,
@@ -1578,7 +1686,7 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 6000,
-                        "power_kw": "18.5 (26)",
+                        "power_Kw": "18.5 (26)",
                         "torque_nm": "45 (65)"
                     }
                 }
@@ -1598,7 +1706,7 @@
                         "y": 900,
                         "z": 800
                     },
-                    "table_load_kg": 1000,
+                    "table_load_Kg": 1000,
                     "feedrate_m_per_min": {
                         "x": 60,
                         "y": 60,
@@ -1606,27 +1714,27 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 5000,
-                        "power_kw": "22 (30)",
+                        "power_Kw": "22 (30)",
                         "torque_nm": "60 (85)"
                     }
                 }
             },
             {
-                "model": "I2",
+                "model": "i2",
                 "series": "I-Series",
                 "description": "Integrated 5-Axis Machining Center",
                 "type": "5-Axis MillTurn",
                 "filters": [
                     "millturn"
                 ],
-                "image": "https://www.hwacheon-europe.com/sites/default/files/styles/8col/public/307_i2_04__picture_16_wmax2970.png?itok=L7feEIYR",
+                "image": "https://www.hwacheon-europe.com/sites/default/files/styles/8col/public/307_i2_04__picture_16_wmax2970.png?itoK=L7feEIYR",
                 "specs": {
                     "travel_mm": {
                         "x": 1200,
                         "y": 800,
                         "z": 600
                     },
-                    "table_load_kg": 1500,
+                    "table_load_Kg": 1500,
                     "feedrate_m_per_min": {
                         "x": 50,
                         "y": 50,
@@ -1634,381 +1742,9 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 8000,
-                        "power_kw": "26 (35)",
+                        "power_Kw": "26 (35)",
                         "torque_nm": "45 (60)"
                     }
-                }
-            },
-            {
-                "model": "M30",
-                "series": "M-Series",
-                "description": "5-Axis MillTurn Center",
-                "type": "5-Axis MillTurn",
-                "filters": [
-                    "millturn"
-                ],
-                "image": "https://www.wfl.at/fileadmin/_processed_/7/6/csm_m30_69edcca603.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 600,
-                        "y": 400,
-                        "z": 400
-                    },
-                    "table_load_kg": 300,
-                    "feedrate_m_per_min": {
-                        "x": 40,
-                        "y": 40,
-                        "z": 40
-                    },
-                    "spindle": {
-                        "rotation_speed_rpm": 6000,
-                        "power_kw": "15 (20)",
-                        "torque_nm": "40 (55)"
-                    }
-                }
-            },
-            {
-                "model": "M35",
-                "series": "M-Series",
-                "description": "5-Axis MillTurn Center",
-                "type": "5-Axis MillTurn",
-                "filters": [
-                    "millturn"
-                ],
-                "image": "https://www.wfl.at/fileadmin/_processed_/7/6/csm_m30_69edcca603.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 800,
-                        "y": 500,
-                        "z": 500
-                    },
-                    "table_load_kg": 500,
-                    "feedrate_m_per_min": {
-                        "x": 40,
-                        "y": 40,
-                        "z": 40
-                    },
-                    "spindle": {
-                        "rotation_speed_rpm": 5000,
-                        "power_kw": "18.5 (25)",
-                        "torque_nm": "60 (80)"
-                    }
-                }
-            },
-            {
-                "model": "M40",
-                "series": "M-Series",
-                "description": "5-Axis MillTurn Center",
-                "type": "5-Axis MillTurn",
-                "filters": [
-                    "millturn"
-                ],
-                "image": "https://www.wfl.at/fileadmin/_processed_/1/1/csm_M40X_11fcb64b64.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 1000,
-                        "y": 600,
-                        "z": 600
-                    },
-                    "table_load_kg": 800,
-                    "feedrate_m_per_min": {
-                        "x": 40,
-                        "y": 40,
-                        "z": 40
-                    },
-                    "spindle": {
-                        "rotation_speed_rpm": 4000,
-                        "power_kw": "22 (30)",
-                        "torque_nm": "85 (115)"
-                    }
-                }
-            },
-            {
-                "model": "M40X",
-                "series": "M-Series",
-                "description": "Extended 5-Axis MillTurn Center",
-                "type": "5-Axis MillTurn",
-                "filters": [
-                    "millturn"
-                ],
-                "image": "https://www.wfl.at/fileadmin/_processed_/1/1/csm_M40X_11fcb64b64.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 1200,
-                        "y": 700,
-                        "z": 700
-                    },
-                    "table_load_kg": 1000,
-                    "feedrate_m_per_min": {
-                        "x": 40,
-                        "y": 40,
-                        "z": 40
-                    },
-                    "spindle": {
-                        "rotation_speed_rpm": 3500,
-                        "power_kw": "26 (35)",
-                        "torque_nm": "110 (150)"
-                    }
-                }
-            },
-            {
-                "model": "M50",
-                "series": "M-Series",
-                "description": "5-Axis MillTurn Center",
-                "type": "5-Axis MillTurn",
-                "filters": [
-                    "millturn"
-                ],
-                "image": "https://www.wfl.at/fileadmin/_processed_/b/2/csm_M50_c0220e7548.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 1500,
-                        "y": 800,
-                        "z": 800
-                    },
-                    "table_load_kg": 1500,
-                    "feedrate_m_per_min": {
-                        "x": 40,
-                        "y": 40,
-                        "z": 40
-                    },
-                    "spindle": {
-                        "rotation_speed_rpm": 3000,
-                        "power_kw": "30 (40)",
-                        "torque_nm": "150 (200)"
-                    }
-                }
-            },
-            {
-                "model": "M60",
-                "series": "M-Series",
-                "description": "5-Axis MillTurn Center",
-                "type": "5-Axis MillTurn",
-                "filters": [
-                    "millturn"
-                ],
-                "image": "https://www.wfl.at/fileadmin/_processed_/c/6/csm_m65_87f9308275.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 1800,
-                        "y": 1000,
-                        "z": 1000
-                    },
-                    "table_load_kg": 2000,
-                    "feedrate_m_per_min": {
-                        "x": 40,
-                        "y": 40,
-                        "z": 40
-                    },
-                    "spindle": {
-                        "rotation_speed_rpm": 2500,
-                        "power_kw": "37 (50)",
-                        "torque_nm": "220 (300)"
-                    }
-                }
-            },
-            {
-                "model": "M80",
-                "series": "M-Series",
-                "description": "5-Axis MillTurn Center",
-                "type": "5-Axis MillTurn",
-                "filters": [
-                    "millturn"
-                ],
-                "image": "https://www.wfl.at/fileadmin/_processed_/f/1/csm_m80_80c9118747.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 2000,
-                        "y": 1200,
-                        "z": 1200
-                    },
-                    "table_load_kg": 3000,
-                    "feedrate_m_per_min": {
-                        "x": 40,
-                        "y": 40,
-                        "z": 40
-                    },
-                    "spindle": {
-                        "rotation_speed_rpm": 2000,
-                        "power_kw": "45 (60)",
-                        "torque_nm": "350 (470)"
-                    }
-                }
-            },
-            {
-                "model": "M80X",
-                "series": "M-Series",
-                "description": "Extended 5-Axis MillTurn Center",
-                "type": "5-Axis MillTurn",
-                "filters": [
-                    "millturn"
-                ],
-                "image": "https://www.wfl.at/fileadmin/_processed_/f/1/csm_m80_80c9118747.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 2200,
-                        "y": 1400,
-                        "z": 1400
-                    },
-                    "table_load_kg": 4000,
-                    "feedrate_m_per_min": {
-                        "x": 40,
-                        "y": 40,
-                        "z": 40
-                    },
-                    "spindle": {
-                        "rotation_speed_rpm": 1800,
-                        "power_kw": "55 (75)",
-                        "torque_nm": "470 (630)"
-                    }
-                }
-            },
-            {
-                "model": "M85",
-                "series": "M-Series",
-                "description": "5-Axis MillTurn Center",
-                "type": "5-Axis MillTurn",
-                "filters": [
-                    "millturn"
-                ],
-                "image": "https://www.wfl.at/fileadmin/_processed_/f/1/csm_m80_80c9118747.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 2400,
-                        "y": 1500,
-                        "z": 1500
-                    },
-                    "table_load_kg": 5000,
-                    "feedrate_m_per_min": {
-                        "x": 40,
-                        "y": 40,
-                        "z": 40
-                    },
-                    "spindle": {
-                        "rotation_speed_rpm": 1600,
-                        "power_kw": "75 (100)",
-                        "torque_nm": "700 (950)"
-                    }
-                }
-            },
-            {
-                "model": "M100",
-                "series": "M-Series",
-                "description": "Large 5-Axis MillTurn Center",
-                "type": "5-Axis MillTurn",
-                "filters": [
-                    "millturn"
-                ],
-                "image": "https://www.wfl.at/fileadmin/_processed_/7/b/csm_m100_c929525406.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 3000,
-                        "y": 1800,
-                        "z": 1800
-                    },
-                    "table_load_kg": 8000,
-                    "feedrate_m_per_min": {
-                        "x": 40,
-                        "y": 40,
-                        "z": 40
-                    },
-                    "spindle": {
-                        "rotation_speed_rpm": 1200,
-                        "power_kw": "90 (120)",
-                        "torque_nm": "1200 (1600)"
-                    }
-                }
-            },
-            {
-                "model": "M200",
-                "series": "M-Series",
-                "description": "Extra Large 5-Axis MillTurn Center",
-                "type": "5-Axis MillTurn",
-                "filters": [
-                    "millturn"
-                ],
-                "image": "https://www.wfl.at/fileadmin/_processed_/1/d/csm_m200_289215f054.png",
-                "specs": {
-                    "travel_mm": {
-                        "x": 4000,
-                        "y": 2500,
-                        "z": 2500
-                    },
-                    "table_load_kg": 15000,
-                    "feedrate_m_per_min": {
-                        "x": 30,
-                        "y": 30,
-                        "z": 30
-                    },
-                    "spindle": {
-                        "rotation_speed_rpm": 800,
-                        "power_kw": "160 (220)",
-                        "torque_nm": "3000 (4000)"
-                    },
-                    "mega_series": [
-                        {
-                            "series_name": "MEGA Series (5-axis)",
-                            "description": "Compact, high-speed 5-axis machining center",
-                            "model": "MEGA 30V",
-                            "type": "5-Axis Vertical",
-                            "filters": [
-                                "simultaneous"
-                            ],
-                            "specs": {
-                                "stroke": "780 / 510 / 441",
-                                "table_size": "Ø220 (500 x 300)",
-                                "spindle_speed": "15K",
-                                "number_of_tools": 40,
-                                "power_torque": "31kW / 141Nm",
-                                "rapid_feedrate": "52 / 52 / 48 m/min",
-                                "a_c_axis_deg": "40° / 120° / 360°",
-                                "type": "C-type, LM, #40, Dual taper"
-                            },
-                            "image": "/assets/mega30v.png"
-                        }
-                    ],
-                    "tera_series": [
-                        {
-                            "series_name": "TERA Series",
-                            "description": "High speed 5-axis machining center",
-                            "model": "TERA 50VT",
-                            "type": "5-Axis Vertical",
-                            "filters": [
-                                "simultaneous"
-                            ],
-                            "specs": {
-                                "stroke": "970 / 710 / 500",
-                                "table_size": "Ø320 (720 x 400)",
-                                "spindle_speed": "15K",
-                                "number_of_tools": 40,
-                                "power_torque": "31kW / 141Nm",
-                                "a_c_axis_deg": "40° / 120° / 360°",
-                                "rapid_feedrate": "48 / 48 / 48 m/min",
-                                "type": "C-type, LM, #40, Dual taper"
-                            },
-                            "image": "/assets/tera50vt.png"
-                        },
-                        {
-                            "series_name": "TERA Series",
-                            "description": "High Torque 5-axis machining center",
-                            "model": "TERA 50VT / 50",
-                            "type": "5-Axis Vertical",
-                            "filters": [
-                                "simultaneous"
-                            ],
-                            "specs": {
-                                "stroke": "970 / 710 / 500",
-                                "table_size": "Ø320 (720 x 400)",
-                                "spindle_speed": "15K",
-                                "number_of_tools": 32,
-                                "power_torque": "34kW / 570Nm",
-                                "a_c_axis_deg": "40° / 120° / 360°",
-                                "rapid_feedrate": "48 / 48 / 48 m/min",
-                                "type": "C-type, LM, #40, Dual taper"
-                            },
-                            "image": "/assets/tera50vt50.png"
-                        }
-                    ]
                 }
             }
         ]

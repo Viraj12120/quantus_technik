@@ -4,134 +4,26 @@
         {
             "category": "CNC Cylindrical Grinders",
             "description": "Industry-leading high accuracy internal cylindrical grinders with multiple wheel configurations and optimized workpiece capacities.",
-            "typical_specs": {
-                "workpiece_length_in": "19.6 - 78.7",
-                "workpiece_swing_in": "12.6 - 15.75",
-                "weight_capacity_lb": "3300 max",
-                "wheel_positions": "Plain Head, 30°, 45° Angle",
-                "features": [
-                    "Dedicated plain or angle head options",
-                    "High accuracy and productivity",
-                    "Manually swivelable wheelhead"
-                ]
-            },
-            "image": "https://www.jtekt.co.jp/e/products/assets/jtekt/M_G1P50_230809.jpg",
-            "examples": [
-                {
-                    "model": "GL4i-100",
-                    "specs": {
-                        "swing_over_table_in": 12.6,
-                        "distance_between_centers_in": 39.4,
-                        "wheel_surface_speed_sfpm": 6500,
-                        "weight_capacity_lb": 330
-                    },
-                    "image": "/images/grinders/gl4i-100.jpg"
-                },
-                {
-                    "model": "GL6-32",
-                    "specs": {
-                        "swing_over_table_in": 15.7,
-                        "distance_between_centers_in": 12.6,
-                        "wheel_surface_speed_sfpm": 11800
-                    },
-                    "image": "/images/grinders/gl6-32.jpg"
-                }
-            ]
+            "image": "https://www.jtekt.co.jp/e/products/assets/jtekt/M_G1P50_230809.jpg"
         },
         {
             "category": "Crankshaft Grinders",
             "description": "High accuracy CBN crankshaft grinders with advanced motor wheelheads and bearing technology, ensuring maximum productivity.",
-            "typical_specs": {
-                "swing_over_table_in": 19.7,
-                "distance_between_centers_in": 27.6,
-                "grinding_diameter_max_in_mm": "3.3 (85 mm)",
-                "wheel_surface_speed_sfpm_mps": "4.7 (120)",
-                "features": [
-                    "Dual linear motor wheelhead",
-                    "TOYODA STAT® BEARING",
-                    "Floating plate",
-                    "Toyoda GC50 controls"
-                ]
-            },
-            "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/GF16S.png",
-            "examples": [
-                {
-                    "model": "GF50Mi-70",
-                    "detail_url": "https://jtektmachinery.com/machines/grinders/crank-grinders/gf50mi-70#panelspecs",
-                    "image": "/images/grinders/gf50mi-70.jpg"
-                },
-                {
-                    "model": "GF50MS/GF50MH",
-                    "features": [
-                        "Closest proximity between left and right wheels 18 mm",
-                        "Simultaneous grinding of journal and pin",
-                        "Reduced cycle time",
-                        "Pin phase indexing system"
-                    ],
-                    "image": "/images/grinders/gf50ms-mh.jpg"
-                }
-            ]
+            "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/GF16S.png"
         },
         {
             "category": "Camshaft Grinders",
             "description": "Responsive CBN camshaft grinders providing precise grinding surface quality with advanced servo and feed mechanisms.",
-            "typical_specs": {
-                "grinding_diameter_mm": 300,
-                "distance_between_centers_mm": 500,
-                "wheel_diameter_mm": "φ350 [φ70/φ100/φ150]"
-            },
-            "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/GC20Mi.png",
-            "examples": [
-                {
-                    "model": "GC20S",
-                    "features": [
-                        "Small, fast and accurate",
-                        "High-response servo system",
-                        "Static pressure slide way",
-                        "High quality cam machined surface"
-                    ],
-                    "image": "/images/grinders/gc20s.jpg"
-                },
-                {
-                    "model": "GC20Mi",
-                    "wheel_surface_speed_sfpm": 4.7,
-                    "image": "/images/grinders/gc20mi.jpg"
-                }
-            ]
+            "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/GC20Mi.png"
         },
         {
             "category": "Eccentric PIN Grinder",
             "description": "Specialized grinders for precise eccentric pin processing, designed for exacting manufacturing requirements.",
-            "typical_specs": {
-                "wheel_diameter_mm": "",
-                "distance_between_centers_mm": "",
-                "features": [
-                    ""
-                ]
-            },
-            "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/GF16S.png",
-            "examples": []
-        },
+            "image": "https://marvel-b1-cdn.bc0a.com/f00000000235573/jtektmachinery.com/uploads/images/GF16S.png"        },
         {
             "category": "Roll Grinders",
             "description": "High precision roll grinders featuring patented TOYODA STAT® bearings and floating plates for superior grinding results.",
-            "typical_specs": {
-                "swing_over_table_in": 15.7,
-                "distance_between_centers_in": 12.6,
-                "wheel_surface_speed_sfpm": 11800
-            },
-            "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/grind_pages/list/gr7i.jpg",
-            "examples": [
-                {
-                    "model": "GR7i-400",
-                    "features": [
-                        "High precision",
-                        "TOYODA STAT® BEARING",
-                        "Floating plate"
-                    ],
-                    "image": "/images/grinders/gr7i-400.jpg"
-                }
-            ]
+            "image": "https://toyoda.jtekt.co.jp/assets/images/products/machine/grind_pages/list/gr7i.jpg"
         }
     ]
 }

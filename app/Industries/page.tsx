@@ -266,7 +266,7 @@ export default function Industries() {
 											{industry.applications.map((app, i) => (
 												<span
 													key={i}
-													className="px-3 py-1.5 bg-gray-100 text-gray-700 text-xs rounded-full hover:bg-blue-600 hover:text-white transition-colors duration-300 cursor-default">
+													className="px-3 py-1.5 bg-gray-100 text-gray-700 text-xs rounded-full hover:bg-black hover:text-white transition-colors duration-300 cursor-default">
 													{app}
 												</span>
 											))}

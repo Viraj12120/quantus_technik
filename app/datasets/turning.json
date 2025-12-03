@@ -294,7 +294,8 @@
                 "tool_type": "lm | magazine | w-axis",
                 "image": "/assets/VT 1350.jpg",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-1150+"
-            },{
+            },
+            {
                 "model": "VT-1650",
                 "description": "Ram type Vertical Turning Center",
                 "max_turning_diameter_mm": "2000 ",
@@ -337,6 +338,248 @@
                 "tool_type": "box | magazine",
                 "image": "https://hwacheonasia.com/wp-content/uploads/2022/04/VT-4500-510x510.png",
                 "detail_url": "https://www.hwacheon.com/en/product/view.do?strProductCode=VT-4500"
+            }
+        ]
+    },
+    "Multiplex": {
+        "id": "mutiplex",
+        "category": "Universal/Horizontal Turning",
+        "products": [
+            {
+                "model": "Index B400",
+                "description": "Universal Turning Machine",
+                "max_bar_size_mm": 82,
+                "chuck_diameter_mm": 315,
+                "max_turning_length_mm": 750,
+                "spindle_motor_kw": 24,
+                "spindle_torque_nm": 550,
+                "spindle_speed_rpm": 4000,
+                "turret": "18-station , VDI30",
+                "image": "/assets/INDEXB400.jpg",
+                "detail_url": "https://example.com/index-b400"
+            },
+            {
+                "model": "Index B500",
+                "description": "Universal Turning Machine",
+                "max_bar_size_mm": 102,
+                "chuck_diameter_mm": 400,
+                "max_turning_length_mm": "750-1200",
+                "spindle_motor_kw": 30,
+                "spindle_torque_nm": 910,
+                "spindle_speed_rpm": 3150,
+                "turret": "12-station , VDI40",
+                "image": "/assets/INDEXB500.jpg",
+                "detail_url": "https://example.com/index-b500"
+            },
+            {
+                "model": "TRAUB TNA400",
+                "description": "Universal Turning Machine",
+                "max_bar_size_mm": 82,
+                "chuck_diameter_mm": 315,
+                "max_turning_length_mm": 750,
+                "spindle_motor_kw": 24,
+                "spindle_torque_nm": 550,
+                "spindle_speed_rpm": 4000,
+                "turret": "12-station",
+                "image": "/assets/TRAUBTNA400.jpg",
+                "detail_url": "https://example.com/traub-tna400"
+            },
+            {
+                "model": "TRAUB TNA500",
+                "description": "Universal Turning Machine",
+                "max_bar_size_mm": 102,
+                "chuck_diameter_mm": 400,
+                "max_turning_length_mm": 750,
+                "spindle_motor_kw": 30,
+                "spindle_torque_nm": 910,
+                "spindle_speed_rpm": 3150,
+                "turret": "12-station",
+                "image": "/assets/TRAUBTNA500.jpg",
+                "detail_url": "https://example.com/traub-tna500"
+            },
+            {
+                "model": "TRAUB TNK40",
+                "description": "Production Turning Machine",
+                "bar_spindle_clearance_mm": 40,
+                "chuck_workpiece_capacity_mm": 115,
+                "turning_length_mm": 220,
+                "spindle_power_torque": "8k rpm / 9.91(13.6)kW / 35Nm",
+                "image": "/assets/TRAUB.jpg",
+                "detail_url": "https://example.com/traub-tnk40"
+            },
+            {
+                "model": "INDEX ABC",
+                "description": "Production Turning Machine",
+                "bar_spindle_clearance_mm": 65,
+                "chuck_workpiece_capacity_mm": "As Per Design",
+                "turning_length_mm": "0",
+                "spindle_power_torque": "6k rpm / 27kW / 145Nm",
+                "image": "/assets/INDEX ABC.jpg",
+                "detail_url": "https://example.com/index-abc"
+            },
+            {
+                "model": "INDEX C100",
+                "description": "Production Turning Machine",
+                "bar_spindle_clearance_mm": 42,
+                "chuck_workpiece_capacity_mm": 110,
+                "turning_length_mm": 400,
+                "spindle_power_torque": "-",
+                "image": "/assets/INDEX C100.jpg",
+                "detail_url": "https://example.com/index-c100"
+            },
+            {
+                "model": "INDEX C200",
+                "description": "Production Turning Machine",
+                "bar_spindle_clearance_mm": "65(90)",
+                "chuck_workpiece_capacity_mm": 160,
+                "turning_length_mm": 550,
+                "spindle_power_torque": "6k rpm / 32kW / 125(170) Nm",
+                "image": "/assets/INDEX C200.jpg",
+                "detail_url": "https://example.com/index-c200"
+            },
+            {
+                "model": "TRAUB TNX200/ TNX220",
+                "description": "Production Turning Machine",
+                "bar_spindle_clearance_mm": 76,
+                "chuck_workpiece_capacity_mm": "Up to 230",
+                "turning_length_mm": 900,
+                "spindle_power_torque": "9 kW / 29 Nm",
+                "max_rpm": "7500 rpm",
+                "image": "/assets/TRAUBTNX200TNX220.jpg",
+                "detail_url": "https://example.com/traub-tnx200"
+            },
+            {
+                "model": "TRAUB TNX65",
+                "description": "Production Turning Machine",
+                "bar_spindle_clearance_mm": 65,
+                "chuck_workpiece_capacity_mm": "Up to 175",
+                "turning_length_mm": 650,
+                "spindle_power_torque": "5.5 kW / 17.5 Nm",
+                "max_rpm": "6k rpm",
+                "image": "/assets/TRAUB TNX65.jpg",
+                "detail_url": "https://example.com/traub-tnx65"
+            },
+            
+            {
+                "model": "TRAUB TNL12",
+                "description": "Production Turning Machine",
+                "bar_spindle_clearance_mm": 13,
+                "max_spindle_speed": "12k rpm",
+                "power_torque": "8.6Nm",
+                "max_travel": "130 mm",
+                "tool_carrier": "4 tools",
+                "image": "/assets/TRAUB TNL12.jpg",
+                "detail_url": "https://example.com/traub-tnl12"
+            },
+            {
+                "model": "TRAUB TNL20",
+                "description": "Production Turning Machine",
+                "bar_spindle_clearance_mm": 20,
+                "max_spindle_speed": "10k rpm",
+                "max_travel": "205 mm",
+                "power_torque": "-",
+                "tool_carrier": "2,3 or 4 tools",
+                "image": "/assets/TRAUB TNL20.jpg",
+                "detail_url": "https://example.com/traub-tnl20"
+            },
+            {
+                "model": "TRAUB TNL32",
+                "description": "Production Turning Machine",
+                "bar_spindle_clearance_mm": 32,
+                "max_spindle_speed": "8k",
+                "power_torque": "32Nm",
+                "max_travel": "305 mm",
+                "tool_carrier": "3 tools",
+                "image": "/assets/TRAUB TNL32.jpg",
+                "detail_url": "https://example.com/traub-tnl32"
+            },
+            {
+                "model": "Index R200",
+                "description": "Production Turning Machine",
+                "bar_spindle_clearance_mm": 65,
+                "chuck_workpiece_capacity_mm": 175,
+                "turning_length_mm": "~390",
+                "spindle_power_torque": "24 kW / 190 Nm",
+                "max_rpm": "5k rpm",
+                "image": "/assets/IndexR200.png",
+                "detail_url": "https://example.com/index-r200"
+            },
+            {
+                "model": "Index R300",
+                "description": "Production Turning Machine",
+                "bar_spindle_clearance_mm": 102,
+                "chuck_workpiece_capacity_mm": 315,
+                "turning_length_mm": 610,
+                "spindle_power_torque": "52 kW / 690 Nm",
+                "max_rpm": "3500 rpm",
+                "image": "/assets/Index R300.jpg",
+                "detail_url": "https://example.com/index-r300"
+            },
+            {
+                "model": "MS16-6 / MS16-6Plus",
+                "description": "Multi Spindle Automatic Machine",
+                "bar_capacity_max_mm": "16/22",
+                "max_spindle_speed": "10k rpm",
+                "power_torque": "15kW / 18Nm",
+                "spindle_tool_drum_design": "6 + 2 synchronous Spindle",
+                "tool_carrier": 12,
+                "image": "/assets/MS16-6MS16-6Plus.jpg",
+                "detail_url": "https://example.com/ms16"
+            },
+            {
+                "model": "MS24-6 / M24-8",
+                "description": "Multi Spindle Automatic Machine",
+                "bar_capacity_max_mm": 24,
+                "max_spindle_speed": "10k",
+                "power_torque": "15kW / 18Nm",
+                "spindle_tool_drum_design": "6(8) + 2 synchronous Spindle",
+                "tool_carrier": 16,
+                "image": "/assets/MS24-6 M24-8.jpg",
+                "detail_url": "https://example.com/ms24"
+            },
+            {
+                "model": "MS32-6",
+                "description": "Multi Spindle Automatic Machine",
+                "bar_capacity_max_mm": 32,
+                "max_spindle_speed": "8k",
+                "power_torque": "19kW / 40Nm",
+                "spindle_tool_drum_design": "6 + 2 synchronous Spindle",
+                "tool_carrier": 12,
+                "image": "/assets/MS32-6.jpg",
+                "detail_url": "https://example.com/ms32-6"
+            },
+            {
+                "model": "MS40-6",
+                "description": "Multi Spindle Automatic Machine",
+                "bar_capacity_max_mm": 40,
+                "max_spindle_speed": "7k(8k) rpm",
+                "power_torque": "24 kW / 57 Nm",
+                "spindle_tool_drum_design": "6 + 2 synchronous Spindle",
+                "tool_carrier": 12,
+                "image": "/assets/MS40-6.jpg",
+                "detail_url": "https://example.com/ms40-6"
+            },
+            {
+                "model": "MS40-8",
+                "description": "Multi Spindle Automatic Machine",
+                "bar_capacity_max_mm": 40,
+                "max_spindle_speed": "7k(8k) rpm",
+                "power_torque": "24 kW / 57 Nm",
+                "spindle_tool_drum_design": "8 + 2 synchronous Spindle",
+                "tool_carrier": "14-16",
+                "image": "/assets/MS40-8.jpg",
+                "detail_url": "https://example.com/ms40-8"
+            },
+            {
+                "model": "MS52-6",
+                "description": "Multi Spindle Automatic Machine",
+                "bar_capacity_max_mm": 52,
+                "max_spindle_speed": "5k rpm",
+                "power_torque": "30 kW / 130 Nm",
+                "spindle_tool_drum_design": "6 + 2 synchronous Spindle",
+                "tool_carrier": 12,
+                "image": "/assets/MS52-6.jpg",
+                "detail_url": "https://example.com/ms52-6"
             }
         ]
     }

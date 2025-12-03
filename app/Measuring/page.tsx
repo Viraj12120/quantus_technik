@@ -60,11 +60,11 @@ export default function MachinesDetailPage() {
 			label: measuringData.measuring_machines.category,
 			data: measuringData.measuring_machines,
 		},
-		{
-			id: "tools",
-			label: toolData.tool_presetters.category,
-			data: toolData.tool_presetters,
-		},
+		// {
+		// 	id: "tools",
+		// 	label: toolData.tool_presetters.category,
+		// 	data: toolData.tool_presetters,
+		// },
 	];
 
 	// ✅ default main category: measuring machines
