@@ -1,0 +1,10 @@
+name = "quantus_technik"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Entry point for SSR
+main = ".next/server/app.mjs"
+
+# Static assets served by Cloudflare Pages
+[site]
+bucket = ".next"
