@@ -305,7 +305,7 @@
                                 "torque_nm": 140,
                                 "output": "ISO/BT/CAT 40",
                                 "series": "LONG",
-                                "image": "/assets/g90-S40L.280.jpg"
+                                "image": "/assets/g90-S40L.280.png"
                             }
                         ]
                     },
@@ -388,7 +388,7 @@
                                 "output": "ER25",
                                 "collet_range": "Ø1/16",
                                 "adjustable": "0°-90° ",
-                                "image": "/assets/GMU-16.jpg"
+                                "image": "/assets/GMU16.png"
                             },
                             {
                                 "model": "GMU-20",
@@ -401,7 +401,7 @@
                                 "output": "ER32",
                                 "collet_range": "Ø2/20",
                                 "adjustable": "0°-90° ",
-                                "image": "/assets/GMU-20.jpg"
+                                "image": "/assets/GMU16.png"
                             }
                         ]
                     },

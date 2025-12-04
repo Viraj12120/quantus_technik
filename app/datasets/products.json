@@ -8,10 +8,10 @@
                 "pallet_size": "550(500)",
                 "stroKe_xyz_mm": "800×800×880",
                 "spindle_speed_min_1": "15,000",
-                "min_indexing_angle": "0.0001°",
-                "table_load": "400 Kg",
+                "min_indexing_angle": "0.001°",
+                "table_load": "1000 kg",
                 "feedrate": "60 / 60 / 60 ",
-                "number_of_tools": "40 (60)",
+                "number_of_tools": "60 (119, 180, 240, 320)",
                 "image": "/assets/JTEKTFH500.jpg"
             },
             {
@@ -22,7 +22,7 @@
                 "spindle_speed_min_1": "15,000",
                 "min_indexing_angle": "0.001°",
                 "table_load": "1000 Kg",
-                "number_of_tools": "40 (60)",
+                "number_of_tools": "60 (119, 180, 240, 320)",
                 "feedrate": "60 / 60 / 60 ",
                 "image": "/assets/JTEKTFH500.jpg"
             },
@@ -33,9 +33,9 @@
                 "stroKe_xyz_mm": "900×800×880",
                 "spindle_speed_min_1": "15,000",
                 "min_indexing_angle": "0.001°",
-                "table_load": "400 Kg",
+                "table_load": "1000 Kg",
                 "feedrate": "60 / 60 / 60 ",
-                "number_of_tools": "40 (60)",
+                "number_of_tools": "60 (119, 180, 240, 320)",
                 "image": "/assets/JTEKTFH500.jpg"
             },
             {
