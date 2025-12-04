@@ -220,7 +220,7 @@ export default function AngleHeadsPage() {
 							</div>
 
 							{/* Card 2 */}
-							<div className="bg-white p-5 shadow-md rounded-xl border border-gray-200">
+							<div className="bg-blue-200 p-5 shadow-md rounded-xl border border-gray-200">
 								<h3 className="font-semibold text-lg text-gray-900 mb-2">
 									ABEC 9 Ball Bearings
 								</h3>
@@ -231,7 +231,7 @@ export default function AngleHeadsPage() {
 							</div>
 
 							{/* Card 3 */}
-							<div className="bg-white p-5 shadow-md rounded-xl border border-gray-200">
+							<div className="bg-blue-200 p-5 shadow-md rounded-xl border border-gray-200">
 								<h3 className="font-semibold text-lg text-gray-900 mb-2">
 									Main Body
 								</h3>
@@ -242,7 +242,7 @@ export default function AngleHeadsPage() {
 							</div>
 
 							{/* Card 4 */}
-							<div className="bg-white p-5 shadow-md rounded-xl border border-gray-200">
+							<div className="bg-blue-200 p-5 shadow-md rounded-xl border border-gray-200">
 								<h3 className="font-semibold text-lg text-gray-900 mb-2">
 									Gleason Gears
 								</h3>
@@ -262,7 +262,7 @@ export default function AngleHeadsPage() {
 					<div className="max-w-xl mx-auto">
 						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
 							{/* Card 1 - Ingranaggi / Gears */}
-							<div className="bg-white p-5 shadow-md rounded-xl border border-gray-200">
+							<div className="bg-blue-200 p-5 shadow-md rounded-xl border border-gray-200">
 								<h3 className="font-semibold text-lg text-gray-900 mb-2">
 									Ingranaggi – Gears
 								</h3>
@@ -273,7 +273,7 @@ export default function AngleHeadsPage() {
 							</div>
 
 							{/* Card 2 - Cuscinetti / Bearings */}
-							<div className="bg-white p-5 shadow-md rounded-xl border border-gray-200">
+							<div className="bg-blue-200 p-5 shadow-md rounded-xl border border-gray-200">
 								<h3 className="font-semibold text-lg text-gray-900 mb-2">
 									Cuscinetti – Bearings
 								</h3>
@@ -296,7 +296,7 @@ export default function AngleHeadsPage() {
 							onClick={() => setSelectedSubCategory(sub.id)}
 							className={`px-5 py-2.5 rounded-full whitespace-nowrap transition-all ${
 								selectedSubCategory === sub.id
-									? "bg-blue-600 text-white"
+									? "bg-black text-white"
 									: "bg-gray-100 text-gray-700 hover:bg-gray-200"
 							}`}>
 							{sub.label}
@@ -309,7 +309,7 @@ export default function AngleHeadsPage() {
 			<section className="max-w-7xl mx-auto px-6 mt-10">
 				<div className="mb-12">
 					<h2 className="text-2xl font-bold text-gray-900">
-						 {currentSub?.label} Models Available
+						{currentSub?.label} Models Available
 					</h2>
 					{currentSub?.description && (
 						<p className="text-gray-600 mt-2">{currentSub.description}</p>
