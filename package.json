@@ -5,7 +5,7 @@
     "scripts": {
       "dev": "next dev",
       "build": "next build",
-      "deploy": "wrangler deploy",
+      "deploy": "npx wrangler deploy --minify",
       "start": "next start",
       "lint": "eslint"
     },
