@@ -1,11 +1,7 @@
-name = "quantus_technik"
-compatibility_date = "2024-01-01"
-compatibility_flags = ["nodejs_compat"]
-
-# DO NOT set "main" — Cloudflare auto-detects Next.js now
-
-[build]
-command = "npm run build"
-
-[site]
-bucket = ".next"
+  main = ".open-next/worker.js"
+  name = "quantus_technik"
+  compatibility_date = "2025-03-25"
+  compatibility_flags = ["nodejs_compat"]
+  [assets]
+  directory = ".open-next/assets"
+  binding = "ASSETS"
