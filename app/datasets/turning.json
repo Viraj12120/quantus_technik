@@ -355,7 +355,7 @@
                 "spindle_torque_nm": 550,
                 "spindle_speed_rpm": 4000,
                 "turret": "18-station , VDI30",
-                "image": "/assets/INDEXB400.jpg",
+                "image": "/B400.jpg",
                 "detail_url": "https://example.com/index-b400"
             },
             {
@@ -368,7 +368,7 @@
                 "spindle_torque_nm": 910,
                 "spindle_speed_rpm": 3150,
                 "turret": "12-station , VDI40",
-                "image": "/assets/INDEXB500.jpg",
+                "image": "/B500.jpg",
                 "detail_url": "https://example.com/index-b500"
             },
             {
@@ -381,7 +381,7 @@
                 "spindle_torque_nm": 550,
                 "spindle_speed_rpm": 4000,
                 "turret": "12-station",
-                "image": "/assets/TRAUBTNA400.jpg",
+                "image": "/TRAUBTNA400.jpg",
                 "detail_url": "https://example.com/traub-tna400"
             },
             {
@@ -394,7 +394,7 @@
                 "spindle_torque_nm": 910,
                 "spindle_speed_rpm": 3150,
                 "turret": "12-station",
-                "image": "/assets/TRAUBTNA500.jpg",
+                "image": "/TRAUBTNA500.jpg",
                 "detail_url": "https://example.com/traub-tna500"
             },
             {
@@ -404,7 +404,7 @@
                 "chuck_workpiece_capacity_mm": 115,
                 "turning_length_mm": 220,
                 "spindle_power_torque": "8k rpm / 9.91(13.6)kW / 35Nm",
-                "image": "/assets/TRAUB.jpg",
+                "image": "/TRAUBTNK40.jpg",
                 "detail_url": "https://example.com/traub-tnk40"
             },
             {
@@ -414,7 +414,7 @@
                 "chuck_workpiece_capacity_mm": "As Per Design",
                 "turning_length_mm": "0",
                 "spindle_power_torque": "6k rpm / 27kW / 145Nm",
-                "image": "/assets/INDEX ABC.jpg",
+                "image": "/INDEXABC.jpg",
                 "detail_url": "https://example.com/index-abc"
             },
             {
@@ -424,7 +424,7 @@
                 "chuck_workpiece_capacity_mm": 110,
                 "turning_length_mm": 400,
                 "spindle_power_torque": "-",
-                "image": "/assets/INDEX C100.jpg",
+                "image": "/INDEXC100.jpg",
                 "detail_url": "https://example.com/index-c100"
             },
             {
@@ -434,7 +434,7 @@
                 "chuck_workpiece_capacity_mm": 160,
                 "turning_length_mm": 550,
                 "spindle_power_torque": "6k rpm / 32kW / 125(170) Nm",
-                "image": "/assets/INDEX C200.jpg",
+                "image": "/INDEXC200.jpg",
                 "detail_url": "https://example.com/index-c200"
             },
             {
@@ -445,7 +445,7 @@
                 "turning_length_mm": 900,
                 "spindle_power_torque": "9 kW / 29 Nm",
                 "max_rpm": "7500 rpm",
-                "image": "/assets/TRAUBTNX200TNX220.jpg",
+                "image": "/TRAUBTNX200.jpg",
                 "detail_url": "https://example.com/traub-tnx200"
             },
             {
@@ -456,7 +456,7 @@
                 "turning_length_mm": 650,
                 "spindle_power_torque": "5.5 kW / 17.5 Nm",
                 "max_rpm": "6k rpm",
-                "image": "/assets/TRAUB TNX65.jpg",
+                "image": "/TRAUBTNX65.jpg",
                 "detail_url": "https://example.com/traub-tnx65"
             },
             
@@ -468,7 +468,7 @@
                 "power_torque": "8.6Nm",
                 "max_travel": "130 mm",
                 "tool_carrier": "4 tools",
-                "image": "/assets/TRAUB TNL12.jpg",
+                "image": "/TRAUBTNL12.jpg",
                 "detail_url": "https://example.com/traub-tnl12"
             },
             {
@@ -479,7 +479,7 @@
                 "max_travel": "205 mm",
                 "power_torque": "-",
                 "tool_carrier": "2,3 or 4 tools",
-                "image": "/assets/TRAUB TNL20.jpg",
+                "image": "/TRAUBTNL20.jpg",
                 "detail_url": "https://example.com/traub-tnl20"
             },
             {
@@ -490,7 +490,7 @@
                 "power_torque": "32Nm",
                 "max_travel": "305 mm",
                 "tool_carrier": "3 tools",
-                "image": "/assets/TRAUB TNL32.jpg",
+                "image": "/TRAUBTNL32.jpg",
                 "detail_url": "https://example.com/traub-tnl32"
             },
             {
@@ -501,7 +501,7 @@
                 "turning_length_mm": "~390",
                 "spindle_power_torque": "24 kW / 190 Nm",
                 "max_rpm": "5k rpm",
-                "image": "/assets/IndexR200.png",
+                "image": "/INDEXR200.jpg",
                 "detail_url": "https://example.com/index-r200"
             },
             {
@@ -512,7 +512,7 @@
                 "turning_length_mm": 610,
                 "spindle_power_torque": "52 kW / 690 Nm",
                 "max_rpm": "3500 rpm",
-                "image": "/assets/Index R300.jpg",
+                "image": "/INDEXR300.jpg",
                 "detail_url": "https://example.com/index-r300"
             },
             {
@@ -523,7 +523,7 @@
                 "power_torque": "15kW / 18Nm",
                 "spindle_tool_drum_design": "6 + 2 synchronous Spindle",
                 "tool_carrier": 12,
-                "image": "/assets/MS16-6MS16-6Plus.jpg",
+                "image": "/MS16.png",
                 "detail_url": "https://example.com/ms16"
             },
             {
@@ -534,7 +534,7 @@
                 "power_torque": "15kW / 18Nm",
                 "spindle_tool_drum_design": "6(8) + 2 synchronous Spindle",
                 "tool_carrier": 16,
-                "image": "/assets/MS24-6 M24-8.jpg",
+                "image": "/INDEXMS24-6.jpg",
                 "detail_url": "https://example.com/ms24"
             },
             {
@@ -545,7 +545,7 @@
                 "power_torque": "19kW / 40Nm",
                 "spindle_tool_drum_design": "6 + 2 synchronous Spindle",
                 "tool_carrier": 12,
-                "image": "/assets/MS32-6.jpg",
+                "image": "/INDEXMS32-6.jpg",
                 "detail_url": "https://example.com/ms32-6"
             },
             {
@@ -556,7 +556,7 @@
                 "power_torque": "24 kW / 57 Nm",
                 "spindle_tool_drum_design": "6 + 2 synchronous Spindle",
                 "tool_carrier": 12,
-                "image": "/assets/MS40-6.jpg",
+                "image": "/INDEXMS40.jpg",
                 "detail_url": "https://example.com/ms40-6"
             },
             {
@@ -567,7 +567,7 @@
                 "power_torque": "24 kW / 57 Nm",
                 "spindle_tool_drum_design": "8 + 2 synchronous Spindle",
                 "tool_carrier": "14-16",
-                "image": "/assets/MS40-8.jpg",
+                "image": "/MS40_8.png",
                 "detail_url": "https://example.com/ms40-8"
             },
             {
@@ -578,7 +578,7 @@
                 "power_torque": "30 kW / 130 Nm",
                 "spindle_tool_drum_design": "6 + 2 synchronous Spindle",
                 "tool_carrier": 12,
-                "image": "/assets/MS52-6.jpg",
+                "image": "/MS52-6.png",
                 "detail_url": "https://example.com/ms52-6"
             }
         ]
