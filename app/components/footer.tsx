@@ -113,6 +113,24 @@ export default function Footer() {
 									WENZEL
 								</Link>
 							</li>
+							<li>
+								<Link
+									href="https://www.zoller.info/in/zoller-inside/the-company/zoller-india"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="hover:text-black">
+									ZOLLER
+								</Link>
+							</li>
+							<li>
+								<Link
+									href="https://www.microdynamicsfa.com/machines"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="hover:text-black">
+									μ Dynamics
+								</Link>
+							</li>
 						</ul>
 					</div>
 

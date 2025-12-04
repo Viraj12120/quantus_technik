@@ -175,11 +175,13 @@ export default function AboutUs() {
 										src={member.image}
 										alt={member.name}
 										fill
-										className="
-            object-cover
-            transition-transform duration-500 hover:scale-105
-            object-[center_20%]   // ⬅️ moves the face slightly downward
-        "
+										className={`object-cover transition-transform duration-500 hover:scale-105
+        ${
+					member.id === 1
+						? "object-[center_20%]" // Founder image stays same
+						: "object-[center_-30%]" // Shift member 2 and 3 downward
+				}
+    `}
 										priority={member.id <= 2}
 									/>
 								</div>
