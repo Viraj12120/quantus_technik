@@ -971,7 +971,7 @@
                         "z": 60
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 4000,
+                        "rotation_speed_rpm": "4K",
                         "power_kW": 30,
                         "torque_Nm": 800
                     }
@@ -1230,10 +1230,10 @@
                         "z": 75
                     },
                     "spindle": {
-                        "rotation_speed_rpm": "6K",
+                        "rotation_speed_rpm": "18K (10K | 30K | 42K) ",
                         "power_kW": 26,
                         "torque_Nm": 116,
-                        "interface": "HSK-A63",
+                        "interface": "HSK-A63 / HSK-E50",
                         "distance_spindle_max_mm": 550,
                         "interference_circle_diameter_mm": 640
                     }
@@ -1261,10 +1261,10 @@
                         "z": 75
                     },
                     "spindle": {
-                        "rotation_speed_rpm": "10K",
+                        "rotation_speed_rpm": "10K (18K | 30K | 42K) ",
                         "power_kW": 16,
                         "torque_Nm": 102,
-                        "interface": "HSK-A63",
+                        "interface": "HSK-A63 / HSK-E50",
                         "distance_spindle_max_mm": 650,
                         "interference_circle_diameter_mm": 800
                     }
@@ -1292,10 +1292,10 @@
                         "z": 75
                     },
                     "spindle": {
-                        "rotation_speed_rpm": "6K",
+                        "rotation_speed_rpm": "12K (18K | 24K | 30K) ",
                         "power_kW": 50,
                         "torque_Nm": 187,
-                        "interface": "HSK-A63",
+                        "interface": "HSK-A63 / SK-40",
                         "distance_spindle_max_mm": 8235,
                         "interference_circle_diameter_mm": 1070
                     }
@@ -1323,10 +1323,10 @@
                         "z": 75
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 6000,
+                        "rotation_speed_rpm": "12K (10K | 14K | 18K | 24K | 30K) ",
                         "power_kW": 50,
                         "torque_Nm": 187,
-                        "interface": "HSK-A63",
+                        "interface": "HSK-A63 / HSK-A100",
                         "distance_spindle_max_mm": 966,
                         "interference_circle_diameter_mm": 1220
                     }
@@ -1354,9 +1354,10 @@
                         "z": 85
                     },
                     "spindle": {
+                        "rotation_speed_rpm": "14K (10K | 18K | 24K | 30K) ",
                         "power_kW": 60,
                         "torque_Nm": 350,
-                        "interface": "HSK-A100",
+                        "interface": "HSK-A100 / HSK-A63",
                         "distance_spindle_max_mm": 988,
                         "interference_circle_diameter_mm": 1380
                     }
@@ -1378,7 +1379,7 @@
                         "z": "1000 | 1250"
                     },
                     "table_mm": {
-                        "x": 2000,
+                        "x": "2000 X",
                         "y": "2500 (3000)"
                     },
                     "feedrate_m_per_min": {
@@ -1389,7 +1390,7 @@
                 }
             },
             {
-                "model": "LiNmaxB",
+                "model": "LinmaxB",
                 "series": "LiNmaxB",
                 "description": "Gantry Type High Speed 5-Axis Machine Center",
                 "type": "5-Axis Gantry",
@@ -1399,13 +1400,13 @@
                 "image": "https://www.Kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LiNmaxB_White.png",
                 "specs": {
                     "travel_mm": {
-                        "x": "4000 |5000 |6000 |8000 mm",
-                        "y": "2200 |2500 |3000 |3500 |4000 mm",
+                        "x": "4000 | 5000 | 6000 |8000 mm",
+                        "y": "2200 | 2500 | 3000 |3500 |4000 mm",
                         "z": "1000 | 1250"
                     },
                     "table_mm": {
-                        "x": "",
-                        "y": "2000 (2200 |2700 |3200 |3700) "
+                        "x": "Same as X-travel X",
+                        "y": "2000 (upto 3700) "
                     },
                     "feedrate_m_per_min": {
                         "x": 60,
@@ -1425,12 +1426,13 @@
                 "image": "/assets/torque.png",
                 "specs": {
                     "travel_mm": {
-                        "x": "3000 |4000 |5000 |6000 | 8000 | 10000 | 12000 mm",
-                        "y": "2500 |3000 |3500 |4000 | 5000 mm",
+                        "x": "3000 | 4000 | 5000 | 6000 | 8000 | 10000 | 12000 mm",
+                        "y": "2500 | 3000 | 3500 | 4000 | 5000 mm",
                         "z": "1250 |1500 mm"
                     },
                     "table_mm": {
-                        "y": "2200 (2700 |3200 |3700|4700)"
+                        "x": "Same as X-travel X",
+                        "y": "2200 (upto 4700)"
                     },
                     "spindle": {
                         "power_kW": "22 (26)",
@@ -1449,13 +1451,13 @@
                 "image": "https://www.Kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_Focus5.png",
                 "specs": {
                     "travel_mm": {
-                        "x": "2060 |3060 |4060 mm",
+                        "x": "2060 | 3060 | 4060 mm",
                         "y": "2000 | 2300 mm",
                         "z": "800 | 1000 mm"
                     },
                     "table_mm": {
-                        "x": "2000(3000 |4000) x ",
-                        "y": "1200(1500) "
+                        "x": "2000 (3000 | 4000) X ",
+                        "y": "1200 (1500) "
                     },
                     "feedrate_m_per_min": {
                         "x": 60,
@@ -1466,7 +1468,7 @@
                     "rotation_angle": "A: ±115° / C: ±360°",
                     "spindle": {
                         "shanK": "HSK-A63 | HSK-A100",
-                        "rotation_speed_rpm": "24000(15000)",
+                        "rotation_speed_rpm": "24K (15K)",
                         "power_kW": "42 (55)",
                         "torque_Nm": "67 (87)"
                     }
@@ -1545,7 +1547,7 @@
                         "z": 40
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 3500,
+                        "rotation_speed_rpm": "35K",
                         "power_kW": "30 (40)",
                         "torque_Nm": "900 (1200)"
                     }
@@ -1573,7 +1575,7 @@
                         "z": 40
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 3000,
+                        "rotation_speed_rpm": "3K",
                         "power_kW": "45 (60)",
                         "torque_Nm": "1500 (2000)"
                     }
@@ -1601,7 +1603,7 @@
                         "z": 60
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 12000,
+                        "rotation_speed_rpm": "12K",
                         "power_kW": "7.5 (11)",
                         "torque_Nm": "12 (18)"
                     }
@@ -1629,7 +1631,7 @@
                         "z": 60
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 10000,
+                        "rotation_speed_rpm": "10K",
                         "power_kW": "11 (15)",
                         "torque_Nm": "18 (25)"
                     }
@@ -1657,7 +1659,7 @@
                         "z": 60
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 8000,
+                        "rotation_speed_rpm": "8K",
                         "power_kW": "15 (22)",
                         "torque_Nm": "30 (45)"
                     }
@@ -1685,7 +1687,7 @@
                         "z": 60
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 6000,
+                        "rotation_speed_rpm": "6K",
                         "power_kW": "18.5 (26)",
                         "torque_Nm": "45 (65)"
                     }
@@ -1713,7 +1715,7 @@
                         "z": 60
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 5000,
+                        "rotation_speed_rpm": "5K",
                         "power_kW": "22 (30)",
                         "torque_Nm": "60 (85)"
                     }
@@ -1741,7 +1743,7 @@
                         "z": 50
                     },
                     "spindle": {
-                        "rotation_speed_rpm": 8000,
+                        "rotation_speed_rpm": "8K",
                         "power_kW": "26 (35)",
                         "torque_Nm": "45 (60)"
                     }

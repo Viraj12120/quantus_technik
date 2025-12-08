@@ -13,8 +13,8 @@ const logos = [
 	{ name: "mill", src: "/mill.png" },
 	{ name: "WENZEL", src: "/w.png" },
 	{ name: "ZOLLER", src: "/zoller.svg" },
-	{ name: "gerardi", src: "/gerardi.jpg" },
 	{ name: "mst", src: "/m.png" },
+	{ name: "gerardi", src: "/gerardi.jpg" },
 ];
 
 const containerVariants = {
@@ -59,7 +59,7 @@ export default function Product() {
 				whileInView="visible"
 				viewport={{ once: true, margin: "-100px" }}
 				className="w-full max-w-6xl">
-				<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-10">
+				<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10">
 					{logos.map((logo) => (
 						<motion.div
 							key={logo.name}

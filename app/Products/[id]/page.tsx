@@ -487,7 +487,8 @@ export default function ProductDetailPage() {
 	const [selectedSubCategory, setSelectedSubCategory] = useState(
 		isTurningCenter ? "horizontal_turning" : "horizontal"
 	);
-	const [selected5AxisFilter, setSelected5AxisFilter] = useState("all");
+	const [selected5AxisFilter, setSelected5AxisFilter] =
+		useState("simultaneous");
 
 	useEffect(() => {
 		setSelectedSubCategory(
@@ -1177,7 +1178,7 @@ export default function ProductDetailPage() {
 				if (specs.travel_mm) {
 					baseSpecs.push({
 						name: "Working Travel",
-						value: `${specs.travel_mm.x} |${specs.travel_mm.y} | ${specs.travel_mm.z} mm`,
+						value: `${specs.travel_mm.x} | ${specs.travel_mm.y} | ${specs.travel_mm.z} mm`,
 					});
 				}
 
@@ -1460,7 +1461,7 @@ export default function ProductDetailPage() {
 								key={subCat.id}
 								onClick={() => {
 									setSelectedSubCategory(subCat.id);
-									setSelected5AxisFilter("all");
+									setSelected5AxisFilter("simultaneous");
 								}}
 								className={`px-5 py-2.5 rounded-full whitespace-nowrap transition-all ${
 									selectedSubCategory === subCat.id

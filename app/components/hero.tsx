@@ -5,14 +5,17 @@ import Image from "next/image";
 
 export default function Hero() {
 	const videos = [
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1763995575/VID-20251124-WA0002_hqdcjn.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765207882/WhatsApp_Video_2025-12-08_at_20.56.35_7b6b84c6_mzqrwh.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765208027/ken_ura82u.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765208170/hwacheon_pbz4b2.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765208411/jtekt_ef4vp1.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765208528/grob_ly9od3.mp4",
 		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765193647/traub_ubapop.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765208689/grinding_avmj2e.mp4",
 		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1762179053/6_WS_intro-pg-wenzel_izcloo.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1762179042/1_WS_intro-pg-GROB_jv4gn0.mp4",
+		//	"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1762179042/1_WS_intro-pg-GROB_jv4gn0.mp4",
 		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1763995579/VID-20251124-WA0004_qtoyry.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1762179062/2_WS_intro-pg-ken_imspdp.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1763995577/VID-20251124-WA0006_tgwqtg.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1763995577/VID-20251124-WA0003_uevttf.mp4",
+		//	"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1762179062/2_WS_intro-pg-ken_imspdp.mp4",
 		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1763995576/VID-20251124-WA0005_rubgz3.mp4",
 		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1762179042/4_WS_intro-pg-gerardi_oa7qkp.mp4",
 	];

@@ -26,10 +26,10 @@ export default function Features() {
 			<div className="lg:px-24 mx-auto px-6 py-12 flex flex-col lg:flex-row justify-between gap-12">
 				{/* Left Column — Key Stats */}
 				<div className="flex-1 space-y-10">
-					<div className="my-14">
+					{/* <div className="my-14">
 						<h2 className="text-8xl font-bold text-gray-900 mb-2">5+</h2>
 						<p className="text-gray-600 text-lg">Years and Growing...</p>
-					</div>
+					</div> */}
 
 					{/* Bullet Points */}
 					<div className="space-y-2">
