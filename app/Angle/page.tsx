@@ -186,7 +186,7 @@ export default function AngleHeadsPage() {
 							onClick={() => setSelectedMainCat(cat)}
 							className={`px-6 py-4 font-semibold transition-all border-b-4 ${
 								selectedMainCat.id === cat.id
-									? "border-blue-600 text-black"
+									? "border-black text-black"
 									: "border-transparent text-gray-500 hover:text-gray-900"
 							}`}>
 							{cat.label}
@@ -209,7 +209,7 @@ export default function AngleHeadsPage() {
 					<div className="max-w-6xl mx-auto">
 						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 							{/* Card 1 */}
-							<div className="bg-blue-200 p-5 shadow-lg rounded-xl border border-gray-200 h-[210px] flex flex-col">
+							<div className="bg-blue-200 p-5 shadow-lg rounded-xl border border-gray-200 h-auto flex flex-col">
 								<h3 className="font-semibold text-lg text-gray-900 mb-2 text-center">
 									Integral Shank & Shaft
 								</h3>

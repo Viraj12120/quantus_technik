@@ -24,7 +24,7 @@ export default function Header() {
 	];
 
 	return (
-		<header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+		<header className=" top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
 			<div className="w-full">
 				<div className="flex items-center justify-between h-16">
 					{/* LOGO */}
@@ -34,7 +34,7 @@ export default function Header() {
 							alt="Logo"
 							width={300}
 							height={200}
-							className=""
+							className="-ml-8 sm:-ml-2 md:-ml-4"
 						/>
 					</Link>
 

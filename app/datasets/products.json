@@ -197,7 +197,7 @@
                         "number_of_tools": "30T",
                         "power_torque": "31Kw / 141nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
-                        "image": "/assets/MEGA30V.png",
+                        "image": "/assets/mega30v.jpg",
                         "type": "C-TYPE LM #40 DUAL TAPER"
                     },
                     {
@@ -208,7 +208,7 @@
                         "number_of_tools": "40",
                         "power_torque": "31Kw / 141nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
-                        "image": "/assets/MEGA40V.png",
+                        "image": "/assets/mega40.png",
                         "type": "C-TYPE LM #40 DUAL TAPER"
                     },
                     {
@@ -219,7 +219,7 @@
                         "number_of_tools": "40",
                         "power_torque": "31Kw / 141nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
-                        "image": "/assets/MEGA20VAPC.png",
+                        "image": "/assets/20vapc.avif",
                         "type": "C-TYPE LM #40 DUAL TAPER"
                     }
                 ],
@@ -232,51 +232,51 @@
                         "number_of_tools": "40",
                         "power_torque": "31Kw / 141nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
-                        "image": "/assets/TERA40V.png",
+                        "image": "/assets/tera40v.avif",
                         "type": "C-TYPE LM #40 DUAL TAPER"
                     },
                     {
                         "model": "Tera 50V",
                         "stroke_mm": "1,270 / 710 / 635",
-                        "table_size": "1,420 x 700",
+                        "table_size": "1,420 x 700 mm",
                         "spindle_speed_rpm": "15K",
                         "number_of_tools": "40",
                         "power_torque": "31Kw / 141nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
-                        "image": "/assets/TERA50V.png",
+                        "image": "/assets/tera50v.avif",
                         "type": "C-TYPE LM #40 DUAL TAPER"
                     },
                     {
                         "model": "Tera 60V",
                         "stroke_mm": "1,524 / 710 / 635",
-                        "table_size": "1,724 x 700",
+                        "table_size": "1,724 x 700 mm",
                         "spindle_speed_rpm": "15K",
                         "number_of_tools": "40",
                         "power_torque": "31Kw / 141nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
-                        "image": "/assets/TERA60V.png",
+                        "image": "/assets/tera60.avif",
                         "type": "C-TYPE LM #40 DUAL TAPER"
                     },
                     {
                         "model": "Tera 50V / 50",
                         "stroke_mm": "1,270 / 710 / 635",
-                        "table_size": "1,420 x 700",
+                        "table_size": "1,420 x 700 mm",
                         "spindle_speed_rpm": "12K",
                         "number_of_tools": "32T",
                         "power_torque": "34Kw / 570nm",
                         "feedrate_m_per_min": "52 / 52 / 32 m/min",
-                        "image": "/assets/TERA50V50.png",
+                        "image": "/assets/tera50v50.avif",
                         "type": "C-TYPE LM #50 DUAL TAPER"
                     },
                     {
                         "model": "Tera 60V / 50",
                         "stroke_mm": "1,524 / 710 / 635",
-                        "table_size": "1,724 x 700",
+                        "table_size": "1,724 x 700 mm",
                         "spindle_speed_rpm": "12K",
                         "number_of_tools": "32T",
                         "power_torque": "34Kw / 570nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
-                        "image": "/assets/TERA60V60.png",
+                        "image": "/assets/tera60v50.avif",
                         "type": "C-TYPE LM #50 DUAL TAPER"
                     }
                 ]

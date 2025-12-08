@@ -3,18 +3,18 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const logos = [
-	{ name: "GROB", src: "/grob.svg" },
-	{ name: "HWACHEON", src: "/hwa.jpg" },
-	{ name: "ZOLLER", src: "/zoller.svg" },
-	{ name: "WENZEL", src: "/w.png" },
-	{ name: "ALZMETALL", src: "/alz.svg" },
-	{ name: "mst", src: "/m.png" },
-	{ name: "mill", src: "/mill.png" },
-	{ name: "kenchi", src: "/ken.svg" },
-	{ name: "jktet", src: "/logo.png" },
-	{ name: "gerardi", src: "/gerardi.jpg" },
-	{ name: "index", src: "/index.jpg" },
 	{ name: "micro", src: "/micro.png" },
+	{ name: "kenchi", src: "/ken.svg" },
+	{ name: "HWACHEON", src: "/hwa.jpg" },
+	{ name: "jktet", src: "/logo.png" },
+	{ name: "GROB", src: "/grob.svg" },
+	{ name: "index", src: "/index.jpg" },
+	{ name: "ALZMETALL", src: "/alz.svg" },
+	{ name: "mill", src: "/mill.png" },
+	{ name: "WENZEL", src: "/w.png" },
+	{ name: "ZOLLER", src: "/zoller.svg" },
+	{ name: "gerardi", src: "/gerardi.jpg" },
+	{ name: "mst", src: "/m.png" },
 ];
 
 const containerVariants = {

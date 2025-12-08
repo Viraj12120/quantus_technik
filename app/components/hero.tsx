@@ -5,15 +5,16 @@ import Image from "next/image";
 
 export default function Hero() {
 	const videos = [
-		"https://res.cloudinary.com/domgx4mk9/video/upload/v1762179062/2_WS_intro-pg-ken_imspdp.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/v1762179053/6_WS_intro-pg-wenzel_izcloo.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/v1762179042/1_WS_intro-pg-GROB_jv4gn0.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/v1763995579/VID-20251124-WA0004_qtoyry.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/v1763995575/VID-20251124-WA0002_hqdcjn.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/v1763995577/VID-20251124-WA0006_tgwqtg.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/v1763995577/VID-20251124-WA0003_uevttf.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/v1763995576/VID-20251124-WA0005_rubgz3.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/v1762179042/4_WS_intro-pg-gerardi_oa7qkp.mp4"
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1763995575/VID-20251124-WA0002_hqdcjn.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765193647/traub_ubapop.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1762179053/6_WS_intro-pg-wenzel_izcloo.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1762179042/1_WS_intro-pg-GROB_jv4gn0.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1763995579/VID-20251124-WA0004_qtoyry.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1762179062/2_WS_intro-pg-ken_imspdp.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1763995577/VID-20251124-WA0006_tgwqtg.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1763995577/VID-20251124-WA0003_uevttf.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1763995576/VID-20251124-WA0005_rubgz3.mp4",
+		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1762179042/4_WS_intro-pg-gerardi_oa7qkp.mp4",
 	];
 
 	const [current, setCurrent] = useState(0);
@@ -21,12 +22,12 @@ export default function Hero() {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setCurrent((prev) => (prev + 1) % videos.length);
-		}, 5000);
+		}, 10000);
 		return () => clearInterval(interval);
 	}, [videos.length]);
 
 	return (
-		<section className="relative w-[95%] mx-auto mt-20 mb-10 overflow-hidden h-[85vh] rounded-lg shadow-2xl">
+		<section className="relative w-[95%] mx-auto mt-4 mb-10 overflow-hidden h-[85vh] rounded-lg shadow-2xl">
 			{/* Background Video */}
 			<div className="absolute inset-0">
 				<video
@@ -36,12 +37,12 @@ export default function Hero() {
 					muted
 					loop
 					playsInline
+					preload="none"
 					className="absolute inset-0 w-full h-full object-cover"
 				/>
+
 				<div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60" />
 			</div>
-
-			
 
 			{/* Content */}
 			<div className="relative z-10 flex justify-end h-full items-center px-6 sm:px-10 mt-24">
