@@ -195,7 +195,7 @@
                         "table_size": "860 x 500 mm",
                         "spindle_speed_rpm": "15K",
                         "number_of_tools": "30T",
-                        "power_torque": "31Kw / 141nm",
+                        "power_torque": "31kW / 141Nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
                         "image": "/assets/mega30v.jpg",
                         "type": "C-TYPE LM #40 DUAL TAPER"
@@ -206,7 +206,7 @@
                         "table_size": "1,120 x 500 mm",
                         "spindle_speed_rpm": "15K",
                         "number_of_tools": "40",
-                        "power_torque": "31Kw / 141nm",
+                        "power_torque": "31kW / 141Nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
                         "image": "/assets/mega40.png",
                         "type": "C-TYPE LM #40 DUAL TAPER"
@@ -217,7 +217,7 @@
                         "table_size": "560 x 400 mm",
                         "spindle_speed_rpm": "15K",
                         "number_of_tools": "40",
-                        "power_torque": "31Kw / 141nm",
+                        "power_torque": "31kW / 141Nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
                         "image": "/assets/20vapc.avif",
                         "type": "C-TYPE LM #40 DUAL TAPER"
@@ -230,7 +230,7 @@
                         "table_size": "1,120 x 700 mm",
                         "spindle_speed_rpm": "15K",
                         "number_of_tools": "40",
-                        "power_torque": "31Kw / 141nm",
+                        "power_torque": "31kW / 141Nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
                         "image": "/assets/tera40v.avif",
                         "type": "C-TYPE LM #40 DUAL TAPER"
@@ -241,7 +241,7 @@
                         "table_size": "1,420 x 700 mm",
                         "spindle_speed_rpm": "15K",
                         "number_of_tools": "40",
-                        "power_torque": "31Kw / 141nm",
+                        "power_torque": "31kW / 141Nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
                         "image": "/assets/tera50v.avif",
                         "type": "C-TYPE LM #40 DUAL TAPER"
@@ -252,7 +252,7 @@
                         "table_size": "1,724 x 700 mm",
                         "spindle_speed_rpm": "15K",
                         "number_of_tools": "40",
-                        "power_torque": "31Kw / 141nm",
+                        "power_torque": "31kW / 141Nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
                         "image": "/assets/tera60.avif",
                         "type": "C-TYPE LM #40 DUAL TAPER"
@@ -263,7 +263,7 @@
                         "table_size": "1,420 x 700 mm",
                         "spindle_speed_rpm": "12K",
                         "number_of_tools": "32T",
-                        "power_torque": "34Kw / 570nm",
+                        "power_torque": "34kW / 570Nm",
                         "feedrate_m_per_min": "52 / 52 / 32 m/min",
                         "image": "/assets/tera50v50.avif",
                         "type": "C-TYPE LM #50 DUAL TAPER"
@@ -274,7 +274,7 @@
                         "table_size": "1,724 x 700 mm",
                         "spindle_speed_rpm": "12K",
                         "number_of_tools": "32T",
-                        "power_torque": "34Kw / 570nm",
+                        "power_torque": "34kW / 570Nm",
                         "feedrate_m_per_min": "52 / 52 / 48 m/min",
                         "image": "/assets/tera60v50.avif",
                         "type": "C-TYPE LM #50 DUAL TAPER"
@@ -294,7 +294,7 @@
                 "spindle_speed_rpm": "10K / 12K",
                 "table_size": "720 x 400 mm",
                 "number_of_tools": "20(24)",
-                "power_torque": "15Kw / 95.5",
+                "power_torque": "15kW / 95.5",
                 "feedrate_m_per_min": "36 / 36 / 30 m/min",
                 "type": "LM #40 / #50",
                 "image": "https://www.hwacheon.com/file/ckeditor/ckeditor_20201230030735.png",
@@ -972,8 +972,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 4000,
-                        "power_Kw": 30,
-                        "torque_nm": 800
+                        "power_kW": 30,
+                        "torque_Nm": 800
                     }
                 }
             },
@@ -993,8 +993,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "12K (16K | 21K | 42K) ",
-                        "power_Kw": "22 (30)",
-                        "torque_nm": "45 (60)"
+                        "power_kW": "22 (30)",
+                        "torque_Nm": "45 (60)"
                     },
                     "spindle_taper": [
                         "HSK-E40",
@@ -1031,8 +1031,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "12K (16K | 18K | 21K) ",
-                        "power_Kw": "30 (40)",
-                        "torque_nm": "75 (100)"
+                        "power_kW": "30 (40)",
+                        "torque_Nm": "75 (100)"
                     },
                     "spindle_taper": [
                         "HSK-A63"
@@ -1063,8 +1063,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "12K ( 6K | 9K | 10K | 16K | 18K | 30K ) ",
-                        "power_Kw": "40 (55)",
-                        "torque_nm": "120 (160)"
+                        "power_kW": "40 (55)",
+                        "torque_Nm": "120 (160)"
                     },
                     "interference_diameter": 580,
                     "table_diameter": 380,
@@ -1096,8 +1096,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "12K ( 6K | 9K | 10K | 16K | 18K | 30K ) ",
-                        "power_Kw": "55 (75)",
-                        "torque_nm": "180 (240)"
+                        "power_kW": "55 (75)",
+                        "torque_Nm": "180 (240)"
                     },
                     "interference_diameter": 580,
                     "table_diameter": 380,
@@ -1129,8 +1129,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "16K",
-                        "power_Kw": "25 (32)",
-                        "torque_nm": "159 (206)"
+                        "power_kW": "25 (32)",
+                        "torque_Nm": "159 (206)"
                     },
                     "interference_diameter": 620,
                     "table_diameter": "570",
@@ -1162,8 +1162,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "14.5K ( 10K | 16K ) ",
-                        "power_Kw": "50 (58)",
-                        "torque_nm": "225 (261)"
+                        "power_kW": "50 (58)",
+                        "torque_Nm": "225 (261)"
                     },
                     "interference_diameter": 900,
                     "table_diameter": "770",
@@ -1196,8 +1196,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "10K ( 14.5K | 16K ) ",
-                        "power_Kw": "45 (60)",
-                        "torque_nm": "140 (180)"
+                        "power_kW": "45 (60)",
+                        "torque_Nm": "140 (180)"
                     },
                     "interference_diameter": 1280,
                     "table_diameter": "950",
@@ -1231,8 +1231,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "6K",
-                        "power_Kw": 26,
-                        "torque_nm": 116,
+                        "power_kW": 26,
+                        "torque_Nm": 116,
                         "interface": "HSK-A63",
                         "distance_spindle_max_mm": 550,
                         "interference_circle_diameter_mm": 640
@@ -1262,8 +1262,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "10K",
-                        "power_Kw": 16,
-                        "torque_nm": 102,
+                        "power_kW": 16,
+                        "torque_Nm": 102,
                         "interface": "HSK-A63",
                         "distance_spindle_max_mm": 650,
                         "interference_circle_diameter_mm": 800
@@ -1293,8 +1293,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": "6K",
-                        "power_Kw": 50,
-                        "torque_nm": 187,
+                        "power_kW": 50,
+                        "torque_Nm": 187,
                         "interface": "HSK-A63",
                         "distance_spindle_max_mm": 8235,
                         "interference_circle_diameter_mm": 1070
@@ -1324,8 +1324,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 6000,
-                        "power_Kw": 50,
-                        "torque_nm": 187,
+                        "power_kW": 50,
+                        "torque_Nm": 187,
                         "interface": "HSK-A63",
                         "distance_spindle_max_mm": 966,
                         "interference_circle_diameter_mm": 1220
@@ -1354,8 +1354,8 @@
                         "z": 85
                     },
                     "spindle": {
-                        "power_Kw": 60,
-                        "torque_nm": 350,
+                        "power_kW": 60,
+                        "torque_Nm": 350,
                         "interface": "HSK-A100",
                         "distance_spindle_max_mm": 988,
                         "interference_circle_diameter_mm": 1380
@@ -1389,14 +1389,14 @@
                 }
             },
             {
-                "model": "LinmaxB",
-                "series": "LinmaxB",
+                "model": "LiNmaxB",
+                "series": "LiNmaxB",
                 "description": "Gantry Type High Speed 5-Axis Machine Center",
                 "type": "5-Axis Gantry",
                 "filters": [
                     "gantry"
                 ],
-                "image": "https://www.Kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
+                "image": "https://www.Kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LiNmaxB_White.png",
                 "specs": {
                     "travel_mm": {
                         "x": "4000 |5000 |6000 |8000 mm",
@@ -1433,8 +1433,8 @@
                         "y": "2200 (2700 |3200 |3700|4700)"
                     },
                     "spindle": {
-                        "power_Kw": "22 (26)",
-                        "torque_nm": "719 (850)"
+                        "power_kW": "22 (26)",
+                        "torque_Nm": "719 (850)"
                     }
                 }
             },
@@ -1467,8 +1467,8 @@
                     "spindle": {
                         "shanK": "HSK-A63 | HSK-A100",
                         "rotation_speed_rpm": "24000(15000)",
-                        "power_Kw": "42 (55)",
-                        "torque_nm": "67 (87)"
+                        "power_kW": "42 (55)",
+                        "torque_Nm": "67 (87)"
                     }
                 }
             },
@@ -1546,8 +1546,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 3500,
-                        "power_Kw": "30 (40)",
-                        "torque_nm": "900 (1200)"
+                        "power_kW": "30 (40)",
+                        "torque_Nm": "900 (1200)"
                     }
                 }
             },
@@ -1574,8 +1574,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 3000,
-                        "power_Kw": "45 (60)",
-                        "torque_nm": "1500 (2000)"
+                        "power_kW": "45 (60)",
+                        "torque_Nm": "1500 (2000)"
                     }
                 }
             },
@@ -1602,8 +1602,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 12000,
-                        "power_Kw": "7.5 (11)",
-                        "torque_nm": "12 (18)"
+                        "power_kW": "7.5 (11)",
+                        "torque_Nm": "12 (18)"
                     }
                 }
             },
@@ -1630,8 +1630,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 10000,
-                        "power_Kw": "11 (15)",
-                        "torque_nm": "18 (25)"
+                        "power_kW": "11 (15)",
+                        "torque_Nm": "18 (25)"
                     }
                 }
             },
@@ -1658,8 +1658,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 8000,
-                        "power_Kw": "15 (22)",
-                        "torque_nm": "30 (45)"
+                        "power_kW": "15 (22)",
+                        "torque_Nm": "30 (45)"
                     }
                 }
             },
@@ -1686,8 +1686,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 6000,
-                        "power_Kw": "18.5 (26)",
-                        "torque_nm": "45 (65)"
+                        "power_kW": "18.5 (26)",
+                        "torque_Nm": "45 (65)"
                     }
                 }
             },
@@ -1714,8 +1714,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 5000,
-                        "power_Kw": "22 (30)",
-                        "torque_nm": "60 (85)"
+                        "power_kW": "22 (30)",
+                        "torque_Nm": "60 (85)"
                     }
                 }
             },
@@ -1742,8 +1742,8 @@
                     },
                     "spindle": {
                         "rotation_speed_rpm": 8000,
-                        "power_Kw": "26 (35)",
-                        "torque_nm": "45 (60)"
+                        "power_kW": "26 (35)",
+                        "torque_Nm": "45 (60)"
                     }
                 }
             }
