@@ -429,7 +429,7 @@
                 "bar_spindle_clearance_mm": 42,
                 "chuck_workpiece_capacity_mm": 110,
                 "turning_length_mm": 400,
-                "spindle_power_torque": "-",
+                "spindle_power_torque": "7k rpm / 25kW / 65Nm",
                 "image": "/INDEXC100.jpg",
                 "features": " 2–3 turrets; simultaneous machining; compact design; ideal for bar-stock and small/medium parts; good for mixed production batches ",
                 "detail_url": "https://example.com/index-c100"

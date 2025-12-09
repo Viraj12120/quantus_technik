@@ -496,16 +496,14 @@ export default function ProductDetailPage() {
 		  ];
 
 	const [selectedSubCategory, setSelectedSubCategory] = useState(
-		isTurningCenter ? "horizontal_turning" : "horizontal"
+		isTurningCenter ? "horizontal_turning" : "vertical"
 	);
 	const [selected5AxisFilter, setSelected5AxisFilter] =
 		useState("simultaneous");
 
 	useEffect(() => {
-		setSelectedSubCategory(
-			isTurningCenter ? "horizontal_turning" : "horizontal"
-		);
-		setSelected5AxisFilter("all");
+		setSelectedSubCategory(isTurningCenter ? "horizontal_turning" : "vertical");
+		setSelected5AxisFilter("simultaneous");
 	}, [productId, isTurningCenter]);
 
 	// Get products based on selected subcategory using your exact JSON structure
@@ -1008,8 +1006,6 @@ export default function ProductDetailPage() {
 					value: formatted,
 				});
 			}
-
-
 
 			return baseSpecs;
 		}

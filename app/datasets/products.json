@@ -1397,7 +1397,7 @@
                 "filters": [
                     "gantry"
                 ],
-                "image": "https://www.Kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LiNmaxB_White.png",
+                "image": "https://www.kencnc.com/assets/source/Images_Product/AllMachine/EN/All%20Machine_EN_LinmaxB_White.png",
                 "specs": {
                     "travel_mm": {
                         "x": "4000 | 5000 | 6000 |8000 mm",
