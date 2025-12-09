@@ -355,6 +355,7 @@
                 "spindle_torque_nm": 550,
                 "spindle_speed_rpm": 4000,
                 "turret": "18-station , VDI30",
+                "features": "W-serration, Mineral-cast bed, iXpanel",
                 "image": "/B400.jpg",
                 "detail_url": "https://example.com/index-b400"
             },
@@ -369,6 +370,7 @@
                 "spindle_speed_rpm": 3150,
                 "turret": "12-station , VDI40",
                 "image": "/B500.jpg",
+                "features": "High torque, Long-bed option, Counter-spindle",
                 "detail_url": "https://example.com/index-b500"
             },
             {
@@ -381,6 +383,7 @@
                 "spindle_torque_nm": 550,
                 "spindle_speed_rpm": 4000,
                 "turret": "12-station",
+                "features": "Compact, high rigidity, Siemens control",
                 "image": "/TRAUBTNA400.jpg",
                 "detail_url": "https://example.com/traub-tna400"
             },
@@ -394,6 +397,7 @@
                 "spindle_torque_nm": 910,
                 "spindle_speed_rpm": 3150,
                 "turret": "12-station",
+                "features": "Heavy-duty, large-dia machining",
                 "image": "/TRAUBTNA500.jpg",
                 "detail_url": "https://example.com/traub-tna500"
             },
@@ -405,6 +409,7 @@
                 "turning_length_mm": 220,
                 "spindle_power_torque": "8k rpm / 9.91(13.6)kW / 35Nm",
                 "image": "/TRAUBTNK40.jpg",
+                "features": "Twin spindles; two tool turrets + optional back-working; simultaneous multi-tool machining; compact high-density layout; hydraulic hollow clamping ",
                 "detail_url": "https://example.com/traub-tnk40"
             },
             {
@@ -415,6 +420,7 @@
                 "turning_length_mm": "0",
                 "spindle_power_torque": "6k rpm / 27kW / 145Nm",
                 "image": "/INDEXABC.jpg",
+                "features": "Compact “dynamic” design for high-speed production of small/medium turned parts; suitable for automated production lines ",
                 "detail_url": "https://example.com/index-abc"
             },
             {
@@ -425,6 +431,7 @@
                 "turning_length_mm": 400,
                 "spindle_power_torque": "-",
                 "image": "/INDEXC100.jpg",
+                "features": " 2–3 turrets; simultaneous machining; compact design; ideal for bar-stock and small/medium parts; good for mixed production batches ",
                 "detail_url": "https://example.com/index-c100"
             },
             {
@@ -434,6 +441,7 @@
                 "chuck_workpiece_capacity_mm": 160,
                 "turning_length_mm": 550,
                 "spindle_power_torque": "6k rpm / 32kW / 125(170) Nm",
+                "features": "Compact but generous working area; 2 powerful identical spindles; dynamic, high-acceleration system; good for bar-stock and medium-size parts; suitable for complete machining operations ",
                 "image": "/INDEXC200.jpg",
                 "detail_url": "https://example.com/index-c200"
             },
@@ -445,6 +453,7 @@
                 "turning_length_mm": 900,
                 "spindle_power_torque": "9 kW / 29 Nm",
                 "max_rpm": "7500 rpm",
+                "features": " 5-axis milling + turning, large tool pool, flexible machining",
                 "image": "/TRAUBTNX200.jpg",
                 "detail_url": "https://example.com/traub-tnx200"
             },
@@ -456,10 +465,10 @@
                 "turning_length_mm": 650,
                 "spindle_power_torque": "5.5 kW / 17.5 Nm",
                 "max_rpm": "6k rpm",
+                "features": "Compact, flexible — suitable for small/medium parts & full machining",
                 "image": "/TRAUBTNX65.jpg",
                 "detail_url": "https://example.com/traub-tnx65"
             },
-            
             {
                 "model": "TRAUB TNL12",
                 "description": "Production Turning Machine",
@@ -467,6 +476,7 @@
                 "max_spindle_speed": "12k rpm",
                 "power_torque": "8.6Nm",
                 "max_travel": "130 mm",
+                "features": "Slide → fixed headstock change-over; very compact footprint; high tool-pool; very short tool-change / chip-to-chip times; automated part removal / flushing / gripper + optional robot loading; ideal for small, complex parts / high-precision small-dia turned parts. ",
                 "tool_carrier": "4 tools",
                 "image": "/TRAUBTNL12.jpg",
                 "detail_url": "https://example.com/traub-tnl12"
@@ -479,6 +489,7 @@
                 "max_travel": "205 mm",
                 "power_torque": "-",
                 "tool_carrier": "2,3 or 4 tools",
+                "features": "High-dynamics cast-iron bed for vibration damping & thermal stability; good tool-pool / tooling flexibility; optional integration with robot-cell (iXcenter) for automation & material handling; suitable for medium-dia bar work & more complex/multistage parts. ",
                 "image": "/TRAUBTNL20.jpg",
                 "detail_url": "https://example.com/traub-tnl20"
             },
@@ -490,6 +501,7 @@
                 "power_torque": "32Nm",
                 "max_travel": "305 mm",
                 "tool_carrier": "3 tools",
+                "features": "Dual-drive tool system for reduced chip-to-chip times; tool-drive for up to 12,000 rpm; large, structured work area with wide tooling circles; thermal-symmetric design for high precision; easy changeover sliding↔fixed headstock; compact footprint; flexible configuration depending on part complexity (turning, milling, drilling, transversal threading, polygon-turning etc.); strong automation readiness & good for medium-diameter bar stock up to Ø 32 mm. ",
                 "image": "/TRAUBTNL32.jpg",
                 "detail_url": "https://example.com/traub-tnl32"
             },
@@ -501,6 +513,7 @@
                 "turning_length_mm": "~390",
                 "spindle_power_torque": "24 kW / 190 Nm",
                 "max_rpm": "5k rpm",
+                "features": "High-speed milling (18,000 rpm), rigid vertical-bed design, fast tool changes — good for complex 5-axis jobs",
                 "image": "/INDEXR200.jpg",
                 "detail_url": "https://example.com/index-r200"
             },
@@ -512,6 +525,7 @@
                 "turning_length_mm": 610,
                 "spindle_power_torque": "52 kW / 690 Nm",
                 "max_rpm": "3500 rpm",
+                "features": "Great for medium-large parts, 5-axis capable, high flexibility, heavy-duty milling + turning",
                 "image": "/INDEXR300.jpg",
                 "detail_url": "https://example.com/index-r300"
             },
@@ -521,6 +535,7 @@
                 "bar_capacity_max_mm": "16/22",
                 "max_spindle_speed": "10k rpm",
                 "power_torque": "15kW / 18Nm",
+                "features": "Very compact footprint; rapid change-overs; grooving or drilling slides; cross-slide + cutoff slide for complete machining; suitable for small precision turned parts",
                 "spindle_tool_drum_design": "6 + 2 synchronous Spindle",
                 "tool_carrier": 12,
                 "image": "/MS16.png",
@@ -534,6 +549,7 @@
                 "power_torque": "15kW / 18Nm",
                 "spindle_tool_drum_design": "6(8) + 2 synchronous Spindle",
                 "tool_carrier": 16,
+                "features": "Open-front design for easy bar loading; hydrostatic Z-axis (wear-free); quick-clamping / W-serration for fast tool changes; flexible internal/external machining, live-tooling, C-axis, Y-axis (optional) ",
                 "image": "/INDEXMS24-6.jpg",
                 "detail_url": "https://example.com/ms24"
             },
@@ -545,6 +561,7 @@
                 "power_torque": "19kW / 40Nm",
                 "spindle_tool_drum_design": "6 + 2 synchronous Spindle",
                 "tool_carrier": 12,
+                "features": "Balanced bar capacity & power — good for medium-size parts; flexible tooling & configuration; suitable for batch production and variable parts; robot-feed capable",
                 "image": "/INDEXMS32-6.jpg",
                 "detail_url": "https://example.com/ms32-6"
             },
@@ -557,6 +574,7 @@
                 "spindle_tool_drum_design": "6 + 2 synchronous Spindle",
                 "tool_carrier": 12,
                 "image": "/INDEXMS40.jpg",
+                "features": "Front-opening for bar machining; robot/linear loading & unloading possible; good chip flow design; large workspace for complex parts; iXpanel (18.5″ touchscreen) with modern CNC (Siemens S840D sl), Industry 4.0 ready; suitable for medium-to-heavy bar stock parts; versatile ",
                 "detail_url": "https://example.com/ms40-6"
             },
             {
@@ -567,6 +585,7 @@
                 "power_torque": "24 kW / 57 Nm",
                 "spindle_tool_drum_design": "8 + 2 synchronous Spindle",
                 "tool_carrier": "14-16",
+                "features": "High throughput for batch production; flexible tooling for complex parts; open-front design for bar loading; robot/load-unload friendly; good for medium complexity + quantity jobs; hydrostatic Z-axis for wear-free long life; excellent rigidity & precision even under load.",
                 "image": "/MS40_8.png",
                 "detail_url": "https://example.com/ms40-8"
             },
@@ -578,6 +597,7 @@
                 "power_torque": "30 kW / 130 Nm",
                 "spindle_tool_drum_design": "6 + 2 synchronous Spindle",
                 "tool_carrier": 12,
+                "features": "Designed for heavier/larger bar stock; high torque for tough materials; large work area enabling complex or heavy-duty parts; good for batch production with high part strength and precision; easy setup and good maintenance accessibility",
                 "image": "/MS52-6.png",
                 "detail_url": "https://example.com/ms52-6"
             }

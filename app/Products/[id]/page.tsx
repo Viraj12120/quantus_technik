@@ -34,11 +34,17 @@ interface MachineSpecs {
 		distance_spindle_max_mm?: string;
 		interference_circle_diameter_mm?: string;
 	};
+	spindle_taperr: string;
+	swivel_range: string;
+	swivel_speed: string;
+	rpm_max: string;
+	drive: string;
 	table_load_kg?: number | number[];
 	rotary_table?: {
 		diameter_mm?: string;
 		rotation?: string;
 	};
+	table_load_Kg: string | Number;
 	notes?: string;
 	cutting_tool_interface?: string;
 	max_tool_positions?: number;
@@ -102,7 +108,12 @@ interface Machine {
 	pallet_size_mm?: number | string; // JTEKT uses this
 	table_load_kg?: number | number[];
 	pallet_size?: number | string; // For JTEKT - ADD THIS
-
+	features: string;
+	swivel_range: string;
+	swivel_speed: string;
+	rpm_max: string;
+	drive: string;
+	spindle_taperr: string;
 	rotary_table?: {
 		diameter_mm?: string;
 		rotation?: string;
@@ -776,6 +787,19 @@ export default function ProductDetailPage() {
 					});
 				}
 
+				if (product.features) {
+					const formatted = product.features
+						.split(";")
+						.map((f) => f.trim())
+						.filter(Boolean)
+						.join(";\n");
+
+					baseSpecs.push({
+						name: "Feature",
+						value: formatted,
+					});
+				}
+
 				return baseSpecs;
 			}
 
@@ -840,6 +864,18 @@ export default function ProductDetailPage() {
 						value: ensureString(product.tool_carrier),
 					});
 				}
+				if (product.features) {
+					const formatted = product.features
+						.split(";")
+						.map((f) => f.trim())
+						.filter(Boolean)
+						.join(";\n");
+
+					baseSpecs.push({
+						name: "Feature",
+						value: formatted,
+					});
+				}
 
 				return baseSpecs;
 			}
@@ -877,6 +913,18 @@ export default function ProductDetailPage() {
 					baseSpecs.push({
 						name: "Tool Carrier",
 						value: ensureString(product.tool_carrier),
+					});
+				}
+				if (product.features) {
+					const formatted = product.features
+						.split(";")
+						.map((f) => f.trim())
+						.filter(Boolean)
+						.join(";\n");
+
+					baseSpecs.push({
+						name: "Feature",
+						value: formatted,
 					});
 				}
 
@@ -948,6 +996,20 @@ export default function ProductDetailPage() {
 					value: product.control,
 				});
 			}
+			if (product.features) {
+				const formatted = product.features
+					.split(";")
+					.map((f) => f.trim())
+					.filter(Boolean)
+					.join(";\n");
+
+				baseSpecs.push({
+					name: "Feature",
+					value: formatted,
+				});
+			}
+
+
 
 			return baseSpecs;
 		}
@@ -1317,10 +1379,65 @@ export default function ProductDetailPage() {
 					});
 				}
 
+				if (specs.table_diameter) {
+					baseSpecs.push({
+						name: "Table Diameter",
+						value: ensureString(specs.table_diameter),
+					});
+				}
+				if (specs.table_load_Kg) {
+					baseSpecs.push({
+						name: "Table Load",
+						value: ensureString(specs.table_load_Kg) + "kg",
+					});
+				}
+				if (specs.drive) {
+					baseSpecs.push({
+						name: "Drive at Swivel - Rotary Axis",
+						value: ensureString(specs.drive),
+					});
+				}
+				if (specs.swivel_range) {
+					baseSpecs.push({
+						name: "Swivel Range at A-axis",
+						value: ensureString(specs.swivel_range),
+					});
+				}
+				if (specs.swivel_speed) {
+					baseSpecs.push({
+						name: "Swivel Speed  A-axis max",
+						value: ensureString(specs.swivel_speed),
+					});
+				}
+				if (specs.rotation_angle) {
+					baseSpecs.push({
+						name: "Rotation C-axis",
+						value: specs.rotation_angle,
+					});
+				}
+				if (specs.rpm_max) {
+					baseSpecs.push({
+						name: "RPM max C-axis",
+						value: ensureString(specs.rpm_max),
+					});
+				}
+				if (specs.spindle_taperr) {
+					baseSpecs.push({
+						name: "Spindle Taper",
+						value: specs.spindle_taperr,
+					});
+				}
 				if (spindle.rotation_speed_rpm) {
 					baseSpecs.push({
 						name: "Spindle Speed",
 						value: ensureString(spindle.rotation_speed_rpm) + " rpm",
+					});
+				}
+				if (specs.feedrate_m_per_min) {
+					const feed = specs.feedrate_m_per_min;
+					baseSpecs.push({
+						name: "Rapid Feedrate",
+						value: `X:${feed.x} / Y:${feed.y} / Z:${feed.z} m/min`,
 					});
 				}
 
@@ -1341,13 +1458,6 @@ export default function ProductDetailPage() {
 			}
 
 			// Add feedrate if available
-			if (specs.feedrate_m_per_min) {
-				const feed = specs.feedrate_m_per_min;
-				baseSpecs.push({
-					name: "Rapid Travel",
-					value: `X:${feed.x} / Y:${feed.y} / Z:${feed.z} m/min`,
-				});
-			}
 
 			return baseSpecs;
 		}
@@ -1435,6 +1545,7 @@ export default function ProductDetailPage() {
 			: [
 					{ id: "horizontal_turning", name: "Horizontal Turning" },
 					{ id: "vertical_turning", name: "Vertical Turning" },
+					{ id: "multiplex", name: "Multiplex" },
 			  ];
 
 		return subCats.find((c) => c.id === selectedSubCategory)?.name ?? "";
@@ -1578,7 +1689,7 @@ export default function ProductDetailPage() {
 									/>
 								</div>
 
-								<div className="px-5 pb-4 mt-2 flex flex-col flex-grow">
+								<div className="px-2 pb-4 mt-2 flex flex-col flex-grow">
 									<table className="w-full text-xs flex-grow">
 										<tbody>
 											{getSpecs(item).map((spec, idx) => (
@@ -1586,7 +1697,7 @@ export default function ProductDetailPage() {
 													<td className="py-1.5 text-gray-700 font-medium">
 														{spec.name}
 													</td>
-													<td className="py-1.5 text-right font-semibold text-black">
+													<td className="py-1.5 text-right text-justify whitespace-pre-line  font-semibold text-black">
 														{spec.value}
 													</td>
 												</tr>

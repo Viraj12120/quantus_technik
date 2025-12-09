@@ -25,6 +25,8 @@ import Image from "next/image";
 // 	},
 // };
 
+
+
 export default function Industries() {
 	const industries = [
 		{
@@ -219,7 +221,7 @@ export default function Industries() {
 
 	return (
 		<div className="min-h-screen bg-white">
-			{/* Hero Section */}
+			{/* ================= HERO SECTION ================= */}
 			<section className="bg-black text-white flex justify-center py-36 px-4">
 				<div className="w-full text-center mx-auto">
 					<h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -231,7 +233,7 @@ export default function Industries() {
 				</div>
 			</section>
 
-			{/* Industries */}
+			{/* ================= MAIN SECTION ================= */}
 			<section className="max-w-6xl mx-auto px-4 py-20">
 				<div className="space-y-32">
 					{industries.map((industry, idx) => {
@@ -240,29 +242,33 @@ export default function Industries() {
 						return (
 							<div
 								key={industry.title}
-								className={`flex flex-col ${
-									isEven ? "lg:flex-row" : "lg:flex-row-reverse"
-								} gap-12 items-start`}>
-								{/* Image Section */}
-								<div className="lg:w-1/2">
-									<div className="relative h-[400px] w-full overflow-hidden group">
+								className={`flex flex-col items-center text-center 
+									${isEven ? "lg:flex-row" : "lg:flex-row-reverse"} 
+									lg:items-start lg:text-left 
+									gap-12`}>
+								{/* ================= IMAGE SECTION ================= */}
+								<div className="lg:w-1/2 w-full">
+									<div className="relative h-[400px] w-full overflow-hidden group rounded-xl shadow-md">
 										<img
 											src={industry.image}
 											alt={industry.title}
-											className="w-full h-full object-cover hover:grayscale-0 transition-all duration-500"
+											className="w-full h-full object-cover transition-all duration-500"
 										/>
-										<div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
-										<div className="absolute bottom-0 left-0 right-0 p-8 from-black/80 to-transparent">
+
+										<div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/70 to-transparent">
 											<h2 className="text-3xl font-bold text-white">
 												{industry.title}
 											</h2>
 										</div>
 									</div>
-									<div className="border-t border-gray-200 pt-6">
+
+									{/* Applications */}
+									<div className="border-t border-gray-200 pt-6 mt-6">
 										<h3 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-4">
 											Applications
 										</h3>
-										<div className="flex flex-wrap gap-2">
+
+										<div className="flex flex-wrap gap-2 justify-center lg:justify-start">
 											{industry.applications.map((app, i) => (
 												<span
 													key={i}
@@ -274,19 +280,19 @@ export default function Industries() {
 									</div>
 								</div>
 
-								{/* Content Section */}
-								<div className="lg:w-1/2 space-y-8">
+								{/* ================= CONTENT SECTION ================= */}
+								<div className="lg:w-1/2 w-full space-y-10">
 									{/* Challenges */}
 									<div>
 										<h3 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-4">
 											Challenges We Address
 										</h3>
+
 										<ul className="space-y-3">
 											{industry.challenges.map((challenge, i) => (
 												<li
 													key={i}
-													className="flex items-start gap-3 text-gray-700">
-													<span className="w-1.5 h-1.5 bg-black rounded-full mt-2 shrink-0"></span>
+													className="flex items-start gap-3 justify-center lg:justify-start">
 													<span className="text-sm text-blue-600/80 leading-relaxed">
 														{challenge}
 													</span>
@@ -295,28 +301,26 @@ export default function Industries() {
 										</ul>
 									</div>
 
-									{/* Solutions */}
+									{/* ================= SOLUTIONS ================= */}
 									<section className="my-12">
 										<h3 className="text-sm font-bold uppercase tracking-wider text-gray-400 mb-8">
 											Our Solutions
 										</h3>
 
-										{/* ✅ UPDATED GRID CONTAINER USING INDUSTRY-SPECIFIC LOGOS */}
-										<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+										<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center">
 											{industry.logos.map((logo, index) => (
 												<motion.div
 													key={logo.name}
 													initial={{ opacity: 0, y: 20 }}
 													whileInView={{ opacity: 1, y: 0 }}
 													transition={{ duration: 0.5, delay: index * 0.1 }}
-													className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center justify-center h-24">
-													<div className="relative w-16 h-12 mb-2">
+													className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col items-center justify-center h-24 w-full">
+													<div className="relative w-20 h-14 flex items-center justify-center">
 														<Image
 															src={logo.src}
 															alt={logo.name}
 															fill
 															className="object-contain"
-															sizes="(max-width: 64px) 100vw, 64px"
 														/>
 													</div>
 												</motion.div>
@@ -332,3 +336,4 @@ export default function Industries() {
 		</div>
 	);
 }
+

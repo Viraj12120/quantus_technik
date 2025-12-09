@@ -35,7 +35,7 @@ export default function Offer() {
 				<h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
 					2 Special Offers & Promotions
 				</h1>
-				<p className="text-xl text-gray-600 max-w-2xl mx-auto">
+				<p className="text-md lg:text-xl text-gray-600 max-w-2xl mx-auto">
 					Exclusive deals and limited-time promotions on premium manufacturing
 					solutions
 				</p>

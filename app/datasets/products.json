@@ -1113,7 +1113,7 @@
                 "series": "G-Series",
                 "description": "Advanced High Speed 5-Axis Machine Center",
                 "filters": [
-                    "simultaneous"
+                    "millturn"
                 ],
                 "image": "/assets/G350T.jpg",
                 "specs": {
@@ -1146,7 +1146,7 @@
                 "description": "Advanced High Speed 5-Axis Machine Center",
                 "type": "5-Axis Vertical",
                 "filters": [
-                    "simultaneous"
+                    "millturn"
                 ],
                 "image": "/assets/G550T.jpg",
                 "specs": {
@@ -1180,7 +1180,7 @@
                 "description": "Advanced High Speed 5-Axis Machine Center",
                 "type": "5-Axis Vertical",
                 "filters": [
-                    "simultaneous"
+                    "millturn"
                 ],
                 "image": "/assets/G750T.jpg",
                 "specs": {
@@ -1592,21 +1592,28 @@
                 "image": "/GS_600-5FDT.webp",
                 "specs": {
                     "travel_mm": {
-                        "x": 600,
-                        "y": 500,
+                        "x": 460,
+                        "y": 600,
                         "z": 400
                     },
-                    "table_load_Kg": 200,
+                    "table_load_Kg": 500,
                     "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 60
+                        "x": 75,
+                        "y": 75,
+                        "z": 75
                     },
                     "spindle": {
-                        "rotation_speed_rpm": "12K",
+                        "rotation_speed_rpm": "10K (18K)",
                         "power_kW": "7.5 (11)",
                         "torque_Nm": "12 (18)"
-                    }
+                    },
+                    "spindle_taperr": "HSK-T63",
+                    "rotation_angle": "360° unlimited",
+                    "table_diameter": "Ø 320 (400 x 400) mm",
+                    "swivel_range": "± 140°",
+                    "swivel_speed": "90 min-¹",
+                    "rpm_max": "350,[900] min-¹",
+                    "drive": "Torque direct"
                 }
             },
             {
@@ -1620,21 +1627,28 @@
                 "image": "/GS_800NE-5FDT.jpg",
                 "specs": {
                     "travel_mm": {
-                        "x": 800,
-                        "y": 600,
-                        "z": 500
+                        "x": 660,
+                        "y": 800,
+                        "z": 550
                     },
-                    "table_load_Kg": 300,
+                    "table_load_Kg": 500,
                     "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 60
+                        "x": 75,
+                        "y": 75,
+                        "z": 75
                     },
                     "spindle": {
-                        "rotation_speed_rpm": "10K",
+                        "rotation_speed_rpm": "10K (18K)",
                         "power_kW": "11 (15)",
                         "torque_Nm": "18 (25)"
-                    }
+                    },
+                    "spindle_taperr": "HSK-T63",
+                    "rotation_angle": "360° unlimited",
+                    "table_diameter": "Ø 470 (Ø 600 / Ø 600 x 470) mm",
+                    "swivel_range": "± 140°",
+                    "swivel_speed": "50 min-¹",
+                    "rpm_max": "1200 min-¹",
+                    "drive": "Torque direct"
                 }
             },
             {
@@ -1648,21 +1662,28 @@
                 "image": "/GS_1000-5FDT.webp",
                 "specs": {
                     "travel_mm": {
-                        "x": 1000,
-                        "y": 700,
+                        "x": 800,
+                        "y": 800,
                         "z": 600
                     },
-                    "table_load_Kg": 500,
+                    "table_load_Kg": "1000Kg ,[1500Kg]",
                     "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 60
+                        "x": "75 [100]",
+                        "y": "75 [100]",
+                        "z": "75 [100]"
                     },
                     "spindle": {
-                        "rotation_speed_rpm": "8K",
+                        "rotation_speed_rpm": "12K[18K]",
                         "power_kW": "15 (22)",
                         "torque_Nm": "30 (45)"
-                    }
+                    },
+                    "spindle_taperr": "HSK-T63",
+                    "rotation_angle": "360° unlimited",
+                    "table_diameter": "Ø 630 (800 / Ø 800 x 630) mm",
+                    "swivel_range": "± 140°",
+                    "swivel_speed": "50 min-¹",
+                    "rpm_max": "350,[900] min-¹",
+                    "drive": "Torque direct"
                 }
             },
             {
@@ -1680,17 +1701,24 @@
                         "y": 800,
                         "z": 700
                     },
-                    "table_load_Kg": 800,
+                    "table_load_Kg": 2500,
                     "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 60
+                        "x": "75 [100]",
+                        "y": "75 [100]",
+                        "z": "75 [100]"
                     },
                     "spindle": {
-                        "rotation_speed_rpm": "6K",
+                        "rotation_speed_rpm": "12K [14K,18K]",
                         "power_kW": "18.5 (26)",
                         "torque_Nm": "45 (65)"
-                    }
+                    },
+                    "spindle_taperr": "HSK-T63[HSK-T100]",
+                    "rotation_angle": "360° unlimited",
+                    "table_diameter": "Ø 800 (Ø 900 / Ø 1000 / Ø 1200 x 1000) mm",
+                    "swivel_range": "± 140°",
+                    "swivel_speed": "30 min-¹",
+                    "rpm_max": "450,[560] rpm ",
+                    "drive": " direct"
                 }
             },
             {
@@ -1704,21 +1732,28 @@
                 "image": "/GS_1400-5FDT.webp",
                 "specs": {
                     "travel_mm": {
-                        "x": 1400,
-                        "y": 900,
+                        "x": 1200,
+                        "y": 1300,
                         "z": 800
                     },
-                    "table_load_Kg": 1000,
+                    "table_load_Kg": 3000,
                     "feedrate_m_per_min": {
-                        "x": 60,
-                        "y": 60,
-                        "z": 60
+                        "x": 85,
+                        "y": 85,
+                        "z": 85
                     },
                     "spindle": {
                         "rotation_speed_rpm": "5K",
                         "power_kW": "22 (30)",
                         "torque_Nm": "60 (85)"
-                    }
+                    },
+                    "spindle_taperr": "HSK-T100 [HSK-T63]",
+                    "rotation_angle": "360° unlimited",
+                    "table_diameter": "Ø 800 (Ø 900 / Ø 1000 / Ø 1200 x 1000) mm",
+                    "swivel_range": "± 140°",
+                    "swivel_speed": "30 rpm",
+                    "rpm_max": "450,[560] rpm ",
+                    "drive": " Direct-Drives"
                 }
             },
             {
