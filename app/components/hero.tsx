@@ -5,19 +5,19 @@ import Image from "next/image";
 
 export default function Hero() {
 	const videos = [
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765207882/WhatsApp_Video_2025-12-08_at_20.56.35_7b6b84c6_mzqrwh.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765208027/ken_ura82u.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765208170/hwacheon_pbz4b2.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765208411/jtekt_ef4vp1.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765208528/grob_ly9od3.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765193647/traub_ubapop.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1765208689/grinding_avmj2e.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1762179053/6_WS_intro-pg-wenzel_izcloo.mp4",
+		"https://res.cloudinary.com/dkwrwuuob/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1767587982/micro_nhsi4r.mp4",
+		"https://res.cloudinary.com/dkwrwuuob/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1767588060/ken_vkrvb8.mp4",
+		"https://res.cloudinary.com/dkwrwuuob/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1767590292/hwacheonn_faowu9.mp4",
+		"https://res.cloudinary.com/dkwrwuuob/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1767588047/jtekt_az661d.mp4",
+		"https://res.cloudinary.com/dkwrwuuob/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1767588064/grob_yrk9zd.mp4",
+		"https://res.cloudinary.com/dkwrwuuob/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1767590292/traub_fyvc7x.mp4",
+		"https://res.cloudinary.com/dkwrwuuob/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1767588072/grinding_zjomna.mp4",
+		"https://res.cloudinary.com/dkwrwuuob/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1767590528/wfl_flaqps.mp4",
 		//	"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1762179042/1_WS_intro-pg-GROB_jv4gn0.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1763995579/VID-20251124-WA0004_qtoyry.mp4",
+		"https://res.cloudinary.com/dkwrwuuob/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1767590783/zoller_aecclx.mp4",
 		//	"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1762179062/2_WS_intro-pg-ken_imspdp.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1763995576/VID-20251124-WA0005_rubgz3.mp4",
-		"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1762179042/4_WS_intro-pg-gerardi_oa7qkp.mp4",
+		//"https://res.cloudinary.com/domgx4mk9/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1763995576/VID-20251124-WA0005_rubgz3.mp4",
+		"https://res.cloudinary.com/dkwrwuuob/video/upload/f_auto,vc_auto,q_auto:good,w_1280/v1767591186/gerardi_y60f3w.mp4",
 	];
 
 	const [current, setCurrent] = useState(0);
