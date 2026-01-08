@@ -31,7 +31,7 @@ export default function WhyChooseQuantus() {
 		},
 	];
 
-	const bars = [30, 60, 90, 60, 100, 80];
+	const bars = [30, 60, 90, 60, 100, 80, 100,30, 60, 90, 60, 100, 80, 100,30,60];
 	const [efficiency, setEfficiency] = useState(0);
 	const [display, setDisplay] = useState(0);
 	const [activeTab, setActiveTab] = useState("why");

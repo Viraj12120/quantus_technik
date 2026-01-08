@@ -128,7 +128,7 @@ export default function Footer() {
 									target="_blank"
 									rel="noopener noreferrer"
 									className="hover:text-black">
-									μ Dynamics
+									Micro Dynamics
 								</Link>
 							</li>
 						</ul>
