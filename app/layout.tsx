@@ -82,7 +82,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<head>
-				<link rel="icon" href="/qt.png" type="image/png" />
+				<link rel="icon" href="/Q.png" type="image/png" />
 			</head>
 			<body suppressHydrationWarning>
 				<Header />

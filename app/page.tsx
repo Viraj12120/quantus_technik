@@ -24,7 +24,7 @@ export const metadata = {
 		title: "QuantusTechnik - Your Productivity Improvement Partner",
 		description:
 			"Leading provider of machine tools, automation systems, and industrial manufacturing solutions",
-		images: ["/og-home.jpg"],
+		images: ["/Q.png"],
 		url: "https://quantus-technik.com",
 	},
 	alternates: {
