@@ -160,7 +160,7 @@ export default function Footer() {
 					{/* Blogs or Additional Section */}
 					<div>
 						<h4 className="font-semibold text-black mb-6">Offers and Deals</h4>
-						<ul className="space-y-3 text-sm text-gray-700">
+						{/* <ul className="space-y-3 text-sm text-gray-700">
 							<li>
 								<a href="/Offer" className="hover:text-black">
 									Hwacheon TurnMill Centers
@@ -172,7 +172,7 @@ export default function Footer() {
 									Gerardi Angle Head
 								</a>
 							</li>
-						</ul>
+						</ul> */}
 					</div>
 				</div>
 
