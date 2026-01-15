@@ -66,7 +66,7 @@ export const metadata: Metadata = {
 		},
 	},
 	icons: {
-		icon: [{ url: "/qt.png" }],
+		icon: [{ url: "/favicon.png" }],
 		apple: [
 			{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
 		],
@@ -82,7 +82,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<head>
-				<link rel="icon" href="/Q.png" type="image/png" />
+				<link rel="icon" href="/favicon.png" type="image/png" />
 			</head>
 			<body suppressHydrationWarning>
 				<Header />
