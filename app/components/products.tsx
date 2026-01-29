@@ -10,7 +10,6 @@ const logos = [
 	{ name: "GROB", src: "/grob.svg" },
 	{ name: "index", src: "/index.jpg" },
 	{ name: "ALZMETALL", src: "/alz.svg" },
-	// { name: "mill", src: "/mill.png" },
 	{ name: "WENZEL", src: "/w.png" },
 	{ name: "ZOLLER", src: "/zoller.svg" },
 	{ name: "mst", src: "/m.png" },
